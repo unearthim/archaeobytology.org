@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- === 1. Primary Meta Tags === -->
+    <title>The Archaeobytology Manifesto | Archaeobytology.org</title>
+    <meta name="title" content="The Archaeobytology Manifesto | Archaeobytology.org">
+    <meta name="description" content="The complete, foundational series on the excavation, classification, and application of digital artifacts.">
+    <meta name="keywords" content="Archaeobytology, Digital Archaeology, Archaeobyte, Vivibyte, Umbrabyte, Petribyte, Anvil, Triage Protocol, Digital Preservation">
+    <meta name="author" content="archaeobytology.org (An unearth.im Project)">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <link rel="canonical" href="https://archaeobytology.org/manifesto.html" />
+
+    <!-- === 2. Webmention Endpoint === -->
+    <link rel="webmention" href="https://webmention.io/unearth.im/webmention" />
+
+    <!-- === 3. Open Graph / Facebook === -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://archaeobytology.org/manifesto.html">
+    <meta property="og:title" content="The Archaeobytology Manifesto | Archaeobytology.org">
+    <meta property="og:description" content="The complete, foundational series on the excavation, classification, and application of digital artifacts.">
+    <meta property="og:image" content="https://archaeobytology.org/og-image.png">
+    <meta property="og:site_name" content="Archaeobytology.org">
+
+    <!-- === 4. Twitter Card === -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://archaeobytology.org/manifesto.html">
+    <meta property="twitter:title" content="The Archaeobytology Manifesto | Archaeobytology.org">
+    <meta property="twitter:description" content="The complete, foundational series on the excavation, classification, and application of digital artifacts.">
+    <meta property="twitter:image" content="https://archaeobytology.org/og-image.png">
+
+    <!-- === Favicons === -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta name="theme-color" content="#fcfaf5">
+    <meta name="msapplication-TileColor" content="#BF5700">
+
+    <!-- === Tailwind CSS === -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'unearth-bg': '#fcfaf5',
+            'unearth-surface': '#f9fafb',
+            'unearth-main': '#1a1a1a',
+            'unearth-secondary': '#6b7280',
+            'unearth-primary': '#BF5700',
+            'unearth-border': '#e5e7eb',
+          },
+          fontFamily: {
+            'narrative': ['Lora', 'serif'],
+            'ui': ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+    </script>
+
+    <!-- === Google Fonts: Lora & Inter === -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        html { scroll-behavior: smooth; }
+        /* Simple styles for the prose */
+        .prose h2 {
+            font-size: 1.875rem; /* text-3xl */
+            line-height: 2.25rem;
+            font-weight: 700;
+            letter-spacing: -0.025em; /* tracking-tight */
+            color: #1a1a1a; /* unearth-main */
+            font-family: 'Lora', serif;
+            margin-top: 4rem; /* mt-16 */
+            margin-bottom: 1.5rem; /* mb-6 */
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #e5e7eb; /* unearth-border */
+        }
+        .prose h3 {
+            font-size: 1.5rem; /* text-2xl */
+            line-height: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.025em; /* tracking-tight */
+            color: #1a1a1a; /* unearth-main */
+            font-family: 'Lora', serif;
+            margin-top: 3rem; /* mt-12 */
+            margin-bottom: 1.5rem; /* mb-6 */
+        }
+        .prose h4 {
+            font-size: 1.25rem; /* text-xl */
+            line-height: 1.75rem;
+            font-weight: 700;
+            letter-spacing: -0.025em; /* tracking-tight */
+            color: #1a1a1a; /* unearth-main */
+            font-family: 'Inter', sans-serif;
+            margin-top: 2.5rem; /* mt-10 */
+            margin-bottom: 1rem; /* mb-4 */
+        }
+        .prose p {
+            font-size: 1.25rem; /* text-xl */
+            font-family: 'Lora', serif;
+            line-height: 1.8;
+            margin-top: 1.5rem; /* mt-6 */
+            color: #1a1a1a; /* unearth-main */
+        }
+        .prose strong {
+            color: #1a1a1a; /* unearth-main */
+            font-weight: 700;
+        }
+        .prose em {
+            font-style: italic;
+        }
+        .prose code {
+            background-color: #e5e7eb; /* unearth-border */
+            padding: 0.125rem 0.375rem;
+            border-radius: 0.25rem;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+        .prose sup {
+            color: #BF5700; /* unearth-primary */
+            font-weight: 600;
+            font-size: 0.8em;
+            vertical-align: super;
+            margin-left: 2px;
+            font-family: 'Inter', sans-serif;
+        }
+        .prose ul {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 1.5rem; /* mt-6 */
+            font-family: 'Lora', serif;
+        }
+        .prose li {
+            font-size: 1.125rem; /* text-lg */
+            color: #6b7280; /* unearth-secondary */
+            line-height: 1.8;
+            margin-top: 1rem; /* space-y-4 */
+        }
+        .prose ul.works-cited-list li {
+            display: flex;
+            align-items: flex-start;
+        }
+        .prose ul.works-cited-list li span:first-child {
+            width: 2.5rem; /* w-10 */
+            flex-shrink: 0;
+            font-size: 0.875rem; /* text-sm */
+            margin-top: 0.25rem; /* mt-1 */
+            font-family: 'Inter', sans-serif;
+            color: #6b7280;
+        }
+        .prose ul.works-cited-list li span:last-child {
+            flex: 1;
+        }
+        .prose-preamble p {
+             color: #6b7280; /* unearth-secondary */
+        }
+    </style>
+
+</head>
+<body class="bg-unearth-bg text-unearth-main antialiased font-ui">
+
+    <!-- === Header === -->
+    <nav class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div class="flex justify-between items-center">
+            <!-- Logo / Title -->
+            <a href="index.html" title="Back to unearth.im" class="flex items-baseline space-x-2 group">
+                <span class="text-2xl font-bold tracking-tighter text-unearth-main group-hover:text-unearth-primary transition-colors font-narrative">archaeobytology</span>
+                <span class="text-xl font-bold text-unearth-primary font-narrative">.org</span>
+            </a>
+            <!-- Attribution Link -->
+            <div>
+                <span class="text-sm text-unearth-secondary hidden sm:inline">
+               an 
+                <a href="https://unearth.im" class="font-semibold transition-colors group">
+                    <span class="text-unearth-main group-hover:text-unearth-primary">unearth</span><span class="text-unearth-primary">.im</span></a> 
+        series    
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- === Hero Section === -->
+    <header class="py-24 sm:py-32 border-b border-unearth-border">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl sm:text-7xl font-bold tracking-tighter text-unearth-main leading-tight font-narrative">
+                The Archaeobytology Manifesto
+            </h1>
+            <p class="mt-6 text-xl sm:text-2xl text-unearth-secondary max-w-3xl mx-auto font-narrative" style="line-height: 1.8;">
+                A Foundational Series on the Excavation, Classification, and Application of Digital Artifacts
+            </p>
+        </div>
+    </header>
+
+    <!-- === Main Content: Essay === -->
+    <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+        
+        <!-- Essay Content -->
+        <article class="prose">
+            
+            <!-- === PART 1: THE TROWEL === -->
+            <div class="prose-preamble">
+                <h2>Preamble: The Undifferentiated Dust</h2>
+                <p>The work of the Digital Archaeologist begins not with a prized fossil, but with a field of undifferentiated dust.</p>
+                <p>The digital past is not a curated museum, but a vast, chaotic, and uncataloged "dig site." It is a tangle of abandoned servers, mirrored hard drives, broken links, forgotten media formats, and the ghosts of dead platforms. This is the digital equivalent of a "tell": an archaeological mound containing the stratified layers of human activity. But unlike a physical site, where decay simplifies the record, the digital site suffers from perfect, overwhelming preservation.</p>
+                <p>This abundance creates a "digital dark age" not of <em>loss</em>, but of <em>noise</em>. The sheer volume of preserved data: the "digital dust": makes finding "meaning" almost impossible. This is the "crisis of noise" that defines the modern web; an environment drowning in information but starved of context.</p>
+                <p>The first challenge, before any analysis can begin, is one of identification. The archaeologist needs a fundamental term for the object of their search: the "find." What is the discrete "thing" that must be pulled from the digital strata? It is not "data," which is too abstract. It is not "a file," which is too specific and fails to capture the cultural context of a "Guestbook" or an "Away Message."</p>
+                <p>A field cannot exist without its basic vocabulary. The <strong>Archive</strong> of the Digital Archaeologist, the scholarly work of excavation and preservation, requires a word for its most fundamental unit of discovery.</p>
+                <p>This essay provides that word. The foundational artifact of the Digital Archaeologist, the raw material of the "find" that is pulled from the digital dust, is the <strong>Archaeobyte</strong>.</p>
+            </div>
+            
+            <h2>Part 1: The Trowel (The Archaeobyte)</h2>
+            <p>This neologism is a deliberate portmanteau, forged to be the first and most essential tool in the archaeologist's toolkit. It defines the "what" of the dig. It is the term that allows the archaeologist to <em>see</em> the artifact in the first place, turning a "junkyard" into a "dig site."</p>
+            <p>This new taxonomy is the logical fix to a critical flaw in common analysis. It creates two distinct, unassailable categories for "finds": the "file" and the "ghost."</p>
+            
+            <h3>Section 1.1: The Etymology (The Core Definition)</h3>
+            <p><strong class="text-unearth-main">1. Archaeo- (The Provenance)</strong></p>
+            <p>This root is drawn from the Greek: <em>arkhaios</em> (ἀρχαῖος), meaning "ancient" or "from the beginning."<sup>1</sup> It is the same root that gives "archaeology" its name: <em>arkhaiologia</em>, "the study of ancient things." This root's sole function is to establish provenance. It signifies that the artifact is not of the present, but is a "find" from a past technological epoch.</p>
+            
+            <p><strong class="text-unearth-main">2. -byte (The Substance)</strong></p>
+            <p>This root is from digital science: the byte, a fundamental unit of digital information; the "molecule" of the digital world.<sup>2</sup> This grounds the term firmly in the digital. It specifies that this is the substance of digital culture, not physical pottery or bone.</p>
+
+            <p><strong class="text-unearth-main">The Synthesis:</strong> An Archaeobyte is a discrete unit of digital information from a past technological epoch.</p>
+            
+            <h3>Section 1.2: The New Taxonomy (The Foundational Fix)</h3>
+            <p>This synthesis is incomplete. It fails to resolve the critical "file vs. concept" contradiction. "Archaeobyte" must be subdivided into its two primary states: the Tangible and the Conceptual.</p>
+            <p><strong class="text-unearth-main">Type 1: The Tangible Archaeobyte (The File)</strong></p>
+            <p>A discrete, self-contained unit of digital information. It is the file itself, the "digital-physical" object that can be "bagged and tagged." Examples: An <code>.mp3</code> file, a <code>.gif</code>, a <code>.swf</code> (Flash) file, a <code>guestbook.cgi</code> script.</p>
+            
+            <p><strong class="text-unearth-main">Type 2: The Conceptual Archaeobyte (The Ghost)</strong></p>
+            <p>A digital-native concept, behavior, or function that is now an artifact of a past ecosystem, often lacking a discrete, single-file form. This aligns with media archaeologists like Jussi Parikka, who argue one must excavate "discursive formations."<sup>3</sup> Examples: The "AIM Away Message," the "Guestbook," the "Webring," the MySpace "Top 8," the "Blogroll."</p>
+
+
+            <!-- === PART 2: THE MICROSCOPE (TRIAGE) === -->
+            
+            <h2>Part 2: The Microscope (The Triage)</h2>
+            <p>The "Archaeobyte" thesis established the "trowel" (the "find"). The next act is the "Triage"—the "microscope" that classifies the artifact's state: Living, Liminal, or Petrified. This is the act of analysis that turns a "find" into an <em>insight</em>.</p>
+            <p>This series investigates these three classifications, providing a formal name and taxonomy for each.</p>
+
+            <h3>Section 2.1: The `Vivibyte` (The Living Archaeobyte)</h3>
+            <p>This is the "Living Archaeobyte," the survivor in the dust. The term is forged from the Latin <em>vivere</em>, "to live."<sup>4</sup> A <strong>Vivibyte</strong> is a discrete unit of digital information from a past technological epoch that has survived into the present with its native function still intact and legible.</p>
+            <p>It is the "living DNA" of a lost world. We classify three primary types:</p>
+            <ul>
+                <li><strong class="text-unearth-main">Type 1: The Resilient Format (The "Gold Coin").</strong> An artifact whose simplicity and interoperability ensured its survival.
+                    <br><em>Specimen:</em> The <code>.mp3</code> file, an open format that survived the "format wars" that petrified proprietary peers like <code>.wma</code> or <code>.ra</code>.<sup>5</sup>
+                </li>
+                <li><strong class="text-unearth-main">Type 2: The Enduring Code (The "Living Blueprint").</strong> An artifact that survived due to the "backward compatibility" ethos of the open web.
+                    <br><em>Specimen:</em> A 1998 <code>HTML 4.01</code> file, which still renders perfectly in a modern browser, proving the resilience of an open standard against a petrified, proprietary one like Flash.<sup>6</sup>
+                </li>
+                <li><strong class="text-unearth-main">Type 3: The "Evergreen" Ritual (The "Cultural Seed").</strong> A conceptual artifact whose human-scale function has survived.
+                    <br><em>Specimen:</em> The <code>README.txt</code> file, a ritual of creator-to-user connection that lives on in the <code>README.md</code> file on every GitHub repository.<sup>7</sup>
+                </li>
+            </ul>
+            <p>The Vivibyte is the "seed bank" for a wiser web. It is the living proof that simplicity, openness, and human-scale connection are not nostalgic dreams, but survivable, resilient strategies.</p>
+
+            <h3>Section 2.2: The `Umbrabyte` (The Liminal Archaeobyte)</h3>
+            <p>This is the "Liminal Archaeobyte," the artifact trapped "betwixt and between" states.<sup>8</sup> The term is forged from the Latin <em>umbra</em>, "a shadow, a ghost."<sup>9</sup> An <strong>Umbrabyte</strong> is an artifact, often technically "living" (a <code>.mp4</code> file, an <code>.html</code> file), whose native ecosystem is "petrified," rendering its original, living <em>context</em> and <em>interactive functions</em> extinct.</p>
+            <p>It is the "Fly in Amber"—a "living" file trapped inside a "petrified" ecosystem. Its value is not in the file, but in the <em>ghost of the ecosystem</em> it represents.</p>
+            <ul>
+                <li><strong class="text-unearth-main">Type 1: The "Fly in Amber" (Ecosystem Extinction).</strong> A cataclysmic platform shutdown.
+                    <br><em>Specimen:</em> A GeoCities homepage, rescued by the Archive Team.<sup>10</sup> The <code>.html</code> and <code>.gif</code> files are "living," but the <code>guestbook.cgi</code> script is broken, the "Webring" is gone, and the "neighbors" are missing.<sup>11</sup> It is a "fossil of community."
+                </li>
+                <li><strong class="text-unearth-main">Type 2: The "Severed Function" (API Petrifaction).</strong> An artifact whose function was dependent on a now-extinct service.
+                    <br><em>Specimen:</em> A 2010-era game whose "multiplayer" function is an Umbrabyte because the GameSpy servers that powered it were shut down in 2014.<sup>12</sup>
+                </li>
+                <li><strong class="text-unearth-main">Type 3: The "Statue in the Town Square" (Context Collapse).</strong> A "Conceptual" artifact whose cultural context has been petrified by platform change.
+                    <br><em>Specimen:</em> The "Forum Signature." The <code>.png</code> file (a Vivibyte) survives, but its <em>purpose</em> as a tool for status signaling and "Declaration" is extinct, petrified by the rise of homogenized platforms like Reddit.<sup>13</sup>
+                </li>
+            </ul>
+            <p>The Umbrabyte is the "Haunted Forest" of the Archive. It is the definitive "warning," the physical proof of the danger of building on "rented land."</p>
+
+            <h3>Section 2.3: The `Petribyte` (The Petrified Archaeobyte)</h3>
+            <p>This is the "Petrified Archaeobyte," the definitive "fossil of function." The term is forged from the Greek <em>pétra</em>, "rock,"<sup>14</sup> evoking the process of "technological petrifaction" where an artifact’s function becomes extinct, but its form is preserved with perfect fidelity.</p>
+            <p>A <strong>Petribyte</strong> is a unit of digital-cultural substance that has been "turned to stone" by the mineral-rich and shifting currents of technological obsolescence.</p>
+            <ul>
+                <li><strong class="text-unearth-main">Type 1: The Technical Petribyte (The Inert File).</strong> A file whose native function is now impossible to execute.
+                    <br><em>Specimen:</em> A 1999 RealPlayer <code>.rm</code> file. The artifact is complete, but the deprecation of the RealPlayer plugin has petrified it. It is a fossil of the 1990s "streaming wars." (Note: The <code>.swf</code> (Flash) file was a Petribyte until "resurrection" via emulators like Ruffle transformed it into an Umbrabyte.<sup>15</sup>)
+                </li>
+                <li><strong class="text-unearth-main">Type 2: The Conceptual Petribyte (The Cultural Ghost).</strong> A behavior or ritual that has been petrified by ecosystem change.
+                    <br><em>Specimen:</em> The AIM "Away Message." Its entire purpose—to manage presence in a <em>synchronous, desktop-first</em> world—was rendered extinct by the "always-on" assumption of the <em>asynchronous, mobile-first</em> smartphone.<sup>16</sup> It is a fossil of a time when the web respected a user's <em>absence</em>.
+                </li>
+            </ul>
+            <p>The Petribyte is the "Rosetta Stone" of the discipline. It is the "lost blueprint," the fossil record that proves alternative, human-centric systems once existed and provides the wisdom for building a wiser future.</p>
+
+            <!-- === PART 3: THE ANVIL (PROTOCOLS) === -->
+            <h2>Part 3: The Anvil (The Applied Methodology)</h2>
+            <p>The preceding sections defined the "Archive"—a scholarly practice of excavation and classification. But an archive that is never accessed is a morgue. The <strong>Anvil</strong> is the second, essential half of the Archaeologist-Smith's soul: the act of <em>creation</em>.</p>
+            <p>This is an <em>applied</em> practice, one aligned with "critical making," a methodology that "links humanistic inquiry with the hands-on work of building."<sup>17</sup> The Anvil is where the wisdom of the Archive (The Proof, The Warning, and The Blueprint) is forged into tools for the future.</p>
+            <p>This practice is not an "art"; it is a formal, repeatable methodology, defined by a stack of open-source protocols. This is the <em>how-to</em> of "Archaeobytology."</p>
+
+            <h3>Section 3.1: The Excavation Protocol (The Trowel)</h3>
+            <p>Before the Triage Protocol can be engaged, the practitioner must first <em>find</em> a discrete artifact. The "digital past" is not a curated museum; it is a "crisis of noise," a field of "undifferentiated dust."</p>
+            <p>The <strong>Excavation Protocol</strong> is the "Field Guide for the Trowel." It is a formal, three-phase methodology for turning a chaotic "junkyard" into a defined "dig site" and finding a discrete "signal" (an <code>Archaeobyte</code>) within that <em>noise</em>.</p>
+            <p>It answers the practitioner's first question: "I see 'digital dust.' Where do I even begin?"</p>
+            
+            <h4>Phase 1: Define Dig Site (The "Where")</h4>
+            <p>The first act of excavation is to scope the "field." The practitioner must define the boundaries of their <em>where</em>.</p>
+            <ul>
+                <li><strong>Path 1: Curated Archive:</strong> A known, structured, and often-cataloged collection. (e.g., The Internet Archive, a GeoCities Mirror, a museum's digital collection).</li>
+                <li><strong>Path 2: "Wild" Archive:</strong> An unstructured, abandoned, or "living" site. (e.g., Abandoned FTP servers, dead (but still hosted) websites, "404-hunting").</li>
+                <li><strong>Path 3: Conceptual Site:</strong> A "living" platform excavated for its "ghosts." (e.g., Excavating GitHub for the <code>README.md</code> ritual, studying Twitter for "Conceptual Petribytes").</li>
+            </ul>
+
+            <h4>Phase 2: Define Target (The "What")</h4>
+            <p>Once the "dig site" is defined, the practitioner must define <em>what</em> they are hunting for.</p>
+            <ul>
+                <li><strong>Target 1: Tangible (The File):</strong> A hunt for specific files, formats, or code. (e.g., "Find all <code>.swf</code> files," "Look for <code>guestbook.cgi</code> scripts").</li>
+                <li><strong>Target 2: Conceptual (The Ghost):</strong> A hunt for lost behaviors, rituals, or concepts. (e.g., "Find examples of 'AIM Away Messages'," "Trace 'Webrings'").</li>
+            </ul>
+
+            <h4>Phase 3: Sifting Methodology (The "How")</h4>
+            <p>With a "dig site" and "target" defined, the practitioner applies a formal method to find the first <em>find</em>.</p>
+            <ul>
+                <li><strong>Method 1: Keyword Sifting:</strong> Searching the "dig site" for specific terms. (e.g., "guestbook," "home page," "under construction," "blogroll").</li>
+                <li><strong>Method 2: Relational Mapping:</strong> Following the "hand-built bridges" of the past to map a community. (e.g., Following all links in a "blogroll," mapping a "Webring").</li>
+                <li><strong>Method 3: Stratigraphic Sampling:</strong> Isolating a specific "slice" of time or technology. (e.g., "Only artifacts from 'GeoCities/Vienna' in 1999," "Only Flash 5 games").</li>
+            </ul>
+            <p>The output of this protocol is the "First Find": a discrete <code>Archaeobyte</code>, which is then handed off to the Triage Protocol.</p>
+
+            <h3>Section 3.2: The Triage Protocol (The Microscope)</h3>
+            <p>This protocol is the central <em>decision engine</em> of the Anvil. It answers the practitioner's core question: "I have found an artifact. <em>What do I do now?</em>"</p>
+            <p>It is the "Anvil's Edge"—an immovable, principled process against which the chaotic raw material of the <em>Archive</em> is "forged" by the "Hammer" of inquiry. The word "anvil" itself comes from the Proto-Germanic <em>anabossan</em>—"ana" (on) and "bossan" (to beat).<sup>18</sup> It is the resisting force that gives the material <em>form</em>.</p>
+
+            <h4>Phase 1: Classification (The "What")</h4>
+            <p>The first act is to define the "find's" <em>state of being</em>, using the Lexicon from Part 2. This defines the technical challenge of preservation.</p>
+            <ul>
+                <li><strong><code>Vivibyte</code> (Living):</strong> Dictates a strategy of <strong>Episodic Capture</strong> (e.g., periodic web-harvesting).</li>
+                <li><strong><code>Umbrabyte</code> (Liminal):</strong> Dictates a strategy of <strong>Discrete Capture</strong> and <strong>Contextual Documentation</strong>.</li>
+                <li><strong><code>Petribyte</code> (Fossilized):</strong> Dictates a strategy of <strong>Object Migration</strong> and <strong>Contextual Reconstruction</strong>.</li>
+            </ul>
+
+            <h4>Phase 2: Preservation Triage (The "How & Can I")</h4>
+            <p>Once classified, the artifact enters a two-filter Triage to determine the technical and ethical path to preservation.</p>
+            <p><strong>Filter A: The Contextual Filter (How to Preserve)</strong></p>
+            <p>This filter forces the practitioner to decide if the <em>true</em> artifact <em>is</em> the object or its environment.</p>
+            <ul>
+                <li><strong>Path 1: Object-based (e.g., <code>.mp3</code>, <code>.txt</code>).</strong> The file <em>is</em> the artifact. The correct action is <strong>Migration</strong>: saving the file to a stable, modern repository.</li>
+                <li><strong>Path 2: Experience-based (e.g., a Flash game).</strong> The file <em>alone</em> is useless. The correct action is <strong>Emulation</strong>: preserving the entire software/hardware environment.</li>
+            </ul>
+            <p><strong>Filter B: The Custodial Filter (Is it Ethical & Legal?)</strong></p>
+            <ul>
+                <li><strong>Question 1: Privacy (PII).</strong> Does the artifact contain Personally Identifiable Information (e.g., a forum database)?
+                    <br><strong>Action: REDACT</strong> or place the artifact under an <strong>Embargo</strong>.
+                </li>
+                <li><strong>Question 2: Copyright.</strong> Does the artifact have clear copyright limitations (e.g., proprietary software)?
+                    <br><strong>Action: CITE & "FAIR USE".</strong> Archive the artifact under the academic principle of "fair use for research and preservation," and meticulously <strong>Cite</strong> the original copyright holder.<sup>19</sup>
+                </li>
+            </ul>
+
+            <h4>Phase 3: Academic Synthesis (The "So What")</h4>
+            <p>The artifact is now classified, preserved, and cleared. This phase answers the ultimate question: "What is the <em>scholarly output</em>?"</p>
+            <ul>
+                <li><strong>Path 1: Digital Dust (No Resonance).</strong> The artifact has no discernible human story (e.g., a corrupted file, spam).
+                    <br><strong>Action: ARCHIVE.</strong> Log with minimal metadata and move on.
+                </li>
+                <li><strong>Path 2: Curio (Resonance, No Rigor).</strong> The artifact has a human story but no modern relevance (e.g., an inside joke from a dead forum).
+                    <br><strong>Action: PRESERVE & DOCUMENT.</strong> The output is a <strong>"Digital Monument"</strong>—a paper or exhibit that preserves its context.
+                </li>
+                <li><strong>Path 3: Landmark (Resonance & Rigor).</strong> The artifact's story is highly relevant <em>today</em> (e.g., the GeoCities Guestbook as the "ancestor" of social media).
+                    <br><strong>Action: AMPLIFY & SYNTHESIZE.</strong> The output is a new <strong>Thesis or "Future Framework"</strong> that connects this "fossil" to the "living" present.
+                </li>
+            </ul>
+
+            <h3>Section 3.3: The Forging Acts (The Foundry's Output)</h3>
+            <p>The "Excavation" and "Triage" Protocols are the open-source <em>science</em> of the Anvil. The "Forging Acts" are the creative, applied <em>craft</em> of the foundry—the <em>proprietary result</em> of successfully identifying a "Path 3: Landmark."</p>
+            <p>This is the craft of the Landmark Smith, expressed in three primary acts:</p>
+            
+            <h4>Forging Act 1: Forging "The Portfolio" (Reforging the Pillars)</h4>
+            <p>This is the most direct application. The "Anvil" forges the <em>raw material</em> for a more sovereign web. It takes the <strong>Proof of the <code>Vivibyte</code></strong> and uses it to unearth and forge new assets that embody those pillars: <strong>Declaration, Connection, and The Ground</strong>.<sup>20</sup></p>
+
+            <h4>Forging Act 2: Forging "Digital Monuments" (The Proof-of-Work)</h4>
+            <p>This act takes the <strong>Warning of the <code>Umbrabyte</code></strong> ("rented land" leads to extinction) and forges the <em>solution</em>. The "Anvil" forges <em>Sovereign Monuments</em>—living case studies that prove the thesis. It demonstrates that "preservation" and "sovereignty" are inseparable.<sup>21</sup></p>
+
+            <h4>Forging Act 3: Forging "Future Frameworks" (The Intellectual Property)</h4>
+            <p>This is the most profound act. It takes the <strong>Lost Blueprints of the <code>Petribyte</code></strong> and uses them to forge <em>new, wiser systems for the future</em>. The "Anvil" studies the "Petribyte" of the "Blogroll" and forges <strong><code>Myceloom</code></strong>: a new framework for a "symbiotic web" that revives "human-scale" principles as a direct antidote to the "feed."<sup>22</sup></p>
+
+            <!-- === PART 4: THE DISCIPLINE === -->
+            <h2>Part 4: The Discipline (Archaeobytology)</h2>
+            <div class="prose-preamble">
+                <p>This synthesis of "Archive & Anvil"—a complete system with its own "Trowel" (Excavation Protocol) and "Microscope" (Triage Protocol)—creates a logical tension. The inherited name "Digital Archaeology" is a "flawed inheritance." It is a clunky modifier that is philosophically misleading and imprecise. A new discipline that defines its own artifact, classification system, and applied methodology requires its own name.</p>
+                <p>This essay does not "propose" a new field; it <em>documents</em> the formal name for an <em>existing</em> applied practice.</p>
+            </div>
+            
+            <h3>Section 4.1: The Insufficiency of Inherited Terms</h3>
+            <p>This framework must be distinguished from its predecessors. The "Media Archaeology" of scholars like Jussi Parikka and Wolfgang Ernst is a brilliant and necessary act of <em>curation</em>.<sup>23</sup> It masterfully excavates the "discursive formations" and "non-human agency" of media.<sup>24</sup></p>
+            <p>It is, however, a discipline of the <em>Archive</em>. It is a critical, scholarly framework for <em>excavation</em> that is largely silent on the practice of <em>craft</em>. It provides the "Trowel" but not the "Anvil."</p>
+            <p>This foundry's practice is not passive. The "Archaeologist-Smith" is not just a curator; they are a <em>maker</em>. The "Anvil" methodology, which culminates in "Forging Future Frameworks," demands a name that moves beyond the passivity of "study" (<em>-logia</em>) and incorporates the active, applied nature of its work.</p>
+
+            <h3>Section 4.2: Forging the Discipline: Archaeobytology</h3>
+            <p>Language must be forged to meet the demands of a new reality. A discipline is formally named by what it studies (the Greek suffix <em>-logia</em>, "the study of").</p>
+            <ul>
+                <li><code>Bio-</code> (Life) + <code>-logia</code> = <code>Biology</code> (The study of life).</li>
+                <li><code>Archaeo-</code> (Ancient) + <code>-logia</code> = <code>Archaeology</code> (The study of the ancient).</li>
+            </ul>
+            <p>This new lexicon, however, does not study <em>all</em> ancient things. Its entire focus, as defined in Part 1, is the study of a specific class of ancient things: the <strong><code>Archaeobyte</code></strong>.</p>
+            <p>Therefore, the only etymologically precise, philosophically sound, and logically inevitable term for this applied science is <strong><code>Archaeobytology</code></strong>.</p>
+            <p>(Greek: <strong>arkhaios (ἀρχαῖος)</strong>, "ancient" + <strong>byte</strong>, "digital substance" + <strong>-logia (-λογία)</strong>, "the study of")</p>
+            <p>This is <strong>"The Study of the Ancient Byte."</strong></p>
+            <p>This single, authoritative term resolves all the flaws of "Digital Archaeology." It is not a <em>subset</em>; it is a complete, standalone field. It is built not from a temporary modifier, but from the etymological root of the very artifact it studies.</p>
+
+            <h3>Conclusion: The Capstone of the Lexicon</h3>
+            <p>This manifesto is the "proof-of-work." It provided the evidence and the methodology. This final <em>synthesis</em> is the capstone.</p>
+            <p>The term <strong><code>Archaeobytology</code></strong> is the logical conclusion of the entire series. It is not merely a replacement for "Digital Archaeology"; it is the <em>synthesis</em> of the entire "Archive & Anvil" process, a final act of forging that gives a proper name to the discipline itself.</p>
+            <p>The "Trowel" is the <code>Excavation Protocol</code>. The "Microscope" is the <code>Triage Protocol</code>. The "Methodology" is <code>The Anvil</code>. The "Discipline" is <strong><code>Archaeobytology</code></strong>.</p>
+            
+            <!-- === MASTER WORKS CITED === -->
+            <h2>Works Cited</h2>
+            <ul class="works-cited-list">
+                <li><span>[1]</span><span>Liddell, H. G., & Scott, R. (1940). <em>A Greek-English Lexicon</em>. Clarendon Press. Entry for "ἀρχαῖος."</span></li>
+                <li><span>[2]</span><span>Buchholz, W. (1956). "The Link System." In <em>Proceedings of the IRE</em>, 44(9), 1189-1189.</span></li>
+                <li><span>[3]</span><span>Parikka, J. (2012). <em>What is Media Archaeology?</em> Polity Press.</span></li>
+                <li><span>[4]</span><span><em>Oxford Latin Dictionary</em>. (1968). Oxford University Press. Entry for "vīvus" (related to <em>vivere</em>, "to live").</span></li>
+                <li><span>[5]</span><span>Witt, S. (2015). <em>How Music Got Free: The End of an Industry, the Turn of the Century, and the Patient Zero of Piracy</em>. Viking.</span></li>
+                <li><span>[6]</span><span>Jobs, S. (2010, April). <em>Thoughts on Flash</em>. Apple Inc. Retrieved November 4, 2025.</span></li>
+                <li><span>[7]</span><span>"The Art of the NFO File." (n.d.). <em>Defacto2</em>. Retrieved November 4, 2025.</span></li>
+                <li><span>[8]</span><span>Turner, V. (1969). <em>The Ritual Process: Structure and Anti-Structure</em>. Aldine Publishing.</span></li>
+                <li><span>[9]</span><span><em>Oxford Latin Dictionary</em>. (1968). Oxford University Press. Entry for "umbra."</span></li>
+                <li><span>[10]</span><span>Archive Team. (n.d.). "GeoCities." <em>Archive Team Wiki</em>. Retrieved November 4, 2025.</span></li>
+                <li><span>[11]</span><span>Kray, C., & Reker, L. (2000). "The Geographies of GeoCities: virtual communities on the web." <em>Proceedings of the Ninth International World Wide Web Conference</em>.</span></li>
+                <li><span>[12]</span><span>"GameSpy multiplayer shutdown threatens old games." (2014, April 4). <em>IGN</em>. Retrieved November 4, 2025.</span></li>
+                <li><span>[13]</span><span>Donath, J. (2007). "Signaling in Social Supernets." <em>Journal of Computer-Mediated Communication</em>, 13(1), 231–251.</span></li>
+                <li><span>[14]</span><span>Liddell, H. G., & Scott, R. (1940). <em>A Greek-English Lexicon</em>. Clarendon Press. Entry for "πέτρα."</span></li>
+                <li><span>[15]</span><span>"Ruffle: A Flash Player emulator." (n.d.). <em>Ruffle.rs</em>. Retrieved November 4, 2025.</span></li>
+                <li><span>[16]</span><span>Turkle, S. (2011). <em>Alone Together: Why We Expect More from Technology and Less from Ourselves</em>. Basic Books.</span></li>
+                <li><span>[17]</span><span>Ratto, M. (2011). "Critical Making: Conceptual and Material Studies in Technology and Social Life." <em>The Information Society</em>, 27(4), 252-260.</span></li>
+                <li><span>[18]</span><span>"Anvil." (n.d.). <em>Online Etymology Dictionary</em>. Retrieved November 5, 2025.</span></li>
+                <li><span>[19]</span><span>"Code of Best Practices in Fair Use for Software Preservation." (2018). <em>Association of Research Libraries</em>.</span></li>
+                <li><span>[20]</span><span>unearth.im. (2025). "Lexicon: Archive & Anvil." <em>unearth.im Field Notes</em>. Retrieved November 4, 2025.</span></li>
+                <li><span>[21]</span><span>unearth.im. (2025). "The Digital Archaeologist's Toolkit." <em>unearth.im Field Notes</em>. Retrieved November 4, 2025.</span></li>
+                <li><span>[22]</span><span>unearth.im. (2025). "Myceloom: The Linguistic Infrastructure of Web4." <em>unearth.im Field Notes</em>. Retrieved November 4, 2025.</span></li>
+                <li><span>[23]</span><span>Parikka, J. (2012). <em>What is Media Archaeology?</em> Polity Press.</span></li>
+                <li><span>[24]</span><span>Ernst, W. (2013). <em>Digital Memory and the Archive</em>. University of Minnesota Press.</span></li>
+            </ul>
+        </article>
+
+    </main>
+
+    <!-- === Footer === -->
+    <footer class="mt-16 sm:mt-24 py-12 border-t border-unearth-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm text-unearth-secondary font-ui">
+                &copy; 2025   
+                <a href="https://unearth.im" class="font-semibold transition-colors group">
+                    <span class="text-unearth-main group-hover:text-unearth-primary">unearth</span><span class="text-unearth-primary">.im</span></a> | Archive & Anvil
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

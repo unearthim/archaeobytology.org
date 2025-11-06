@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Archaeobytology Theses: An Infographic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lora', serif;
+            background-color: #F8F7F4;
+            color: #2E2E2E;
+        }
+        .chart-container {
+            position: relative;
+            height: 300px;
+            max-height: 350px;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .chart-container-sm {
+            position: relative;
+            height: 250px;
+            max-height: 300px;
+            width: 100%;
+            max-width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.5rem;
+            border: 1px solid #D1D1D1;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+        .nav-link {
+            padding: 0.5rem 0.75rem;
+            border-radius: 0.375rem;
+            font-weight: 500;
+            color: #2E2E2E;
+            transition: all 0.2s ease-in-out;
+            font-family: 'Inter', sans-serif;
+        }
+        .nav-link:hover {
+            background-color: #F8F7F4;
+            color: #A95C3D;
+        }
+        .arrow {
+            font-size: 2.5rem;
+            line-height: 1;
+            color: #5A7D8C;
+        }
+        .flow-box {
+            border: 2px solid #D1D1D1;
+            background-color: #ffffff;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            font-weight: 600;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+            font-family: 'Inter', sans-serif;
+        }
+        .flow-box-accent {
+            background-color: #2E2E2E;
+            color: #F8F7F4;
+        }
+        .font-ui {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="">
+
+    <nav class="sticky top-0 z-50 bg-white bg-opacity-90 backdrop-blur-md border-b border-D1D1D1 shadow-sm font-ui">
+        <div class="container mx-auto max-w-7xl px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-xl font-bold text-[#A95C3D]">The Archaeobytology Series</div>
+                <div class="hidden md:flex space-x-1">
+                    <a href="#trowel" class="nav-link">The Trowel</a>
+                    <a href="#triage" class="nav-link">The Triage</a>
+                    <a href="#specimens" class="nav-link">The Specimens</a>
+                    <a href="#anvil" class="nav-link">The Anvil</a>
+                    <a href="#discipline" class="nav-link">The Discipline</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto p-4 md:p-8 max-w-7xl">
+
+        <header class="text-center my-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-[#2E2E2E] mb-4">The Archaeobytology Theses</h1>
+            <p class="text-xl md:text-2xl text-[#2E2E2E] text-opacity-80">A Visual Summary of the Archive & Anvil</p>
+        </header>
+
+        <!-- PART I: THE ARCHIVE -->
+        <div class="pt-12">
+            <h2 class="text-3xl font-bold text-center text-[#2E2E2E] opacity-75 font-ui uppercase tracking-widest">Part I: The Archive</h2>
+            <p class="text-xl text-center text-[#8E8E8E] mt-2 mb-10">The Work of Excavation & Classification</p>
+        </div>
+
+        <!-- SECTION 1: THE ARCHAEORYTE (THE TROWEL) -->
+        <section id="trowel" class="card">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-[#A95C3D] mb-4">1. The Trowel: The Archaeobyte</h2>
+                    <p class="mb-4">The work begins in a field of "undifferentiated dust." The digital past suffers a "crisis of noise"—overwhelming preservation without context. The first act is to create a "trowel" to make a "find."</p>
+                    <p class="mb-6">The <strong>Archaeobyte</strong> is that trowel. It is the foundational artifact, the discrete unit of discovery pulled from the digital strata.</p>
+                    
+                    <h3 class="text-xl font-semibold text-[#5A7D8C] mb-4">The Foundational Taxonomy</h3>
+                    <div class="flex flex-col space-y-4">
+                        <div class="flow-box flow-box-accent text-xl">The Archaeobyte</div>
+                        <div class="flex justify-center"><div class="arrow">↓</div></div>
+                        <div class="flex gap-4">
+                            <div class="flow-box w-1/2">
+                                Type 1: Tangible<br><span class="text-sm font-normal text-[#8E8E8E] font-ui">(The File: .mp3, .gif)</span>
+                            </div>
+                            <div class="flow-box w-1/2">
+                                Type 2: Conceptual<br><span class="text-sm font-normal text-[#8E8E8E] font-ui">(The Ghost: "Away Message")</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-center mb-2">The Crisis of Noise</h3>
+                    <div class="chart-container">
+                        <canvas id="dataGrowthChart"></canvas>
+                    </div>
+                    <p class="text-center text-sm text-[#8E8E8E] mt-2 font-ui">The volume of "digital dust" (data) vastly outpaces our ability to create "meaning" (context).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: THE TRIAGE (THE MICROSCOPE) -->
+        <section id="triage" class="card">
+            <h2 class="text-3xl font-bold text-[#A95C3D] mb-6 text-center">2. The Triage: The Microscope</h2>
+            <p class="max-w-3xl mx-auto text-center mb-10">Once the "find" (The Archaeobyte) is made, the "Triage" begins. This is the critical *first act* of classification, the "microscope" that turns a "find" into an "insight" by classifying its state. This act separates the living past from the fossilized past.</p>
+            
+            <div class="flex flex-col items-center">
+                <div class="flow-box flow-box-accent text-xl w-full max-w-xs">The Find: Archaeobyte</div>
+                <div class="arrow">↓</div>
+                <div class="flow-box text-xl w-full max-w-xs bg-[#5A7D8C] text-white border-[#5A7D8C]">The Triage</div>
+                
+                <div class="w-full max-w-3xl">
+                    <div class="flex justify-center mt-4">
+                        <div class="w-full border-t-2 border-[#D1D1D1]"></div>
+                    </div>
+                    <div class="flex justify-between -mt-[1px]">
+                        <div class="border-l-2 border-[#D1D1D1] h-8"></div>
+                        <div class="border-l-2 border-[#D1D1D1] h-8"></div>
+                        <div class="border-l-2 border-[#D1D1D1] h-8"></div>
+                    </div>
+                    <div class="flex justify-between text-center font-semibold text-[#2E2E2E]">
+                        <div class="w-1/3 px-2">
+                            <div class="arrow">↓</div>
+                            <div class="flow-box">State: Living</div>
+                        </div>
+                        <div class="w-1/3 px-2">
+                            <div class="arrow">↓</div>
+                            <div class="flow-box">State: Liminal</div>
+                        </div>
+                        <div class="w-1/3 px-2">
+                            <div class="arrow">↓</div>
+                            <div class="flow-box">State: Petrified</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: THE SPECIMEN BOX -->
+        <section id="specimens" class="card">
+            <h2 class="text-3xl font-bold text-[#A95C3D] mb-6 text-center">3. The Specimen Box: The Triage Classified</h2>
+            <p class="max-w-3xl mx-auto text-center mb-10">The Triage reveals three distinct classifications, each providing a core lesson. This is the "wisdom" of the Archive.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <div class="flex flex-col bg-[#F8F7F4] rounded-lg p-6 shadow-inner border border-[#D1D1D1]">
+                    <h3 class="text-2xl font-bold text-[#5A7D8C] mb-4 text-center">The Vivibyte (Living)</h3>
+                    <p class="text-center font-semibold mb-4 text-sm font-ui">"The Living DNA / Seed Bank"</p>
+                    <p class="text-sm mb-4">A "Living Archaeobyte" whose native function is still intact. (e.g., `.mp3`, `HTML 4.01`, `README.txt`).</p>
+                    <div class="chart-container-sm" style="height:200px;">
+                        <canvas id="vivibyteChart"></canvas>
+                    </div>
+                    <p class="text-center text-sm text-[#8E8E8E] mt-2 font-ui">Its survival is proof of its core traits.</p>
+                    <div class="mt-auto pt-4 text-center">
+                        <div class="text-sm text-[#8E8E8E] font-ui">The Lesson:</div>
+                        <div class="text-lg font-bold text-[#5A7D8C]">The Proof of Resilience</div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col bg-[#F8F7F4] rounded-lg p-6 shadow-inner border border-[#D1D1D1]">
+                    <h3 class="text-2xl font-bold text-[#A95C3D] mb-4 text-center">The Umbrabyte (Liminal)</h3>
+                    <p class="text-center font-semibold mb-4 text-sm font-ui">"The Fly in Amber / The Warning"</p>
+                    <p class="text-sm mb-4">A "Liminal Archaeobyte" whose file is "living" but whose ecosystem is "petrified." (e.g., GeoCities, Vine).</p>
+                    <div class="chart-container-sm" style="height:200px;">
+                        <canvas id="umbrabyteChart"></canvas>
+                    </div>
+                    <p class="text-center text-sm text-[#8E8E8E] mt-2 font-ui">The state of a GeoCities Homepage (file vs. function).</p>
+                    <div class="mt-auto pt-4 text-center">
+                        <div class="text-sm text-[#8E8E8E] font-ui">The Lesson:</div>
+                        <div class="text-lg font-bold text-[#A95C3D]">The Warning of "Rented Land"</div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col bg-[#F8F7F4] rounded-lg p-6 shadow-inner border border-[#D1D1D1]">
+                    <h3 class="text-2xl font-bold text-[#2E2E2E] mb-4 text-center">The Petribyte (Petrified)</h3>
+                    <p class="text-center font-semibold mb-4 text-sm font-ui">"The Fossil of Function / The Blueprint"</p>
+                    <p class="text-sm mb-4">A "Petrified Archaeobyte" whose function is extinct, "turned to stone." (e.g., "Away Message", "Webring").</p>
+                    <div class="chart-container-sm" style="height:200px;">
+                        <canvas id="petribyteChart"></canvas>
+                    </div>
+                    <p class="text-center text-sm text-[#8E8E8E] mt-2 font-ui">Its native function is completely obsolete.</p>
+                    <div class="mt-auto pt-4 text-center">
+                        <div class="text-sm text-[#8E8E8E] font-ui">The Lesson:</div>
+                        <div class="text-lg font-bold text-[#2E2E2E]">The Lost Blueprint of a Wiser Web</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SECTION 4: THE ANVIL -->
+        <section id="anvil-wrapper" class="pt-12">
+            <h2 class="text-3xl font-bold text-center text-[#2E2E2E] opacity-75 font-ui uppercase tracking-widest">Part II: The Anvil</h2>
+            <p class="text-xl text-center text-[#8E8E8E] mt-2 mb-10">The Work of Applied Practice & Creation</p>
+            
+            <div id="anvil" class="card">
+                <h2 class="text-3xl font-bold text-[#A95C3D] mb-6 text-center">4. The Anvil: The Applied Practice</h2>
+                <p class="max-w-3xl mx-auto text-center mb-12">The "Archive" is preservation; the "Anvil" is creation. This is the "so what." The "Anvil" is where the lessons from the Archive are forged into tools for the future. This is the craft of the Landmark Smith.</p>
+                
+                <!-- 4.1: The Lessons -->
+                <h3 class="text-2xl font-bold text-center text-[#2E2E2E] mb-4 font-ui">4.1: The Lessons (The "Input")</h3>
+                <p class="max-w-2xl mx-auto text-center text-sm text-[#8E8E8E] mb-8 font-ui">The wisdom extracted from the Archive becomes the input for the Anvil.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+                     <div class="flow-box border-[#5A7D8C] text-[#5A7D8C]">
+                        Lesson 1: The Proof<br><span class="text-sm font-normal text-[#8E8E8E] font-ui">(from The Vivibyte)</span>
+                    </div>
+                     <div class="flow-box border-[#A95C3D] text-[#A95C3D]">
+                        Lesson 2: The Warning<br><span class="text-sm font-normal text-[#8E8E8E] font-ui">(from The Umbrabyte)</span>
+                    </div>
+                     <div class="flow-box border-[#2E2E2E] text-[#2E2E2E]">
+                        Lesson 3: The Blueprint<br><span class="text-sm font-normal text-[#8E8E8E] font-ui">(from The Petribyte)</span>
+                    </div>
+                </div>
+
+                <!-- 4.2: The Triage Protocol -->
+                <h3 class="text-2xl font-bold text-center text-[#2E2E2E] mb-4 font-ui">4.2: The Triage Protocol (The "Process")</h3>
+                <p class="max-w-2xl mx-auto text-center text-sm text-[#8E8E8E] mb-8 font-ui">A formal, open-source decision engine to classify a "find" and determine its path.</p>
+                
+                <div class="flex justify-center mb-4">
+                    <div class="flow-box flow-box-accent">Phase 1: Classification (The "What")</div>
+                </div>
+                <p class="text-center mb-6 font-ui text-sm">Classify the artifact's state to define the preservation strategy.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                    <div class="bg-[#F8F7F4] p-4 rounded-lg text-center shadow-inner">
+                        <div class="font-bold text-[#5A7D8C]">Vivibyte (Living)</div>
+                        <div class="text-sm text-[#8E8E8E] font-ui">Strategy: Episodic Capture</div>
+                    </div>
+                    <div class="bg-[#F8F7F4] p-4 rounded-lg text-center shadow-inner">
+                        <div class="font-bold text-[#A95C3D]">Umbrabyte (Liminal)</div>
+                        <div class="text-sm text-[#8E8E8E] font-ui">Strategy: Discrete Capture & Context</div>
+                    </div>
+                    <div class="bg-[#F8F7F4] p-4 rounded-lg text-center shadow-inner">
+                        <div class="font-bold text-[#2E2E2E]">Petribyte (Fossilized)</div>
+                        <div class="text-sm text-[#8E8E8E] font-ui">Strategy: Object Migration & Reconstruction</div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center my-4"><div class="arrow">↓</div></div>
+                <div class="flex justify-center mb-4">
+                    <div class="flow-box flow-box-accent">Phase 2: Preservation Triage (The "How & Can I")</div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div>
+                        <h4 class="text-lg font-semibold text-[#5A7D8C] text-center mb-2">Filter A: Contextual</h4>
+                        <div class="space-y-3">
+                            <div class="flow-box">Path 1: Object-based<br><span class="text-sm font-normal text-[#8E8E8E] font-ui">Action: Migration</span></div>
+                            <div class="flow-box">Path 2: Experience-based<br><span class="text-sm font-normal text-[#8E8E8E] font-ui">Action: Emulation</span></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-[#5A7D8C] text-center mb-2">Filter B: Custodial</h4>
+                        <div class="space-y-3">
+                            <div class="flow-box">Question: Privacy (PII)?<br><span class="text-sm font-normal text-[#8E8E8E] font-ui">Action: Redact or Embargo</span></div>
+                            <div class="flow-box">Question: Copyright?<br><span class="text-sm font-normal text-[#8E8E8E] font-ui">Action: Cite & "Fair Use"</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center my-4"><div class="arrow">↓</div></div>
+                <div class="flex justify-center mb-4">
+                    <div class="flow-box flow-box-accent">Phase 3: Academic Synthesis (The "So What")</div>
+                </div>
+                <p class="text-center mb-6 font-ui text-sm">Determine the artifact's final scholarly output and value.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+                    <div class="bg-[#F8F7F4] p-4 rounded-lg text-center shadow-inner">
+                        <div class="font-bold text-[#8E8E8E]">Path 1: Digital Dust</div>
+                        <div class="text-sm text-[#8E8E8E] font-ui">(No Resonance) → Action: Archive</div>
+                    </div>
+                    <div class="bg-[#F8F7F4] p-4 rounded-lg text-center shadow-inner">
+                        <div class="font-bold text-[#5A7D8C]">Path 2: Curio</div>
+                        <div class="text-sm text-[#8E8E8E] font-ui">(Resonance, No Rigor) → Action: Preserve & Document</div>
+                    </div>
+                    <div class="bg-[#F8F7F4] p-4 rounded-lg text-center shadow-inner">
+                        <div class="font-bold text-[#A95C3D]">Path 3: Landmark</div>
+                        <div class="text-sm text-[#8E8E8E] font-ui">(Resonance & Rigor) → Action: Amplify & Synthesize</div>
+                    </div>
+                </div>
+
+                <!-- 4.3: The Forging Acts -->
+                <h3 class="text-2xl font-bold text-center text-[#2E2E2E] mb-4 font-ui">4.3: The Forging Acts (The "Output")</h3>
+                <p class="max-w-2xl mx-auto text-center text-sm text-[#8E8E8E] mb-8 font-ui">The foundry's proprietary application, turning the "Curio" and "Landmark" paths into tangible assets.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="flow-box">
+                        Forging "The Portfolio"<br><span class="text-sm font-normal text-[#8E8E8E] font-ui">(Reforging the Pillars)</span>
+                    </div>
+                    <div class="flow-box">
+                        Forging "Digital Monuments"<br><span class="text-sm font-normal text-[#8E8E8E] font-ui">(Output of "Curio" Path)</span>
+                    </div>
+                    <div class="flow-box">
+                        Forging "Future Frameworks"<br><span class="text-sm font-normal text-[#8E8E8E] font-ui">(Output of "Landmark" Path)</span>
+                    </div>
+                </div>
+            
+                <p class="text-center text-lg font-semibold text-[#2E2E2E] mt-16">The Archive excavates wisdom. The Triage Protocol processes it. The Forging Acts create with it.</p>
+            </div>
+        </section>
+
+        <!-- SECTION 5: THE DISCIPLINE -->
+        <section id="discipline-wrapper" class="pt-12">
+            <h2 class="text-3xl font-bold text-center text-[#2E2E2E] opacity-75 font-ui uppercase tracking-widest">Part III: The Discipline</h2>
+            <p class="text-xl text-center text-[#8E8E8E] mt-2 mb-10">The Synthesis of the Work</p>
+            
+            <div id="discipline" class="card bg-[#2E2E2E] text-white">
+                <h2 class="text-3xl font-bold text-[#A95C3D] mb-6 text-center">5. The Discipline: Archaeobytology</h2>
+                <p class="max-w-3xl mx-auto text-center text-[#D1D1D1] mb-10">The preceding theses define a complete system. A discipline with its own unique artifact, classification, and methodology requires its own name. "Digital Archaeology" is imprecise. The logical capstone is the synthesis of the work itself.</p>
+
+                <div class="flex flex-col md:flex-row justify-center items-center gap-4 text-center text-xl md:text-2xl font-bold">
+                    <div class="flow-box !bg-white !text-[#2E2E2E] p-4">The Trowel<br><span class="text-sm font-normal text-[#8E8E8E] font-ui">(The Archaeobyte)</span></div>
+                    <div class="arrow text-[#5A7D8C]">+</div>
+                    <div class="flow-box !bg-white !text-[#2E2E2E] p-4">The Microscope<br><span class="text-sm font-normal text-[#8E8E8E] font-ui">(The Triage)</span></div>
+                    <div class="arrow text-[#5A7D8C]">+</div>
+                    <div class="flow-box !bg-white !text-[#2E2E2E] p-4">The Methodology<br><span class="text-sm font-normal text-[#8E8E8E] font-ui">(The Anvil)</span></div>
+                </div>
+                
+                <div class="flex justify-center my-4">
+                    <div class="arrow text-[#5A7D8C]">↓</div>
+                </div>
+
+                <div class="flow-box !bg-[#A95C3D] !text-white text-3xl font-bold max-w-lg mx-auto p-6 rounded-lg">
+                    Archaeobytology
+                    <div class="text-lg font-normal text-white text-opacity-80 mt-2 font-ui">"The Study of the Ancient Byte"</div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center mt-12 mb-4">
+            <p class="text-sm text-[#8E8E8E] font-ui">Based on the "Archaeobytology" series of foundational theses.</p>
+        </footer>
+
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const colors = {
+                burntSienna: '#A95C3D',
+                slateBlue: '#5A7D8C',
+                charcoal: '#2E2E2E',
+                lightStone: '#D1D1D1',
+                mediumStone: '#8E8E8E',
+                parchment: '#F8F7F4',
+                siennaFaded: 'rgba(169, 92, 61, 0.15)',
+                blueFaded: 'rgba(90, 125, 140, 0.15)'
+            };
+
+            const tooltipTitleCallback = (tooltipItems) => {
+                const item = tooltipItems[0];
+                let label = item.chart.data.labels[item.dataIndex];
+                if (Array.isArray(label)) {
+                    return label.join(' ');
+                } else {
+                    return label;
+                }
+            };
+
+            const wrapText = (str, maxWidth = 16) => {
+                if (!str || str.length <= maxWidth) {
+                    return str;
+                }
+                const words = str.split(' ');
+                let lines = [];
+                let currentLine = '';
+                for (const word of words) {
+                    if ((currentLine + ' ' + word).trim().length > maxWidth) {
+                        if(currentLine.length > 0) {
+                            lines.push(currentLine.trim());
+                        }
+                        currentLine = word;
+                    } else {
+                        currentLine = (currentLine + ' ' + word).trim();
+                    }
+                }
+                if (currentLine.length > 0) {
+                    lines.push(currentLine.trim());
+                }
+                return lines.filter(line => line.length > 0);
+            };
+
+            const chartOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: { color: colors.charcoal, font: { family: "'Inter', sans-serif" } }
+                    },
+                    tooltip: {
+                        callbacks: { title: tooltipTitleCallback },
+                        bodyFont: { family: "'Inter', sans-serif" },
+                        titleFont: { family: "'Inter', sans-serif" }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: colors.mediumStone, font: { family: "'Inter', sans-serif" } },
+                        grid: { color: colors.lightStone, drawBorder: false }
+                    },
+                    x: {
+                        ticks: { color: colors.mediumStone, font: { family: "'Inter', sans-serif" } },
+                        grid: { display: false, drawBorder: false }
+                    }
+                }
+            };
+            
+            const pieChartOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: { color: colors.charcoal, font: { family: "'Inter', sans-serif" } }
+                    },
+                    tooltip: {
+                        callbacks: { title: tooltipTitleCallback },
+                        bodyFont: { family: "'Inter', sans-serif" },
+                        titleFont: { family: "'Inter', sans-serif" }
+                    }
+                }
+            };
+
+            createDataGrowthChart();
+            createVivibyteChart();
+            createUmbrabyteChart();
+            createPetribyteChart();
+
+            function createDataGrowthChart() {
+                const ctx = document.getElementById('dataGrowthChart')?.getContext('2d');
+                if (!ctx) return;
+                new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: ['2015', '2017', '2019', '2021', '2023', '2025 (est)'],
+                        datasets: [{
+                            label: 'Volume of "Digital Dust"',
+                            data: [10, 22, 41, 64, 120, 181],
+                            borderColor: colors.burntSienna,
+                            backgroundColor: colors.siennaFaded,
+                            fill: true,
+                            tension: 0.3
+                        }, {
+                            label: 'Context & Meaning',
+                            data: [1.5, 1.8, 2, 2.2, 2.5, 2.7],
+                            borderColor: colors.slateBlue,
+                            backgroundColor: colors.blueFaded,
+                            fill: true,
+                            tension: 0.3
+                        }]
+                    },
+                    options: chartOptions
+                });
+            }
+            
+            function createVivibyteChart() {
+                const ctx = document.getElementById('vivibyteChart')?.getContext('2d');
+                if (!ctx) return;
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: [wrapText('Openness'), wrapText('Simplicity'), wrapText('User-Centric')],
+                        datasets: [{
+                            label: 'Resilience Score',
+                            data: [95, 90, 85],
+                            backgroundColor: [colors.slateBlue, colors.slateBlue, colors.slateBlue],
+                            barPercentage: 0.7
+                        }]
+                    },
+                    options: { 
+                        ...chartOptions, 
+                        plugins: { ...chartOptions.plugins, legend: { display: false } },
+                        scales: { ...chartOptions.scales, y: { max: 100, ticks: { color: colors.mediumStone, font: { family: "'Inter', sans-serif" } }, grid: { color: colors.lightStone, drawBorder: false } } }
+                    }
+                });
+            }
+
+            function createUmbrabyteChart() {
+                const ctx = document.getElementById('umbrabyteChart')?.getContext('2d');
+                if (!ctx) return;
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: [wrapText('GeoCities Homepage State')],
+                        datasets: [{
+                            label: 'File (HTML/GIF)',
+                            data: [80],
+                            backgroundColor: colors.slateBlue,
+                        }, {
+                            label: 'Ecosystem (CGI/Webring)',
+                            data: [20],
+                            backgroundColor: colors.mediumStone,
+                        }]
+                    },
+                    options: { 
+                        ...chartOptions,
+                        scales: {
+                            y: { stacked: true, max: 100, ticks: { callback: (value) => value + '%', color: colors.mediumStone, font: { family: "'Inter', sans-serif" } }, grid: { color: colors.lightStone, drawBorder: false } },
+                            x: { stacked: true, ticks: { color: colors.mediumStone, font: { family: "'Inter', sans-serif" } }, grid: { display: false, drawBorder: false } }
+                        }
+                    }
+                });
+            }
+            
+            function createPetribyteChart() {
+                const ctx = document.getElementById('petribyteChart')?.getContext('2d');
+                if (!ctx) return;
+                new Chart(ctx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Petrified (Function Extinct)'],
+                        datasets: [{
+                            data: [100],
+                            backgroundColor: [colors.charcoal],
+                        }]
+                    },
+                    options: { ...pieChartOptions, plugins: { ...pieChartOptions.plugins, legend: { display: false } } }
+                });
+            }
+
+        });
+    </script>
+</body>
+</html>

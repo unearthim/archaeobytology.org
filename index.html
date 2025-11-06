@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- === 1. Primary Meta Tags === -->
+    <title>Archaeobytology: The Study of the Ancient Byte</title>
+    <meta name="title" content="Archaeobytology: The Study of the Ancient Byte">
+    <meta name="description" content="A foundational series on the excavation, classification, and application of digital artifacts.">
+    <meta name="keywords" content="Archaeobytology, Digital Archaeology, Archaeobyte, Vivibyte, Umbrabyte, Petribyte, Anvil, Triage Protocol, Digital Preservation">
+    <meta name="author" content="archaeobytology.org (An unearth.im Project)">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <link rel="canonical" href="https://archaeobytology.org/" />
+
+    <!-- === 2. Webmention Endpoint === -->
+    <link rel="webmention" href="https://webmention.io/unearth.im/webmention" />
+
+    <!-- === 3. Open Graph / Facebook === -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://archaeobytology.org/">
+    <meta property="og:title" content="Archaeobytology: The Study of the Ancient Byte">
+    <meta property="og:description" content="A foundational series on the excavation, classification, and application of digital artifacts.">
+    <meta property="og:image" content="https://archaeobytology.org/og-image.png">
+    <meta property="og:site_name" content="Archaeobytology.org">
+
+    <!-- === 4. Twitter Card === -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://archaeobytology.org/">
+    <meta property="twitter:title" content="Archaeobytology: The Study of the Ancient Byte">
+    <meta property="twitter:description" content="A foundational series on the excavation, classification, and application of digital artifacts.">
+    <meta property="twitter:image" content="https://archaeobytology.org/og-image.png">
+
+    <!-- === Favicons === -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta name="theme-color" content="#fcfaf5">
+    <meta name="msapplication-TileColor" content="#BF5700">
+
+    <!-- === Tailwind CSS === -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- 
+      FIX: Custom Tailwind Configuration MUST come AFTER loading the Tailwind script.
+      This ensures the 'tailwind' object exists before we try to configure it.
+    -->
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            // Earthy Modernism Palette
+            'unearth-bg': '#fcfaf5',       // Warm, pale off-white (Page Background)
+            'unearth-surface': '#f9fafb', // Light, neutral grey (Card Background - VISIBLE)
+            'unearth-main': '#1a1a1a',      // Charcoal (Main Text)
+            'unearth-secondary': '#6b7280', // Muted Stone Grey (Secondary Text)
+            'unearth-primary': '#BF5700',   // Burnt Sienna (Accent Color)
+            'unearth-border': '#e5e7eb',    // Light grey (Borders)
+          },
+          fontFamily: {
+            'narrative': ['Lora', 'serif'],
+            'ui': ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+    </script>
+
+    <!-- === Google Fonts: Lora & Inter === -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+</head>
+<body class="bg-unearth-bg text-unearth-main antialiased font-ui">
+
+    <!-- === Header === -->
+    <nav class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div class="flex justify-between items-center">
+            <!-- Logo / Title -->
+            <a href="index.html" title="Back to unearth.im" class="flex items-baseline space-x-2 group">
+                <span class="text-2xl font-bold tracking-tighter text-unearth-main group-hover:text-unearth-primary transition-colors font-narrative">archaeobytology</span>
+                <span class="text-xl font-bold text-unearth-primary font-narrative">.org</span>
+            </a>
+            <!-- Attribution Link -->
+            <div>
+                <span class="text-sm text-unearth-secondary hidden sm:inline">
+               an 
+                <a href="https://unearth.im" class="font-semibold transition-colors group">
+                    <span class="text-unearth-main group-hover:text-unearth-primary">unearth</span><span class="text-unearth-primary">.im</span></a> 
+        series    
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- === Hero Section === -->
+    <header class="py-24 sm:py-32 border-b border-unearth-border">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl sm:text-7xl font-bold tracking-tighter text-unearth-main leading-tight font-narrative">
+                The Archaeobyte Papers
+            </h1>
+            <p class="mt-6 text-xl sm:text-2xl text-unearth-secondary max-w-3xl mx-auto font-narrative" style="line-height: 1.8;">
+                A foundational series on Digital Archaeology, defining the core lexicon for unearthing and classifying the artifacts of the digital past.
+            </p>
+        </div>
+    </header>
+
+    <!-- === Main Content: Thesis Index === -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+        
+        <!-- === Cornerstone Theses Section === -->
+        <section>
+            <h2 class="text-4xl font-bold tracking-tight text-unearth-main font-narrative text-center">
+                The Cornerstone Theses
+            </h2>
+            
+            <!-- 
+              Container for the single-column layout.
+              'max-w-2xl' makes the cards narrower and more readable.
+            -->
+            <div class="mt-12 space-y-8 max-w-2xl mx-auto">
+                
+
+                <!-- Thesis 1: The Archaeobyte -->
+                <a href="archaeobyte.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-8 transition-all duration-200 hover:shadow-lg">
+                    <h3 class="text-3xl font-bold tracking-tight text-unearth-main font-narrative">
+                        The Archaeobyte
+                    </h3>
+                    <p class="mt-3 text-lg text-unearth-secondary font-narrative" style="line-height: 1.8;">
+                        A Foundational Thesis on the Artifacts of the Digital Past. Defining the "trowel" and the "undifferentiated dust."
+                    </p>
+                    <p class="mt-6 text-lg font-semibold text-unearth-primary font-ui">
+                        Read Thesis &rarr;
+                    </p>
+                </a>
+
+                <!-- Thesis 2: The Vivibyte -->
+                <a href="vivibyte.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-8 transition-all duration-200 hover:shadow-lg">
+                    <h3 class="text-3xl font-bold tracking-tight text-unearth-main font-narrative">
+                        The Vivibyte
+                    </h3>
+                    <p class="mt-3 text-lg text-unearth-secondary font-narrative" style="line-height: 1.8;">
+                        A Foundational Thesis on the "Living" Artifacts of the Digital Past. The "gold coin" and the "living DNA."
+                    </p>
+                    <p class="mt-6 text-lg font-semibold text-unearth-primary font-ui">
+                        Read Thesis &rarr;
+                    </p>
+                </a>
+
+                <!-- Thesis 3: The Umbrabyte -->
+                <a href="umbrabyte.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-8 transition-all duration-200 hover:shadow-lg">
+                    <h3 class="text-3xl font-bold tracking-tight text-unearth-main font-narrative">
+                        The Umbrabyte
+                    </h3>
+                    <p class="mt-3 text-lg text-unearth-secondary font-narrative" style="line-height: 1.8;">
+                        A Foundational Thesis on the "Liminal" Artifacts. The "fly in amber" and the "fossil of community."
+                    </p>
+                    <p class="mt-6 text-lg font-semibold text-unearth-primary font-ui">
+                        Read Thesis &rarr;
+                    </p>
+                </a>
+
+                <!-- Thesis 4: The Petribyte -->
+                <a href="petribyte.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-8 transition-all duration-200 hover:shadow-lg">
+                    <h3 class="text-3xl font-bold tracking-tight text-unearth-main font-narrative">
+                        The Petribyte
+                    </h3>
+                    <p class="mt-3 text-lg text-unearth-secondary font-narrative" style="line-height: 1.8;">
+                        A Foundational Thesis on the "Fossils" of the Digital Age. The "Away Message" and the "fossil of function."
+                    </p>
+                    <p class="mt-6 text-lg font-semibold text-unearth-primary font-ui">
+                        Read Thesis &rarr;
+                    </p>
+                </a>
+
+                <!-- Thesis 5: The Anvil -->
+                <a href="anvil.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-8 transition-all duration-200 hover:shadow-lg">
+                    <h3 class="text-3xl font-bold tracking-tight text-unearth-main font-narrative">
+                        The Anvil
+                    </h3>
+                    <p class="mt-3 text-lg text-unearth-secondary font-narrative" style="line-height: 1.8;">
+                        A Foundational Thesis on Applied Digital Archaeology. The "so what?" and the purpose of the Archive.
+                    </p>
+                    <p class="mt-6 text-lg font-semibold text-unearth-primary font-ui">
+                        Read Thesis &rarr;
+                    </p>
+                </a>
+                
+                <!-- Thesis 6: Archaeobytology -->
+                <a href="archaeobytology.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-8 transition-all duration-200 hover:shadow-lg">
+                    <h3 class="text-3xl font-bold tracking-tight text-unearth-main font-narrative">
+                        Archaeobytology
+                    </h3>
+                    <p class="mt-3 text-lg text-unearth-secondary font-narrative" style="line-height: 1.8;">
+                        The Final Synthesis. The "Aha!" moment that forges the name of the discipline itself: "The Study of the Ancient Byte."
+                    </p>
+                    <p class="mt-6 text-lg font-semibold text-unearth-primary font-ui">
+                        Read Thesis &rarr;
+                    </p>
+                </a>
+                <!-- Manifesto 
+                <a href="manifesto.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-8 transition-all duration-200 hover:shadow-lg">
+                    <h3 class="text-3xl font-bold tracking-tight text-unearth-main font-narrative">
+                        The Archaeobytology Manifesto
+                    </h3>
+                    <p class="mt-3 text-lg text-unearth-secondary font-narrative" style="line-height: 1.8;">
+                        The complete, foundational series on the excavation, classification, and application of digital artifacts.
+                    </p>
+                    <p class="mt-6 text-lg font-semibold text-unearth-primary font-ui">
+                        Read the Manifesto &rarr;
+                    </p>
+                </a> -->
+
+            </div>
+        </section>
+
+        <!-- === Visual Summaries Section === -->
+        <section class="mt-16 sm:mt-24">
+            <h2 class="text-4xl font-bold tracking-tight text-unearth-main font-narrative text-center">
+                Visual Summaries
+            </h2>
+            
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4x3 mx-auto">
+                
+                <!-- Infographic 1: The Theses -->
+                <a href="infographic.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-8 transition-all duration-200 hover:shadow-lg">
+                    <h3 class="text-3xl font-bold tracking-tight text-unearth-main font-narrative">
+                        Archaeobytology Framework
+                    </h3>
+                    <p class="mt-3 text-lg text-unearth-secondary font-narrative" style="line-height: 1.8;">
+                        A visual summary of the complete Archaeobytology framework, from the Trowel to the Anvil.
+                    </p>
+                    <p class="mt-6 text-lg font-semibold text-unearth-primary font-ui">
+                        View Infographic &rarr;
+                    </p>
+                </a>
+
+                <!-- Infographic 2: The Protocols -->
+                <a href="triage-protocol-infographic.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-8 transition-all duration-200 hover:shadow-lg">
+                    <h3 class="text-3xl font-bold tracking-tight text-unearth-main font-narrative">
+                        The Anvil Triage Protocol
+                    </h3>
+                    <p class="mt-3 text-lg text-unearth-secondary font-narrative" style="line-height: 1.8;">
+                        A decision tree for practitioners to classify a "find" and determine its path.
+                    </p>
+                    <p class="mt-6 text-lg font-semibold text-unearth-primary font-ui">
+                        View Infographic &rarr;
+                    </p>
+                </a>
+
+                                <!-- Infographic 2: The Protocols -->
+                <a href="excavation-protocol-infographic.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-8 transition-all duration-200 hover:shadow-lg">
+                    <h3 class="text-3xl font-bold tracking-tight text-unearth-main font-narrative">
+                        Excavation Protocol
+                    </h3>
+                    <p class="mt-3 text-lg text-unearth-secondary font-narrative" style="line-height: 1.8;">
+                        A decision tree for practitioners to determine how to sift through digital dust.
+                    </p>
+                    <p class="mt-6 text-lg font-semibold text-unearth-primary font-ui">
+                        View Infographic &rarr;
+                    </p>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- === Footer === -->
+    <footer class="mt-16 sm:mt-24 py-12 border-t border-unearth-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm text-unearth-secondary font-ui">
+                &copy; 2025   
+                <a href="https://unearth.im" class="font-semibold transition-colors group">
+                    <span class="text-unearth-main group-hover:text-unearth-primary">unearth</span><span class="text-unearth-primary">.im</span></a> | Archive & Anvil
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
