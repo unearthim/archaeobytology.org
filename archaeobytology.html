@@ -4,31 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- === Primary Meta Tags === -->
-    <title>Archaeobytology: The Discipline | The Archaeobyte Papers</title>
-    <meta name="title" content="Archaeobytology: The Discipline | The Archaeobyte Papers">
-    <meta name="description" content="The Final Synthesis. The 'Aha!' moment that forges the name of the discipline itself.">
-    <meta name="keywords" content="Digital Archaeology, Archaeobytology, Archaeobyte Papers">
-    <meta name="author" content="unearth.im">
+    <!-- === 1. Primary Meta Tags === -->
+    <title>Archaeobytology | A Foundational Thesis</title>
+    <meta name="title" content="Archaeobytology | A Foundational Thesis">
+    <meta name="description" content="The capstone thesis for the Archaeobyte series, defining the new discipline of 'Archaeobytology'—the study of the ancient byte.">
+    <meta name="keywords" content="Archaeobytology, Archaeobyte, Digital Archaeology, Media Archaeology, Petribyte, Umbrabyte, Vivibyte, The Anvil">
+    <meta name="author" content="archaeobytology.org (An unearth.im Project)">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
+    <link rel="canonical" href="https://archaeobytology.org/archaeobytology.html" />
 
-    <!-- === Open Graph / Twitter === -->
-    <meta property="og:title" content="Archaeobytology: The Discipline | The Archaeobyte Papers">
-    <meta property="og:description" content="The Final Synthesis. The 'Aha!' moment that forges the name of the discipline itself.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://unearth.im/papers/archaeobytology">
-    <meta property="og:image" content="https://unearth.im/og-image-papers.png"> 
+    <!-- === 2. Webmention Endpoint === -->
+    <link rel="webmention" href="https://webmention.io/unearth.im/webmention" />
+
+    <!-- === 3. Open Graph / Facebook === -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://archaeobytology.org/archaeobytology.html">
+    <meta property="og:title" content="Archaeobytology | A Foundational Thesis">
+    <meta property="og:description" content="The capstone thesis for the Archaeobyte series, defining the new discipline of 'Archaeobytology'—the study of the ancient byte.">
+    <meta property="og:image" content="https://archaeobytology.org/og-image.png">
+    <meta property="og:site_name" content="Archaeobytology.org">
+
+    <!-- === 4. Twitter Card === -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Archaeobytology: The Discipline | The Archaeobyte Papers">
-    <meta property="twitter:description" content="The Final Synthesis. The 'Aha!' moment that forges the name of the discipline itself.">
-    <meta property="twitter:image" content="https://unearth.im/og-image-papers.png">
+    <meta property="twitter:url" content="https://archaeobytology.org/archaeobytology.html">
+    <meta property="twitter:title" content="Archaeobytology | A Foundational Thesis">
+    <meta property="twitter:description" content="The capstone thesis for the Archaeobyte series, defining the new discipline of 'Archaeobytology'—the study of the ancient byte.">
+    <meta property="twitter:image" content="https://archaeobytology.org/og-image.png">
 
     <!-- === Favicons === -->
-    <link rel="icon" href="https://unearth.im/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="https://unearth.im/apple-touch-icon.png">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <meta name="theme-color" content="#fcfaf5">
+    <meta name="msapplication-TileColor" content="#BF5700">
 
     <!-- === Tailwind CSS === -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -82,6 +91,15 @@
             margin-top: 3rem; /* mt-12 */
             margin-bottom: 1.5rem; /* mb-6 */
         }
+        .prose h4 {
+            font-size: 1.25rem; /* text-xl */
+            line-height: 1.75rem; /* leading-7 */
+            font-weight: 700;
+            color: #1a1a1a; /* unearth-main */
+            font-family: 'Lora', serif;
+            margin-top: 2.5rem; /* mt-10 */
+            margin-bottom: 1rem; /* mb-4 */
+        }
         .prose p {
             font-size: 1.25rem; /* text-xl */
             font-family: 'Lora', serif;
@@ -118,7 +136,7 @@
             margin-top: 1rem; /* space-y-4 */
         }
         .prose li span:first-child {
-            width: 2.5rem; /* w-10 */
+            width: 10rem; /* w-40 -- UPPED FROM w-10 TO FIX WRAP */
             flex-shrink: 0;
             font-size: 0.875rem; /* text-sm */
             margin-top: 0.25rem; /* mt-1 */
@@ -130,6 +148,15 @@
         }
         .prose-preamble p {
              color: #6b7280; /* unearth-secondary */
+        }
+        .prose code {
+            background-color: #e5e7eb; /* unearth-border */
+            padding: 0.125rem 0.375rem; /* px-1.5 py-0.5 */
+            border-radius: 0.25rem; /* rounded */
+            font-size: 1rem; /* text-base */
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            color: #BF5700; /* unearth-primary */
         }
     </style>
 
@@ -160,10 +187,10 @@
     <header class="py-24 sm:py-32 border-b border-unearth-border">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 class="text-5xl sm:text-7xl font-bold tracking-tighter text-unearth-main leading-tight font-narrative">
-                Archaeobytology: The Discipline
+                Archaeobytology
             </h1>
             <p class="mt-6 text-xl sm:text-2xl text-unearth-secondary max-w-3xl mx-auto font-narrative" style="line-height: 1.8;">
-                Preamble: The Final Synthesis
+                A Foundational Thesis on the Discipline of the Ancient Byte
             </p>
         </div>
     </header>
@@ -178,53 +205,106 @@
             </a>
         </div>
         
-        <!-- Essay Content -->
+        <!-- === NEW, MASTERED ESSAY CONTENT BEGINS === -->
         <article class="prose">
             <div class="prose-preamble">
-                <h2>Preamble: The Final Synthesis</h2>
-                <p>The preceding five theses in this series established a new, foundational lexicon for the practice of excavating, classifying, and applying the artifacts of the digital past. This work defined the "find" (the <strong class="text-unearth-main"><code class="bg-unearth-border px-1 rounded">Archaeobyte</code></strong>), the complete Triage for classifying its state (<strong class="text-unearth-main"><code class="bg-unearth-border px-1 rounded">Vivibyte</code></strong>, <strong class="text-unearth-main"><code class="bg-unearth-border px-1 rounded">Umbrabyte</code></strong>, <strong class="text-unearth-main"><code class="bg-unearth-border px-1 rounded">Petribyte</code></strong>), and the methodology for applying its wisdom (<strong class="text-unearth-main"><code class="bg-unearth-border px-1 rounded">The Anvil</code></strong>).</p>
-                <p>This complete system of practice, from excavation to creation, now creates a final, logical tension. The inherited, common name for this field, "Digital Archaeology," is no longer sufficient. It has become a "flawed inheritance"—a portmanteau of convenience that fails to capture the precision of the new discipline. This final thesis resolves that tension. It is the capstone of the series, providing the "Aha!" moment that forges the name of the discipline itself.</p>
+                <h2>Preamble: The Crisis of the Naming</h2>
+                <p>The preceding five theses in this series established a complete, load-bearing intellectual framework. They provided the "trowel" (<strong class="text-unearth-main"><code>The Archaeobyte</code></strong>) to unearth the artifacts of the digital past from the "undifferentiated dust." They established the "microscope" (<strong class="text-unearth-main"><code>The Triage</code></strong>) to formally classify those "finds" into three distinct, load-bearing categories: the <strong class="text-unearth-main"><code>Vivibyte</code></strong> (the living "seed"), the <strong class="text-unearth-main"><code>Umbrabyte</code></strong> (the "fly in amber"), and the <strong class="text-unearth-main"><code>Petribyte</code></strong> (the "fossil of function"). Finally, they provided the "so what?"—the applied methodology of <strong class="text-unearth-main"><code>The Anvil</code></strong>, which moves the practitioner from a passive <strong class="text-unearth-main"><code>Archive</code></strong> to a generative "Forge."</p>
+                <p>This complete system—from excavation to classification to creation—now creates a final, logical, and unavoidable tension.</p>
+                <p>The inherited, common name for this field, "Digital Archaeology," is no longer sufficient. It has become a "flawed inheritance"—a portmanteau of convenience that fails to capture the precision, methodology, or applied purpose of the new discipline. This final thesis resolves that tension. It is the capstone of the series, providing the "Aha!" moment that forges the name of the discipline itself.</p>
+                <p>To justify a new discipline, one must first prove, with academic rigor, that the existing fields are insufficient. One must identify the "intellectual void" that demands to be filled. The "foundry" must be built because the existing "faculties" are incomplete. This thesis will first conduct a critical survey of the existing academic field to identify this intellectual void. It will then establish the logical mandate for a new discipline based on the unique properties of the digital artifact. Finally, it will synthesize these findings to forge and define the formal discipline of <strong class="text-unearth-main"><code>Archaeobytology</code></strong>.</p>
             </div>
+
+            <h2>Part 1: The Flawed Inheritance — A Critique of the Existing Field</h2>
+            <p>The work of this series stands on the shoulders of giants, but it also identifies a critical gap in their work. The current academic landscape provides brilliant tools for analyzing the past (The <code>Archive</code>) but no formal methodology for applying its wisdom (The <code>Anvil</code>).</p>
+
+            <h3>Section 1.1: The Case of "Digital Archaeology"</h3>
+            <p>The most common term is the most flawed. "Digital Archaeology"
+<sup class="text-unearth-primary font-semibold">1</sup> is a simple, accessible portmanteau, but it is etymologically imprecise and strategically weak.</p>
+            <ul class="!list-decimal !pl-6 sm:!pl-10 !font-narrative !text-xl !text-unearth-secondary">
+                <li class="!flex !items-start !mt-2"><span class="!w-auto !flex-shrink-0 !font-ui !text-unearth-secondary !text-sm !font-normal !mt-2 !mr-3">1.</span><span class="!flex-1"><strong class="text-unearth-main">It is a Clunky Modifier:</strong> The prefix "Digital-" is a generic and temporary modifier that implies a <em>subset</em> of a "real" field, in the same vein as "Digital Marketing" or "Digital Art." It frames the work as secondary to traditional archaeology, which is incorrect.</span></li>
+                <li class="!flex !items-start !mt-2"><span class="!w-auto !flex-shrink-0 !font-ui !text-unearth-secondary !text-sm !font-normal !mt-2 !mr-3">2.</span><span class="!flex-1"><strong class="text-unearth-main">It is Philosophically Misleading:</strong> It suggests the work is simply "archaeology, but for digital things." As "The <code>Archaeobyte</code>" thesis established, this is fundamentally wrong. Traditional archaeology is the study of decay, of matter returning to the soil. This new practice is the study of perfect preservation and functional petrifaction—a material reality that is the antithesis of physical decay.</span></li>
+                <li class="!flex !items-start !mt-2"><span class="!w-auto !flex-shrink-0 !font-ui !text-unearth-secondary !text-sm !font-normal !mt-2 !mr-3">3.</span><span class="!flex-1"><strong class="text-unearth-main">It Lacks Methodological Identity:</strong> It is a "junkyard" term, a catch-all for anyone "looking at old digital stuff," from a data recovery specialist to an Internet Archive user. It has no formal <code>Triage</code> and no <code>Anvil</code>.</span></li>
+            </ul>
+
+            <h3>Section 1.2: The Case of "Media Archaeology" (The <code>Archive</code>)</h3>
+            <p>The more rigorous academic contender is "Media Archaeology." This field, particularly as defined by its key thinkers, provides the essential foundation for The <code>Archive</code> but stops short of The <code>Anvil</code>.</p>
+            <p>Media Archaeology is, as Jussi Parikka defines it, a way of "excavating the 'discursive formations' and 'epistemological strata'" of media culture.<sup class="text-unearth-primary font-semibold">2</sup> It is a "historiography of the forgotten, the quirky, the non-obvious." This is a brilliant and necessary critical practice. Parikka’s work gives us the permission to see the digital past as a "dig site" of ideas.</p>
+            <p>Similarly, the work of German media theorist Friedrich Kittler insists on "discourse networks"—that media "determines our situation."<sup class="text-unearth-primary font-semibold">3</sup> Kittler’s "hardware-first" approach provides a "materialist" lens, forcing the analyst to look at the "technological a priori" that shapes culture.</p>
+            <p><strong class="text-unearth-main">The Gap:</strong> Both Parikka and Kittler provide a powerful, critical, and historical lens. Their work is the essential <code>Archive</code>. It is a methodology for analysis, critique, and understanding. However, it is not a methodology for application. It is not a generative practice. It does not provide a formal bridge between "excavating the strata" and "forging a wiser future." It is the "archaeologist" without the "smith."</p>
+
+            <h3>Section 1.3: The Case of "Forensic Materialism" (The Artifact)</h3>
+            <p>A third, adjacent field provides the crucial focus on the artifact itself. Matthew Kirschenbaum’s work, particularly <em>Mechanisms: New Media and the Forensic Imagination</em>, establishes the concept of "forensic materialism."<sup class="text-unearth-primary font-semibold">4</sup> He argues passionately that we must study the file itself—the "frictional data" of the hard drive, the specific file formats, the metadata.</p>
+            <p>Kirschenbaum’s work is the academic justification for the <code>Archaeobyte</code>. He provides the intellectual rigor for "The Trowel," proving that the "Tangible <code>Archaeobyte</code>" (the file) and "Conceptual <code>Archaeobyte</code>" (the ghost) are distinct, analyzable objects. His work is the antidote to "screen essentialism" (just looking at what's on the monitor).</p>
+            <p><strong class="text-unearth-main">The Gap:</strong> "Forensic Materialism" is a methodology for examining the artifact. It is the "microscope." It provides the <em>how</em> for the <code>Triage</code>. But, like Media Archaeology, it is a descriptive and analytical practice. Its goal is to "read" the artifact with perfect fidelity, not to apply its lessons. It is the "coroner's report" for the "fly in amber," but it is not the "genetic engineering" that uses the "fly's" DNA.</p>
+
+            <h4>Section 1.4: The Synthesis of the Academic Void</h4>
+            <p>The existing landscape, synthesized, looks like this:</p>
+            <ol class="!list-decimal !pl-6 sm:!pl-10 !font-narrative !text-xl !text-unearth-secondary">
+                <li class="!flex !items-start !mt-2"><span class="!w-auto !flex-shrink-0 !font-ui !text-unearth-secondary !text-sm !font-normal !mt-2 !mr-3">1.</span><span class="!flex-1">"Digital Archaeology" is a weak, non-specific popular term.</span></li>
+                <li class="!flex !items-start !mt-2"><span class="!w-auto !flex-shrink-0 !font-ui !text-unearth-secondary !text-sm !font-normal !mt-2 !mr-3">2.</span><span class="!flex-1">"Media Archaeology" (Parikka, Kittler) provides the critical-historical lens (The <code>Archive</code>).</span></li>
+                <li class="!flex !items-start !mt-2"><span class="!w-auto !flex-shrink-0 !font-ui !text-unearth-secondary !text-sm !font-normal !mt-2 !mr-3">3.</span><span class="!flex-1">"Forensic Materialism" (Kirschenbaum) provides the artifact-centric analysis (The <code>Triage</code>).</span></li>
+            </ol>
+            <p>A significant "intellectual void" remains. There is no single, unified discipline that combines these elements with a fourth, critical one: a formal, generative, and applied methodology (The <code>Anvil</code>).</p>
+            <p>The existing fields are brilliant at describing the past. They are not designed to build the future. This new discipline is.</p>
+
+            <h2>Part 2: The Logical Mandate for a New Discipline</h2>
+            <p>This new discipline is mandated not just by the gap in the old ones, but by the uniqueness of its own foundational principles, as established in the preceding five theses.</p>
+
+            <h3>Section 2.1: The Mandate of the Artifact (The <code>Archaeobyte</code>)</h3>
+            <p>A new discipline is required because the object of study is fundamentally new. The <code>Archaeobyte</code> (Thesis 1) is not a "text" (Humanities), not a "potsherd" (Archaeology), and not just "media" (Media Studies). It is a new class of object with unique properties: perfect, byte-for-byte preservation, a "file vs. ghost" duality, and a lifecycle defined not by decay but by functional petrifaction. This unique "find" demands its own unique "trowel" and, by extension, its own unique discipline.</p>
+
+            <h3>Section 2.2: The Mandate of the Classification (The <code>Triage</code>)</h3>
+            <p>This new artifact possesses a unique lifecycle that no other discipline addresses. The <code>Triage</code>—<code>Vivibyte</code> (Thesis 2), <code>Umbrabyte</code> (Thesis 3), and <code>Petribyte</code> (Thesis 4)—is the formal, unique classification system for this new artifact's state of being.</p>
+            <p>Biology is defined by its Linnaean taxonomy. Geology is defined by its timescale. This new discipline is defined by its <code>Triage</code>. This classification system is the "microscope," and it is native to this field alone. A <code>Vivibyte</code> (a living artifact from a past epoch) is a concept that has no direct parallel in traditional archaeology. This unique taxonomy demands a unique disciplinary name.</p>
+
+            <h3>Section 2.3: The Mandate of the Application (The <code>Anvil</code>)</h3>
+            <p>This is the most profound justification. This discipline is applied and generative. <code>The Anvil</code> (Thesis 5) provides the formal bridge from analysis to creation. This moves the entire field from the realm of "critical studies" to "critical making."<sup class="text-unearth-primary font-semibold">5</sup></p>
+            <p>The <code>Anvil</code> is the purpose of the <code>Archive</code>. The practitioner of this discipline studies the <code>Petribyte</code> (the "Away Message") not just for historical curiosity, but to recover the lost blueprint for a web that "respects absence." They study the <code>Umbrabyte</code> (the GeoCities "ghost") not just to mourn it, but to heed its warning against "rented land."</p>
+            <p>This direct, formal, methodological link between "excavating wisdom" and "forging assets" is the "intellectual void" that this discipline fills. It is not just "media archaeology"; it is <strong class="text-unearth-main">"media smithing."</strong></p>
+            <p>This synthesis of the <code>Archive</code> and <code>Anvil</code> is the discipline's most crucial differentiator. It is a direct intervention, designed to heal the long-standing academic schism between the <em>critical</em> (the humanities, which analyze) and the <em>generative</em> (engineering, which builds). The "media archaeologist" (Parikka) is a <em>critical</em> scholar; the "forensic materialist" (Kirschenbaum) is an <em>analytical</em> one. The <code>Archaeobytologist</code>, by contrast, is a practitioner of "critical making"<sup class="text-unearth-primary font-semibold">5</sup> who operates as both. They do not just critique the "Faustian bargain" of Web 2.0; they forge the <em>sovereign tools</em> to break it.</p>
+
+            <h2>Part 3: Forging the Discipline — The Inevitable Synthesis</h2>
+            <p>A discipline that defines its own unique artifact (<code>Archaeobyte</code>), its own unique classification system (<code>The Triage</code>), and its own unique applied methodology (<code>The Anvil</code>) is, by definition, a new discipline.</p>
+            <p>It can no longer be named with a "flawed inheritance." It must be named for what it actually is.</p>
+            <p>A discipline is formally named by what it studies (the Greek suffix <em>-logia</em>, "the study of").</p>
+            <ul class="!list-disc !pl-6 sm:!pl-10 !font-narrative !text-xl !text-unearth-secondary">
+                <li class="!flex !items-start !mt-2"><span class="!w-auto !flex-shrink-0 !font-ui !text-unearth-secondary !text-3xl !font-normal !mt-1 !mr-3">&bull;</span><span class="!flex-1"><code>Bio-</code> (Life) + <code>-logia</code> = <code>Biology</code> (The study of life).</span></li>
+                <li class="!flex !items-start !mt-2"><span class="!w-auto !flex-shrink-0 !font-ui !text-unearth-secondary !text-3xl !font-normal !mt-1 !mr-3">&bull;</span><span class="!flex-1"><code>Socio-</code> (Society) + D<code>-logia</code> = <code>Sociology</code> (The study of society).</span></li>
+                <li class="!flex !items-start !mt-2"><span class="!w-auto !flex-shrink-0 !font-ui !text-unearth-secondary !text-3xl !font-normal !mt-1 !mr-3">&bull;</span><span class="!flex-1"><code>Archaeo-</code> (Ancient) + <code>-logia</code> = <code>Archaeology</code> (The study of the ancient).</span></li>
+            </ul>
+            <p>One might be tempted to forge a simpler term, such as <em>Bytology</em> ("the study of the byte"). This, however, would be a critical failure. "Bytology" is a generic term for data science or information theory; it is clinically precise but culturally hollow. It successfully captures the <em>substance</em> (the "byte") but completely abandons the <em>context</em> (the "Archaeo-"). It is a name for the "Data Miner," not the "Archaeologist-Smith." It loses the "Archive" half of the soul. This discipline is not merely "the study of the byte"; it is the study of the <em>ancient</em> byte.</p>
+            <p>The flaw in "Archaeology" is that it is too broad. The discipline this series defines is not the study of <em>all</em> ancient things. Its entire focus, as defined in Thesis 1, is the study of a <em>specific</em> ancient thing: the <code>Archaeobyte</code>.</p>
+            <p>Therefore, the only etymologically precise, philosophically sound, and logically inevitable term for this practice is:</p>
             
-            <h2>Part 1: The Insufficiency of "Digital Archaeology"</h2>
-            <p>The term "Digital Archaeology" has served as a useful, accessible signpost, but it is etymologically imprecise and strategically weak. Its flaws are threefold:</p>
-            <p>1. <strong class="text-unearth-main">It is a Clunky Modifier:</strong> The prefix "Digital-" is a generic and temporary modifier that implies a <em>subset</em> of a "real" field, in the same vein as "Digital Marketing" or "Digital Media." It frames the work as secondary to traditional archaeology.</p>
-            <p>2. <strong class="text-unearth-main">It is Philosophically Misleading:</strong> It suggests the work is simply "archaeology, but for digital things." This is incorrect. As the "Archaeobyte" thesis established, the digital artifact is a <em>fundamentally new class of object</em> that does not decay like its physical counterparts.<sup class="text-unearth-primary font-semibold">1</sup></p>
-            <p>3. <strong class="text-unearth-main">It is Imprecise:</strong> Traditional archaeology (<code class="bg-unearth-border px-1 rounded">archaeo-</code> + <code class="bg-unearth-border px-1 rounded">-logia</code>) is "the study of the ancient." This is far too broad. The discipline this series defines is not the study of <em>all</em> ancient things; it is the study of a <em>specific</em> ancient thing.</p>
-            <p>The term "Digital Archaeology," like "Media Archaeology" as defined by Parikka, is excellent for a broad, critical examination of media culture.<sup class="text-unearth-primary font-semibold">2</sup> But for the specific, hands-on discipline of excavating, classifying, and forging the "ancient byte," a more precise term is required.</p>
-            
-            <h2>Part 2: The Logical Mandate for a New Terminus</h2>
-            <p>The preceding five theses, taken as a whole, provide the irrefutable evidence for this new discipline. They have defined a complete, interdependent system:</p>
-            <p>1. <strong class="text-unearth-main">A Unique Unit of Excavation:</strong> The "Archaeobyte" thesis (Part 1) defined the <strong class="text-unearth-main"><code class="bg-unearth-border px-1 rounded">Archaeobyte</code></strong> as the specific, foundational artifact of the field, distinguishing it from any traditional physical artifact.<sup class="text-unearth-primary font-semibold">1</sup></p>
-            <p>2. <strong class="text-unearth-main">A Unique Classification System:</strong> The "Vivibyte" (Part 2), "Umbrabyte" (Part 3), and "Petribyte" (Part 4) theses defined a three-part Triage system—Living, Liminal, and Fossil—that is <em>unique</em> to this new artifact class.<sup class="text-unearth-primary font-semibold">3</sup> <sup class="text-unearth-primary font-semibold">4</sup> <sup class="text-unearth-primary font-semibold">5</sup></p>
-            <p>3. <strong class="text-unearth-main">A Unique Methodology:</strong> "The Anvil" thesis (Part 5) defined a unique methodology of applied "critical making," moving from the excavation of the <strong class="text-unearth-main"><code class="bg-unearth-border px-1 rounded">Archive</code></strong> to the creation of new frameworks.<sup class="text-unearth-primary font-semibold">6</sup></p>
-            <p>A discipline that defines its own unique artifact, its own unique classification system, and its own unique methodology is, by definition, a new discipline. The inherited name is no longer sufficient.</p>
-            
-            <h2>Part 3: Forging the Discipline: Archaeobytology</h2>
-            <p>Language must be forged to meet the demands of a new reality. A discipline is formally named by what it studies (the Greek suffix <code class="bg-unearth-border px-1 rounded">-logia</code>, "the study of").</p>
-            <p><code class="bg-unearth-border px-1 rounded">Bio-</code> (Life) + <code class="bg-unearth-border px-1 rounded">-logia</code> = <code class="bg-unearth-border px-1 rounded">Biology</code> (The study of life).</p>
-            <p><code class="bg-unearth-border px-1 rounded">Archaeo-</code> (Ancient) + <code class="bg-unearth-border px-1 rounded">-logia</code> = <code class="bg-unearth-border px-1 rounded">Archaeology</code> (The study of the ancient).</p>
-            <p>This lexicon, however, does not study <em>all</em> ancient things. Its entire focus, as defined in Part 1, is the study of a specific class of ancient things: the <strong class="text-unearth-main"><code class="bg-unearth-border px-1 rounded">Archaeobyte</code></strong>.</p>
-            <p>Therefore, the only etymologically precise, philosophically sound, and logically inevitable term for this practice is <strong class="text-unearth-main"><code class="bg-unearth-border px-1 rounded">Archaeobytology</code></strong>.</p>
-            <p><strong class="text-unearth-main">(Greek:</strong> <em><strong class="text-unearth-main">arkhaios</strong></em> <strong class="text-unearth-main">(ἀρχαῖος), "ancient" +</strong> <em><strong class="text-unearth-main">byte</strong></em><strong class="text-unearth-main">, "digital substance" +</strong> <em><strong class="text-unearth-main">-logia</strong></em> <strong class="text-unearth-main">(-λογία), "the study of")</strong></p>
-            <p>This is <strong class="text-unearth-main">"The Study of the Ancient Byte."</strong></p>
-            <p>This single, authoritative term resolves all the flaws of "Digital Archaeology." It is not a subset; it is a complete, standalone field. It is built not from a temporary modifier, but from the etymological root of the very artifact it studies.</p>
-            
+            <div class="my-8 py-6 px-6 bg-unearth-surface border border-unearth-border rounded-lg">
+                <h3 class="!mt-0 !mb-4 text-center !text-3xl sm:!text-4xl">Archaeobytology</h3>
+                <p class="!text-center !text-xl !text-unearth-secondary !mt-2 !font-narrative">(Greek: <strong><em>arkhaios</em></strong> (ἀρχαῖος), "ancient" + <strong><em>byte</em></strong>, "digital substance" + <strong><em>-logia</em></strong> (-λογία), "the study of")</p>
+            </div>
+
+            <p>This is, literally, <strong class="text-unearth-main">"The Study of the Ancient Byte."</strong></p>
+            <p>This single, authoritative term resolves all the flaws of "Digital Archaeology." It is not a subset; it is a complete, standalone field. It is built not from a temporary modifier ("Digital-"), but from the etymological root of the very artifact it studies. It defines the "foundry" itself.</p>
+
             <h2>Conclusion: The Capstone of the Lexicon</h2>
-            <p>The five preceding theses were the "proof of work." They provided the evidence and the methodology. This final thesis is the synthesis.</p>
-            <p>The term <strong class="text-unearth-main"><code class="bg-unearth-border px-1 rounded">Archaeobytology</code></strong> is the logical capstone of the entire "Archeobyte Papers" series. It is the "Aha!" moment that is earned, not just declared. It is not merely a replacement for "Digital Archaeology"; it is the <em>synthesis</em> of the entire "Archive & Anvil" process, a final act of forging that gives a proper name to the discipline itself.</p>
-            <p>The "Trowel" is the <code class="bg-unearth-border px-1 rounded">Archaeobyte</code>. The "Microscope" is the Triage (<code class="bg-unearth-border px-1 rounded">Vivibyte</code>, <code class="bg-unearth-border px-1 rounded">Umbrabyte</code>, <code class="bg-unearth-border px-1 rounded">Petribyte</code>). The "Methodology" is <code class="bg-unearth-border px-1 rounded">The Anvil</code>. The "Discipline" is <strong class="text-unearth-main"><code class="bg-unearth-border px-1 rounded">Archaeobytology</code></strong>.</p>
-            
+            <p>The preceding five theses are the <code>Archive</code> of our foundry's work. This final thesis is <code>The Anvil</code>.</p>
+            <p>The term <code>Archaeobytology</code> is the logical capstone of the entire "Archeobyte Papers" series. It is the synthesis of the "Archive & Anvil" process, a final act of forging that gives a proper name to the discipline.</p>
+            <p>It is the definitive term for our practice.</p>
+            <p>The "Trowel" is the <code>Archaeobyte</code>. The "Microscope" is the <code>Triage</code> (<code>Vivibyte</code>, <code>Umbrabyte</code>, <code>Petribyte</code>). The "Methodology" is <code>The Anvil</code>. The "Discipline" is <code>Archaeobytology</code>.</p>
+            <p>The practitioner of this discipline is the <strong class="text-unearth-main"><code>Archaeobytologist</code></strong>—a hybrid scholar, smith, and strategist who excavates the wisdom of the past to forge a wiser future.</p>
+            <p>This hybrid identity—"scholar, smith, and strategist"—is the final pillar of the discipline. It reframes the practitioner as a form of "public scholar," one who rejects the traditional "ivory tower" in favor of active, generative intervention in the digital public sphere.<sup class="text-unearth-primary font-semibold">6</sup> The <code>Archaeobytologist</code> does not just <em>study</em> the digital past; they <em>apply</em> its lessons.</p>
+            <p>This is the work.</p>
+
             <h2>Works Cited</h2>
             <ul>
-                <li><span>[1]</span><span>The Archaeobyte Papers (Part 1). "The Archaeobyte: A Foundational Thesis on the Artifacts of the Digital Past." (2025).</span></li>
+                <li><span>[1]</span><span>It is critical to differentiate the common, broad term "Digital Archaeology" from the foundry's specific, methodological re-definition of the "Digital Archaeologist" as a hybrid "scholar-smith" who both excavates (The <code>Archive</code>) and applies (The <code>Anvil</code>). This thesis argues that this specific practitioner requires a more precise disciplinary name.</span></li>
                 <li><span>[2]</span><span>Parikka, J. (2012). <em>What is Media Archaeology?</em> Polity Press.</span></li>
-                <li><span>[3]</span><span>The Archaeobyte Papers (Part 2). "The Vivibyte: A Foundational Thesis on the Living Artifacts of the Digital Past." (2025).</span></li>
-                <li><span>[4]</span><span>The Archaeobyte Papers (Part 3). "The Umbrabyte: A Foundational Thesis on the Liminal Artifacts of the Digital Past." (2025).</span></li>
-                <li><span>[5]</span><span>The Archaeobyte Papers (Part 4). "The Petribyte: A Foundational Thesis on the Fossils of the Digital Age." (2025).</span></li>
-                <li><span>[6]</span><span>The Archaeobyte Papers (Part 5). "The Anvil: A Foundational Thesis on Applied Digital Archaeology." (2025).</span></li>
+                <li><span>[3]</span><span>Kittler, F. (1999). <em>Gramophone, Film, Typewriter</em>. Stanford University Press.</span></li>
+                <li><span>[4]</span><span>Kirschenbaum, M. (2008). <em>Mechanisms: New Media and the Forensic Imagination</em>. MIT Press.</span></li>
+                <li><span>[5]</span><span>Ratto, M. (2011). "Critical Making: Conceptual and Material Studies in Technology and Social Life." <em>The Information Society</em>, 27(4), 252-260.</span></li>
+                <li><span>[6]</span><span>See, for example, Small, H. (2013). <em>The Public Value of the Humanities</em>. Oxford University Press, which argues for the generative and applied role of scholarship in public life.</span></li>
             </ul>
         </article>
+        <!-- === NEW, MASTERED ESSAY CONTENT ENDS === -->
 
     </main>
 

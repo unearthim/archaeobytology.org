@@ -127,7 +127,7 @@
             margin-top: 1rem; /* space-y-4 */
         }
         .prose li span:first-child {
-            width: 2.5rem; /* w-10 */
+            width: 10rem; /* w-40 -- UPPED FROM w-10 TO FIX WRAP */
             flex-shrink: 0;
             font-size: 0.875rem; /* text-sm */
             margin-top: 0.25rem; /* mt-1 */
@@ -139,6 +139,15 @@
         }
         .prose-preamble p {
              color: #6b7280; /* unearth-secondary */
+        }
+        .prose code {
+            background-color: #e5e7eb; /* unearth-border */
+            padding: 0.125rem 0.375rem; /* px-1.5 py-0.5 */
+            border-radius: 0.25rem; /* rounded */
+            font-size: 1rem; /* text-base */
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            color: #BF5700; /* unearth-primary */
         }
     </style>
 
@@ -187,13 +196,14 @@
             </a>
         </div>
         
-        <!-- Essay Content -->
+        <!-- === NEW, MASTERED ESSAY CONTENT BEGINS === -->
         <article class="prose">
             <div class="prose-preamble">
                 <h2>Preamble: Undifferentiated Dust in the Archive</h2>
                 <p>The work of the Digital Archaeologist begins not with a prized fossil, but with a field of undifferentiated dust.</p>
                 <p>The digital past is not a curated museum, but a vast, chaotic, and uncataloged "dig site." It is a tangle of abandoned servers, mirrored hard drives, broken links, forgotten media formats, and the ghosts of dead platforms. This is the digital equivalent of a "tell": an archaeological mound containing the stratified layers of human activity. But unlike a physical site, where decay simplifies the record, the digital site suffers from perfect, overwhelming preservation.</p>
                 <p>This abundance creates a "digital dark age" not of <em>loss</em>, but of <em>noise</em>. The sheer volume of preserved data: the "digital dust": makes finding "meaning" almost impossible. This is the "crisis of noise" that defines the modern web; an environment drowning in information but starved of context.</p>
+                <p>This "crisis of noise" marks a new, second era for the discipline. The first, "heroic" era—defined by the preservation work of the Internet Archive or the rescue work of the Archive Team—was a quantitative battle against <em>data loss</em>. That battle has, in many ways, been won. We are now in a second, more profound era defined by a <em>qualitative</em> battle against <em>context collapse</em>. We suffer from "uncurated nostalgia"—a sea of "listicles" and mirrored .gifs, divorced from their original meaning. The first era's "archivist" saved the <em>data</em>; this second era's "Digital Archaeologist" must excavate the <em>meaning</em>.</p>
                 <p>The first challenge, before any analysis can begin, is one of identification. The archaeologist needs a fundamental term for the object of their search: the "find." What is the discrete "thing" that must be pulled from the digital strata? It is not "data," which is too abstract. It is not "a file," which is too specific and fails to capture the cultural context of a "Guestbook" or an "Away Message."</p>
                 <p>A field cannot exist without its basic vocabulary. The <strong class="text-unearth-main">Archive</strong> of the Digital Archaeologist, the scholarly work of excavation and preservation, requires a word for its most fundamental unit of discovery.</p>
                 <p>This essay provides that word. The foundational artifact of the Digital Archaeologist, the raw material of the "find" that is pulled from the digital dust, is the <strong class="text-unearth-main">Archaeobyte</strong>.</p>
@@ -207,13 +217,18 @@
             <p>The term is composed of two distinct parts that define its function.</p>
             <p><strong class="text-unearth-main">1. Archaeo- (The Provenance)</strong></p>
             <p>This root is drawn from the Greek: <em>arkhaios</em> (ἀρχαῖος), meaning "ancient" or "from the beginning."<sup class="text-unearth-primary font-semibold">1</sup> It is the same root that gives "archaeology" its name: <em>arkhaiologia</em>, "the study of ancient things."</p>
-            <p>This root's sole function is to establish provenance. It signifies that the artifact is not of the present, but is a "find" from a past technological epoch. Its primary and most important quality is its age and origin relative to the current ecosystem.</p>
-            <p><strong class="text-unearth-main">Digital Application:</strong> It defines the artifact by its relationship to time. An Archaeobyte is, by definition, an artifact from a past "digital stratum." It is a piece of the hand-built web, a file from a pre-social media server, or a script from the "browser wars" era. It is an object <em>out of its native time</em>.</p>
-            
+            <ul>
+                <li><span class="font-ui !text-unearth-secondary !text-sm">Narrative Provenance:</span><span>This root's sole function is to establish provenance. It signifies that the artifact is not of the present, but is a "find" from a past technological epoch. Its primary and most important quality is its age and origin relative to the current ecosystem.</span></li>
+                <li><span class="font-ui !text-unearth-secondary !text-sm">Digital Application:</span><span>It defines the artifact by its relationship to time. An Archaeobyte is, by definition, an artifact from a past "digital stratum." It is a piece of the hand-built web, a file from a pre-social media server, or a script from the "browser wars" era. It is an object <em>out of its native time</em>.</span></li>
+            </ul>
+
             <p><strong class="text-unearth-main">2. -byte (The Substance)</strong></p>
             <p>This root is from digital science: the byte, a fundamental unit of digital information; the "molecule" of the digital world.<sup class="text-unearth-primary font-semibold">2</sup></p>
-            <p><strong class="text-unearth-main">Narrative Provenance:</strong> This grounds the term firmly in the digital. It specifies that this is the substance of digital culture, not physical pottery or bone.</p>
-            <p><strong class="text-unearth-main">Digital Application:</strong> It defines the "find" as a discrete object of information. It is not a vague "feeling" or "trend" of the past; but a tangible, analyzable unit of digital substance.</p>
+            <ul>
+                <li><span class="font-ui !text-unearth-secondary !text-sm">Narrative Provenance:</span><span>This grounds the term firmly in the digital. It specifies that this is the substance of digital culture, not physical pottery or bone.</span></li>
+                <li><span class="font-ui !text-unearth-secondary !text-sm">Digital Application:</span><span>It defines the "find" as a discrete object of information. It is not a vague "feeling" or "trend" of the past; but a tangible, analyzable unit of digital substance.</span></li>
+            </ul>
+
             <p><strong class="text-unearth-main">The Synthesis:</strong> An Archaeobyte is a discrete unit of digital information from a past technological epoch.</p>
             <p>Its defining characteristic is its provenance. It is the general, foundational term for <em>any</em> artifact unearthed by a Digital Archaeologist. It is the raw material that is recovered, bagged, and tagged before any further analysis can occur. It is the "find" that populates the Archive.</p>
             
@@ -221,16 +236,23 @@
             <p>This synthesis, however, is incomplete. It fails to resolve the critical "file vs. concept" contradiction. To be a useful tool, "Archaeobyte" must be subdivided into its two primary states: the Tangible and the Conceptual.</p>
             <p><strong class="text-unearth-main">Type 1: The Tangible Archaeobyte (The File)</strong></p>
             <p>This is the most common and intuitive "find." It is a discrete, self-contained unit of digital information. It is the file itself, the "digital-physical" object that can be "bagged and tagged."</p>
-            <p><strong class="text-unearth-main">Definition:</strong> A Tangible Archaeobyte is any data packet, file, or script whose structure is self-contained.</p>
-            <p><strong class="text-unearth-main">Examples:</strong> An <code class="bg-unearth-border px-1 rounded">.mp3</code> file, a <code class="bg-unearth-border px-1 rounded">.gif</code>, a <code class="bg-unearth-border px-1 rounded">.swf</code> (Flash) file, a standalone <code class="bg-unearth-border px-1 rounded">.html</code> file, a <code class="bg-unearth-border px-1 rounded">guestbook.cgi</code> script, a <code class="bg-unearth-border px-1 rounded">.txt</code> file containing an email log.</p>
-            <p><strong class="text-unearth-main">Significance:</strong> These are the "potsherds" and "flint arrowheads" of the work. Their value lies in their <em>analyzable form</em>. They provide hard, verifiable evidence of a specific technology, a specific aesthetic, or a specific piece of code from a past era. They are the "hard science" of the discipline.</p>
-            
+            <ul>
+                <li><span class="font-ui !text-unearth-secondary !text-sm">Definition:</span><span>A Tangible Archaeobyte is any data packet, file, or script whose structure is self-contained.</span></li>
+                <li><span class="font-ui !text-unearth-secondary !text-sm">Examples:</span><span>An <code class="bg-unearth-border px-1 rounded">.mp3</code> file, a <code class="bg-unearth-border px-1 rounded">.gif</code>, a <code class="bg-unearth-border px-1 rounded">.swf</code> (Flash) file, a standalone <code class="bg-unearth-border px-1 rounded">.html</code> file, a <code class="bg-unearth-border px-1 rounded">guestbook.cgi</code> script, a <code class="bg-unearth-border px-1 rounded">.txt</code> file containing an email log.</span></li>
+                <li><span class="font-ui !text-unearth-secondary !text-sm">Significance:</span><span>These are the "potsherds" and "flint arrowheads" of the work. Their value lies in their <em>analyzable form</em>.</span></li>
+                <li><span class="font-ui !text-unearth-secondary !text-sm">Evidentiary Value:</span><span>They provide hard, verifiable evidence of a specific technology, a specific aesthetic, or a specific piece of code from a past era. They are the "hard science" of the discipline.</span></li>
+                <li><span class="font-ui !text-unearth-secondary !text-sm">Academic Grounding:</span><span>This "hard science" aligns directly with the "forensic materialism" articulated by Matthew Kirschenbaum. He argues that the true artifact is not just the <em>text</em> displayed on the screen (the "superficial" data), but the "frictional data" of the storage medium itself—the file formats, the disk sectors, and the metadata.<sup class="text-unearth-primary font-semibold">3</sup> The "Tangible Archaeobyte" is the formal name for this forensically-material "find."</span></li>
+            </ul>
+
             <p><strong class="text-unearth-main">Type 2: The Conceptual Archaeobyte (The Ghost)</strong></p>
             <p>This is the more abstract, and often more powerful, "find." It is not a file, but a behavior, function, or platform concept that has become an "artifact."</p>
-            <p><strong class="text-unearth-main">Definition:</strong> A Conceptual Archaeobyte is a digital-native concept, behavior, or function that is now an artifact of a past ecosystem, often lacking a discrete, single-file form.</p>
-            <p><strong class="text-unearth-main">Examples:</strong> The "AIM Away Message," the "Guestbook," the "Webring," the MySpace "Top 8," the "Blogroll."</p>
-            <p><strong class="text-unearth-main">Significance:</strong> These are the "cultural ghosts" of the work. They are the "oral histories" or "rituals" of the past. This aligns with the work of media archaeologists like Jussi Parikka, who argue that one must excavate not just the "media" but the "discursive formations" and "epistemological" strata that surround them.<sup class="text-unearth-primary font-semibold">3</sup> Practitioners cannot <em>find</em> a single file called "the blogroll." They find <em>thousands of instances</em> of it, and from them, they excavate the <em>concept</em> itself. This new taxonomy gives practitioners a formal name for this "ghost," allowing them to study the <em>behaviors</em> lost, not just the <em>files</em>.</p>
-            <p>This new, two-part definition of the Archaeobyte: The File and The Ghost: makes the thesis logically sound. It creates the foundational "dig site" from which the Archive is built.</p>
+             <ul>
+                <li><span class="font-ui !text-unearth-secondary !text-sm">Definition:</span><span>A Conceptual Archaeobyte is a digital-native concept, behavior, or function that is now an artifact of a past ecosystem, often lacking a discrete, single-file form.</span></li>
+                <li><span class="font-ui !text-unearth-secondary !text-sm">Examples:</span><span>The "AIM Away Message," the "Guestbook," the "Webring," the MySpace "Top 8," the "Blogroll."</span></li>
+                <li><span class="font-ui !text-unearth-secondary !text-sm">Significance:</span><span>These are the "cultural ghosts" of the work. They are the "oral histories" or "rituals" of the past. This aligns with the work of media archaeologists like Jussi Parikka, who argue that one must excavate not just the "media" but the "discursive formations" and "epistemological" strata that surround them.<sup class="text-unearth-primary font-semibold">4</sup> Practitioners cannot <em>find</em> a single file called "the blogroll." They find <em>thousands of instances</em> of it, and from them, they excavate the <em>concept</em> itself. This new taxonomy gives practitioners a formal name for this "ghost," allowing them to study the <em>behaviors</em> lost, not just the <em>files</em>.</span></li>
+            </ul>
+           
+            <p>This new, two-part definition of the Archaeobyte—The File and The Ghost—creates the foundational "dig site" from which the Archive is built.</p>
             
             <h2>Part 2: The Triage — Three Case Studies in Excavation</h2>
             <p>This is the central act of the Digital Archaeologist. Once an Archaeobyte is unearthed (Part 1), it must be triaged. The <strong class="text-unearth-main">"Triage"</strong> is the "now what?" It is the classification of the artifact's <em>state</em>. This is the process that separates the "living" past from the "fossilized" past, determining the artifact's future path <em>within the Archive</em>.</p>
@@ -238,36 +260,50 @@
             
             <h3>Case Study 1: The Living Archaeobyte (The Gold Coin)</h3>
             <p>The archaeologist unearths an Archaeobyte and, upon analysis, finds it is still functional. Its form is ancient, but its substance is still "spendable" in the modern ecosystem.</p>
-            <p><strong class="text-unearth-main">Specimen:</strong> The 1999 <code class="bg-unearth-border px-1 rounded">.mp3</code> file (a Tangible Archaeobyte).</p>
-            <p><strong class="text-unearth-main">Excavation & Triage:</strong> This is an Archaeobyte. Its provenance is from a past technological epoch: the dawn of digital music and the P2P revolution. It is a tangible artifact of the "digital dust" from the war between record labels and platforms like Napster, a cultural moment defined by the sudden, shocking liquidity of media.<sup class="text-unearth-primary font-semibold">4</sup></p>
+            <ul>
+                <li><span class="font-ui !text-unearth-secondary !text-sm">Specimen:</span><span>The 1999 <code class="bg-unearth-border px-1 rounded">.mp3</code> file (a Tangible Archaeobyte).</span></li>
+                <li><span class="font-ui !text-unearth-secondary !text-sm">Excavation & Triage:</span><span>This is an Archaeobyte. Its provenance is from a past technological epoch, the dawn of digital music and the P2P revolution. It is a tangible artifact of the "digital dust" from the war between record labels and platforms like Napster, a cultural moment defined by the sudden, shocking liquidity of media.<sup class="text-unearth-primary font-semibold">5</sup></span></li>
+            </ul>
             <p>Upon triage, it is found its state is <strong class="text-unearth-main">Living</strong>.</p>
-            <p>The .mp3 format itself, though ancient, is not obsolete. It is universally playable. A modern smartphone and a 1999-era Winamp can both read it. This is not a "fossil." It is the digital equivalent of a gold coin found in a Roman ruin. The artifact is ancient (its provenance), but its substance (the gold) is still functional and valuable in the present.</p>
-            <p>The human story this Archaeobyte tells is one of user-centric rebellion. The .mp3 was a tool of liberation from the tyranny of the "album." It, paired with peer-to-peer protocols, enabled a "declaration of self" through the curation of playlists and the sharing of individual tracks. It was a messy, chaotic, and deeply human-scale ecosystem that ran parallel to the corporate-controlled music industry.</p>
-            <p><strong class="text-unearth-main">Classification:</strong> Archaeobyte (Living).</p>
-            <p><strong class="text-unearth-main">Triage Path:</strong> Living Archaeobytes are placed in the Archive as a "Seed Bank." They are preserved for their <em>utility</em>, their <em>content</em>, or as direct <em>source material</em> for future application. A plain <code class="bg-unearth-border px-1 rounded">.txt</code> file, a <code class="bg-unearth-border px-1 rounded">.gif</code> image, or a self-contained HTML 4.01 file all fall into this category. They are the "living" history that can still be learned from directly.</p>
+            <p>The <code class="bg-unearth-border px-1 rounded">.mp3</code> format itself, though ancient, is not obsolete. It is universally playable. A modern smartphone and a 1999-era Winamp can both read it. This is not a "fossil." It is the digital equivalent of a gold coin found in a Roman ruin. The artifact is ancient (its provenance), but its substance (the gold) is still functional and valuable in the present.</p>
+            <p>The human story this Archaeobyte tells is one of user-centric rebellion. The <code class="bg-unearth-border px-1 rounded">.mp3</code> was a tool of liberation from the tyranny of the "album." It, paired with peer-to-peer protocols, enabled a "declaration of self" through the curation of playlists and the sharing of individual tracks. It was a messy, chaotic, and deeply human-scale ecosystem that ran parallel to the corporate-controlled music industry.</p>
+            <ul>
+                <li><span class="font-ui !text-unearth-secondary !text-sm">Classification:</span><span>Archaeobyte (Living).</span></li>
+                <li><span class="font-ui !text-unearth-secondary !text-sm">Triage Path:</span><span>Living Archaeobytes are placed in the Archive as a "Seed Bank." They are preserved for their <em>utility</em>, their <em>content</em>, or as direct <em>source material</em> for future application. A plain <code class="bg-unearth-border px-1 rounded">.txt</code> file, a <code class="bg-unearth-border px-1 rounded">.gif</code> image, or a self-contained HTML 4.01 file all fall into this category. They are the "living" history that can still be learned from directly.</span></li>
+            </ul>
             
             <h3>Case Study 2: The Liminal Archaeobyte (The Fly in Amber)</h3>
             <p>This is the most complex and common "find," an artifact that exists in a state of triage <em>between</em> living and petrified.</p>
-            <p><strong class="text-unearth-main">Specimen:</strong> The GeoCities Homepage (a Tangible Archaeobyte, now Ecosystem-Petrified).</p>
-            <p><strong class="text-unearth-main">Excavation & Triage:</strong> This Archaeobyte is a cornerstone of the hand-built web, the "Digital Homestead" of the 1990s. Its provenance is from the Web1 epoch defined by "The Declaration ('I Am')." This was a political and philosophical act: a flag planted in cyberspace. The human story of GeoCities was not just "free web hosting"; it was the "neighborhoods." Choosing "GeoCities/Vienna" for poetry or "GeoCities/Area51" for science fiction was a profound act of self-identification, a "sorting hat" for one's digital identity.<sup class="text-unearth-primary font-semibold">5</sup> Users were not "users"; they were "homesteaders." They were neighbors. They built communities, signed each other's "Guestbooks," and connected their "homesteads" with "Webrings."</p>
-            <p>This entire ecosystem was alive. Then, in 2009, the "digital landlord," Yahoo, shut it down.<sup class="text-unearth-primary font-semibold">6</sup> This was the cataclysm. The platform went extinct.</p>
-            <p>Upon triage, it is found the state of the individual GeoCities homepage is <strong class="text-unearth-main">Liminal</strong>. This term, drawn from the Latin <em>limen</em> meaning "a threshold," was established by anthropologists like Victor Turner to describe a state of being "betwixt and between."<sup class="text-unearth-primary font-semibold">7</sup> The artifact is no longer in its original, "living" state, but it has not been fully "petrified" into a new, stable form.</p>
-            <p>The artifact itself: the <code class="bg-unearth-border px-1 rounded">.html</code> file, the <code class="bg-unearth-border px-1 rounded">.gif</code> images: is a Living Archaeobyte. Like the <code class="bg-unearth-border px-1 rounded">.mp3</code>, its code is still perfectly readable by any modern browser. But its ecosystem is petrified. The "living" functions are gone. This is a direct, tangible example of the petrifaction of "Conceptual Archaeobytes." The <code class="bg-unearth-border px-1 rounded">guestbook.cgi</code> script no longer executes. The "Webring" links are broken. The "neighbors" are gone.</p>
+            <ul>
+                <li><span class="font-ui !text-unearth-secondary !text-sm">Specimen:</span><span>The GeoCities Homepage (a Tangible Archaeobyte, now Ecosystem-Petrified).</span></li>
+                <li><span class="font-ui !text-unearth-secondary !text-sm">Excavation & Triage:</span><span>This Archaeobyte is a cornerstone of the hand-built web, the "Digital Homestead" of the 1990s. Its provenance is from the Web1 epoch defined by "The Declaration ('I Am')." This was a political and philosophical act, a flag planted in cyberspace. The human story of GeoCities was not just "free web hosting"; it was the "neighborhoods." Choosing "GeoCities/Vienna" for poetry or "GeoCities/Area51" for science fiction was a profound act of self-identification, a "sorting hat" for one's digital identity.<sup class="text-unearth-primary font-semibold">6</sup> Users were not "users"; they were "homesteaders." They were neighbors. They built communities, signed each other's "Guestbooks," and connected their "homesteads" with "Webrings."</span></li>
+            </ul>
+            <p>This entire ecosystem was alive. Then, in 2009, the "digital landlord," Yahoo, shut it down.<sup class="text-unearth-primary font-semibold">7</sup> This was the cataclysm. The platform went extinct.</p>
+            <p>Upon triage, it is found the state of the individual GeoCities homepage is <strong class="text-unearth-main">Liminal</strong>. This term, drawn from the Latin <em>limen</em> meaning "a threshold," was established by anthropologists like Victor Turner to describe a state of being "betwixt and between."<sup class="text-unearth-primary font-semibold">8</sup> The artifact is no longer in its original, "living" state, but it has not been fully "petrified" into a new, stable form.</p>
+            <p>The artifact itself—the <code class="bg-unearth-border px-1 rounded">.html</code> file, the <code class="bg-unearth-border px-1 rounded">.gif</code> images—is a Living Archaeobyte. Like the <code class="bg-unearth-border px-1 rounded">.mp3</code>, its code is still perfectly readable by any modern browser. But its ecosystem is petrified. The "living" functions are gone. This is a direct, tangible example of the petrifaction of "Conceptual Archaeobytes." The <code class="bg-unearth-border px-1 rounded">guestbook.cgi</code> script no longer executes. The "Webring" links are broken. The "neighbors" are gone.</p>
             <p>This Archaeobyte is the digital equivalent of a prehistoric fly trapped in amber. The fly itself is perfectly preserved, but its world is extinct. The artifact is now a Liminal Archaeobyte. When one views a specimen on an archival mirror, one is not visiting a living site. One is visiting a museum. One is looking at a "fossil of community."</p>
-            <p><strong class="text-unearth-main">Classification:</strong> Archaeobyte (Liminal / Ecosystem-Petrified).</p>
-            <p><strong class="text-unearth-main">Triage Path:</strong> These artifacts are preserved in the Archive as <em>evidence</em>. They are the richest specimens, as they are the only things that preserve the <em>context</em> of a lost ecosystem. They are the primary texts that inform critiques of centralized platforms and "rented land."</p>
+            <ul>
+                <li><span class="font-ui !text-unearth-secondary !text-sm">Classification:</span><span>Archaeobyte (Liminal / Ecosystem-Petrified).</span></li>
+                <li><span class="font-ui !text-unearth-secondary !text-sm">Triage Path:</span><span>These artifacts are preserved in the Archive as <em>evidence</em>. They are the richest specimens, as they are the only things that preserve the <em>context</em> of a lost ecosystem. They are the primary texts that inform critiques of centralized platforms and "rented land."</span></li>
+            </ul>
             
             <h3>Case Study 3: The Petrified Archaeobyte (The Fossil)</h3>
             <p>This is the definitive "fossil." The archaeologist unearths an Archaeobyte and finds its function is not just dormant, but <em>extinct</em>.</p>
-            <p><strong class="text-unearth-main">Specimen:</strong> The "Away Message" (a Conceptual Archaeobyte).</p>
-            <p><strong class="text-unearth-main">Excavation & Triage:</strong> This Archaeobyte is one of the most significant "cultural ghosts" of the synchronous web. Its provenance is the "Buddy List" era of the late 1990s and early 2000s, an ecosystem dominated by platforms like AIM (AOL Instant Messenger) and ICQ.</p>
+            <ul>
+                <li><span class="font-ui !text-unearth-secondary !text-sm">Specimen:</span><span>The "Away Message" (a Conceptual Archaeobyte) and the <code class="bg-unearth-border px-1 rounded">.rm</code> file (a Tangible Archaeobyte).</span></li>
+                <li><span class="font-ui !text-unearth-secondary !text-sm">Excavation & Triage:</span><span>This Triage classification can apply to both Tangible and Conceptual Archaeobytes.</span></li>
+            </ul>
+            <p>A prime example of a <em>Tangible</em> Petribyte is a proprietary file format whose "native" ecosystem is extinct, such as a RealPlayer <code class="bg-unearth-border px-1 rounded">.rm</code> file from 1998. The file itself is perfectly preserved—it is a complete "Tangible Archaeobyte." But the "minerals" of technological change—the death of its proprietary plugin, the industry-wide shift to open codecs—have completely petrified it. A modern browser or operating system has no native function to interpret it. It is a "fossil" of the early streaming wars.</p>
+            <p>An even more profound fossil, however, is the <em>Conceptual</em> Petribyte. This is one of the most significant "cultural ghosts" of the synchronous web, seen clearly in the <strong class="text-unearth-main">"Away Message."</strong> Its provenance is the "Buddy List" era of the late 1990s and early 2000s, an ecosystem dominated by platforms like AIM (AOL Instant Messenger) and ICQ.</p>
             <p>The human story of the "Away Message" is a fossil of a lost digital ritual. It was a specific, functional tool for managing synchronous, one-to-one "Instant Messages" (IMs). Its entire purpose was to broadcast a single, crucial piece of information: "I am not at my keyboard right now."</p>
-            <p>This was a world before the mobile, "always-on" internet. Presence was binary: one was "online" or "offline." The "Away Message" was the liminal state between them. It was a social performance, a sub-genre of digital poetry. Users crafted them with care, using song lyrics, cryptic notes, or simple declarations ("brb, dinner") to manage their social presence.<sup class="text-unearth-primary font-semibold">8</sup> <strong class="text-unearth-main">It was a public acknowledgment that one's digital life was secondary to one's physical life.</strong></p>
+            <p>This was a world before the mobile, "always-on" internet. Presence was binary: one was "online" or "offline." The "Away Message" was the liminal state between them. It was a social performance, a sub-genre of digital poetry. Users crafted them with care, using song lyrics, cryptic notes, or simple declarations ("brb, dinner") to manage their social presence.<sup class="text-unearth-primary font-semibold">9</sup> <strong class="text-unearth-main">It was a public acknowledgment that one's digital life was secondary to one's physical life.</strong></p>
             <p>Upon triage, it is found its state is <strong class="text-unearth-main">Petrified</strong>.</p>
             <p>The entire concept is a fossil. The "minerals" of technological change: specifically the shift from desktop-based synchronous chat to mobile-first asynchronous messaging and the "always-on" assumption of the smartphone: have completely petrified it.</p>
-            <p>The modern ecosystem is "always-on." This is the very shift sociologist Sherry Turkle defines as the move "from conversation to connection," where the nuance of 'presence' was replaced by the binary of 'availability.'<sup class="text-unearth-primary font-semibold">9</sup> There is no "away." The "Away Message" has no function because the problem it solved (managing synchronous presence) is extinct. Its form survives only as a Conceptual Archaeobyte, a cultural ghost that tells us everything about a lost, more human-scale web where it was perfectly acceptable to be "away."</p>
-            <p><strong class="text-unearth-main">Classification:</strong> Archaeobyte (Petrified).</p>
-            <p><strong class="text-unearth-main">Triage Path:</strong> Petrified Archaeobytes are preserved in the Archive as <em>wisdom</em>. They are the "fossils of function" that are analyzed for the lessons they hold. They are the primary texts that prove a different web: one that respected a user's <em>absence</em> as much as their <em>engagement</em>: was not only possible, but <em>existed</em>.</p>
+            <p>The modern ecosystem is "always-on." This is the very shift sociologist Sherry Turkle defines as the move "from conversation to connection," where the nuance of 'presence' was replaced by the binary of 'availability.'<sup class="text-unearth-primary font-semibold">10</sup> There is no "away." The "Away Message" has no function because the problem it solved (managing synchronous presence) is extinct. Its form survives only as a Conceptual Archaeobyte, a cultural ghost that tells us everything about a lost, more human-scale web where it was perfectly acceptable to be "away."</p>
+            <ul>
+                <li><span class="font-ui !text-unearth-secondary !text-sm">Classification:</span><span>Archaeobyte (Petrified).</span></li>
+                <li><span class="font-ui !text-unearth-secondary !text-sm">Triage Path:</span><span>Petrified Archaeobytes are preserved in the Archive as <em>wisdom</em>. They are the "fossils of function" that are analyzed for the lessons they hold. They are the primary texts that prove a different web: one that respected a user's <em>absence</em> as much as their <em>engagement</em>: was not only possible, but <em>existed</em>.</span></li>
+            </ul>
             
             <h2>Conclusion: The Manifesto of the Trowel</h2>
             <p>To name a thing is to see it. The simple <em>act of naming</em> the "Archaeobyte" is the foundational act of the discipline. It is the critical first step that separates the Digital Archaeologist from the data miner.</p>
@@ -283,15 +319,17 @@
             <ul>
                 <li><span>[1]</span><span>Liddell, H. G., & Scott, R. (1940). <em>A Greek-English Lexicon</em>. Clarendon Press. Entry for "ἀρχαῖος."</span></li>
                 <li><span>[2]</span><span>Buchholz, W. (1956). "The Link System." In <em>Proceedings of the IRE</em>, 44(9), 1189-1189.</span></li>
-                <li><span>[3]</span><span>Parikka, J. (2012). <em>What is Media Archaeology?</em> Polity Press.</span></li>
-                <li><span>[4]</span><span>Witt, S. (2015). <em>How Music Got Free: The End of an Industry, the Turn of the Century, and the Patient Zero of Piracy</em>. Viking.</span></li>
-                <li><span>[5]</span><span>Kray, C., & Reker, L. (2000). "The Geographies of GeoCities: virtual communities on the web." <em>Proceedings of the Ninth International World Wide Web Conference</em>.</span></li>
-                <li><span>[6]</span><span>"Yahoo! to close GeoCities." (2009, April 23). <em>BBC News</em>. Retrieved November 3, 2025.</span></li>
-                <li><span>[7]</span><span>Turner, V. (1969). <em>The Ritual Process: Structure and Anti-Structure</em>. Aldine Publishing.</span></li>
-                <li><span>[8]</span><span>Baron, N. S. (2008). <em>Always On: Language in an Online and Mobile World</em>. Oxford University Press.</span></li>
-                <li><span>[9]</span><span>Turkle, S. (2011). <em>Alone Together: Why We Expect More from Technology and Less from Ourselves</em>. Basic Books.</span></li>
+                <li><span>[3]</span><span>Kirschenbaum, M. (2008). <em>Mechanisms: New Media and the Forensic Imagination</em>. MIT Press.</span></li>
+                <li><span>[4]</span><span>Parikka, J. (2012). <em>What is Media Archaeology?</em> Polity Press.</span></li>
+                <li><span>[5]</span><span>Witt, S. (2015). <em>How Music Got Free: The End of an Industry, the Turn of the Century, and the Patient Zero of Piracy</em>. Viking.</span></li>
+                <li><span>[6]</span><span>Kray, C., & Reker, L. (2000). "The Geographies of GeoCities: virtual communities on the web." <em>Proceedings of the Ninth International World Wide Web Conference</em>.</span></li>
+                <li><span>[7]</span><span>"Yahoo! to close GeoCities." (2009, April 23). <em>BBC News</em>. Retrieved November 3, 2025.</span></li>
+                <li><span>[8]</span><span>Turner, V. (1969). <em>The Ritual Process: Structure and Anti-Structure</em>. Aldine Publishing.</span></li>
+                <li><span>[9]</span><span>Baron, N. S. (2008). <em>Always On: Language in an Online and Mobile World</em>. Oxford University Press.</span></li>
+                <li><span>[10]</span><span>Turkle, S. (2011). <em>Alone Together: Why We Expect More from Technology and Less from Ourselves</em>. Basic Books.</span></li>
             </ul>
         </article>
+        <!-- === NEW, MASTERED ESSAY CONTENT ENDS === -->
 
     </main>
 

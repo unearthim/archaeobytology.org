@@ -4,31 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- === Primary Meta Tags === -->
-    <title>The Petribyte | The Archaeobyte Papers</title>
-    <meta name="title" content="The Petribyte | The Archaeobyte Papers">
-    <meta name="description" content="A Foundational Thesis on the Fossils of the Digital Age">
-    <meta name="keywords" content="Digital Archaeology, Petribyte, Archaeobyte Papers">
-    <meta name="author" content="unearth.im">
+    <!-- === 1. Primary Meta Tags === -->
+    <title>The Petribyte | Archaeobytology.org</title>
+    <meta name="title" content="The Petribyte | Archaeobytology.org">
+    <meta name="description" content="A foundational thesis on the 'fossils' of the digital past, defining 'technological petrifaction' and the 'fossil of function.'">
+    <meta name="keywords" content="Petribyte, Digital Archaeology, Digital Fossil, Media Archaeology, Archaeobytology, Dead Media">
+    <meta name="author" content="archaeobytology.org (An unearth.im Project)">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
+    <link rel="canonical" href="https://archaeobytology.org/petribyte.html" />
 
-    <!-- === Open Graph / Twitter === -->
-    <meta property="og:title" content="The Petribyte | The Archaeobyte Papers">
-    <meta property="og:description" content="A Foundational Thesis on the Fossils of the Digital Age">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://unearth.im/papers/petribyte">
-    <meta property="og:image" content="https://unearth.im/og-image-papers.png"> 
+    <!-- === 2. Webmention Endpoint === -->
+    <link rel="webmention" href="https://webmention.io/unearth.im/webmention" />
+
+    <!-- === 3. Open Graph / Facebook === -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://archaeobytology.org/petribyte.html">
+    <meta property="og:title" content="The Petribyte | Archaeobytology.org">
+    <meta property="og:description" content="A foundational thesis on the 'fossils' of the digital past, defining 'technological petrifaction' and the 'fossil of function.'">
+    <meta property="og:image" content="https://archaeobytology.org/og-image.png">
+    <meta property="og:site_name" content="Archaeobytology.org">
+
+    <!-- === 4. Twitter Card === -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="The Petribyte | The Archaeobyte Papers">
-    <meta property="twitter:description" content="A Foundational Thesis on the Fossils of the Digital Age">
-    <meta property="twitter:image" content="https://unearth.im/og-image-papers.png">
+    <meta property="twitter:url" content="https://archaeobytology.org/petribyte.html">
+    <meta property="twitter:title" content="The Petribyte | Archaeobytology.org">
+    <meta property="twitter:description" content="A foundational thesis on the 'fossils' of the digital past, defining 'technological petrifaction' and the 'fossil of function.'">
+    <meta property="twitter:image" content="https://archaeobytology.org/og-image.png">
 
     <!-- === Favicons === -->
-    <link rel="icon" href="https://unearth.im/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="https://unearth.im/apple-touch-icon.png">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <meta name="theme-color" content="#fcfaf5">
+    <meta name="msapplication-TileColor" content="#BF5700">
 
     <!-- === Tailwind CSS === -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -118,7 +127,7 @@
             margin-top: 1rem; /* space-y-4 */
         }
         .prose li span:first-child {
-            width: 2.5rem; /* w-10 */
+            width: 10rem; /* w-40 -- UPPED FROM w-10 TO FIX WRAP */
             flex-shrink: 0;
             font-size: 0.875rem; /* text-sm */
             margin-top: 0.25rem; /* mt-1 */
@@ -130,6 +139,15 @@
         }
         .prose-preamble p {
              color: #6b7280; /* unearth-secondary */
+        }
+        .prose code {
+            background-color: #e5e7eb; /* unearth-border */
+            padding: 0.125rem 0.375rem; /* px-1.5 py-0.5 */
+            border-radius: 0.25rem; /* rounded */
+            font-size: 1rem; /* text-base */
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            color: #BF5700; /* unearth-primary */
         }
     </style>
 
@@ -178,76 +196,90 @@
             </a>
         </div>
         
-        <!-- Essay Content -->
+        <!-- === NEW, MASTERED ESSAY CONTENT BEGINS === -->
         <article class="prose">
             <div class="prose-preamble">
                 <h2>Preamble: The Crisis of Function</h2>
-                <p>The "Archaeobyte" thesis established the foundational "find" of the Digital Archaeologist: the <strong class="text-unearth-main">Archaeobyte</strong>. It also established the <strong class="text-unearth-main">"Triage"</strong>: the critical <em>first act</em> of classification (Living, Liminal, or Petrified) that turns a "find" into an "insight."</p>
+                <p>The "Archaeobyte" thesis established the foundational "find" of the Digital Archaeologist: the <code>Archaeobyte</code>. It also established the "Triage": the critical _first act_ of classification (Living, Liminal, or Petrified) that turns a "find" into an "insight."</p>
                 <p>This essay investigates the most profound of these classifications: the "Petrified."</p>
                 <p>The digital world does not decay like the physical world. It does not rust, rot, or return to the soil. Instead, it "petrifies." Its artifacts, often preserved with perfect, byte-for-byte fidelity, are left behind as the "minerals" of technological change: new protocols, new browsers, new platforms: harden around them.</p>
-                <p>Digital Archaeologists are surrounded by these fossils: perfectly preserved artifacts whose <em>function</em> has been rendered obsolete by a relentlessly changing ecosystem. We find <code class="bg-unearth-border px-1 rounded">cgi-bin</code> scripts whose Perl dependencies no longer exist. We discover complex databases for platforms that were shut down a decade ago.</p>
-                <p>These artifacts are not "broken." They are <em>preserved</em>. They are the digital equivalent of a trilobite trapped in shale: the "living" function is gone, but the form is preserved with perfect, analyzable fidelity.</p>
+                <p>Digital Archaeologists are surrounded by these fossils: perfectly preserved artifacts whose _function_ has been rendered obsolete by a relentlessly changing ecosystem. We find <code>cgi-bin</code> scripts whose Perl dependencies no longer exist. We discover complex databases for platforms that were shut down a decade ago.</p>
+                <p>These artifacts are not "broken." They are _preserved_. They are the digital equivalent of a trilobite trapped in shale: the "living" function is gone, but the form is preserved with perfect, analyzable fidelity.</p>
+                <p>This phenomenon of "technological petrifaction" is not only an analogy; it is an observable, accelerated process. Where geological fossils are measured in eons, digital fossils are measured in years, sometimes even months. This was the core observation of projects like Bruce Sterling's "Dead Media Project," an academic and artistic endeavor to catalog the "boneyard of technological innovation."<sup class="text-unearth-primary font-semibold">8</sup> The <code>Petribyte</code> is the formal, classified specimen from this "boneyard." It is the artifact that proves that digital obsolescence is a form of rapid, functional, and perfectly-preserved fossilization.</p>
                 <p>This essay provides the formal name for the "fossil." The <strong class="text-unearth-main">Petribyte</strong> is the definitive term for a "Petrified Archaeobyte." It is the Rosetta Stone of the discipline.</p>
             </div>
-            
+
             <h2>Part 1: The Etymological Forging</h2>
-            <p>The "Archaeobyte" is defined by its <em>provenance</em> (its age). The "Petribyte" is defined by its <em>state</em> (its function).</p>
+            <p>The "Archaeobyte" is defined by its _provenance_ (its age). The "Petribyte" is defined by its _state_ (its function).</p>
             <p>This term is a deliberate portmanteau, forged to serve as the formal classification for a "fossil of function." It is composed of two distinct parts:</p>
-            
+
             <p><strong class="text-unearth-main">1. Petri- (The Process)</strong></p>
             <p>This root is drawn from the Greek: <em>pétra</em> (πέτρα), meaning "rock" or "stone."<sup class="text-unearth-primary font-semibold">1</sup> Its narrative provenance evokes the process of petrifaction. Petrifaction is not decay; it is an act of preservation. It is the geological process where once-living, organic matter is slowly transformed, its original structure "turned to stone" by the minerals surrounding it. The living tissue is replaced, molecule by molecule, until a perfect stone fossil remains.</p>
             <p>In the digital context, this is <strong class="text-unearth-main">"technological petrifaction."</strong></p>
             <p>A "living" digital artifact is surrounded by the "minerals" of technological change: obsolete browsers, deprecated plugins, abandoned APIs. The artifact ceases its "living" function, but its structure (the code, the file, the very concept) is frozen, perfectly preserved in its inert state by the new, hardened ecosystem that encases it.</p>
-            
+
             <p><strong class="text-unearth-main">2. -byte (The Substance)</strong></p>
-            <p>This root is from digital science: the <strong class="text-unearth-main">byte</strong>, a fundamental unit of digital information; the "molecule" of the digital world.<sup class="text-unearth-primary font-semibold">2</sup> This grounds the term firmly in the digital. It is not a physical fossil, but a fossil of information.</p>
-            
+            <p>This root is from digital science: the <strong>byte</strong>, a fundamental unit of digital information; the "molecule" of the digital world.<sup class="text-unearth-primary font-semibold">2</sup> This grounds the term firmly in the digital. It is not a physical fossil, but a fossil of information.</p>
+
             <h3>The Synthesis</h3>
             <p>A <strong class="text-unearth-main">Petribyte</strong> is a unit of digital-cultural substance that has been "turned to stone" by the mineral-rich and shifting currents of technological obsolescence.</p>
-            <p>It is no longer alive or functional in its native environment, but it is also not lost. Its form is preserved with perfect fidelity, telling us everything about the ecosystem it once inhabited. <strong class="text-unearth-main">It is a fossil of function, preserved in form.</strong></p>
-            
+            <p>It is no longer alive or functional in its native environment, but it is also not lost. Its form is preserved with perfect fidelity, telling us everything about the ecosystem it once inhabited. <strong>It is a fossil of function, preserved in form.</strong></p>
+            <p>To use the semiotic language from the "Umbrabyte" thesis, a new, critical distinction emerges. If the <code>Umbrabyte</code> is a *de-signified* artifact (a "signifier," like an <code>.html</code> file, that has lost its "signified," its context), the <code>Petribyte</code> is an *illegible* artifact. It is a "signifier" (like the <code>.rm</code> file) that the modern ecosystem no longer even recognizes *as* a sign. It is a linguistic fossil, a set of symbols that cannot be read. It is the "Rosetta Stone" (as the conclusion notes) for which the interpretive "key" (the codec, the emulator) has been lost.</p>
+
             <h2>Part 2: The Triage — Archaeobyte vs. Petribyte</h2>
-            <p>This distinction is the central act of the Digital Archaeologist. It is the "Triage" defined in the "Archaeobyte" thesis. After the "find" (the Archaeobyte), the state must be determined.</p>
-            <p>An <strong class="text-unearth-main">Archaeobyte</strong> is the <em>general</em> term for the "find." It is <em>any</em> digital artifact from a past technological era.</p>
-            <p>A <strong class="text-unearth-main">Petribyte</strong> is the <em>specific</em> classification for a "fossil." It is an Archaeobyte that has been "petrified" by technological change.</p>
-            <p>This leads to the foundational rule: <em>All Petribytes are Archaeobytes, but not all Archaeobytes are Petribytes.</em></p>
-            <p>A 1999 <code class="bg-unearth-border px-1 rounded">.mp3</code> file is an Archaeobyte (an ancient find), but it is not a Petribyte because it is still functional (a "Living Archaeobyte," or <strong class="text-unearth-main">Vivibyte</strong>). A 1999 RealPlayer <code class="bg-unearth-border px-1 rounded">.rm</code> file is <em>both</em> an Archaeobyte (an ancient find) <em>and</em> a Petribyte (a "Petrified Archaeobyte"), because its function is now extinct.</p>
+            <p>This distinction is the central act of the Digital Archaeologist. It is the "Triage" defined in the "Archaeobyte" thesis. After the "find" (the <code>Archaeobyte</code>), the state must be determined.</p>
+            <ul>
+                <li><span>An <code>Archaeobyte</code></span><span>is the <em>general</em> term for the "find." It is <em>any</em> digital artifact from a past technological era.</span></li>
+                <li><span>A <code>Petribyte</code></span><span>is the <em>specific</em> classification for a "fossil." It is an <code>Archaeobyte</code> that has been "petrified" by technological change.</span></li>
+            </ul>
+            <p>This leads to the foundational rule: <em>All <code>Petribytes</code> are <code>Archaeobytes</code>, but not all <code>Archaeobytes</code> are <code>Petribytes</code>.</em></p>
+            <p>A 1999 <code>.mp3</code> file is an <code>Archaeobyte</code> (an ancient find), but it is not a <code>Petribyte</code> because it is still functional (a "Living Archaeobyte," or <code>Vivibyte</code>). A 1999 RealPlayer <code>.rm</code> file is <em>both</em> an <code>Archaeobyte</code> (an ancient find) <em>and</em> a <code>Petribyte</code> (a "Petrified Archaeobyte"), because its function is now extinct.</p>
             <p>The "Petribyte" is the formal name given to the "Petrified" classification. This act of "Triage" is what separates the "living" past from the "fossilized" past.</p>
-            
+
             <h2>Part 3: The Specimen Box — A Taxonomy of Petribytes</h2>
             <p>A new term is only as strong as its utility. The "Petribyte" is an analytical tool, allowing for the categorization of fossils to understand <em>how</em> they were petrified.</p>
-            
+
             <h3>Type 1: The Technical Petribyte (The Inert File)</h3>
             <p>This is the most common fossil. It is a piece of code, a script, or a file that is perfectly preserved but whose <em>native function</em> is now impossible to execute. It is an artifact whose "ground" has vanished.</p>
-            <p><strong class="text-unearth-main">Specimen:</strong> A RealPlayer <code class="bg-unearth-border px-1 rounded">.rm</code> file from 1999.</p>
-            <p><strong class="text-unearth-main">Excavation & Analysis:</strong> The artifact is complete. Not a single byte is lost. But the "minerals" of technological change: specifically the deprecation of the RealPlayer plugin and the universal adoption of other codecs: have completely encased it. Its "living" function to be a streaming video file is gone. It is a fossil of the "streaming wars" of the late 1990s, a relic from a time before abundant bandwidth, when "streaming" was a low-fidelity, buffer-filled novelty.</p>
-            <p><strong class="text-unearth-main">Other Examples:</strong></p>
-            <p>A <code class="bg-unearth-border px-1 rounded">guestbook.cgi</code> script: A "Tangible Archaeobyte" that is also a "Technical Petribyte." Its <code class="bg-unearth-border px-1 rounded">.cgi</code> (Common Gateway Interface) file is perfectly preserved, but the "ground" it ran on: a specific server architecture with specific Perl dependencies: is gone. It is a fossil of <strong class="text-unearth-main">Pillar 2: Connection</strong>, a relic from a time when connection was a deliberate, asynchronous act of "signing" one's name.</p>
-            <p><strong class="text-unearth-main">Note on "Re-Animation":</strong> This classification is dynamic. The <code class="bg-unearth-border px-1 rounded">.swf</code> (Flash) file was the quintessential Petribyte for a decade. However, the heroic, external work of "Archaeologist-Smiths" (such as the Ruffle emulator) has "re-animated" it.<sup class="text-unearth-primary font-semibold">3</sup> This act of "resurrection" transforms the artifact. It is no longer a "Petribyte" (a fossil); it is now an <strong class="text-unearth-main">Umbrabyte</strong> (a "living" file in a "dead" ecosystem). A true Petribyte is one for which no modern, functional emulator exists.</p>
-            
+            <ul>
+                <li><span class="font-ui !text-unearth-secondary !text-sm">Specimen:</span><span>A RealPlayer <code>.rm</code> file from 1999.</span></li>
+                <li><span class="font-ui !text-unearth-secondary !text-sm">Excavation & Analysis:</span><span>The artifact is complete. Not a single byte is lost. But the "minerals" of technological change: specifically the deprecation of the RealPlayer plugin and the universal adoption of other codecs: have completely encased it. Its "living" function to be a streaming video file is gone. It is a fossil of the "streaming wars" of the late 1990s, a relic from a time before abundant bandwidth, when "streaming" was a low-fidelity, buffer-filled novelty.</span></li>
+                <li><span class="font-ui !text-unearth-secondary !text-sm">Other Examples:</span><span></span></li>
+            </ul>
+            <ul class="!mt-0 !-ml-4">
+                <li><span class="font-ui !text-unearth-secondary !text-sm !w-auto !ml-16 !-mt-4"><strong>A <code>guestbook.cgi</code> script:</strong></span><span class="!ml-16 !-mt-4">A "Tangible Archaeobyte" that is also a "Technical Petribyte." Its <code>.cgi</code> (Common Gateway Interface) file is perfectly preserved, but the "ground" it ran on is gone. It is a fossil of <em>brittle platform dependency</em>. The script did not petrify in isolation; it petrified because its assumed "ground"—a specific version of the Apache server, a specific, unsecured Perl interpreter—was "mineralized" (made obsolete) directly beneath it. It is a fossil of <strong>Pillar 2: Connection</strong>, a relic from a time when connection was a deliberate, asynchronous act of "signing" one's name.</span></li>
+            </ul>
+            <ul class="!mt-8">
+                <li><span class="font-ui !text-unearth-secondary !text-sm">Note on "Re-Animation":</span><span>This classification is dynamic. The <code>.swf</code> (Flash) file was the quintessential <code>Petribyte</code> for a decade. However, the heroic, external work of "Archaeologist-Smiths" (such as the Ruffle emulator) has "re-animated" it.<sup class="text-unearth-primary font-semibold">3</sup> This act of "resurrection" transforms the artifact. It is no longer a "Petribyte" (a fossil); it is now an <code>Umbrabyte</code> (a "living" file in a "dead" ecosystem). A true <code>Petribyte</code> is one for which no modern, functional emulator exists.</span></li>
+            </ul>
+
             <h3>Type 2: The Conceptual Petribyte (The Cultural Ghost)</h3>
             <p>This is the most abstract and powerful type of fossil. It is a "Conceptual Archaeobyte" that has been petrified. It is a <em>behavior</em>, a <em>ritual</em>, or a <em>function</em> that has been so thoroughly petrified by ecosystem change that its original purpose is extinct.</p>
-            <p><strong class="text-unearth-main">Specimen:</strong> The AIM "Away Message."</p>
-            <p><strong class="text-unearth-main">Excavation & Analysis:</strong> This Archaeobyte is one of the most significant "cultural ghosts" of the synchronous web. Its entire purpose was to signal: "I am not at my keyboard <em>right now</em>." This was a world before the mobile, "always-on" internet. Presence was binary: one was "online" or "offline." The "Away Message" was the liminal state between them, a sub-genre of digital poetry.<sup class="text-unearth-primary font-semibold">4</sup></p>
-            <p><strong class="text-unearth-main">Petrified Principle:</strong> This is a fossil of <strong class="text-unearth-main">Human-Scale Presence.</strong> The "minerals" of technological change: specifically the shift from desktop-based synchronous chat to mobile-first asynchronous messaging and the "always-on" assumption of the smartphone: have completely petrified it. The concept's function is extinct. This is the shift sociologist Sherry Turkle defines as the move "from conversation to connection," where the nuance of 'presence' was replaced by the binary of 'availability.'<sup class="text-unearth-primary font-semibold">5</sup></p>
-            <p><strong class="text-unearth-main">Other Examples:</strong></p>
-            <p>The <strong class="text-unearth-main">"Webring":</strong> Perhaps the most tragic Petribyte, the Webring was a decentralized, <em>relational</em> network. It was a fossil of a different <em>philosophy</em> of the internet, one based on community and mutual-linking, not on centralized, competitive ranking.</p>
-            <p>The <strong class="text-unearth-main">"Hit Counter":</strong> A fossil of a transparent, naive metric system, petrified by the rise of opaque, private, and infinitely complex "analytics" platforms.</p>
-            
+            <ul>
+                <li><span class="font-ui !text-unearth-secondary !text-sm">Specimen:</span><span>The AIM "Away Message."</span></li>
+                <li><span class="font-ui !text-unearth-secondary !text-sm">Excavation & Analysis:</span><span>This <code>Archaeobyte</code> is one of the most significant "cultural ghosts" of the synchronous web. Its entire purpose was to signal: "I am not at my keyboard <em>right now</em>." This was a world before the mobile, "always-on" internet. Presence was binary: one was "online" or "offline." The "Away Message" was the liminal state between them, a sub-genre of digital poetry.<sup class="text-unearth-primary font-semibold">4</sup></span></li>
+                <li><span class="font-ui !text-unearth-secondary !text-sm">Petrified Principle:</span><span>This is a fossil of <strong>Human-Scale Presence.</strong> The "minerals" of technological change: specifically the shift from desktop-based synchronous chat to mobile-first asynchronous messaging and the "always-on" assumption of the smartphone: have completely petrified it. The concept's function is extinct. This is the shift sociologist Sherry Turkle defines as the move "from conversation to connection," where the nuance of 'presence' was replaced by the binary of 'availability.'<sup class="text-unearth-primary font-semibold">5</sup></span></li>
+                <li><span class="font-ui !text-unearth-secondary !text-sm">Other Examples:</span><span></span></li>
+            </ul>
+            <ul class="!mt-0 !-ml-4">
+                <li><span class="font-ui !text-unearth-secondary !text-sm !w-auto !ml-16 !-mt-4"><strong>The "Webring":</strong></span><span class="!ml-16 !-mt-4">Perhaps the most tragic <code>Petribyte</code>, the Webring was a decentralized, <em>relational</em> network. It was a fossil of a different <em>philosophy</em> of the internet, one based on community and mutual-linking, not on centralized, competitive ranking.</span></li>
+                <li><span class="font-ui !text-unearth-secondary !text-sm !w-auto !ml-16"><strong>The "Hit Counter":</strong></span><span class="!ml-16">A fossil of a transparent, naive, and <em>public</em> metric system. Its petrifaction was not just a technical change but a <em>philosophical</em> one. It was petrified by the rise of what Shoshana Zuboff terms "surveillance capitalism."<sup class="text-unearth-primary font-semibold">9</sup> The simple, public, and performative "hit counter" (a signal <em>to the community</em>) was replaced by invisible, opaque, and privately-hoarded "analytics" (data extracted <em>from</em> the community for corporate optimization). The <code>Petribyte</code> is the fossil of this pre-surveillance, human-scale concept of "web traffic."</span></li>
+            </ul>
+
             <h2>Part 4: Why Petribytes Matter</h2>
             <p>To name a thing is to see it. By naming these digital fossils, they are elevated from "junk" to "evidence."</p>
-            <p>A paleontologist studies a trilobite fossil not because they want to "revive" it, but because its petrified form is a perfect record of the Cambrian ocean. The Petribyte serves the same function.</p>
-            <p><strong class="text-unearth-main">1. Petribytes are the Evidence of History.</strong> The Petribyte is the physical proof of the digital-historical narrative. As media archaeologist Jussi Parikka argues, practitioners must excavate the "strata" of these "discursive formations" to understand the present.<sup class="text-unearth-primary font-semibold">6</sup> The "Type 2" Petribyte (the "Webring," the "Guestbook") is the evidence of the very human-scale connection that was sacrificed for the convenience of the centralized feed.</p>
-            <p><strong class="text-unearth-main">2. Petribytes are the Blueprint for a Human-Centric Future.</strong> This is the "vow": these fossils are studied not for nostalgia, but for wisdom. They are the only record of digital ancestors' mistakes and triumphs. The "Conceptual Petribyte" of the AIM "Away Message" is not just a curiosity; it is a fossil of a time when users <em>controlled their own presence</em>. By excavating its form, one recovers the lost blueprint for a web that respects a user's <em>absence</em> as much as their <em>engagement</em>.</p>
-            <p>Institutions like the Internet Archive are the great libraries of Petribytes, performing the crucial, large-scale work of preservation.<sup class="text-unearth-primary font-semibold">7</sup> The work of the Digital Archaeologist is to <em>curate</em> that library, select the most significant specimens, analyze their "petrifaction," and translate their lessons.</p>
-            
+            <p>A paleontologist studies a trilobite fossil not because they want to "revive" it, but because its petrified form is a perfect record of the Cambrian ocean. The <code>Petribyte</code> serves the same function.</p>
+            <p><strong class="text-unearth-main">1. <code>Petribytes</code> are the Evidence of History.</strong> The <code>Petribyte</code> is the physical proof of the digital-historical narrative. As media archaeologist Jussi Parikka argues, practitioners must excavate the "strata" of these "discursive formations" to understand the present.<sup class="text-unearth-primary font-semibold">6</sup> The "Type 2" <code>Petribyte</code> (the "Webring," the "Guestbook") is the evidence of the very human-scale connection that was sacrificed for the convenience of the centralized feed.</p>
+            <p><strong class="text-unearth-main">2. <code>Petribytes</code> are the Blueprint for a Human-Centric Future.</strong> This is the "vow": these fossils are studied not for nostalgia, but for wisdom. They are the only record of digital ancestors' mistakes and triumphs. The "Conceptual <code>Petribyte</code>" of the AIM "Away Message" is not just a curiosity; it is a fossil of a time when users <em>controlled their own presence</em>. By excavating its form, one recovers the lost blueprint for a web that respects a user's <em>absence</em> as much as their <em>engagement</em>.</p>
+            <p>Institutions like the Internet Archive are the great libraries of <code>Petribytes</code>, performing the crucial, large-scale work of preservation.<sup class="text-unearth-primary font-semibold">7</sup> The work of the Digital Archaeologist is to <em>curate</em> that library, select the most significant specimens, analyze their "petrifaction," and translate their lessons.</p>
+
             <h2>Conclusion: The Rosetta Stone for a Wiser Web</h2>
-            <p>Language defines a discipline. By naming the Petribyte, an analytical tool has been created. It gives the "Digital Archaeologist" a way to categorize the "digital dust" and a mandate to treat it not as junk, but as evidence.</p>
+            <p>Language defines a discipline. By naming the <code>Petribyte</code>, an analytical tool has been created. It gives the "Digital Archaeologist" a way to categorize the "digital dust" and a mandate to treat it not as junk, but as evidence.</p>
             <p>This neologism is the load-bearing "specimen box" for the entire framework. The "Archaeobyte" is the "trowel" used to make the "find." The "Triage" is the "microscope" used to classify the find. The "Petribyte" is the "fossil" itself: the specimen that holds the wisdom.</p>
-            <p>The Petribyte is a Rosetta Stone.</p>
+            <p>The <code>Petribyte</code> is a Rosetta Stone.</p>
             <p>It allows for the reading of the fossil record of the hand-built web and the translation of its lessons. It is a key to understanding <em>why</em> the ideals of Web 1.0 failed, <em>how</em> the "Faustian bargain" of Web 2.0 was struck, and <em>what</em> principles must be recovered to build a "Third Way."</p>
-            <p>By studying these fossils of function, practitioners arm themselves with the only thing that can break the cycle: <em>wisdom</em>. The Petribytes of the past are excavated not for a museum, but to find the lost blueprints for a future that is not just new, but wise.</p>
-            
+            <p>By studying these fossils of function, practitioners arm themselves with the only thing that can break the cycle: <em>wisdom</em>. The <code>Petribytes</code> of the past are excavated not for a museum, but to find the lost blueprints for a future that is not just new, but wise.</p>
+
             <h2>Works Cited</h2>
             <ul>
                 <li><span>[1]</span><span>Liddell, H. G., & Scott, R. (1940). <em>A Greek-English Lexicon</em>. Clarendon Press. Entry for "πέτρα."</span></li>
@@ -257,8 +289,12 @@
                 <li><span>[5]</span><span>Turkle, S. (2011). <em>Alone Together: Why We Expect More from Technology and Less from Ourselves</em>. Basic Books.</span></li>
                 <li><span>[6]</span><span>Parikka, J. (2012). <em>What is Media Archaeology?</em> Polity Press.</span></li>
                 <li><span>[7]</span><span>Kahle, B. (1997). "Preserving the Internet." <em>Scientific American</em>, 276(3), 82–83.</span></li>
+                <li><span>[8]</span><span>Sterling, B. (1995). "The Dead Media Project: A Modest Proposal and a Public Appeal." (Originally posted to Usenet).</span></li>
+                <li><span>[9]</span><span>Zuboff, S. (2Further,
+ (2019). <em>The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power</em>. PublicAffairs.</span></li>
             </ul>
         </article>
+        <!-- === NEW, MASTERED ESSAY CONTENT ENDS === -->
 
     </main>
 
