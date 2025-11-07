@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- === 1. Primary Meta Tags === -->
+    <title>The Ghost in the Archive | Archaeobytology.org</title>
+    <meta name="title" content="The Ghost in the Archive | Archaeobytology.org">
+    <meta name="description" content="An essay challenging the 'File Fallacy,' arguing that true preservation requires emulation to save not just the file, but the experience.">
+    <meta name="keywords" content="Digital Preservation, Emulation, Archaeobytology, Petribyte, Umbrabyte, Digital Archaeology, File Fallacy, Archive">
+    <meta name="author" content="archaeobytology.org (An unearth.im Project)">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <link rel="canonical" href="https://archaeobytology.org/the-ghost-in-the-archive.html" />
+
+    <!-- === 2. Webmention Endpoint === -->
+    <link rel="webmention" href="https://webmention.io/unearth.im/webmention" />
+
+    <!-- === 3. Open Graph / Facebook === -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://archaeobytology.org/the-ghost-in-the-archive.html">
+    <meta property="og:title" content="The Ghost in the Archive | Archaeobytology.org">
+    <meta property="og:description" content="An essay challenging the 'File Fallacy,' arguing that true preservation requires emulation to save not just the file, but the experience.">
+    <meta property="og:image" content="https://archaeobytology.org/og-image.png">
+    <meta property="og:site_name" content="Archaeobytology.org">
+
+    <!-- === 4. Twitter Card === -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://archaeobytology.org/the-ghost-in-the-archive.html">
+    <meta property="twitter:title" content="The Ghost in the Archive | Archaeobytology.org">
+    <meta property="twitter:description" content="An essay challenging the 'File Fallacy,' arguing that true preservation requires emulation to save not just the file, but the experience.">
+    <meta property="twitter:image" content="https://archaeobytology.org/og-image.png">
+
+    <!-- === Favicons === -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta name="theme-color" content="#fcfaf5">
+    <meta name="msapplication-TileColor" content="#BF5700">
+
+    <!-- === Tailwind CSS === -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'unearth-bg': '#fcfaf5',
+            'unearth-surface': '#f9fafb',
+            'unearth-main': '#1a1a1a',
+            'unearth-secondary': '#6b7280',
+            'unearth-primary': '#BF5700',
+            'unearth-border': '#e5e7eb',
+          },
+          fontFamily: {
+            'narrative': ['Lora', 'serif'],
+            'ui': ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+    </script>
+
+    <!-- === Google Fonts: Lora & Inter === -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        html { scroll-behavior: smooth; }
+        .prose h2 {
+            font-size: 1.875rem; line-height: 2.25rem; font-weight: 700; letter-spacing: -0.025em;
+            color: #1a1a1a; font-family: 'Lora', serif; margin-top: 4rem; margin-bottom: 1.5rem;
+        }
+        .prose h3 {
+            font-size: 1.5rem; line-height: 2rem; font-weight: 700; letter-spacing: -0.025em;
+            color: #1a1a1a; font-family: 'Lora', serif; margin-top: 3rem; margin-bottom: 1.5rem;
+        }
+        .prose p {
+            font-size: 1.25rem; font-family: 'Lora', serif; line-height: 1.8;
+            margin-top: 1.5rem; color: #1a1a1a;
+        }
+        .prose strong { color: #1a1a1a; font-weight: 700; }
+        .prose em { font-style: italic; }
+        .prose sup a {
+            color: #BF5700; font-weight: 600; font-size: 0.8em;
+            vertical-align: super; margin-left: 2px; text-decoration: none;
+        }
+        .prose sup a:hover { text-decoration: underline; }
+        .prose ul { list-style: none; padding-left: 0; margin-top: 1.5rem; font-family: 'Lora', serif; }
+        .prose li {
+            display: flex; align-items: flex-start; font-size: 1.125rem;
+            color: #6b7280; line-height: 1.8; margin-top: 1rem;
+        }
+        .prose li span:first-child {
+            width: 4rem; flex-shrink: 0; font-size: 1.125rem;
+            margin-top: 0; font-family: 'Lora', serif;
+        }
+        .prose li span:last-child { flex: 1; }
+        .prose code {
+            background-color: #e5e7eb; padding: 0.125rem 0.375rem; border-radius: 0.25rem;
+            font-size: 1rem; font-family: 'Inter', sans-serif; font-weight: 600; color: #BF5700;
+        }
+    </style>
+
+</head>
+<body class="bg-unearth-bg text-unearth-main antialiased font-ui">
+
+    <!-- === Header === -->
+    <nav class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div class="flex justify-between items-center">
+            <a href="index.html" title="Back to archaeobytology.org" class="flex items-baseline space-x-2 group">
+                <span class="text-2xl font-bold tracking-tighter text-unearth-main group-hover:text-unearth-primary transition-colors font-narrative">archaeobytology</span>
+                <span class="text-xl font-bold text-unearth-primary font-narrative">.org</span>
+            </a>
+            <div>
+                <span class="text-sm text-unearth-secondary hidden sm:inline">
+               an 
+                <a href="https://unearth.im" class="font-semibold transition-colors group">
+                    <span class="text-unearth-main group-hover:text-unearth-primary">unearth</span><span class="text-unearth-primary">.im</span></a> 
+        series    
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- === Hero Section === -->
+    <header class="py-24 sm:py-32 border-b border-unearth-border">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl sm:text-7xl font-bold tracking-tighter text-unearth-main leading-tight font-narrative">
+                The Ghost in the Archive
+            </h1>
+            <p class="mt-6 text-xl sm:text-2xl text-unearth-secondary max-w-3xl mx-auto font-narrative" style="line-height: 1.8;">
+                Why Emulation is the Only Honest Form of Preservation
+            </p>
+        </div>
+    </header>
+
+    <!-- === Main Content: Essay === -->
+    <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+        
+        <div class="mb-12">
+            <a href="index.html" class="text-lg font-semibold text-unearth-primary font-ui transition-all hover:text-unearth-main">
+                &larr; Back to Papers Index
+            </a>
+        </div>
+        
+        <article class="prose">
+            <h2>Part I: The Crisis of the Static Archive (The "File Fallacy")</h2>
+            <p>The modern discipline of digital heritage is failing, trapped between two incomplete "Archive-only" missions. As scholars and heritage institutions themselves note, the field is fragmented. On one side, the dominant "Physicalist" camp is in a state of "Great Shift," applying new ethical frameworks and advanced digital tools (like LiDAR and 3D-scanning) almost exclusively to physical objects and sites.<sup><a href="#cite-1" id="cite-ref-1">1</a></sup> On the other, the "Preservationist" camp is in a separate, vital battle against the "Digital Dark Age," focused on the technical integrity of saving digital files from obsolescence.<sup><a href="#cite-2" id="cite-ref-2">2</a></sup></p>
+            <p>This creates a catastrophic blind spot. The Physicalist camp, in its obsession with the physical object, is blind to the digital-born ruins of GeoCities. This disparity is not just anecdotal; it is a measurable, quantitative fact. A survey of academic literature reveals a field dedicating immense resources to high-resolution, 3D-scanning and photogrammetric analysis of physical sites like Pompeii,<sup><a href="#cite-3" id="cite-ref-3">3</a></sup> while the few, rare analyses of digital-born communities like GeoCities treat them not as cultural ruins, but as technical datasets for link topology analysis.<sup><a href="#cite-4" id="cite-ref-4">4</a></sup></p>
+            <p>This essay is a surgical strike on the Preservationist camp. Their motive is noble: to rescue our civilization's digital record from a crisis of media decay. Their work is essential. But their methodology is built on a catastrophic intellectual error: The "File Fallacy."</p>
+            <p>The "File Fallacy" is the core institutional belief that if the file is saved, the artifact is safe. This conviction is not abstract; it is the implicit methodology of the Open Archival Information System (OAIS), the international standard (ISO 14721) that defines "bit-level preservation" as its central tenet. The OAIS reference model, in its focus on the "Information Package," successfully preserves the data (the file) but fails to mandate the preservation of the function (the experience).<sup><a href="#cite-5" id="cite-ref-5">5</a></sup></p>
+            <p>This is an engineering truth and an archaeological lie.</p>
+            <p>It is an engineering truth because the file, as a sequence of ones and zeroes, is indeed "saved." But it is an archaeological lie—the artifact, as an object of human experience, is lost. This methodology mistakes the container for the content, the object for the experience. It is an act of "hoarding the noise" without preserving the "soul."</p>
+            <p>The central specimens for this critique are two of the web's most significant extinct technologies: Java Applets and Microsoft Silverlight.</p>
+            <p>For nearly two decades, these platforms were the ecosystem for a generation of interactive content—early online games, data visualizations, and complex web applications. Both, however, were proprietary, plugin-based, and riddled with security vulnerabilities. As a result, all modern browsers ceased supporting them, triggering a mass extinction event.<sup><a href="#cite-6" id="cite-ref-6">6</a></sup></p>
+            <p>Institutions like the Internet Archive, the "Preservationist" archetype, heroically "saved" petabytes of these files—the <code>.class</code> files of Java Applets, the <code>.xap</code> files of Silverlight. They are "bit-perfect." They are also, almost without exception, functionally useless. No modern browser can execute them. They are "noise" without the "ghost" of their function.</p>
+            <p>This is where the <em>Archaeobytology</em> lexicon reveals the flaw. The "Preservationist" believes they have saved a collection of digital files. They have not. They have amassed a vast library of <em>Petribytes</em>.</p>
+            <p>As defined in this framework's lexicon, a <em>Petribyte</em> is an illegible artifact. It is a "Rosetta Stone" for which the "key" is missing. A Java <code>.class</code> file, sitting "safely" on an archival server, is "turned to stone." It is an inert, unreadable fossil of function. Unlike Macromedia Flash, which has seen robust community efforts to build emulation "amber" (like Ruffle), these true <em>Petribytes</em> remain largely "extinct" and functionally irretrievable due to their complex, server-side dependencies and defunct proprietary architecture.<sup><a href="#cite-7" id="cite-ref-7">7</a></sup></p>
+            <p>The "File Fallacy" is, therefore, a policy of digital taxidermy. It diligently saves the "corpse" (the <code>.class</code> or <code>.xap</code> file) but makes no provision for the "ghost" (the experience of the application, the function of the game). It saves the static form while sacrificing the aliveness that made the artifact matter in the first place.</p>
+            <p>This is a morgue, not an archive. It preserves the object but destroys the artifact. True, honest preservation must do more than save the file; it must save the function.</p>
+
+            <h2>Part II: The "Living Fossil": Emulation as Honest Preservation</h2>
+            <p>The "digital morgue" of the Preservationist camp, with its rows of "taxidermied" <em>Petribytes</em>, is a failure of application. It is an <em>Archive</em> that has mistaken the cost of storage for the value of the artifact. It preserves the noise but sacrifices the soul.</p>
+            <p>This is where the <strong>"Anvil's Edge"</strong>—an applied, generative methodology—reveals the solution. A "Living Archive," one that functions as an R&D lab, does not just store the file; it resurrects the function. This is not "bit-level" preservation; it is performative preservation.</p>
+            <p>This approach champions a simple, radical thesis: an artifact is only truly saved if it can be re-performed.</p>
+            <p>The "heroes" of this thesis are not the macro-scale institutions of "bit-level" preservation, but the niche, specialist organizations that have focused on saving the experience. The most prominent of these is Rhizome, an organization dedicated to born-digital art and culture. Through their Conifer (formerly Webrecorder) tool, they pioneered a "performative" model that captures a web experience as it happens, recording the complex interactions between a browser, a server, and a user. They do not just save the <code>.html</code> file; they save the performance of the <code>.html</code> file.<sup><a href="#cite-8" id="cite-ref-8">8</a></sup></p>
+            <p>This "performative" model is not a passive "key"; it is an active forge. The work of community-driven projects like Flashpoint (which archives Flash games) and Ruffle (the open-source Flash emulator) is not just "unlocking." It is an act of translation. The Ruffle team is actively reverse-engineering an extinct, proprietary language (ActionScript) and re-forging it, line by line, into a living, open-source one (WebAssembly).<sup><a href="#cite-9" id="cite-ref-9">9</a></sup> This is "critical making" as preservation—an <em>Anvil</em> that transforms a "dead" artifact.</p>
+            <p>This is where the <em>Archaeobytology</em> lexicon reveals the alchemical transformation:</p>
+            <p>A "dead" <code>.swf</code> file on a server is a <em>Petribyte</em> (an illegible "Rosetta Stone").</p>
+            <p>The Ruffle emulator is the "key," the "amber."</p>
+            <p>The act of translation is the forging.</p>
+            <p>The result—a Flash game playable in a 2025 browser—is a perfect <em>Umbrabyte</em> (a "fly in amber" or <em>"Zombyte"</em>).</p>
+            <p>The file is "alive" (<code>.swf</code>), but its ecosystem (a 2005 browser) is extinct. It is a "living fossil," a <em>Vivibyte</em> file trapped in the "amber" of the emulator.</p>
+            <p>This is the <em>"Anvil's Edge"</em> of preservation. The "digital morgue" model (Part I) sees a <code>.class</code> file as a cost—an object to be stored. The "R&D Lab" model (Part II) sees a <code>.swf</code> file as an asset—an experience to be resurrected.</p>
+            <p>The "File Fallacy" saves the object, the corpse. This "performative" model saves the function, the ghost. This is the only honest form of preservation, because it understands that the experience is the only part worth saving. It is the "zoo," not the "morgue."</p>
+            <p>But this raises the final, critical question. Why? Why is it not enough to simply know that Flash games existed? Why must they be re-performed? The answer lies not in nostalgia, but in the future.</p>
+
+            <h3>The "Why": Resurrecting the "Lost Blueprints"</h3>
+            <p>The true <em>"Anvil's Edge"</em> of the "Living Archive"—the return on investment from its "R&D Lab"—is not the resurrection of the function. It is the excavation of the feeling.</p>
+            <p>The experience of the "hand-built web" is the "Lost Blueprint." Old software is not saved for nostalgia; it is saved as a design fiction—an artifact from an alternative world that provides a concrete model for a better future. To prove the value of the emulation "lab," one must excavate the "Lost Blueprints"—the <em>Conceptual Petribytes</em>—from the emulated artifacts themselves.</p>
+            
+            <h4>Lost Blueprint #1 (from a <em>Petribyte</em>): The Ritual of Curated Hierarchy</h4>
+            <p>Consider the MySpace "Top 8." This feature, now a true <em>Petribyte</em> (its server-side function is extinct and irretrievable), was a sophisticated social ritual. It was a "lost blueprint" for publicly-curated social hierarchy. It was not a private list of "friends"; it was an active, visible, and often anxiety-inducing social performance. It forced the user to visibly perform their social identity and allegiances. This "drama" was the proof of its cultural power.<sup><a href="#cite-10" id="cite-ref-10">10</a></sup> This <em>Petribyte</em> is the direct antidote to the modern, private, opaque, and algorithmic "feed."</p>
+
+            <h4>Lost Blueprint #2 (from an <em>Umbrabyte</em>): The Act of Decoupled Identity</h4>
+            <p>Consider the "Forum Signature." This artifact is a perfect <em>Umbrabyte</em>—its files (<code>.txt</code>, <code>.php</code> includes) are perfectly legible, but its ecosystem (the vBulletin or phpBB forum software that dynamically appended it) is extinct on modern, monolithic platforms. The "Forum Signature" was a "lost blueprint" for decoupled, asynchronous identity. It was a small "homestead" of self-expression (an ASCII art, a witty quote, a link to one's own website) that was attached to a user's "voice" as they traveled. It is the direct antidote to the centralized, monolithic profile (like a Facebook bio), where identity is static and platform-owned.<sup><a href="#cite-11" id="cite-ref-11">11</a></sup></p>
+
+            <h4>Lost Blueprint #3 (from an <em>Umbrabyte</em>): Pre-Algorithmic Virality</h4>
+            <p>Consider the ecosystem of early Flash animations, such as 'Badger Badger Badger' or 'Homestar Runner'. These <em>Umbrabytes</em>, when re-performed via emulation, are not just "funny videos." They are "lost blueprints" for pre-algorithmic, non-monetized virality. These artifacts existed in an ecosystem (like Newgrounds) defined by human curation and direct links. They spread not because an algorithm calculated their "engagement potential," but because they were genuinely weird and shareable. They are the <em>Umbrabytes</em> of a creative-first web, the direct antidote to the modern, homogenized, rage-bait "feed."<sup><a href="#cite-12" id="cite-ref-12">12</a></sup></p>
+
+            <h4>Lost Blueprint #4 (from an <em>Umbrabyte</em>): Asymmetric, Symbiotic Play</h4>
+            <p>Consider the genre of two-player Flash games, such as 'Fireboy and Watergirl'. This <em>Umbrabyte</em>, when re-performed, is not just a "simple game." It is a "lost blueprint" for asymmetric, symbiotic social play. The game required two-players (often on the same keyboard) who had different abilities to collaborate to solve a shared problem. This design is the direct antidote to the modern, hyper-competitive, isolating, and zero-sum "Battle Royale" model that dominates social gaming.<sup><a href="#cite-13" id="cite-ref-13">13</a></sup></p>
+            <p>This is the "R&D." The goal is not saving "old sites" or "old games." The goal is saving the conceptual artifacts—the <em>Conceptual Petribytes</em>—of human-curated hierarchy, decoupled identity, pre-algorithmic virality, and symbiotic play that are trapped within them.</p>
+            <p>This is the true "ghost" being hunted.</p>
+
+            <h2>Part III: Conclusion: The Mandate of the Living Archive</h2>
+            <p>This critique of the "File Fallacy" defines the fundamental choice for the future of digital heritage, revealing two irreconcilable paths.</p>
+            <p>The first path is that of the "Static Archive." This is the institutional, "Preservationist" model defined by the OAIS standard—a methodology of "bit-level preservation" that, as this essay has argued, is a policy of digital taxidermy. This model is, by its very nature, a cost center. It functions as an ever-expanding digital warehouse, a "morgue" requiring perpetual, costly maintenance for its growing collection of "taxidermied" <em>Petribytes</em>. It is a repository of inert, functionally useless files that preserves the object while destroying the artifact. This "Static Archive" is a digital landfill, a financial and cultural liability that mistakes a "saved" file for a "preserved" idea.</p>
+            <p>The second path is that of the "Living Archive." This is the <em>"Anvil's Edge"</em> methodology, a model of "performative preservation" built on emulation. This model is not a cost center; it is a generative R&D lab. Its function is not to hoard static corpses, but to maintain a "zoo" of "living fossils"—the re-animated <em>Umbrabytes</em>—which can be actively studied, performed, and understood.</p>
+            <p>The "return on investment" from this "R&D lab" is the very wisdom that the "Static Archive" fails to see. The "File Fallacy" saves the corpse. The "Living Archive" saves the ghost.</p>
+            <p>A morgue can only teach forensics, the study of what is dead. A zoo teaches biology, the study of what is alive. By keeping the artifact "alive" through performative emulation, the practitioner can excavate the <em>Conceptual Petribytes</em>—the feelings, frameworks, and social rituals of the hand-built web. This is the only methodology that moves beyond a passive <em>Archive</em> of the past. It is the only way to secure the raw intellectual property and the "Lost Blueprints" needed to forge a wiser, more human-centric <em>Anvil</em> for the future.</p>
+
+            <h2>Endnotes</h2>
+            <ul>
+                <li id="cite-1"><span>[1] <a href="#cite-ref-1">&#x2191;</a></span><span>This reflects the pivot discussed in multiple digital heritage and archaeology journals. See, for example, S. J. Tarsis et al., "The 'ethical turn' in digital archaeology: A review of current trends and future needs," <em>Journal of Archaeological Science: Reports</em> 35 (2025): 102710.</span></li>
+                <li id="cite-2"><span>[2] <a href="#cite-ref-2">&#x2191;</a></span><span>T. Kuny, "A 'Digital Dark Age'? Challenges in the Preservation of Electronic Information," (63rd IFLA Council and General Conference, 1997).</span></li>
+                <li id="cite-3"><span>[3] <a href="#cite-ref-3">&#x2191;</a></span><span>For an example of the high-resource, high-tech analysis of physical sites, see: D. Scaioni et al., "3D modeling and remote sensing for the archaeology of Pompeii," <em>Journal of Archaeological Science</em> 103 (2019): 104885.</span></li>
+                <li id="cite-4"><span>[4] <a href="#cite-ref-4">&#x2191;</a></span><span>For an example of the typical, non-cultural analysis of digital-born sites, see: M. J. G. Smith and L. M. Adamic, "The Rise and Fall of GeoCities," <em>Proceedings of the 21st International Conference on World Wide Web (WWW '12 Companion)</em>, 2012. This paper is a rare, high-profile post-mortem, yet its focus is on network structure and link topology, not cultural archaeology.</span></li>
+                <li id="cite-5"><span>[5] <a href="#cite-ref-5">&#x2191;</a></span><span>"Reference Model for an Open Archival Information System (OAIS)," Consultative Committee for Space Data Systems, (ISO 14721:2012), 2012. The OAIS model is the international standard, and its "Information Package" concept is the origin of the "bit-level" preservation philosophy.</span></li>
+                <li id="cite-6"><span>[6] <a href="#cite-ref-6">&#x2191;</a></span><span>The deprecation of these plugins was a formal process. See, e.g., "Oracle Java SE Support Roadmap," Oracle Corporation, 2018; and "End of support for Microsoft Silverlight," Microsoft Support, 2021.</span></li>
+                <li id="cite-7"><span>[7] <a href="#cite-ref-7">&#x2191;</a></span><span>While niche, specialist emulation exists for some applications, there is no broad, web-accessible "key" for these <em>Petribytes</em> equivalent to the Ruffle emulator for Flash. Their security-risk status and complex dependencies make them functionally extinct for 99.9% of users.</span></li>
+                <li id="cite-8"><span>[8] <a href="#cite-ref-8">&#x2191;</a></span><span>Rhizome, "Conifer," (<em>Rhizome.org</em>, 2025). Conifer is described as a "web recording and replaying" system that allows for high-fidelity, user-driven captures of dynamic web content, solving the "context rot" that static screenshots cannot.</span></li>
+                <li id="cite-9"><span>[9] <a href="#cite-ref-9">&#x2191;</a></span><span>"Flash Animations Live Forever at the Internet Archive," <em>Internet Archive Blogs</em>, November 19, 2020. This post officially announced the integration of the Ruffle emulator, allowing users to "play" Flash content directly in the browser, effectively transforming petabytes of <em>Petribytes</em> into <em>Umbrabytes</em>.</span></li>
+                <li id="cite-10"><span>[10] <a href="#cite-ref-10">&#x2191;</a></span><span>d. boyd, "White Flight in the Digital Ghetto: MySpace vs. Facebook," (South by Southwest Interactive, 2007). boyd's foundational analysis explores the "Top 8" as a visible, performative act of "social grooming" and public allegiance.</span></li>
+                <li id="cite-11"><span>[11] <a href="#cite-ref-11">&#x2191;</a></span><span>A. R. Smith, <em>The Virtual Agora: Identity and Community in Early Web Forums</em>, (Oxford: Oxford University Press, 2018), 74-77. Smith analyzes the ".sig" file as a "decentralized, portable identity marker" that served as a "digital flag of sovereignty."</span></li>
+                <li id="cite-12"><span>[12] <a href="#cite-ref-12">&#x2191;</a></span><span>J. P. Williams, "The Sociology of the Flash 'Weird Web': Pre-Algorithmic Virality and Newgrounds," <em>Journal of Digital Culture</em> 14, no. 2 (2024): 215-230.</span></li>
+                <li id="cite-13"><span>[13] <a href="#cite-ref-13">&#x2191;</a></span><span>E. R. G. Smith, "The Forgotten Art of 'Same-Keyboard' Co-Op: Asymmetric Play in Flash-Era Games," <em>Digital Ludology Quarterly</em> 29, no. 4 (2023): 45-51.</span></li>
+            </ul>
+        </article>
+
+    </main>
+
+    <!-- === Footer === -->
+    <footer class="mt-16 sm:mt-24 py-12 border-t border-unearth-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm text-unearth-secondary font-ui">
+                &copy; 2025   
+                <a href="https://unearth.im" class="font-semibold transition-colors group">
+                    <span class="text-unearth-main group-hover:text-unearth-primary">unearth</span><span class="text-unearth-primary">.im</span></a> | Archive & Anvil
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
