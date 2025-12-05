@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Archaeobytology 300: Advanced Capstone Course - Hands-on modules in digital preservation and sovereign system building">
+    <meta name="keywords" content="Archaeobytology, capstone course, digital preservation, platform studies">
+    <title>Archaeobytology 300: Advanced Capstone | Course Modules</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Lora', serif;
+            line-height: 1.6;
+            color: #2E2E2E;
+            background: #F8F7F4;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            background: #FFFFFF;
+            padding: 3rem 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(46, 46, 46, 0.1);
+            margin-bottom: 2rem;
+            text-align: center;
+            border: 1px solid #D1D1D1;
+        }
+        
+        h1 {
+            font-family: 'Inter', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: #2E2E2E;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+        
+        .course-number {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #A93400;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #5A7D8C;
+            font-style: normal;
+            margin-bottom: 1rem;
+        }
+        
+        .description {
+            font-size: 1.1rem;
+            color: #2E2E2E;
+            max-width: 800px;
+            margin: 1.5rem auto;
+            line-height: 1.8;
+        }
+        
+        .course-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .info-item {
+            background: #F8F7F4;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #D1D1D1;
+        }
+        
+        .info-label {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #8E8E8E;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .info-value {
+            font-size: 1.1rem;
+            color: #2E2E2E;
+            font-weight: 600;
+            margin-top: 0.25rem;
+        }
+        
+        .modules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .module-card {
+            background: #FFFFFF;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(46, 46, 46, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #D1D1D1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .module-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(169, 52, 0, 0.15);
+            border-color: #A95C3D;
+        }
+        
+        .module-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .module-number {
+            font-family: 'Inter', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #A1824A;
+            line-height: 1;
+            min-width: 50px;
+        }
+        
+        .module-title {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2E2E2E;
+            line-height: 1.3;
+            flex: 1;
+        }
+        
+        .module-description {
+            color: #2E2E2E;
+            margin-bottom: 1rem;
+            flex: 1;
+            font-size: 1.05rem;
+        }
+        
+        .module-meta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .meta-tag {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+            padding: 0.4rem 0.8rem;
+            background: #F8F7F4;
+            border-radius: 5px;
+            color: #5A7D8C;
+            font-weight: 600;
+            border: 1px solid #D1D1D1;
+        }
+        
+        .module-link {
+            font-family: 'Inter', sans-serif;
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: #A93400;
+            color: #F8F7F4;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background 0.3s ease, transform 0.2s ease;
+            border: 2px solid #A95C3D;
+            text-align: center;
+            margin-top: auto;
+        }
+        
+        .module-link:hover {
+            background: #A95C3D;
+            transform: translateY(-2px);
+        }
+        
+        .prerequisites {
+            background: #FFFFFF;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(46, 46, 46, 0.08);
+            border: 1px solid #D1D1D1;
+            margin-bottom: 2rem;
+        }
+        
+        .prerequisites h2 {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2E2E2E;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #A1824A;
+            padding-bottom: 0.5rem;
+        }
+        
+        .prerequisites ul {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .prerequisites li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            font-size: 1.05rem;
+        }
+        
+        .prerequisites li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #A93400;
+            font-weight: bold;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #8E8E8E;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #A93400;
+            text-decoration: underline;
+        }
+        
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .nav-btn {
+            font-family: 'Inter', sans-serif;
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: #5A7D8C;
+            color: #F8F7F4;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background 0.3s ease;
+            border: 2px solid #5A7D8C;
+        }
+        
+        .nav-btn:hover {
+            background: #4A6D7C;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+            
+            .modules-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .course-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="course-number">ARCH 300</div>
+            <h1>Advanced Archaeobytology</h1>
+            <p class="subtitle">Capstone Seminar: From Theory to Practice</p>
+            <p class="description">A hands-on capstone course where students apply archaeobytological principles to real-world preservation challenges and sovereign system design. Build, preserve, and forge your contribution to digital sovereignty.</p>
+            
+            <div class="course-info">
+                <div class="info-item">
+                    <div class="info-label">Level</div>
+                    <div class="info-value">Advanced / 300</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Format</div>
+                    <div class="info-value">10 Modules</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Credits</div>
+                    <div class="info-value">4 Units</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Type</div>
+                    <div class="info-value">Project-Based</div>
+                </div>
+            </div>
+            
+            <div class="nav-links">
+                <a href="../archaeobytology-textbook/index.html" class="nav-btn">← Textbook</a>
+                <a href="../index.html" class="nav-btn">Institute Home</a>
+            </div>
+        </header>
+        
+        <div class="prerequisites">
+            <h2>Prerequisites</h2>
+            <ul>
+                <li>Completion of ARCH 200 (or equivalent foundational knowledge in Archaeobytology)</li>
+                <li>Familiarity with the Three Pillars framework (Declaration, Connection, Ground)</li>
+                <li>Basic understanding of digital preservation methods and triage methodology</li>
+                <li>Ability to work independently on a semester-long capstone project</li>
+            </ul>
+        </div>
+        
+        <div class="modules-grid">
+            <!-- Module 1 -->
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-number">01</div>
+                    <h3 class="module-title">Autopsy of a Platform Death</h3>
+                </div>
+                <p class="module-description">Conduct a forensic analysis of a murdered platform. Trace the murder, document the corpse, and extract lessons for future preservation efforts.</p>
+                <div class="module-meta">
+                    <span class="meta-tag">2 weeks</span>
+                    <span class="meta-tag">Forensics</span>
+                    <span class="meta-tag">Case Study</span>
+                </div>
+                <a href="module-01-autopsy.html" class="module-link">Start Module</a>
+            </div>
+            
+            <!-- Module 2 -->
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-number">02</div>
+                    <h3 class="module-title">Building a Preservation System</h3>
+                </div>
+                <p class="module-description">Design and implement a working preservation infrastructure. Learn archival workflows, storage strategies, and metadata standards.</p>
+                <div class="module-meta">
+                    <span class="meta-tag">2 weeks</span>
+                    <span class="meta-tag">Archive</span>
+                    <span class="meta-tag">Technical</span>
+                </div>
+                <a href="module-02-preservation.html" class="module-link">Start Module</a>
+            </div>
+            
+            <!-- Module 3 -->
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-number">03</div>
+                    <h3 class="module-title">Designing for Sovereignty</h3>
+                </div>
+                <p class="module-description">Apply the Three Pillars framework to design a sovereign digital system. Audit existing platforms and prototype alternatives.</p>
+                <div class="module-meta">
+                    <span class="meta-tag">2 weeks</span>
+                    <span class="meta-tag">Anvil</span>
+                    <span class="meta-tag">Design</span>
+                </div>
+                <a href="module-03-sovereignty.html" class="module-link">Start Module</a>
+            </div>
+            
+            <!-- Module 4 -->
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-number">04</div>
+                    <h3 class="module-title">Triage Simulation</h3>
+                </div>
+                <p class="module-description">Navigate ethical dilemmas in digital preservation. Make difficult triage decisions under resource constraints and time pressure.</p>
+                <div class="module-meta">
+                    <span class="meta-tag">1 week</span>
+                    <span class="meta-tag">Ethics</span>
+                    <span class="meta-tag">Simulation</span>
+                </div>
+                <a href="module-04-triage.html" class="module-link">Start Module</a>
+            </div>
+            
+            <!-- Module 5 -->
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-number">05</div>
+                    <h3 class="module-title">Building the Archive</h3>
+                </div>
+                <p class="module-description">Create a sustainable preservation institution. Develop governance models, funding strategies, and community engagement plans.</p>
+                <div class="module-meta">
+                    <span class="meta-tag">2 weeks</span>
+                    <span class="meta-tag">Institution</span>
+                    <span class="meta-tag">Strategy</span>
+                </div>
+                <a href="module-05-archive-institution.html" class="module-link">Start Module</a>
+            </div>
+            
+            <!-- Module 6 -->
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-number">06</div>
+                    <h3 class="module-title">Forging the Anvil</h3>
+                </div>
+                <p class="module-description">Build tools for digital sovereignty. Contribute to open protocols, create educational resources, or prototype sovereign systems.</p>
+                <div class="module-meta">
+                    <span class="meta-tag">2 weeks</span>
+                    <span class="meta-tag">Building</span>
+                    <span class="meta-tag">Tools</span>
+                </div>
+                <a href="module-06-anvil-building.html" class="module-link">Start Module</a>
+            </div>
+            
+            <!-- Module 7 -->
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-number">07</div>
+                    <h3 class="module-title">Economic Models for Sustainability</h3>
+                </div>
+                <p class="module-description">Design viable economic models for digital commons. Explore patronage, cooperatives, and alternative funding beyond surveillance capitalism.</p>
+                <div class="module-meta">
+                    <span class="meta-tag">1 week</span>
+                    <span class="meta-tag">Economics</span>
+                    <span class="meta-tag">Strategy</span>
+                </div>
+                <a href="module-07-economics.html" class="module-link">Start Module</a>
+            </div>
+            
+            <!-- Module 8 -->
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-number">08</div>
+                    <h3 class="module-title">Movement Building</h3>
+                </div>
+                <p class="module-description">Organize a community around digital preservation and sovereignty. Develop outreach strategies, build coalitions, and create educational materials.</p>
+                <div class="module-meta">
+                    <span class="meta-tag">1 week</span>
+                    <span class="meta-tag">Organizing</span>
+                    <span class="meta-tag">Community</span>
+                </div>
+                <a href="module-08-movement.html" class="module-link">Start Module</a>
+            </div>
+            
+            <!-- Module 9 -->
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-number">09</div>
+                    <h3 class="module-title">Public Scholarship Project</h3>
+                </div>
+                <p class="module-description">Translate archaeobytological research for public audiences. Create essays, talks, or multimedia projects that engage beyond the academy.</p>
+                <div class="module-meta">
+                    <span class="meta-tag">1 week</span>
+                    <span class="meta-tag">Writing</span>
+                    <span class="meta-tag">Public</span>
+                </div>
+                <a href="module-09-public-scholarship.html" class="module-link">Start Module</a>
+            </div>
+            
+            <!-- Module 10 -->
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-number">10</div>
+                    <h3 class="module-title">Capstone: Build or Preserve</h3>
+                </div>
+                <p class="module-description">Your final project: either build a sovereign system or preserve a dying platform. Apply everything you've learned in a substantial, public contribution to the field.</p>
+                <div class="module-meta">
+                    <span class="meta-tag">4 weeks</span>
+                    <span class="meta-tag">Capstone</span>
+                    <span class="meta-tag">Portfolio</span>
+                </div>
+                <a href="module-10-capstone.html" class="module-link">Start Module</a>
+            </div>
+            
+            <!-- Module 11 -->
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-number">11</div>
+                    <h3 class="module-title">The Anvil—Translating Archaeological Wisdom</h3>
+                </div>
+                <p class="module-description">Master the methodology for translating excavated wisdom into design principles. Learn to evaluate sovereignty claims, diagnose architectural fragilities, and distinguish genuine solutions from sovereignty theater.</p>
+                <div class="module-meta">
+                    <span class="meta-tag">Advanced</span>
+                    <span class="meta-tag">Methodology</span>
+                    <span class="meta-tag">Critique</span>
+                </div>
+                <a href="module-11-anvil-translation.html" class="module-link">Start Module</a>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 Archaeobytology Project | <a href="https://archaeobytology.org">archaeobytology.org</a></p>
+            <p>Licensed under Creative Commons BY-SA 4.0</p>
+        </footer>
+    </div>
+</body>
+</html>

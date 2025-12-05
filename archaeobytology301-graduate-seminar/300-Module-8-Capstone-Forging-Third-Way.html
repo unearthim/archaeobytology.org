@@ -1,0 +1,822 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 8: Forging the Third Way—Capstone Design Project | ARCH 300: Institution Building</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Lora', serif; line-height: 1.8; color: #2E2E2E; background: #F8F7F4; padding: 2rem 1rem; }
+        .container { max-width: 900px; margin: 0 auto; background: #FFFFFF; padding: 3rem; border-radius: 15px; box-shadow: 0 4px 20px rgba(46,46,46,0.1); border: 1px solid #D1D1D1; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; color: #2E2E2E; margin-top: 2rem; margin-bottom: 1rem; line-height: 1.3; }
+        h1 { font-size: 2.5rem; font-weight: 700; margin-top: 0; border-bottom: 3px solid #A1824A; padding-bottom: 0.5rem; }
+        h2 { font-size: 2rem; font-weight: 700; margin-top: 2.5rem; }
+        h3 { font-size: 1.5rem; font-weight: 600; color: #5A7D8C; }
+        h4 { font-size: 1.25rem; font-weight: 600; color: #5A7D8C; }
+        p { margin-bottom: 1.25rem; font-size: 1.1rem; }
+        a { color: #A93400; text-decoration: underline; transition: color 0.3s; }
+        a:hover { color: #A95C3D; }
+        strong { font-weight: 600; }
+        em { font-style: italic; }
+        code { font-family: 'Courier New', monospace; background: #F8F7F4; padding: 0.2rem 0.4rem; border-radius: 3px; border: 1px solid #D1D1D1; font-size: 0.95rem; }
+        blockquote { border-left: 4px solid #A1824A; padding: 1rem 1.5rem; margin: 1.5rem 0; font-style: italic; color: #5A7D8C; background: #F8F7F4; border-radius: 0 8px 8px 0; }
+        hr { border: none; border-top: 2px solid #D1D1D1; margin: 2rem 0; }
+        .nav { text-align: center; padding: 1rem 0; border-top: 2px solid #D1D1D1; margin-top: 2rem; }
+        .nav a { display: inline-block; padding: 0.75rem 1.5rem; background: #A93400; color: #F8F7F4; text-decoration: none; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 600; margin: 0.5rem; }
+        .nav a:hover { background: #A95C3D; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <article>
+<h1>Module 8: Forging the Third Way—Capstone Design Project</h1>
+<p>
+<strong>Archaeobytology 300: Institution Building & Strategic Infrastructure</strong>
+</p>
+
+<h2>Module Overview</h2>
+
+<p>
+<strong>Core Question:</strong> What does a post-platform future look like? How do we design systems that embody sovereignty, avoid extraction, and outlast us?
+</p>
+
+<p>
+<strong>Learning Objective:</strong> Students will synthesize all course concepts (Modules 0-7) into a comprehensive capstone project: a complete "Third Way" system design with institutional, technical, economic, and advocacy strategies.
+</p>
+
+<p>
+<strong>Time:</strong> Week 17-18 (Final Project)
+</p>
+
+<h2>The Capstone Challenge</h2>
+
+<p>
+<strong>Modules 0-7</strong> built individual skills:
+- Module 0: Diagnose institutional failures
+- Module 1: Design a preservation Archive
+- Module 2: Build a sovereignty Foundry business
+- Module 3: Create a distributed Seed Bank
+- Module 4: Curate a Haunted Forest memory institution
+- Module 5: Redesign Ground ownership systems
+- Module 6: Launch a movement
+- Module 7: Become a public intellectual
+</p>
+
+<p>
+<strong>Module 8 asks:</strong> <em>Now put it all together. Design a complete alternative to platform capitalism.</em>
+</p>
+
+<h3>What Is a "Third Way"?</h3>
+
+<p>
+A <strong>Third Way</strong> is a system that rejects both:
+- ❌ <strong>Platform Capitalism</strong> (extractive, surveilled, centralized)
+- ❌ <strong>Tech Solutionism</strong> (blockchain, Web3, "decentralization" without values)
+</p>
+
+<p>
+And instead offers:
+- ✅ <strong>Sovereignty Without Speculation</strong> (ownership that isn't commodified)
+- ✅ <strong>Connection Without Surveillance</strong> (community without algorithmic manipulation)
+- ✅ <strong>Infrastructure Without Extraction</strong> (systems that serve users, not capital)
+</p>
+
+<p>
+<strong>Examples of Third Way Thinking:</strong>
+- <strong>Ghost:</strong> Open source + non-profit ownership + managed hosting (not VC-funded SaaS)
+- <strong>LOCKSS:</strong> Distributed academic consortium (not blockchain speculation)
+- <strong>IndieWeb:</strong> Personal domains + open standards (not walled gardens)
+- <strong>Co-ops:</strong> Member-owned businesses (not shareholder value)
+</p>
+
+<p>
+<strong>Your Capstone:</strong> Design a Third Way system more ambitious than these examples.
+</p>
+
+<h2>Core Reading</h2>
+
+<h3>Synthesis Texts</h3>
+
+<p>
+<strong>Rushkoff, D. (2016).</strong> <em>Throwing Rocks at the Google Bus.</em> Chapters 5-6: "Digital Distributism"
+- Focus: How do we build an economy that distributes value instead of extracting it?
+- Key Insight: The problem isn't technology—it's ownership structures
+- Question: What would a "distributive" digital system look like?
+</p>
+
+<p>
+<strong>Doctorow, C. (2023).</strong> <em>The Internet Con.</em> Chapter 8: "Seizing the Means of Computation"
+- Focus: Interoperability as a tool for sovereignty
+- Key Insight: Users should be able to leave platforms without losing their network
+- Question: How do you design mandatory interoperability into a system?
+</p>
+
+<p>
+<strong>Benkler, Y. (2006).</strong> <em>The Wealth of Networks.</em> Chapter 11: "The Battle Over Institutional Ecology"
+- Focus: How institutions shape freedom (or control)
+- Key Insight: We need diverse institutional forms (not just markets or states)
+- Question: What new institutional forms does digital culture require?
+</p>
+
+<h3>Inspirational Case Studies</h3>
+
+<p>
+<strong>Platform Cooperatives (Stocksy, Resonate)</strong>
+- Model: Artists/workers own the platform
+- Governance: Democratic (one member, one vote)
+- Revenue: Profits distributed to members
+- Challenge: Hard to scale (network effects favor monopolies)
+</p>
+
+<p>
+<strong>The Internet Archive (Wayback Machine)</strong>
+- Model: Non-profit with earned revenue
+- Mission: Universal access to knowledge
+- Challenge: Legally vulnerable (publisher lawsuits), single point of failure (San Francisco)
+</p>
+
+<p>
+<strong>The Fediverse (Mastodon, PixelFed, PeerTube)</strong>
+- Model: Federated (anyone can run an instance)
+- Interoperability: ActivityPub protocol
+- Challenge: Instance admin power, fragmentation, burnout
+</p>
+
+<p>
+<strong>IPFS + Filecoin (Decentralized Storage)</strong>
+- Model: P2P storage with blockchain incentives
+- Technical: Content-addressed, distributed
+- Challenge: Speculation (Filecoin tokens), complexity, "pinning" burden
+</p>
+
+<h2>The Capstone Framework</h2>
+
+<p>
+Your final project has <strong>4 integrated components</strong>:
+</p>
+
+<h3>Component 1: System Design (The "What")</h3>
+<p>
+- <strong>40% of grade</strong>
+- Technical architecture, governance model, user experience
+- Drawing on Modules 1-5 (Archive, Foundry, Seed Bank, Haunted Forest, Ground)
+</p>
+
+<h3>Component 2: Movement Strategy (The "How It Grows")</h3>
+<p>
+- <strong>20% of grade</strong>
+- How do you bootstrap adoption, build community, establish legitimacy?
+- Drawing on Module 6 (Movement Building)
+</p>
+
+<h3>Component 3: Public Advocacy (The "How You Influence")</h3>
+<p>
+- <strong>20% of grade</strong>
+- Media strategy, policy goals, public intellectual positioning
+- Drawing on Module 7 (Public Intellectual)
+</p>
+
+<h3>Component 4: Presentation (The "How You Sell It")</h3>
+<p>
+- <strong>20% of grade</strong>
+- 15-minute pitch to class (simulating pitch to funders/partners)
+- Visual, compelling, actionable
+</p>
+
+<h2>Capstone Options</h2>
+
+<p>
+You can design one of three types of Third Way systems:
+</p>
+
+<h3>Option A: The Complete Platform Alternative</h3>
+<p>
+<strong>Design a replacement for a major platform (Twitter, Instagram, YouTube, etc.) that embodies Three Pillars.</strong>
+</p>
+
+<p>
+<strong>Requirements:</strong>
+- User experience comparable to platform (not worse)
+- Governance that prevents capture (not VC-funded)
+- Revenue model that avoids surveillance (no ad tracking)
+- Interoperability (can federate, export, migrate)
+</p>
+
+<p>
+<strong>Example Prompts:</strong>
+- "Design a federated video platform (YouTube alternative) owned by creators"
+- "Design a community-owned social network (Twitter alternative) governed democratically"
+- "Design a sovereign photo-sharing system (Instagram alternative) with zero tracking"
+</p>
+
+<p>
+<strong>Modules to Integrate:</strong>
+- Module 2 (Foundry): Revenue model
+- Module 5 (Ground): Domain/hosting/identity ownership
+- Module 6 (Movement): How to compete with incumbents
+</p>
+
+<h3>Option B: The Institutional Infrastructure</h3>
+<p>
+<strong>Design shared infrastructure for digital preservation, memory, or sovereignty that many organizations can use.</strong>
+</p>
+
+<p>
+<strong>Requirements:</strong>
+- Solves a collective action problem (what individuals can't do alone)
+- Distributed governance (no single controller)
+- Economically sustainable (not dependent on grants forever)
+- Interoperable (works with existing systems)
+</p>
+
+<p>
+<strong>Example Prompts:</strong>
+- "Design a 'Library of Congress for the Web'—a national digital archive owned by cultural institutions"
+- "Design a 'GitHub for Memory'—collaborative preservation infrastructure where museums/archives share costs"
+- "Design a 'Credit Union for Digital Ground'—cooperative domain/hosting service owned by members"
+</p>
+
+<p>
+<strong>Modules to Integrate:</strong>
+- Module 1 (Archive): Preservation organization
+- Module 3 (Seed Bank): Distributed commons
+- Module 4 (Haunted Forest): Memory institutions
+</p>
+
+<h3>Option C: The Movement + Policy Package</h3>
+<p>
+<strong>Design a comprehensive campaign to transform digital culture through legislation, organizing, and institution-building.</strong>
+</p>
+
+<p>
+<strong>Requirements:</strong>
+- Policy goals (what laws need to change?)
+- Movement strategy (who are your allies? how do you organize?)
+- Institutional anchors (what organizations embody the vision?)
+- Public narrative (how do you explain this to the public?)
+</p>
+
+<p>
+<strong>Example Prompts:</strong>
+- "Design a campaign for a 'Digital Right of First Refusal' (when platforms shut down, archives get first access)"
+- "Design a movement for 'Public Digital Ground' (municipalities offer free domains/hosting to residents)"
+- "Design a policy package for 'Platform Interoperability' (mandated export tools, open standards)"
+</p>
+
+<p>
+<strong>Modules to Integrate:</strong>
+- Module 6 (Movement): Coalition building, advocacy
+- Module 7 (Public Intellectual): Media strategy, testimony, op-eds
+</p>
+
+<h2>Deliverables</h2>
+
+<p>
+Your capstone consists of <strong>3 deliverables</strong>:
+</p>
+
+<h3>Deliverable 1: Written Design Document (6,000-8,000 words)</h3>
+
+<p>
+<strong>Required Sections:</strong>
+</p>
+
+<h4>Part I: The Problem (1,000 words)</h4>
+<p>
+- <strong>Current System Failure:</strong> What's broken? (Use Module 0 failure modes)
+- <strong>Who's Harmed:</strong> Users, creators, communities, culture
+- <strong>Why Existing Alternatives Fail:</strong> What have others tried? Why didn't it work?
+- <strong>The Third Way Opportunity:</strong> What's possible now that wasn't before?
+</p>
+
+<h4>Part II: System Design (2,500 words)</h4>
+<p>
+- <strong>Vision & Mission:</strong> What are you building? For whom?
+- <strong>Technical Architecture:</strong> How does it work? (Centralized? Federated? P2P?)
+- <strong>Governance Model:</strong> Who controls it? How are decisions made?
+- <strong>Economic Model:</strong> How is it funded? Revenue streams? Costs?
+- <strong>User Experience:</strong> What does daily use look like? Onboarding? Migration?
+- <strong>Three Pillars Embodiment:</strong> How does it manifest Declaration, Connection, Ground?
+</p>
+
+<h4>Part III: Movement Strategy (1,500 words)</h4>
+<p>
+- <strong>Bootstrapping:</strong> How do you overcome network effects? First 1,000 users?
+- <strong>Institutional Anchors:</strong> What organizations adopt this? Universities? Libraries? Co-ops?
+- <strong>Knowledge Infrastructure:</strong> Journal? Conference? Textbook? (If relevant)
+- <strong>Community Building:</strong> How do you create a movement, not just a product?
+</p>
+
+<h4>Part IV: Public Advocacy (1,000 words)</h4>
+<p>
+- <strong>Media Strategy:</strong> How do you reach general audiences?
+- <strong>Policy Goals:</strong> What laws would support this? (If applicable)
+- <strong>Public Narrative:</strong> How do you explain this simply? What's the hook?
+- <strong>Advocacy Partners:</strong> Who are your allies? (EFF, Internet Archive, libraries, etc.)
+</p>
+
+<h4>Part V: Implementation Roadmap (1,000-1,500 words)</h4>
+<p>
+- <strong>Phase 1 (Years 1-2):</strong> Proof of concept, early adopters, MVP
+- <strong>Phase 2 (Years 3-5):</strong> Growth, institutional adoption, feature parity
+- <strong>Phase 3 (Years 6-10):</strong> Mainstream adoption, ecosystem development, sustainability
+- <strong>Budget:</strong> Estimated costs (infrastructure, staff, marketing) per phase
+- <strong>Success Metrics:</strong> How do you measure progress?
+</p>
+
+<h4>Part VI: Risk Analysis & Mitigation (500 words)</h4>
+<p>
+- <strong>Technical Risks:</strong> What could break? How do you prevent it?
+- <strong>Governance Risks:</strong> Who could capture this? How do you defend?
+- <strong>Economic Risks:</strong> What if funding dries up? Revenue model fails?
+- <strong>Social Risks:</strong> What if no one adopts it? How do you pivot?
+</p>
+
+<h3>Deliverable 2: Visual Presentation (15 minutes)</h3>
+
+<p>
+<strong>Format:</strong> Slide deck (10-15 slides) + live demo (if applicable)
+</p>
+
+<p>
+<strong>Required Slides:</strong>
+1. <strong>Hook:</strong> One compelling image/statistic that illustrates the problem
+2. <strong>Problem:</strong> What's broken in the current system?
+3. <strong>Solution:</strong> Your Third Way (one sentence)
+4. <strong>How It Works:</strong> Technical architecture (diagram)
+5. <strong>User Experience:</strong> Mockups or walkthrough
+6. <strong>Governance:</strong> Who controls it? (Diagram)
+7. <strong>Economics:</strong> How it's funded (revenue model)
+8. <strong>Differentiation:</strong> Why this succeeds where others failed
+9. <strong>Roadmap:</strong> 3 phases (years 1-2, 3-5, 6-10)
+10. <strong>The Ask:</strong> What do you need? (Funding, partners, early adopters)
+</p>
+
+<p>
+<strong>Presentation Tips:</strong>
+- Lead with story (not technical specs)
+- Show, don't tell (visuals, mockups, diagrams)
+- Anticipate objections ("Why not just use X?" "Won't Y happen?")
+- End with clear call to action
+</p>
+
+<p>
+<strong>Audience:</strong> Simulates pitching to funders, university admins, potential partners, or policymakers.
+</p>
+
+<h3>Deliverable 3: Prototype or Campaign Artifact (Choose One)</h3>
+
+<p>
+<strong>Option A: Technical Prototype</strong>
+- Build a minimal viable product (MVP)
+- Can be:
+  - Functional website (even if limited)
+  - Interactive mockup (Figma, InVision)
+  - Demo video (showing how it would work)
+- <strong>Goal:</strong> Make it tangible (not just a document)
+</p>
+
+<p>
+<strong>Option B: Campaign Package</strong>
+- If your capstone is policy/movement-focused, create:
+  - <strong>Policy Brief</strong> (5 pages, legislation summary + rationale)
+  - <strong>Op-Ed Draft</strong> (800 words, publishable in major outlet)
+  - <strong>Media Kit</strong> (1-pager: problem, solution, quotes, stats)
+- <strong>Goal:</strong> Ready to deploy (could actually pitch this to <em>New York Times</em>)
+</p>
+
+<p>
+<strong>Option C: Institutional Prospectus</strong>
+- If your capstone is an organization (Archive, Foundry, etc.), create:
+  - <strong>Business Plan</strong> (budget, timeline, staffing)
+  - <strong>Pitch Deck</strong> (investor-ready slides)
+  - <strong>Partnership Proposals</strong> (letters to potential partners: Internet Archive, libraries, universities)
+- <strong>Goal:</strong> Could actually seek funding or partnerships
+</p>
+
+<h2>Evaluation Criteria</h2>
+
+<h3>Written Design Document (40 points)</h3>
+
+<p>
+| Criterion | Points | What We're Looking For |
+|-----------|--------|------------------------|
+| <strong>Problem Diagnosis</strong> | 8 | Clear, compelling case for why current systems fail (Module 0 insights) |
+| <strong>System Design</strong> | 12 | Technically feasible, governable, economically sustainable (Modules 1-5) |
+| <strong>Movement Strategy</strong> | 8 | Realistic adoption plan, community building (Module 6) |
+| <strong>Advocacy Plan</strong> | 6 | Media/policy strategy, public narrative (Module 7) |
+| <strong>Three Pillars Integrity</strong> | 6 | Does it embody Declaration, Connection, Ground? |
+</p>
+
+<h3>Visual Presentation (20 points)</h3>
+
+<p>
+| Criterion | Points | What We're Looking For |
+|-----------|--------|------------------------|
+| <strong>Clarity</strong> | 8 | Can we understand it in 15 minutes? |
+| <strong>Persuasiveness</strong> | 6 | Would funders/partners support this? |
+| <strong>Visual Design</strong> | 3 | Professional, compelling slides |
+| <strong>Q&A Response</strong> | 3 | Can you defend against tough questions? |
+</p>
+
+<h3>Prototype/Campaign Artifact (20 points)</h3>
+
+<p>
+| Criterion | Points | What We're Looking For |
+|-----------|--------|------------------------|
+| <strong>Tangibility</strong> | 10 | Is it real enough to show others? (Not just a PDF) |
+| <strong>Feasibility</strong> | 5 | Could this actually be built/deployed? |
+| <strong>Alignment</strong> | 5 | Does it match the written design? |
+</p>
+
+<h3>Integration & Originality (20 points)</h3>
+
+<p>
+| Criterion | Points | What We're Looking For |
+|-----------|--------|------------------------|
+| <strong>Course Integration</strong> | 10 | Does it synthesize Modules 0-7? Or only use 1-2? |
+| <strong>Originality</strong> | 10 | Is this genuinely new? Or just copying Ghost/Mastodon/IPFS? |
+</p>
+
+<p>
+<strong>Total: 100 points</strong>
+</p>
+
+<h2>Example Capstone Projects (Hypothetical)</h2>
+
+<h3>Example 1: "Perennial" (Platform Alternative)</h3>
+<p>
+<strong>Pitch:</strong> A federated social media platform owned by users, governed democratically, funded by member dues.
+</p>
+
+<p>
+<strong>System Design:</strong>
+- <strong>Technical:</strong> ActivityPub federation (like Mastodon) + co-op ownership
+- <strong>Governance:</strong> Member-owned co-op (one member, one vote)
+- <strong>Revenue:</strong> $5/month membership (no ads, no tracking)
+- <strong>Differentiation:</strong> Unlike Mastodon (admin power), members collectively govern policies
+</p>
+
+<p>
+<strong>Movement Strategy:</strong>
+- Target artists, writers, marginalized communities
+- Launch with 1,000 founding members ($60k/year revenue)
+- Scale to 100,000 members ($6M/year) in 5 years
+</p>
+
+<p>
+<strong>Advocacy:</strong>
+- Op-eds: "Why We Built a Social Network Without Billionaires"
+- Policy: Advocate for platform interoperability (so Perennial can federate with Twitter)
+</p>
+
+<h3>Example 2: "National Digital Archive" (Institutional Infrastructure)</h3>
+<p>
+<strong>Pitch:</strong> A federally-funded preservation institution (like Library of Congress, but for the web) that coordinates distributed storage across universities.
+</p>
+
+<p>
+<strong>System Design:</strong>
+- <strong>Governance:</strong> Hybrid (federal agency + university consortium)
+- <strong>Technical:</strong> LOCKSS-style distributed redundancy
+- <strong>Economic:</strong> Federal appropriation ($100M/year) + university in-kind contributions
+- <strong>Scope:</strong> All public web content, social media (with consent), government records
+</p>
+
+<p>
+<strong>Movement Strategy:</strong>
+- Build coalition: ALA, SAA, Internet Archive, universities
+- Lobby Congress for funding (model: Library of Congress budget)
+- Pilot with 10 universities (proof of concept)
+</p>
+
+<p>
+<strong>Advocacy:</strong>
+- Testify to Congress: "Digital cultural heritage is a public good"
+- Op-ed: "When GeoCities Died, America Lost Part of Its Memory"
+- Model legislation: "National Digital Heritage Act"
+</p>
+
+<h3>Example 3: "Right to Archive" Campaign (Movement + Policy)</h3>
+<p>
+<strong>Pitch:</strong> A national campaign to pass laws protecting digital preservation and requiring platforms to support data export.
+</p>
+
+<p>
+<strong>Policy Goals:</strong>
+1. Expand fair use for preservation (no permission needed to archive public content)
+2. Mandate platform export tools (users can download all data in usable formats)
+3. "Digital Right of First Refusal" (when platform shuts down, archives get 90 days to preserve)
+</p>
+
+<p>
+<strong>Movement Strategy:</strong>
+- Coalition: EFF, Internet Archive, ALA, SAA, Creative Commons
+- Grassroots: "Save Our Digital Memories" campaign (petition with 100k signatures)
+- Legislative champions: Find bipartisan sponsors in Congress
+</p>
+
+<p>
+<strong>Advocacy:</strong>
+- Whitepapers: "The Economic Cost of Platform Shutdowns"
+- Op-eds in major outlets during platform deaths
+- Celebrity advocates: Brewster Kahle, Tim Berners-Lee, etc.
+</p>
+
+<h2>Discussion Questions for Final Seminar</h2>
+
+<h3>Session 1: Capstone Workshopping (Week 17)</h3>
+
+<p>
+1. <strong>The Interoperability Question:</strong> Should your Third Way system interoperate with extractive platforms (bridges to Twitter, etc.), or stay pure?
+</p>
+
+<p>
+2. <strong>The Scale Dilemma:</strong> Is sovereignty compatible with scale? Can a distributed system serve billions?
+</p>
+
+<p>
+3. <strong>The Funding Reality Check:</strong> Where does the money come from? Are your projections realistic?
+</p>
+
+<p>
+4. <strong>The Governance Hard Problem:</strong> How do you prevent your system from being captured over time? (Acquisitions, founder exits, mission drift)
+</p>
+
+<p>
+5. <strong>The Adoption Chicken-Egg:</strong> Network effects favor incumbents. How do you bootstrap when everyone is already on Twitter/Instagram?
+</p>
+
+<h3>Session 2: Final Presentations (Week 18)</h3>
+
+<p>
+<strong>Format:</strong>
+- Each student presents 15 minutes
+- Class asks tough questions (5 minutes Q&A)
+- Instructor provides feedback
+</p>
+
+<p>
+<strong>Evaluation Questions (For Peer Feedback):</strong>
+1. Is the problem diagnosis compelling? Do I believe this matters?
+2. Is the system design feasible? Could this actually be built?
+3. Is the movement strategy realistic? Would I join/support this?
+4. Does it embody Three Pillars? Or recreate platform problems?
+5. Would I fund this? Partner with this? Use this?
+</p>
+
+<h2>Beyond the Course: Making It Real</h2>
+
+<p>
+The best capstone projects don't stay in the classroom. Here's how to take yours further:
+</p>
+
+<h3>Path 1: Seek Funding</h3>
+<p>
+- <strong>Grants:</strong> Mellon Foundation, Knight Foundation, Mozilla, NEH
+- <strong>Crowdfunding:</strong> Kickstarter, Patreon, GoFundMe
+- <strong>Fellowships:</strong> Internet Archive fellowship, EFF fellowship
+- <strong>Incubators:</strong> Y Combinator (for-profit), Fast Forward (non-profit)
+</p>
+
+<h3>Path 2: Build a Prototype</h3>
+<p>
+- <strong>Technical:</strong> Actually code the MVP
+- <strong>Community:</strong> Launch with 10-100 early users
+- <strong>Iterate:</strong> Learn, improve, scale
+</p>
+
+<h3>Path 3: Publish & Advocate</h3>
+<p>
+- <strong>Academic:</strong> Turn design document into journal article or thesis
+- <strong>Public:</strong> Write op-ed, start blog, launch podcast
+- <strong>Policy:</strong> Share with advocacy orgs, offer to testify
+</p>
+
+<h3>Path 4: Join an Existing Effort</h3>
+<p>
+- <strong>Internet Archive:</strong> They hire Archaeobytologists
+- <strong>EFF, Creative Commons:</strong> Advocacy organizations
+- <strong>Museums/Libraries:</strong> Memory institutions need curators
+- <strong>Startups:</strong> Join a team building something aligned with your vision
+</p>
+
+<p>
+<strong>The Goal:</strong> This course should launch careers, organizations, and movements—not just produce papers.
+</p>
+
+<h2>Final Reflections: The Meta-Question</h2>
+
+<p>
+<strong>This entire course is itself a Third Way experiment.</strong>
+</p>
+
+<p>
+We've designed:
+- A curriculum (not a traditional discipline)
+- A movement (Archaeobytology as a field)
+- A set of principles (Three Pillars)
+- A vision (sovereignty without platforms)
+</p>
+
+<p>
+<strong>The Meta-Capstone Question:</strong>
+<em>If Archaeobytology succeeds as a discipline in 20 years, what institutional form should it take?</em>
+</p>
+
+<p>
+- <strong>Departments in universities?</strong> (Risks: gatekeeping, credentialism)
+- <strong>Professional society?</strong> (Risks: bureaucracy, elitism)
+- <strong>Distributed network of practitioners?</strong> (Risks: fragmentation, no coordination)
+- <strong>Platform co-op?</strong> (Risks: governance challenges, funding)
+</p>
+
+<p>
+<strong>Your capstone is practice for this meta-question:</strong> How do we build institutions that embody the values we teach?
+</p>
+
+<h2>Course Conclusion: Where Do We Go From Here?</h2>
+
+<p>
+You've spent 18 weeks learning to:
+- Diagnose institutional failures (Module 0)
+- Design preservation organizations (Modules 1-4)
+- Redesign ownership systems (Module 5)
+- Build movements (Module 6)
+- Become public intellectuals (Module 7)
+- Synthesize everything (Module 8)
+</p>
+
+<p>
+<strong>You are now equipped to:</strong>
+- Found Archaeobytology departments at universities
+- Build preservation institutions (Archives, Haunted Forests)
+- Launch sovereignty businesses (Foundries)
+- Advocate for policy change (Right to Archive, Platform Accountability)
+- Curate the Umbrabytes (museums, memorials, exhibits)
+- Write the books, teach the courses, organize the conferences
+</p>
+
+<p>
+<strong>The question is:</strong> <em>Will you?</em>
+</p>
+
+<p>
+Archaeobytology isn't real yet. But it could be—if a critical mass of people decide to make it so.
+</p>
+
+<p>
+<strong>You are that critical mass.</strong>
+</p>
+
+<h2>Final Assignment Instructions</h2>
+
+<h3>Timeline:</h3>
+
+<p>
+<strong>Week 17 (Workshop Week):</strong>
+- <strong>Monday:</strong> Submit capstone outline for peer review
+- <strong>Wednesday:</strong> Workshop drafts in class (bring printed excerpts)
+- <strong>Friday:</strong> Optional office hours for feedback
+</p>
+
+<p>
+<strong>Week 18 (Presentation Week):</strong>
+- <strong>Monday:</strong> Submit final written document (6,000-8,000 words) + prototype/artifact
+- <strong>Wednesday:</strong> Presentations (Group A: 8 students × 15 min)
+- <strong>Friday:</strong> Presentations (Group B: 8 students × 15 min)
+</p>
+
+<p>
+<strong>Final Grades Posted:</strong> One week after final presentations
+</p>
+
+<h2>Submission Requirements</h2>
+
+<h3>Written Document:</h3>
+<p>
+- <strong>Format:</strong> PDF, 6,000-8,000 words
+- <strong>Citations:</strong> Chicago or APA style
+- <strong>Sections:</strong> As outlined above (Parts I-VI)
+- <strong>Appendices:</strong> Can include additional diagrams, budgets, mockups (not counted in word limit)
+</p>
+
+<h3>Visual Presentation:</h3>
+<p>
+- <strong>Format:</strong> PDF slides or live demo
+- <strong>Length:</strong> 15 minutes (will be cut off at 17 minutes)
+- <strong>Q&A:</strong> 5 minutes (be prepared to defend)
+</p>
+
+<h3>Prototype/Artifact:</h3>
+<p>
+- <strong>Format:</strong> Depends on option (link to website, PDF of policy brief, video demo, etc.)
+- <strong>Submission:</strong> Upload to course platform or share link
+</p>
+
+<h2>Grading Summary</h2>
+
+<p>
+| Component | Points | Due Date |
+|-----------|--------|----------|
+| Written Design Document | 40 | Monday, Week 18 |
+| Visual Presentation | 20 | Wednesday or Friday, Week 18 |
+| Prototype/Campaign Artifact | 20 | Monday, Week 18 |
+| Integration & Originality | 20 | (Assessed across all deliverables) |
+| <strong>Total</strong> | <strong>100</strong> | |
+</p>
+
+<h2>Final Words from Your Instructor</h2>
+
+<p>
+You came to this course to learn about institutions. You're leaving with the tools to build them.
+</p>
+
+<p>
+The world is full of broken systems:
+- Platforms that delete our memories
+- Domains we rent but never own
+- Identities controlled by corporations
+- Archives that die with their founders
+</p>
+
+<p>
+<strong>You now know how to build alternatives.</strong>
+</p>
+
+<p>
+The question isn't whether you <em>can</em> do it. It's whether you <em>will</em>.
+</p>
+
+<p>
+Archaeobytology doesn't exist yet—not as a department, not as a profession, not as a movement.
+</p>
+
+<p>
+<strong>But it could.</strong>
+</p>
+
+<p>
+And if it does, it will be because people like you decided to:
+- Write the first journal articles
+- Organize the first conferences
+- Found the first preservation institutions
+- Advocate for the first laws
+- Build the first Third Way systems
+</p>
+
+<p>
+<strong>The future isn't written. You have to forge it.</strong>
+</p>
+
+<p>
+Now go build something that outlasts you.
+</p>
+
+<p>
+<strong>End of Module 8 | End of Course</strong>
+</p>
+
+<h2>Appendix: Portfolio Presentation</h2>
+
+<p>
+After the course ends, you'll have a <strong>complete portfolio</strong> demonstrating expertise in:
+</p>
+
+<p>
+1. <strong>Institutional Design</strong> (Modules 1-4 assignments)
+2. <strong>Systems Architecture</strong> (Module 5 assignment)
+3. <strong>Movement Strategy</strong> (Module 6 assignment)
+4. <strong>Public Intellectual Plan</strong> (Module 7 assignment)
+5. <strong>Capstone Project</strong> (Module 8)
+</p>
+
+<p>
+<strong>This portfolio can be used to:</strong>
+- Apply for jobs (curator, archivist, policy advocate, startup founder)
+- Seek funding (grants, fellowships, investment)
+- Launch organizations (use your designs as business plans)
+- Publish scholarship (turn assignments into journal articles)
+- Advocate for policy (use your policy briefs in testimony)
+</p>
+
+<p>
+<strong>You're not just leaving with a grade. You're leaving with a blueprint for the next 10 years of your career.</strong>
+</p>
+
+<p>
+Go make it real.
+</p>
+
+<p>
+<strong>Course Complete. Congratulations, Archaeobytologist.</strong>
+</p>
+
+        </article>
+        <div class="nav">
+            <a href="index.html">Back to Course Home</a>
+        </div>
+    </div>
+</body>
+</html>

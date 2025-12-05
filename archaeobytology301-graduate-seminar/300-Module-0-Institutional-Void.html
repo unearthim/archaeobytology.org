@@ -1,0 +1,464 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 0: The Institutional Void | ARCH 300: Institution Building</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Lora', serif; line-height: 1.8; color: #2E2E2E; background: #F8F7F4; padding: 2rem 1rem; }
+        .container { max-width: 900px; margin: 0 auto; background: #FFFFFF; padding: 3rem; border-radius: 15px; box-shadow: 0 4px 20px rgba(46,46,46,0.1); border: 1px solid #D1D1D1; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; color: #2E2E2E; margin-top: 2rem; margin-bottom: 1rem; line-height: 1.3; }
+        h1 { font-size: 2.5rem; font-weight: 700; margin-top: 0; border-bottom: 3px solid #A1824A; padding-bottom: 0.5rem; }
+        h2 { font-size: 2rem; font-weight: 700; margin-top: 2.5rem; }
+        h3 { font-size: 1.5rem; font-weight: 600; color: #5A7D8C; }
+        h4 { font-size: 1.25rem; font-weight: 600; color: #5A7D8C; }
+        p { margin-bottom: 1.25rem; font-size: 1.1rem; }
+        a { color: #A93400; text-decoration: underline; transition: color 0.3s; }
+        a:hover { color: #A95C3D; }
+        strong { font-weight: 600; }
+        em { font-style: italic; }
+        code { font-family: 'Courier New', monospace; background: #F8F7F4; padding: 0.2rem 0.4rem; border-radius: 3px; border: 1px solid #D1D1D1; font-size: 0.95rem; }
+        blockquote { border-left: 4px solid #A1824A; padding: 1rem 1.5rem; margin: 1.5rem 0; font-style: italic; color: #5A7D8C; background: #F8F7F4; border-radius: 0 8px 8px 0; }
+        hr { border: none; border-top: 2px solid #D1D1D1; margin: 2rem 0; }
+        .nav { text-align: center; padding: 1rem 0; border-top: 2px solid #D1D1D1; margin-top: 2rem; }
+        .nav a { display: inline-block; padding: 0.75rem 1.5rem; background: #A93400; color: #F8F7F4; text-decoration: none; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 600; margin: 0.5rem; }
+        .nav a:hover { background: #A95C3D; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <article>
+<h1>Module 0: The Institutional Void</h1>
+<p>
+<strong>Archaeobytology 300: Institution Building & Strategic Infrastructure</strong>
+</p>
+
+<h2>Module Overview</h2>
+
+<p>
+<strong>Core Question:</strong> What happens when the Archaeobytologist retires, gets acquired, or runs out of funding?
+</p>
+
+<p>
+<strong>Learning Objective:</strong> Students will analyze existing digital preservation institutions and identify their structural failure modes—then propose architectural solutions grounded in The Three Pillars.
+</p>
+
+<p>
+<strong>Time:</strong> Week 1-2 (introductory module)
+</p>
+
+<h2>The Problem Statement</h2>
+
+<p>
+The 200-level taught you to be a competent individual practitioner. You can excavate artifacts, perform Triage, maintain an Archive, and forge at the Anvil. But consider these scenarios:
+</p>
+
+<h3>Scenario 1: The Single Point of Failure</h3>
+<p>
+<strong>Case:</strong> The Internet Archive holds 800+ billion web pages in a single building in San Francisco. Brewster Kahle has acknowledged this is "one flood away" from catastrophic loss.
+</p>
+
+<p>
+<strong>Question:</strong> Why hasn't this been solved? (Hint: It's not technical—it's institutional.)
+</p>
+
+<h3>Scenario 2: The Corporate Landlord</h3>
+<p>
+<strong>Case:</strong> Yahoo shut down GeoCities in 2009, deleting millions of homepages. Users had no recourse—the Terms of Service gave Yahoo absolute power. Archive Team heroically rescued terabytes, but most was lost.
+</p>
+
+<p>
+<strong>Question:</strong> How do you build preservation infrastructure that can't be "shut down by decree"?
+</p>
+
+<h3>Scenario 3: The Fragmentation Problem</h3>
+<p>
+<strong>Case:</strong> Mastodon promised decentralized social networking. Today, thousands of instances exist—many run by volunteers on personal servers. When admins burn out or lose interest, instances shut down, deleting all user data.
+</p>
+
+<p>
+<strong>Question:</strong> How do you build decentralized systems that are actually resilient (not just ideologically pure)?
+</p>
+
+<h3>Scenario 4: The Speculative Capture</h3>
+<p>
+<strong>Case:</strong> Web3 promised "own your data" and "sovereign identity." Instead, it became a casino. ENS domains are speculation vehicles. DAOs collapsed into plutocracy. The infrastructure remains, but the ideals were abandoned.
+</p>
+
+<p>
+<strong>Question:</strong> How do you build systems that resist capture by rent-seekers?
+</p>
+
+<h2>Core Reading</h2>
+
+<h3>Primary Text</h3>
+<p>
+<strong>Kahle, B. (1997).</strong> "Preserving the Internet." <em>Scientific American</em>, 276(3), 82–83.
+</p>
+
+<p>
+<strong>Discussion Questions:</strong>
+1. Kahle wrote this in 1997. What has the Internet Archive accomplished? What problems remain unsolved?
+2. The Archive is a 501(c)(3) non-profit. What are the advantages and constraints of this structure?
+3. If the San Francisco building burned down tomorrow, what percentage of digital history would be lost?
+</p>
+
+<h3>Secondary Texts</h3>
+<p>
+<strong>Doctorow, C. (2023).</strong> "The Internet Con: Seizing the Means of Computation." (Chapter 1: "The Memex Method")
+</p>
+
+<p>
+<strong>Zuboff, S. (2019).</strong> <em>The Age of Surveillance Capitalism.</em> (Introduction: "Home or Exile in the Digital Future")
+</p>
+
+<p>
+<strong>Analysis Question:</strong> Both Doctorow and Zuboff diagnose platform problems. Do their proposed solutions address institutional sustainability? Why or why not?
+</p>
+
+<h2>Lecture: A Taxonomy of Institutional Failure Modes</h2>
+
+<h3>Failure Mode 1: <strong>The Heroic Founder Problem</strong></h3>
+<p>
+<strong>Pattern:</strong> A single visionary builds critical infrastructure. When they retire/die/pivot, the work collapses.
+</p>
+
+<p>
+<strong>Examples:</strong>
+- Aaron Swartz's death and its impact on digital rights activism
+- Small Mastodon instances when admins burn out
+- Personal archives that become "link rot" when maintainers move on
+</p>
+
+<p>
+<strong>Root Cause:</strong> Work is tied to individual identity, not institutional structure.
+</p>
+
+<p>
+<strong>Three Pillars Analysis:</strong>
+- ❌ <strong>Declaration:</strong> The work <em>is</em> the founder (no separation of identity)
+- ❌ <strong>Connection:</strong> Community exists around person, not shared infrastructure
+- ❌ <strong>Ground:</strong> Assets often personally owned (domains, servers, data)
+</p>
+
+<p>
+<strong>Solution Pattern:</strong> Institutionalize the practice before the practitioner is gone.
+</p>
+
+<h3>Failure Mode 2: <strong>The Platform Landlord Problem</strong></h3>
+<p>
+<strong>Pattern:</strong> Users build on rented ground. Landlord changes terms, raises rent, or shuts down entirely. Users have no recourse.
+</p>
+
+<p>
+<strong>Examples:</strong>
+- GeoCities shutdown (2009)
+- Google Reader shutdown (2013)
+- Vine shutdown (2016)
+- Twitter's API restrictions (2023)
+- Reddit's API pricing killing third-party apps (2023)
+</p>
+
+<p>
+<strong>Root Cause:</strong> Centralized control + Terms of Service giving platforms absolute power.
+</p>
+
+<p>
+<strong>Three Pillars Analysis:</strong>
+- ❌ <strong>Declaration:</strong> Identity tied to platform (@username)
+- ❌ <strong>Connection:</strong> Social graph owned by platform
+- ❌ <strong>Ground:</strong> Users are tenants, not owners
+</p>
+
+<p>
+<strong>Solution Pattern:</strong> Build on sovereign ground with portable identity/data.
+</p>
+
+<h3>Failure Mode 3: <strong>The Volunteer Burnout Problem</strong></h3>
+<p>
+<strong>Pattern:</strong> Decentralized system relies on volunteer labor. No economic sustainability. Nodes fail when volunteers exhaust goodwill or resources.
+</p>
+
+<p>
+<strong>Examples:</strong>
+- Small Mastodon instances shutting down
+- IRC networks fragmenting
+- Archive Team's reliance on heroic volunteer scraping
+- Open-source maintainer burnout (see: Heartbleed, Log4j)
+</p>
+
+<p>
+<strong>Root Cause:</strong> Ideological commitment to "free as in beer" without sustainable economic model.
+</p>
+
+<p>
+<strong>Three Pillars Analysis:</strong>
+- ✅ <strong>Declaration:</strong> Often sovereign (self-hosted)
+- ⚠️ <strong>Connection:</strong> Fragmented, inconsistent
+- ❌ <strong>Ground:</strong> Technically owned, economically unsustainable
+</p>
+
+<p>
+<strong>Solution Pattern:</strong> Design economic models that compensate labor without becoming extractive.
+</p>
+
+<h3>Failure Mode 4: <strong>The Speculative Capture Problem</strong></h3>
+<p>
+<strong>Pattern:</strong> Technology designed for sovereignty gets financialized. Rent-seekers flood in. Original mission abandoned.
+</p>
+
+<p>
+<strong>Examples:</strong>
+- Web3/crypto promising decentralization, delivering speculation
+- ENS domains as NFT status symbols
+- DAOs captured by whales/VCs
+- "Decentralized" platforms with centralized VC control
+</p>
+
+<p>
+<strong>Root Cause:</strong> Capital flows to speculation, not infrastructure.
+</p>
+
+<p>
+<strong>Three Pillars Analysis:</strong>
+- ⚠️ <strong>Declaration:</strong> Technically possible, practically gatekept by cost
+- ❌ <strong>Connection:</strong> Community replaced by market
+- ⚠️ <strong>Ground:</strong> Technically decentralized, economically centralized
+</p>
+
+<p>
+<strong>Solution Pattern:</strong> Structural protections against financialization (governance limits, non-transferable ownership).
+</p>
+
+<h3>Failure Mode 5: <strong>The Complexity Collapse Problem</strong></h3>
+<p>
+<strong>Pattern:</strong> System requires too much technical expertise. Only specialists can participate. When specialists leave, system becomes unmaintainable.
+</p>
+
+<p>
+<strong>Examples:</strong>
+- IndieWeb's technical barriers (webhooks, microformats, self-hosting)
+- Mastodon's confusing instance selection
+- IPFS's complexity vs. HTTP's simplicity
+- Bitcoin node requirements (storage, bandwidth)
+</p>
+
+<p>
+<strong>Root Cause:</strong> Technical purity prioritized over usability/accessibility.
+</p>
+
+<p>
+<strong>Three Pillars Analysis:</strong>
+- ✅ <strong>Declaration:</strong> Technically sovereign
+- ⚠️ <strong>Connection:</strong> Limited to technical elite
+- ⚠️ <strong>Ground:</strong> Owned but requires expertise to maintain
+</p>
+
+<p>
+<strong>Solution Pattern:</strong> "Progressive sovereignty"—easy defaults that can deepen to full control.
+</p>
+
+<h2>Framework: The Institutional Resilience Matrix</h2>
+
+<p>
+For any preservation/sovereignty institution, evaluate across these dimensions:
+</p>
+
+<p>
+| Dimension | Questions | Three Pillars Mapping |
+|-----------|-----------|----------------------|
+| <strong>Governance</strong> | Who makes decisions? How are leaders chosen? Can they be removed? | Declaration (sovereignty) |
+| <strong>Economic</strong> | How is it funded? Is the model sustainable for 10+ years? | Ground (ownership) |
+| <strong>Technical</strong> | Who controls the infrastructure? Is it decentralized? Can it be shut down? | Ground (control) |
+| <strong>Social</strong> | How does community form? Are relationships algorithmic or intentional? | Connection (community) |
+| <strong>Legal</strong> | What jurisdiction? What protections against capture/seizure? | Ground (legal ownership) |
+| <strong>Succession</strong> | What happens when founders leave? Is knowledge transferable? | All three (institutional continuity) |
+</p>
+
+<p>
+<strong>Grading Scale:</strong>
+- 🟢 <strong>Resilient:</strong> Survives founder departure, platform hostility, and economic shifts
+- 🟡 <strong>Fragile:</strong> Vulnerable to one failure mode
+- 🔴 <strong>Brittle:</strong> Single point of failure exists
+</p>
+
+<h2>Case Study Analysis (In-Class Activity)</h2>
+
+<p>
+Students will analyze one institution using the Resilience Matrix:
+</p>
+
+<h3>Option 1: The Internet Archive</h3>
+<p>
+- Governance: Non-profit, board of directors, Brewster Kahle as founder/leader
+- Economic: Donations + digital lending revenue
+- Technical: Centralized (San Francisco building)
+- Social: Open access, volunteer scanners
+- Legal: US 501(c)(3), subject to US copyright law
+- Succession: Unknown (what happens when Kahle retires?)
+</p>
+
+<p>
+<strong>Student Task:</strong> Identify the biggest vulnerability and propose a structural fix.
+</p>
+
+<h3>Option 2: Mastodon/Fediverse</h3>
+<p>
+- Governance: No central authority, instance admins have absolute power
+- Economic: Volunteer labor + Patreon donations
+- Technical: Federated (instances can intercommunicate)
+- Social: Instance-based communities
+- Legal: Each instance subject to its own jurisdiction
+- Succession: When admin burns out, instance shuts down
+</p>
+
+<p>
+<strong>Student Task:</strong> Design a governance model that preserves federation without fragility.
+</p>
+
+<h3>Option 3: ENS (Ethereum Name Service)</h3>
+<p>
+- Governance: DAO with token voting
+- Economic: Registration fees + speculation
+- Technical: Blockchain-based (no central authority can seize)
+- Social: Market-driven, financialized
+- Legal: Unclear jurisdiction (advantage and vulnerability)
+- Succession: Self-sustaining smart contracts
+</p>
+
+<p>
+<strong>Student Task:</strong> How do you prevent speculative capture while maintaining decentralization?
+</p>
+
+<h3>Option 4: Indie Web</h3>
+<p>
+- Governance: Loose community, no formal structure
+- Economic: Personal expense (domains, hosting)
+- Technical: Self-hosted on personal domains
+- Social: Webmentions + blogrolls
+- Legal: Each person subject to their own jurisdiction
+- Succession: Works survive as long as domains renewed
+</p>
+
+<p>
+<strong>Student Task:</strong> How do you lower barriers to entry without sacrificing sovereignty?
+</p>
+
+<h2>Assignment: Diagnosing Institutional Failure</h2>
+
+<p>
+<strong>Objective:</strong> Apply the Resilience Matrix to a real-world case of digital infrastructure failure or fragility.
+</p>
+
+<h3>Part 1: Case Selection</h3>
+<p>
+Choose one:
+1. A platform that shut down (GeoCities, Vine, Google Reader, Ello, etc.)
+2. A decentralized system that fragmented (IRC, Usenet, Mastodon instances)
+3. A Web3 project that failed its mission (Terra/Luna, failed DAOs, etc.)
+4. A preservation project that collapsed (defunct archives, abandoned museums)
+</p>
+
+<h3>Part 2: Analysis (1500 words)</h3>
+<p>
+Using the Resilience Matrix, diagnose:
+1. <strong>What failure mode(s) caused the collapse/fragility?</strong>
+2. <strong>Which of The Three Pillars was violated or missing?</strong>
+3. <strong>Was the failure technical, economic, social, or governance-related?</strong>
+4. <strong>Could it have been prevented? How?</strong>
+</p>
+
+<h3>Part 3: Redesign (1000 words)</h3>
+<p>
+Propose a structural alternative that would have prevented the failure:
+1. <strong>Governance model</strong> that aligns with Declaration
+2. <strong>Economic model</strong> that sustains Ground ownership
+3. <strong>Social model</strong> that builds intentional Connection
+4. <strong>Technical architecture</strong> that resists single points of failure
+5. <strong>Legal/policy protections</strong> against capture or shutdown
+</p>
+
+<h3>Grading Criteria:</h3>
+<p>
+- ✅ Thorough application of Resilience Matrix
+- ✅ Clear Three Pillars analysis
+- ✅ Feasibility of proposed redesign (not just idealism)
+- ✅ Engagement with course readings
+- ✅ Original thinking (not just summarizing case)
+</p>
+
+<h2>Discussion Questions for Seminar</h2>
+
+<p>
+1. <strong>The Internet Archive Dilemma:</strong> Is it better to have a centralized, well-funded institution (fragile but functional) or a distributed, volunteer network (resilient but chaotic)? Can you have both?
+</p>
+
+<p>
+2. <strong>The Mastodon Paradox:</strong> Decentralization was supposed to prevent platform capture. Why did it create new fragility (admin burnout, instance shutdowns)? Is there a "third way"?
+</p>
+
+<p>
+3. <strong>The Web3 Question:</strong> Did Web3 fail because of bad actors (speculation, scams) or because of structural flaws (cost, complexity, governance)? Could a "non-financialized blockchain" work?
+</p>
+
+<p>
+4. <strong>The Succession Problem:</strong> Why don't more digital projects plan for founder departure? Is it ego, oversight, or something structural about how we fund/build?
+</p>
+
+<p>
+5. <strong>The Economics Question:</strong> Can you build lasting infrastructure without either surveillance capitalism (ad model) or speculation (crypto model)? What's the alternative?
+</p>
+
+<h2>Module Deliverables</h2>
+
+<p>
+By the end of Module 0, students will have:
+</p>
+
+<p>
+1. ✅ <strong>Completed Reading Responses</strong> (3 texts, 200 words each)
+2. ✅ <strong>Case Study Analysis</strong> (presented in-class using Resilience Matrix)
+3. ✅ <strong>Institutional Failure Assignment</strong> (2500 words total: diagnosis + redesign)
+4. ✅ <strong>Three Pillars Fluency</strong> (ability to analyze any institution through this lens)
+</p>
+
+<p>
+<strong>This sets the foundation for the rest of the course:</strong> Every subsequent module asks you to design an institution that avoids these failure modes.
+</p>
+
+<h2>Looking Ahead: Module 1</h2>
+
+<p>
+Next week, we move from diagnosis to design. <strong>Module 1: The Business of the Archive</strong> asks:
+</p>
+
+<p>
+<em>"You've identified why institutions fail. Now design one that doesn't."</em>
+</p>
+
+<p>
+You'll create a preservation organization with a 10-year sustainability plan that embodies The Three Pillars—proving that Archive work can be both principled and enduring.
+</p>
+
+<h2>Instructor Notes</h2>
+
+<p>
+- <strong>Tone:</strong> This module should feel urgent, not academic. These are real problems affecting real preservation work.
+- <strong>Balance:</strong> Critique institutions without nihilism. Frame as "here's what we can learn" not "everything is doomed."
+- <strong>Practical:</strong> Students should leave thinking "I could actually start this" not "this is impossible."
+- <strong>Guest Speaker Idea:</strong> Invite Internet Archive staff or Mastodon instance admin to discuss real operational challenges.
+</p>
+
+<p>
+<strong>End of Module 0</strong>
+</p>
+
+        </article>
+        <div class="nav">
+            <a href="index.html">Back to Course Home</a>
+        </div>
+    </div>
+</body>
+</html>

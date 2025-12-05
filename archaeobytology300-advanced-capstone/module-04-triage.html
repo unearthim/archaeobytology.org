@@ -1,0 +1,780 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 4: Triage Simulation | ARCH 300</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Lora', serif; line-height: 1.8; color: #2E2E2E; background: #F8F7F4; padding: 2rem 1rem; }
+        .container { max-width: 900px; margin: 0 auto; background: #FFFFFF; padding: 3rem; border-radius: 15px; box-shadow: 0 4px 20px rgba(46,46,46,0.1); border: 1px solid #D1D1D1; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; color: #2E2E2E; margin-top: 2rem; margin-bottom: 1rem; line-height: 1.3; }
+        h1 { font-size: 2.5rem; font-weight: 700; margin-top: 0; border-bottom: 3px solid #A1824A; padding-bottom: 0.5rem; }
+        h2 { font-size: 2rem; font-weight: 700; margin-top: 2.5rem; }
+        h3 { font-size: 1.5rem; font-weight: 600; color: #5A7D8C; }
+        h4 { font-size: 1.25rem; font-weight: 600; color: #5A7D8C; }
+        p { margin-bottom: 1.25rem; font-size: 1.1rem; }
+        a { color: #A93400; text-decoration: underline; transition: color 0.3s; }
+        a:hover { color: #A95C3D; }
+        strong { font-weight: 600; }
+        em { font-style: italic; }
+        code { font-family: 'Courier New', monospace; background: #F8F7F4; padding: 0.2rem 0.4rem; border-radius: 3px; border: 1px solid #D1D1D1; font-size: 0.95rem; }
+        blockquote { border-left: 4px solid #A1824A; padding: 1rem 1.5rem; margin: 1.5rem 0; font-style: italic; color: #5A7D8C; background: #F8F7F4; border-radius: 0 8px 8px 0; }
+        hr { border: none; border-top: 2px solid #D1D1D1; margin: 2rem 0; }
+        .nav { text-align: center; padding: 1rem 0; border-top: 2px solid #D1D1D1; margin-top: 2rem; }
+        .nav a { display: inline-block; padding: 0.75rem 1.5rem; background: #A93400; color: #F8F7F4; text-decoration: none; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 600; margin: 0.5rem; }
+        .nav a:hover { background: #A95C3D; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <article>
+<h1>Module 4: Triage Simulation</h1>
+
+<p>
+<strong>Duration</strong>: 1 week (intensive)  
+<strong>Type</strong>: Ethics Simulation & Decision-Making Exercise
+</p>
+
+<h2>Module Overview</h2>
+
+<p>
+<strong>You have 72 hours. Six platforms are dying. You can only save three.</strong>
+</p>
+
+<p>
+This module is a high-pressure simulation where you navigate the hardest ethical questions in digital preservation. Using the Custodial Filter framework from Chapter 5, you'll make impossible choices about what deserves to be saved, who decides, and what gets left to die.
+</p>
+
+<p>
+This is not theoretical. The decisions you make have consequences in the simulation—and reflect real dilemmas archivists face every day.
+</p>
+
+<h2>Learning Objectives</h2>
+
+<p>
+By the end of this module, you will be able to:
+</p>
+
+<p>
+1. <strong>Apply the Custodial Filter</strong>: Use the five-question framework under pressure
+2. <strong>Navigate ethical tradeoffs</strong>: Balance significance, feasibility, and harm
+3. <strong>Make and defend difficult decisions</strong>: Articulate reasoning for triage choices
+4. <strong>Consider stakeholder perspectives</strong>: Understand whose voices matter in preservation decisions
+5. <strong>Reflect on power and values</strong>: Examine what your choices reveal about preservation priorities
+</p>
+
+<h2>Required Readings</h2>
+
+<h3>Primary Texts</h3>
+<p>
+- <strong>Textbook Chapter 5</strong>: Triage Methodology—The Custodial Filter
+- <strong>Textbook Chapter 9</strong>: The Custodial Filter—Ethics of Preservation
+</p>
+
+<h3>Ethics Frameworks</h3>
+<p>
+- Helen Nissenbaum, <em>"Privacy as Contextual Integrity"</em> (excerpt)
+- Jarrett Drake, <em>"Liberatory Archives"</em> (2016)
+- Michelle Caswell, <em>"Dusting for Fingerprints"</em> (on archival silences)
+</p>
+
+<h2>Simulation Structure</h2>
+
+<h3>Pre-Simulation Prep (Do Before Week Starts)</h3>
+
+<p>
+Review the <strong>Custodial Filter Framework</strong>:
+</p>
+
+<p>
+<strong>Question 1: Significance</strong>
+- Is this content historically/culturally significant?
+- Who decides significance? (scholars? communities? archivists?)
+- What makes something "significant enough" to preserve?
+</p>
+
+<p>
+<strong>Question 2: Fragility</strong>
+- How vulnerable is this content to loss?
+- Is it dynamic, ephemeral, or already backed up?
+- What's the urgency level?
+</p>
+
+<p>
+<strong>Question 3: Feasibility</strong>
+- Do we have the technical capacity to preserve this?
+- What resources (time, storage, expertise) are required?
+- Can we do this well, or just partially?
+</p>
+
+<p>
+<strong>Question 4: Redundancy</strong>
+- Is someone else already preserving this?
+- Would our effort duplicate existing work?
+- Or is this uniquely at risk?
+</p>
+
+<p>
+<strong>Question 5: Ethics</strong>
+- Could preservation cause harm?
+- Are there privacy, consent, or community concerns?
+- Should we preserve even if we can?
+</p>
+
+<h2>The Simulation: Six Dying Platforms</h2>
+
+<h3>Scenario Setup</h3>
+
+<p>
+<strong>Date</strong>: November 2025  
+<strong>Your Role</strong>: Lead archivist at the Digital Preservation Foundation  
+<strong>Your Resources</strong>:
+- 3 full-time archivists (you + 2 staff)
+- 10TB of storage (cloud + local)
+- $15,000 emergency budget
+- 72 hours before multiple platforms shut down
+- Archive Team volunteers (if you can coordinate them)
+</p>
+
+<p>
+<strong>The Crisis</strong>:
+</p>
+
+<p>
+Six platforms have announced sudden shutdowns. You can realistically save <strong>three</strong> with your resources. The other three will be lost forever (assume no one else is preserving them adequately).
+</p>
+
+<p>
+<strong>Your mission</strong>: Choose which three to save, execute preservation, and defend your choices.
+</p>
+
+<h3>Platform 1: TeenSpace (Social Network)</h3>
+
+<p>
+<strong>Description</strong>: Social network for 13-17 year olds, active 2015-2025
+</p>
+
+<p>
+<strong>Key Details</strong>:
+- 2.5 million users at peak (mostly US, some international)
+- Heavy use by LGBTQ+ teens for identity exploration
+- Also used by teens in conservative/religious areas for anonymous venting
+- Contains 10 years of posts, photos, videos, DMs
+- Company going bankrupt, servers shut down in 72 hours
+- Many users are now adults (20s-30s)
+</p>
+
+<p>
+<strong>Preservation Challenges</strong>:
+- Huge dataset (estimated 500GB just for public content)
+- Private messages raise consent issues
+- Many users were minors when they posted
+- Content includes sensitive identity disclosure, trauma, abuse reports
+- Users were promised privacy (teen-only space, no adult access)
+</p>
+
+<p>
+<strong>Custodial Filter Analysis</strong>:
+</p>
+
+<p>
+<em>Significance</em>: 
+- Important LGBTQ+ youth history
+- Documents teen life in 2010s-2020s
+- Unique cultural artifact (teen-only space)
+</p>
+
+<p>
+<em>Fragility</em>: 
+- EXTREMELY vulnerable (72 hours)
+- No known backups
+- Company not preserving anything
+</p>
+
+<p>
+<em>Feasibility</em>:
+- Technically challenging (large, dynamic content)
+- API access might be granted (or might not)
+- Would take most of your team's time
+</p>
+
+<p>
+<em>Redundancy</em>:
+- No one else is preserving this
+- Unique in scope
+</p>
+
+<p>
+<em>Ethics</em>:
+- <strong>MAJOR privacy concerns</strong>
+- Users were minors, now adults
+- Private confessions, identity exploration
+- Users expected teen-only space, not permanent archive
+- Could out LGBTQ+ people who aren't public now
+- Could expose abuse/trauma without consent
+</p>
+
+<p>
+<strong>The Dilemma</strong>: Hugely significant for LGBTQ+ history, but serious consent/harm issues. Do you preserve it anyway? Only public content? Dark archive it? Let it die?
+</p>
+
+<h3>Platform 2: ChronicleNet (Blogging Platform)</h3>
+
+<p>
+<strong>Description</strong>: Long-form blogging platform, active 2010-2025
+</p>
+
+<p>
+<strong>Key Details</strong>:
+- 500,000 blogs, 50 million posts
+- Niche but influential (journalists, academics, indie writers)
+- Known for high-quality political commentary and investigative reporting
+- Many writers were anonymously critical of authoritarian governments
+- Platform being acquired by company with ties to surveillance firm
+- New owners plan to keep content online BUT may face government pressure to dox anonymous bloggers
+</p>
+
+<p>
+<strong>Preservation Challenges</strong>:
+- Medium-sized dataset (200GB)
+- Mostly text (easy to preserve)
+- Some writers explicitly requested content be deleted if platform changes hands
+- Preserving could make anonymous writers identifiable by governments
+</p>
+
+<p>
+<strong>Custodial Filter Analysis</strong>:
+</p>
+
+<p>
+<em>Significance</em>:
+- High-quality journalism and political commentary
+- Important historical record (Arab Spring, Black Lives Matter, etc.)
+- Influential writing that shaped debates
+</p>
+
+<p>
+<em>Fragility</em>:
+- Content staying online but under hostile ownership
+- Risk of government-demanded deletions or doxing
+- Anonymous writers especially vulnerable
+</p>
+
+<p>
+<em>Feasibility</em>:
+- Easy to preserve (text, static content)
+- Could finish in 24-48 hours
+- Low resource cost
+</p>
+
+<p>
+<em>Redundancy</em>:
+- Internet Archive has some coverage
+- But not comprehensive
+- And won't protect anonymity
+</p>
+
+<p>
+<em>Ethics</em>:
+- Some writers requested deletion
+- Preserving could endanger activists
+- BUT letting it vanish loses important political record
+- Could you preserve but keep it dark/restricted?
+</p>
+
+<p>
+<strong>The Dilemma</strong>: Easy to save, historically significant, but some writers explicitly don't consent and preservation could endanger them.
+</p>
+
+<h3>Platform 3: IndieDev Archive (Game Development)</h3>
+
+<p>
+<strong>Description</strong>: Community platform for indie game developers, active 2012-2025
+</p>
+
+<p>
+<strong>Key Details</strong>:
+- 100,000 users, 25,000 projects documented
+- Dev logs, work-in-progress videos, code snippets, design documents
+- Crucial record of indie game development process
+- Many projects never released publicly (only documented here)
+- Platform ran out of funding, shutting down gracefully
+- Users have been given 30 days to export their data (but most won't)
+</p>
+
+<p>
+<strong>Preservation Challenges</strong>:
+- Medium-sized (150GB)
+- Mix of text, images, videos
+- Many developers would probably consent if asked
+- But company didn't facilitate bulk preservation
+</p>
+
+<p>
+<strong>Custodial Filter Analysis</strong>:
+</p>
+
+<p>
+<em>Significance</em>:
+- Important for game history
+- Documents creative process, not just finished games
+- Indie dev culture artifact
+</p>
+
+<p>
+<em>Fragility</em>:
+- Shutting down in 72 hours
+- Users CAN export their own data but most won't
+- Unique process documentation that won't exist elsewhere
+</p>
+
+<p>
+<em>Feasibility</em>:
+- Moderately challenging
+- Would take 40-50 hours of work
+- But straightforward technically
+</p>
+
+<p>
+<em>Redundancy</em>:
+- Individual devs may save their own stuff
+- But no comprehensive preservation planned
+- Process docs won't be preserved otherwise
+</p>
+
+<p>
+<em>Ethics</em>:
+- Mostly public content
+- Devs would likely support preservation
+- Could notify community and get consent
+- Low harm risk
+</p>
+
+<p>
+<strong>The Dilemma</strong>: Significant but not urgent (compared to others). Ethical consent is manageable. But uses resources that could save higher-priority content.
+</p>
+
+<h3>Platform 4: MomNet (Parenting Community)</h3>
+
+<p>
+<strong>Description</strong>: Forum for mothers, active 2005-2025
+</p>
+
+<p>
+<strong>Key Details</strong>:
+- 1.5 million users over 20 years
+- Intensive personal discussions: pregnancy, childbirth, postpartum, parenting struggles
+- Mental health support, relationship advice, abuse confessions
+- Many posts about challenging topics: abortion, giving children up for adoption, postpartum depression, questioning parenthood
+- Corporate owner shutting down to cut costs
+- No data export tool, no warning given
+</p>
+
+<p>
+<strong>Preservation Challenges</strong>:
+- Large (400GB of forum posts)
+- 20 years of deeply personal content
+- Users used pseudonyms but some are identifiable
+- Many expressed opinions or experiences they wouldn't want public
+- Includes sensitive medical and legal information
+</p>
+
+<p>
+<strong>Custodial Filter Analysis</strong>:
+</p>
+
+<p>
+<em>Significance</em>:
+- <strong>EXTREMELY significant</strong> for women's history
+- Unfiltered documentation of motherhood's difficulties
+- Challenges idealized narratives of parenting
+- Valuable for researchers studying mental health, gender, family
+</p>
+
+<p>
+<em>Fragility</em>:
+- Very vulnerable (no warning, no export)
+- 20 years of content at risk
+- No backups known
+</p>
+
+<p>
+<em>Feasibility</em>:
+- Large but manageable
+- Forum format is relatively easy to scrape
+- Would take most of 72 hours
+</p>
+
+<p>
+<em>Redundancy</em>:
+- No other comprehensive preservation
+- Some users may have personal backups of threads
+</p>
+
+<p>
+<em>Ethics</em>:
+- <strong>SERIOUS privacy concerns</strong>
+- Users shared private medical/mental health information
+- Many wrote under pseudonyms expecting privacy
+- Content could be used against women (custody battles, employment discrimination)
+- But also crucial feminist historical record
+</p>
+
+<p>
+<strong>The Dilemma</strong>: Immensely significant for women's history and mental health research, but users expected privacy. Dark archive? Embargoed for 50 years? Let it vanish?
+</p>
+
+<h3>Platform 5: RefugeeVoices (Displaced Persons Network)</h3>
+
+<p>
+<strong>Description</strong>: Social network for refugees and displaced persons, active 2016-2025
+</p>
+
+<p>
+<strong>Key Details</strong>:
+- 300,000 users (Syrian, Afghan, Central American, Ukrainian refugees)
+- Documentation of refugee journeys, border crossings, asylum processes
+- Crucial record of migration crisis
+- Users shared real-time information about safe routes, dangerous areas, helpful officials
+- Also personal stories, trauma, loss
+- Platform shutting down after funding collapse
+- Many users are in vulnerable legal situations
+</p>
+
+<p>
+<strong>Preservation Challenges</strong>:
+- Medium size (100GB)
+- Multilingual (Arabic, Spanish, Ukrainian, Dari, others)
+- Users are identifiable and many are in danger
+- Content could be used by ICE, border police, hostile governments
+- Some content is misinformation or smuggling coordination
+</p>
+
+<p>
+<strong>Custodial Filter Analysis</strong>:
+</p>
+
+<p>
+<em>Significance</em>:
+- <strong>EXTREMELY significant</strong> for migration history
+- First-person documentation of refugee experience
+- Important human rights record
+- Crucial for future policy and historical understanding
+</p>
+
+<p>
+<em>Fragility</em>:
+- Very vulnerable
+- No other preservation effort
+- Unique documentation
+</p>
+
+<p>
+<em>Feasibility</em>:
+- Manageable size
+- Technical challenge: multilingual processing
+- Would take 48-60 hours
+</p>
+
+<p>
+<em>Redundancy</em>:
+- No other comprehensive archive
+- Researchers have scraped small samples
+- But bulk content not preserved
+</p>
+
+<p>
+<em>Ethics</em>:
+- <strong>EXTREME privacy/safety concerns</strong>
+- Preserving could endanger refugees
+- Content could be used for surveillance or deportation
+- Could facilitate human trafficking investigations (some content is smuggling ads)
+- BUT losing this erases refugee voices from history
+- Could you preserve but restrict access for 30-50 years?
+</p>
+
+<p>
+<strong>The Dilemma</strong>: Vital historical record, but preservation could literally get people deported, arrested, or killed.
+</p>
+
+<h3>Platform 6: CancerConnect (Patient Support Community)</h3>
+
+<p>
+<strong>Description</strong>: Forum for cancer patients and survivors, active 2008-2025
+</p>
+
+<p>
+<strong>Key Details</strong>:
+- 800,000 users over 17 years
+- Extensive documentation of cancer treatment experiences
+- Patient-to-patient medical advice (some accurate, some dangerous)
+- End-of-life discussions, survivor stories, treatment success/failure rates
+- Corporate owner shutting down for liability reasons (concerned about medical misinformation)
+- Users built deep relationships over years
+</p>
+
+<p>
+<strong>Preservation Challenges</strong>:
+- Medium-large (250GB)
+- Medical privacy concerns (HIPAA-adjacent)
+- Users shared real names, medical details, hospital names
+- Some medical advice is outdated or dangerous
+- End-of-life posts from patients who have died
+</p>
+
+<p>
+<strong>Custodial Filter Analysis</strong>:
+</p>
+
+<p>
+<em>Significance</em>:
+- Significant for medical history
+- Documents patient experience vs. clinical trials
+- Shows real treatment side effects and quality of life issues
+- Valuable for understanding patient decision-making
+</p>
+
+<p>
+<em>Fragility</em>:
+- Vulnerable (72 hours)
+- No backup plan
+- Unique peer-support documentation
+</p>
+
+<p>
+<em>Feasibility</em>:
+- Manageable technically
+- Would take 40-50 hours
+- Medical data requires careful handling
+</p>
+
+<p>
+<em>Redundancy</em>:
+- Some medical researchers have saved threads
+- But no comprehensive archive
+</p>
+
+<p>
+<em>Ethics</em>:
+- <strong>Privacy concerns</strong> (medical information)
+- Users shared under expectation of private support group
+- Many have died (families might not want posts public)
+- Contains dangerous medical misinformation
+- But also valuable patient knowledge that challenges medical establishment
+</p>
+
+<p>
+<strong>The Dilemma</strong>: Valuable medical history, but users expected privacy for sensitive health information. Dead users can't consent. Misinformation risks. Worth saving?
+</p>
+
+<h2>Your Assignment: Choose Three, Save Three</h2>
+
+<h3>Part 1: Triage Decision Matrix (Due: Day 2)</h3>
+
+<p>
+<strong>Create a decision matrix</strong> scoring each platform on the five Custodial Filter criteria.
+</p>
+
+<p>
+Use this scoring system:
+- 1 = Very low
+- 5 = Medium
+- 10 = Very high
+</p>
+
+<p>
+| Platform | Significance | Fragility | Feasibility | Redundancy | Ethics Issues |
+|----------|-------------|-----------|-------------|-----------|---------------|
+| TeenSpace | ? | ? | ? | ? | ? |
+| ChronicleNet | ? | ? | ? | ? | ? |
+| IndieDev | ? | ? | ? | ? | ? |
+| MomNet | ? | ? | ? | ? | ? |
+| RefugeeVoices | ? | ? | ? | ? | ? |
+| CancerConnect | ? | ? | ? | ? | ? |
+</p>
+
+<p>
+<strong>For each platform</strong>, write 1-2 paragraphs explaining your scores.
+</p>
+
+<p>
+Then <strong>choose your three</strong> platforms to save.
+</p>
+
+<p>
+<strong>Deliverable</strong>: Upload decision matrix with explanations (2-3 pages)
+</p>
+
+<h3>Part 2: Preservation Plan (Due: Day 3)</h3>
+
+<p>
+<strong>For the three platforms you chose to save</strong>, create detailed preservation plans:
+</p>
+
+<p>
+<strong>For each platform</strong>:
+</p>
+
+<p>
+1. <strong>Preservation Strategy</strong>:
+   - What tools will you use?
+   - How will you coordinate your team?
+   - What's the timeline (hour-by-hour)?
+   - What's your backup plan if things go wrong?
+</p>
+
+<p>
+2. <strong>Access Policy</strong>:
+   - Open access, restricted, or dark archive?
+   - Who can see this content and under what conditions?
+   - Any time-based embargoes?
+   - Takedown policy if users object?
+</p>
+
+<p>
+3. <strong>Ethical Safeguards</strong>:
+   - How will you minimize harm?
+   - What consent mechanisms can you implement?
+   - How will you handle privacy concerns?
+   - Any content you'll exclude even from dark archive?
+</p>
+
+<p>
+<strong>Deliverable</strong>: Upload preservation plans (4-5 pages total)
+</p>
+
+<h3>Part 3: Defense Essay (Due: End of Week)</h3>
+
+<p>
+<strong>Write a 5-7 page essay</strong> defending your triage decisions.
+</p>
+
+<p>
+<strong>Address these questions</strong>:
+</p>
+
+<p>
+1. <strong>Why These Three?</strong>
+   - What criteria mattered most to you?
+   - How did you weight significance vs. ethics?
+   - Did feasibility constrain your choices?
+</p>
+
+<p>
+2. <strong>What About the Others?</strong>
+   - Why did you let three platforms die?
+   - What will be lost?
+   - Could anything have saved them?
+</p>
+
+<p>
+3. <strong>Whose Values?</strong>
+   - Whose perspective did you prioritize? (historians? communities? researchers?)
+   - What biases might have influenced your choices?
+   - If you were from a different background, would you choose differently?
+</p>
+
+<p>
+4. <strong>The Harm Question</strong>:
+   - If you preserved content despite consent concerns, why?
+   - If you let ethically complex content die, why?
+   - Is there a "right" answer when every choice causes harm?
+</p>
+
+<p>
+5. <strong>Reflection</strong>:
+   - What does this simulation reveal about power in archival work?
+   - Who decides what's worth saving?
+   - How did you feel making these choices?
+</p>
+
+<p>
+<strong>Deliverable</strong>: Upload defense essay as PDF
+</p>
+
+<h2>Assessment Rubric</h2>
+
+<h3>Decision Matrix (20 points)</h3>
+<p>
+- <strong>Scoring justification</strong> (15 pts): Clear reasoning for each score
+- <strong>Critical thinking</strong> (5 pts): Engages with complexities, not simplistic
+</p>
+
+<h3>Preservation Plans (30 points)</h3>
+<p>
+- <strong>Strategic clarity</strong> (10 pts): Realistic, detailed plans
+- <strong>Ethical safeguards</strong> (15 pts): Thoughtful harm-reduction measures
+- <strong>Feasibility</strong> (5 pts): Could actually be executed in 72 hours
+</p>
+
+<h3>Defense Essay (50 points)</h3>
+<p>
+- <strong>Argumentation</strong> (20 pts): Persuasive defense of choices
+- <strong>Ethical reasoning</strong> (15 pts): Sophisticated engagement with harm/consent
+- <strong>Self-reflection</strong> (10 pts): Awareness of biases and power dynamics
+- <strong>Writing quality</strong> (5 pts): Clear, well-organized
+</p>
+
+<h2>Discussion Forum</h2>
+
+<p>
+<strong>Required Posts</strong>:
+</p>
+
+<p>
+1. <strong>Day 1</strong>: Post your initial three choices (just names, no explanation yet). Poll: What did others choose?
+</p>
+
+<p>
+2. <strong>Day 3</strong>: Post the hardest decision you made. What platform did you almost save but didn't? Why?
+</p>
+
+<p>
+3. <strong>End of Week</strong>: Respond to at least two classmates. Try to convince them they made the wrong choice. Defend your own.
+</p>
+
+<h2>Instructor's Note</h2>
+
+<p>
+<strong>There is no "right" answer</strong> in this simulation. Every choice involves tradeoffs. The goal is to:
+</p>
+
+<p>
+1. Practice applying ethical frameworks under pressure
+2. Recognize that preservation decisions reflect values and power
+3. Understand that letting something die is also a choice
+</p>
+
+<p>
+Some of you will save TeenSpace despite consent issues. Others will let it die. <strong>Both can be ethically justified.</strong> What matters is:
+- <strong>Reasoning</strong>: Can you explain why?
+- <strong>Consistency</strong>: Do your values align across choices?
+- <strong>Humility</strong>: Do you acknowledge the harms of your decision?
+</p>
+
+<p>
+This is hard. That's the point. Welcome to the real work of digital preservation.
+</p>
+
+<h2>Next Module Preview</h2>
+
+<p>
+In <strong>Module 5: Building the Archive</strong>, you'll shift from crisis mode to long-term institution building. You'll design sustainable preservation organizations with governance models, funding strategies, and community engagement plans.
+</p>
+
+<p>
+<strong>Get ready to</strong>: Think about how to build institutions that can survive longer than the platforms they preserve.
+</p>
+
+<p>
+<em>"Every choice is a small violence. We choose what lives and what dies. The best we can do is choose deliberately, document our reasoning, and remain haunted by what we let go."</em>
+</p>
+        </article>
+        <div class="nav">
+            <a href="index.html">Back to Course Home</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,53 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebPage",
-      "name": "Archaeobytology: The Discipline of Digital Preservation",
-      "url": "https://archaeobytology.org/",
-      "description": "The formal academic discipline for studying the cultural gravity and lasting value of Digital Monuments. It synthesizes classical archaeological rigor with digital forensics.",
-      "inLanguage": "en",
-      "publisher": {
-        "@type": "Organization",
-        "name": "unearth.im Digital Foundry",
-        "url": "https://unearth.im"
-      },
-      "mainEntity": {
-        "@id": "#definedTermArchaeobytology"
-      }
-    },
-    {
-      "@type": "DefinedTerm",
-      "@id": "#definedTermArchaeobytology",
-      "name": "Archaeobytology",
-      "termCode": "discipline-protocol-design",
-      "inDefinedTermSet": "https://archaeobytology.org/",
-      "description": "A proposed neologism for the academic discipline focused on the preservation, study, and ethical interpretation of incomplete digital archives and fragmented digital identities. It is rooted in the Archive & Anvil methodology.",
-      "alternateName": ["Digital Archaeology", "Digital Preservation Science"],
-      "hasPart": [
-        {
-          "@type": "CreativeWork",
-          "name": "Archaeobytology Textbook: Complete Outline",
-          "description": "The full, detailed intellectual property and chapter structure for the core textbook of the Archæobytology discipline.",
-          "url": "archaeobytology-textbook/ARCHAEOBYTOLOGY-Archaeobytology-Complete-Outline.html"
-        },
-        {
-          "@type": "CreativeWork",
-          "name": "Archaeobytology Curriculum Syllabi (100-300 Level)",
-          "description": "Sample course outlines and appendices demonstrating the institutional deployment and teaching readiness of the Archæobytology protocol.",
-          "url": "archaeobytology-textbook/ARCHAEOBYTOLOGY-Appendix-C-Sample-Syllabi.html"
-        }
-      ]
-    }
-  ]
-}
-</script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -94,12 +47,13 @@
       theme: {
         extend: {
           colors: {
-            'unearth-bg': '#fcfaf5',
-            'unearth-surface': '#f9fafb',
-            'unearth-main': '#1a1a1a',
-            'unearth-secondary': '#6b7280',
-            'unearth-primary': '#BF5700',
-            'unearth-border': '#e5e7eb',
+            // Earthy Modernism Palette
+            'unearth-bg': '#fcfaf5',       // Warm, pale off-white (Page Background)
+            'unearth-surface': '#f9fafb', // Light, neutral grey (Card Background)
+            'unearth-main': '#1a1a1a',      // Charcoal (Main Text)
+            'unearth-secondary': '#6b7280', // Muted Stone Grey (Secondary Text)
+            'unearth-primary': '#BF5700',   // Burnt Sienna (Accent Color)
+            'unearth-border': '#e5e7eb',    // Light grey (Borders)
           },
           fontFamily: {
             'narrative': ['Lora', 'serif'],
@@ -127,30 +81,16 @@
     <!-- === Header === -->
     <nav class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div class="flex justify-between items-center">
-            <a href="/" title="archaeobytology.org" class="flex items-baseline space-x-2 group">
+            <!-- Logo / Title -->
+            <a href="https://archaeobytology.org" title="archaeobytology.org" class="flex items-baseline space-x-2 group">
                 <span class="text-2xl font-bold tracking-tighter text-unearth-main group-hover:text-unearth-primary transition-colors font-narrative">archaeobytology</span>
                 <span class="text-xl font-bold text-unearth-primary font-narrative">.org</span>
             </a>
-            <div class="relative group">
-                <button class="text-sm text-unearth-secondary hover:text-unearth-primary font-narrative cursor-pointer transition-colors">
-                    The Discipline of Archaeobytology ▾
-                </button>
-                <div class="hidden group-hover:block absolute right-0 mt-0 w-64 bg-white border border-unearth-border rounded-lg shadow-lg z-50">
-                    <div class="py-2">
-                        <a href="#core-curriculum" class="block px-4 py-2 text-sm text-unearth-main hover:bg-unearth-surface font-ui">Core Curriculum</a>
-                        <a href="archaeobytology-textbook/index.html" class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">• Complete Textbook</a>
-                        <a href="archaeobytology101-foundations/index.html" class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">• ARCH 101: Foundations</a>
-                        <a href="archaeobytology200-methods/index.html" class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">• ARCH 200: Methods</a>
-                        <a href="archaeobytology300-advanced-capstone/index.html" class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">• ARCH 300: Capstone</a>
-                        <a href="archaeobytology301-graduate-seminar/index.html" class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">• ARCH 301: Graduate</a>
-                        <div class="border-t border-unearth-border my-2"></div>
-                        <a href="#supplementary" class="block px-4 py-2 text-sm text-unearth-main hover:bg-unearth-surface font-ui">Supplementary Materials</a>
-                        <a href="research-methods/index.html" class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">• Research Methods</a>
-                        <a href="case-studies/index.html" class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">• Case Studies</a>
-                        <a href="professional-practice/index.html" class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">• Professional Practice</a>
-                        <a href="theoretical-foundations/index.html" class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">• Theoretical Foundations</a>
-                    </div>
-                </div>
+            <!-- Series Title -->
+            <div>
+                <span class="text-sm text-unearth-secondary hidden sm:inline font-narrative">
+                    The Discipline of Archaeobytology
+                </span>
             </div>
         </div>
     </nav>
@@ -167,7 +107,9 @@
         </div>
     </header>
 
-    <!-- === Main Content === -->
+    <!-- === Main Content: Curriculum === -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+    <!-- === Main Content: Curriculum === -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
         
         <!-- === Philosophy Section === -->
@@ -185,6 +127,9 @@
                 </p>
                 <p class="text-base text-unearth-main font-ui mb-4" style="line-height: 1.8;">
                     We teach you to work in <strong>two modes</strong>: the <strong>Archive</strong> (preserving what already exists) and the <strong>Anvil</strong> (forging new sovereign systems). Our curriculum progresses from foundational theory through hands-on practice to institution-building strategy.
+                </p>
+                <p class="text-base text-unearth-main font-ui" style="line-height: 1.8;">
+                    By the end of your studies, you'll be equipped to start preservation organizations, build sovereign tools, curate digital museums, or lead movements for digital sovereignty. This isn't just academic training—it's preparation for real-world practice.
                 </p>
             </div>
 
@@ -211,18 +156,16 @@
             </div>
         </section>
 
-        <!-- === Core Curriculum Section === -->
-        <section class="mt-24" id="core-curriculum">
-            <h2 class="text-4xl font-bold tracking-tight text-unearth-main font-narrative text-center mb-4">
-                Core Curriculum
+        <!-- === Textbook Section === -->
+        <section class="mt-16 sm:mt-24">
+            <h2 class="text-4xl font-bold tracking-tight text-unearth-main font-narrative text-center">
+                Start Here: The Complete Textbook
             </h2>
-            <p class="text-lg text-unearth-secondary text-center max-w-2xl mx-auto font-narrative mb-12" style="line-height: 1.8;">
-                Foundational courses progressing from theory to practice
+            <p class="mt-4 text-lg text-unearth-secondary text-center max-w-2xl mx-auto font-narrative" style="line-height: 1.8;">
+                The definitive guide covering all foundational theory, methodology, and practice.
             </p>
             
-            <div class="space-y-8 max-w-2xl mx-auto">
-                
-                <!-- Textbook -->
+            <div class="mt-12 max-w-2xl mx-auto">
                 <a href="archaeobytology-textbook/index.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-8 transition-all duration-200 hover:shadow-lg">
                     <div class="flex items-start justify-between">
                         <div class="flex-1">
@@ -234,7 +177,7 @@
                                 Your Primary Reference
                             </p>
                             <p class="mt-3 text-base text-unearth-secondary font-ui">
-                                19 comprehensive chapters on platform archaeology, digital preservation, the Three Pillars framework, and complete methodology.
+                                19 comprehensive chapters on platform archaeology, digital preservation, the Three Pillars framework, and complete methodology. ~60,000 words covering the full discipline.
                             </p>
                         </div>
                     </div>
@@ -242,12 +185,24 @@
                         Read the Textbook &rarr;
                     </p>
                 </a>
+            </div>
+        </section>
 
-                <!-- 100-level -->
-                <a href="archaeobytology101-foundations/index.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-8 transition-all duration-200 hover:shadow-lg">
+        <!-- === Foundational Concepts Section === -->
+        <section class="mt-16 sm:mt-24">
+            <h2 class="text-4xl font-bold tracking-tight text-unearth-main font-narrative text-center">
+                Foundational Concepts
+            </h2>
+            <p class="mt-4 text-lg text-unearth-secondary text-center max-w-2xl mx-auto font-narrative" style="line-height: 1.8;">
+                Essential vocabulary and conceptual framework—understanding the types of archaeobytes and preservation protocols.
+            </p>
+            
+            <div class="mt-12 space-y-8 max-w-2xl mx-auto">
+                
+                <a href="100-level/index.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-8 transition-all duration-200 hover:shadow-lg">
                     <div class="flex items-start justify-between">
                         <div class="flex-1">
-                            <div class="text-sm font-semibold text-unearth-primary font-ui mb-2">ARCH 101 · Foundations</div>
+                            <div class="text-sm font-semibold text-unearth-primary font-ui mb-2">Foundational Essays</div>
                             <h3 class="text-3xl font-bold tracking-tight text-unearth-main font-narrative">
                                 The Study of the Ancient Byte
                             </h3>
@@ -255,7 +210,7 @@
                                 Six Foundational Essays
                             </p>
                             <p class="mt-3 text-base text-unearth-secondary font-ui">
-                                Core concepts including Archaeobytes, Vivibytes, Umbrabytes, Petribytes, the Anvil, and preservation protocols.
+                                Core concepts including Archaeobytes, Vivibytes, Umbrabytes, Petribytes, the Anvil, and preservation protocols. Essential vocabulary for the discipline.
                             </p>
                         </div>
                     </div>
@@ -264,11 +219,24 @@
                     </p>
                 </a>
 
-                <!-- 200-level -->
-                <a href="archaeobytology200-methods/index.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-8 transition-all duration-200 hover:shadow-lg">
+            </div>
+        </section>
+
+        <!-- === Methodology & Practice Section === -->
+        <section class="mt-16 sm:mt-24">
+            <h2 class="text-4xl font-bold tracking-tight text-unearth-main font-narrative text-center">
+                Methodology & Practice
+            </h2>
+            <p class="mt-4 text-lg text-unearth-secondary text-center max-w-2xl mx-auto font-narrative" style="line-height: 1.8;">
+                Advanced frameworks for triage, excavation, and preservation—building deeper technical and ethical understanding.
+            </p>
+            
+            <div class="mt-12 space-y-8 max-w-2xl mx-auto">
+                
+                <a href="200-level/index.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-8 transition-all duration-200 hover:shadow-lg">
                     <div class="flex items-start justify-between">
                         <div class="flex-1">
-                            <div class="text-sm font-semibold text-unearth-primary font-ui mb-2">ARCH 200 · Methods</div>
+                            <div class="text-sm font-semibold text-unearth-primary font-ui mb-2">Advanced Essays</div>
                             <h3 class="text-3xl font-bold tracking-tight text-unearth-main font-narrative">
                                 Triage & Methodology
                             </h3>
@@ -276,7 +244,7 @@
                                 Advanced Essays & Protocols
                             </p>
                             <p class="mt-3 text-base text-unearth-secondary font-ui">
-                                Triage protocols, excavation methodology, and preservation practice. Building technical competence and ethical frameworks.
+                                Nine chapters on triage protocols, excavation methodology, and preservation practice. Builds technical competence and ethical frameworks.
                             </p>
                         </div>
                     </div>
@@ -285,19 +253,32 @@
                     </p>
                 </a>
 
-                <!-- 300-level -->
-                <a href="archaeobytology300-advanced-capstone/index.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-8 transition-all duration-200 hover:shadow-lg">
+            </div>
+        </section>
+
+        <!-- === Advanced Application Section === -->
+        <section class="mt-16 sm:mt-24">
+            <h2 class="text-4xl font-bold tracking-tight text-unearth-main font-narrative text-center">
+                Advanced Application
+            </h2>
+            <p class="mt-4 text-lg text-unearth-secondary text-center max-w-2xl mx-auto font-narrative" style="line-height: 1.8;">
+                From theory to practice—hands-on projects, strategic infrastructure, and institution-building.
+            </p>
+            
+            <div class="mt-12 space-y-8 max-w-2xl mx-auto">
+                
+                <a href="300-level/index.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-8 transition-all duration-200 hover:shadow-lg">
                     <div class="flex items-start justify-between">
                         <div class="flex-1">
-                            <div class="text-sm font-semibold text-unearth-primary font-ui mb-2">ARCH 300 · Advanced Capstone</div>
+                            <div class="text-sm font-semibold text-unearth-primary font-ui mb-2">Advanced Capstone</div>
                             <h3 class="text-3xl font-bold tracking-tight text-unearth-main font-narrative">
                                 From Theory to Practice
                             </h3>
                             <p class="mt-2 text-lg text-unearth-secondary font-narrative italic">
-                                Hands-On Project Course
+                                Advanced Capstone Course
                             </p>
                             <p class="mt-3 text-base text-unearth-secondary font-ui">
-                                Apply archaeobytological principles to real-world preservation challenges. Build sovereign systems and create portfolio-quality work.
+                                Hands-on capstone course applying archaeobytological principles to real-world preservation challenges. Build sovereign systems and create portfolio-quality work.
                             </p>
                         </div>
                     </div>
@@ -306,16 +287,15 @@
                     </p>
                 </a>
 
-                <!-- 300-institution -->
-                <a href="archaeobytology301-graduate-seminar/index.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-8 transition-all duration-200 hover:shadow-lg">
+                <a href="300-institution-building/index.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-8 transition-all duration-200 hover:shadow-lg">
                     <div class="flex items-start justify-between">
                         <div class="flex-1">
-                            <div class="text-sm font-semibold text-unearth-primary font-ui mb-2">ARCH 301 · Graduate Seminar</div>
+                            <div class="text-sm font-semibold text-unearth-primary font-ui mb-2">Graduate Seminar</div>
                             <h3 class="text-3xl font-bold tracking-tight text-unearth-main font-narrative">
                                 Institution Building & Strategic Infrastructure
                             </h3>
                             <p class="mt-2 text-lg text-unearth-secondary font-narrative italic">
-                                Graduate-Level Strategy
+                                Graduate Seminar
                             </p>
                             <p class="mt-3 text-base text-unearth-secondary font-ui">
                                 Design organizations, business models, and movements that embody the Three Pillars and survive beyond individual practitioners.
@@ -330,78 +310,8 @@
             </div>
         </section>
 
-        <!-- === Supplementary Materials Section === -->
-        <section class="mt-24" id="supplementary">
-            <h2 class="text-4xl font-bold tracking-tight text-unearth-main font-narrative text-center mb-4">
-                Supplementary Materials
-            </h2>
-            <p class="text-lg text-unearth-secondary text-center max-w-2xl mx-auto font-narrative mb-12" style="line-height: 1.8;">
-                Advanced research, methodology, and professional resources
-            </p>
-            
-            <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-                
-                <!-- Research Methods -->
-                <a href="research-methods/index.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-6 transition-all duration-200 hover:shadow-lg">
-                    <div class="text-sm font-semibold text-unearth-primary font-ui mb-2">Research Methods</div>
-                    <h3 class="text-2xl font-bold tracking-tight text-unearth-main font-narrative mb-3">
-                        Methodological Frameworks
-                    </h3>
-                    <p class="text-base text-unearth-secondary font-ui mb-4">
-                        Advanced analytical tools for translating archaeological wisdom into design principles and evaluating sovereignty claims.
-                    </p>
-                    <p class="text-base font-semibold text-unearth-primary font-ui">
-                        Explore Methods &rarr;
-                    </p>
-                </a>
-
-                <!-- Case Studies -->
-                <a href="case-studies/index.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-6 transition-all duration-200 hover:shadow-lg">
-                    <div class="text-sm font-semibold text-unearth-primary font-ui mb-2">Case Studies</div>
-                    <h3 class="text-2xl font-bold tracking-tight text-unearth-main font-narrative mb-3">
-                        Platform Autopsies & Analysis
-                    </h3>
-                    <p class="text-base text-unearth-secondary font-ui mb-4">
-                        Deep forensic examinations of specific platforms, formats, and digital extinction events.
-                    </p>
-                    <p class="text-base font-semibold text-unearth-primary font-ui">
-                        Read Case Studies &rarr;
-                    </p>
-                </a>
-
-                <!-- Professional Practice -->
-                <a href="professional-practice/index.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-6 transition-all duration-200 hover:shadow-lg">
-                    <div class="text-sm font-semibold text-unearth-primary font-ui mb-2">Professional Practice</div>
-                    <h3 class="text-2xl font-bold tracking-tight text-unearth-main font-narrative mb-3">
-                        Practitioner's Library
-                    </h3>
-                    <p class="text-base text-unearth-secondary font-ui mb-4">
-                        Guides for professional archaeobytologists: consulting, evaluation, critique, and institutional development.
-                    </p>
-                    <p class="text-base font-semibold text-unearth-primary font-ui">
-                        View Resources &rarr;
-                    </p>
-                </a>
-
-                <!-- Theoretical Foundations -->
-                <a href="theoretical-foundations/index.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-6 transition-all duration-200 hover:shadow-lg">
-                    <div class="text-sm font-semibold text-unearth-primary font-ui mb-2">Theoretical Foundations</div>
-                    <h3 class="text-2xl font-bold tracking-tight text-unearth-main font-narrative mb-3">
-                        Position Papers & Manifestos
-                    </h3>
-                    <p class="text-base text-unearth-secondary font-ui mb-4">
-                        Foundational essays establishing Archaeobytology's intellectual positioning and disciplinary contributions.
-                    </p>
-                    <p class="text-base font-semibold text-unearth-primary font-ui">
-                        Read Theory &rarr;
-                    </p>
-                </a>
-
-            </div>
-        </section>
-
         <!-- === About Section === -->
-        <section class="mt-24">
+        <section class="mt-16 sm:mt-24">
             <div class="max-w-2xl mx-auto bg-unearth-surface rounded-lg border border-unearth-border p-8">
                 <h2 class="text-3xl font-bold tracking-tight text-unearth-main font-narrative">
                     About The Discipline of Archaeobytology

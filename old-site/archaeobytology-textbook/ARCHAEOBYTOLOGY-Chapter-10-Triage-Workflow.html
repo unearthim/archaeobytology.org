@@ -1,0 +1,1434 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 10: Triage Workflow — From Discovery to Preservation | Archaeobytology</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Lora', serif; line-height: 1.8; color: #2E2E2E; background: #F8F7F4; padding: 2rem 1rem; }
+        .container { max-width: 800px; margin: 0 auto; background: #FFFFFF; padding: 3rem; border-radius: 15px; box-shadow: 0 4px 20px rgba(46,46,46,0.1); border: 1px solid #D1D1D1; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; color: #2E2E2E; margin-top: 2rem; margin-bottom: 1rem; line-height: 1.3; }
+        h1 { font-size: 2.5rem; font-weight: 700; margin-top: 0; border-bottom: 3px solid #A1824A; padding-bottom: 0.5rem; }
+        h2 { font-size: 2rem; font-weight: 700; margin-top: 2.5rem; }
+        h3 { font-size: 1.5rem; font-weight: 600; color: #5A7D8C; }
+        h4 { font-size: 1.25rem; font-weight: 600; color: #5A7D8C; }
+        p { margin-bottom: 1.25rem; font-size: 1.1rem; }
+        a { color: #A93400; text-decoration: underline; transition: color 0.3s; }
+        a:hover { color: #A95C3D; }
+        strong { font-weight: 600; }
+        em { font-style: italic; }
+        code { font-family: 'Courier New', monospace; background: #F8F7F4; padding: 0.2rem 0.4rem; border-radius: 3px; border: 1px solid #D1D1D1; }
+        blockquote { border-left: 4px solid #A1824A; padding: 1rem 1.5rem; margin: 1.5rem 0; font-style: italic; color: #5A7D8C; background: #F8F7F4; border-radius: 0 8px 8px 0; }
+        hr { border: none; border-top: 2px solid #D1D1D1; margin: 2rem 0; }
+        .nav { text-align: center; padding: 1rem 0; border-top: 2px solid #D1D1D1; margin-top: 2rem; }
+        .nav a { display: inline-block; padding: 0.75rem 1.5rem; background: #A93400; color: #F8F7F4; text-decoration: none; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 600; margin: 0.5rem; }
+        .nav a:hover { background: #A95C3D; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <article>
+<h1>Chapter 10: Triage Workflow — From Discovery to Preservation</h1>
+
+<h2>Opening: The Clock Is Always Ticking</h2>
+
+<p>
+<strong>March 17, 2023, 9:47 AM:</strong> A Discord message in the Archive Team channel: "Credit Karma is shutting down their forums on April 15th. 28 days. Thousands of posts about personal finance from 2007-2023. Anyone on this?"
+</p>
+
+<p>
+<strong>9:52 AM:</strong> Three people respond. They've never worked together before. One is a college student in California. One is a librarian in Germany. One is a retired programmer in Ohio.
+</p>
+
+<p>
+<strong>10:15 AM:</strong> They've created a shared spreadsheet, assigned tasks, and started reconnaissance.
+</p>
+
+<p>
+<strong>April 14th, 11:58 PM:</strong> The scraping is complete. 47,000 posts, 8,200 users, 16 years of financial advice—all captured. Total time: 27 days, 14 hours. They did it.
+</p>
+
+<p>
+<strong>April 15th, 12:01 AM:</strong> Credit Karma's forums go offline. The original URLs return 404 errors. But the archive exists—backed up to Internet Archive, stored on three personal servers, uploaded as a torrent.
+</p>
+
+<p>
+This is <strong>triage workflow</strong> in action: from discovery to preservation in less than a month. Every step matters. Every hour counts. One mistake, one delay, and the content is lost forever.
+</p>
+
+<p>
+This chapter teaches you the <strong>complete triage workflow</strong>—an 8-phase process tested across hundreds of platform deaths. Whether you have 48 hours or 6 months, this framework will guide you from panic to preservation.
+</p>
+
+<h2>The 8-Phase Triage Workflow</h2>
+
+<h3>Overview</h3>
+
+<p>
+<strong>Phase 1: Discovery</strong> — Detecting that content is endangered  
+<strong>Phase 2: Assessment</strong> — Understanding scope, urgency, and feasibility  
+<strong>Phase 3: Mobilization</strong> — Assembling team and resources  
+<strong>Phase 4: Capture</strong> — Executing the scrape/download/preservation  
+<strong>Phase 5: Validation</strong> — Verifying data integrity  
+<strong>Phase 6: Storage</strong> — Securing long-term preservation  
+<strong>Phase 7: Access</strong> — Making content discoverable and usable  
+<strong>Phase 8: Documentation</strong> — Recording what you did and why  
+</p>
+
+<p>
+Each phase has specific goals, tools, and decision points. Let's explore them in detail.
+</p>
+
+<h2>Phase 1: Discovery — Detecting Endangerment</h2>
+
+<h3>Goal</h3>
+<p>
+Identify that content is at risk of disappearing before it's too late.
+</p>
+
+<h3>Common Discovery Channels</h3>
+
+<p>
+<strong>1. Official Announcements</strong>
+- Platform posts shutdown notice (GeoCities, Vine, Google+)
+- Company blog, email to users, platform notification
+- <strong>Timeline:</strong> Usually 30-90 days warning (sometimes less)
+</p>
+
+<p>
+<strong>2. Financial/Business Signals</strong>
+- Company files bankruptcy
+- Acquisition by competitor (often precedes shutdown)
+- Mass layoffs, especially engineering
+- Stopping development (no updates in 12+ months)
+- <strong>Timeline:</strong> Months to years before actual shutdown
+</p>
+
+<p>
+<strong>3. User Exodus</strong>
+- Mass migration to alternatives
+- "I'm leaving [platform], find me at..." posts
+- Decline in active users
+- <strong>Timeline:</strong> Can indicate slow death (years) or precede rapid collapse
+</p>
+
+<p>
+<strong>4. Technical Degradation</strong>
+- Frequent outages
+- Bugs not being fixed
+- Security vulnerabilities left unpatched
+- <strong>Timeline:</strong> Months before shutdown (or years of zombie state)
+</p>
+
+<p>
+<strong>5. Community Monitoring</strong>
+- Archive Team's Deathwatch (tracks endangered sites)
+- Social media warnings (Twitter/Reddit threads)
+- Journalism (tech news covering potential shutdowns)
+- <strong>Timeline:</strong> Varies (can be early warning or last-minute)
+</p>
+
+<p>
+<strong>6. Policy Changes</strong>
+- Terms of Service updates that hostile to users
+- Monetization changes (introducing paywalls, removing features)
+- Content purges (Tumblr NSFW ban)
+- <strong>Timeline:</strong> Immediate (policy goes into effect) or weeks
+</p>
+
+<h3>Discovery Tools and Practices</h3>
+
+<p>
+<strong>Proactive Monitoring:</strong>
+- Subscribe to platform announcements (email, RSS, social media)
+- Use website monitoring tools (detect when site goes down)
+- Follow tech journalism (The Verge, TechCrunch, Ars Technica)
+- Join Archive Team Discord/IRC (community shares warnings)
+</p>
+
+<p>
+<strong>Reactive Response:</strong>
+- When you hear rumor, investigate immediately
+- Don't wait for official confirmation (sometimes never comes)
+- Err on side of caution (preserve early rather than late)
+</p>
+
+<h3>Decision Point: Is This Worth Investigating?</h3>
+
+<p>
+<strong>Rapid Assessment (5 minutes):</strong>
+- <strong>Scale:</strong> How much content exists?
+- <strong>Cultural value:</strong> Does anyone care if this disappears?
+- <strong>Urgency:</strong> How imminent is the threat?
+- <strong>Existing preservation:</strong> Is someone else already handling this?
+</p>
+
+<p>
+If answers suggest "yes, endangered and valuable," proceed to Phase 2.
+</p>
+
+<h2>Phase 2: Assessment — Understanding the Challenge</h2>
+
+<h3>Goal</h3>
+<p>
+Determine scope, technical requirements, ethical concerns, and resource needs before committing to preservation.
+</p>
+
+<h3>Assessment Checklist</h3>
+
+<h4>A. Scope Assessment</h4>
+
+<p>
+<strong>Content Inventory:</strong>
+- How many pages/posts/users/files?
+- What media types? (text, images, video, audio, documents)
+- What time span? (1 year? 20 years?)
+- What languages/communities represented?
+</p>
+
+<p>
+<strong>Example: Credit Karma Forums</strong>
+- 47,000 posts across 12 subforums
+- Text + occasional images (hosted externally)
+- 2007-2023 (16 years)
+- Primarily English, US-focused
+</p>
+
+<p>
+<strong>Storage Estimate:</strong>
+- Text: ~500 words/post × 47k posts = 23.5M words ≈ 150MB text
+- Images: ~500 external links, assume 20% capturable = 100 images × 500KB = 50MB
+- <strong>Total estimated:</strong> 200MB (small! very doable)
+</p>
+
+<h4>B. Technical Assessment</h4>
+
+<p>
+<strong>Platform Architecture:</strong>
+- Static HTML or dynamic JavaScript?
+- Public access or login-required?
+- API available? Rate limits?
+- Search/browse mechanisms?
+</p>
+
+<p>
+<strong>Preservation Difficulty:</strong>
+- Easy (wget-able): ★☆☆☆☆
+- Medium (requires browser automation): ★★★☆☆
+- Hard (heavily DRM'd, real-time only): ★★★★★
+</p>
+
+<p>
+<strong>Tools Needed:</strong>
+- Basic scraping: wget, HTTrack, ArchiveBox
+- Dynamic sites: Selenium, Playwright, browser automation
+- API harvesting: Python scripts, API clients
+- Forensic recovery: specialized tools (if site partially dead)
+</p>
+
+<p>
+<strong>Example: Credit Karma Forums Technical Profile</strong>
+- Dynamic site (JavaScript-rendered pagination)
+- Login required (but free account creation)
+- No public API
+- <strong>Difficulty:</strong> ★★★☆☆ (need browser automation + account)
+</p>
+
+<h4>C. Urgency Assessment</h4>
+
+<p>
+<strong>Time Until Loss:</strong>
+- Shutdown announced: Count down from announcement date
+- No announcement but signs of death: Estimate (weeks? months?)
+- Already partially dead: URGENT (capture what remains)
+</p>
+
+<p>
+<strong>Timeline Categories:</strong>
+- <strong>Critical (< 1 week):</strong> Drop everything, act now
+- <strong>Urgent (1-4 weeks):</strong> High priority, mobilize quickly
+- <strong>High (1-3 months):</strong> Important, plan thoroughly
+- <strong>Medium (3-6 months):</strong> Time for systematic approach
+- <strong>Low (6+ months):</strong> Monitor, begin planning
+</p>
+
+<p>
+<strong>Example: Credit Karma</strong>
+- 28 days from discovery to shutdown = <strong>Urgent</strong>
+- Can't be leisurely, but can plan
+</p>
+
+<h4>D. Resource Assessment</h4>
+
+<p>
+<strong>Labor:</strong>
+- Can one person do this? Or need team?
+- How many hours estimated?
+- What skills needed? (coding, systems admin, metadata, etc.)
+</p>
+
+<p>
+<strong>Infrastructure:</strong>
+- How much storage? (Do you have it?)
+- Bandwidth? (Will download take days?)
+- Computing power? (Scraping 10M pages needs beefy machine)
+</p>
+
+<p>
+<strong>Budget:</strong>
+- Free (volunteer labor + personal resources)?
+- Small budget ($100-1000 for servers/storage)?
+- Grant-funded ($10k+ for major project)?
+</p>
+
+<p>
+<strong>Example: Credit Karma</strong>
+- Labor: 2-3 people, ~40 hours each (part-time over 4 weeks)
+- Storage: 200MB (trivial—USB drive sufficient)
+- Bandwidth: Minimal (small text files)
+- Budget: $0 (volunteer effort)
+</p>
+
+<h4>E. Ethical Assessment (Custodial Filter)</h4>
+
+<p>
+<strong>Cultural Significance:</strong> Medium-high (personal finance advice, especially recession-era)
+</p>
+
+<p>
+<strong>Technical Fragility:</strong> High (28 days to shutdown)
+</p>
+
+<p>
+<strong>Rescue Feasibility:</strong> Medium (doable with browser automation)
+</p>
+
+<p>
+<strong>Redundancy:</strong> None (no other known preservation effort)
+</p>
+
+<p>
+<strong>Ethical Concerns:</strong>
+- Privacy: Posts may contain personal financial details
+- Consent: Users didn't expect permanent archiving
+- Harm potential: Low (financial advice, not doxxing or harassment)
+</p>
+
+<p>
+<strong>Decision:</strong> <strong>Preserve with restricted access</strong>
+- Capture everything
+- Researcher-only access (not public searchable web)
+- Allow user-requested takedowns
+</p>
+
+<h4>F. Legal Assessment</h4>
+
+<p>
+<strong>Copyright:</strong>
+- Who owns the content? (Platform TOS usually claims license, but users retain copyright)
+- Fair use argument? (Archiving for research/scholarship)
+- DMCA risk? (Platform could issue takedown if they notice)
+</p>
+
+<p>
+<strong>Terms of Service:</strong>
+- Does TOS forbid scraping? (Usually yes, but rarely enforced for preservation)
+- Are you violating contract by scraping? (Technically yes, but ethical override)
+</p>
+
+<p>
+<strong>Privacy Laws:</strong>
+- GDPR (if EU users)? Right to be forgotten vs. archival interest
+- CCPA (California)? Data export vs. data retention
+</p>
+
+<p>
+<strong>Risk Assessment:</strong>
+- Low risk: Defunct platform unlikely to sue preservationists
+- Medium risk: Active platform might send cease-and-desist
+- High risk: Legally protected content (DRM, government secrets)
+</p>
+
+<p>
+<strong>Example: Credit Karma</strong>
+- Fair use: Strong argument (educational/research archiving)
+- TOS violation: Yes, but platform dying (unlikely to enforce)
+- Privacy: Medium concern (financial discussions)
+- <strong>Risk:</strong> Low overall (proceed but don't publicize widely)
+</p>
+
+<h3>Output of Phase 2: Go/No-Go Decision</h3>
+
+<p>
+After assessment, decide:
+</p>
+
+<p>
+<strong>GO</strong>: Proceed with preservation
+- Timeline: [realistic schedule]
+- Team needed: [number of people, skills]
+- Tools required: [specific software/hardware]
+- Budget: [if any]
+- Ethical framework: [access restrictions, takedown policy]
+</p>
+
+<p>
+<strong>NO-GO</strong>: Don't preserve (because...)
+- Too large (beyond capacity)
+- Too technically difficult (lack skills/tools)
+- Ethically problematic (more harm than good)
+- Redundant (someone else already doing it better)
+- Not urgent (can wait, revisit later)
+</p>
+
+<p>
+<strong>DEFER</strong>: Monitor but don't act yet
+- Not urgent enough
+- Waiting for more information
+- Hoping platform survives
+</p>
+
+<h2>Phase 3: Mobilization — Assembling Resources</h2>
+
+<h3>Goal</h3>
+<p>
+Get team, tools, and infrastructure ready before capture begins.
+</p>
+
+<h3>3A: Team Formation</h3>
+
+<p>
+<strong>Solo vs. Collaborative:</strong>
+</p>
+
+<p>
+<strong>When to work solo:</strong>
+- Small project (< 100 hours work)
+- Simple tools (basic scraping)
+- No deadline pressure (can take months)
+</p>
+
+<p>
+<strong>When to recruit team:</strong>
+- Large project (> 100 hours)
+- Tight deadline (need parallel effort)
+- Specialized skills needed (you can't do everything)
+</p>
+
+<p>
+<strong>Recruiting:</strong>
+- <strong>Archive Team Discord/IRC:</strong> Post call for volunteers
+- <strong>Social media:</strong> Twitter, Reddit (r/DataHoarder)
+- <strong>Academic networks:</strong> Colleagues, students
+- <strong>Local communities:</strong> Library listservs, tech meetups
+</p>
+
+<p>
+<strong>Team Roles:</strong>
+- <strong>Coordinator:</strong> Manages overall effort, tracks progress
+- <strong>Technical lead:</strong> Designs scraping strategy, writes code
+- <strong>Scrapers:</strong> Run tools, troubleshoot issues
+- <strong>Validators:</strong> Check data integrity, spot gaps
+- <strong>Metadata curator:</strong> Organizes captured content
+- <strong>Legal/ethical advisor:</strong> Navigates consent/privacy issues
+</p>
+
+<p>
+<strong>Example: Credit Karma Team</strong>
+- 3 volunteers (found via Archive Team)
+- Coordinator = college student (had free time, organized)
+- Technical lead = retired programmer (wrote scraping scripts)
+- Scraper = librarian (ran tools, captured pages)
+</p>
+
+<h3>3B: Tool Selection and Setup</h3>
+
+<p>
+<strong>Scraping Tools:</strong>
+</p>
+
+<p>
+<strong>Static Sites:</strong>
+- <code>wget</code> (command-line, recursive downloading)
+- <code>HTTrack</code> (GUI, mirrors entire websites)
+- <code>ArchiveBox</code> (modern, all-in-one archiving)
+</p>
+
+<p>
+<strong>Dynamic Sites (JavaScript-heavy):</strong>
+- <code>Selenium</code> (browser automation, Python/Java)
+- <code>Playwright</code> (modern alternative to Selenium)
+- <code>Puppeteer</code> (Node.js browser control)
+</p>
+
+<p>
+<strong>API Harvesting:</strong>
+- <code>PRAW</code> (Reddit API, Python)
+- <code>Tweepy</code> (Twitter API, Python)
+- Custom scripts (platform-specific APIs)
+</p>
+
+<p>
+<strong>Forensic Recovery:</strong>
+- <code>Webrecorder</code> (captures dynamic content, WARC format)
+- <code>Heritrix</code> (Internet Archive's crawler)
+- <code>Browsertrix Crawler</code> (cloud-based crawling)
+</p>
+
+<p>
+<strong>Example: Credit Karma Stack</strong>
+- Selenium (browser automation for dynamic pagination)
+- Python (scripting)
+- SQLite (local database to track progress)
+- rsync (backup to multiple locations)
+</p>
+
+<h3>3C: Infrastructure Setup</h3>
+
+<p>
+<strong>Storage:</strong>
+- Local: External hard drives (cheap, reliable for small projects)
+- Cloud: AWS S3, Google Cloud Storage (for large projects)
+- Distributed: IPFS, BitTorrent (censorship-resistant)
+- Institutional: University servers, Internet Archive
+</p>
+
+<p>
+<strong>Compute:</strong>
+- Personal laptop (small projects)
+- VPS (DigitalOcean, Linode) (medium projects, avoid IP bans)
+- Cloud compute (AWS EC2) (large-scale scraping)
+</p>
+
+<p>
+<strong>Bandwidth:</strong>
+- Residential internet: Usually sufficient (but may hit caps)
+- VPS/cloud: Unmetered bandwidth (expensive but fast)
+</p>
+
+<p>
+<strong>Backup Strategy:</strong>
+- <strong>3-2-1 rule:</strong> 3 copies, 2 different media types, 1 offsite
+- Real-time sync (rsync while scraping, don't wait until end)
+- Checksums (verify data integrity)
+</p>
+
+<p>
+<strong>Example: Credit Karma Infrastructure</strong>
+- Storage: 3 USB drives (1 per team member) + Internet Archive upload
+- Compute: Personal laptops (no VPS needed, small scale)
+- Bandwidth: Residential (200MB download didn't strain anything)
+</p>
+
+<h3>3D: Coordination Tools</h3>
+
+<p>
+<strong>Communication:</strong>
+- Discord/Slack (real-time chat)
+- GitHub Issues (track tasks, bugs)
+- Shared spreadsheet (who's doing what, progress tracking)
+</p>
+
+<p>
+<strong>Documentation:</strong>
+- Wiki or shared doc (technical notes, scraping strategies)
+- Git repository (for code)
+- Progress log (daily updates)
+</p>
+
+<p>
+<strong>Example: Credit Karma Coordination</strong>
+- Discord private channel (3-person team)
+- Google Spreadsheet (tracking forum sections, who scraped what)
+- GitHub repo (Python scripts + documentation)
+</p>
+
+<h2>Phase 4: Capture — Executing the Preservation</h2>
+
+<h3>Goal</h3>
+<p>
+Download/scrape/capture the endangered content before it disappears.
+</p>
+
+<h3>4A: Capture Strategy</h3>
+
+<p>
+<strong>Breadth vs. Depth:</strong>
+- <strong>Breadth-first:</strong> Capture as many items as possible (may be shallow)
+- <strong>Depth-first:</strong> Capture complete item details (may miss some items)
+</p>
+
+<p>
+<strong>Example:</strong>
+- Breadth: Scrape all post titles and links (fast, ensures you have IDs)
+- Depth: Download full post content, comments, attachments (slower, but complete)
+</p>
+
+<p>
+<strong>Best practice:</strong> Breadth first (get IDs of everything), then depth (fill in details). If time runs out, you at least have a list of what existed.
+</p>
+
+<p>
+<strong>Parallelization:</strong>
+- Multiple scrapers running simultaneously (different sections/users)
+- Be careful: Too aggressive = IP ban
+- Use delays, rotate IPs/user agents
+</p>
+
+<h3>4B: Capture Execution</h3>
+
+<p>
+<strong>Step 1: Initial Crawl (Breadth)</strong>
+- Map the site structure (what sections exist?)
+- Enumerate all items (posts, users, pages)
+- Store URLs/IDs in database
+</p>
+
+<p>
+<strong>Step 2: Content Download (Depth)</strong>
+- For each item, fetch full content
+- Save text, images, videos, metadata
+- Record relationships (replies, quotes, etc.)
+</p>
+
+<p>
+<strong>Step 3: Iterative Refinement</strong>
+- Identify gaps (missing content, broken links)
+- Re-scrape failed items
+- Validate as you go (don't wait until end)
+</p>
+
+<p>
+<strong>Example: Credit Karma Capture Process</strong>
+</p>
+
+<p>
+<strong>Day 1-3: Reconnaissance</strong>
+- Manually browse forums to understand structure
+- Identify 12 subforums, ~4,000 threads per forum
+- Estimate: 47,000 posts total
+</p>
+
+<p>
+<strong>Day 4-7: Initial Crawl</strong>
+- Selenium script navigates forum pages
+- Extracts thread IDs and post IDs
+- Stores in SQLite database (47,211 post IDs captured)
+</p>
+
+<p>
+<strong>Day 8-20: Content Download</strong>
+- For each post ID, fetch:
+  - Post text (HTML + plaintext)
+  - Author username and join date
+  - Timestamp (posted date)
+  - Like/reply counts
+  - Quoted text (if reply)
+- Save as JSON files (one per post)
+- Progress: ~2,500 posts/day (3 people × ~800 posts each)
+</p>
+
+<p>
+<strong>Day 21-26: Gap Filling</strong>
+- Identified 342 posts that failed to download (timeouts, errors)
+- Re-scraped with slower rate
+- Success: 47,155 / 47,211 (99.88% capture rate)
+</p>
+
+<p>
+<strong>Day 27: Final Validation</strong>
+- Spot-checked 100 random posts (all looked good)
+- Calculated checksums for all files
+- Created manifest (list of all files + checksums)
+</p>
+
+<h3>4C: Dealing with Technical Challenges</h3>
+
+<p>
+<strong>Challenge 1: Rate Limiting</strong>
+- Platform blocks you after X requests per minute
+- <strong>Solution:</strong> Add delays (time.sleep() between requests), rotate IPs (VPN/proxies), use multiple accounts
+</p>
+
+<p>
+<strong>Challenge 2: JavaScript Rendering</strong>
+- Content doesn't appear in raw HTML (loaded by JS)
+- <strong>Solution:</strong> Use browser automation (Selenium, Playwright), not simple wget
+</p>
+
+<p>
+<strong>Challenge 3: Login Walls</strong>
+- Need account to access content
+- <strong>Solution:</strong> Create throwaway account (use privacy-respecting email), automate login in scraper
+</p>
+
+<p>
+<strong>Challenge 4: CAPTCHAs</strong>
+- Bot detection blocks automated access
+- <strong>Solution:</strong> Manual CAPTCHA solving, CAPTCHA-solving services (2captcha, anti-captcha), reduce scraping speed (look more human)
+</p>
+
+<p>
+<strong>Challenge 5: Dynamic URLs</strong>
+- URLs change on each visit (session IDs, tokens)
+- <strong>Solution:</strong> Extract content IDs, construct stable URLs, use API if available
+</p>
+
+<p>
+<strong>Challenge 6: Server Instability</strong>
+- Dying platform's servers are flaky (timeouts, errors)
+- <strong>Solution:</strong> Retry failed requests, save progress frequently, accept imperfect capture
+</p>
+
+<h3>4D: Ethical Boundaries During Capture</h3>
+
+<p>
+<strong>Don't:</strong>
+- Overload dying servers (cause outage for remaining users)
+- Scrape private content without consent
+- Violate clear legal restrictions (DRM-protected content)
+- Ignore takedown requests (if someone asks you to stop, consider it)
+</p>
+
+<p>
+<strong>Do:</strong>
+- Be respectful (slow scraping, don't hammer servers)
+- Document decisions (why you preserved X but not Y)
+- Provide opt-out (let people request removal later)
+</p>
+
+<h2>Phase 5: Validation — Verifying Data Integrity</h2>
+
+<h3>Goal</h3>
+<p>
+Ensure captured data is complete, accurate, and uncorrupted.
+</p>
+
+<h3>5A: Completeness Checks</h3>
+
+<p>
+<strong>Quantitative:</strong>
+- Did you get everything? (Compare scraped count to expected count)
+- How many items failed? (Acceptable loss rate: < 1%)
+</p>
+
+<p>
+<strong>Example: Credit Karma</strong>
+- Expected: 47,211 posts
+- Captured: 47,155 posts
+- Missing: 56 posts (0.12% loss—acceptable)
+</p>
+
+<p>
+<strong>Qualitative:</strong>
+- Random sampling: Spot-check 100 items (do they look correct?)
+- Edge cases: Check first post, last post, longest post, shortest post
+- Relationships: Do replies correctly link to parent posts?
+</p>
+
+<h3>5B: Integrity Checks</h3>
+
+<p>
+<strong>File Corruption:</strong>
+- Generate checksums (MD5, SHA-256) for every file
+- Verify checksums after transfer (detect corruption during copy)
+</p>
+
+<p>
+<strong>Format Validation:</strong>
+- Are files readable? (Open JSON, parse HTML, view images)
+- Are encodings correct? (UTF-8 for text, not garbled)
+</p>
+
+<p>
+<strong>Metadata Accuracy:</strong>
+- Timestamps make sense? (No posts "from the future")
+- Usernames consistent? (No missing or duplicated users)
+</p>
+
+<h3>5C: Documentation of Gaps</h3>
+
+<p>
+<strong>What's Missing:</strong>
+- List items you couldn't capture (with reasons)
+- Example: "Posts 234, 457, 891 returned 404 (already deleted before scrape)"
+</p>
+
+<p>
+<strong>Known Issues:</strong>
+- Broken images (external links dead)
+- Incomplete threads (some replies missing)
+- Corrupted formatting (HTML parser issues)
+</p>
+
+<p>
+<strong>Why Documentation Matters:</strong>
+- Future researchers need to know limits of collection
+- Transparency about what's incomplete
+- Legal protection ("we preserved what we could access")
+</p>
+
+<h2>Phase 6: Storage — Long-Term Preservation</h2>
+
+<h3>Goal</h3>
+<p>
+Store captured data securely with redundancy for decades-long access.
+</p>
+
+<h3>6A: Storage Formats</h3>
+
+<p>
+<strong>Raw Captures:</strong>
+- WARC files (Web ARChive format—standard for web preservation)
+- JSON (structured data, easy to parse)
+- Database dumps (SQL exports)
+</p>
+
+<p>
+<strong>Derived Formats:</strong>
+- Static HTML (browseable offline)
+- PDFs (human-readable, archival quality)
+- CSV (for datasets, spreadsheet-compatible)
+</p>
+
+<p>
+<strong>Media:</strong>
+- Images: PNG/JPEG (lossless or high-quality)
+- Video: MP4/WebM (widely supported codecs)
+- Audio: FLAC/MP3 (lossless or high-bitrate)
+</p>
+
+<p>
+<strong>Example: Credit Karma Storage</strong>
+- Primary: JSON files (one per post) + SQLite database
+- Derived: Static HTML site (browseable offline)
+- Uploaded: WARC files to Internet Archive
+</p>
+
+<h3>6B: Redundancy Strategy</h3>
+
+<p>
+<strong>Local Redundancy:</strong>
+- Multiple hard drives (3+ copies)
+- Different physical locations (not all in one apartment)
+</p>
+
+<p>
+<strong>Cloud Redundancy:</strong>
+- Upload to Internet Archive (free, stable institution)
+- AWS S3 Glacier (cheap long-term storage, but not free)
+- IPFS (distributed, censorship-resistant)
+</p>
+
+<p>
+<strong>Community Redundancy:</strong>
+- Torrent (BitTorrent allows distributed hosting)
+- Share with other archivists (trust network)
+</p>
+
+<p>
+<strong>Example: Credit Karma Redundancy</strong>
+1. USB drive #1 (coordinator's backup)
+2. USB drive #2 (technical lead's backup)
+3. USB drive #3 (scraper's backup)
+4. Internet Archive upload (public institution)
+5. BitTorrent (uploaded to Archive Team tracker)
+</p>
+
+<p>
+<strong>Result:</strong> 5 copies, multiple custodians, extremely unlikely to be fully lost
+</p>
+
+<h3>6C: Metadata Preservation</h3>
+
+<p>
+<strong>Collection-level metadata:</strong>
+- What is this? (Credit Karma Forums archive)
+- When was it captured? (March-April 2023)
+- Who captured it? (Archive Team volunteers)
+- How much? (47,155 posts, 8,200 users)
+- What's missing? (56 posts unavailable)
+</p>
+
+<p>
+<strong>Item-level metadata:</strong>
+- Post ID, author, timestamp, content, replies, likes
+</p>
+
+<p>
+<strong>Technical metadata:</strong>
+- Scraping tools used
+- Checksums for files
+- File formats and encodings
+</p>
+
+<p>
+<strong>Store metadata in:</strong>
+- README.md (human-readable)
+- JSON manifest (machine-readable)
+- Dublin Core XML (library standard)
+</p>
+
+<h2>Phase 7: Access — Making Content Discoverable</h2>
+
+<h3>Goal</h3>
+<p>
+Ensure captured content is usable by researchers, communities, and the public.
+</p>
+
+<h3>7A: Access Levels</h3>
+
+<p>
+<strong>Public Access:</strong>
+- Full content searchable on open web
+- <strong>Appropriate for:</strong> Public posts, low privacy concerns, culturally significant
+- <strong>Example:</strong> Internet Archive's Wayback Machine
+</p>
+
+<p>
+<strong>Researcher Access:</strong>
+- Require application, academic credentials, or agreement
+- <strong>Appropriate for:</strong> Sensitive content, privacy concerns, contested material
+- <strong>Example:</strong> University archives with restricted collections
+</p>
+
+<p>
+<strong>Community Access:</strong>
+- Available only to original community members
+- <strong>Appropriate for:</strong> Private forums, cultural protocols (Indigenous archives)
+- <strong>Example:</strong> Invite-only Discord with archived content
+</p>
+
+<p>
+<strong>Dark Archive:</strong>
+- Preserved but not accessible (yet)
+- <strong>Appropriate for:</strong> Ethically fraught content, legal uncertainty, time embargo
+- <strong>Example:</strong> Preserve now, review access in 50 years
+</p>
+
+<p>
+<strong>Example: Credit Karma Access Decision</strong>
+- Public metadata (list of posts, authors, dates)—searchable
+- Full content researcher-only (financial details sensitive)
+- User-requested takedowns honored
+</p>
+
+<h3>7B: Access Infrastructure</h3>
+
+<p>
+<strong>Static HTML Site:</strong>
+- Browse/search offline or on local server
+- Tools: Custom scripts, static site generators (Hugo, Jekyll)
+</p>
+
+<p>
+<strong>Database + Web Interface:</strong>
+- MySQL/PostgreSQL + web app (Flask, Django)
+- Allows advanced search, filtering
+</p>
+
+<p>
+<strong>Upload to Platforms:</strong>
+- Internet Archive (free hosting, discoverable)
+- GitHub (for code + datasets < 100GB)
+- Zenodo (academic datasets, DOI assignment)
+</p>
+
+<p>
+<strong>Example: Credit Karma Access</strong>
+- Static site generated from JSON (browseable offline)
+- Uploaded to Internet Archive (public metadata + researcher-access content)
+- Torrent (full download for other archivists)
+</p>
+
+<h3>7C: Discovery Mechanisms</h3>
+
+<p>
+<strong>How do people find this archive?</strong>
+</p>
+
+<p>
+<strong>Documentation:</strong>
+- Blog post announcing completion
+- Social media (Twitter, Reddit)
+- Archive Team wiki page
+</p>
+
+<p>
+<strong>Indexing:</strong>
+- Internet Archive indexed by Google
+- Scholarly databases (if deposited to university)
+</p>
+
+<p>
+<strong>Community Outreach:</strong>
+- Contact original users (if possible)
+- Notify journalists/researchers who might care
+</p>
+
+<h2>Phase 8: Documentation — Recording the Process</h2>
+
+<h3>Goal</h3>
+<p>
+Document what you did, why, and what happened for future archivists and researchers.
+</p>
+
+<h3>8A: Technical Documentation</h3>
+
+<p>
+<strong>Scraping Process:</strong>
+- What tools? What settings?
+- How long did it take?
+- What worked? What failed?
+</p>
+
+<p>
+<strong>Challenges Encountered:</strong>
+- Technical problems and solutions
+- Rate limiting workarounds
+- Data quality issues
+</p>
+
+<p>
+<strong>Final Statistics:</strong>
+- Items captured
+- Storage size
+- Time spent
+- Team size
+</p>
+
+<p>
+<strong>Example: Credit Karma Documentation (excerpt)</strong>
+</p>
+
+<p>
+``<code>
+</p>
+<h1>Credit Karma Forums Archive - Technical Documentation</h1>
+
+<h2>Timeline</h2>
+<p>
+- Discovery: March 17, 2023
+- Capture: March 19 - April 14, 2023 (27 days)
+- Shutdown: April 15, 2023
+</p>
+
+<h2>Team</h2>
+<p>
+- 3 volunteers (Archive Team)
+</p>
+
+<h2>Tools</h2>
+<p>
+- Selenium (Python) for browser automation
+- SQLite for progress tracking
+- rsync for backups
+</p>
+
+<h2>Statistics</h2>
+<p>
+- 47,155 posts captured (99.88% of estimated total)
+- 8,200 unique users
+- 2007-2023 (16 years of content)
+- Total size: 187 MB (compressed)
+</p>
+
+<h2>Challenges</h2>
+<p>
+- Dynamic pagination required browser automation
+- Server timeouts during peak hours (scraped during US nighttime)
+- 56 posts returned 404 (likely deleted by users before scrape)
+</p>
+
+<h2>Storage</h2>
+<p>
+- 5 redundant copies (3 USB drives, Internet Archive, BitTorrent)
+</code>``
+</p>
+
+<h3>8B: Ethical Documentation</h3>
+
+<p>
+<strong>Decisions Made:</strong>
+- Why this content?
+- Why this access level?
+- How did you handle privacy/consent?
+</p>
+
+<p>
+<strong>Takedown Policy:</strong>
+- How can people request removal?
+- What's your response process?
+</p>
+
+<p>
+<strong>Future Considerations:</strong>
+- Should access restrictions be lifted eventually?
+- Who decides?
+</p>
+
+<h3>8C: Historical Documentation</h3>
+
+<p>
+<strong>Why This Mattered:</strong>
+- What was this platform's cultural significance?
+- Who used it? For what?
+- Why did it die?
+</p>
+
+<p>
+<strong>Contextual Essay:</strong>
+- Write 500-1000 words explaining the platform and its role
+- Include for future researchers who won't remember it
+</p>
+
+<p>
+<strong>Example: Credit Karma Context (excerpt)</strong>
+</p>
+
+<blockquote>Credit Karma was a free credit-monitoring service that launched forums in 2007. During the Great Recession (2008-2009), these forums became a vital resource for people navigating financial hardship—debt, bankruptcy, foreclosure, unemployment. Users shared advice, support, and strategies for rebuilding credit. The forums remained active through 2023, documenting 16 years of American financial struggles and recovery. Credit Karma shut down the forums as part of a platform redesign focused on mobile apps. The decision prioritized sleek user experience over community memory, erasing nearly two decades of peer support and financial education.</blockquote>
+
+<h3>8D: Lessons Learned</h3>
+
+<p>
+<strong>What Would You Do Differently?</strong>
+- Start earlier?
+- Use different tools?
+- Recruit more help?
+</p>
+
+<p>
+<strong>Advice for Future Archivists:</strong>
+- What worked well?
+- What to avoid?
+</p>
+
+<p>
+<strong>Meta-Reflection:</strong>
+- How did this project change your thinking about preservation?
+</p>
+
+<h2>Case Study: The Complete Triage Workflow in Action</h2>
+
+<h3>The GeoCities Rescue (2009)</h3>
+
+<p>
+Let's trace the entire workflow through Archive Team's legendary GeoCities rescue:
+</p>
+
+<p>
+<strong>Phase 1: Discovery</strong>
+- October 26, 2009: Yahoo announces GeoCities will shut down November 26
+- Archive Team hears via tech news
+- <strong>Timeline: 31 days</strong>
+</p>
+
+<p>
+<strong>Phase 2: Assessment</strong>
+- Scope: ~30 million sites (estimated 10+ TB of data)
+- Technical: Simple HTML (mostly), but massive scale
+- Urgency: Critical (1 month)
+- Resources: Volunteer network (Archive Team has ~50 active members)
+- Ethics: Public content, cultural treasure, no privacy concerns
+- <strong>Decision: GO (this is huge, we must try)</strong>
+</p>
+
+<p>
+<strong>Phase 3: Mobilization</strong>
+- Team: ~100 volunteers recruited (IRC, Twitter)
+- Roles: Coordinators (tracked progress), scrapers (ran wget), validators (checked captures)
+- Tools: wget (simple but effective for static HTML)
+- Infrastructure: Personal computers + Internet Archive upload
+- Coordination: Archive Team IRC channel (24/7 chat)
+</p>
+
+<p>
+<strong>Phase 4: Capture</strong>
+- Strategy: Divide by "neighborhoods" (GeoCities organized sites into themed sections: /SiliconValley/, /Tokyo/, etc.)
+- Each volunteer took a neighborhood
+- Breadth-first: Enumerate all sites, then download content
+- Challenges: Yahoo rate-limited aggressive scrapers (volunteers rotated IPs, added delays)
+- <strong>Result: 650 GB captured</strong> (fraction of total, but significant)
+</p>
+
+<p>
+<strong>Phase 5: Validation</strong>
+- Checked file counts, looked for corruption
+- Known gaps: Many sites missed (not enough time/bandwidth)
+- <strong>Completeness: ~10-15%</strong> (still, 650GB is massive)
+</p>
+
+<p>
+<strong>Phase 6: Storage</strong>
+- Uploaded to Internet Archive
+- Created BitTorrent (distributed to hundreds of archivists)
+- Multiple volunteers kept local copies
+</p>
+
+<p>
+<strong>Phase 7: Access</strong>
+- Internet Archive hosts browseable interface
+- BitTorrent available for full download
+- OoCities.org (community project to host GeoCities mirrors)
+</p>
+
+<p>
+<strong>Phase 8: Documentation</strong>
+- Archive Team wiki documents entire process
+- Media coverage (Wired, Ars Technica, NPR)
+- Academic papers cite GeoCities archive
+</p>
+
+<p>
+<strong>Legacy:</strong>
+- GeoCities rescue established Archive Team's reputation
+- Proved that volunteer networks can save platforms
+- Inspired future rescues (Vine, Google+, Yahoo Groups, etc.)
+</p>
+
+<h2>Workflow Variations for Different Scenarios</h2>
+
+<h3>Scenario 1: Emergency Triage (< 48 hours)</h3>
+
+<p>
+<strong>Compress the workflow:</strong>
+- <strong>Phase 1 (Discovery):</strong> Immediate (someone alerts you)
+- <strong>Phase 2 (Assessment):</strong> 30 minutes (quick check)
+- <strong>Phase 3 (Mobilization):</strong> 1 hour (grab tools, alert others)
+- <strong>Phase 4 (Capture):</strong> 24-36 hours (aggressive scraping, accept gaps)
+- <strong>Phase 5 (Validation):</strong> Minimal (spot-check, full validation later)
+- <strong>Phase 6 (Storage):</strong> Quick upload to Internet Archive
+- <strong>Phase 7 (Access):</strong> Defer (just preserve first, organize later)
+- <strong>Phase 8 (Documentation):</strong> Brief notes (expand later)
+</p>
+
+<p>
+<strong>Priority:</strong> Speed over perfection. Save something rather than nothing.
+</p>
+
+<h3>Scenario 2: Systematic Preservation (6+ months)</h3>
+
+<p>
+<strong>Expand the workflow:</strong>
+- <strong>Phase 2:</strong> Thorough assessment (weeks of analysis)
+- <strong>Phase 3:</strong> Professional team (hire researchers, not just volunteers)
+- <strong>Phase 4:</strong> Careful capture (high fidelity, complete metadata)
+- <strong>Phase 5:</strong> Extensive validation (manual review of samples)
+- <strong>Phase 6:</strong> Archival-quality storage (institutional partnerships)
+- <strong>Phase 7:</strong> Polished access (custom web interface, finding aids)
+- <strong>Phase 8:</strong> Scholarly publication (write paper on process + findings)
+</p>
+
+<p>
+<strong>Priority:</strong> Quality and comprehensiveness. Create gold-standard archive.
+</p>
+
+<h3>Scenario 3: Guerrilla Archiving (Legal Gray Area)</h3>
+
+<p>
+<strong>Stealth considerations:</strong>
+- <strong>Phase 3:</strong> Work solo or small trusted team (no public announcements)
+- <strong>Phase 4:</strong> Use VPN/Tor (anonymize scraping)
+- <strong>Phase 6:</strong> Encrypted storage (protect yourself if content controversial)
+- <strong>Phase 7:</strong> Dark archive or anonymous torrent (not publicly credited)
+- <strong>Phase 8:</strong> Minimal documentation (protect participants)
+</p>
+
+<p>
+<strong>Priority:</strong> Survival (yours and the archive's). Preserve ethically but carefully.
+</p>
+
+<h2>Conclusion: The Workflow Is Your Map</h2>
+
+<p>
+Digital preservation under deadline is chaos. Platforms die with little warning. Servers vanish. URLs break. The clock ticks down.
+</p>
+
+<p>
+<strong>The workflow is your map through chaos.</strong> It won't make preservation easy, but it will make it systematic. When you panic (and you will), return to the workflow:
+</p>
+
+<p>
+1. <strong>What phase am I in?</strong>
+2. <strong>What's the goal of this phase?</strong>
+3. <strong>What's the next action?</strong>
+</p>
+
+<p>
+The workflow has been tested across hundreds of platform deaths. It works. It's saved millions of digital artifacts. It will guide you through your first rescue—and your hundredth.
+</p>
+
+<p>
+Next chapter: <strong>Part III: Institution Building</strong> begins. We've learned to excavate, analyze, triage, and preserve. Now we must build institutions that can sustain this work for decades—organizations that outlive founders, survive funding crises, and resist corporate capture.
+</p>
+
+<p>
+The rescue is only the beginning. The real work is building systems that prevent future murders.
+</p>
+
+<p>
+But first: practice the workflow. Find an endangered platform. Walk through the phases. Preserve something.
+</p>
+
+<p>
+The clock is always ticking. Start now.
+</p>
+
+<h2>Discussion Questions</h2>
+
+<p>
+1. <strong>Personal Experience</strong>: Have you ever tried to preserve digital content before a deadline (even personal—like backing up your own social media)? What went well? What did you wish you'd known?
+</p>
+
+<p>
+2. <strong>Workflow Adaptation</strong>: Which scenario (emergency, systematic, guerrilla) would be hardest for you? Why? What skills would you need to develop?
+</p>
+
+<p>
+3. <strong>Team Dynamics</strong>: The Credit Karma example had 3 strangers collaborate effectively. What made that work? What could go wrong?
+</p>
+
+<p>
+4. <strong>Validation Trade-offs</strong>: In emergency triage, validation is minimal. How do you decide "good enough" when perfection isn't possible?
+</p>
+
+<p>
+5. <strong>Access Decisions</strong>: The Credit Karma archive restricted full content to researchers. Agree or disagree? Where would you draw the line?
+</p>
+
+<p>
+6. <strong>Future Scenarios</strong>: Imagine a platform shutdown in 2030. What might be different (technology, laws, culture)? How would the workflow need to adapt?
+</p>
+
+<h2>Exercise: Conduct a Practice Triage</h2>
+
+<p>
+<strong>Scenario</strong>: It's November 2025. A small platform called "BookTalk" (fictional) announces it will shut down in 60 days. It's a reading discussion forum with:
+- 5,000 users
+- 250,000 posts (book reviews, discussion threads)
+- 15 years of history (2010-2025)
+- Dynamic JavaScript site (requires login)
+</p>
+
+<p>
+<strong>Your Task</strong>: Walk through the 8-phase workflow.
+</p>
+
+<p>
+<strong>Phase 1: Discovery</strong> (Already done—you just heard the news)
+</p>
+
+<p>
+<strong>Phase 2: Assessment</strong> (500 words)
+- Complete the assessment checklist
+- Scope, technical, urgency, resources, ethics, legal
+- Make a GO/NO-GO decision
+</p>
+
+<p>
+<strong>Phase 3: Mobilization</strong> (300 words)
+- Would you work solo or recruit a team?
+- What tools would you use?
+- What infrastructure do you need?
+</p>
+
+<p>
+<strong>Phase 4: Capture</strong> (500 words)
+- Design your scraping strategy
+- Breadth vs. depth approach
+- Timeline (how many days for each step?)
+- What could go wrong?
+</p>
+
+<p>
+<strong>Phase 5: Validation</strong> (200 words)
+- How would you verify completeness?
+- What checks would you run?
+</p>
+
+<p>
+<strong>Phase 6: Storage</strong> (300 words)
+- What formats?
+- How many redundant copies?
+- Where would you store them?
+</p>
+
+<p>
+<strong>Phase 7: Access</strong> (300 words)
+- What access level? (public, researcher, community, dark)
+- Why?
+- How would people discover this archive?
+</p>
+
+<p>
+<strong>Phase 8: Documentation</strong> (200 words)
+- What would you document?
+- For whom?
+</p>
+
+<p>
+<strong>Reflection</strong> (300 words)
+- What was hardest to decide?
+- What would you need to learn to actually do this?
+- Would you commit to this project? Why or why not?
+</p>
+
+<h2>Further Reading</h2>
+
+<h3>On Preservation Workflows</h3>
+
+<p>
+- Bailey, Jefferson. "Disrespect des Fonds: Rethinking Arrangement and Description in Born-Digital Archives." <em>Archive Journal</em> 3 (2013).
+- Lee, Christopher. "A Framework for Contextual Information in Digital Collections." <em>Journal of Documentation</em> 67, no. 1 (2011): 95-143.
+- Prom, Christopher. "Managing Risks in Web Archiving: Best Practices and Guidelines." <em>Digital Preservation Coalition</em>, 2018.
+</p>
+
+<h3>On Rapid Response Archiving</h3>
+
+<p>
+- Archive Team. "Warrior Documentation." https://wiki.archiveteam.org/index.php/ArchiveTeam_Warrior
+- Brügger, Niels. "Web Archiving: The Urgent Need for Preservation." In <em>Web Archiving</em>, edited by Niels Brügger and Ralph Schroeder, 1-20. MIT Press, 2017.
+- Summers, Ed, et al. "Learning to Crawl: Towards a Framework for the History of Web Archiving." <em>International Journal of Digital Humanities</em> 1 (2019): 105-124.
+</p>
+
+<h3>On Data Integrity and Validation</h3>
+
+<p>
+- Duranti, Luciana, and Corinne Rogers. "Trust in Digital Records: An Increasingly Cloudy Legal Area." <em>Computer Law & Security Review</em> 28, no. 5 (2012): 522-531.
+- Rosenthal, David S.H. "Formats Considered Harmful." <em>iPRES 2014 Conference</em> (2014).
+</p>
+
+<h3>On Access and Ethics</h3>
+
+<p>
+- Caswell, Michelle. "Seeing Yourself in History: Community Archives and the Fight Against Symbolic Annihilation." <em>The Public Historian</em> 36, no. 4 (2014): 26-37.
+- Punzalan, Ricardo, and Michelle Caswell. "Critical Directions for Archival Approaches to Social Justice." <em>Library Quarterly</em> 86, no. 1 (2016): 25-42.
+</p>
+
+<h3>Primary Sources</h3>
+
+<p>
+- Archive Team Wiki. https://wiki.archiveteam.org/
+- Internet Archive. "Wayback Machine Documentation." https://archive.org/web/
+- Digital Preservation Coalition. "Rapid Assessment Model." https://www.dpconline.org/
+</p>
+
+<p>
+<strong>End of Chapter 10</strong>
+</p>
+
+<p>
+<em>Next: Part III — Institution Building</em>
+<em>Chapter 11 — Sustainable Preservation Organizations: Building the Archive</em>
+</p>
+
+
+        </article>
+        <div class="nav">
+            <a href="index.html">Back to Table of Contents</a>
+        </div>
+    </div>
+</body>
+</html>

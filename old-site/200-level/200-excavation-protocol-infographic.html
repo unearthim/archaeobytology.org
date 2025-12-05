@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- === 1. Primary Meta Tags === -->
+    <title>The Deep Excavation Protocol (200-Level) | Archaeobytology.org</title>
+    <meta name="title" content="The Deep Excavation Protocol (200-Level) | Archaeobytology.org">
+    <meta name="description" content="An advanced field guide detailing Boolean query construction, network analysis, and stratigraphic sampling for finding signal in digital noise.">
+    <meta name="keywords" content="Archaeobytology, Excavation Protocol, Boolean Search, Network Mapping, Stratigraphic Sampling, Digital Archaeology">
+    <meta name="author" content="archaeobytology.org (An unearth.im Project)">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <link rel="canonical" href="https://archaeobytology.org/200-level/200-excavation-protocol-infographic.html" />
+
+    <!-- === 2. Open Graph / Facebook === -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://archaeobytology.org/200-level/200-excavation-protocol-infographic.html">
+    <meta property="og:title" content="The Deep Excavation Protocol (200-Level) | Archaeobytology.org">
+    <meta property="og:description" content="An advanced field guide detailing Boolean query construction, network analysis, and stratigraphic sampling for finding signal in digital noise.">
+    <meta property="og:image" content="https://archaeobytology.org/200-level/og-image.png">
+    <meta property="og:site_name" content="Archaeobytology.org">
+
+    <!-- === 3. Twitter Card === -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://archaeobytology.org/200-level/200-excavation-protocol-infographic.html">
+    <meta property="twitter:title" content="The Deep Excavation Protocol (200-Level) | Archaeobytology.org">
+    <meta property="twitter:description" content="An advanced field guide detailing Boolean query construction, network analysis, and stratigraphic sampling for finding signal in digital noise.">
+    <meta property="twitter:image" content="https://archaeobytology.org/200-level/og-image.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lora', serif;
+            background-color: #F8F7F4;
+            color: #2E2E2E;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.5rem;
+            border: 1px solid #D1D1D1;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            padding: 1.5rem 2rem;
+            margin-bottom: 2rem;
+        }
+        .node {
+            border: 2px solid #D1D1D1;
+            background-color: #ffffff;
+            padding: 1.25rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            font-weight: 600;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+            font-family: 'Inter', sans-serif;
+            width: 100%;
+        }
+        .node-start {
+            background-color: #A95C3D;
+            border-color: #A95C3D;
+            color: #F8F7F4;
+            font-family: 'Lora', serif;
+            font-size: 1.25rem;
+        }
+        .node-phase {
+            background-color: #2E2E2E;
+            border-color: #2E2E2E;
+            color: #F8F7F4;
+            font-size: 1.125rem;
+        }
+        .node-path {
+            background-color: #F8F7F4;
+            border-color: #D1D1D1;
+            text-align: left;
+            padding: 1rem;
+        }
+        .node-path-title {
+            font-weight: 700;
+            font-size: 1.125rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .node-path-desc {
+            font-family: 'Lora', serif;
+            font-weight: 400;
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+        .node-path-action {
+            font-family: 'Inter', monospace;
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #5A7D8C;
+            display: block;
+            margin-top: 0.5rem;
+            padding: 0.5rem;
+            background-color: #ffffff;
+            border-radius: 0.25rem;
+            border: 1px solid #D1D1D1;
+        }
+        .node-output {
+            background-color: #5A7D8C;
+            border-color: #5A7D8C;
+            color: #F8F7F4;
+            font-family: 'Lora', serif;
+            font-size: 1.25rem;
+        }
+        .font-ui {
+            font-family: 'Inter', sans-serif;
+        }
+        .connector {
+            width: 2px;
+            height: 40px;
+            background-color: #D1D1D1;
+            margin: 0.5rem auto;
+        }
+        .branch-line-h {
+            width: 100%;
+            height: 2px;
+            background-color: #D1D1D1;
+        }
+        .branch-line-v {
+            width: 2px;
+            height: 24px;
+            background-color: #D1D1D1;
+        }
+        .technique-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-right: 0.5rem;
+        }
+        .tech-boolean { background-color: #DBEAFE; color: #1E40AF; }
+        .tech-network { background-color: #FEF3C7; color: #92400E; }
+        .tech-strat { background-color: #FCE7F3; color: #9F1239; }
+        .advanced-box {
+            border-left: 4px solid #5A7D8C;
+            background-color: #EFF6FF;
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 0.25rem;
+        }
+        .advanced-title {
+            font-weight: 700;
+            color: #5A7D8C;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container mx-auto p-4 md:p-8 max-w-6xl">
+
+        <header class="text-center my-12">
+            <div class="inline-block bg-[#435d7a] text-white px-4 py-2 rounded-md mb-4 font-ui font-bold text-sm">
+                ARCHAEOBYTOLOGY 200: ADVANCED EXCAVATION
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold text-[#A95C3D] mb-4">The Deep Excavation Protocol</h1>
+            <p class="text-xl md:text-2xl text-[#2E2E2E] text-opacity-80">Advanced Techniques for Finding Signal in the Noise</p>
+        </header>
+
+        <!-- STARTING POINT -->
+        <div class="flex flex-col items-center">
+            <div class="card max-w-3xl w-full">
+                <p class="text-center text-lg">This advanced protocol provides the technical methodology for systematic excavation. It answers the practitioner's foundational question:</p>
+                <p class="text-center text-2xl font-bold text-[#5A7D8C] mt-4 font-ui">"I see 'digital dust.' Where do I even begin?"</p>
+            </div>
+            
+            <div class="node node-start max-w-md">
+                START: The "Digital Dust" (Crisis of Noise)
+            </div>
+            <div class="connector"></div>
+        </div>
+
+        <!-- PHASE 1: DEFINE DIG SITE -->
+        <div class="flex flex-col items-center">
+            <div class="node node-phase max-w-md">
+                Phase 1: Define Dig Site (The "Where")
+            </div>
+            <p class="text-center text-lg text-[#8E8E8E] my-4 max-w-lg">Scope the "field" to turn a "junkyard" into a "dig site." The choice is political.</p>
+            
+            <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-x-6 relative">
+                <div class="hidden md:block absolute top-0 w-full px-[16.66%]">
+                    <div class="branch-line-h"></div>
+                </div>
+                
+                <div class="flex flex-col items-center">
+                    <div class="hidden md:block branch-line-v"></div>
+                    <div class="node node-path w-full">
+                        <span class="node-path-title text-[#5A7D8C]">Path A: Curated Archive</span>
+                        <span class="node-path-desc">Known, structured, institutionalized collections</span>
+                        <span class="node-path-action">Examples: Internet Archive, GeoCities Mirror, Library of Congress Web Archives</span>
+                        <div class="advanced-box">
+                            <div class="advanced-title">⚠ CURATORIAL BIAS</div>
+                            <div class="text-xs text-gray-700">Archives filter what can be stored. Examine capture headers for patterns of omission.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="hidden md:block branch-line-v"></div>
+                    <div class="node node-path w-full">
+                        <span class="node-path-title text-[#A95C3D]">Path B: "Wild" Archive</span>
+                        <span class="node-path-desc">Unstructured, abandoned, or "living" sites</span>
+                        <span class="node-path-action">Examples: Orphaned FTP servers, expired forum domains, university server subdomains</span>
+                        <div class="advanced-box !border-[#A95C3D] !bg-orange-50">
+                            <div class="advanced-title !text-[#A95C3D]">⚠ CUSTODIAL RISK</div>
+                            <div class="text-xs text-gray-700">High PII exposure. Requires advanced technical skill: directory traversal, header analysis, port scanning.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="hidden md:block branch-line-v"></div>
+                    <div class="node node-path w-full">
+                        <span class="node-path-title text-[#2E2E2E]">Path C: Conceptual Site</span>
+                        <span class="node-path-desc">Living platforms, excavated for "ghosts"</span>
+                        <span class="node-path-action">Examples: GitHub (README ritual), Reddit (forum signature evolution), Twitter (Conceptual Petribytes)</span>
+                        <div class="advanced-box !border-[#2E2E2E] !bg-gray-100">
+                            <div class="advanced-title !text-[#2E2E2E]">🔍 BEHAVIORAL PATTERNS</div>
+                            <div class="text-xs text-gray-700">Target is not a file but a practice. Excavate how modern tools perform ancient rituals.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="connector mt-6"></div>
+        </div>
+        
+        <!-- PHASE 2: DEFINE TARGET -->
+        <div class="flex flex-col items-center">
+            <div class="node node-phase max-w-md">
+                Phase 2: Define Target (The "What")
+            </div>
+            <p class="text-center text-lg text-[#8E8E8E] my-4 max-w-lg">What <em>type</em> of artifact are you hunting? This determines methodology.</p>
+
+            <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-x-6 relative">
+                <div class="hidden md:block absolute top-0 w-full px-[25%]">
+                    <div class="branch-line-h"></div>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <div class="hidden md:block branch-line-v"></div>
+                    <div class="node node-path w-full !border-[#5A7D8C] !bg-opacity-5">
+                        <span class="node-path-title text-[#5A7D8C]">Target 1: Tangible (The File)</span>
+                        <span class="node-path-desc">Hunt for specific files, formats, or code</span>
+                        <span class="node-path-action">Methodology: Forensic Materialism</span>
+                        <div class="advanced-box">
+                            <div class="advanced-title">🔬 FORENSIC TECHNIQUES</div>
+                            <ul class="text-xs text-gray-700 space-y-1 list-disc list-inside">
+                                <li><strong>Magic Numbers:</strong> Hex signatures (e.g., <code>FF D8 FF</code> for JPEG)</li>
+                                <li><strong>Checksums:</strong> MD5/SHA-256 hashes for provenance</li>
+                                <li><strong>Format Analysis:</strong> File format as ideology (MP3 vs RealAudio)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center mt-6 md:mt-0">
+                    <div class="hidden md:block branch-line-v"></div>
+                     <div class="node node-path w-full !border-[#A95C3D] !bg-opacity-5">
+                        <span class="node-path-title text-[#A95C3D]">Target 2: Conceptual (The Ghost)</span>
+                        <span class="node-path-desc">Hunt for lost behaviors, rituals, or concepts</span>
+                        <span class="node-path-action">Methodology: Semiotic Excavation</span>
+                        <div class="advanced-box !border-[#A95C3D] !bg-orange-50">
+                            <div class="advanced-title !text-[#A95C3D]">👻 GHOST METHODOLOGY</div>
+                            <ul class="text-xs text-gray-700 space-y-1 list-disc list-inside">
+                                <li><strong>Signifier Search:</strong> Find scattered HTML fragments (<code>&lt;!-- Begin Webring --&gt;</code>)</li>
+                                <li><strong>Pattern Collection:</strong> Gather thousands of fragments to reconstruct ritual</li>
+                                <li><strong>Network Topology:</strong> Map implied connections (webring arrows, blogroll links)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="connector mt-6"></div>
+        </div>
+
+        <!-- PHASE 3: SIFTING METHODOLOGY -->
+        <div class="flex flex-col items-center">
+            <div class="node node-phase max-w-md">
+                Phase 3: Sifting Methodology (The "How")
+            </div>
+            <p class="text-center text-lg text-[#8E8E8E] my-4 max-w-lg">Apply rigorous technical methods to isolate signal from noise.</p>
+
+            <div class="w-full space-y-8">
+                
+                <!-- Method A: Keyword Sifting -->
+                <div class="card !bg-blue-50 !border-blue-200">
+                    <div class="flex items-center mb-4">
+                        <span class="technique-badge tech-boolean">Method A</span>
+                        <h3 class="text-xl font-bold text-gray-800 font-ui">Keyword Sifting (Linguistic Stratigraphy)</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">Use "index fossils" — terms that date an artifact to a specific digital stratum.</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-4 mb-4">
+                        <div class="bg-white p-3 rounded border border-blue-300">
+                            <div class="font-bold text-blue-900 mb-2">Web 1.0 Index Fossils (1994-2001)</div>
+                            <div class="text-sm text-gray-700 font-mono">
+                                "Guestbook" | "Sign my book" | "Best viewed in Netscape" | "Under Construction" | "ICQ UIN"
+                            </div>
+                        </div>
+                        <div class="bg-white p-3 rounded border border-blue-300">
+                            <div class="font-bold text-blue-900 mb-2">Web 2.0 Index Fossils (2002-2009)</div>
+                            <div class="text-sm text-gray-700 font-mono">
+                                "RSS" | "Permalink" | "Trackback" | "Blogroll" | "Embed"
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="advanced-box !bg-white !border-blue-400">
+                        <div class="advanced-title !text-blue-700">🔍 ADVANCED: Boolean Query Construction</div>
+                        <p class="text-sm text-gray-700 mb-2">Construct queries as archaeological tools using Boolean logic:</p>
+                        <div class="bg-gray-100 p-3 rounded font-mono text-xs mb-2">
+                            ("brb" OR "away" OR "idle") AND ("AIM" OR "AOL") -site:twitter.com
+                        </div>
+                        <ul class="text-xs text-gray-700 space-y-1 list-disc list-inside">
+                            <li><strong>Temporal Markers:</strong> <code>("GeoCities" OR "geocities.com") AND "neighborhood"</code></li>
+                            <li><strong>Format Signatures:</strong> <code>filetype:html "&lt;!-- Begin Webring --&gt;"</code></li>
+                            <li><strong>Exclusion Filters:</strong> <code>-"Web 2.0" -"social media" -after:2010</code></li>
+                        </ul>
+                        <p class="text-xs text-gray-600 mt-2 italic">The query itself is a hypothesis made searchable.</p>
+                    </div>
+                </div>
+
+                <!-- Method B: Relational Mapping -->
+                <div class="card !bg-yellow-50 !border-yellow-200">
+                    <div class="flex items-center mb-4">
+                        <span class="technique-badge tech-network">Method B</span>
+                        <h3 class="text-xl font-bold text-gray-800 font-ui">Relational Mapping (Decentralized Topography)</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">Excavate network topologies by following "hand-built bridges" between sites.</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-4 mb-4">
+                        <div class="bg-white p-3 rounded border border-yellow-300">
+                            <div class="font-bold text-yellow-900 mb-2">The Blogroll as Trust Graph</div>
+                            <div class="text-sm text-gray-700">
+                                Scrape URLs from blogrolls → recursively visit → scrape their blogrolls → map the social neighborhood
+                            </div>
+                        </div>
+                        <div class="bg-white p-3 rounded border border-yellow-300">
+                            <div class="font-bold text-yellow-900 mb-2">The <code>rel</code> Attribute</div>
+                            <div class="text-sm text-gray-700">
+                                Find <code>rel="friend"</code> or <code>rel="neighbor"</code> in HTML — fossilized social connections from XFN era
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="advanced-box !bg-white !border-yellow-400">
+                        <div class="advanced-title !text-yellow-700">📊 ADVANCED: Network Theory & Small-World Analysis</div>
+                        <p class="text-sm text-gray-700 mb-2">Apply graph analysis to understand community structure:</p>
+                        <ul class="text-xs text-gray-700 space-y-1 list-disc list-inside">
+                            <li><strong>Clustering Coefficient:</strong> High values indicate "tight-knit" communities</li>
+                            <li><strong>Betweenness Centrality:</strong> Identifies "hub" nodes bridging clusters</li>
+                            <li><strong>Degree Distribution:</strong> Power-law = hierarchical; random = egalitarian</li>
+                        </ul>
+                        <p class="text-xs text-gray-600 mt-2 italic">Output: Graph visualization (nodes/edges) revealing "invisible colleges"</p>
+                        <div class="bg-gray-100 p-2 rounded font-mono text-xs mt-2">
+                            Tool: Python + NetworkX, or custom Node.js crawler
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Method C: Stratigraphic Sampling -->
+                <div class="card !bg-pink-50 !border-pink-200">
+                    <div class="flex items-center mb-4">
+                        <span class="technique-badge tech-strat">Method C</span>
+                        <h3 class="text-xl font-bold text-gray-800 font-ui">Stratigraphic Sampling (Temporal Isolation)</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">Take a "core sample" — deep, vertical analysis of a specific temporal/technical constraint.</p>
+                    
+                    <div class="bg-white p-4 rounded border border-pink-300 mb-4">
+                        <div class="font-bold text-pink-900 mb-2">The Problem of Micro-Temporality</div>
+                        <div class="text-sm text-gray-700">
+                            A file timestamped "1999" may have been modified in "2001" and moved in "2010." Digital time is fluid. Stratigraphic sampling attempts to freeze it.
+                        </div>
+                    </div>
+
+                    <div class="advanced-box !bg-white !border-pink-400">
+                        <div class="advanced-title !text-pink-700">🧪 ADVANCED: Defining the Stratum</div>
+                        <p class="text-sm text-gray-700 mb-2">Set strict boundaries for excavation:</p>
+                        <div class="bg-gray-100 p-3 rounded text-xs mb-3">
+                            <strong>Example Constraint:</strong><br>
+                            "Excavate only artifacts from <code>~user</code> directories of university servers<br>
+                            Limited to files with <code>Last-Modified</code> header between Jan 1, 1998 – Dec 31, 1999"
+                        </div>
+                        <ul class="text-xs text-gray-700 space-y-1 list-disc list-inside">
+                            <li><strong>The Ground:</strong> Specific directory structure or server type</li>
+                            <li><strong>The Time:</strong> Precise date range via headers or metadata</li>
+                            <li><strong>The Tech:</strong> Specific format/protocol (e.g., "only Flash 5 games")</li>
+                        </ul>
+                        <p class="text-xs text-gray-600 mt-2 italic"><strong>Power:</strong> Negative evidence. If 1999 stratum has zero "Like Buttons," you've proven it didn't exist in that ecosystem.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="connector mt-6"></div>
+        </div>
+
+        <!-- CASE STUDY REFERENCE -->
+        <div class="flex flex-col items-center my-8">
+            <div class="card max-w-4xl w-full !bg-purple-50 !border-purple-200">
+                <h3 class="text-xl font-bold text-center mb-4 font-ui text-purple-900">📚 Case Studies in Deep Excavation</h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="bg-white p-4 rounded border border-purple-300">
+                        <div class="font-bold text-purple-900 mb-2">Case Study 1: GeoCities "Vienna"</div>
+                        <div class="text-sm text-gray-700 space-y-1">
+                            <div><strong>Site:</strong> GeoCities/Vienna (Curated Archive)</div>
+                            <div><strong>Target:</strong> MIDI files + Webring ritual</div>
+                            <div><strong>Methods:</strong> Stratigraphic (pre-2000) + Keyword + Relational</div>
+                            <div class="text-xs italic mt-2">Result: Revealed composer community using MIDI as "sheet music"</div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 rounded border border-purple-300">
+                        <div class="font-bold text-purple-900 mb-2">Case Study 2: Demoscene (scene.org)</div>
+                        <div class="text-sm text-gray-700 space-y-1">
+                            <div><strong>Site:</strong> scene.org FTP archive (Wild Archive)</div>
+                            <div><strong>Target:</strong> .nfo files + "greetings" ritual</div>
+                            <div><strong>Methods:</strong> Stratigraphic (1993-96 MS-DOS era) + Format Analysis</div>
+                            <div class="text-xs italic mt-2">Result: Reconstructed "gift economy" through reciprocal recognition patterns</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- OUTPUT -->
+        <div class="flex flex-col items-center">
+            <div class="node node-output max-w-md">
+                OUTPUT: The "First Find" (An Archaeobyte)
+            </div>
+            
+            <div class="card max-w-3xl w-full mt-8">
+                <p class="text-center text-lg">An artifact has been successfully excavated from the "digital dust." It is bagged, tagged, and stripped of its "functional invisibility."</p>
+                <p class="text-center text-2xl font-bold text-[#A95C3D] mt-4 font-ui">HANDOFF: Proceed to Deep Triage Protocol</p>
+                <p class="text-center text-sm text-gray-600 mt-2">The artifact must now be diagnosed: Is it Living, Liminal, or Petrified?</p>
+            </div>
+        </div>
+
+        <footer class="text-center mt-16 mb-8">
+            <p class="text-sm text-[#8E8E8E] font-ui">This protocol is detailed in Chapter 1: Deep Excavation (Archaeobytology 200-Level)</p>
+            <p class="text-sm text-[#A95C3D] font-ui mt-2">
+                <a href="200-ch1.html" class="underline hover:text-[#5A7D8C]">Read the Full Chapter →</a>
+            </p>
+        </footer>
+
+    </main>
+</body>
+</html>

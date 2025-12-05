@@ -1,0 +1,1290 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 7: Archaeological Methods for Digital Artifacts | Archaeobytology</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Lora', serif; line-height: 1.8; color: #2E2E2E; background: #F8F7F4; padding: 2rem 1rem; }
+        .container { max-width: 800px; margin: 0 auto; background: #FFFFFF; padding: 3rem; border-radius: 15px; box-shadow: 0 4px 20px rgba(46,46,46,0.1); border: 1px solid #D1D1D1; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; color: #2E2E2E; margin-top: 2rem; margin-bottom: 1rem; line-height: 1.3; }
+        h1 { font-size: 2.5rem; font-weight: 700; margin-top: 0; border-bottom: 3px solid #A1824A; padding-bottom: 0.5rem; }
+        h2 { font-size: 2rem; font-weight: 700; margin-top: 2.5rem; }
+        h3 { font-size: 1.5rem; font-weight: 600; color: #5A7D8C; }
+        h4 { font-size: 1.25rem; font-weight: 600; color: #5A7D8C; }
+        p { margin-bottom: 1.25rem; font-size: 1.1rem; }
+        a { color: #A93400; text-decoration: underline; transition: color 0.3s; }
+        a:hover { color: #A95C3D; }
+        strong { font-weight: 600; }
+        em { font-style: italic; }
+        code { font-family: 'Courier New', monospace; background: #F8F7F4; padding: 0.2rem 0.4rem; border-radius: 3px; border: 1px solid #D1D1D1; }
+        blockquote { border-left: 4px solid #A1824A; padding: 1rem 1.5rem; margin: 1.5rem 0; font-style: italic; color: #5A7D8C; background: #F8F7F4; border-radius: 0 8px 8px 0; }
+        hr { border: none; border-top: 2px solid #D1D1D1; margin: 2rem 0; }
+        .nav { text-align: center; padding: 1rem 0; border-top: 2px solid #D1D1D1; margin-top: 2rem; }
+        .nav a { display: inline-block; padding: 0.75rem 1.5rem; background: #A93400; color: #F8F7F4; text-decoration: none; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 600; margin: 0.5rem; }
+        .nav a:hover { background: #A95C3D; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <article>
+<h1>Chapter 7: Archaeological Methods for Digital Artifacts</h1>
+
+<h2>Opening: The Dig Site Is Ephemeral</h2>
+
+<p>
+In 1922, Howard Carter discovered Tutankhamun's tomb. The artifacts had been buried for 3,000 years. They would remain buried for 3,000 more if Carter didn't act. But once found, he had <strong>time</strong>—years to carefully excavate, photograph, catalog, and preserve each object.
+</p>
+
+<p>
+In 2009, Archive Team discovered that GeoCities would shut down in three weeks. The "artifacts" had existed for 15 years. They would exist for <strong>21 more days</strong>, then vanish forever. No time for careful documentation. No room for archaeological precision. Just frantic scraping before the servers went dark.
+</p>
+
+<p>
+This is the fundamental difference between physical and digital archaeology:
+</p>
+
+<p>
+<strong>Physical archaeology:</strong>
+- Sites persist for centuries
+- Excavation is slow, methodical, non-destructive
+- You can return to a site years later
+</p>
+
+<p>
+<strong>Digital archaeology:</strong>
+- Sites vanish in days or weeks
+- Excavation is fast, opportunistic, often destructive (scraping overloads servers)
+- You get <strong>one chance</strong>—once the platform dies, it's gone
+</p>
+
+<p>
+Yet despite these differences, physical archaeology offers valuable methods for digital practice. Stratigraphic analysis, site surveys, provenance tracking, and ethical excavation frameworks all translate to digital contexts—if adapted properly.
+</p>
+
+<p>
+This chapter explores how to <strong>excavate digital artifacts</strong> using archaeological methods modified for digital ephemera. You'll learn:
+- Site reconnaissance and mapping
+- Stratigraphic analysis of digital layers
+- Excavation techniques (scraping, API harvesting, forensic recovery)
+- Provenance and chain-of-custody documentation
+- Ethical frameworks for excavation
+</p>
+
+<p>
+By the end, you'll know how to approach a dying platform like an archaeological dig site—systematic, ethical, and effective.
+</p>
+
+<h2>Part I: Site Reconnaissance — Mapping the Digital Landscape</h2>
+
+<h3>Before You Dig: Understanding the Site</h3>
+
+<p>
+Physical archaeologists don't start digging randomly. They survey the site, create maps, test soil composition, and plan their excavation strategy. Digital archaeologists must do the same.
+</p>
+
+<h3>Step 1: Platform Architecture Assessment</h3>
+
+<p>
+<strong>Goal:</strong> Understand the platform's technical structure before attempting to preserve it.
+</p>
+
+<p>
+<strong>Questions to Answer:</strong>
+</p>
+
+<p>
+<strong>1. What type of platform is this?</strong>
+- Static website (HTML/CSS, easy to scrape)
+- Dynamic web app (JavaScript-heavy, requires browser automation)
+- Mobile app (API-based, may require reverse engineering)
+- Forum/BBS (database-driven, need to capture structure)
+- Social network (graph-based, relationships matter as much as content)
+</p>
+
+<p>
+<strong>2. What are the data types?</strong>
+- Text (posts, comments, messages)
+- Images (user photos, avatars, UI elements)
+- Videos (hosted on platform or embedded from elsewhere?)
+- Metadata (timestamps, user IDs, like counts, tags)
+- Relationships (follows, friends, replies, shares)
+</p>
+
+<p>
+<strong>3. What's the scale?</strong>
+- How many users?
+- How much content (posts, pages, files)?
+- How much storage required?
+</p>
+
+<p>
+<strong>4. What are the access patterns?</strong>
+- Public (anyone can view)
+- Login-required (need account)
+- Private/friends-only (restricted access)
+- Ephemeral (content disappears after viewing, like Snapchat)
+</p>
+
+<p>
+<strong>5. What are the technical barriers?</strong>
+- Rate limiting (how many requests per hour?)
+- JavaScript rendering (can't scrape with simple wget)
+- CAPTCHAs (need human intervention)
+- DRM/encryption (legally/technically protected)
+- APIs (do they exist? are they documented?)
+</p>
+
+<p>
+<strong>Example: GeoCities Architecture Assessment (2009)</strong>
+</p>
+
+<p>
+| Dimension | Assessment |
+|-----------|------------|
+| Type | Static HTML sites (mostly) |
+| Data types | HTML, images, GIFs, MIDI files, JavaScript |
+| Scale | ~30 million sites, estimated TB of data |
+| Access | Public (no login required) |
+| Barriers | Rate limiting (Yahoo would block aggressive scrapers), broken links (sites linked to each other, many links dead) |
+| Strategy | Distributed scraping (many volunteers, different IPs), prioritize unique content over duplicates |
+</p>
+
+<h3>Step 2: Existing Documentation</h3>
+
+<p>
+<strong>Check what's already known:</strong>
+</p>
+
+<p>
+<strong>Internet Archive's Wayback Machine:</strong>
+- Has it been crawled? When? How comprehensively?
+- Gaps in coverage?
+</p>
+
+<p>
+<strong>Platform's Official Archives:</strong>
+- Does the platform provide data export tools?
+- What format? How complete?
+</p>
+
+<p>
+<strong>Community Knowledge:</strong>
+- Are there fan wikis, documentation, user guides?
+- Former employees willing to share insider knowledge?
+</p>
+
+<p>
+<strong>Technical Documentation:</strong>
+- API documentation (if APIs exist)
+- Terms of Service (what's legal to scrape?)
+- robots.txt (what does platform want crawled?)
+</p>
+
+<p>
+<strong>Example: Vine Documentation Check (2016)</strong>
+</p>
+
+<p>
+- <strong>Wayback Machine:</strong> Some Vines captured, but incomplete (many videos not archived)
+- <strong>Official Export:</strong> Vine provided "Download Your Vines" tool (good, but required users to act)
+- <strong>Community:</strong> Vine Wiki documented popular creators, memes, culture
+- <strong>API:</strong> Public API existed (allowed bulk downloading until shutdown)
+</p>
+
+<p>
+<strong>Decision:</strong> Use API while it exists, supplement with manual scraping for videos API misses.
+</p>
+
+<h3>Step 3: Reconnaissance Scraping</h3>
+
+<p>
+<strong>Goal:</strong> Capture a small sample to understand structure before full excavation.
+</p>
+
+<p>
+<strong>Method:</strong>
+1. Scrape 100-1000 pages/posts (small representative sample)
+2. Analyze structure:
+   - What HTML tags are used?
+   - Where is metadata stored? (JSON in page source? Separate API calls?)
+   - What's the URL pattern? (Can you enumerate all pages?)
+3. Test tools:
+   - Does wget work? Or need Selenium (browser automation)?
+   - How fast can you scrape without getting blocked?
+</p>
+
+<p>
+<strong>Deliverable:</strong> Reconnaissance report documenting:
+- Platform structure
+- Technical barriers
+- Estimated scale
+- Recommended tools
+- Estimated time to complete full excavation
+</p>
+
+<p>
+<strong>Example: Small Forum Reconnaissance</strong>
+</p>
+
+<p>
+``<code>
+Platform: Example Forum (phpBB)
+Date: 2024-11-15
+Estimated Shutdown: 2024-12-01 (15 days)
+</p>
+
+<p>
+Structure:
+- Forum software: phpBB 3.2
+- Content: 10,000 threads, ~50,000 posts
+- Users: 1,500 registered, ~500 active
+</p>
+
+<p>
+Technical Assessment:
+- Public access (no login for reading)
+- Standard HTML structure (easy to parse)
+- URL pattern: /viewtopic.php?t=[thread_id]
+- Thread IDs appear sequential (can enumerate)
+</p>
+
+<p>
+Barriers:
+- Rate limit: ~60 requests/minute before 503 errors
+- Some images externally hosted (may be lost)
+- User profile pages require login (skip for now)
+</p>
+
+<p>
+Strategy:
+- Use wget with --wait=1 (stay under rate limit)
+- Scrape all threads over 5 days
+- Capture HTML + images
+- Parse HTML to extract structured data (JSON)
+</p>
+
+<p>
+Estimated Storage: 2-5GB
+Estimated Time: 5 days (continuous scraping)
+</code>`<code>
+</p>
+
+<h2>Part II: Stratigraphic Analysis — Understanding Digital Layers</h2>
+
+<p>
+Physical archaeologists use <strong>stratigraphy</strong>—the study of layers—to understand how a site was formed over time. Lower layers are older; upper layers are more recent. Disruptions in layers indicate events (fires, floods, invasions).
+</p>
+
+<p>
+Digital platforms also have layers. Understanding them is crucial for preservation.
+</p>
+
+<h3>Digital Stratigraphy: The Technology Stack</h3>
+
+<p>
+<strong>Layer 1: Content (Surface Layer)</strong>
+- What users see: posts, images, videos
+- This is the "archaeological treasure"—the artifacts themselves
+</p>
+
+<p>
+<strong>Layer 2: Metadata (Context Layer)</strong>
+- Timestamps, user IDs, like counts, tags, geolocation
+- Essential for interpreting content
+</p>
+
+<p>
+<strong>Layer 3: Relationships (Social Layer)</strong>
+- Follower graphs, reply threads, retweets/shares
+- Network structure that gives content meaning
+</p>
+
+<p>
+<strong>Layer 4: Platform Affordances (Infrastructure Layer)</strong>
+- Character limits (Twitter's 140/280), video length limits (Vine's 6 seconds)
+- UI design (Facebook's "like" button, Tumblr's reblog)
+- These shape what could be expressed
+</p>
+
+<p>
+<strong>Layer 5: Code and Protocols (Base Layer)</strong>
+- HTML/CSS, JavaScript, APIs
+- The technical substrate everything else is built on
+</p>
+
+<p>
+<strong>Why This Matters:</strong>
+</p>
+
+<p>
+If you only preserve Layer 1 (content), you lose context. A tweet without timestamp, author, and reply chain is nearly meaningless. A Vine without knowledge that it's 6 seconds (platform affordance) loses its cultural significance.
+</p>
+
+<p>
+<strong>Best Practice:</strong> Preserve <strong>all accessible layers</strong>, not just content.
+</p>
+
+<h3>Temporal Stratigraphy: Change Over Time</h3>
+
+<p>
+Platforms evolve. Preserving multiple snapshots captures this evolution.
+</p>
+
+<p>
+<strong>Example: Twitter's Stratigraphy (2006-2025)</strong>
+</p>
+
+<p>
+| Period | Character Limit | Key Features | Cultural Context |
+|--------|----------------|--------------|------------------|
+| 2006-2009 | 140 characters | SMS-based, public only | Early adopters, tech culture |
+| 2010-2013 | 140 | @mentions, hashtags, retweets | Mainstream adoption, Arab Spring |
+| 2014-2017 | 140 | Embedded images/video, polls | Visual turn, meme culture |
+| 2017-2022 | 280 | Threads, longer tweets | Discourse shift, Trump era |
+| 2022-2025 | 280+ | Elon ownership, chaos | Decline, exodus to alternatives |
+</p>
+
+<p>
+If you only archived Twitter in 2025, you'd miss how 140-character limit shaped early Twitter culture. Stratigraphic preservation (periodic snapshots) captures evolution.
+</p>
+
+<h3>Excavating Through Layers: Practical Example</h3>
+
+<p>
+<strong>Scenario:</strong> Preserving a Tumblr blog (before or after NSFW purge).
+</p>
+
+<p>
+<strong>Layer 1 — Content:</strong>
+- Use Tumblr's API or export tool to download posts
+- Format: JSON or HTML
+- Includes text, images, embedded media
+</p>
+
+<p>
+<strong>Layer 2 — Metadata:</strong>
+- Post timestamps (when was this published?)
+- Tags (how did author categorize this?)
+- Post type (text, photo, quote, link, chat, audio, video)
+- Note count (likes + reblogs)
+</p>
+
+<p>
+<strong>Layer 3 — Relationships:</strong>
+- Reblog chain (who reblogged from whom?)
+- Follower graph (if accessible)
+- External links (what other sites/blogs mentioned?)
+</p>
+
+<p>
+<strong>Layer 4 — Platform Affordances:</strong>
+- Tumblr's "reblog" culture (different from Twitter's "quote tweet")
+- Tag system (used for discovery, not just categorization)
+- Dashboard feed (algorithmic? chronological?)
+</p>
+
+<p>
+<strong>Layer 5 — Code:</strong>
+- Tumblr's HTML theme (custom CSS)
+- Embedded JavaScript (any interactive elements?)
+</p>
+
+<p>
+<strong>Preservation Strategy:</strong>
+1. Download JSON export (Layers 1-2)
+2. Scrape full HTML (captures Layer 4 affordances via design)
+3. Reconstruct reblog chains from metadata (Layer 3)
+4. Document platform context in README (Layer 4 cultural norms)
+</p>
+
+<h2>Part III: Excavation Techniques — Tools and Methods</h2>
+
+<h3>Technique 1: Simple Web Scraping (Static Sites)</h3>
+
+<p>
+<strong>Use Case:</strong> Static HTML sites (blogs, personal homepages, early web).
+</p>
+
+<p>
+<strong>Tools:</strong>
+- <strong>wget</strong>: Command-line downloader (recursive crawling)
+- <strong>HTTrack</strong>: GUI-based website copier
+- <strong>ArchiveBox</strong>: Modern, full-featured archiver
+</p>
+
+<p>
+<strong>Example: wget Command</strong>
+</p>
+
+<p>
+</code>`<code>bash
+wget --recursive --level=5 --no-parent --wait=1 \
+     --convert-links --page-requisites \
+     --user-agent="ArchiveBot/1.0" \
+     https://example.com
+</code>`<code>
+</p>
+
+<p>
+<strong>Explanation:</strong>
+- </code>--recursive<code>: Follow links
+- </code>--level=5<code>: Crawl up to 5 levels deep
+- </code>--no-parent<code>: Don't ascend to parent directories
+- </code>--wait=1<code>: Wait 1 second between requests (polite crawling)
+- </code>--convert-links<code>: Make links work offline
+- </code>--page-requisites<code>: Download CSS, images, JavaScript
+- </code>--user-agent<code>: Identify yourself (ethical scraping)
+</p>
+
+<p>
+<strong>Pros:</strong>
+- Fast, simple, reliable for static sites
+</p>
+
+<p>
+<strong>Cons:</strong>
+- Fails on JavaScript-heavy sites (doesn't execute JS)
+- Can't handle logins or authenticated content
+</p>
+
+<h3>Technique 2: Browser Automation (Dynamic Sites)</h3>
+
+<p>
+<strong>Use Case:</strong> JavaScript-heavy sites (React, Angular apps) or sites requiring interaction.
+</p>
+
+<p>
+<strong>Tools:</strong>
+- <strong>Selenium</strong>: Browser automation framework
+- <strong>Puppeteer</strong>: Headless Chrome control (Node.js)
+- <strong>Playwright</strong>: Modern cross-browser automation
+</p>
+
+<p>
+<strong>Example: Puppeteer Script (Simplified)</strong>
+</p>
+
+<p>
+</code>`<code>javascript
+const puppeteer = require('puppeteer');
+const fs = require('fs');
+</p>
+
+<p>
+(async () => {
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+</p>
+
+<p>
+  // Navigate to page
+  await page.goto('https://example.com/post/12345');
+</p>
+
+<p>
+  // Wait for dynamic content to load
+  await page.waitForSelector('.post-content');
+</p>
+
+<p>
+  // Extract content
+  const content = await page.evaluate(() => {
+    return {
+      title: document.querySelector('.post-title').innerText,
+      body: document.querySelector('.post-content').innerText,
+      timestamp: document.querySelector('.post-date').innerText
+    };
+  });
+</p>
+
+<p>
+  // Save as JSON
+  fs.writeFileSync('post_12345.json', JSON.stringify(content, null, 2));
+</p>
+
+<p>
+  await browser.close();
+})();
+</code>`<code>
+</p>
+
+<p>
+<strong>Pros:</strong>
+- Handles JavaScript rendering
+- Can simulate user interactions (clicks, scrolls)
+- Can log in to authenticated sites
+</p>
+
+<p>
+<strong>Cons:</strong>
+- Slower than wget (must render pages)
+- More complex to set up
+</p>
+
+<h3>Technique 3: API Harvesting (Structured Data)</h3>
+
+<p>
+<strong>Use Case:</strong> Platforms with public APIs (Twitter, Reddit, Mastodon).
+</p>
+
+<p>
+<strong>Tools:</strong>
+- <strong>Platform-specific libraries</strong>: tweepy (Twitter), PRAW (Reddit)
+- <strong>HTTP clients</strong>: curl, requests (Python), fetch (JavaScript)
+</p>
+
+<p>
+<strong>Example: Twitter API (Pre-Elon, when API was good)</strong>
+</p>
+
+<p>
+</code>`<code>python
+import tweepy
+import json
+</p>
+
+<h1>Authenticate</h1>
+<p>
+auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+auth.set_access_token(access_token, access_token_secret)
+api = tweepy.API(auth)
+</p>
+
+<h1>Download user's timeline</h1>
+<p>
+tweets = []
+for tweet in tweepy.Cursor(api.user_timeline, screen_name='example_user', tweet_mode='extended').items():
+    tweets.append({
+        'id': tweet.id_str,
+        'text': tweet.full_text,
+        'created_at': str(tweet.created_at),
+        'retweet_count': tweet.retweet_count,
+        'favorite_count': tweet.favorite_count
+    })
+</p>
+
+<h1>Save as JSON</h1>
+<p>
+with open('example_user_tweets.json', 'w') as f:
+    json.dump(tweets, f, indent=2)
+</code>`<code>
+</p>
+
+<p>
+<strong>Pros:</strong>
+- Structured data (JSON, XML)
+- Includes metadata (timestamps, IDs, relationships)
+- Respects rate limits (built into libraries)
+</p>
+
+<p>
+<strong>Cons:</strong>
+- Platform must have API (many don't, or shut it down before dying)
+- Rate limits can be restrictive (slow)
+- APIs often sunset before platforms die (Twitter 2023)
+</p>
+
+<h3>Technique 4: Database Extraction (Direct Access)</h3>
+
+<p>
+<strong>Use Case:</strong> You have legitimate access to platform's database (employee, owner, partnership).
+</p>
+
+<p>
+<strong>Method:</strong>
+- SQL dump (if relational database)
+- NoSQL export (if MongoDB, CouchDB, etc.)
+- File system copy (if files stored on disk)
+</p>
+
+<p>
+<strong>Example: MySQL Dump</strong>
+</p>
+
+<p>
+</code>`<code>bash
+mysqldump -u username -p database_name > backup.sql
+</code>`<code>
+</p>
+
+<p>
+<strong>Pros:</strong>
+- Complete, perfect fidelity
+- Includes all metadata, relationships, deleted content
+</p>
+
+<p>
+<strong>Cons:</strong>
+- Rare (requires cooperation from platform)
+- May include sensitive data (must redact)
+</p>
+
+<h3>Technique 5: Forensic Recovery (Post-Mortem)</h3>
+
+<p>
+<strong>Use Case:</strong> Platform already shut down, but you might recover fragments.
+</p>
+
+<p>
+<strong>Methods:</strong>
+</p>
+
+<p>
+<strong>Google Cache:</strong>
+- Search </code>cache:example.com<code> in Google
+- Captures recent snapshots (but only for indexed pages)
+</p>
+
+<p>
+<strong>Wayback Machine:</strong>
+- Check Internet Archive's Wayback Machine
+- May have periodic snapshots
+</p>
+
+<p>
+<strong>User Backups:</strong>
+- Ask former users if they exported their data
+- Crowdsource fragments
+</p>
+
+<p>
+<strong>Web Archives:</strong>
+- Other web archives (UK Web Archive, Library of Congress)
+</p>
+
+<p>
+<strong>Old Hard Drives:</strong>
+- If servers were sold/discarded, forensic data recovery possible (rare, expensive)
+</p>
+
+<p>
+<strong>Example: MySpace Music Recovery Attempt</strong>
+</p>
+
+<p>
+After MySpace lost 50 million songs (2019):
+- Internet Archive had some (but not comprehensive)
+- Users who downloaded MP3s shared them
+- Some songs recovered via Google Cache before it expired
+- Most (~90%) permanently lost
+</p>
+
+<p>
+<strong>Lesson:</strong> Forensic recovery is last resort. Success rate is low. Better to preserve proactively.
+</p>
+
+<h2>Part IV: Provenance and Chain of Custody</h2>
+
+<h3>Why Provenance Matters</h3>
+
+<p>
+In physical archaeology, <strong>provenance</strong> (where an artifact came from) is crucial. An Egyptian vase in a museum is worthless if you don't know which tomb it came from. Context gives meaning.
+</p>
+
+<p>
+In digital archaeology, provenance includes:
+1. <strong>Where did you get this?</strong> (scraped from live site? downloaded via API? recovered from backup?)
+2. <strong>When did you capture it?</strong> (date/time of preservation)
+3. <strong>Who captured it?</strong> (individual, institution, bot)
+4. <strong>What modifications were made?</strong> (did you redact personal info? convert formats?)
+</p>
+
+<p>
+Without provenance, digital artifacts lose credibility.
+</p>
+
+<h3>Chain of Custody Documentation</h3>
+
+<p>
+<strong>Best Practice:</strong> Document every step from capture to storage.
+</p>
+
+<p>
+<strong>Template: Provenance Record</strong>
+</p>
+
+<p>
+</code>`<code>
+Artifact: GeoCities site "geocities.com/SiliconValley/1234"
+Captured: 2009-11-15 03:42 UTC
+Method: wget recursive scrape
+Captured By: Archive Team volunteer #7823
+Source State: Live website (platform still online)
+Completeness: 87% (some images 404'd during capture)
+Storage: Initial storage on volunteer's hard drive
+Transfer: Uploaded to Archive Team torrent 2009-11-20
+Current Location: Internet Archive, GeoCities torrent seed
+Format: Original HTML + images (no conversion)
+Modifications: None (bit-perfect capture)
+Verification: MD5 checksums recorded at capture
+Access: Public (torrent freely downloadable)
+</code>`<code>
+</p>
+
+<p>
+<strong>Why Each Field Matters:</strong>
+</p>
+
+<p>
+- <strong>Captured date:</strong> Proves this is snapshot from specific moment
+- <strong>Method:</strong> Explains why some content might be missing (wget can't execute JavaScript)
+- <strong>Completeness:</strong> Honest about gaps (87% is still valuable)
+- <strong>Chain of custody:</strong> Volunteer → Torrent → Internet Archive (transparent)
+- <strong>Modifications:</strong> None (proves authenticity)
+- <strong>Verification:</strong> Checksums prove files unchanged since capture
+</p>
+
+<h3>Metadata Standards</h3>
+
+<p>
+Use existing standards when possible:
+</p>
+
+<p>
+<strong>Dublin Core:</strong>
+- Standard metadata for digital objects
+- Fields: Creator, Date, Title, Description, Format, Rights
+</p>
+
+<p>
+<strong>METS (Metadata Encoding and Transmission Standard):</strong>
+- Library of Congress standard
+- Used for complex digital objects (multiple files, relationships)
+</p>
+
+<p>
+<strong>PREMIS (Preservation Metadata):</strong>
+- Focuses on provenance and preservation actions
+- Records: who did what, when, why
+</p>
+
+<p>
+<strong>Example: Dublin Core for Preserved Vine</strong>
+</p>
+
+<p>
+</code>`<code>xml
+<metadata>
+  <dc:title>Vine #284619204 "Why You Always Lying"</dc:title>
+  <dc:creator>Nicholas Fraser (@downgoes.fraser)</dc:creator>
+  <dc:date>2015-09-02</dc:date>
+  <dc:type>Video (6 seconds, looped)</dc:type>
+  <dc:format>MP4 (H.264)</dc:format>
+  <dc:description>Viral Vine meme, 30M+ loops, inspired song</dc:description>
+  <dc:rights>Fair Use (platform shutdown, cultural preservation)</dc:rights>
+  <dc:source>Vine.co (platform shut down 2017)</dc:source>
+  <dc:coverage>Internet Archive, Vine Archive Collection</dc:coverage>
+  <dc:identifier>IA-Vine-284619204</dc:identifier>
+</metadata>
+</code>`<code>
+</p>
+
+<h2>Part V: Ethical Excavation</h2>
+
+<h3>Archaeology's Ethical Evolution</h3>
+
+<p>
+Physical archaeology has a dark history:
+- Colonial looting (British Museum filled with stolen artifacts)
+- Destroying sites (19th-century excavations were destructive)
+- Ignoring indigenous communities (treating their ancestors as "objects of study")
+</p>
+
+<p>
+Modern archaeology has reformed:
+- <strong>Repatriation</strong>: Returning artifacts to communities of origin
+- <strong>Community consultation</strong>: Indigenous peoples have say in excavations
+- <strong>Non-destructive methods</strong>: Ground-penetrating radar instead of digging
+- <strong>Context preservation</strong>: Documenting everything, not just taking treasures
+</p>
+
+<p>
+<strong>Digital archaeology must learn these lessons.</strong>
+</p>
+
+<h3>Ethical Principles for Digital Excavation</h3>
+
+<p>
+<strong>1. Minimize Harm</strong>
+</p>
+
+<p>
+<strong>To the platform:</strong>
+- Don't overload servers (respect rate limits)
+- Identify your scraper (user-agent string)
+- Stop if platform asks (honor robots.txt)
+</p>
+
+<p>
+Even if you oppose the platform's business model, harming their infrastructure isn't ethical (hurts users, not executives).
+</p>
+
+<p>
+<strong>To users:</strong>
+- Don't expose private information
+- Respect deleted content (if user intentionally deleted, presume they wanted it gone—with exceptions for public figures)
+</p>
+
+<p>
+<strong>2. Respect robots.txt (Mostly)</strong>
+</p>
+
+<p>
+</code>robots.txt<code> is a file that tells crawlers what they can/can't scrape.
+</p>
+
+<p>
+<strong>Example:</strong>
+</code>`<code>
+User-agent: <em>
+Disallow: /private/
+Disallow: /user-settings/
+Allow: /public/
+</code>`<code>
+</p>
+
+<p>
+<strong>Ethical debate:</strong>
+- <strong>Strict interpretation</strong>: Always obey robots.txt (it's the site owner's wishes)
+- <strong>Preservation exception</strong>: Platform is dying, robots.txt doesn't apply (saving culture > obeying soon-to-be-dead platform)
+</p>
+
+<p>
+<strong>Compromise:</strong>
+- Respect robots.txt for living platforms
+- Override for dying platforms (with documentation: "We scraped despite robots.txt because platform announced shutdown")
+</p>
+
+<p>
+<strong>3. Document Ethical Decisions</strong>
+</p>
+
+<p>
+When you make ethically contested choices (scraping private content, overriding robots.txt, preserving deleted posts), <strong>document why</strong>.
+</p>
+
+<p>
+<strong>Example:</strong>
+</p>
+
+<p>
+</code>`<code>
+ETHICAL NOTE: Tumblr Post #12345
+</p>
+
+<p>
+This post was deleted by the author in 2018 (pre-NSFW purge).
+We preserved it because:
+1. Author is public figure (political activist with 100k followers)
+2. Post documents historically significant event (protest organization)
+3. Post was public for 3 years (widely shared, cited in news)
+</p>
+
+<p>
+However, we restricted access:
+- Not searchable via Google
+- Requires researcher credentials to view
+- Will honor takedown request if author contacts us
+</p>
+
+<p>
+Decision made: 2024-11-15
+Decision maker: [Archivist ID]
+</code>`<code>
+</p>
+
+<p>
+<strong>Transparency builds trust.</strong>
+</p>
+
+<p>
+<strong>4. Community Consultation (When Possible)</strong>
+</p>
+
+<p>
+If you're preserving a community's content (fandom, activist group, cultural community), <strong>ask them</strong>.
+</p>
+
+<p>
+<strong>Example: Fan Fiction Archive</strong>
+</p>
+
+<p>
+Before scraping abandoned LiveJournal fandom:
+1. Post in fandom spaces: "We're considering archiving [fandom] LiveJournal. Thoughts?"
+2. Listen to concerns (privacy, consent, cultural norms)
+3. Adapt plans (maybe restrict access, or honor individual takedown requests)
+</p>
+
+<p>
+Not always possible (no time, or community scattered). But when possible, consultation is ethical.
+</p>
+
+<p>
+<strong>5. Allow Takedowns</strong>
+</p>
+
+<p>
+Even after preserving, respect author requests to remove their content.
+</p>
+
+<p>
+<strong>Process:</strong>
+1. Public takedown request form
+2. Verify requester is original author (prevent abuse)
+3. Remove content within reasonable time (7-30 days)
+4. Document removal (provenance: "Content removed 2024-11-20 at author's request")
+</p>
+
+<h2>Part VI: Case Study — Excavating a Dying Forum</h2>
+
+<h3>Scenario: Small Community Forum (2024)</h3>
+
+<p>
+<strong>Background:</strong>
+- Forum: "VintageGamers" (retro gaming community)
+- Software: vBulletin 3.8 (old forum software)
+- Content: 15 years of discussions (2009-2024)
+- Size: 5,000 members, 100,000 posts
+- Announcement: Shutting down in 30 days (hosting costs too high)
+</p>
+
+<p>
+<strong>Reconnaissance (Days 1-3):</strong>
+</p>
+
+<p>
+1. <strong>Platform assessment:</strong>
+   - vBulletin forum (database-driven)
+   - Public content (no login to read, but login to see images)
+   - URL pattern: </code>/showthread.php?t=[thread_id]<code>
+   - Estimated 10,000 threads
+</p>
+
+<p>
+2. <strong>Existing documentation:</strong>
+   - Not in Internet Archive (robots.txt blocked crawlers)
+   - No official export tool
+   - Community members panicking, want it saved
+</p>
+
+<p>
+3. <strong>Contact admin:</strong>
+   - Email forum owner: "Can you provide database dump?"
+   - Owner agrees! (relieved someone cares)
+   - Owner provides MySQL dump (20MB compressed)
+</p>
+
+<p>
+<strong>Database Excavation (Days 4-7):</strong>
+</p>
+
+<p>
+1. <strong>Import database locally:</strong>
+   </code>`<code>bash
+   mysql -u root -p < vintagegamers_backup.sql
+   </code>`<code>
+</p>
+
+<p>
+2. <strong>Analyze schema:</strong>
+   - Tables: </code>posts<code>, </code>threads<code>, </code>users<code>, </code>attachments<code>
+   - Relationships: </code>thread_id<code> links posts to threads
+   - Metadata: timestamps, user IDs, post counts
+</p>
+
+<p>
+3. <strong>Export to JSON:</strong>
+   </code>`<code>python
+   import mysql.connector
+   import json
+</p>
+
+<p>
+   db = mysql.connector.connect(host="localhost", user="root", password="...", database="vintagegamers")
+   cursor = db.cursor()
+</p>
+
+<p>
+   # Export threads
+   cursor.execute("SELECT thread_id, title, user_id, post_date FROM threads")
+   threads = [{'id': row[0], 'title': row[1], 'user_id': row[2], 'date': str(row[3])} for row in cursor.fetchall()]
+</p>
+
+<p>
+   with open('threads.json', 'w') as f:
+       json.dump(threads, f, indent=2)
+</p>
+
+<p>
+   # (Repeat for posts, users, etc.)
+   </code>`<code>
+</p>
+
+<p>
+4. <strong>Download attachments:</strong>
+   - Images stored in </code>/attachments/<code> directory
+   - Use wget to download all:
+   </code>`<code>bash
+   wget -r -l 1 -A jpg,png,gif https://vintagegamers.com/attachments/
+   </code>`<code>
+</p>
+
+<p>
+<strong>Curation (Days 8-14):</strong>
+</p>
+
+<p>
+1. <strong>Redact personal info:</strong>
+   - Email addresses in user profiles → removed
+   - IP addresses in logs → removed
+   - Private messages → excluded from export
+</p>
+
+<p>
+2. <strong>Add metadata:</strong>
+   - Create </code>README.md<code> documenting forum history
+   - List notable threads ("Best of VintageGamers")
+   - Interview longtime members (oral history)
+</p>
+
+<p>
+3. <strong>Build search interface:</strong>
+   - Use Elasticsearch to index posts
+   - Simple web UI: search by keyword, date, user
+</p>
+
+<p>
+<strong>Preservation (Days 15-30):</strong>
+</p>
+
+<p>
+1. <strong>Upload to Internet Archive:</strong>
+   - Create "VintageGamers Archive" collection
+   - Upload database dump, JSON exports, attachment images, README
+</p>
+
+<p>
+2. <strong>Seed BitTorrent:</strong>
+   - Create torrent of full archive
+   - Ensure redundancy (if IA ever goes down)
+</p>
+
+<p>
+3. <strong>Announce to community:</strong>
+   - Post in forum: "Archive complete! Here's where to find it."
+   - Community grateful, downloads personal copies
+</p>
+
+<p>
+<strong>Provenance Record:</strong>
+</p>
+
+<p>
+</code>`<code>
+Archive: VintageGamers Forum (2009-2024)
+Captured: 2024-11-01 to 2024-11-15
+Method: MySQL database dump provided by forum administrator
+Captured By: [Archaeobytologist Name], with admin cooperation
+Completeness: 100% (full database export)
+Redactions: Email addresses, IP addresses, private messages removed
+Storage: Internet Archive + BitTorrent
+Format: MySQL dump (raw), JSON (parsed), HTML (rendered)
+Access: Public (Internet Archive), with restricted personal data
+License: CC BY-NC-SA 4.0 (preserves community content, non-commercial)
+</code>``
+</p>
+
+<p>
+<strong>Outcome:</strong>
+- Forum shuts down on schedule
+- 100% of content preserved
+- Community can still access their history
+- Future researchers can study retro gaming community
+</p>
+
+<h2>Conclusion: The Archaeologist's Mindset</h2>
+
+<p>
+Digital excavation isn't just about running scripts. It's about bringing an <strong>archaeological mindset</strong> to ephemeral platforms:
+</p>
+
+<p>
+<strong>1. Systematic:</strong> Survey before digging. Plan your excavation. Document everything.
+</p>
+
+<p>
+<strong>2. Stratigraphic:</strong> Preserve all layers (content, metadata, relationships, affordances), not just surface.
+</p>
+
+<p>
+<strong>3. Contextual:</strong> Provenance matters. Where did this come from? When? Who captured it?
+</p>
+
+<p>
+<strong>4. Ethical:</strong> Minimize harm. Respect communities. Be transparent about contested choices.
+</p>
+
+<p>
+<strong>5. Urgent:</strong> Unlike physical archaeology, you don't have centuries. You have days or weeks. Move fast—but systematically.
+</p>
+
+<p>
+In the next chapter, we'll dive deeper into <strong>Digital Forensics</strong>—the technical methods for recovering data from damaged, corrupted, or deliberately deleted sources. Sometimes, platforms don't give you clean MySQL dumps. Sometimes, you're working with fragments, corrupted files, and deleted evidence.
+</p>
+
+<p>
+Digital forensics teaches you how to work with what's broken.
+</p>
+
+<h2>Discussion Questions</h2>
+
+<p>
+1. <strong>Methodology:</strong> Should digital archaeology prioritize speed (scrape everything quickly) or precision (careful documentation)? How do you balance urgency with rigor?
+</p>
+
+<p>
+2. <strong>Ethics:</strong> Is it ethical to scrape a platform that explicitly forbids it (robots.txt, ToS) if the platform is dying and content will be lost?
+</p>
+
+<p>
+3. <strong>Provenance:</strong> Why does documenting where you got an artifact matter? What happens if provenance is unclear or contested?
+</p>
+
+<p>
+4. <strong>Stratigraphic Layers:</strong> What digital "layers" do you think are most important to preserve? Content? Metadata? Relationships? Platform affordances?
+</p>
+
+<p>
+5. <strong>Community Consultation:</strong> When is it necessary to consult communities before preserving their content? When is it acceptable to preserve without asking?
+</p>
+
+<p>
+6. <strong>Personal Practice:</strong> Have you ever "excavated" your own digital artifacts (downloaded Facebook archive, exported tweets)? What did you learn?
+</p>
+
+<h2>Exercise: Plan a Digital Excavation</h2>
+
+<p>
+<strong>Scenario:</strong> A platform you use announces shutdown in 60 days. Plan its excavation.
+</p>
+
+<p>
+<strong>Choose a platform:</strong>
+- Small forum you participate in
+- Discord server you're part of
+- Niche social network
+- Personal blog community
+</p>
+
+<p>
+<strong>Part 1: Reconnaissance Report</strong> (500 words)
+- Platform type, scale, data types
+- Technical barriers (login walls, APIs, rate limits)
+- Existing documentation (Wayback Machine, community wikis)
+- Estimated preservation time and storage
+</p>
+
+<p>
+<strong>Part 2: Excavation Strategy</strong> (800 words)
+- What tools will you use? (wget, Puppeteer, API clients)
+- What layers will you preserve? (content, metadata, relationships)
+- What's your timeline? (week-by-week plan)
+- How will you handle rate limits or technical barriers?
+</p>
+
+<p>
+<strong>Part 3: Ethical Framework</strong> (500 words)
+- What content should NOT be preserved? (privacy, consent, harm)
+- Will you respect robots.txt? Why/why not?
+- Will you consult the community? How?
+- How will you handle takedown requests?
+</p>
+
+<p>
+<strong>Part 4: Provenance Documentation</strong> (300 words)
+- Write a provenance record for your imagined excavation
+- Include: capture method, date, completeness, modifications, storage
+</p>
+
+<p>
+<strong>Part 5: Reflection</strong> (200 words)
+- What's the hardest part of this excavation?
+- What ethical dilemmas did you face?
+- Would you actually do this if the platform announced shutdown?
+</p>
+
+<h2>Further Reading</h2>
+
+<h3>On Web Archiving Methods</h3>
+
+<p>
+- Brügger, Niels. </em>The Archived Web: Doing History in the Digital Age<em>. MIT Press, 2018.
+  - How to work with web archives as historical sources
+</p>
+
+<p>
+- Niu, Jinfang. "An Overview of Web Archiving." </em>D-Lib Magazine<em> 18, no. 3/4 (2012).
+  - Technical methods for web preservation
+</p>
+
+<p>
+- Archive Team. "So You Want to Archive a Website." https://wiki.archiveteam.org/
+  - Practical guide from guerrilla archivists
+</p>
+
+<h3>On Digital Forensics</h3>
+
+<p>
+- Carrier, Brian. </em>File System Forensic Analysis<em>. Addison-Wesley, 2005.
+  - Technical deep dive on recovering deleted data
+</p>
+
+<p>
+- Kirschenbaum, Matthew. </em>Mechanisms: New Media and the Forensic Imagination<em>. MIT Press, 2008.
+  - Humanistic approach to digital forensics
+</p>
+
+<h3>On Archaeological Methods (Physical)</h3>
+
+<p>
+- Renfrew, Colin, and Paul Bahn. </em>Archaeology: Theories, Methods, and Practice<em>. Thames & Hudson, 2016.
+  - Classic textbook (useful for understanding stratigraphic thinking)
+</p>
+
+<p>
+- Hodder, Ian. "The Interpretation of Documents and Material Culture." In </em>Handbook of Qualitative Research<em>, edited by Norman Denzin and Yvonna Lincoln, 393-402. Sage, 2000.
+  - Interpretive archaeology (translates to digital context)
+</p>
+
+<h3>On Ethics</h3>
+
+<p>
+- Society for American Archaeology. "Principles of Archaeological Ethics." https://www.saa.org/
+  - Professional ethics code (adaptable to digital)
+</p>
+
+<p>
+- Caswell, Michelle. </em>Urgent Archives: Enacting Liberatory Memory Work<em>. Routledge, 2021.
+  - Ethics of archiving marginalized communities
+</p>
+
+<p>
+<strong>End of Chapter 7</strong>
+</p>
+
+<p>
+</em>Next: Chapter 8 — Digital Forensics for Archaeobytologists*
+</p>
+
+
+        </article>
+        <div class="nav">
+            <a href="index.html">Back to Table of Contents</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- === 1. Primary Meta Tags === -->
+    <title>Chapter 3: The Custodial Filter | Archaeobytology.org</title>
+    <meta name="title" content="Chapter 3: The Custodial Filter | Archaeobytology.org">
+    <meta name="description" content="This chapter establishes the ethical and legal framework for responsible digital preservation: the Custodial Protocol.">
+    <meta name="keywords" content="Custodial Filter, Digital Ethics, PII, Copyright, Fair Use, Digital Preservation, Archaeobytology">
+    <meta name="author" content="archaeobytology.org (An unearth.im Project)">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <link rel="canonical" href="https://archaeobytology.org/200-level/200-ch3.html" />
+
+    <!-- === 2. Webmention Endpoint === -->
+    <link rel="webmention" href="https://webmention.io/unearth.im/webmention" />
+
+    <!-- === 3. Open Graph / Facebook === -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://archaeobytology.org/200-level/200-ch3.html">
+    <meta property="og:title" content="Chapter 3: The Custodial Filter | Archaeobytology.org">
+    <meta property="og:description" content="This chapter establishes the ethical and legal framework for responsible digital preservation: the Custodial Protocol.">
+    <meta property="og:image" content="https://archaeobytology.org/200-level/og-image.png">
+    <meta property="og:site_name" content="Archaeobytology.org">
+
+    <!-- === 4. Twitter Card === -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://archaeobytology.org/200-level/200-ch3.html">
+    <meta property="twitter:title" content="Chapter 3: The Custodial Filter | Archaeobytology.org">
+    <meta property="twitter:description" content="This chapter establishes the ethical and legal framework for responsible digital preservation: the Custodial Protocol.">
+    <meta property="twitter:image" content="https://archaeobytology.org/200-level/og-image.png">
+
+    <!-- === Favicons === -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta name="theme-color" content="#fcfaf5">
+    <meta name="msapplication-TileColor" content="#BF5700">
+
+    <!-- === Tailwind CSS === -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'unearth-bg': '#fcfaf5',
+            'unearth-surface': '#f9fafb',
+            'unearth-main': '#1a1a1a',
+            'unearth-secondary': '#6b7280',
+            'unearth-primary': '#BF5700',
+            'unearth-course-accent': '#435d7a',
+            'unearth-border': '#e5e7eb',
+          },
+          fontFamily: {
+            'narrative': ['Lora', 'serif'],
+            'ui': ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+    </script>
+
+    <!-- === Google Fonts: Lora & Inter === -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        html { scroll-behavior: smooth; }
+        .prose h2 {
+            font-size: 1.875rem;
+            line-height: 2.25rem;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+            color: #1a1a1a;
+            font-family: 'Lora', serif;
+            margin-top: 4rem;
+            margin-bottom: 1.5rem;
+        }
+        .prose h3 {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+            color: #1a1a1a;
+            font-family: 'Lora', serif;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+        }
+        .prose h4 {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+            color: #1a1a1a;
+            font-family: 'Lora', serif;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .prose p, .prose ul, .prose ol {
+            font-size: 1.25rem;
+            font-family: 'Lora', serif;
+            line-height: 1.8;
+            margin-top: 1.5rem;
+            color: #1a1a1a;
+        }
+        .prose strong {
+            color: #1a1a1a;
+            font-weight: 700;
+        }
+        .prose em {
+            font-style: italic;
+        }
+        .prose sup {
+            color: #BF5700;
+            font-weight: 600;
+            font-size: 0.8em;
+            vertical-align: super;
+            margin-left: 2px;
+        }
+        .prose code {
+            background-color: #e5e7eb;
+            padding: 0.125rem 0.375rem;
+            border-radius: 0.25rem;
+            font-size: 1rem;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            color: #BF5700;
+        }
+        .works-cited ol { list-style: none; padding-left: 0; }
+        .works-cited li { display: flex; align-items: baseline; margin-top: 1rem; }
+        .works-cited li span:first-child { width: 4rem; flex-shrink: 0; }
+        .works-cited li span:last-child { flex: 1; }
+    </style>
+</head>
+<body class="bg-unearth-bg text-unearth-main antialiased font-ui relative">
+
+    <!-- === Section Indicator Bar === -->
+    <div class="h-2 w-full bg-unearth-course-accent"></div>
+
+    <!-- === Header === -->
+    <nav class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div class="flex justify-between items-center">
+            <a href="../index.html" title="Back to archaeobytology.org" class="flex items-baseline space-x-2 group">
+                <span class="text-2xl font-bold tracking-tighter text-unearth-main group-hover:text-unearth-primary transition-colors font-narrative">archaeobytology</span>
+                <span class="text-xl font-bold text-unearth-primary font-narrative">.org</span>
+            </a>
+            <div>
+                <span class="text-sm text-unearth-secondary hidden sm:inline">
+               an 
+                <a href="https://unearth.im" class="font-semibold transition-colors group">
+                    <span class="text-unearth-main group-hover:text-unearth-primary">unearth</span><span class="text-unearth-primary">.im</span></a> 
+        series    
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- === Hero Section === -->
+    <header class="py-24 sm:py-32 border-b border-unearth-border">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl sm:text-7xl font-bold tracking-tighter text-unearth-main leading-tight font-narrative">
+                Chapter 3<span class="text-unearth-course-accent">.</span> The Custodial Filter
+            </h1>
+            <p class="mt-6 text-xl sm:text-2xl text-unearth-secondary max-w-3xl mx-auto font-narrative" style="line-height: 1.8;">
+                Ethics, Law, and Responsibility in Digital Preservation
+            </p>
+        </div>
+    </header>
+
+    <!-- === Main Content: Essay === -->
+    <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+        
+        <!-- Back to Index Link -->
+        <div class="mb-16">
+            <a href="../index.html" class="inline-block bg-unearth-course-accent text-white font-semibold font-ui px-6 py-3 rounded-lg shadow-md hover:bg-unearth-main transition-all duration-200">
+                &larr; Return to Main Index
+            </a>
+        </div>
+        
+        <article class="prose">
+            <div class="bg-unearth-surface border border-unearth-border rounded-lg p-6 mb-12 font-narrative text-lg">
+                <p class="!mt-0"><strong>Course:</strong> Archaeobytology 200: Advanced Triage & Methodology</p>
+                <p><strong>Section:</strong> Part II - The Anvil</p>
+                <p class="!mb-0"><strong>Status:</strong> Final Academic Draft</p>
+            </div>
+
+            <h3>Abstract</h3>
+            <p>This chapter establishes the ethical and legal framework that governs all preservation decisions in Archaeobytology: the Custodial Filter. While Chapters 1 and 2 provided the methodology for finding and classifying artifacts, this chapter addresses the critical question that precedes all technical work: <em>Should this artifact be preserved, and if so, how should access be controlled?</em> Drawing on privacy law, copyright doctrine, archival ethics, and emerging frameworks for digital stewardship, this text provides a formal decision protocol for navigating the tension between preservation (the imperative to save) and protection (the duty to prevent harm). The Custodial Filter is not a barrier to preservation but a necessary safeguard that ensures the Archaeobytologist operates as a responsible steward, not a digital grave robber.</p>
+
+            <h2>Preamble: The Crisis of Custody</h2>
+            <p>The Excavation Protocol (Chapter 1) taught the practitioner how to find the artifact. The Triage Protocol (Chapter 2) taught them how to classify its state. But between diagnosis and preservation lies a third, more profound challenge: the question of <em>custody</em>.</p>
+            <p>The term "custody" comes from the Latin <em>custodia</em>, meaning "guardianship" or "protection."<sup id="ref-1"><a href="#fn-1" class="text-unearth-course-accent hover:underline">[1]</a></sup> In law, custody implies not just possession but <em>responsibility</em>—the duty to care for something on behalf of others, including those who cannot speak for themselves. The Archaeobytologist, upon excavating an artifact, becomes its custodian. This is not a right but a <em>burden</em>.</p>
+            <p>This burden is unique to the digital realm. In physical archaeology, the artifact is dead matter: a potsherd, a bone, a tool. It cannot speak, cannot be harmed further, and its "life" ended millennia ago. But the digital artifact is different. It may contain the living voices of real people—their names, their faces, their private communications. It may be copyrighted, owned by entities that still exist. It may carry cultural significance to communities that never consented to its preservation. It may, if mishandled, cause tangible harm.</p>
+            <p>This is the <em>crisis of custody</em>: the digital past is not safely dead. It is entangled with the living present. The practitioner who excavates without ethical consideration is not an archaeologist but a <em>voyeur</em>, or worse, a <em>thief</em>.</p>
+            <p>The Custodial Filter is the formal protocol that prevents this. It is the set of tests, questions, and frameworks that must be applied to every artifact <em>before</em> preservation work begins. It asks three foundational questions:</p>
+            <ul>
+                <li><strong>Privacy:</strong> Does this artifact contain information that could harm living individuals?</li>
+                <li><strong>Legality:</strong> Do I have the legal right to preserve and share this artifact?</li>
+                <li><strong>Ethics:</strong> Even if legal, is preservation the <em>right</em> thing to do?</li>
+            </ul>
+            <p>This chapter provides the formal methodology for answering these questions. It is the conscience of the discipline.</p>
+
+            <h2>Filter 1: The Privacy Test (Protecting the Living)</h2>
+            <p>The first and most urgent filter is privacy. The question is simple but consequential: <strong>Does this artifact contain Personally Identifiable Information (PII) that could be used to identify, contact, or harm living individuals?</strong></p>
+
+            <h3>The Taxonomy of PII</h3>
+            <p>Not all personal information is equally sensitive. Privacy scholars distinguish between three categories of identifiers, as formalized in the GDPR and privacy impact assessment frameworks:<sup id="ref-2"><a href="#fn-2" class="text-unearth-course-accent hover:underline">[2]</a></sup></p>
+
+            <h4>Category 1: Direct Identifiers</h4>
+            <p>These are data points that <em>directly</em> identify a specific individual without need for additional information.</p>
+            <ul>
+                <li>Full legal names (especially when combined with location)</li>
+                <li>Email addresses</li>
+                <li>Phone numbers</li>
+                <li>Social Security Numbers or national ID numbers</li>
+                <li>Street addresses</li>
+                <li>Photographs of faces (especially with metadata)</li>
+            </ul>
+            <p><strong>Risk Level:</strong> HIGH. These must be redacted unless explicit consent exists or the individual is a public figure.</p>
+
+            <h4>Category 2: Quasi-Identifiers</h4>
+            <p>These are data points that, when combined, can be used to re-identify individuals even if no direct identifier is present. Computer scientist Latanya Sweeney demonstrated that 87% of the U.S. population could be uniquely identified using just three quasi-identifiers: ZIP code, birthdate, and gender.<sup id="ref-3"><a href="#fn-3" class="text-unearth-course-accent hover:underline">[3]</a></sup></p>
+            <ul>
+                <li>Dates of birth (especially when combined with location)</li>
+                <li>ZIP codes or postal codes</li>
+                <li>Occupation or job title</li>
+                <li>Educational institution attended</li>
+                <li>Usernames (especially if reused across platforms)</li>
+            </ul>
+            <p><strong>Risk Level:</strong> MEDIUM-HIGH. These require contextual assessment. A single quasi-identifier may be acceptable; multiple in combination are not.</p>
+
+            <h4>Category 3: Sensitive Attributes</h4>
+            <p>These are data points that, while not directly identifying, reveal information that could cause harm, discrimination, or distress if exposed.</p>
+            <ul>
+                <li>Medical information or health status</li>
+                <li>Sexual orientation or gender identity</li>
+                <li>Religious or political beliefs</li>
+                <li>Financial information (debts, income)</li>
+                <li>Criminal history or allegations</li>
+                <li>Biometric data (fingerprints, DNA)</li>
+            </ul>
+            <p><strong>Risk Level:</strong> CONTEXT-DEPENDENT. Even if anonymized, this information may cause harm to the individual if the context makes re-identification possible.</p>
+
+            <h3>The REDACT vs. PRESERVE Decision Tree</h3>
+            <p>Once PII is identified, the practitioner must make a formal decision: redact, embargo, or preserve as-is.</p>
+
+            <h4>Path 1: REDACT (Anonymize the Artifact)</h4>
+            <p><strong>When to use:</strong> The artifact has high research value, but PII is present and cannot be justified as necessary.</p>
+            <p><strong>Methodology:</strong></p>
+            <ul>
+                <li><strong>Automated Redaction:</strong> Use tools like <code>scrubadub</code> (Python) or regex patterns to find and replace PII with <code>[REDACTED]</code> or pseudonyms.</li>
+                <li><strong>Manual Review:</strong> Automated tools miss context. A human must verify that quasi-identifiers in combination have been addressed.</li>
+                <li><strong>Cryptographic Hashing:</strong> If preserving structure matters (e.g., for network analysis), replace names with consistent hashes (e.g., "Alice" becomes "User_A3F7B2").</li>
+            </ul>
+            <p><strong>Academic Grounding:</strong> This approach aligns with the "k-anonymity" framework, where data is modified such that any individual is indistinguishable from at least k-1 others in the dataset.<sup id="ref-4"><a href="#fn-4" class="text-unearth-course-accent hover:underline">[4]</a></sup></p>
+
+            <h4>Path 2: EMBARGO (Restrict Access)</h4>
+            <p><strong>When to use:</strong> The artifact's research value depends on preserving the PII (e.g., a study of online harassment patterns requires seeing actual usernames), but public release would cause harm.</p>
+            <p><strong>Methodology:</strong></p>
+            <ul>
+                <li><strong>Researcher-Only Access:</strong> Place the artifact in a restricted archive accessible only to vetted researchers with IRB approval.</li>
+                <li><strong>Time-Limited Embargo:</strong> Set a release date (e.g., 25 years, 50 years) after which the artifact becomes public, following archival norms for sensitive materials.</li>
+                <li><strong>Aggregated Access:</strong> Provide statistical summaries or visualizations of the data without releasing the raw artifact.</li>
+            </ul>
+            <p><strong>Precedent:</strong> This mirrors practices in oral history archives, where interviews containing sensitive material are embargoed until the interviewee's death or a specified date.<sup id="ref-5"><a href="#fn-5" class="text-unearth-course-accent hover:underline">[5]</a></sup></p>
+
+            <h4>Path 3: PRESERVE AS-IS (Public Release Justified)</h4>
+            <p><strong>When to use:</strong> The individuals are public figures, the information is already public, or the historical significance outweighs privacy concerns.</p>
+            <p><strong>Justification Framework:</strong></p>
+            <ul>
+                <li><strong>Public Figure Exception:</strong> Elected officials, CEOs, public intellectuals—their digital traces are matters of public record.</li>
+                <li><strong>Already Public:</strong> If the artifact was publicly accessible (e.g., a public forum post, a published blog), preservation is not creating new exposure.</li>
+                <li><strong>Historical Significance:</strong> In rare cases, the artifact's importance to understanding a historical moment (e.g., documentation of a social movement) justifies preservation despite PII presence. This requires rigorous justification and peer review.</li>
+            </ul>
+            <p><strong>Warning:</strong> This path must be taken with extreme caution. As privacy scholar Helen Nissenbaum argues, "privacy is contextual"—something posted publicly in 2005 may not have been intended to be searchable, archived, and analyzed in 2025.<sup id="ref-6"><a href="#fn-6" class="text-unearth-course-accent hover:underline">[6]</a></sup> The "already public" exception is not a blank check.</p>
+
+            <h2>Filter 2: The Copyright Test (Respecting Ownership)</h2>
+            <p>The second filter addresses legality: <strong>Do I have the legal right to preserve and distribute this artifact?</strong></p>
+            <p>Unlike physical archaeology, where artifacts are often unclaimed or fall under "finders keepers" doctrines, digital artifacts almost always have an owner. A <code>.mp3</code> file is copyrighted. A blog post is copyrighted. A screenshot of a website is copyrighted. The practitioner is not excavating abandoned property; they are handling someone's intellectual property.</p>
+
+            <h3>The Four Pillars of Fair Use</h3>
+            <p>In U.S. law, the "fair use" doctrine provides a limited exception to copyright, allowing use of copyrighted material without permission for purposes such as research, education, and criticism.<sup id="ref-7"><a href="#fn-7" class="text-unearth-course-accent hover:underline">[7]</a></sup> Fair use is determined by a four-factor test:</p>
+
+            <h4>Factor 1: Purpose and Character of Use</h4>
+            <p><strong>Question:</strong> Is the use transformative? Is it for nonprofit educational or research purposes?</p>
+            <p><strong>Archaeobytology Application:</strong> Preservation for scholarly research is <em>highly favored</em> under this factor. The work is transformative (the artifact is being studied, not consumed as entertainment) and nonprofit.</p>
+            <p><strong>Example:</strong> Preserving a GeoCities homepage to study early web design patterns is transformative. Mirroring a GeoCities homepage to "revive cool 90s sites" for nostalgia traffic is not.</p>
+
+            <h4>Factor 2: Nature of the Copyrighted Work</h4>
+            <p><strong>Question:</strong> Is the work factual or creative? Is it published or unpublished?</p>
+            <p><strong>Archaeobytology Application:</strong> Factual works (databases, documentation, logs) receive less copyright protection than creative works (art, music, fiction). Unpublished works (private emails, drafts) receive stronger protection.</p>
+            <p><strong>Example:</strong> Preserving a README.txt file (factual, functional) is more defensible than preserving an unpublished novel found on an abandoned server.</p>
+
+            <h4>Factor 3: Amount and Substantiality</h4>
+            <p><strong>Question:</strong> How much of the work is being used? Is the "heart" of the work being taken?</p>
+            <p><strong>Archaeobytology Application:</strong> Preserving a <em>portion</em> of a work for analysis is stronger than preserving it in its entirety for redistribution. However, preserving the whole work is sometimes necessary for research (e.g., a complete website for link analysis).</p>
+            <p><strong>Example:</strong> Preserving a single blog post from a 500-post blog is more defensible than mirroring the entire blog for public access.</p>
+
+            <h4>Factor 4: Effect on the Market</h4>
+            <p><strong>Question:</strong> Does this use harm the market value of the original work?</p>
+            <p><strong>Archaeobytology Application:</strong> If the artifact is abandoned (the creator is unreachable, the platform is dead), market harm is nearly impossible. If the creator is active and still selling the work, preservation could harm their market.</p>
+            <p><strong>Example:</strong> Preserving a Flash game from a dead website (no market exists) is defensible. Preserving and redistributing a Flash game still sold on Steam is not.</p>
+
+            <h3>The Orphan Works Problem</h3>
+            <p>The most common copyright challenge in Archaeobytology is the "orphan work"—a copyrighted artifact whose owner cannot be identified or located. Legally, these works remain under copyright (in the U.S., for 70 years after the author's death), but practically, no one can grant permission.<sup id="ref-8"><a href="#fn-8" class="text-unearth-course-accent hover:underline">[8]</a></sup></p>
+            <p><strong>Best Practice:</strong> Document a "good faith effort" to locate the copyright holder. This includes:</p>
+            <ul>
+                <li>Checking WHOIS records for domain ownership</li>
+                <li>Searching for the creator's name + contact info</li>
+                <li>Posting a public call for the owner on relevant forums</li>
+            </ul>
+            <p>If after reasonable effort the owner cannot be found, preservation under fair use (with full citation and takedown policy) is the least-worst option. As copyright scholar Lawrence Lessig argues, orphan works law is broken, but the risk of lawsuit from an untraceable owner is near zero.<sup id="ref-9"><a href="#fn-9" class="text-unearth-course-accent hover:underline">[9]</a></sup></p>
+
+            <h3>The CITE & PRESERVE Protocol</h3>
+            <p>For all copyrighted artifacts preserved under fair use, the practitioner <em>must</em>:</p>
+            <ol>
+                <li><strong>Cite the Original Creator:</strong> Include full attribution in metadata (creator name, original URL, date).</li>
+                <li><strong>Provide Context:</strong> Explain the research purpose in accompanying documentation.</li>
+                <li><strong>Offer Takedown:</strong> Include a clear contact method for copyright holders to request removal.</li>
+                <li><strong>Limit Access if Necessary:</strong> If full public release is questionable, use researcher-only access or time-limited embargo.</li>
+            </ol>
+            <p>This protocol balances preservation (the public good) with respect for ownership (the private right).</p>
+
+            <h2>Filter 3: The Ethics Test (Beyond Law)</h2>
+            <p>The third filter is the most difficult because it cannot be codified. It asks: <strong>Even if preservation is legal and privacy-compliant, is it <em>ethical</em>?</strong></p>
+            <p>Law defines the floor of acceptable behavior. Ethics defines the ceiling of responsible behavior. The Archaeobytologist must operate at the ceiling.</p>
+
+            <h3>The Harm Principle</h3>
+            <p>The foundational ethical guideline comes from philosopher John Stuart Mill's "harm principle": actions are permissible unless they harm others.<sup id="ref-10"><a href="#fn-10" class="text-unearth-course-accent hover:underline">[10]</a></sup> In Archaeobytology, this translates to: <strong>Preservation is justified unless it causes tangible harm to individuals or communities.</strong></p>
+            <p><strong>Types of Potential Harm:</strong></p>
+            <ul>
+                <li><strong>Reputational Harm:</strong> Exposing past statements or affiliations that could damage someone's current reputation (e.g., teenage forum posts, early blog entries with now-disavowed views).</li>
+                <li><strong>Safety Harm:</strong> Exposing location data, abuse survivor identities, or whistleblower information that could lead to physical danger.</li>
+                <li><strong>Dignitary Harm:</strong> Violating the dignity of the dead by exposing private communications without family consent (e.g., preserved private messages from a deceased individual).</li>
+                <li><strong>Community Harm:</strong> Exposing cultural practices or knowledge that a community considers sacred or private (e.g., indigenous language resources not intended for outsiders).</li>
+            </ul>
+            <p><strong>Test:</strong> For each artifact, ask: "If this person saw this preserved and public, would they feel violated? Would they be endangered?" If yes, preservation must be reconsidered.</p>
+
+            <h3>The Community Consent Model</h3>
+            <p>One of the most ethically complex scenarios is the preservation of artifacts created by marginalized or indigenous communities. These artifacts may be legally "public" (posted on open forums) but culturally "private" (intended only for in-group consumption).</p>
+            <p>Drawing on indigenous data sovereignty frameworks, scholars like Tahu Kukutai argue that communities should have the right to control how their cultural data is used, even if that data is technically public.<sup id="ref-11"><a href="#fn-11" class="text-unearth-course-accent hover:underline">[11]</a></sup> This has led to the development of the CARE Principles for Indigenous Data Governance: Collective benefit, Authority to control, Responsibility, and Ethics.<sup id="ref-12"><a href="#fn-12" class="text-unearth-course-accent hover:underline">[12]</a></sup></p>
+            <p><strong>Best Practice for Community-Sensitive Artifacts:</strong></p>
+            <ol>
+                <li><strong>Identify the Community:</strong> Is this artifact associated with a specific cultural, ethnic, or marginalized group?</li>
+                <li><strong>Seek Input:</strong> Contact community leaders, cultural organizations, or tribal councils to request guidance.</li>
+                <li><strong>Respect Refusal:</strong> If the community requests that the artifact not be preserved or made public, honor that request even if legal preservation would be possible.</li>
+                <li><strong>Co-Stewardship:</strong> Where possible, work <em>with</em> the community to determine preservation and access terms.</li>
+            </ol>
+            <p><strong>Example:</strong> A researcher discovers an archived forum for LGBTQ+ youth from the early 2000s. Even if the forum was technically public, preserving and publicizing it without consulting LGBTQ+ advocacy groups could expose individuals who were closeted at the time. Ethical practice requires community engagement.</p>
+
+            <h3>The Right to Be Forgotten</h3>
+            <p>The European Union's GDPR enshrines a "right to be forgotten"—the ability for individuals to request deletion of personal data under certain conditions.<sup id="ref-13"><a href="#fn-13" class="text-unearth-course-accent hover:underline">[13]</a></sup> While this right does not apply to archival research in the U.S., it represents an important ethical principle: <strong>individuals should have agency over their digital past.</strong></p>
+            <p><strong>Ethical Protocol:</strong></p>
+            <ul>
+                <li>If an individual contacts you requesting removal of their artifact from your archive, <em>seriously consider it</em>.</li>
+                <li>If the artifact is of genuine historical significance (e.g., a public statement by a government official), you may decline, but you must provide a clear justification.</li>
+                <li>If the artifact is of minimal research value, removal is the ethical choice even if legal preservation is possible.</li>
+            </ul>
+            <p>As digital archivist Kate Theimer argues, "The digital archive must be a living, responsive institution, not a prison for the past."<sup id="ref-14"><a href="#fn-14" class="text-unearth-course-accent hover:underline">[14]</a></sup></p>
+
+            <h2>The Custodial Report: Formal Documentation</h2>
+            <p>Just as the Triage Protocol requires a formal Triage Report, the Custodial Filter requires a <strong>Custodial Report</strong> documenting all ethical and legal decisions.</p>
+
+            <h3>Required Elements of a Custodial Report:</h3>
+            <ol>
+                <li><strong>Artifact Identifier:</strong> File name, URL, or unique descriptor</li>
+                <li><strong>PII Assessment:</strong>
+                    <ul>
+                        <li>PII Present? (YES/NO)</li>
+                        <li>If YES: Category (Direct/Quasi/Sensitive)</li>
+                        <li>Action Taken: (REDACT/EMBARGO/PRESERVE AS-IS)</li>
+                        <li>Justification: (2-3 sentences)</li>
+                    </ul>
+                </li>
+                <li><strong>Copyright Assessment:</strong>
+                    <ul>
+                        <li>Copyright Status: (Public Domain/Fair Use/Permission Granted/Orphan Work)</li>
+                        <li>Fair Use Factors: (Four-factor analysis summary)</li>
+                        <li>Owner Contact Attempt: (YES/NO, with documentation)</li>
+                    </ul>
+                </li>
+                <li><strong>Ethical Assessment:</strong>
+                    <ul>
+                        <li>Potential Harm: (NONE/LOW/MEDIUM/HIGH)</li>
+                        <li>If MEDIUM or HIGH: Harm Type (Reputational/Safety/Dignitary/Community)</li>
+                        <li>Mitigation Steps Taken</li>
+                    </ul>
+                </li>
+                <li><strong>Access Control:</strong> (PUBLIC/EMBARGO/RESEARCHER-ONLY/REDACTED VERSION ONLY)</li>
+                <li><strong>Takedown Policy:</strong> Contact method and response protocol</li>
+                <li><strong>Date of Assessment:</strong> Because legal and ethical standards evolve</li>
+            </ol>
+
+            <h3>Example Custodial Report:</h3>
+            <p><strong>Artifact:</strong> <code>myspace_messages_2006.csv</code> (Exported private messages from MySpace)</p>
+            <p><strong>PII Assessment:</strong></p>
+            <ul>
+                <li>PII Present: YES</li>
+                <li>Category: Direct Identifiers (full names, email addresses in signatures)</li>
+                <li>Action: EMBARGO with researcher-only access after redaction of email addresses</li>
+                <li>Justification: Messages contain valuable data on early social network communication patterns, but direct identifiers create reputational risk. Emails redacted; names retained in hashed form for network analysis.</li>
+            </ul>
+            <p><strong>Copyright Assessment:</strong></p>
+            <ul>
+                <li>Copyright Status: Uncertain (messages authored by users, platform defunct)</li>
+                <li>Fair Use Analysis: Transformative research use (Factor 1: ✓), factual communication (Factor 2: ✓), dataset used for analysis not redistribution (Factor 3: ✓), no market harm as platform dead (Factor 4: ✓)</li>
+                <li>Owner Contact: Attempted contact with 5 most active users via archived email addresses; 0 responses after 60 days</li>
+            </ul>
+            <p><strong>Ethical Assessment:</strong></p>
+            <ul>
+                <li>Potential Harm: MEDIUM (reputational harm if adolescent messages made public)</li>
+                <li>Harm Type: Reputational (users were teenagers; messages may contain now-embarrassing content)</li>
+                <li>Mitigation: Researcher-only access with IRB oversight; pseudonymization of all usernames; embargo until 2040 (when most users will be 40+ years old)</li>
+            </ul>
+            <p><strong>Access Control:</strong> RESEARCHER-ONLY (Pseudonymized version); FULL EMBARGO on raw data until 2040</p>
+            <p><strong>Takedown Policy:</strong> Any individual identified in dataset may request full removal via [email protected]; requests reviewed within 30 days</p>
+            <p><strong>Assessment Date:</strong> November 21, 2025</p>
+
+            <h2>Conclusion: The Guardian, Not the Grave Robber</h2>
+            <p>The Custodial Filter is not an obstacle to preservation. It is the <em>foundation</em> of responsible preservation. Without it, the Archaeobytologist is not a scholar but a data hoarder, a privacy violator, or a copyright infringer.</p>
+            <p>The practitioner who applies the Custodial Filter acknowledges a fundamental truth: <strong>the digital past is not abandoned property. It is entangled with living people, living communities, and living systems of ownership and meaning.</strong> To excavate without care is to harm.</p>
+            <p>The Custodial Filter ensures that every preserved artifact can be defended on three grounds:</p>
+            <ul>
+                <li><strong>Privacy:</strong> It does not expose individuals to harm.</li>
+                <li><strong>Legality:</strong> It respects intellectual property rights.</li>
+                <li><strong>Ethics:</strong> It honors the dignity and agency of those whose lives are reflected in the artifact.</li>
+            </ul>
+            <p>This is the discipline's vow: to be a <em>guardian</em> of the past, not a <em>grave robber</em>. To preserve with purpose, not curiosity. To protect, not exploit.</p>
+            <p>With the artifact now excavated (Chapter 1), triaged (Chapter 2), and cleared through the Custodial Filter (Chapter 3), the practitioner is finally ready to proceed to the technical work of preservation: the choice between migration, emulation, and reconstruction. That is the work of Chapter 4.</p>
+            <p>But preservation without custody is theft. The Filter comes first. Always.</p>
+
+            <div class="works-cited">
+                <h2>Works Cited</h2>
+                <ol>
+                    <li id="fn-1"><span><a href="#ref-1" class="text-unearth-secondary hover:underline">[1] &uarr;</a></span><span>Oxford English Dictionary. (2025). "Custody." Retrieved from https://www.oed.com/ — Etymology from Latin <em>custodia</em>, establishing the concept of guardianship.</span></li>
+                    <li id="fn-2"><span><a href="#ref-2" class="text-unearth-secondary hover:underline">[2] &uarr;</a></span><span>European Union. (2016). General Data Protection Regulation (GDPR), Articles 4 & 9. Official Journal of the European Union. The GDPR's taxonomy of personal data categories provides the foundational framework for PII classification.</span></li>
+                    <li id="fn-3"><span><a href="#ref-3" class="text-unearth-secondary hover:underline">[3] &uarr;</a></span><span>Sweeney, L. (2000). "Simple Demographics Often Identify People Uniquely." Carnegie Mellon University, Data Privacy Working Paper 3. Foundational work demonstrating re-identification risk from quasi-identifiers.</span></li>
+                    <li id="fn-4"><span><a href="#ref-4" class="text-unearth-secondary hover:underline">[4] &uarr;</a></span><span>Sweeney, L. (2002). "k-Anonymity: A Model for Protecting Privacy." <em>International Journal of Uncertainty, Fuzziness and Knowledge-Based Systems</em>, 10(5), 557-570. The foundational framework for anonymization in research datasets.</span></li>
+                    <li id="fn-5"><span><a href="#ref-5" class="text-unearth-secondary hover:underline">[5] &uarr;</a></span><span>Oral History Association. (2009). "Principles and Best Practices." Retrieved from https://oralhistory.org/ — Guidelines for embargo practices in sensitive oral history collections.</span></li>
+                    <li id="fn-6"><span><a href="#ref-6" class="text-unearth-secondary hover:underline">[6] &uarr;</a></span><span>Nissenbaum, H. (2009). <em>Privacy in Context: Technology, Policy, and the Integrity of Social Life</em>. Stanford University Press. Nissenbaum's theory of "contextual integrity" explains why "already public" does not equal "consent to archive."</span></li>
+                    <li id="fn-7"><span><a href="#ref-7" class="text-unearth-secondary hover:underline">[7] &uarr;</a></span><span>U.S. Copyright Act, 17 U.S.C. § 107 (Fair Use). The four-factor test remains the foundational framework for fair use analysis in U.S. law.</span></li>
+                    <li id="fn-8"><span><a href="#ref-8" class="text-unearth-secondary hover:underline">[8] &uarr;</a></span><span>U.S. Copyright Office. (2015). <em>Orphan Works and Mass Digitization</em>. A Report of the Register of Copyrights. Documents the orphan works problem and proposed (but not enacted) solutions.</span></li>
+                    <li id="fn-9"><span><a href="#ref-9" class="text-unearth-secondary hover:underline">[9] &uarr;</a></span><span>Lessig, L. (2004). <em>Free Culture: How Big Media Uses Technology and the Law to Lock Down Culture and Control Creativity</em>. Penguin Press. Lessig's critique of orphan works law provides the ethical justification for preservation despite copyright uncertainty.</span></li>
+                    <li id="fn-10"><span><a href="#ref-10" class="text-unearth-secondary hover:underline">[10] &uarr;</a></span><span>Mill, J. S. (1859). <em>On Liberty</em>. John W. Parker and Son. Mill's harm principle remains foundational to ethical frameworks in research and archival practice.</span></li>
+                    <li id="fn-11"><span><a href="#ref-11" class="text-unearth-secondary hover:underline">[11] &uarr;</a></span><span>Kukutai, T., & Taylor, J. (Eds.). (2016). <em>Indigenous Data Sovereignty: Toward an Agenda</em>. ANU Press. Foundational work on the right of indigenous communities to control their data.</span></li>
+                    <li id="fn-12"><span><a href="#ref-12" class="text-unearth-secondary hover:underline">[12] &uarr;</a></span><span>Carroll, S. R., et al. (2020). "The CARE Principles for Indigenous Data Governance." <em>Data Science Journal</em>, 19(43), 1-12. The CARE Principles provide an actionable framework for ethical data stewardship with indigenous communities.</span></li>
+                    <li id="fn-13"><span><a href="#ref-13" class="text-unearth-secondary hover:underline">[13] &uarr;</a></span><span>European Union. (2016). GDPR Article 17: Right to Erasure ("Right to Be Forgotten"). While not directly applicable in the U.S., this principle represents an important ethical standard.</span></li>
+                    <li id="fn-14"><span><a href="#ref-14" class="text-unearth-secondary hover:underline">[14] &uarr;</a></span><span>Theimer, K. (2018). "Digital Archives Should Be Living, Responsive Institutions." <em>ArchivesNext</em> (blog). Retrieved from http://www.archivesnext.com/ — Theimer's advocacy for responsive, ethical archival practice.</span></li>
+                </ol>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- === Footer === -->
+    <footer class="mt-16 sm:mt-24 py-12 border-t border-unearth-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm text-unearth-secondary font-ui">
+                &copy; 2025   
+                <a href="https://unearth.im" class="font-semibold transition-colors group">
+                    <span class="text-unearth-main group-hover:text-unearth-primary">unearth</span><span class="text-unearth-primary">.im</span></a> | Archive & Anvil
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

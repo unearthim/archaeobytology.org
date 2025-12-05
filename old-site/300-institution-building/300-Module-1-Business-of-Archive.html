@@ -1,0 +1,639 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1: The Business of the Archive | ARCH 300: Institution Building</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Lora', serif; line-height: 1.8; color: #2E2E2E; background: #F8F7F4; padding: 2rem 1rem; }
+        .container { max-width: 900px; margin: 0 auto; background: #FFFFFF; padding: 3rem; border-radius: 15px; box-shadow: 0 4px 20px rgba(46,46,46,0.1); border: 1px solid #D1D1D1; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; color: #2E2E2E; margin-top: 2rem; margin-bottom: 1rem; line-height: 1.3; }
+        h1 { font-size: 2.5rem; font-weight: 700; margin-top: 0; border-bottom: 3px solid #A1824A; padding-bottom: 0.5rem; }
+        h2 { font-size: 2rem; font-weight: 700; margin-top: 2.5rem; }
+        h3 { font-size: 1.5rem; font-weight: 600; color: #5A7D8C; }
+        h4 { font-size: 1.25rem; font-weight: 600; color: #5A7D8C; }
+        p { margin-bottom: 1.25rem; font-size: 1.1rem; }
+        a { color: #A93400; text-decoration: underline; transition: color 0.3s; }
+        a:hover { color: #A95C3D; }
+        strong { font-weight: 600; }
+        em { font-style: italic; }
+        code { font-family: 'Courier New', monospace; background: #F8F7F4; padding: 0.2rem 0.4rem; border-radius: 3px; border: 1px solid #D1D1D1; font-size: 0.95rem; }
+        blockquote { border-left: 4px solid #A1824A; padding: 1rem 1.5rem; margin: 1.5rem 0; font-style: italic; color: #5A7D8C; background: #F8F7F4; border-radius: 0 8px 8px 0; }
+        hr { border: none; border-top: 2px solid #D1D1D1; margin: 2rem 0; }
+        .nav { text-align: center; padding: 1rem 0; border-top: 2px solid #D1D1D1; margin-top: 2rem; }
+        .nav a { display: inline-block; padding: 0.75rem 1.5rem; background: #A93400; color: #F8F7F4; text-decoration: none; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 600; margin: 0.5rem; }
+        .nav a:hover { background: #A95C3D; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <article>
+<h1>Module 1: The Business of the Archive</h1>
+<p>
+<strong>Archaeobytology 300: Institution Building & Strategic Infrastructure</strong>
+</p>
+
+<h2>Module Overview</h2>
+
+<p>
+<strong>Core Question:</strong> What are sustainable business models for preservation work that embody sovereign Ground ownership?
+</p>
+
+<p>
+<strong>Learning Objective:</strong> Students will design a complete preservation organization—including funding model, governance structure, technical architecture, and 10-year sustainability plan—that avoids the failure modes identified in Module 0.
+</p>
+
+<p>
+<strong>Time:</strong> Week 3-4
+</p>
+
+<h2>The Challenge</h2>
+
+<p>
+Module 0 diagnosed why preservation institutions fail. Module 1 asks you to build one that doesn't.
+</p>
+
+<p>
+<strong>The Constraint:</strong> You cannot rely on:
+- ❌ Platform revenue (you're trying to <em>escape</em> platforms)
+- ❌ Surveillance advertising (violates Three Pillars)
+- ❌ Heroic volunteer labor (identified as fragile in Module 0)
+- ❌ Speculation/financialization (Web3's failure mode)
+</p>
+
+<p>
+<strong>The Goal:</strong> Design a preservation organization that:
+- ✅ Can sustain itself for 10+ years
+- ✅ Embodies The Three Pillars (Declaration, Connection, Ground)
+- ✅ Survives founder departure
+- ✅ Resists platform capture or shutdown
+</p>
+
+<h2>Core Reading</h2>
+
+<h3>Primary Texts</h3>
+
+<p>
+<strong>Kahle, B. (1997).</strong> "Preserving the Internet." <em>Scientific American</em>.
+- Focus: How Internet Archive was initially conceived and funded
+</p>
+
+<p>
+<strong>Benkler, Y. (2006).</strong> <em>The Wealth of Networks.</em> Chapters 1-2.
+- Focus: Commons-based peer production vs. market-based models
+</p>
+
+<p>
+<strong>Doctorow, C. (2023).</strong> <em>The Internet Con.</em> Chapter 3: "The Collective Action Problem"
+- Focus: Why individual solutions fail; need for institutional coordination
+</p>
+
+<h3>Case Study Readings</h3>
+
+<p>
+<strong>Internet Archive Annual Reports (2020-2024)</strong>
+- Revenue sources: Donations (40%), Digital lending (25%), Scanning services (20%), Grants (15%)
+- Operating budget: ~$40M/year
+- Model: 501(c)(3) non-profit + earned revenue
+</p>
+
+<p>
+<strong>Software Heritage White Paper (2016)</strong>
+- Revenue sources: University consortium fees, government grants
+- Model: Academic collaboration
+- Technical: Distributed storage across partner institutions
+</p>
+
+<p>
+<strong>Archive Team Field Reports</strong>
+- Revenue sources: $0 (volunteer labor + personal hardware)
+- Model: Anarchist collective
+- Technical: Distributed scraping, uploaded to Internet Archive
+</p>
+
+<p>
+<strong>Perma.cc Case Study</strong>
+- Revenue sources: Library partnership fees ($500-5000/year per institution)
+- Model: University consortium
+- Technical: Distributed "vaults" hosted by partner libraries
+</p>
+
+<h2>Lecture: The Archive Sustainability Matrix</h2>
+
+<p>
+There is no single "correct" model for preservation. The Matrix helps you map options:
+</p>
+
+<h3>Dimension 1: Funding Model</h3>
+
+<p>
+| Model | Advantages | Disadvantages | Three Pillars Fit |
+|-------|------------|---------------|-------------------|
+| <strong>Donations</strong> (Internet Archive) | Aligned with mission, no strings | Unpredictable, requires constant fundraising | ✅ Declaration (independent) |
+| <strong>Grants</strong> (Software Heritage) | Large sums, academic legitimacy | Bureaucratic, limited duration | ⚠️ Declaration (funder influence) |
+| <strong>Memberships</strong> (co-op model) | Predictable revenue, community buy-in | Limited scale, free-rider problem | ✅ Connection (intentional) |
+| <strong>Earned Revenue</strong> (services) | Sustainable, market validation | Mission drift risk, commercial pressure | ⚠️ Can compromise mission |
+| <strong>Endowment</strong> (university model) | Long-term stability | Requires massive upfront capital | ✅ Ground (self-sustaining) |
+| <strong>Blockchain</strong> (protocol tokens) | Decentralized incentives | Speculation risk, complexity | ❌ Often violates all three |
+</p>
+
+<p>
+<strong>Key Insight:</strong> Most successful institutions use <strong>hybrid models</strong> (donations + earned revenue + grants).
+</p>
+
+<h3>Dimension 2: Governance Structure</h3>
+
+<p>
+| Structure | Power Distribution | Succession | Three Pillars Fit |
+|-----------|-------------------|------------|-------------------|
+| <strong>Non-profit</strong> (501c3) | Board of directors | Formal transition process | ✅ Declaration (mission-locked) |
+| <strong>For-profit</strong> (C-corp) | Shareholders/CEO | Can be sold/acquired | ❌ Ground (subject to market) |
+| <strong>Benefit Corp</strong> (B-corp) | Shareholders + mission | Acquisition allowed if mission preserved | ⚠️ Better than C-corp, still sellable |
+| <strong>Co-operative</strong> | Member-owned | Democratic control | ✅ Connection (community governed) |
+| <strong>DAO</strong> (blockchain) | Token holders | Code-based rules | ❌ Often plutocratic |
+| <strong>Public Institution</strong> (library/museum) | Government | Civil service rules | ⚠️ Declaration (subject to politics) |
+</p>
+
+<p>
+<strong>Key Insight:</strong> Governance determines <em>who</em> the Archive serves. Choose structure that prevents capture by founders, funders, or speculators.
+</p>
+
+<h3>Dimension 3: Technical Architecture</h3>
+
+<p>
+| Architecture | Resilience | Cost | Control | Three Pillars Fit |
+|--------------|-----------|------|---------|-------------------|
+| <strong>Centralized</strong> (single datacenter) | Fragile (single point of failure) | Efficient | Total control | ❌ Ground (vulnerable) |
+| <strong>Replicated</strong> (multiple datacenters) | Better redundancy | Higher cost | Managed complexity | ⚠️ Ground (still centralized control) |
+| <strong>Federated</strong> (independent nodes) | Decentralized | Variable | Distributed | ✅ Ground (no single owner) |
+| <strong>P2P</strong> (IPFS, BitTorrent) | Very resilient | Cheap (volunteer bandwidth) | No central authority | ✅ Ground (fully distributed) |
+| <strong>Blockchain</strong> (Filecoin) | Cryptographically secured | Expensive | Trustless | ⚠️ Cost barrier |
+</p>
+
+<p>
+<strong>Key Insight:</strong> Technical decentralization ≠ institutional sustainability. You still need governance and funding.
+</p>
+
+<h2>Framework: The Archive Business Canvas</h2>
+
+<p>
+Your assignment will use this structured framework:
+</p>
+
+<h3>Section 1: Mission & Vision (The "Why")</h3>
+<p>
+- <strong>Mission Statement:</strong> What specific preservation problem are you solving?
+- <strong>Artifact Scope:</strong> What are you preserving? (Personal homepages? Indie games? Underground zines?)
+- <strong>Three Pillars Alignment:</strong> How does your work embody Declaration, Connection, Ground?
+</p>
+
+<p>
+<strong>Example (hypothetical):</strong>
+</p>
+<blockquote><em>Mission:</em> Preserve the "Digital Garden" movement—personal knowledge bases built on sovereign ground (Obsidian, Roam, TiddlyWiki) before they're lost to link rot.</blockquote>
+<blockquote></blockquote>
+<blockquote><em>Scope:</em> Public digital gardens (with owner permission), tooling documentation, community knowledge.</blockquote>
+<blockquote></blockquote>
+<blockquote><em>Pillars:</em> Declaration (gardens are sovereign identity), Connection (intercommunication via backlinks), Ground (self-hosted on personal domains).</blockquote>
+
+<h3>Section 2: Governance Model (The "Who")</h3>
+<p>
+- <strong>Legal Structure:</strong> Non-profit? Co-op? For-profit? Public institution?
+- <strong>Decision-Making:</strong> Who has power? Board? Members? Community vote?
+- <strong>Succession Plan:</strong> What happens when founder leaves?
+- <strong>Accountability:</strong> Who ensures mission fidelity?
+</p>
+
+<p>
+<strong>Key Questions:</strong>
+1. Can this structure be captured by a single person/funder?
+2. Does it allow community input?
+3. Will it outlive the founder?
+</p>
+
+<h3>Section 3: Revenue Model (The "How It's Funded")</h3>
+
+<p>
+Design a <strong>hybrid model</strong> with multiple revenue streams:
+</p>
+
+<h4>Primary Revenue Stream</h4>
+<p>
+Choose one as your foundation:
+- <strong>Donations:</strong> Individual donors, crowdfunding, major gifts
+- <strong>Memberships:</strong> Annual fees from individuals or institutions
+- <strong>Services:</strong> Consulting, preservation-as-a-service, tooling
+- <strong>Grants:</strong> Foundations, government, academic partnerships
+</p>
+
+<h4>Secondary Revenue Streams</h4>
+<p>
+Add 1-2 supplementary sources:
+- <strong>Earned Revenue:</strong> API access, premium features, workshops
+- <strong>Partnerships:</strong> Corporate sponsorships, university affiliations
+- <strong>Endowment:</strong> Long-term investment fund
+</p>
+
+<p>
+<strong>Budget Template:</strong>
+</p>
+
+<p>
+| Revenue Source | Year 1 | Year 3 | Year 5 | Year 10 | % of Total |
+|---------------|--------|--------|--------|---------|-----------|
+| Primary Stream | $XXk | $XXk | $XXk | $XXk | XX% |
+| Secondary 1 | $XXk | $XXk | $XXk | $XXk | XX% |
+| Secondary 2 | $XXk | $XXk | $XXk | $XXk | XX% |
+| <strong>Total Revenue</strong> | <strong>$XXk</strong> | <strong>$XXk</strong> | <strong>$XXk</strong> | <strong>$XXk</strong> | <strong>100%</strong> |
+</p>
+
+<p>
+<strong>Expense Budget:</strong>
+</p>
+
+<p>
+| Expense Category | Year 1 | Year 3 | Year 5 | Year 10 | % of Total |
+|-----------------|--------|--------|--------|---------|-----------|
+| Staff Salaries | $XXk | $XXk | $XXk | $XXk | XX% |
+| Infrastructure (servers, storage) | $XXk | $XXk | $XXk | $XXk | XX% |
+| Development (software, tools) | $XXk | $XXk | $XXk | $XXk | XX% |
+| Marketing/Outreach | $XXk | $XXk | $XXk | $XXk | XX% |
+| Overhead (legal, admin) | $XXk | $XXk | $XXk | $XXk | XX% |
+| <strong>Total Expenses</strong> | <strong>$XXk</strong> | <strong>$XXk</strong> | <strong>$XXk</strong> | <strong>$XXk</strong> | <strong>100%</strong> |
+</p>
+
+<p>
+<strong>Sustainability Question:</strong> When does revenue exceed expenses? What's the minimum viable budget?
+</p>
+
+<h3>Section 4: Technical Architecture (The "How It Works")</h3>
+
+<h4>Storage Layer</h4>
+<p>
+- Where is data stored? (Cloud? On-prem? P2P?)
+- How much redundancy? (LOCKSS: "Lots of Copies Keep Stuff Safe")
+- Cost projections? ($X per TB per year)
+</p>
+
+<h4>Access Layer</h4>
+<p>
+- How do people retrieve preserved artifacts?
+- Read-only mirrors? Interactive emulation? API access?
+- Public or restricted? (Open access vs. institutional partnerships)
+</p>
+
+<h4>Preservation Pipeline</h4>
+<p>
+- How are artifacts ingested? (Automated scraping? Manual curation? Community submission?)
+- What formats? (WARC? Git repos? Database dumps?)
+- Metadata standards? (Dublin Core? Schema.org? Custom?)
+</p>
+
+<p>
+<strong>Diagram Your Architecture:</strong>
+``<code>
+[Artifact Sources] → [Ingestion Pipeline] → [Validation/Triage] 
+    → [Storage Layer] → [Access Layer] → [End Users]
+</code>``
+</p>
+
+<h3>Section 5: Community & Partnerships (The "Who Helps")</h3>
+
+<h4>Stakeholders</h4>
+<p>
+- <strong>Contributors:</strong> Who submits artifacts or metadata?
+- <strong>Volunteers:</strong> Who helps with curation, tagging, development?
+- <strong>Partners:</strong> What institutions collaborate? (Libraries, universities, archives)
+- <strong>Funders:</strong> Who provides financial support?
+- <strong>Users:</strong> Who accesses the preserved artifacts?
+</p>
+
+<h4>Engagement Strategy</h4>
+<p>
+- How do you recruit contributors?
+- How do you acknowledge/compensate labor?
+- How do you prevent burnout (identified in Module 0)?
+</p>
+
+<h3>Section 6: Risk Analysis & Mitigation</h3>
+
+<p>
+Identify your biggest vulnerabilities (from Module 0 failure modes) and how you address them:
+</p>
+
+<p>
+| Risk | Likelihood | Impact | Mitigation Strategy |
+|------|-----------|--------|---------------------|
+| Founder departure | High | Critical | Formal succession plan, institutional governance |
+| Funding loss | Medium | High | Multiple revenue streams, reserve fund |
+| Platform shutdown | Low | Medium | Self-hosted on owned infrastructure |
+| Volunteer burnout | High | Medium | Paid staff + sustainable contributor policies |
+| Legal challenge (copyright) | Medium | High | Legal defense fund, fair use expertise |
+| Technical obsolescence | Medium | Medium | Open standards, format migration plan |
+</p>
+
+<p>
+<strong>Question:</strong> What's your "single point of failure"? How do you eliminate or mitigate it?
+</p>
+
+<h2>Case Study Deep-Dives</h2>
+
+<h3>Case 1: Internet Archive (The Centralized-But-Massive Model)</h3>
+
+<p>
+<strong>Revenue Model (2023):</strong>
+- Donations: ~$16M (40%)
+- Digital Lending: ~$10M (25%)
+- Scanning Services: ~$8M (20%)
+- Grants: ~$6M (15%)
+- <strong>Total:</strong> ~$40M
+</p>
+
+<p>
+<strong>Governance:</strong>
+- 501(c)(3) non-profit
+- Board of directors
+- Brewster Kahle as founder/digital librarian
+</p>
+
+<p>
+<strong>Technical:</strong>
+- Centralized in San Francisco (PRIMARY VULNERABILITY)
+- ~70 PB of data
+- WARC format for web archives
+</p>
+
+<p>
+<strong>Strengths:</strong>
+- ✅ Massive scale (800B+ pages)
+- ✅ Hybrid revenue (not dependent on single source)
+- ✅ Public trust and legitimacy
+</p>
+
+<p>
+<strong>Weaknesses:</strong>
+- ❌ Single physical location (one disaster away from catastrophic loss)
+- ❌ Founder-centric (succession plan unclear)
+- ❌ US copyright law vulnerability (ongoing lawsuits from publishers)
+</p>
+
+<p>
+<strong>Student Discussion:</strong>
+1. If you were redesigning IA, how would you decentralize storage without losing coordination?
+2. Should preservation organizations take legal risks (controlled digital lending) to advance mission?
+</p>
+
+<h3>Case 2: Perma.cc (The University Consortium Model)</h3>
+
+<p>
+<strong>Revenue Model:</strong>
+- Partner libraries pay $500-$5,000/year based on size
+- ~150 institutional partners
+- <strong>Total:</strong> ~$300k/year
+</p>
+
+<p>
+<strong>Governance:</strong>
+- Harvard Law School Library hosts
+- Advisory board of partner institutions
+</p>
+
+<p>
+<strong>Technical:</strong>
+- Federated: Each partner library runs a "preservation vault"
+- Partner-hosted ensures distributed redundancy
+- Simple web interface for link preservation
+</p>
+
+<p>
+<strong>Strengths:</strong>
+- ✅ Distributed storage (no single point of failure)
+- ✅ Institutional partnerships (academic legitimacy)
+- ✅ Sustainable revenue (predictable membership fees)
+</p>
+
+<p>
+<strong>Weaknesses:</strong>
+- ❌ Limited scope (only preserves links submitted by partners)
+- ❌ Dependent on university funding (vulnerable to budget cuts)
+- ❌ Not fully open access (partners prioritized)
+</p>
+
+<p>
+<strong>Student Discussion:</strong>
+1. Could this model scale to millions of artifacts (not just links)?
+2. How do you balance "open access" mission with "membership fee" sustainability?
+</p>
+
+<h3>Case 3: Archive Team (The Anarchist Collective Model)</h3>
+
+<p>
+<strong>Revenue Model:</strong>
+- $0 official budget
+- Volunteers contribute personal bandwidth, storage, time
+</p>
+
+<p>
+<strong>Governance:</strong>
+- No formal structure
+- IRC channel coordination
+- Jason Scott as informal leader/advocate
+</p>
+
+<p>
+<strong>Technical:</strong>
+- Distributed: Volunteers run scraping scripts on personal hardware
+- Upload results to Internet Archive
+- Focus: "Rescue missions" when platforms announce shutdowns
+</p>
+
+<p>
+<strong>Strengths:</strong>
+- ✅ Extremely agile (can mobilize in hours)
+- ✅ No financial overhead
+- ✅ Ideologically aligned (pure preservation mission)
+</p>
+
+<p>
+<strong>Weaknesses:</strong>
+- ❌ Dependent on volunteer goodwill (burnout risk)
+- ❌ No long-term guarantees (people disappear)
+- ❌ Limited scope (only reactive, not systematic)
+</p>
+
+<p>
+<strong>Student Discussion:</strong>
+1. Can you "professionalize" Archive Team without losing its anarchist spirit?
+2. What would a "hybrid" look like? (Paid coordinator + volunteer contributors?)
+</p>
+
+<h2>Assignment: Design Your Archive</h2>
+
+<p>
+<strong>Objective:</strong> Create a complete preservation organization design that avoids Module 0 failure modes.
+</p>
+
+<h3>Deliverable: Archive Business Plan (3000-4000 words)</h3>
+
+<p>
+<strong>Required Sections:</strong>
+</p>
+
+<h4>1. Executive Summary (250 words)</h4>
+<p>
+- Mission statement
+- Artifact scope
+- Why this preservation gap exists
+- Three Pillars alignment
+</p>
+
+<h4>2. Governance Model (500 words)</h4>
+<p>
+- Legal structure (with justification)
+- Decision-making process
+- Succession plan
+- Accountability mechanisms
+</p>
+
+<h4>3. Revenue Model (750 words)</h4>
+<p>
+- Primary revenue stream (detailed projection)
+- Secondary streams
+- 10-year budget (revenue + expenses)
+- Break-even analysis
+- Sustainability argument
+</p>
+
+<h4>4. Technical Architecture (750 words)</h4>
+<p>
+- Storage strategy (centralized/federated/P2P)
+- Redundancy plan
+- Access model (who can retrieve artifacts? how?)
+- Preservation pipeline (ingestion → validation → storage)
+- Cost projections
+</p>
+
+<h4>5. Community Strategy (500 words)</h4>
+<p>
+- Stakeholder map (contributors, partners, users)
+- Engagement plan (how do you recruit and retain?)
+- Labor model (volunteers? paid staff? mix?)
+</p>
+
+<h4>6. Risk Analysis (500 words)</h4>
+<p>
+- Identify 5 biggest risks (from Module 0 taxonomy)
+- Mitigation strategy for each
+- "Single point of failure" test: What would shut you down?
+</p>
+
+<h4>7. 10-Year Roadmap (250 words)</h4>
+<p>
+- <strong>Years 1-2:</strong> Proof of concept (what do you build first?)
+- <strong>Years 3-5:</strong> Growth phase (scaling up)
+- <strong>Years 6-10:</strong> Maturity (self-sustaining institution)
+</p>
+
+<h3>Evaluation Criteria:</h3>
+
+<p>
+| Criterion | Points | What We're Looking For |
+|-----------|--------|------------------------|
+| <strong>Three Pillars Alignment</strong> | 25 | Does governance/funding/tech embody Declaration, Connection, Ground? |
+| <strong>Financial Realism</strong> | 20 | Is the budget plausible? Does revenue cover expenses? |
+| <strong>Institutional Resilience</strong> | 20 | Did you address Module 0 failure modes? Can it survive founder departure? |
+| <strong>Technical Feasibility</strong> | 15 | Is the architecture buildable? Did you address storage/access/preservation? |
+| <strong>Originality</strong> | 10 | Is this just copying Internet Archive, or a genuinely new model? |
+| <strong>Writing Quality</strong> | 10 | Is it clear, organized, persuasive? |
+</p>
+
+<p>
+<strong>Total: 100 points</strong>
+</p>
+
+<h2>Optional Extension: Pitch Competition</h2>
+
+<p>
+Students with the strongest designs may present to a panel of external reviewers:
+- Internet Archive staff
+- Library/museum professionals
+- Grant program officers
+- Impact investors (for for-profit models)
+</p>
+
+<p>
+<strong>Prize:</strong> $5,000 seed funding to prototype the design (if feasible).
+</p>
+
+<h2>Discussion Questions for Seminar</h2>
+
+<p>
+1. <strong>The Revenue Dilemma:</strong> Can preservation work ever be fully self-sustaining, or does it require perpetual fundraising? Is "earned revenue" always mission drift?
+</p>
+
+<p>
+2. <strong>The Access Question:</strong> Should preserved artifacts be fully open (public good) or restricted (sustainability via membership)? Can you have both?
+</p>
+
+<p>
+3. <strong>The Scale Problem:</strong> Internet Archive is massive but fragile. Mastodon is distributed but chaotic. Is there a "Goldilocks zone"?
+</p>
+
+<p>
+4. <strong>The Legal Risk:</strong> If your preservation work violates copyright (like IA's controlled digital lending), is that justified? Who decides?
+</p>
+
+<p>
+5. <strong>The Founder Problem:</strong> Can you really design an institution that doesn't need you? Or is "founder-centricity" inevitable in early stages?
+</p>
+
+<h2>Module Deliverables</h2>
+
+<p>
+By the end of Module 1, students will have:
+</p>
+
+<p>
+1. ✅ <strong>Completed Reading Responses</strong> (3 texts on funding/governance models)
+2. ✅ <strong>Case Study Analysis</strong> (comparative analysis of IA, Perma.cc, Archive Team)
+3. ✅ <strong>Archive Business Plan</strong> (3000-4000 words, complete institutional design)
+4. ✅ <strong>10-Year Budget Projection</strong> (revenue/expenses, break-even analysis)
+5. ✅ <strong>Institutional Resilience Self-Assessment</strong> (Module 0 failure modes checklist)
+</p>
+
+<h2>Looking Ahead: Module 2</h2>
+
+<p>
+Next week, we flip from <strong>Archive</strong> to <strong>Anvil</strong>. <strong>Module 2: The Economics of the Anvil</strong> asks:
+</p>
+
+<p>
+<em>"How do you monetize sovereignty in an economy optimized for platform rent-seeking?"</em>
+</p>
+
+<p>
+You'll design a "foundry" business—not preserving artifacts, but <strong>forging new ones</strong> (domains, monuments, frameworks) in a way that's sustainable, principled, and resistant to platform capture.
+</p>
+
+<h2>Instructor Notes</h2>
+
+<p>
+- <strong>Guest Speaker:</strong> Invite Internet Archive CFO or Perma.cc director to discuss real operational challenges
+- <strong>Bring Real Budgets:</strong> Share actual financial reports (anonymized if needed) so students see what "sustainable" looks like
+- <strong>Peer Review:</strong> Have students exchange drafts and critique each other's risk mitigation strategies
+- <strong>Balance Idealism and Pragmatism:</strong> Students should design ambitious institutions that could actually launch (not just thought experiments)
+</p>
+
+<p>
+<strong>End of Module 1</strong>
+</p>
+
+        </article>
+        <div class="nav">
+            <a href="index.html">Back to Course Home</a>
+        </div>
+    </div>
+</body>
+</html>

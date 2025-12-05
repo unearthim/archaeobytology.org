@@ -1,0 +1,665 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 3: Designing for Sovereignty | ARCH 300</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Lora', serif; line-height: 1.8; color: #2E2E2E; background: #F8F7F4; padding: 2rem 1rem; }
+        .container { max-width: 900px; margin: 0 auto; background: #FFFFFF; padding: 3rem; border-radius: 15px; box-shadow: 0 4px 20px rgba(46,46,46,0.1); border: 1px solid #D1D1D1; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; color: #2E2E2E; margin-top: 2rem; margin-bottom: 1rem; line-height: 1.3; }
+        h1 { font-size: 2.5rem; font-weight: 700; margin-top: 0; border-bottom: 3px solid #A1824A; padding-bottom: 0.5rem; }
+        h2 { font-size: 2rem; font-weight: 700; margin-top: 2.5rem; }
+        h3 { font-size: 1.5rem; font-weight: 600; color: #5A7D8C; }
+        h4 { font-size: 1.25rem; font-weight: 600; color: #5A7D8C; }
+        p { margin-bottom: 1.25rem; font-size: 1.1rem; }
+        a { color: #A93400; text-decoration: underline; transition: color 0.3s; }
+        a:hover { color: #A95C3D; }
+        strong { font-weight: 600; }
+        em { font-style: italic; }
+        code { font-family: 'Courier New', monospace; background: #F8F7F4; padding: 0.2rem 0.4rem; border-radius: 3px; border: 1px solid #D1D1D1; font-size: 0.95rem; }
+        blockquote { border-left: 4px solid #A1824A; padding: 1rem 1.5rem; margin: 1.5rem 0; font-style: italic; color: #5A7D8C; background: #F8F7F4; border-radius: 0 8px 8px 0; }
+        hr { border: none; border-top: 2px solid #D1D1D1; margin: 2rem 0; }
+        .nav { text-align: center; padding: 1rem 0; border-top: 2px solid #D1D1D1; margin-top: 2rem; }
+        .nav a { display: inline-block; padding: 0.75rem 1.5rem; background: #A93400; color: #F8F7F4; text-decoration: none; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 600; margin: 0.5rem; }
+        .nav a:hover { background: #A95C3D; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <article>
+<h1>Module 3: Designing for Sovereignty</h1>
+
+<p>
+<strong>Duration</strong>: 2 weeks  
+<strong>Type</strong>: Design Studio & System Prototyping
+</p>
+
+<h2>Module Overview</h2>
+
+<p>
+You've examined the dead (Module 1) and learned to preserve them (Module 2). Now comes the Anvil: <strong>building systems that can't be murdered</strong>.
+</p>
+
+<p>
+In this module, you'll apply the Three Pillars framework to design sovereign digital systems. You'll audit existing platforms for sovereignty violations, prototype alternatives, and design systems that give users control over their Declaration, Connection, and Ground. This is speculative design meets practical system-building.
+</p>
+
+<h2>Learning Objectives</h2>
+
+<p>
+By the end of this module, you will be able to:
+</p>
+
+<p>
+1. <strong>Audit platforms for sovereignty</strong>: Use the Three Pillars framework to identify control points and dependencies
+2. <strong>Design sovereign alternatives</strong>: Prototype systems that preserve user autonomy
+3. <strong>Apply sovereignty principles</strong>: Translate abstract principles (portability, federation, self-hosting) into concrete features
+4. <strong>Evaluate tradeoffs</strong>: Understand when sovereignty conflicts with convenience, scale, or business models
+5. <strong>Prototype systems</strong>: Create wireframes, architecture diagrams, and functional prototypes
+6. <strong>Think systemically</strong>: See how technical decisions shape power relationships
+</p>
+
+<h2>Required Readings</h2>
+
+<h3>Primary Texts</h3>
+<p>
+- <strong>Textbook Chapter 4</strong>: The Three Pillars of Digital Sovereignty
+- <strong>Textbook Chapter 12</strong>: The Economics of Sovereignty
+- <strong>Textbook Chapter 13</strong>: Distributed Commons Governance
+</p>
+
+<h3>Technical Standards & Protocols</h3>
+<p>
+- Tim Berners-Lee, <em>"Solid Protocol" (overview)</em>
+- ActivityPub specification (W3C)
+- Anil Dash, <em>"The Web We Lost"</em> (2012)
+- Cory Doctorow, <em>"Adversarial Interoperability"</em>
+</p>
+
+<h3>Design References</h3>
+<p>
+- Ethan Zuckerman, <em>"The Case for Digital Public Infrastructure"</em>
+- Darius Kazemi, <em>"Run Your Own Social"</em>
+- IndieWeb principles documentation
+</p>
+
+<h2>Assignment Structure</h2>
+
+<h3>Week 1: Platform Audit & Critique</h3>
+
+<h4>Part 1: Three Pillars Sovereignty Audit (Due: Day 3)</h4>
+
+<p>
+<strong>Choose a major platform to audit</strong> from this list:
+</p>
+
+<p>
+<strong>Social Media</strong>:
+- Instagram
+- TikTok
+- Twitter/X
+- Discord
+- Reddit
+</p>
+
+<p>
+<strong>Content Platforms</strong>:
+- Medium
+- Substack
+- Patreon
+- YouTube
+</p>
+
+<p>
+<strong>Infrastructure</strong>:
+- Gmail/Google Workspace
+- iCloud
+- Dropbox
+- Notion
+</p>
+
+<p>
+<strong>Conduct a comprehensive sovereignty audit</strong> using the Three Pillars framework:
+</p>
+
+<p>
+<strong>PILLAR 1: DECLARATION (Identity Sovereignty)</strong>
+</p>
+
+<p>
+<strong>Questions to investigate</strong>:
+- Can users control their identity independent of the platform?
+- Is identity portable to other platforms?
+- Who owns the username/handle?
+- Can users authenticate without the platform's permission?
+- Is there decentralized identity support (WebID, DID)?
+</p>
+
+<p>
+<strong>Audit checklist</strong>:
+- [ ] Data export: Can you export your entire account?
+- [ ] Identity portability: Can you move your followers/identity elsewhere?
+- [ ] Username ownership: Do you control your handle if the platform dies?
+- [ ] Authentication: Can you use your own auth system?
+- [ ] Profile control: Can the platform change/delete your profile without consent?
+</p>
+
+<p>
+<strong>Rate on scale of 1-10</strong> (1 = total platform control, 10 = full user sovereignty)
+</p>
+
+<p>
+<strong>PILLAR 2: CONNECTION (Communication Sovereignty)</strong>
+</p>
+
+<p>
+<strong>Questions to investigate</strong>:
+- Are communication protocols open or proprietary?
+- Can users connect across platforms (federation/interoperability)?
+- Who controls the algorithm determining what you see?
+- Can you export your social graph?
+- Can you communicate if the company shuts down?
+</p>
+
+<p>
+<strong>Audit checklist</strong>:
+- [ ] Protocol openness: Can other apps talk to this platform?
+- [ ] Federation support: Can you follow users on other instances?
+- [ ] Algorithm control: Can you choose your own feed algorithm?
+- [ ] Data portability: Can you export your connections/followers?
+- [ ] Platform independence: Can you keep your social graph if you leave?
+</p>
+
+<p>
+<strong>Rate on scale of 1-10</strong>
+</p>
+
+<p>
+<strong>PILLAR 3: GROUND (Infrastructure Sovereignty)</strong>
+</p>
+
+<p>
+<strong>Questions to investigate</strong>:
+- Can users self-host this platform?
+- Who controls the servers and infrastructure?
+- Is the codebase open source?
+- Can you run a private instance?
+- What happens if the company goes bankrupt?
+</p>
+
+<p>
+<strong>Audit checklist</strong>:
+- [ ] Self-hosting: Can you run your own server?
+- [ ] Open source: Is the code available for inspection/forking?
+- [ ] Data ownership: Where is data stored physically?
+- [ ] Infrastructure dependencies: What proprietary services are required?
+- [ ] Exit options: Can you migrate to self-hosted if needed?
+</p>
+
+<p>
+<strong>Rate on scale of 1-10</strong>
+</p>
+
+<p>
+<strong>Your Audit Report (4-5 pages) must include</strong>:
+</p>
+
+<p>
+1. <strong>Executive Summary</strong>: Overall sovereignty score (average of three pillars) and key findings
+</p>
+
+<p>
+2. <strong>Detailed Pillar Analysis</strong>: For each pillar, provide:
+   - Rating and justification
+   - Specific examples of sovereignty violations
+   - Screenshots or documentation of restrictions
+</p>
+
+<p>
+3. <strong>Power Analysis</strong>: Who benefits from these sovereignty violations?
+   - Platform company (how?)
+   - Advertisers or third parties
+   - Governments or law enforcement
+   - Who loses? (users, creators, communities)
+</p>
+
+<p>
+4. <strong>Comparison to Sovereign Alternative</strong>: 
+   - Name a more sovereign alternative (e.g., Mastodon vs. Twitter)
+   - Compare scores across all three pillars
+   - Why don't more people use the sovereign alternative?
+</p>
+
+<p>
+<strong>Deliverable</strong>: Upload sovereignty audit PDF with screenshots
+</p>
+
+<h4>Part 2: Redesign for Sovereignty (Due: End of Week 1)</h4>
+
+<p>
+<strong>Take the platform you audited and redesign it</strong> for maximum sovereignty while maintaining core functionality.
+</p>
+
+<p>
+<strong>Your redesign should address</strong>:
+</p>
+
+<p>
+<strong>Pillar 1: Declaration Fixes</strong>
+</p>
+
+<p>
+How to make identity sovereign:
+- Implement decentralized identifiers (DIDs)
+- Allow username portability (like domain names)
+- Support multiple auth methods (not just platform login)
+- Enable profile ownership (users control their own data)
+</p>
+
+<p>
+<strong>Design deliverables</strong>:
+- Diagram showing decentralized identity architecture
+- User flow: "How do I keep my identity if I leave this platform?"
+- Wireframes of improved profile/auth UI
+</p>
+
+<p>
+<strong>Pillar 2: Connection Fixes</strong>
+</p>
+
+<p>
+How to make communication sovereign:
+- Adopt open protocols (ActivityPub, Matrix, AT Protocol)
+- Implement federation (talk to other instances)
+- Allow algorithmic choice (users pick their feed algorithm)
+- Support social graph export and import
+</p>
+
+<p>
+<strong>Design deliverables</strong>:
+- Architecture diagram showing federated communication
+- User flow: "How do I follow friends across different platforms?"
+- Mockups of algorithmic choice UI
+</p>
+
+<p>
+<strong>Pillar 3: Ground Fixes</strong>
+</p>
+
+<p>
+How to make infrastructure sovereign:
+- Open source the entire stack
+- Support self-hosting with clear documentation
+- Minimize dependencies on proprietary services
+- Design for graceful degradation if company fails
+</p>
+
+<p>
+<strong>Design deliverables</strong>:
+- Technical architecture diagram (self-hosted version)
+- Deployment guide outline: "How to run your own instance"
+- Comparison chart: hosted service vs. self-hosted
+</p>
+
+<p>
+<strong>Your Redesign Document (6-8 pages) must include</strong>:
+</p>
+
+<p>
+1. <strong>Sovereignty Principles</strong>: What specific sovereignty goals does this redesign achieve?
+</p>
+
+<p>
+2. <strong>Technical Architecture</strong>:
+   - System diagram showing components
+   - Protocol choices and justifications
+   - Data flow diagrams
+   - Federation/decentralization strategy
+</p>
+
+<p>
+3. <strong>User Experience</strong>:
+   - Wireframes or mockups (at least 5 screens)
+   - User flows for key sovereignty features
+   - How do you make sovereignty usable? (it's often technically complex)
+</p>
+
+<p>
+4. <strong>Tradeoff Analysis</strong>:
+   - What do you lose by prioritizing sovereignty?
+   - Performance impacts (federation can be slow)
+   - User experience complexity (self-hosting is hard)
+   - Business model challenges (how do you fund this?)
+</p>
+
+<p>
+5. <strong>Migration Path</strong>:
+   - How do existing users move to your sovereign redesign?
+   - Can it interoperate with the current platform?
+   - What's your adoption strategy?
+</p>
+
+<p>
+<strong>Design Toolkit</strong>:
+- Figma or Sketch for mockups (free accounts available)
+- Draw.io or Lucidchart for architecture diagrams
+- Markdown for technical documentation
+</p>
+
+<p>
+<strong>Deliverable</strong>: Upload redesign document with diagrams and mockups as PDF
+</p>
+
+<h3>Week 2: Prototype & Test</h3>
+
+<h4>Part 3: Functional Prototype (Due: End of Week 2)</h4>
+
+<p>
+<strong>Build a working prototype</strong> of one sovereignty feature from your redesign.
+</p>
+
+<p>
+<strong>Choose your prototype complexity</strong>:
+</p>
+
+<p>
+<strong>Option A: Design Prototype</strong> (no coding required)
+- High-fidelity interactive mockup in Figma
+- Demonstrate key user flows for sovereignty features
+- Include at least 10 linked screens
+- Focus on UX of sovereignty (making the complex simple)
+</p>
+
+<p>
+<strong>Option B: Technical Prototype</strong> (coding required)
+- Build a minimal working version of one feature
+- Must demonstrate a sovereignty principle in action
+- Can use existing frameworks/tools
+- Focus on technical feasibility
+</p>
+
+<p>
+<strong>Option C: Protocol Integration</strong> (for the ambitious)
+- Implement ActivityPub or AT Protocol in a simple app
+- Federation must actually work (connect to Mastodon, Bluesky, etc.)
+- Demonstrate two-way communication
+- Document the integration process
+</p>
+
+<p>
+<strong>Suggested Prototypes</strong>:
+</p>
+
+<p>
+<strong>Declaration (Identity)</strong>:
+- Portable profile system using WebID or DIDs
+- Username that works across multiple platforms
+- Self-sovereign authentication demo
+</p>
+
+<p>
+<strong>Connection (Communication)</strong>:
+- Simple federated microblog (connect to Mastodon)
+- Algorithmic feed selector (swap feed algorithms)
+- Social graph export/import tool
+</p>
+
+<p>
+<strong>Ground (Infrastructure)</strong>:
+- One-click self-hosting deployment script
+- Mirror service (sync content to personal archive)
+- Graceful degradation demo (works offline)
+</p>
+
+<p>
+<strong>Your Prototype Documentation (3-4 pages) must include</strong>:
+</p>
+
+<p>
+1. <strong>What You Built</strong>: Clear description of the feature
+</p>
+
+<p>
+2. <strong>How It Demonstrates Sovereignty</strong>: Which pillar(s) does this address?
+</p>
+
+<p>
+3. <strong>Technical Implementation</strong>:
+   - For design prototypes: Tool used, design decisions, interaction patterns
+   - For code prototypes: Tech stack, architecture, key code snippets
+   - For protocol integrations: Which spec, how you implemented it, challenges
+</p>
+
+<p>
+4. <strong>User Testing</strong>: 
+   - Have at least 3 people try your prototype
+   - Document feedback: What worked? What confused them?
+   - What would you change based on testing?
+</p>
+
+<p>
+5. <strong>Next Steps</strong>: If you had another month, what would you build next?
+</p>
+
+<p>
+<strong>Deliverable</strong>: 
+- For design prototypes: Figma link + PDF walkthrough
+- For code prototypes: GitHub repo + README + demo video
+- For protocol integrations: Working demo + integration guide
+</p>
+
+<h2>Assessment Rubric</h2>
+
+<h3>Sovereignty Audit (25 points)</h3>
+<p>
+- <strong>Comprehensiveness</strong> (10 pts): All three pillars thoroughly analyzed
+- <strong>Evidence quality</strong> (10 pts): Screenshots, documentation, specific examples
+- <strong>Power analysis</strong> (5 pts): Clear understanding of who benefits from current design
+</p>
+
+<h3>Redesign Document (30 points)</h3>
+<p>
+- <strong>Technical feasibility</strong> (10 pts): Realistic architecture and protocols
+- <strong>UX consideration</strong> (10 pts): Sovereignty features are usable, not just technically possible
+- <strong>Tradeoff honesty</strong> (5 pts): Acknowledges costs of sovereignty
+- <strong>Visual quality</strong> (5 pts): Clear diagrams and mockups
+</p>
+
+<h3>Functional Prototype (30 points)</h3>
+<p>
+- <strong>Sovereignty demonstration</strong> (15 pts): Actually implements a sovereignty principle
+- <strong>Technical execution</strong> (10 pts): Works as intended, no major bugs
+- <strong>Documentation</strong> (5 pts): Clear explanation and setup instructions
+</p>
+
+<h3>Overall Integration (15 points)</h3>
+<p>
+- <strong>Coherence</strong> (10 pts): Audit → Redesign → Prototype form a logical progression
+- <strong>Critical thinking</strong> (5 pts): Demonstrates sophisticated understanding of sovereignty tradeoffs
+</p>
+
+<h2>Discussion Forum Prompts</h2>
+
+<p>
+<strong>Week 1: Sovereignty vs. Convenience</strong>
+Most people choose convenient platforms over sovereign ones. Is this a failure of education, design, or are people making a rational choice to trade sovereignty for features? Use your audit as evidence.
+</p>
+
+<p>
+<strong>Week 2: Can Sovereignty Scale?</strong>
+Mastodon, Matrix, and other federated systems struggle to reach mainstream adoption. Is this a fundamental limitation of sovereign design, or a solvable UX problem? Share findings from your prototype testing.
+</p>
+
+<h2>Technical Resources</h2>
+
+<h3>Design Tools</h3>
+<p>
+- <strong>Figma</strong>: Free for students, collaborative interface design
+- <strong>Excalidraw</strong>: Simple, open-source diagramming
+- <strong>Draw.io</strong>: Free architecture diagrams
+</p>
+
+<h3>Prototyping Frameworks</h3>
+
+<p>
+<strong>For Federation</strong>:
+- <strong>Mastodon</strong>: Ruby on Rails, ActivityPub
+- <strong>Misskey</strong>: Node.js, ActivityPub
+- <strong>Lemmy</strong>: Rust, ActivityPub
+- <strong>Bluesky AT Protocol</strong>: TypeScript
+</p>
+
+<p>
+<strong>For Self-Hosting</strong>:
+- <strong>YunoHost</strong>: One-click self-hosting platform
+- <strong>Sandstorm</strong>: Personal cloud platform
+- <strong>Docker Compose</strong>: Easy multi-container deployments
+</p>
+
+<p>
+<strong>For Decentralized Identity</strong>:
+- <strong>Solid</strong>: Tim Berners-Lee's decentralized data protocol
+- <strong>DID</strong>: W3C Decentralized Identifiers
+- <strong>IndieAuth</strong>: OAuth for personal websites
+</p>
+
+<h3>Protocol Documentation</h3>
+<p>
+- <strong>ActivityPub</strong>: https://www.w3.org/TR/activitypub/
+- <strong>AT Protocol</strong>: https://atproto.com/
+- <strong>Matrix</strong>: https://matrix.org/docs/spec/
+- <strong>Solid</strong>: https://solidproject.org/TR/protocol
+</p>
+
+<h2>Real-World Case Studies</h2>
+
+<h3>Sovereign Successes</h3>
+
+<p>
+<strong>Mastodon</strong> (2016-present):
+- 10M+ users across 15K+ instances
+- Survived multiple Twitter exoduses
+- Demonstrates federation at scale
+</p>
+
+<p>
+<strong>Matrix/Element</strong> (2019-present):
+- Used by French government
+- Bridges to proprietary chat systems
+- Shows interoperability is possible
+</p>
+
+<p>
+<strong>Nextcloud</strong> (2016-present):
+- Self-hosted alternative to Google Workspace
+- 400K+ servers deployed
+- Proves demand for infrastructure sovereignty
+</p>
+
+<h3>Sovereign Challenges</h3>
+
+<p>
+<strong>Diaspora</strong> (2010-2015):
+- Early federated Facebook alternative
+- Failed to achieve critical mass
+- Lesson: Sovereignty alone isn't enough
+</p>
+
+<p>
+<strong>Ello</strong> (2014-2015):
+- Ad-free, privacy-focused social network
+- Couldn't sustain business model
+- Lesson: Economics matter
+</p>
+
+<p>
+<strong>Peach</strong> (2016):
+- Innovative mobile-first design
+- No federation or open protocols
+- Dead within a year
+- Lesson: Sovereignty enables survival
+</p>
+
+<h2>Recommended Supplementary Materials</h2>
+
+<h3>Books</h3>
+<p>
+- Doctorow, <em>"How to Destroy Surveillance Capitalism"</em>
+- Zuckerman, <em>"Mistrust"</em>
+- Schneier, <em>"Data and Goliath"</em>
+</p>
+
+<h3>Articles</h3>
+<p>
+- Mike Masnick, <em>"Protocols, Not Platforms"</em>
+- Eben Moglen, <em>"Freedom in the Cloud"</em>
+- Devine Lu Linvega, <em>"Hundred Rabbits"</em> (off-grid sovereignty)
+</p>
+
+<h3>Videos</h3>
+<p>
+- Aral Balkan, <em>"Privacy is the right to a future tense"</em>
+- Eugen Rochko, <em>"How ActivityPub Works"</em> (Strange Loop)
+</p>
+
+<h2>Optional Advanced Project</h2>
+
+<p>
+<strong>For Extra Credit: Build a Bridge</strong>
+</p>
+
+<p>
+Create a tool that connects a proprietary platform to an open protocol:
+- Twitter → Mastodon crossposting
+- Instagram → PixelFed sync
+- Discord → Matrix bridge
+</p>
+
+<p>
+This demonstrates <strong>adversarial interoperability</strong>—forcing sovereignty onto closed platforms.
+</p>
+
+<h2>Getting Help</h2>
+
+<p>
+<strong>Office Hours</strong>: Design critiques available by appointment
+</p>
+
+<p>
+<strong>Lab Sessions</strong>: Technical prototyping help (Thursdays 4-6pm)
+</p>
+
+<p>
+<strong>Community Resources</strong>: 
+- Fediverse developers are very welcoming
+- IndieWeb chat for decentralized web questions
+- r/selfhosted for infrastructure sovereignty
+</p>
+
+<h2>Next Module Preview</h2>
+
+<p>
+In <strong>Module 4: Triage Simulation</strong>, you'll face the hardest ethical questions in preservation: <em>What deserves to be saved when you can't save everything?</em>
+</p>
+
+<p>
+You'll navigate a high-pressure simulation where resources are scarce, platforms are dying fast, and every decision has consequences.
+</p>
+
+<p>
+<strong>Get ready to</strong>: Make impossible choices under time pressure and defend your decisions.
+</p>
+
+<p>
+<em>"Sovereignty is not a luxury for the technologically sophisticated. It is a basic human right in the digital age. We design for sovereignty or we design for murder."</em>
+</p>
+        </article>
+        <div class="nav">
+            <a href="index.html">Back to Course Home</a>
+        </div>
+    </div>
+</body>
+</html>

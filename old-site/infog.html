@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Archaeobytology Framework: An Infographic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primary: #0A74DA;
+            --color-secondary: #3498DB;
+            --color-accent: #85C1E9;
+            --color-umbra: #F39C12;
+            --color-petri: #8E44AD;
+            --color-bg: #ECF0F1;
+            --color-text-dark: #2C3E50;
+            --color-text-light: #7F8C8D;
+            --color-card-bg: #ffffff;
+        }
+        body {
+            background-color: var(--color-bg);
+            color: var(--color-text-dark);
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+        @media (max-width: 768px) {
+            .chart-container {
+                height: 300px;
+                max-height: 350px;
+            }
+        }
+        .flow-node {
+            background-color: var(--color-card-bg);
+            border: 2px solid var(--color-primary);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .flow-node:hover {
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .flow-node-sub {
+            background-color: #fafafa;
+            border: 1px solid var(--color-secondary);
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+        }
+        .flow-arrow {
+            color: var(--color-text-light);
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin: 0.5rem 0;
+            opacity: 0.6;
+        }
+        .flow-line {
+            width: 2px;
+            background-color: var(--color-accent);
+            height: 2rem;
+            margin: 0.5rem auto;
+        }
+        .flow-line-h {
+            height: 2px;
+            background-color: var(--color-accent);
+            width: 100%;
+            margin: 1.5rem 0;
+        }
+        .text-primary { color: var(--color-primary); }
+        .text-umbra { color: var(--color-umbra); }
+        .text-petri { color: var(--color-petri); }
+        .bg-primary { background-color: var(--color-primary); }
+        .bg-umbra { background-color: var(--color-umbra); }
+        .bg-petri { background-color: var(--color-petri); }
+        .border-primary { border-color: var(--color-primary); }
+        .border-umbra { border-color: var(--color-umbra); }
+        .border-petri { border-color: var(--color-petri); }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+
+        <header class="text-center mb-16 md:mb-24">
+            <h1 class="text-4xl md:text-6xl font-black text-text-dark tracking-tight">The Archaeobytology Framework</h1>
+            <p class="text-xl md:text-2xl text-text-light mt-4 max-w-3xl mx-auto">An infographic detailing the excavation, triage, and application of digital artifacts.</p>
+        </header>
+
+        <section class="mb-16 md:mb-24">
+            <h2 class="text-3xl font-bold text-center mb-12">The Core Concept: The Archaeobyte</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
+                <div class="bg-card-bg rounded-lg shadow-lg p-6">
+                    <div class="text-7xl font-black text-primary">1</div>
+                    <div class="text-xl font-bold mt-2">Archaeobyte</div>
+                    <p class="text-text-light mt-1">A discrete unit of digital information from a past epoch.</p>
+                </div>
+                <div class="bg-card-bg rounded-lg shadow-lg p-6">
+                    <div class="text-7xl font-black text-primary">3</div>
+                    <div class="text-xl font-bold mt-2">Classifications</div>
+                    <p class="text-text-light mt-1">Vivibyte (Living), Umbrabyte (Liminal), & Petribyte (Petrified).</p>
+                </div>
+                <div class="bg-card-bg rounded-lg shadow-lg p-6">
+                    <div class="text-7xl font-black text-primary">2</div>
+                    <div class="text-xl font-bold mt-2">Protocols</div>
+                    <p class="text-text-light mt-1">A formal methodology for Excavation and Triage.</p>
+                </div>
+                <div class="bg-card-bg rounded-lg shadow-lg p-6">
+                    <div class="text-7xl font-black text-primary">1</div>
+                    <div class="text-xl font-bold mt-2">Goal: The Anvil</div>
+                    <p class="text-text-light mt-1">To forge a wiser, more resilient digital future.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 md:mb-24">
+            <h2 class="text-3xl font-bold text-center mb-12">Phase 1: The Triage Classifications</h2>
+            <p class="text-lg text-text-light text-center max-w-3xl mx-auto mb-12">Every excavated Archaeobyte is classified by its functional state. This Triage determines its value as a Proof, a Warning, or a Blueprint.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="bg-card-bg rounded-lg shadow-xl p-6 flex flex-col items-center border-t-8 border-primary">
+                    <span class="text-6xl" role="img" aria-label="Seedling">🌱</span>
+                    <h3 class="text-3xl font-bold text-center my-4 text-primary">The Vivibyte <span class="block text-xl font-normal text-text-light">(Living)</span></h3>
+                    <p class="text-center text-text-light text-lg mb-2"><strong>Function:</strong> Intact</p>
+                    <p class="text-center text-text-light text-lg mb-4"><strong>Metaphor:</strong> "Gold Coin" or "Seed Bank"</p>
+                    <p class="text-center text-base mb-6 h-24">A file whose native function is still legible and useful today. Examples include `.mp3`, `.gif`, and open `HTML 4.01`.</p>
+                    <div class="chart-container w-full">
+                        <canvas id="vivibyteChart"></canvas>
+                    </div>
+                    <p class="text-center text-base mt-6 text-text-dark font-semibold">Lesson: The <strong class="text-primary">Proof</strong> of Resilience</p>
+                    <p class="text-center text-base text-text-light">Openness and backward compatibility are the most enduring traits.</p>
+                </div>
+
+                <div class="bg-card-bg rounded-lg shadow-xl p-6 flex flex-col items-center border-t-8 border-umbra">
+                    <span class="text-6xl" role="img" aria-label="Broken Link">🔗</span>
+                    <h3 class="text-3xl font-bold text-center my-4 text-umbra">The Umbrabyte <span class="block text-xl font-normal text-text-light">(Liminal)</span></h3>
+                    <p class="text-center text-text-light text-lg mb-2"><strong>Function:</strong> Living File, Dead Context</p>
+                    <p class="text-center text-text-light text-lg mb-4"><strong>Metaphor:</strong> "Fly in Amber"</p>
+                    <p class="text-center text-base mb-6 h-24">A file that is preserved, but its surrounding ecosystem (links, community) is petrified. Examples: GeoCities pages, MySpace Top 8.</p>
+                    <div class="chart-container w-full">
+                        <canvas id="umbraChart"></canvas>
+                    </div>
+                    <p class="text-center text-base mt-6 text-text-dark font-semibold">Lesson: The <strong class="text-umbra">Warning</strong> Against Rented Land</p>
+                    <p class="text-center text-base text-text-light">Building on centralized platforms leads to inevitable contextual collapse.</p>
+                </div>
+                
+                <div class="bg-card-bg rounded-lg shadow-xl p-6 flex flex-col items-center border-t-8 border-petri">
+                    <span class="text-6xl" role="img" aria-label="Fossil">🦕</span>
+                    <h3 class="text-3xl font-bold text-center my-4 text-petri">The Petribyte <span class="block text-xl font-normal text-text-light">(Petrified)</span></h3>
+                    <p class="text-center text-text-light text-lg mb-2"><strong>Function:</strong> Extinct</p>
+                    <p class="text-center text-text-light text-lg mb-4"><strong>Metaphor:</strong> "Fossil of Function"</p>
+                    <p class="text-center text-base mb-6 h-24">A concept or file whose original purpose is now obsolete. Examples: The AIM Away Message, the `guestbook.cgi` script.</p>
+                    <div class="chart-container w-full">
+                        <canvas id="petriChart"></canvas>
+                    </div>
+                    <p class="text-center text-base mt-6 text-text-dark font-semibold">Lesson: The <strong class="text-petri">Blueprint</strong> for a Wiser Web</p>
+                    <p class="text-center text-base text-text-light">Fossils of function reveal lost human-centric design principles.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="bg-card-bg rounded-lg shadow-xl p-8 md:p-12 mb-16 md:mb-24">
+            <h2 class="text-3xl font-bold text-center mb-12">The Process: Part A - The Excavation Protocol</h2>
+            <p class="text-lg text-text-light text-center max-w-3xl mx-auto mb-12">Before Triage, the artifact must be found. The Excavation Protocol formalizes the hunt for signal in the "digital dust."</p>
+            
+            <div class="flex flex-col items-center">
+                
+                <div class="flow-node border-primary max-w-lg w-full">
+                    <h3 class="text-xl font-bold text-primary">Phase 1: Define Dig Site (The "Where")</h3>
+                    <p class="text-sm text-text-light">Select the field of excavation.</p>
+                    <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-2">
+                        <div class="flow-node-sub">Curated Archive<br><span class="text-xs text-text-light">(e.g., Internet Archive)</span></div>
+                        <div class="flow-node-sub">"Wild" Archive<br><span class="text-xs text-text-light">(e.g., Abandoned FTP)</span></div>
+                        <div class="flow-node-sub">Conceptual Site<br><span class="text-xs text-text-light">(e.g., A living platform)</span></div>
+                    </div>
+                </div>
+
+                <div class="flow-arrow">&darr;</div>
+
+                <div class="flow-node border-primary max-w-lg w-full">
+                    <h3 class="text-xl font-bold text-primary">Phase 2: Define Target (The "What")</h3>
+                    <p class="text-sm text-text-light">Define the nature of the "find."</p>
+                    <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-2">
+                        <div class="flow-node-sub">Tangible (The File)<br><span class="text-xs text-text-light">(e.g., A `.swf` or `.mp3` file)</span></div>
+                        <div class="flow-node-sub">Conceptual (The Ghost)<br><span class="text-xs text-text-light">(e.g., The "Away Message" ritual)</span></div>
+                    </div>
+                </div>
+
+                <div class="flow-arrow">&darr;</div>
+
+                <div class="flow-node border-primary max-w-lg w-full">
+                    <h3 class="text-xl font-bold text-primary">Phase 3: Sifting Methodology (The "How")</h3>
+                    <p class="text-sm text-text-light">Apply the active search method.</p>
+                    <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-2">
+                        <div class="flow-node-sub">Keyword Sifting<br><span class="text-xs text-text-light">(e.g., "Guestbook")</span></div>
+                        <div class="flow-node-sub">Relational Mapping<br><span class="text-xs text-text-light">(e.g., Following a Webring)</span></div>
+                        <div class="flow-node-sub">Stratigraphic Sampling<br><span class="text-xs text-text-light">(e.g., "Only 1999")</span></div>
+                    </div>
+                </div>
+
+                <div class="flow-arrow">&darr;</div>
+
+                <div class="flow-node bg-primary text-white max-w-md w-full">
+                    <h3 class="text-xl font-bold">OUTPUT: The "First Find"</h3>
+                    <p class="text-base font-normal">A discrete Archaeobyte is secured and ready for Triage.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="bg-card-bg rounded-lg shadow-xl p-8 md:p-12 mb-16 md:mb-24">
+            <h2 class="text-3xl font-bold text-center mb-12">The Process: Part B - The Triage & Anvil Protocol</h2>
+            <p class="text-lg text-text-light text-center max-w-3xl mx-auto mb-12">Once found, the artifact is processed through a three-phase Triage to determine its classification, preservation path, and ultimate scholarly value.</p>
+
+            <div class="flex flex-col items-center">
+                
+                <div class="flow-node border-primary max-w-lg w-full">
+                    <h3 class="text-xl font-bold text-primary">Phase 1: Classification</h3>
+                    <p class="text-sm text-text-light">Assign the artifact's state of being.</p>
+                    <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-2">
+                        <div class="flow-node-sub border-primary text-primary">Vivibyte</div>
+                        <div class="flow-node-sub border-umbra text-umbra">Umbrabyte</div>
+                        <div class="flow-node-sub border-petri text-petri">Petribyte</div>
+                    </div>
+                </div>
+
+                <div class="flow-arrow">&darr;</div>
+
+                <div class="flow-node border-primary max-w-lg w-full">
+                    <h3 class="text-xl font-bold text-primary">Phase 2: Preservation Triage</h3>
+                    <p class="text-sm text-text-light">Determine the technical and ethical path forward.</p>
+                    <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="flow-node-sub">
+                            <strong class="text-text-dark">A. Contextual (How)</strong>
+                            <div class="text-xs text-text-light mt-1">Object-based (Migrate) OR Experience-based (Emulate)</div>
+                        </div>
+                        <div class="flow-node-sub">
+                            <strong class="text-text-dark">B. Custodial (Ethical)</strong>
+                            <div class="text-xs text-text-light mt-1">Privacy (Redact) AND Copyright (Cite/Fair Use)</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flow-arrow">&darr;</div>
+
+                <div class="flow-node border-primary max-w-2xl w-full">
+                    <h3 class="text-xl font-bold text-primary">Phase 3: Academic Synthesis (The "So What")</h3>
+                    <p class="text-sm text-text-light">Determine the final scholarly output based on relevance.</p>
+                </div>
+                
+                <div class="flow-line w-full max-w-2xl hidden md:block"></div>
+                <div class="flow-arrow md:hidden">&darr;</div>
+
+                <div class="w-full max-w-5xl mt-6">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                        <div class="flex flex-col items-center">
+                            <div class="flow-node-sub w-full">
+                                <strong class="text-text-dark">Path 1: Digital Dust</strong>
+                                <p class="text-xs text-text-light">(No Rigor, No Resonance)</p>
+                                <div class="flow-arrow text-2xl">&darr;</div>
+                                <div class="font-bold text-primary">ACTION: ARCHIVE</div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col items-center">
+                            <div class="flow-node-sub w-full">
+                                <strong class="text-text-dark">Path 2: Curio</strong>
+                                <p class="text-xs text-text-light">(Resonance, No Rigor)</p>
+                                <div class="flow-arrow text-2xl">&darr;</div>
+                                <div class="font-bold text-primary">ACTION: DOCUMENT (Digital Monument)</div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col items-center">
+                            <div class="flow-node-sub w-full border-2 border-primary">
+                                <strong class="text-primary">Path 3: Landmark</strong>
+                                <p class="text-xs text-text-light">(Resonance AND Rigor)</p>
+                                <div class="flow-arrow text-2xl text-primary">&darr;</div>
+                                <div class="font-bold text-primary">ACTION: AMPLIFY (Handoff to The Anvil)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-center mb-16 md:mb-24">
+            <h2 class="text-3xl font-bold text-center mb-6">The Goal: The Anvil</h2>
+            <p class="text-lg text-text-light text-center max-w-3xl mx-auto mb-12">The Anvil is the applied philosophy of Archaeobytology: using the wisdom (Proof, Warning, Blueprint) from the Archive to forge resilient, human-centric future frameworks.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-card-bg rounded-lg shadow-lg p-6">
+                    <span class="text-6xl" role="img" aria-label="Megaphone">📣</span>
+                    <h3 class="text-2xl font-bold mt-4 mb-2">Pillar 1: Declaration</h3>
+                    <p class="text-text-light">Building tools that prioritize user self-definition and intentional presence (the lesson of the "Away Message").</p>
+                </div>
+                <div class="bg-card-bg rounded-lg shadow-lg p-6">
+                    <span class="text-6xl" role="img" aria-label="Link">🤝</span>
+                    <h3 class="text-2xl font-bold mt-4 mb-2">Pillar 2: Connection</h3>
+                    <p class="text-text-light">Forging hand-built, non-algorithmic bridges between users (the lesson of the "Webring").</p>
+                </div>
+                <div class="bg-card-bg rounded-lg shadow-lg p-6">
+                    <span class="text-6xl" role="img" aria-label="House">🏛️</span>
+                    <h3 class="text-2xl font-bold mt-4 mb-2">Pillar 3: The Ground</h3>
+                    <p class="text-text-light">Designing systems that guarantee user sovereignty over their data and property (the lesson of "GeoCities").</p>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="text-center mt-12 md:mt-24 border-t border-gray-300 pt-8">
+            <p class="text-sm text-text-light">An Infographic by the Archaeobytology Institute, based on the Foundational Theses.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const colors = {
+                primary: '#0A74DA',
+                secondary: '#3498DB',
+                umbra: '#F39C12',
+                petri: '#8E44AD',
+                text: '#2C3E50',
+                textLight: '#7F8C8D',
+                bg: '#ECF0F1'
+            };
+
+            const chartTooltipCallback = {
+                title: function(tooltipItems) {
+                    const item = tooltipItems[0];
+                    let label = item.chart.data.labels[item.dataIndex];
+                    if (Array.isArray(label)) {
+                        return label.join(' ');
+                    }
+                    return label;
+                }
+            };
+
+            const commonOptions = {
+                maintainAspectRatio: false,
+                responsive: true,
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: colors.text,
+                            font: {
+                                family: "'Inter', sans-serif"
+                            }
+                        }
+                    },
+                    tooltip: {
+                        callbacks: chartTooltipCallback,
+                        bodyFont: {
+                            family: "'Inter', sans-serif"
+                        },
+                        titleFont: {
+                            family: "'Inter', sans-serif"
+                        }
+                    }
+                }
+            };
+            
+            const commonPieOptions = {
+                ...commonOptions,
+                plugins: {
+                    ...commonOptions.plugins,
+                    legend: {
+                        ...commonOptions.plugins.legend,
+                        position: 'bottom',
+                    }
+                }
+            };
+            
+            const commonBarOptions = {
+                 ...commonOptions,
+                scales: {
+                    x: {
+                        ticks: { 
+                            color: colors.text,
+                            font: {
+                                family: "'Inter', sans-serif"
+                            }
+                        },
+                        grid: {
+                            display: false
+                        }
+                    },
+                    y: {
+                        ticks: { 
+                            color: colors.text,
+                            font: {
+                                family: "'Inter', sans-serif"
+                            }
+                        },
+                        grid: {
+                            color: '#DDE3E4'
+                        }
+                    }
+                }
+            };
+
+            function createVivibyteChart() {
+                const ctx = document.getElementById('vivibyteChart')?.getContext('2d');
+                if (!ctx) return;
+
+                new Chart(ctx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Open Standards (Vivibytes)', 'Proprietary (Petribytes)'],
+                        datasets: [{
+                            data: [70, 30],
+                            backgroundColor: [colors.primary, colors.petri],
+                            borderWidth: 0
+                        }]
+                    },
+                    options: {
+                        ...commonPieOptions,
+                        plugins: {
+                            ...commonPieOptions.plugins,
+                             tooltip: {
+                                ...commonPieOptions.plugins.tooltip,
+                                callbacks: {
+                                    ...commonPieOptions.plugins.tooltip.callbacks,
+                                    label: function(context) {
+                                        return ` ${context.label}: ${context.raw}%`;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            function createUmbraChart() {
+                const ctx = document.getElementById('umbraChart')?.getContext('2d');
+                if (!ctx) return;
+
+                const umbraLabels = [
+                    ['GeoCities', '(1994-2009)'],
+                    ['MySpace', '(2003-Present)'],
+                    ['Vine', '(2013-2017)']
+                ];
+
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: umbraLabels,
+                        datasets: [
+                            {
+                                label: 'User Content (Umbrabyte)',
+                                data: [80, 70, 90],
+                                backgroundColor: colors.umbra
+                            },
+                            {
+                                label: 'Platform Functions (Petribyte)',
+                                data: [20, 30, 10],
+                                backgroundColor: colors.petri
+                            }
+                        ]
+                    },
+                    options: {
+                        ...commonBarOptions,
+                        scales: {
+                            ...commonBarOptions.scales,
+                            x: { ...commonBarOptions.scales.x, stacked: true },
+                            y: { ...commonBarOptions.scales.y, stacked: true, ticks: { ...commonBarOptions.scales.y.ticks, callback: value => value + '%' } }
+                        }
+                    }
+                });
+            }
+
+            function createPetriChart() {
+                const ctx = document.getElementById('petriChart')?.getContext('2d');
+                if (!ctx) return;
+
+                new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: ['1998', '2001', '2004', '2007', '2010'],
+                        datasets: [
+                            {
+                                label: 'AIM Away Message Use',
+                                data: [50, 80, 90, 60, 10],
+                                borderColor: colors.petri,
+                                backgroundColor: 'rgba(142, 68, 173, 0.1)',
+                                fill: true,
+                                tension: 0.3
+                            },
+                            {
+                                label: 'Mobile "Always-On" Rise',
+                                data: [0, 1, 5, 30, 80],
+                                borderColor: colors.primary,
+                                backgroundColor: 'rgba(10, 116, 218, 0.1)',
+                                fill: true,
+                                tension: 0.3
+                            }
+                        ]
+                    },
+                    options: {
+                        ...commonBarOptions,
+                        scales: {
+                            ...commonBarOptions.scales,
+                             y: { ...commonBarOptions.scales.y, ticks: { ...commonBarOptions.scales.y.ticks, callback: value => value + 'M Users' } }
+                        }
+                    }
+                });
+            }
+            
+            createVivibyteChart();
+            createUmbraChart();
+            createPetriChart();
+        });
+    </script>
+</body>
+</html>

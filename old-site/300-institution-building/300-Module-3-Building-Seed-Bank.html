@@ -1,0 +1,939 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 3: Building the Seed Bank | ARCH 300: Institution Building</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Lora', serif; line-height: 1.8; color: #2E2E2E; background: #F8F7F4; padding: 2rem 1rem; }
+        .container { max-width: 900px; margin: 0 auto; background: #FFFFFF; padding: 3rem; border-radius: 15px; box-shadow: 0 4px 20px rgba(46,46,46,0.1); border: 1px solid #D1D1D1; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; color: #2E2E2E; margin-top: 2rem; margin-bottom: 1rem; line-height: 1.3; }
+        h1 { font-size: 2.5rem; font-weight: 700; margin-top: 0; border-bottom: 3px solid #A1824A; padding-bottom: 0.5rem; }
+        h2 { font-size: 2rem; font-weight: 700; margin-top: 2.5rem; }
+        h3 { font-size: 1.5rem; font-weight: 600; color: #5A7D8C; }
+        h4 { font-size: 1.25rem; font-weight: 600; color: #5A7D8C; }
+        p { margin-bottom: 1.25rem; font-size: 1.1rem; }
+        a { color: #A93400; text-decoration: underline; transition: color 0.3s; }
+        a:hover { color: #A95C3D; }
+        strong { font-weight: 600; }
+        em { font-style: italic; }
+        code { font-family: 'Courier New', monospace; background: #F8F7F4; padding: 0.2rem 0.4rem; border-radius: 3px; border: 1px solid #D1D1D1; font-size: 0.95rem; }
+        blockquote { border-left: 4px solid #A1824A; padding: 1rem 1.5rem; margin: 1.5rem 0; font-style: italic; color: #5A7D8C; background: #F8F7F4; border-radius: 0 8px 8px 0; }
+        hr { border: none; border-top: 2px solid #D1D1D1; margin: 2rem 0; }
+        .nav { text-align: center; padding: 1rem 0; border-top: 2px solid #D1D1D1; margin-top: 2rem; }
+        .nav a { display: inline-block; padding: 0.75rem 1.5rem; background: #A93400; color: #F8F7F4; text-decoration: none; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 600; margin: 0.5rem; }
+        .nav a:hover { background: #A95C3D; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <article>
+<h1>Module 3: Building the Seed Bank</h1>
+<p>
+<strong>Archaeobytology 300: Institution Building & Strategic Infrastructure</strong>
+</p>
+
+<h2>Module Overview</h2>
+
+<p>
+<strong>Core Question:</strong> How do we build shared preservation infrastructure that no single entity controls—a digital commons that distributes both cost and control across many stakeholders?
+</p>
+
+<p>
+<strong>Learning Objective:</strong> Students will design a federated, collectively-governed "Seed Bank"—a distributed preservation network where multiple institutions share storage, labor, and governance without centralizing power or creating single points of failure.
+</p>
+
+<p>
+<strong>Time:</strong> Week 7-8
+</p>
+
+<h2>The Challenge: Beyond Single Institutions</h2>
+
+<p>
+<strong>Modules 1-2</strong> focused on single organizations:
+- Module 1: How does <em>one</em> Archive sustain itself?
+- Module 2: How does <em>one</em> Foundry stay profitable?
+</p>
+
+<p>
+<strong>Module 3</strong> asks: What if sovereignty requires <em>infrastructure no single entity can shut down</em>?
+</p>
+
+<h3>The Seed Bank Concept</h3>
+
+<p>
+A <strong>Seed Bank</strong> is distributed preservation infrastructure:
+- Multiple institutions host redundant copies
+- No single organization has unilateral control
+- Governance is collective (but not chaotic)
+- Cost is shared (but not equally—proportional contribution)
+- Anyone can join (but with responsibility requirements)
+</p>
+
+<p>
+<strong>Examples in the wild:</strong>
+- LOCKSS (academic libraries)
+- Mastodon (federated social media)
+- IPFS (distributed file storage)
+- Archive Team + Internet Archive (volunteer network + centralized storage)
+</p>
+
+<p>
+<strong>The Tension:</strong>
+- ✅ Distributed = resilient
+- ❌ Distributed = coordination problems
+- ❓ How do you govern a network with no center?
+</p>
+
+<h2>Core Reading</h2>
+
+<h3>Primary Texts</h3>
+
+<p>
+<strong>Ostrom, E. (1990).</strong> <em>Governing the Commons.</em> Chapters 2-3: "Design Principles"
+- Focus: How communities self-govern shared resources
+- Key Insight: Successful commons have clear boundaries, graduated sanctions, nested governance
+- Question: Can digital preservation be a self-governed commons?
+</p>
+
+<p>
+<strong>Schneier, B. (2012).</strong> <em>Liars and Outliers.</em> Chapter 4: "The Evolution of Cooperation"
+- Focus: How trust systems scale (or fail to)
+- Key Insight: Small groups cooperate naturally; large groups need institutions
+- Question: At what scale does a Seed Bank need formal governance?
+</p>
+
+<p>
+<strong>Benkler, Y. (2006).</strong> <em>The Wealth of Networks.</em> Chapter 3: "Peer Production"
+- Focus: Wikipedia, open source, and commons-based production
+- Key Insight: Decentralized production can rival centralized firms—if designed well
+- Question: What makes peer production succeed vs. collapse?
+</p>
+
+<h3>Case Study Readings</h3>
+
+<p>
+<strong>LOCKSS (Lots of Copies Keep Stuff Safe)</strong>
+- Model: University libraries form preservation consortia
+- Tech: Each library runs a LOCKSS server, redundantly stores agreed-upon content
+- Governance: Steering committee of participating libraries
+- Cost: ~$10k/year per institution (server + bandwidth)
+- Success: 300+ libraries, 20+ years, billions of preserved pages
+</p>
+
+<p>
+<strong>Mastodon (Federated Social Media)</strong>
+- Model: Anyone can run an "instance" (server), instances federate (interoperate)
+- Tech: ActivityPub protocol for cross-instance communication
+- Governance: Each instance self-governs; no global authority
+- Cost: Variable (~$10-500/month per instance)
+- Challenge: Instance admin burnout, spam/moderation, defederation conflicts
+</p>
+
+<p>
+<strong>IPFS (InterPlanetary File System)</strong>
+- Model: Peer-to-peer file storage (like BitTorrent, but permanent)
+- Tech: Content-addressed (hash-based) storage, anyone can "pin" files
+- Governance: None (protocol-level only)
+- Cost: Pay for your own storage/bandwidth
+- Challenge: Files disappear if no one pins them (requires incentive layer like Filecoin)
+</p>
+
+<p>
+<strong>Software Heritage</strong>
+- Model: Academic consortium preserves all public source code
+- Tech: Centralized archive + distributed mirrors at partner universities
+- Governance: Steering committee of research institutions + UNESCO
+- Cost: Partner institutions contribute infrastructure + funding
+- Success: 15B+ source code files preserved
+</p>
+
+<h2>Lecture: The Commons Design Matrix</h2>
+
+<p>
+Elinor Ostrom won the Nobel Prize for identifying <strong>8 design principles</strong> that successful commons share. We'll apply them to digital preservation:
+</p>
+
+<h3>Ostrom's 8 Principles (Applied to Seed Banks)</h3>
+
+<h4>1. Clearly Defined Boundaries</h4>
+<p>
+<strong>Principle:</strong> Who is part of the commons? What resources are governed?
+</p>
+
+<p>
+<strong>For a Seed Bank:</strong>
+- <strong>Membership:</strong> Who can join? (Open to all? Vetted institutions only?)
+- <strong>Content Scope:</strong> What gets preserved? (Everything? Curated collections?)
+- <strong>Access Rules:</strong> Who can retrieve preserved artifacts? (Members only? Public?)
+</p>
+
+<p>
+<strong>Example (LOCKSS):</strong>
+- ✅ Membership: Libraries that pay dues + run a server
+- ✅ Content: Journal archives that consortium collectively decides to preserve
+- ✅ Access: Members can access each other's preserved content
+</p>
+
+<p>
+<strong>Anti-Example (IPFS):</strong>
+- ❌ Membership: Anyone (no vetting)
+- ❌ Content: Anything anyone uploads
+- ❌ Access: Anyone
+- <strong>Result:</strong> Spam, illegal content, no accountability
+</p>
+
+<p>
+<strong>Design Question:</strong> Where do you draw the boundary between "open" and "functional"?
+</p>
+
+<h4>2. Proportional Equivalence (Costs/Benefits)</h4>
+<p>
+<strong>Principle:</strong> Members' obligations are proportional to benefits received.
+</p>
+
+<p>
+<strong>For a Seed Bank:</strong>
+- <strong>Contribution:</strong> Large institutions contribute more storage/bandwidth than small ones
+- <strong>Access:</strong> But all members get equal access to preserved content
+- <strong>Labor:</strong> Governance participation scales with size
+</p>
+
+<p>
+<strong>Example (Software Heritage):</strong>
+- ✅ Big universities host larger mirrors
+- ✅ Small institutions contribute less (but still participate)
+- ✅ All members access full archive
+</p>
+
+<p>
+<strong>Anti-Example (Volunteer Projects):</strong>
+- ❌ A few people do 90% of the work
+- ❌ Everyone benefits equally
+- <strong>Result:</strong> Burnout (Module 0's Volunteer Burnout Problem)
+</p>
+
+<p>
+<strong>Design Question:</strong> How do you measure "contribution"? (Storage? Bandwidth? Labor? Money?)
+</p>
+
+<h4>3. Collective-Choice Arrangements</h4>
+<p>
+<strong>Principle:</strong> Members affected by rules participate in making/modifying them.
+</p>
+
+<p>
+<strong>For a Seed Bank:</strong>
+- <strong>What to preserve:</strong> Members vote on collection priorities
+- <strong>Governance changes:</strong> Members can propose rule changes
+- <strong>Conflict resolution:</strong> Disputes handled by member representatives
+</p>
+
+<p>
+<strong>Example (LOCKSS):</strong>
+- ✅ Libraries collectively decide what journals to preserve
+- ✅ Steering committee elected by members
+- ✅ Annual meetings for governance decisions
+</p>
+
+<p>
+<strong>Anti-Example (Platform with "Advisory Board"):</strong>
+- ❌ Company makes decisions, "consults" users
+- ❌ Users have no real power
+- <strong>Result:</strong> Platform does what's profitable, not what's right
+</p>
+
+<p>
+<strong>Design Question:</strong> How do you balance "democracy" (everyone votes) with "efficiency" (decisions get made)?
+</p>
+
+<h4>4. Monitoring</h4>
+<p>
+<strong>Principle:</strong> Someone checks that members are following the rules.
+</p>
+
+<p>
+<strong>For a Seed Bank:</strong>
+- <strong>Technical Monitoring:</strong> Are members' servers online? Are they storing what they promised?
+- <strong>Content Monitoring:</strong> Is preserved content intact (checksums validate)?
+- <strong>Governance Monitoring:</strong> Are members participating in decision-making?
+</p>
+
+<p>
+<strong>Example (LOCKSS):</strong>
+- ✅ Automated polling: Each server checks if others have the same content
+- ✅ If discrepancies found, servers vote on "correct" version
+- ✅ Members that go offline too often are flagged
+</p>
+
+<p>
+<strong>Design Question:</strong> How do you monitor without creating surveillance?
+</p>
+
+<h4>5. Graduated Sanctions</h4>
+<p>
+<strong>Principle:</strong> Rule-breakers face escalating consequences (not immediate expulsion).
+</p>
+
+<p>
+<strong>For a Seed Bank:</strong>
+- <strong>Level 1:</strong> Warning (server went offline, please fix)
+- <strong>Level 2:</strong> Temporary restriction (can't submit new content until server is fixed)
+- <strong>Level 3:</strong> Suspension (server offline too long, removed from network)
+- <strong>Level 4:</strong> Expulsion (repeated violations, bad faith actor)
+</p>
+
+<p>
+<strong>Example (Mastodon Federation):</strong>
+- ✅ Instance admins can "mute" (limit visibility) problem instances
+- ✅ Severe cases: "defederate" (completely block)
+- ❌ But no graduated steps—it's binary (federate or don't)
+</p>
+
+<p>
+<strong>Design Question:</strong> How do you enforce rules without becoming authoritarian?
+</p>
+
+<h4>6. Conflict-Resolution Mechanisms</h4>
+<p>
+<strong>Principle:</strong> Disputes are resolved quickly and fairly.
+</p>
+
+<p>
+<strong>For a Seed Bank:</strong>
+- <strong>Technical disputes:</strong> "Your server says file X has hash A, mine says hash B. Who's right?"
+- <strong>Governance disputes:</strong> "You want to preserve project X, I think it violates our content policy."
+- <strong>Resource disputes:</strong> "You're using too much bandwidth, throttle your server."
+</p>
+
+<p>
+<strong>Example (LOCKSS):</strong>
+- ✅ Servers "vote" on correct content version (majority wins)
+- ✅ Governance disputes go to steering committee
+- ✅ Technical disputes have algorithmic resolution
+</p>
+
+<p>
+<strong>Anti-Example (Informal volunteer projects):</strong>
+- ❌ Disputes resolved by "whoever yells loudest"
+- ❌ Or founder makes unilateral decision
+- <strong>Result:</strong> Resentment, forks, project collapse
+</p>
+
+<p>
+<strong>Design Question:</strong> Do you need human arbitration, algorithmic resolution, or both?
+</p>
+
+<h4>7. Minimal Recognition of Rights</h4>
+<p>
+<strong>Principle:</strong> External authorities respect the commons' autonomy.
+</p>
+
+<p>
+<strong>For a Seed Bank:</strong>
+- <strong>Legal Recognition:</strong> Preservation activities are recognized as legitimate (not piracy)
+- <strong>Platform Respect:</strong> Platforms don't block/sue preservation efforts
+- <strong>Government Neutrality:</strong> State doesn't interfere with governance
+</p>
+
+<p>
+<strong>Example (Internet Archive):</strong>
+- ⚠️ <em>Partially</em> recognized: Fair use protects web archiving
+- ❌ But publishers sue over controlled digital lending
+- ❌ No clear legal status for preservation
+</p>
+
+<p>
+<strong>Challenge:</strong> Digital preservation operates in legal grey areas. How do you get legitimacy?
+</p>
+
+<p>
+<strong>Design Question:</strong> Do you seek legal recognition (lobby for laws) or operate in grey areas (civil disobedience)?
+</p>
+
+<h4>8. Nested Enterprises</h4>
+<p>
+<strong>Principle:</strong> Large commons are organized in multiple layers.
+</p>
+
+<p>
+<strong>For a Seed Bank:</strong>
+- <strong>Local Level:</strong> Individual institutions run servers, make local decisions
+- <strong>Regional Level:</strong> Regional consortia coordinate (East Coast libraries, European archives, etc.)
+- <strong>Global Level:</strong> Overall coordination, protocol development, crisis response
+</p>
+
+<p>
+<strong>Example (Software Heritage):</strong>
+- ✅ Local: Each university hosts a mirror
+- ✅ Regional: European partners coordinate within EU
+- ✅ Global: Central coordination in Paris + UNESCO oversight
+</p>
+
+<p>
+<strong>Anti-Example (Mastodon):</strong>
+- ✅ Local: Each instance self-governs
+- ❌ No regional coordination
+- ❌ No global governance
+- <strong>Result:</strong> Fragmentation, coordination failures
+</p>
+
+<p>
+<strong>Design Question:</strong> How many layers do you need? Too many = bureaucracy. Too few = chaos.
+</p>
+
+<h2>Framework: The Seed Bank Design Canvas</h2>
+
+<p>
+Your assignment will design a complete Seed Bank using these dimensions:
+</p>
+
+<h3>Section 1: Purpose & Scope</h3>
+
+<p>
+<strong>What is this Seed Bank preserving?</strong>
+- <strong>Content Type:</strong> Web pages? Software? Datasets? Media?
+- <strong>Scale:</strong> How many artifacts? (Thousands? Millions? Billions?)
+- <strong>Timeframe:</strong> How long must it last? (10 years? 50 years? 100 years?)
+</p>
+
+<p>
+<strong>Example (hypothetical):</strong>
+</p>
+<blockquote><em>Purpose:</em> Preserve "Indie Web" content—personal blogs, digital gardens, small-scale social platforms—before they disappear from link rot.</blockquote>
+<blockquote></blockquote>
+<blockquote><em>Scope:</em> ~100,000 personal websites, ~10TB of data</blockquote>
+<blockquote></blockquote>
+<blockquote><em>Timeframe:</em> 50+ years (generational preservation)</blockquote>
+
+<h3>Section 2: Membership & Boundaries (Ostrom Principle 1)</h3>
+
+<p>
+<strong>Who can join?</strong>
+- <strong>Open Membership:</strong> Anyone can join (IPFS model)
+- <strong>Vetted Membership:</strong> Must apply and be approved (LOCKSS model)
+- <strong>Institutional Only:</strong> Must be an institution, not individual (Software Heritage model)
+- <strong>Hybrid:</strong> Open for small contributors, vetted for large ones
+</p>
+
+<p>
+<strong>What are the requirements?</strong>
+- <strong>Technical:</strong> Must run a server with X storage, Y bandwidth
+- <strong>Financial:</strong> Must pay dues ($X/year)
+- <strong>Labor:</strong> Must participate in governance (attend meetings, vote)
+- <strong>Content:</strong> Must agree to preserve collective priorities (not just your own stuff)
+</p>
+
+<p>
+<strong>Who can access preserved content?</strong>
+- <strong>Members Only:</strong> Only participating institutions
+- <strong>Public Access:</strong> Anyone can retrieve content
+- <strong>Tiered Access:</strong> Members get full access, public gets limited
+</p>
+
+<h3>Section 3: Governance Model (Ostrom Principles 3, 6)</h3>
+
+<p>
+<strong>How are decisions made?</strong>
+</p>
+
+<p>
+| Governance Model | Decision-Making | Pros | Cons |
+|------------------|----------------|------|------|
+| <strong>Consensus</strong> | Everyone must agree | Democratic, high buy-in | Slow, veto risk |
+| <strong>Majority Vote</strong> | 50%+1 decides | Faster than consensus | Majority can tyrannize minority |
+| <strong>Supermajority</strong> | 66% or 75% required | Balances speed and legitimacy | Still possible to block |
+| <strong>Steering Committee</strong> | Elected representatives decide | Efficient, accountable | Risk of oligarchy |
+| <strong>Rotating Leadership</strong> | Different members lead in rotation | Distributes power | Inconsistent leadership |
+| <strong>Do-ocracy</strong> | Whoever does the work decides | Meritocratic, fast | Excludes those with less time |
+</p>
+
+<p>
+<strong>What decisions need collective approval?</strong>
+- <strong>Mission-critical:</strong> What to preserve, who to admit/expel
+- <strong>Operational:</strong> Budget, infrastructure upgrades
+- <strong>Technical:</strong> Protocol changes, software updates
+- <strong>Minor:</strong> Day-to-day operations (delegated to working groups)
+</p>
+
+<h3>Section 4: Technical Architecture</h3>
+
+<p>
+<strong>How is data distributed?</strong>
+</p>
+
+<p>
+| Architecture | How It Works | Redundancy | Cost | Single Point of Failure? |
+|--------------|-------------|------------|------|--------------------------|
+| <strong>Centralized + Mirrors</strong> | One "source of truth" + read-only copies elsewhere | Medium | Low | Yes (source) |
+| <strong>Peer-to-Peer (P2P)</strong> | Every node has some content, no center | High (if enough nodes) | Low (shared) | No |
+| <strong>Federated</strong> | Multiple independent servers, coordinated | Medium-High | Medium | No (but coordination needed) |
+| <strong>Blockchain</strong> | Cryptographically verified distributed ledger | Very High | Very High | No |
+</p>
+
+<p>
+<strong>Example Design (Hypothetical Indie Web Seed Bank):</strong>
+- <strong>Storage:</strong> Each member institution runs a LOCKSS-style server
+- <strong>Redundancy:</strong> 7 copies of each artifact (distributed geographically)
+- <strong>Verification:</strong> Monthly checksums to ensure data integrity
+- <strong>Access:</strong> Public-facing mirrors allow anyone to retrieve content
+- <strong>Cost:</strong> ~$500/year per member for server + bandwidth
+</p>
+
+<h3>Section 5: Economic Model (Ostrom Principle 2)</h3>
+
+<p>
+<strong>How is the Seed Bank funded?</strong>
+</p>
+
+<p>
+| Funding Source | Amount/Year | Who Pays? | Proportionality? |
+|---------------|-------------|-----------|------------------|
+| <strong>Membership Dues</strong> | $X/member/year | All members | Tiered by size (small institutions pay less) |
+| <strong>Infrastructure Contributions</strong> | In-kind (servers, bandwidth) | Members with resources | Large institutions contribute more |
+| <strong>Grants</strong> | One-time or recurring | Foundations, governments | Not from members |
+| <strong>Donations</strong> | Variable | Public, supporters | Optional |
+| <strong>Earned Revenue</strong> | From services (consulting, tools) | External customers | Reinvested in commons |
+</p>
+
+<p>
+<strong>Budget Template:</strong>
+</p>
+
+<p>
+| Expense Category | Annual Cost | Who Pays? |
+|-----------------|-------------|-----------|
+| Coordination (staff, meetings) | $XXk | Membership dues |
+| Infrastructure (servers, bandwidth) | $XXk | In-kind contributions + dues |
+| Software Development (tools, protocols) | $XXk | Grants + volunteer labor |
+| Legal/Administrative | $XXk | Membership dues |
+| <strong>Total</strong> | <strong>$XXk</strong> | |
+</p>
+
+<p>
+<strong>Proportionality Check:</strong>
+- Do large institutions pay/contribute more? (Yes/No)
+- Do small institutions still get full access? (Yes/No)
+- Is the burden sustainable for all members? (Yes/No)
+</p>
+
+<h3>Section 6: Monitoring & Enforcement (Ostrom Principles 4, 5)</h3>
+
+<p>
+<strong>How do you ensure members fulfill obligations?</strong>
+</p>
+
+<h4>Technical Monitoring</h4>
+<p>
+- <strong>Automated polling:</strong> Servers check each other's status
+- <strong>Checksums:</strong> Verify data integrity
+- <strong>Uptime tracking:</strong> Log when servers go offline
+</p>
+
+<h4>Governance Monitoring</h4>
+<p>
+- <strong>Participation tracking:</strong> Do members attend meetings, vote?
+- <strong>Contribution audit:</strong> Are members providing promised resources?
+</p>
+
+<h4>Graduated Sanctions</h4>
+<p>
+- <strong>Level 1 (Warning):</strong> Automated email if server offline >24 hours
+- <strong>Level 2 (Limitation):</strong> Can't submit new content until issue resolved
+- <strong>Level 3 (Probation):</strong> Steering committee reviews, member must present improvement plan
+- <strong>Level 4 (Suspension):</strong> Temporary removal from network (can reapply later)
+- <strong>Level 5 (Expulsion):</strong> Permanent removal (for repeated violations or bad faith)
+</p>
+
+<h3>Section 7: Three Pillars Embodiment</h3>
+
+<p>
+<strong>Does your Seed Bank embody The Three Pillars?</strong>
+</p>
+
+<h4>Declaration (Sovereignty)</h4>
+<p>
+- ❓ Is the Seed Bank independent? (No single government/company controls it)
+- ❓ Can members leave and take their data? (Exportable, portable)
+- ❓ Is governance member-driven? (Not dictated by a platform)
+</p>
+
+<h4>Connection (Intentional Community)</h4>
+<p>
+- ❓ Do members choose to participate? (Not coerced)
+- ❓ Is there real community? (Not just technical interoperability)
+- ❓ Can members communicate and coordinate? (Not siloed)
+</p>
+
+<h4>Ground (Ownership)</h4>
+<p>
+- ❓ Do members own their infrastructure? (Not renting from a platform)
+- ❓ Is data distributed? (No single point of control)
+- ❓ Can the commons survive any single member leaving? (Redundancy)
+</p>
+
+<p>
+<strong>The Test:</strong> If the largest member left tomorrow, would the Seed Bank continue? If <strong>no</strong>, you have a hidden dependency.
+</p>
+
+<h2>Case Study Deep-Dives</h2>
+
+<h3>Case 1: LOCKSS (The Gold Standard)</h3>
+
+<p>
+<strong>What It Preserves:</strong> Academic journal archives (content libraries pay for)
+</p>
+
+<p>
+<strong>Membership:</strong>
+- ~300 academic libraries worldwide
+- Must pay dues (~$10k/year) + run a server
+</p>
+
+<p>
+<strong>Governance:</strong>
+- Steering committee (elected by members)
+- Annual meetings for major decisions
+- Working groups for technical/policy issues
+</p>
+
+<p>
+<strong>Technical:</strong>
+- Each library runs a LOCKSS server
+- Servers poll each other to verify content
+- If discrepancies found, majority vote determines "correct" version
+- 7+ copies of each preserved item (geographically distributed)
+</p>
+
+<p>
+<strong>Economic:</strong>
+- Member dues fund central coordination (Stanford hosts core team)
+- Libraries provide infrastructure (servers, bandwidth)
+- Total cost: ~$3M/year (across 300 members = ~$10k each)
+</p>
+
+<p>
+<strong>Ostrom Principles Applied:</strong>
+1. ✅ <strong>Boundaries:</strong> Clear membership (dues-paying libraries)
+2. ✅ <strong>Proportionality:</strong> Larger libraries pay more, all get equal access
+3. ✅ <strong>Collective Choice:</strong> Members vote on what to preserve
+4. ✅ <strong>Monitoring:</strong> Automated polling + annual audits
+5. ✅ <strong>Sanctions:</strong> Non-compliant members suspended
+6. ✅ <strong>Conflict Resolution:</strong> Steering committee arbitrates
+7. ⚠️ <strong>Recognition:</strong> Libraries recognize LOCKSS; publishers sometimes challenge
+8. ✅ <strong>Nested:</strong> Local (each library), regional (consortia), global (steering committee)
+</p>
+
+<p>
+<strong>What We Can Learn:</strong>
+- ✅ 20+ years of operation = proven model
+- ✅ True decentralization (no single point of failure)
+- ✅ Institutional buy-in (libraries understand importance)
+- ❌ Expensive (only institutions can afford it)
+- ❌ Limited scope (only preserves content libraries already pay for)
+</p>
+
+<p>
+<strong>Student Discussion:</strong>
+1. Could LOCKSS be adapted for non-academic content (personal websites, indie games)?
+2. How do you make it affordable for small institutions or individuals?
+</p>
+
+<h3>Case 2: Mastodon (The Federated Social Network)</h3>
+
+<p>
+<strong>What It Preserves/Hosts:</strong> Social media posts (Twitter alternative)
+</p>
+
+<p>
+<strong>Membership:</strong>
+- Anyone can run an instance (server)
+- No vetting, no dues
+- ~10,000 instances, ~10M users
+</p>
+
+<p>
+<strong>Governance:</strong>
+- Each instance self-governs (instance admin makes rules)
+- No global governance
+- Instances can "defederate" (block) each other
+</p>
+
+<p>
+<strong>Technical:</strong>
+- ActivityPub protocol (W3C standard)
+- Each instance stores its users' posts
+- Instances exchange posts via federation protocol
+- No redundancy (if instance shuts down, posts disappear)
+</p>
+
+<p>
+<strong>Economic:</strong>
+- Instance admins pay for hosting (~$10-500/month)
+- Some instances crowdfund (Patreon, Ko-fi)
+- No central budget
+</p>
+
+<p>
+<strong>Ostrom Principles Applied:</strong>
+1. ⚠️ <strong>Boundaries:</strong> No clear boundaries (anyone can join)
+2. ❌ <strong>Proportionality:</strong> Instance admins bear all costs, users pay nothing
+3. ❌ <strong>Collective Choice:</strong> No global decision-making
+4. ❌ <strong>Monitoring:</strong> No cross-instance accountability
+5. ⚠️ <strong>Sanctions:</strong> Defederation (but no graduated approach)
+6. ❌ <strong>Conflict Resolution:</strong> No dispute resolution mechanism
+7. ⚠️ <strong>Recognition:</strong> Seen as "alternative" but not legitimate replacement for Twitter
+8. ❌ <strong>Nested:</strong> Only two levels (instance, global); no regional coordination
+</p>
+
+<p>
+<strong>What We Can Learn:</strong>
+- ✅ Federation protocol works technically
+- ✅ No single point of failure (decentralized)
+- ❌ No preservation (instances die, posts disappear)
+- ❌ Admin burnout (Module 0's Volunteer Burnout Problem)
+- ❌ Fragmentation (instances defederate, community splits)
+</p>
+
+<p>
+<strong>Student Discussion:</strong>
+1. What would "Mastodon with Ostrom principles" look like?
+2. Could regional consortia fund shared infrastructure (instead of individual admins paying)?
+</p>
+
+<h3>Case 3: Software Heritage (The Academic Consortium)</h3>
+
+<p>
+<strong>What It Preserves:</strong> All public source code (GitHub, GitLab, Bitbucket, etc.)
+</p>
+
+<p>
+<strong>Membership:</strong>
+- ~50 partner institutions (universities, research labs)
+- Vetted (must be legitimate academic/cultural organization)
+- In-kind contributions (hosting mirrors)
+</p>
+
+<p>
+<strong>Governance:</strong>
+- Steering committee (representatives from partner institutions)
+- UNESCO official partner (gives legitimacy)
+- Annual assembly for major decisions
+</p>
+
+<p>
+<strong>Technical:</strong>
+- Centralized archive in Paris (primary copy)
+- Distributed mirrors at partner universities (redundancy)
+- Git-based storage (preserves full history)
+- Public API (anyone can query)
+</p>
+
+<p>
+<strong>Economic:</strong>
+- Partner institutions contribute infrastructure (mirrors)
+- French government funds core team (~$2M/year)
+- Research grants (~$1M/year)
+- Total: ~$3M/year (but distributed across many institutions)
+</p>
+
+<p>
+<strong>Ostrom Principles Applied:</strong>
+1. ✅ <strong>Boundaries:</strong> Clear membership (vetted partners)
+2. ✅ <strong>Proportionality:</strong> Large universities host bigger mirrors
+3. ✅ <strong>Collective Choice:</strong> Partners decide on policy priorities
+4. ✅ <strong>Monitoring:</strong> Automated checks on mirror integrity
+5. ⚠️ <strong>Sanctions:</strong> Informal (no formal enforcement yet)
+6. ✅ <strong>Conflict Resolution:</strong> Steering committee
+7. ✅ <strong>Recognition:</strong> UNESCO partnership gives legitimacy
+8. ✅ <strong>Nested:</strong> Local (mirrors), regional (EU partners), global (UNESCO)
+</p>
+
+<p>
+<strong>What We Can Learn:</strong>
+- ✅ Massive scale (15B+ files)
+- ✅ Strong institutional backing (UNESCO)
+- ✅ Public access (anyone can query)
+- ⚠️ Still somewhat centralized (Paris is "source of truth")
+- ❌ Dependent on French government funding (what if it ends?)
+</p>
+
+<p>
+<strong>Student Discussion:</strong>
+1. Is Software Heritage truly decentralized, or is Paris still a single point of failure?
+2. Could this model work for non-code content (websites, datasets, media)?
+</p>
+
+<h2>Assignment: Design Your Seed Bank</h2>
+
+<p>
+<strong>Objective:</strong> Design a federated, collectively-governed preservation network that embodies Ostrom's principles and The Three Pillars.
+</p>
+
+<h3>Deliverable: Seed Bank System Design (3500-4500 words)</h3>
+
+<p>
+<strong>Required Sections:</strong>
+</p>
+
+<h4>1. Executive Summary (300 words)</h4>
+<p>
+- What are you preserving? (Content type, scale, timeframe)
+- Why does this need collective infrastructure? (Why not a single Archive?)
+- Who are the members? (Institutions? Individuals? Both?)
+- Three Pillars alignment
+</p>
+
+<h4>2. Membership & Boundaries (600 words) — <strong>Ostrom Principle 1</strong></h4>
+<p>
+- Who can join? (Open? Vetted? Institutional only?)
+- What are membership requirements? (Technical, financial, labor)
+- Who can access preserved content? (Members only? Public?)
+- How do you prevent bad actors? (Vetting process, sanctions)
+</p>
+
+<h4>3. Governance Model (800 words) — <strong>Ostrom Principles 3, 6</strong></h4>
+<p>
+- How are decisions made? (Consensus? Vote? Steering committee?)
+- What decisions require collective approval? (vs. delegated to working groups)
+- How are conflicts resolved? (Human arbitration? Algorithmic? Both?)
+- How do members propose changes? (Governance amendment process)
+</p>
+
+<h4>4. Technical Architecture (800 words)</h4>
+<p>
+- How is data distributed? (Centralized + mirrors? P2P? Federated?)
+- What level of redundancy? (How many copies per artifact?)
+- How is data integrity verified? (Checksums? Automated polling?)
+- How do users access preserved content? (Public API? Member portals?)
+- Cost projections (storage, bandwidth, per member)
+</p>
+
+<h4>5. Economic Model (600 words) — <strong>Ostrom Principle 2</strong></h4>
+<p>
+- How is the Seed Bank funded? (Dues? In-kind contributions? Grants?)
+- Is contribution proportional to size? (Tiered membership?)
+- Annual budget (coordination, infrastructure, development, legal)
+- Sustainability plan (can this last 10+ years?)
+</p>
+
+<h4>6. Monitoring & Enforcement (600 words) — <strong>Ostrom Principles 4, 5</strong></h4>
+<p>
+- How do you monitor compliance? (Technical uptime? Governance participation?)
+- What are the rules? (Uptime requirements? Data integrity? Governance participation?)
+- What happens if a member violates rules? (Graduated sanctions: warning → probation → suspension → expulsion)
+- How do you avoid authoritarianism? (Appeals process, transparency)
+</p>
+
+<h4>7. Three Pillars Integrity Check (400 words)</h4>
+<p>
+- <strong>Declaration:</strong> Is the Seed Bank independent? Can members leave?
+- <strong>Connection:</strong> Is community intentional? Can members coordinate?
+- <strong>Ground:</strong> Do members own infrastructure? Is data distributed?
+- <strong>The Test:</strong> If the largest member left, would the Seed Bank survive?
+</p>
+
+<h4>8. Comparison to Existing Models (400 words)</h4>
+<p>
+- How is your design different from LOCKSS? Mastodon? Software Heritage? IPFS?
+- What did you adopt from them?
+- What did you improve?
+</p>
+
+<h3>Evaluation Criteria:</h3>
+
+<p>
+| Criterion | Points | What We're Looking For |
+|-----------|--------|------------------------|
+| <strong>Ostrom Principles</strong> | 35 | Did you apply all 8 principles? Are boundaries clear, governance collective, sanctions graduated? |
+| <strong>Technical Feasibility</strong> | 25 | Can this architecture actually work? Is it buildable? |
+| <strong>Economic Sustainability</strong> | 20 | Can this be funded long-term? Is contribution proportional? |
+| <strong>Three Pillars Integrity</strong> | 15 | Does it embody Declaration, Connection, Ground? |
+| <strong>Originality</strong> | 5 | Is this a genuinely new model, or copying LOCKSS? |
+</p>
+
+<p>
+<strong>Total: 100 points</strong>
+</p>
+
+<h2>Discussion Questions for Seminar</h2>
+
+<p>
+1. <strong>The Open vs. Closed Dilemma:</strong> IPFS is fully open (anyone can join) but chaotic. LOCKSS is vetted (libraries only) but exclusive. Where's the balance?
+</p>
+
+<p>
+2. <strong>The Democracy vs. Efficiency Tradeoff:</strong> Consensus is democratic but slow. Steering committees are efficient but risk oligarchy. How do you govern at scale?
+</p>
+
+<p>
+3. <strong>The Free Rider Problem:</strong> In Mastodon, admins pay for everything while users pay nothing. How do you ensure proportionality without creating barriers?
+</p>
+
+<p>
+4. <strong>The Legal Grey Area:</strong> Digital preservation often violates copyright. Should Seed Banks seek legal recognition (lobby for laws) or operate as civil disobedience?
+</p>
+
+<p>
+5. <strong>The Centralization Creep:</strong> Software Heritage has mirrors, but Paris is still the "source of truth." Is that acceptable, or a hidden single point of failure?
+</p>
+
+<p>
+6. <strong>The Succession Problem:</strong> LOCKSS has lasted 20+ years. But what happens when the founding generation retires? How do you ensure institutional memory?
+</p>
+
+<h2>Module Deliverables</h2>
+
+<p>
+By the end of Module 3, students will have:
+</p>
+
+<p>
+1. ✅ <strong>Completed Reading Responses</strong> (Ostrom, Schneier, Benkler on commons governance)
+2. ✅ <strong>Case Study Analysis</strong> (LOCKSS, Mastodon, Software Heritage comparative analysis)
+3. ✅ <strong>Seed Bank System Design</strong> (3500-4500 words, complete institutional design applying Ostrom's 8 principles)
+4. ✅ <strong>Governance Charter Draft</strong> (Rules, decision-making processes, sanctions)
+5. ✅ <strong>Technical Architecture Diagram</strong> (How data is distributed, verified, accessed)
+</p>
+
+<h2>Looking Ahead: Module 4</h2>
+
+<p>
+Next week, we shift from <strong>preservation infrastructure</strong> (Seed Bank) to <strong>memory institutions</strong>.
+</p>
+
+<p>
+<strong>Module 4: Curating the Haunted Forest</strong> asks:
+</p>
+
+<p>
+<em>"How do we build museums, archives, and memory institutions for murdered digital artifacts—not just storing them, but making them meaningful?"</em>
+</p>
+
+<p>
+You'll design a public-facing digital museum that preserves <em>and interprets</em> Umbrabytes, making them accessible and legible to future generations.
+</p>
+
+<h2>Instructor Notes</h2>
+
+<p>
+- <strong>Guest Speaker:</strong> Invite LOCKSS architect, Mastodon admin, or Software Heritage researcher
+- <strong>Site Visit (Virtual):</strong> Tour a LOCKSS server, explore Software Heritage API, join a Mastodon instance
+- <strong>Group Work:</strong> Divide class into "Seed Bank cohorts"—design competing models, then merge best ideas
+- <strong>Simulation:</strong> Role-play governance (one student plays "bad actor," others must enforce sanctions)
+- <strong>The Ostrom Test:</strong> For each student design, check all 8 principles explicitly
+</p>
+
+<p>
+<strong>End of Module 3</strong>
+</p>
+
+        </article>
+        <div class="nav">
+            <a href="index.html">Back to Course Home</a>
+        </div>
+    </div>
+</body>
+</html>

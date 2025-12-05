@@ -1,0 +1,506 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1: Autopsy of a Platform Death | ARCH 300</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Lora', serif; line-height: 1.8; color: #2E2E2E; background: #F8F7F4; padding: 2rem 1rem; }
+        .container { max-width: 900px; margin: 0 auto; background: #FFFFFF; padding: 3rem; border-radius: 15px; box-shadow: 0 4px 20px rgba(46,46,46,0.1); border: 1px solid #D1D1D1; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; color: #2E2E2E; margin-top: 2rem; margin-bottom: 1rem; line-height: 1.3; }
+        h1 { font-size: 2.5rem; font-weight: 700; margin-top: 0; border-bottom: 3px solid #A1824A; padding-bottom: 0.5rem; }
+        h2 { font-size: 2rem; font-weight: 700; margin-top: 2.5rem; }
+        h3 { font-size: 1.5rem; font-weight: 600; color: #5A7D8C; }
+        h4 { font-size: 1.25rem; font-weight: 600; color: #5A7D8C; }
+        p { margin-bottom: 1.25rem; font-size: 1.1rem; }
+        a { color: #A93400; text-decoration: underline; transition: color 0.3s; }
+        a:hover { color: #A95C3D; }
+        strong { font-weight: 600; }
+        em { font-style: italic; }
+        code { font-family: 'Courier New', monospace; background: #F8F7F4; padding: 0.2rem 0.4rem; border-radius: 3px; border: 1px solid #D1D1D1; font-size: 0.95rem; }
+        blockquote { border-left: 4px solid #A1824A; padding: 1rem 1.5rem; margin: 1.5rem 0; font-style: italic; color: #5A7D8C; background: #F8F7F4; border-radius: 0 8px 8px 0; }
+        hr { border: none; border-top: 2px solid #D1D1D1; margin: 2rem 0; }
+        .nav { text-align: center; padding: 1rem 0; border-top: 2px solid #D1D1D1; margin-top: 2rem; }
+        .nav a { display: inline-block; padding: 0.75rem 1.5rem; background: #A93400; color: #F8F7F4; text-decoration: none; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 600; margin: 0.5rem; }
+        .nav a:hover { background: #A95C3D; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <article>
+<h1>Module 1: Autopsy of a Platform Death</h1>
+
+<p>
+<strong>Duration</strong>: 2 weeks  
+<strong>Type</strong>: Forensic Analysis & Case Study
+</p>
+
+<h2>Module Overview</h2>
+
+<p>
+In this module, you will conduct a complete forensic autopsy of a murdered digital platform. You'll trace the circumstances of its death, document what remains, analyze the murder weapon (corporate strategy, market forces, or technological obsolescence), and extract lessons that inform future preservation efforts.
+</p>
+
+<p>
+This is applied digital forensics work—you're not just reading about platform death, you're investigating an actual corpse.
+</p>
+
+<h2>Learning Objectives</h2>
+
+<p>
+By the end of this module, you will be able to:
+</p>
+
+<p>
+1. <strong>Identify the murder weapon</strong>: Distinguish between corporate murder, abandonment, technological rot, and market forces
+2. <strong>Conduct digital forensics</strong>: Document what remains of a dead platform using archival tools and techniques
+3. <strong>Trace platform evolution</strong>: Reconstruct the platform's lifecycle from launch to death
+4. <strong>Analyze power dynamics</strong>: Identify who benefited from the platform's death and who was harmed
+5. <strong>Extract preservation lessons</strong>: Translate forensic findings into actionable preservation strategies
+</p>
+
+<h2>Required Readings</h2>
+
+<h3>Primary Texts</h3>
+<p>
+- <strong>Textbook Chapter 7</strong>: Archaeological Methods for Digital Artifacts
+- <strong>Textbook Chapter 8</strong>: Digital Forensics for Archaeobytologists
+- <strong>Textbook Chapter 9</strong>: The Custodial Filter—Ethics of Preservation
+</p>
+
+<h3>Case Studies</h3>
+<p>
+- Archive Team, <em>"The GeoCities Rescue"</em> (2009)
+- Jason Scott, <em>"The Death of Google Reader"</em> (2013)
+- Tarleton Gillespie, <em>"Platform Politics: How Platforms Shape Speech"</em> (selected chapters)
+</p>
+
+<h3>Technical Resources</h3>
+<p>
+- Internet Archive Wayback Machine documentation
+- Archive Team's warrior toolkit
+- Web scraping ethics guidelines (EFF)
+</p>
+
+<h2>Assignment Structure</h2>
+
+<h3>Week 1: Investigation & Documentation</h3>
+
+<h4>Part 1: Platform Selection & Murder Profile (Due: Day 3)</h4>
+
+<p>
+<strong>Choose a murdered platform from this list</strong> (or propose your own):
+</p>
+
+<p>
+<strong>Corporate Murders</strong>:
+- Google Reader (2013) - Strategic abandonment
+- Vine (2017) - Parent company decision
+- Google+ (2019) - Failed experiment
+- Allo (2019) - Messaging consolidation
+- Windows Phone (2017) - Platform war casualty
+</p>
+
+<p>
+<strong>Quiet Deaths</strong>:
+- Delicious (2017) - Sold, neglected, died
+- Friendster (2015) - Pivoted, then vanished
+- StumbleUpon (2018) - Sold for parts
+- Flickr Commons (degraded) - Slow strangulation
+</p>
+
+<p>
+<strong>Sudden Collapses</strong>:
+- Megaupload (2012) - Legal seizure
+- Backpage (2018) - Federal shutdown
+- Parler (2021) - Infrastructure denial
+</p>
+
+<p>
+<strong>Living Dead</strong> (still technically online but functionally murdered):
+- MySpace (2003-2019) - Murdered by design changes
+- Tumblr (2018 onwards) - NSFW ban killed community
+- DeviantArt (2019 onwards) - Eclipse redesign exodus
+</p>
+
+<p>
+<strong>Your Task</strong>:
+</p>
+
+<p>
+Create a <strong>Murder Profile</strong> document (2-3 pages) that includes:
+</p>
+
+<p>
+1. <strong>Platform Vital Statistics</strong>:
+   - Launch date
+   - Peak user base
+   - Official death date (if applicable)
+   - Corporate ownership history
+</p>
+
+<p>
+2. <strong>The Murder Weapon</strong>:
+   - What killed this platform?
+   - Was it murder (intentional), manslaughter (negligent), or natural causes?
+   - Quote executive statements, press releases, or leaked internal documents
+</p>
+
+<p>
+3. <strong>Victims & Beneficiaries</strong>:
+   - Who lost the most? (users, creators, communities)
+   - Who benefited? (competitors, acquirers, executives)
+   - What cultural knowledge was destroyed?
+</p>
+
+<p>
+4. <strong>Preservation Status</strong>:
+   - What has been saved? (Internet Archive, Archive Team, user backups)
+   - What is lost forever?
+   - Are there active preservation efforts?
+</p>
+
+<p>
+<strong>Deliverable</strong>: Upload Murder Profile PDF to course platform
+</p>
+
+<h4>Part 2: Forensic Documentation (Due: End of Week 1)</h4>
+
+<p>
+<strong>Conduct a forensic investigation</strong> of your chosen platform using these methods:
+</p>
+
+<h5>A. Wayback Machine Archaeology</h5>
+<p>
+- Search Internet Archive for snapshots of your platform
+- Document key design changes over time
+- Screenshot critical moments (launches, redesigns, final days)
+- Create a visual timeline of the platform's evolution
+</p>
+
+<h5>B. Digital Corpse Examination</h5>
+<p>
+If the platform still exists in zombie form:
+- Document current state vs. archived peak
+- Screenshot degraded features or removed functionality
+- Test what still works vs. what's broken
+- Note what data is still accessible vs. lost
+</p>
+
+<h5>C. Social Autopsy</h5>
+<p>
+- Search Twitter, Reddit, and blogs for user reactions to the death
+- Find #RIPPlatform posts, eulogies, and migration announcements
+- Document user-created preservation efforts (data exports, backup communities)
+- Capture screenshots of mourning and anger
+</p>
+
+<h5>D. Technical Forensics</h5>
+<p>
+- Use <code>curl</code> or browser dev tools to examine what remains
+- Check for broken API endpoints
+- Document dead links and 404 errors
+- Look for archived API documentation or developer resources
+</p>
+
+<p>
+<strong>Deliverable</strong>: Create a <strong>Forensic Report</strong> (5-7 pages) with:
+- 10-15 annotated screenshots showing platform evolution and death
+- Timeline of key events
+- Analysis of what was saved vs. what was lost
+- Assessment of preservation quality and completeness
+</p>
+
+<p>
+<strong>Tools You'll Need</strong>:
+- Internet Archive Wayback Machine
+- Archive Team wiki
+- Screenshot tools (Nimbus, FireShot, or built-in browser tools)
+- (Optional) Web scraping tools like <code>wget</code> or <code>httrack</code>
+</p>
+
+<h3>Week 2: Analysis & Lessons</h3>
+
+<h4>Part 3: Cause of Death Analysis (Due: Mid-Week 2)</h4>
+
+<p>
+Write a <strong>4-6 page analytical essay</strong> that answers:
+</p>
+
+<p>
+<strong>1. What Killed This Platform?</strong>
+</p>
+
+<p>
+Analyze the murder weapon using the framework from Chapter 8:
+</p>
+
+<p>
+- <strong>Corporate Strategy Murder</strong>: Did executives intentionally kill a thriving platform for business reasons?
+- <strong>Negligent Manslaughter</strong>: Was the platform abandoned and left to die?
+- <strong>Technological Obsolescence</strong>: Did changing technology make the platform impossible to maintain?
+- <strong>Market Forces</strong>: Did competitors or platform consolidation squeeze it out?
+- <strong>Legal/Political Pressure</strong>: Was it shut down by governments or threatened by regulation?
+</p>
+
+<p>
+<strong>2. Who Made the Decision?</strong>
+</p>
+
+<p>
+- Name names: Which executives, boards, or agencies decided the platform's fate?
+- What were their stated reasons vs. likely actual reasons?
+- Were users consulted? Were they warned?
+- How much notice was given before shutdown?
+</p>
+
+<p>
+<strong>3. What Was Lost?</strong>
+</p>
+
+<p>
+Quantify the cultural destruction:
+- How much content was lost?
+- How many communities were displaced?
+- What unique cultural practices died with the platform?
+- What irreplaceable knowledge vanished?
+</p>
+
+<p>
+<strong>4. Could It Have Been Prevented?</strong>
+</p>
+
+<p>
+Apply the Three Pillars framework:
+- <strong>Declaration</strong>: Did users have identity sovereignty, or were they locked to the platform?
+- <strong>Connection</strong>: Could communities migrate, or were they trapped by proprietary protocols?
+- <strong>Ground</strong>: Did users control their infrastructure, or were they dependent on corporate servers?
+</p>
+
+<p>
+If the platform had been designed with sovereignty principles, could it have survived its corporate owner's decision?
+</p>
+
+<p>
+<strong>Citation Requirements</strong>:
+- Minimum 8 sources
+- Include executive statements, news coverage, and user testimonials
+- Use proper Chicago/MLA citation format
+</p>
+
+<p>
+<strong>Deliverable</strong>: Upload essay as PDF
+</p>
+
+<h4>Part 4: Preservation Recommendations (Due: End of Week 2)</h4>
+
+<p>
+Based on your forensic work, create a <strong>Preservation Action Plan</strong> (3-4 pages) for platforms facing similar threats.
+</p>
+
+<p>
+<strong>Your plan should include</strong>:
+</p>
+
+<p>
+<strong>1. Early Warning System</strong>
+- What signals indicated this platform was at risk?
+- How could preservationists have detected the threat earlier?
+- What monitoring systems should be in place?
+</p>
+
+<p>
+<strong>2. Triage Assessment</strong>
+Using the Custodial Filter from Chapter 9:
+- <strong>Significance</strong>: Was this platform historically/culturally significant enough to warrant major preservation effort?
+- <strong>Fragility</strong>: How vulnerable was the content? (proprietary formats, dynamic content, etc.)
+- <strong>Feasibility</strong>: Could it have been preserved with available tools and resources?
+- <strong>Redundancy</strong>: Were there alternative archives or user-created backups?
+- <strong>Ethics</strong>: Were there privacy concerns or reasons NOT to preserve certain content?
+</p>
+
+<p>
+<strong>3. Preservation Strategy</strong>
+If you were Archive Team planning a rescue operation:
+- What tools would you use? (scrapers, API access, distributed crawling)
+- What content would you prioritize? (user data, cultural artifacts, technical documentation)
+- How would you coordinate with the community?
+- What legal risks would you face?
+</p>
+
+<p>
+<strong>4. Post-Death Revival Options</strong>
+- Could this platform be resurrected as a community-run alternative?
+- Are there open-source replacements with similar features?
+- How could users migrate to sovereign alternatives?
+- What would a Three Pillars redesign look like?
+</p>
+
+<p>
+<strong>5. Lessons for Future Platforms</strong>
+- What design principles would have prevented this death?
+- What sovereignty features should have been built in from day one?
+- How can current platforms learn from this case?
+</p>
+
+<p>
+<strong>Deliverable</strong>: Upload Preservation Action Plan as PDF
+</p>
+
+<h2>Assessment Rubric</h2>
+
+<h3>Murder Profile (20 points)</h3>
+<p>
+- <strong>Accuracy of facts</strong> (5 pts): Correct dates, statistics, and ownership history
+- <strong>Quality of murder weapon analysis</strong> (10 pts): Clear identification of cause of death with evidence
+- <strong>Victim/beneficiary analysis</strong> (5 pts): Thoughtful consideration of who was harmed and who profited
+</p>
+
+<h3>Forensic Report (25 points)</h3>
+<p>
+- <strong>Documentation completeness</strong> (10 pts): Thorough use of Wayback Machine and other sources
+- <strong>Visual evidence quality</strong> (10 pts): Clear, annotated screenshots showing key changes
+- <strong>Technical detail</strong> (5 pts): Evidence of hands-on investigation, not just reading about the platform
+</p>
+
+<h3>Cause of Death Essay (30 points)</h3>
+<p>
+- <strong>Analytical depth</strong> (15 pts): Sophisticated understanding of platform death causes
+- <strong>Use of evidence</strong> (10 pts): Strong integration of primary sources and user testimonials
+- <strong>Writing quality</strong> (5 pts): Clear, well-organized, properly cited
+</p>
+
+<h3>Preservation Action Plan (25 points)</h3>
+<p>
+- <strong>Strategic thinking</strong> (10 pts): Practical, feasible preservation strategies
+- <strong>Application of course concepts</strong> (10 pts): Clear use of Three Pillars and Custodial Filter frameworks
+- <strong>Creativity</strong> (5 pts): Innovative ideas for prevention or post-death revival
+</p>
+
+<h2>Discussion Forum Prompts</h2>
+
+<p>
+Participate in weekly discussions (required):
+</p>
+
+<p>
+<strong>Week 1: Murder Weapons</strong>
+Post a 200-word summary of your platform's cause of death. What was the murder weapon? Could it have been prevented? Respond to at least two classmates' posts.
+</p>
+
+<p>
+<strong>Week 2: Preservation Ethics</strong>
+Debate: "Some platforms deserve to die." When is preservation NOT the right answer? Should we let toxic platforms stay dead? Use your case study as evidence.
+</p>
+
+<h2>Optional Deep Dive: Activist Archaeology</h2>
+
+<p>
+For extra credit, document a <strong>platform that's dying RIGHT NOW</strong>:
+</p>
+
+<p>
+1. Identify a platform currently at risk (corporate acquisition rumors, user exodus, financial trouble)
+2. Create a preservation plan BEFORE it dies
+3. If you're ambitious: actually preserve some of it using Archive Team tools
+4. Share your findings with the class
+</p>
+
+<p>
+<strong>Platforms currently at risk</strong> (as of late 2025):
+- Twitter/X (ongoing Musk-era exodus)
+- Reddit (IPO pressures, API wars)
+- Medium (business model struggles)
+- Substack (funding questions)
+- Discord (acquisition rumors)
+</p>
+
+<h2>Technical Resources & Tools</h2>
+
+<h3>Preservation Tools</h3>
+<p>
+- <strong>Internet Archive Wayback Machine</strong>: https://archive.org/web/
+- <strong>Archive Team Warrior</strong>: Distributed archiving toolkit
+- <strong>HTTrack</strong>: Website copier
+- <strong>Wget</strong>: Command-line download tool
+- <strong>Webrecorder</strong>: Browser-based archiving
+</p>
+
+<h3>Forensic Analysis</h3>
+<p>
+- Browser developer tools (Network tab, Storage inspector)
+- <strong>Postman</strong>: API testing
+- <strong>WhatRuns</strong>: Browser extension to identify technologies
+- <strong>BuiltWith</strong>: Technology profiler
+</p>
+
+<h3>Citation & Documentation</h3>
+<p>
+- <strong>Zotero</strong>: Citation management
+- <strong>Hypothesis</strong>: Web annotation tool
+- <strong>Markdown</strong>: Simple documentation format
+</p>
+
+<h2>Recommended Supplementary Materials</h2>
+
+<h3>Documentaries</h3>
+<p>
+- <em>GeoCities: The Lost City of the Web</em> (2019)
+- <em>Downloaded</em> (2013) - About Napster's death
+- <em>The Internet's Own Boy</em> (2014) - Aaron Swartz and digital preservation
+</p>
+
+<h3>Articles & Essays</h3>
+<p>
+- Maciej Cegłowski, "Website Obesity Crisis"
+- Darius Kazemi, "Run Your Own Social"
+- Anil Dash, "The Web We Lost" (2012)
+</p>
+
+<h3>Podcasts</h3>
+<p>
+- <em>Reply All</em> #158 - "We Know What You Did"
+- <em>Longform</em> - Jason Scott interview on digital preservation
+</p>
+
+<h2>Getting Help</h2>
+
+<p>
+<strong>Office Hours</strong>: Tuesdays 2-4pm, Thursdays 10am-12pm (Zoom link in syllabus)
+</p>
+
+<p>
+<strong>Discussion Forum</strong>: Post questions about tool usage, ethics, or case selection
+</p>
+
+<p>
+<strong>Archive Team IRC</strong>: #archiveteam on EFNet (they're friendly and helpful!)
+</p>
+
+<p>
+<strong>Library Resources</strong>: Contact digital preservation librarian for access to restricted archives
+</p>
+
+<h2>Next Module Preview</h2>
+
+<p>
+In <strong>Module 2: Building a Preservation System</strong>, you'll move from investigation to action. You'll design and implement your own small-scale preservation infrastructure, applying lessons learned from platform autopsies to build resilient archival systems.
+</p>
+
+<p>
+<strong>Get ready to</strong>: Set up storage, design workflows, and actually preserve something before it dies.
+</p>
+
+<p>
+<em>"The dead cannot speak for themselves. We speak for them by preserving their artifacts, honoring their communities, and learning from their murders."</em>  
+— The Archaeobytologist's Vow
+</p>
+        </article>
+        <div class="nav">
+            <a href="index.html">Back to Course Home</a>
+        </div>
+    </div>
+</body>
+</html>

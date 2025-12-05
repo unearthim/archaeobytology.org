@@ -1,0 +1,1299 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 8: Digital Forensics for Archaeobytologists | Archaeobytology</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Lora', serif; line-height: 1.8; color: #2E2E2E; background: #F8F7F4; padding: 2rem 1rem; }
+        .container { max-width: 800px; margin: 0 auto; background: #FFFFFF; padding: 3rem; border-radius: 15px; box-shadow: 0 4px 20px rgba(46,46,46,0.1); border: 1px solid #D1D1D1; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; color: #2E2E2E; margin-top: 2rem; margin-bottom: 1rem; line-height: 1.3; }
+        h1 { font-size: 2.5rem; font-weight: 700; margin-top: 0; border-bottom: 3px solid #A1824A; padding-bottom: 0.5rem; }
+        h2 { font-size: 2rem; font-weight: 700; margin-top: 2.5rem; }
+        h3 { font-size: 1.5rem; font-weight: 600; color: #5A7D8C; }
+        h4 { font-size: 1.25rem; font-weight: 600; color: #5A7D8C; }
+        p { margin-bottom: 1.25rem; font-size: 1.1rem; }
+        a { color: #A93400; text-decoration: underline; transition: color 0.3s; }
+        a:hover { color: #A95C3D; }
+        strong { font-weight: 600; }
+        em { font-style: italic; }
+        code { font-family: 'Courier New', monospace; background: #F8F7F4; padding: 0.2rem 0.4rem; border-radius: 3px; border: 1px solid #D1D1D1; }
+        blockquote { border-left: 4px solid #A1824A; padding: 1rem 1.5rem; margin: 1.5rem 0; font-style: italic; color: #5A7D8C; background: #F8F7F4; border-radius: 0 8px 8px 0; }
+        hr { border: none; border-top: 2px solid #D1D1D1; margin: 2rem 0; }
+        .nav { text-align: center; padding: 1rem 0; border-top: 2px solid #D1D1D1; margin-top: 2rem; }
+        .nav a { display: inline-block; padding: 0.75rem 1.5rem; background: #A93400; color: #F8F7F4; text-decoration: none; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 600; margin: 0.5rem; }
+        .nav a:hover { background: #A95C3D; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <article>
+<h1>Chapter 8: Digital Forensics for Archaeobytologists</h1>
+
+<h2>Opening: The Crime Scene Is Digital</h2>
+
+<p>
+In 2019, a hard drive arrived at the Internet Archive. It had been recovered from a dumpster behind a defunct web hosting company. The company had gone bankrupt, its servers sold for scrap, its customer data—thousands of personal websites from the early 2000s—abandoned.
+</p>
+
+<p>
+The hard drive was physically intact but logically corrupted. The file system was damaged. File names were mangled or missing. Timestamps were wrong. Some files were partially overwritten with random data. But somewhere in those magnetic sectors were websites that existed nowhere else—personal blogs, family photos, amateur art portfolios. Digital artifacts on the verge of permanent loss.
+</p>
+
+<p>
+This required <strong>digital forensics</strong>: the practice of recovering, analyzing, and authenticating digital evidence from damaged, deleted, or deliberately obscured sources.
+</p>
+
+<p>
+Digital forensics emerged from law enforcement (recovering deleted files from criminals' computers) and IT security (analyzing malware, investigating breaches). But Archaeobytologists need these same skills for different purposes:
+</p>
+
+<p>
+- <strong>Recovering deleted content</strong> (when users or platforms erase artifacts)
+- <strong>Analyzing corrupted files</strong> (bit rot, damaged storage media)
+- <strong>Authenticating artifacts</strong> (proving a file is what it claims to be)
+- <strong>Extracting hidden data</strong> (metadata, version histories, deleted revisions)
+- <strong>Reverse engineering formats</strong> (when documentation is lost)
+</p>
+
+<p>
+Unlike law enforcement, we're not building criminal cases. Unlike IT security, we're not defending against attacks. We're <strong>rescuing cultural artifacts from technological decay</strong>.
+</p>
+
+<p>
+This chapter teaches digital forensics adapted for Archaeobytological practice. You'll learn:
+</p>
+
+<p>
+- File system analysis and data recovery
+- Metadata extraction and interpretation
+- Format identification and conversion
+- Authenticity verification and chain of custody
+- Emulation and compatibility layers
+- Ethical boundaries (when forensics becomes invasion)
+</p>
+
+<p>
+By the end, you'll be able to take a corrupted hard drive, deleted website, or mysterious file format and systematically extract whatever cultural value remains.
+</p>
+
+<h2>Part I: Foundations of Digital Forensics</h2>
+
+<h3>The Digital Artifact as Evidence</h3>
+
+<p>
+Physical artifacts are tangible—you can touch a clay pot, examine it with eyes and hands. Digital artifacts are <strong>abstract</strong>—they're electromagnetic patterns interpreted by software.
+</p>
+
+<p>
+This abstraction creates both challenges and opportunities:
+</p>
+
+<p>
+<strong>Challenges:</strong>
+- <strong>Fragility</strong>: Flip one bit, and an entire file becomes unreadable
+- <strong>Dependency</strong>: Files require specific software to interpret (a .doc file is meaningless without Word or a compatible reader)
+- <strong>Mutability</strong>: Digital files can be silently altered (no visible wear like on physical objects)
+- <strong>Ephemerality</strong>: Storage media degrades (magnetic fields fade, flash memory loses charge)
+</p>
+
+<p>
+<strong>Opportunities:</strong>
+- <strong>Perfect copying</strong>: Digital files can be duplicated without loss (unlike physical artifacts)
+- <strong>Deep analysis</strong>: Can examine file structure bit-by-bit (like x-raying a painting)
+- <strong>Metadata richness</strong>: Digital files carry embedded information (creation date, author, edit history)
+- <strong>Automated processing</strong>: Can analyze thousands of files programmatically (impossible with physical artifacts)
+</p>
+
+<h3>The Forensic Workflow</h3>
+
+<p>
+Digital forensics follows a systematic process:
+</p>
+
+<p>
+<strong>1. Acquisition</strong> (get a copy without altering the original)
+<strong>2. Preservation</strong> (create forensic images, maintain chain of custody)
+<strong>3. Analysis</strong> (examine the data, extract information)
+<strong>4. Documentation</strong> (record findings, methods, provenance)
+<strong>5. Presentation</strong> (make findings accessible to non-technical audiences)
+</p>
+
+<p>
+This workflow ensures:
+- <strong>Integrity</strong>: Original evidence isn't contaminated
+- <strong>Reproducibility</strong>: Others can verify your findings
+- <strong>Transparency</strong>: Methods are documented
+- <strong>Legal defensibility</strong>: Even though we're not in court, rigorous methods build credibility
+</p>
+
+<h2>Part II: File System Forensics — Finding the Lost</h2>
+
+<h3>Understanding File Systems</h3>
+
+<p>
+When you delete a file, it doesn't vanish immediately. The operating system marks the space as "available" but doesn't erase the data until something overwrites it. This is why "deleted" files can often be recovered.
+</p>
+
+<p>
+<strong>Common File Systems:</strong>
+</p>
+
+<p>
+<strong>FAT32</strong> (old Windows, USB drives)
+- Simple structure
+- No journaling (prone to corruption)
+- Easy to recover deleted files
+</p>
+
+<p>
+<strong>NTFS</strong> (modern Windows)
+- Complex structure with metadata
+- Journaling (tracks changes, helps recovery)
+- Harder but more sophisticated recovery
+</p>
+
+<p>
+<strong>ext4</strong> (Linux)
+- Journaling filesystem
+- Can recover recently deleted files from journal
+</p>
+
+<p>
+<strong>APFS</strong> (modern macOS)
+- Encryption by default (complicates recovery)
+- Snapshots (may preserve deleted files)
+</p>
+
+<p>
+<strong>HFS+</strong> (older macOS)
+- Similar to NTFS in recoverability
+</p>
+
+<h3>Data Carving: Recovering Files Without Metadata</h3>
+
+<p>
+When file systems are severely damaged (corrupted directory structure, missing file allocation table), you can't rely on the filesystem to tell you where files are. Instead, you use <strong>data carving</strong>: scanning raw disk sectors looking for file signatures.
+</p>
+
+<p>
+<strong>How It Works:</strong>
+</p>
+
+<p>
+Every file type has a <strong>signature</strong> (magic bytes) at the beginning:
+</p>
+
+<p>
+- <strong>JPEG</strong>: <code>FF D8 FF</code> (first three bytes)
+- <strong>PNG</strong>: <code>89 50 4E 47</code> (‰PNG)
+- <strong>PDF</strong>: <code>25 50 44 46</code> (%PDF)
+- <strong>ZIP</strong>: <code>50 4B 03 04</code> (PK..)
+- <strong>GIF</strong>: <code>47 49 46 38</code> (GIF8)
+</p>
+
+<p>
+Data carving tools scan the entire disk, looking for these signatures. When found, they extract the file.
+</p>
+
+<p>
+<strong>Tools:</strong>
+- <strong>Foremost</strong>: Carves files based on headers/footers
+- <strong>Scalpel</strong>: Fast carving with configurable signatures
+- <strong>PhotoRec</strong>: Specializes in photos but handles many formats
+- <strong>Bulk Extractor</strong>: Carves and analyzes (finds emails, URLs, credit cards)
+</p>
+
+<p>
+<strong>Example: Carving a Corrupted USB Drive</strong>
+</p>
+
+<p>
+``<code>bash
+</p>
+<h1>Install PhotoRec (comes with TestDisk)</h1>
+<p>
+sudo apt install testdisk
+</p>
+
+<h1>Run PhotoRec on drive (replace /dev/sdX with actual device)</h1>
+<p>
+sudo photorec /dev/sdX
+</p>
+
+<h1>Navigate menus:</h1>
+<h1>1. Select partition</h1>
+<h1>2. Choose file systems to search</h1>
+<h1>3. Select output directory</h1>
+<h1>4. Wait (can take hours for large drives)</h1>
+<p>
+</code>`<code>
+</p>
+
+<p>
+<strong>Result:</strong> PhotoRec dumps recovered files into output directory, organized by type. Files are renamed generically (f0001.jpg, f0002.png) since metadata is lost.
+</p>
+
+<p>
+<strong>Limitations:</strong>
+- No original filenames (metadata gone)
+- No directory structure (everything dumped together)
+- Fragmented files may be incomplete (if portions were overwritten)
+- Many false positives (random data matching signatures)
+</p>
+
+<p>
+<strong>Archaeological Application:</strong>
+</p>
+
+<p>
+When you recover an old hard drive from a defunct web hosting company, data carving may be your only option. You won't know which files belong to which user or what they were originally named, but you'll have the actual content—which is better than nothing.
+</p>
+
+<h3>File System Timeline Analysis</h3>
+
+<p>
+Even when files aren't deleted, <strong>timestamps</strong> reveal important information:
+</p>
+
+<p>
+<strong>MAC Times:</strong>
+- <strong>M</strong>odified: When file content last changed
+- <strong>A</strong>ccessed: When file was last opened
+- <strong>C</strong>hanged: When metadata (permissions, ownership) last changed
+</p>
+
+<p>
+<strong>Plus NTFS adds:</strong>
+- <strong>Created</strong>: When file was first created
+</p>
+
+<p>
+<strong>Why Timestamps Matter:</strong>
+</p>
+
+<p>
+<strong>Example 1: Identifying Original Creator</strong>
+- A website claims to have been "online since 1998"
+- File timestamps show HTML files created in 2003
+- Either the claim is false, or files were re-uploaded (migration?)
+- Forensic investigation needed
+</p>
+
+<p>
+<strong>Example 2: Detecting Tampering</strong>
+- Archive claims to be "untouched original" from 2005
+- Modified timestamps are 2019
+- Someone edited files after archiving
+- Need to determine what changed
+</p>
+
+<p>
+<strong>Tools:</strong>
+- <strong>fls</strong> (Sleuth Kit): Lists files with MAC times
+- <strong>mactime</strong> (Sleuth Kit): Creates timeline from fls output
+- <strong>log2timeline/Plaso</strong>: Comprehensive timeline analysis
+</p>
+
+<p>
+<strong>Example: Creating a Timeline</strong>
+</p>
+
+<p>
+</code>`<code>bash
+</p>
+<h1>Install Sleuth Kit</h1>
+<p>
+sudo apt install sleuthkit
+</p>
+
+<h1>Create body file (filesystem metadata)</h1>
+<p>
+fls -r -m C: /dev/sdX > bodyfile.txt
+</p>
+
+<h1>Create timeline</h1>
+<p>
+mactime -b bodyfile.txt -d > timeline.csv
+</p>
+
+<h1>Analyze timeline (Excel, grep, Python)</h1>
+<p>
+grep "2009-10" timeline.csv  # Find files from Oct 2009
+</code>`<code>
+</p>
+
+<p>
+<strong>Archaeological Application:</strong>
+</p>
+
+<p>
+When analyzing a preserved platform, timeline analysis reveals:
+- When was content created? (chronology of community)
+- When was site last updated? (signs of abandonment)
+- When were files accessed? (usage patterns, popular content)
+</p>
+
+<h2>Part III: Metadata Forensics — The Hidden Stories</h2>
+
+<h3>What Is Metadata?</h3>
+
+<p>
+Metadata is "data about data"—information embedded in files describing their creation, modification, and context.
+</p>
+
+<p>
+<strong>Types of Metadata:</strong>
+</p>
+
+<p>
+<strong>1. File System Metadata</strong> (from OS)
+- Timestamps (created, modified, accessed)
+- Size, location, permissions
+- Captured by filesystem, not embedded in file
+</p>
+
+<p>
+<strong>2. Embedded Metadata</strong> (inside file)
+- <strong>EXIF</strong> (photos): Camera model, GPS location, date/time
+- <strong>ID3</strong> (MP3s): Artist, album, genre, cover art
+- <strong>PDF</strong>: Author, creation software, edit history
+- <strong>Office docs</strong>: Author name, organization, edit time, revision history
+</p>
+
+<p>
+<strong>3. Application Metadata</strong> (created by software)
+- <strong>HTML</strong>: Generator meta tags (</code><meta name="generator" content="WordPress"><code>)
+- <strong>Images</strong>: Software used (Photoshop layers, GIMP xcf data)
+- <strong>Videos</strong>: Codec, bitrate, editing software
+</p>
+
+<h3>Extracting Metadata</h3>
+
+<p>
+<strong>Tool: ExifTool</strong> (universal metadata reader)
+</p>
+
+<p>
+</code>`<code>bash
+</p>
+<h1>Install ExifTool</h1>
+<p>
+sudo apt install libimage-exiftool-perl
+</p>
+
+<h1>Extract all metadata from a file</h1>
+<p>
+exiftool photo.jpg
+</p>
+
+<h1>Extract specific fields</h1>
+<p>
+exiftool -CreateDate -Make -Model photo.jpg
+</p>
+
+<h1>Process entire directory, export to CSV</h1>
+<p>
+exiftool -csv -r /path/to/photos/ > metadata.csv
+</p>
+
+<h1>Remove metadata (privacy scrubbing)</h1>
+<p>
+exiftool -all= photo.jpg
+</code>`<code>
+</p>
+
+<p>
+<strong>Example Output (JPEG from phone):</strong>
+</p>
+
+<p>
+</code>`<code>
+File Name                       : IMG_2034.jpg
+File Size                       : 2.3 MB
+File Modification Date/Time     : 2018:11:15 14:23:01
+File Type                       : JPEG
+EXIF Version                    : 0231
+Date/Time Original              : 2018:11:15 14:22:58
+Create Date                     : 2018:11:15 14:22:58
+Make                            : Apple
+Camera Model Name               : iPhone 7
+Lens Model                      : iPhone 7 back camera 3.99mm f/1.8
+GPS Latitude                    : 37 deg 46' 30.12" N
+GPS Longitude                   : 122 deg 25' 9.84" W
+GPS Altitude                    : 15 m Above Sea Level
+</code>`<code>
+</p>
+
+<p>
+<strong>What This Reveals:</strong>
+- Photo taken Nov 15, 2018 at 2:22 PM
+- Taken with iPhone 7
+- Location: San Francisco (GPS coordinates)
+- File modified slightly after creation (uploaded? edited?)
+</p>
+
+<h3>Privacy and Metadata</h3>
+
+<p>
+<strong>Ethical Dilemma:</strong> Metadata often contains <strong>personally identifiable information</strong> (PII):
+</p>
+
+<p>
+- GPS coordinates (where someone lives, works, travels)
+- Phone/camera serial numbers (can track individual)
+- Author names, organization names (identity)
+- Full edit history (who touched the file)
+</p>
+
+<p>
+<strong>Archaeobytologist's Responsibility:</strong>
+</p>
+
+<p>
+<strong>When preserving:</strong>
+- Be aware metadata exists
+- Decide: preserve it (research value) or strip it (privacy)?
+- Document your decision
+</p>
+
+<p>
+<strong>When publishing:</strong>
+- <strong>Don't</strong> publish GPS coordinates from personal photos
+- <strong>Do</strong> preserve GPS for historically significant events (protest locations, disaster sites)
+- <strong>Strip</strong> metadata from ordinary personal files
+- <strong>Keep</strong> metadata for public figures, official documents
+</p>
+
+<p>
+<strong>Case Study: Geotagged Photos from Protests</strong>
+</p>
+
+<p>
+Photos from 2020 Black Lives Matter protests contain GPS metadata. Should archivists preserve it?
+</p>
+
+<p>
+<strong>Arguments FOR:</strong>
+- Historical record (where protests occurred)
+- Research value (studying protest geography)
+</p>
+
+<p>
+<strong>Arguments AGAINST:</strong>
+- Identifies protesters (could face retaliation)
+- Law enforcement could use for prosecution
+</p>
+
+<p>
+<strong>Compromise:</strong>
+- Preserve photos with GPS
+- <strong>Restrict access</strong> (research-only, IRB approval)
+- <strong>Publish photos with GPS stripped</strong> (public version)
+- <strong>Aggregate data</strong> (publish heatmap of protest locations, not individual coordinates)
+</p>
+
+<h3>Metadata as Provenance</h3>
+
+<p>
+Metadata helps establish <strong>provenance</strong>—the history and origin of an artifact.
+</p>
+
+<p>
+<strong>Example: Authenticating a Leaked Document</strong>
+</p>
+
+<p>
+Someone claims to have a "leaked internal memo from Facebook, dated 2016."
+</p>
+
+<p>
+<strong>Forensic Analysis:</strong>
+</p>
+
+<p>
+</code>`<code>bash
+exiftool memo.pdf
+</code>`<code>
+</p>
+
+<p>
+<strong>Output reveals:</strong>
+</code>`<code>
+Producer: Microsoft Word 2019
+CreateDate: 2021:03:15 09:34:22
+ModifyDate: 2021:03:15 09:34:22
+Author: John Smith
+</code>`<code>
+</p>
+
+<p>
+<strong>Findings:</strong>
+- Created in 2021 (not 2016)
+- Author listed as "John Smith" (was this Facebook employee? check LinkedIn)
+- Created with Word 2019 (was Word 2019 available in 2016? No—released 2018)
+</p>
+
+<p>
+<strong>Conclusion:</strong> Document is likely fabricated or misdated. Further investigation needed.
+</p>
+
+<p>
+<strong>Forensic Best Practice:</strong>
+- Never trust dates in filenames or document text
+- Check embedded metadata
+- Cross-reference with external evidence (news archives, wayback machine)
+</p>
+
+<h2>Part IV: Format Forensics — Identifying the Unknown</h2>
+
+<h3>The Format Identification Problem</h3>
+
+<p>
+You receive a folder of files from a defunct platform. Many have no file extensions, or wrong extensions (</code>.dat<code>, </code>.tmp<code>, </code>.db<code>). How do you figure out what they are?
+</p>
+
+<p>
+<strong>Don't trust extensions.</strong> Extensions are metadata (easily changed). Instead, examine the <strong>file signature</strong>.
+</p>
+
+<h3>Magic Numbers and File Signatures</h3>
+
+<p>
+Every file format has a <strong>magic number</strong>—specific bytes at the beginning that identify the type.
+</p>
+
+<p>
+<strong>Common Signatures:</strong>
+</p>
+
+<p>
+| Format | Hex Signature | ASCII |
+|--------|---------------|-------|
+| JPEG | </code>FF D8 FF<code> | ... |
+| PNG | </code>89 50 4E 47 0D 0A 1A 0A<code> | ‰PNG.... |
+| GIF | </code>47 49 46 38<code> | GIF8 |
+| PDF | </code>25 50 44 46<code> | %PDF |
+| ZIP | </code>50 4B 03 04<code> | PK.. |
+| MP3 | </code>49 44 33<code> or </code>FF FB<code> | ID3 or ÿû |
+| EXE | </code>4D 5A<code> | MZ |
+| SQLite | </code>53 51 4C 69 74 65 20 66 6F 72 6D 61 74 20 33 00<code> | SQLite format 3. |
+</p>
+
+<p>
+<strong>Tool: </code>file<code> command</strong> (Unix)
+</p>
+
+<p>
+</code>`<code>bash
+</p>
+<h1>Identify file type</h1>
+<p>
+file unknown_file.dat
+</p>
+<h1>Output: unknown_file.dat: PNG image data, 800 x 600, 8-bit/color RGB, non-interlaced</h1>
+
+<h1>Check multiple files</h1>
+<p>
+file <em>
+</code>`<code>
+</p>
+
+<p>
+<strong>Tool: DROID</strong> (UK National Archives)
+</p>
+
+<p>
+- GUI tool for format identification
+- Uses PRONOM registry (comprehensive format database)
+- Generates reports on entire directories
+</p>
+
+<h3>Obsolete and Proprietary Formats</h3>
+
+<p>
+<strong>The Hardest Cases:</strong>
+</p>
+
+<p>
+<strong>1. Proprietary formats with no documentation</strong>
+- Company went bankrupt, format specs lost
+- Example: Lotus 123 spreadsheets (.wk1, .wk3)
+</p>
+
+<p>
+<strong>2. Custom binary formats</strong>
+- Platform created its own format for efficiency
+- Example: Vine's proprietary video container
+</p>
+
+<p>
+<strong>3. Encrypted or obfuscated formats</strong>
+- DRM-protected files
+- Example: iTunes FairPlay (before DRM removal)
+</p>
+
+<p>
+<strong>Strategies:</strong>
+</p>
+
+<p>
+<strong>A. Search for Format Documentation</strong>
+- Archive.org (old software manuals)
+- FileFormat.info
+- "Just Solve the File Format Problem" wiki
+- Ask old forums, mailing lists
+</p>
+
+<p>
+<strong>B. Reverse Engineer</strong>
+- Hex editor: examine file structure
+- Strings command: extract readable text
+- Binwalk: analyze binary structure
+- Compare multiple examples to find patterns
+</p>
+
+<p>
+<strong>C. Find Old Software</strong>
+- Run original software in emulator
+- Example: Run MS-DOS programs in DOSBox to open ancient file formats
+</p>
+
+<p>
+<strong>D. Convert via Emulation</strong>
+- Open file in original software, export to modern format
+- Lossy but better than nothing
+</p>
+
+<p>
+<strong>Example: Recovering WordPerfect 5.1 Documents</strong>
+</p>
+
+<p>
+WordPerfect was dominant in 1980s-90s. Many legal documents, dissertations, novels exist only in .wpd format.
+</p>
+
+<p>
+<strong>Solution:</strong>
+1. Download WordPerfect 5.1 (abandonware)
+2. Run in DOSBox emulator
+3. Open .wpd files
+4. Export to ASCII or RTF (WordPerfect can do this)
+5. Import to modern word processor
+</p>
+
+<p>
+<strong>Alternative:</strong> LibreOffice can open some WordPerfect formats (but not perfectly).
+</p>
+
+<h2>Part V: Emulation and Compatibility</h2>
+
+<h3>When Files Require Specific Environments</h3>
+
+<p>
+Some digital artifacts aren't just files—they're <strong>experiences</strong> that require specific software, hardware, or operating systems.
+</p>
+
+<p>
+<strong>Categories:</strong>
+</p>
+
+<p>
+<strong>1. Software Applications</strong>
+- Need specific OS (Windows 95 programs won't run on modern Windows)
+- Example: Old educational CD-ROMs
+</p>
+
+<p>
+<strong>2. Websites with Complex JavaScript</strong>
+- Need specific browser versions
+- Example: Flash-based sites (need Flash Player)
+</p>
+
+<p>
+<strong>3. Games</strong>
+- Need specific hardware (arcade machines, consoles)
+- Example: 1980s arcade games on custom boards
+</p>
+
+<p>
+<strong>4. Interactive Art</strong>
+- Need specific plugins, environments
+- Example: Java applets, Shockwave
+</p>
+
+<h3>Emulation Strategies</h3>
+
+<p>
+<strong>Strategy 1: OS Emulation</strong>
+</p>
+
+<p>
+Run the entire original operating system in a virtual machine.
+</p>
+
+<p>
+<strong>Tools:</strong>
+- <strong>VirtualBox</strong>: Run Windows XP, Linux, older systems
+- <strong>QEMU</strong>: Low-level emulation, supports many architectures
+- <strong>DOSBox</strong>: Emulate MS-DOS (for 1980s-90s software)
+</p>
+
+<p>
+<strong>Example: Running Windows 95 Software</strong>
+</p>
+
+<p>
+1. Download Windows 95 ISO (abandonware/legally gray)
+2. Create VirtualBox VM
+3. Install Windows 95
+4. Install old software (from CD image or floppy disk image)
+5. Take VM snapshot (preserve working state)
+6. Users can run VM, experience software as originally intended
+</p>
+
+<p>
+<strong>Strategy 2: Browser-Based Emulation</strong>
+</p>
+
+<p>
+Internet Archive's approach: run emulators in web browser.
+</p>
+
+<p>
+<strong>Technologies:</strong>
+- <strong>Emularity</strong>: JavaScript-based emulation framework
+- <strong>JSMESS</strong>: Arcade/console emulator in JavaScript
+- <strong>Ruffle</strong>: Flash emulator in WebAssembly
+</p>
+
+<p>
+<strong>Example: Internet Archive's Software Collection</strong>
+</p>
+
+<p>
+- Visit: archive.org/details/softwarelibrary
+- Click any old program
+- Emulator loads in browser
+- Run 1980s software without installing anything
+</p>
+
+<p>
+<strong>Strategy 3: Format Migration</strong>
+</p>
+
+<p>
+Convert old formats to modern equivalents (lossy but pragmatic).
+</p>
+
+<p>
+<strong>Examples:</strong>
+- Flash → HTML5 (recreate interactions in modern web tech)
+- QuickTime → MP4 (convert video codec)
+- WordPerfect → DOCX (lose some formatting but preserve text)
+</p>
+
+<p>
+<strong>Trade-offs:</strong>
+- <strong>Emulation</strong>: High fidelity, but requires maintaining emulators
+- <strong>Migration</strong>: Lower fidelity, but content accessible in modern tools
+</p>
+
+<p>
+<strong>Best Practice:</strong> Do both when possible. Preserve original + create migrated version.
+</p>
+
+<h2>Part VI: Authentication and Chain of Custody</h2>
+
+<h3>Proving a Digital Artifact Is Authentic</h3>
+
+<p>
+Physical artifacts can be authenticated through material analysis (carbon dating, paint chemistry). Digital artifacts are <strong>perfectly copyable</strong>—a copy is identical to original. So how do you prove authenticity?
+</p>
+
+<h3>Cryptographic Hashing</h3>
+
+<p>
+A <strong>hash</strong> is a unique fingerprint of a file. Change one bit, and the hash changes completely.
+</p>
+
+<p>
+<strong>Common Hash Functions:</strong>
+- <strong>MD5</strong>: 128-bit hash (fast but cryptographically broken—don't use for security)
+- <strong>SHA-1</strong>: 160-bit hash (deprecated, collisions found)
+- <strong>SHA-256</strong>: 256-bit hash (current standard)
+- <strong>SHA-512</strong>: 512-bit hash (even stronger)
+</p>
+
+<p>
+<strong>Example: Computing SHA-256 Hash</strong>
+</p>
+
+<p>
+</code>`<code>bash
+</p>
+<h1>Hash a single file</h1>
+<p>
+sha256sum file.jpg
+</p>
+<h1>Output: a1b2c3d4e5f6... file.jpg</h1>
+
+<h1>Hash all files in directory</h1>
+<p>
+find . -type f -exec sha256sum {} \; > manifest.txt
+</p>
+
+<h1>Verify files haven't changed</h1>
+<p>
+sha256sum -c manifest.txt
+</p>
+<h1>Output: file.jpg: OK</h1>
+<p>
+</code>`<code>
+</p>
+
+<p>
+<strong>Use Cases:</strong>
+</p>
+
+<p>
+<strong>1. Proving Integrity</strong>
+- Archive Team publishes GeoCities torrent with SHA-256 hashes
+- You download torrent, compute hashes
+- If they match, you know data wasn't corrupted in transit
+</p>
+
+<p>
+<strong>2. Detecting Tampering</strong>
+- Hash preserved website when first captured
+- Years later, re-hash to verify nothing changed
+- If hash differs, investigate (bit rot? deliberate alteration?)
+</p>
+
+<p>
+<strong>3. Chain of Custody</strong>
+- Hash original source
+- Hash after each processing step (conversion, migration)
+- Document all hashes
+- Proves artifact's history
+</p>
+
+<h3>Digital Signatures</h3>
+
+<p>
+For legally significant documents, <strong>cryptographic signatures</strong> prove:
+- <strong>Who</strong> created/signed the document
+- <strong>When</strong> it was signed
+- <strong>That it hasn't been altered</strong> since signing
+</p>
+
+<p>
+<strong>How It Works:</strong>
+1. Author creates document
+2. Author signs with private key (generates signature)
+3. Anyone can verify signature with author's public key
+4. Signature proves: (a) author had private key, (b) document unchanged
+</p>
+
+<p>
+<strong>Tools:</strong>
+- <strong>GnuPG</strong>: Sign and verify documents
+- <strong>OpenSSL</strong>: Cryptographic operations
+- <strong>Adobe Acrobat</strong>: PDF signatures
+</p>
+
+<p>
+<strong>Archaeological Application:</strong>
+</p>
+
+<p>
+When archiving controversial or historically important documents (leaked memos, government records, deleted tweets), sign them immediately. This proves:
+- You had the document at time of signing
+- Document hasn't been altered since
+- Protects against accusations of fabrication
+</p>
+
+<h2>Part VII: Forensic Documentation</h2>
+
+<h3>Recording Your Process</h3>
+
+<p>
+Forensic work is worthless if you can't explain what you did. Document everything:
+</p>
+
+<h3>Acquisition Documentation</h3>
+
+<p>
+<strong>Record:</strong>
+- Source device (hard drive model, serial number)
+- Date/time acquired
+- Who acquired it (chain of custody)
+- Tools used (software versions)
+- Hashes (original source)
+</p>
+
+<p>
+<strong>Example Log:</strong>
+</p>
+
+<p>
+</code>`<code>
+=== Forensic Acquisition Log ===
+Date: 2024-11-15
+Examiner: Jane Smith
+Case: GeoCities Hard Drive Recovery
+</p>
+
+<p>
+Source Device:
+  Make: Western Digital
+  Model: WD5000AAKS
+  Serial: WD-XXXX1234
+  Capacity: 500GB
+</p>
+
+<p>
+Acquisition Method:
+  Tool: dd (GNU coreutils 8.32)
+  Command: dd if=/dev/sdb of=geocities_hdd.img bs=4M status=progress
+  Duration: 3 hours 42 minutes
+</p>
+
+<p>
+Verification:
+  SHA-256 (source): a1b2c3d4...
+  SHA-256 (image):  a1b2c3d4...
+  Match: YES
+</p>
+
+<p>
+Notes:
+  - Drive had bad sectors (dd_rescue used to skip)
+  - Approximately 2.3% of drive unreadable
+  - Bad sectors logged in bad_sectors.txt
+</code>`<code>
+</p>
+
+<h3>Analysis Documentation</h3>
+
+<p>
+<strong>Record:</strong>
+- What you found
+- How you found it (specific commands, tools)
+- Screenshots (visual proof)
+- Interpretation (what does this mean?)
+</p>
+
+<p>
+<strong>Example Analysis Notes:</strong>
+</p>
+
+<p>
+</code>`<code>
+File: mystery_file.dat
+Location: /recovered_data/sector_2314/mystery_file.dat
+</p>
+
+<p>
+1. Format Identification
+   Command: file mystery_file.dat
+   Result: "SQLite 3.x database"
+</p>
+
+<p>
+2. Schema Analysis
+   Command: sqlite3 mystery_file.dat ".schema"
+   Result: Tables: users, posts, comments
+</p>
+
+<p>
+3. Content Extraction
+   Command: sqlite3 mystery_file.dat "SELECT </em> FROM posts LIMIT 10"
+   Result: 10 rows exported to sample.csv
+</p>
+
+<p>
+4. Interpretation
+   This appears to be a forum database. Contains:
+   - 12,342 users
+   - 45,678 posts
+   - 123,456 comments
+   Dates range from 2004-03-15 to 2009-08-22
+</p>
+
+<p>
+5. Conclusion
+   Likely a phpBB or vBulletin forum database.
+   Requires further analysis to identify specific platform.
+</code>`<code>
+</p>
+
+<h2>Part VIII: Ethical Boundaries in Forensics</h2>
+
+<h3>When Forensics Becomes Invasion</h3>
+
+<p>
+Digital forensics is powerful—but power requires ethical limits.
+</p>
+
+<h3>Scenarios Where Forensics Is Inappropriate</h3>
+
+<p>
+<strong>1. Private Communications</strong>
+- Deleted emails, DMs, chats
+- Just because you <em>can</em> recover them doesn't mean you <em>should</em>
+</p>
+
+<p>
+<strong>2. Intimate Content</strong>
+- Personal photos, videos, journals
+- Respect people's decision to delete
+</p>
+
+<p>
+<strong>3. Trade Secrets / Proprietary Information</strong>
+- Corporate data on abandoned servers
+- May be legally protected even if physically accessible
+</p>
+
+<p>
+<strong>4. Ongoing Harm</strong>
+- Harassment campaigns, doxxing, revenge porn
+- Forensic recovery could perpetuate harm
+</p>
+
+<h3>Forensic Ethics Framework</h3>
+
+<p>
+<strong>Ask before analyzing:</strong>
+</p>
+
+<p>
+<strong>1. Consent</strong>
+- Did creator consent to preservation?
+- Can you obtain consent now?
+</p>
+
+<p>
+<strong>2. Public Interest</strong>
+- Is this historically/culturally significant?
+- Does public value outweigh privacy concerns?
+</p>
+
+<p>
+<strong>3. Harm Potential</strong>
+- Could forensic recovery cause harm?
+- To whom? How severe?
+</p>
+
+<p>
+<strong>4. Alternative Methods</strong>
+- Can you achieve your goal without forensics?
+- Is less invasive method available?
+</p>
+
+<p>
+<strong>Example: The Deleted Political Tweet</strong>
+</p>
+
+<p>
+A politician deletes a tweet. You have forensic tools to recover it from cached data. Should you?
+</p>
+
+<p>
+<strong>Analysis:</strong>
+- <strong>Public figure</strong>: Yes (higher scrutiny justified)
+- <strong>Public interest</strong>: If tweet is newsworthy, yes
+- <strong>Harm</strong>: Minimal (politician chose public platform)
+- <strong>Alternatives</strong>: Check Wayback Machine, Politwoops (already doing this)
+</p>
+
+<p>
+<strong>Conclusion:</strong> Ethical to recover and publish (accountability > privacy for public officials).
+</p>
+
+<p>
+<strong>Example: The Abandoned Teenager's Blog</strong>
+</p>
+
+<p>
+You recover a hard drive with a teenager's private blog from 2005 (they're now 35). Should you publish it?
+</p>
+
+<p>
+<strong>Analysis:</strong>
+- <strong>Private person</strong>: Higher privacy expectation
+- <strong>Consent</strong>: Can't easily contact them
+- <strong>Public interest</strong>: Low (unless exceptional historical value)
+- <strong>Harm</strong>: Could embarrass them (teenage writing)
+</p>
+
+<p>
+<strong>Conclusion:</strong> Don't publish without consent. Document that it existed, archive privately, contact them if possible.
+</p>
+
+<h2>Conclusion: The Forensic Archaeobytologist</h2>
+
+<p>
+Digital forensics transforms you from passive archivist to <strong>active investigator</strong>. You don't just accept what platforms give you—you dig deeper, recover what was lost, authenticate what's dubious, and extract meaning from the opaque.
+</p>
+
+<p>
+Every corrupted hard drive, every deleted file, every mysterious format is a puzzle. Your forensic skills determine whether that puzzle is solved or remains forever mysterious.
+</p>
+
+<p>
+But with great power comes great responsibility. Forensics can invade privacy, resurrect deliberately forgotten content, and cause harm. The Custodial Filter applies here too: just because you can recover something doesn't mean you should.
+</p>
+
+<p>
+In the next chapter, we'll explore <strong>the ethics of preservation in depth</strong>—examining the hardest dilemmas Archaeobytologists face, and building frameworks for navigating them.
+</p>
+
+<p>
+For now, practice your forensic skills. Find an old hard drive, a corrupted file, a mysterious binary. Apply these methods. Document your process. And ask: What stories are hidden in these bits?
+</p>
+
+<p>
+The artifacts are waiting. Now go uncover them.
+</p>
+
+<h2>Discussion Questions</h2>
+
+<p>
+1. <strong>Metadata Privacy</strong>: You're archiving a photo collection from a defunct platform. GPS coordinates reveal protesters' locations. Do you strip the metadata or preserve it for research?
+</p>
+
+<p>
+2. <strong>Format Obsolescence</strong>: You find files in a proprietary format with no documentation. Do you spend weeks reverse-engineering it, or accept that some content will be lost?
+</p>
+
+<p>
+3. <strong>Deleted Content</strong>: A user intentionally deleted their account and content. You have a backup. Do you preserve it?
+</p>
+
+<p>
+4. <strong>Authentication</strong>: Someone claims a document is a "leaked corporate memo." Your forensic analysis shows metadata inconsistencies. How do you publish your findings without enabling misinformation?
+</p>
+
+<p>
+5. <strong>Emulation vs. Migration</strong>: Is it better to maintain perfect fidelity through emulation (expensive, complex) or accept some loss through format migration (pragmatic, sustainable)?
+</p>
+
+<p>
+6. <strong>Chain of Custody</strong>: How do you prove to skeptics that an archived artifact is authentic and unaltered?
+</p>
+
+<h2>Exercise: Forensic Recovery Project</h2>
+
+<p>
+<strong>Task</strong>: Conduct a forensic analysis of a digital artifact.
+</p>
+
+<p>
+<strong>Part 1: Acquire an Artifact</strong> (Choose one)
+- Old USB drive from a drawer
+- Downloaded corrupt file from internet
+- Deleted file from your own computer (practice recovery)
+- Mystery file with wrong/missing extension
+</p>
+
+<p>
+<strong>Part 2: Forensic Analysis</strong> (1000 words)
+</p>
+
+<p>
+Document:
+1. <strong>Acquisition</strong>: How did you obtain it? Document device info, date, method
+2. <strong>Hashing</strong>: Compute SHA-256, document hash
+3. <strong>Format Identification</strong>: What type of file? Use </code>file` command or DROID
+4. <strong>Metadata Extraction</strong>: What metadata exists? Use ExifTool
+5. <strong>Content Analysis</strong>: What's inside? Can you open it? Recover data?
+6. <strong>Timeline</strong>: When was it created, modified, accessed?
+7. <strong>Findings</strong>: What did you learn? Any surprises?
+</p>
+
+<p>
+<strong>Part 3: Ethical Reflection</strong> (500 words)
+- Was this analysis ethical?
+- Did you encounter private information?
+- How would you handle this if archiving for public access?
+- What would you do differently?
+</p>
+
+<p>
+<strong>Part 4: Documentation</strong> (Create forensic report)
+- Professional-style report documenting your process
+- Include: acquisition log, tool commands, screenshots, findings, conclusions
+</p>
+
+<h2>Further Reading</h2>
+
+<h3>On Digital Forensics Methods</h3>
+
+<p>
+- Carrier, Brian. <em>File System Forensic Analysis</em>. Addison-Wesley, 2005.
+  - Comprehensive technical reference on filesystem analysis
+</p>
+
+<p>
+- Casey, Eoghan. <em>Digital Evidence and Computer Crime</em>. Academic Press, 2011.
+  - Forensic investigation methodology
+</p>
+
+<p>
+- Jones, Keith, et al. <em>Real Digital Forensics: Computer Security and Incident Response</em>. Addison-Wesley, 2005.
+  - Practical forensics for investigators
+</p>
+
+<h3>On Format Preservation</h3>
+
+<p>
+- Brown, Adrian. <em>Practical Digital Preservation</em>. Facet Publishing, 2013.
+  - Format identification, migration, emulation strategies
+</p>
+
+<p>
+- Kirschenbaum, Matthew. <em>Mechanisms: New Media and the Forensic Imagination</em>. MIT Press, 2008.
+  - Theoretical foundation for digital forensics in humanities
+</p>
+
+<h3>On Emulation</h3>
+
+<p>
+- Rosenthal, David S. H. "Emulation & Virtualization as Preservation Strategies." Report for Mellon Foundation, 2015.
+  - Technical and institutional challenges of emulation
+</p>
+
+<p>
+- Internet Archive. "Software Preservation." https://archive.org/details/softwarelibrary
+  - Practical examples of browser-based emulation
+</p>
+
+<h3>Tools Documentation</h3>
+
+<p>
+- The Sleuth Kit: http://www.sleuthkit.org/
+- ExifTool: https://exiftool.org/
+- Autopsy (GUI for Sleuth Kit): https://www.autopsy.com/
+- DROID: https://digital-preservation.github.io/droid/
+</p>
+
+<p>
+<strong>End of Chapter 8</strong>
+</p>
+
+<p>
+<em>Next: Chapter 9 — The Custodial Filter: Ethics of Preservation</em>
+</p>
+
+
+        </article>
+        <div class="nav">
+            <a href="index.html">Back to Table of Contents</a>
+        </div>
+    </div>
+</body>
+</html>

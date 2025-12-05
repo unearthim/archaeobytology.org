@@ -1,0 +1,1112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appendix B: Essential Tools & Resources | Archaeobytology</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Lora', serif; line-height: 1.8; color: #2E2E2E; background: #F8F7F4; padding: 2rem 1rem; }
+        .container { max-width: 800px; margin: 0 auto; background: #FFFFFF; padding: 3rem; border-radius: 15px; box-shadow: 0 4px 20px rgba(46,46,46,0.1); border: 1px solid #D1D1D1; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; color: #2E2E2E; margin-top: 2rem; margin-bottom: 1rem; line-height: 1.3; }
+        h1 { font-size: 2.5rem; font-weight: 700; margin-top: 0; border-bottom: 3px solid #A1824A; padding-bottom: 0.5rem; }
+        h2 { font-size: 2rem; font-weight: 700; margin-top: 2.5rem; }
+        h3 { font-size: 1.5rem; font-weight: 600; color: #5A7D8C; }
+        h4 { font-size: 1.25rem; font-weight: 600; color: #5A7D8C; }
+        p { margin-bottom: 1.25rem; font-size: 1.1rem; }
+        a { color: #A93400; text-decoration: underline; transition: color 0.3s; }
+        a:hover { color: #A95C3D; }
+        strong { font-weight: 600; }
+        em { font-style: italic; }
+        code { font-family: 'Courier New', monospace; background: #F8F7F4; padding: 0.2rem 0.4rem; border-radius: 3px; border: 1px solid #D1D1D1; }
+        blockquote { border-left: 4px solid #A1824A; padding: 1rem 1.5rem; margin: 1.5rem 0; font-style: italic; color: #5A7D8C; background: #F8F7F4; border-radius: 0 8px 8px 0; }
+        hr { border: none; border-top: 2px solid #D1D1D1; margin: 2rem 0; }
+        .nav { text-align: center; padding: 1rem 0; border-top: 2px solid #D1D1D1; margin-top: 2rem; }
+        .nav a { display: inline-block; padding: 0.75rem 1.5rem; background: #A93400; color: #F8F7F4; text-decoration: none; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 600; margin: 0.5rem; }
+        .nav a:hover { background: #A95C3D; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <article>
+<h1>Appendix B: Essential Tools & Resources</h1>
+
+<h2>Introduction</h2>
+
+<p>
+This appendix provides a curated catalog of tools, software, services, and resources essential for Archaeobytological practice. Tools are organized by function and annotated with:
+- <strong>Purpose</strong>: What the tool does
+- <strong>Skill Level</strong>: Beginner, Intermediate, Advanced
+- <strong>Cost</strong>: Free, Freemium, Paid
+- <strong>Platform</strong>: Windows, macOS, Linux, Web-based
+- <strong>Open Source</strong>: Yes/No
+</p>
+
+<p>
+Tools are current as of 2025 but the digital preservation landscape evolves rapidly. Check the Archaeobytology community wiki (archaeobytology.org/wiki) for updates.
+</p>
+
+<h2>I. Web Archiving & Scraping Tools</h2>
+
+<h3>1. Wget</h3>
+<p>
+<strong>Purpose</strong>: Command-line tool for downloading websites recursively  
+<strong>Skill Level</strong>: Beginner-Intermediate  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Windows, macOS, Linux  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://www.gnu.org/software/wget/
+</p>
+
+<p>
+<strong>What It Does</strong>: Downloads web pages and their linked resources (images, CSS, JavaScript). Creates mirror copies of websites on your local machine.
+</p>
+
+<p>
+<strong>Basic Usage</strong>:
+``<code>bash
+wget --recursive --level=2 --no-parent --wait=1 https://example.com
+</code>`<code>
+</p>
+
+<p>
+<strong>Best For</strong>: Static HTML sites, simple scraping projects
+</p>
+
+<p>
+<strong>Limitations</strong>: Doesn't handle JavaScript-heavy sites well, can't navigate login walls
+</p>
+
+<h3>2. HTTrack</h3>
+<p>
+<strong>Purpose</strong>: Website copier with GUI interface  
+<strong>Skill Level</strong>: Beginner  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Windows, macOS, Linux  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://www.httrack.com/
+</p>
+
+<p>
+<strong>What It Does</strong>: Similar to wget but with graphical interface. Easier for beginners who don't want command-line tools.
+</p>
+
+<p>
+<strong>Best For</strong>: One-time website archiving, beginners
+</p>
+
+<p>
+<strong>Limitations</strong>: Slower than command-line tools, less flexible configuration
+</p>
+
+<h3>3. ArchiveBox</h3>
+<p>
+<strong>Purpose</strong>: Self-hosted web archiving platform  
+<strong>Skill Level</strong>: Intermediate  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Windows, macOS, Linux, Docker  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://archivebox.io/
+</p>
+
+<p>
+<strong>What It Does</strong>: Creates permanent archives of web pages including HTML, screenshots, PDFs, videos, and git repositories. Provides web interface for browsing archives.
+</p>
+
+<p>
+<strong>Features</strong>:
+- Multiple capture methods (wget, Chrome headless, youtube-dl, etc.)
+- Scheduled archiving (cron jobs)
+- Full-text search
+- Deduplication
+</p>
+
+<p>
+<strong>Best For</strong>: Personal archiving projects, research collections, small organizations
+</p>
+
+<p>
+<strong>Setup Complexity</strong>: Requires server or Docker knowledge
+</p>
+
+<h3>4. Webrecorder (ArchiveWeb.page)</h3>
+<p>
+<strong>Purpose</strong>: Browser-based interactive web archiving  
+<strong>Skill Level</strong>: Beginner  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Web (browser extension also available)  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://archiveweb.page/
+</p>
+
+<p>
+<strong>What It Does</strong>: Records your browsing session including JavaScript interactions, videos, and dynamic content. Creates WARC (Web ARChive) files you can replay.
+</p>
+
+<p>
+<strong>Features</strong>:
+- Captures JavaScript-heavy sites
+- Records social media feeds (Twitter, Instagram)
+- Exports to standard WARC format
+- Replay archives offline
+</p>
+
+<p>
+<strong>Best For</strong>: Social media archiving, dynamic websites, personal projects
+</p>
+
+<p>
+<strong>Unique Advantage</strong>: Works in browser, no installation required
+</p>
+
+<h3>5. Heritrix</h3>
+<p>
+<strong>Purpose</strong>: Industrial-strength web crawler  
+<strong>Skill Level</strong>: Advanced  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Java (cross-platform)  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://github.com/internetarchive/heritrix3
+</p>
+
+<p>
+<strong>What It Does</strong>: Internet Archive's production crawler. Designed for massive-scale archiving (billions of URLs).
+</p>
+
+<p>
+<strong>Features</strong>:
+- Highly configurable crawl policies
+- Distributed crawling
+- Respects robots.txt
+- Creates WARC files
+</p>
+
+<p>
+<strong>Best For</strong>: Large institutions, comprehensive web archiving
+</p>
+
+<p>
+<strong>Limitations</strong>: Steep learning curve, requires significant infrastructure
+</p>
+
+<h3>6. Browsertrix Crawler</h3>
+<p>
+<strong>Purpose</strong>: High-fidelity browser-based crawling  
+<strong>Skill Level</strong>: Intermediate-Advanced  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Docker  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://github.com/webrecorder/browsertrix-crawler
+</p>
+
+<p>
+<strong>What It Does</strong>: Uses real browsers (Chrome) to capture JavaScript-heavy sites with perfect fidelity. Creates WARC files.
+</p>
+
+<p>
+<strong>Best For</strong>: Modern web apps, single-page applications, sites requiring JavaScript
+</p>
+
+<h3>7. Archive-It</h3>
+<p>
+<strong>Purpose</strong>: Subscription web archiving service  
+<strong>Skill Level</strong>: Beginner  
+<strong>Cost</strong>: Paid (subscription based on storage)  
+<strong>Platform</strong>: Web-based  
+<strong>Open Source</strong>: No  
+<strong>Website</strong>: https://archive-it.org/
+</p>
+
+<p>
+<strong>What It Does</strong>: Managed web archiving service by Internet Archive. Point-and-click interface for creating and managing web archives.
+</p>
+
+<p>
+<strong>Features</strong>:
+- Scheduled recurring crawls
+- Metadata management
+- Public or private collections
+- Integration with Wayback Machine
+</p>
+
+<p>
+<strong>Best For</strong>: Institutions without technical staff, organizations needing reliable managed service
+</p>
+
+<p>
+<strong>Cost</strong>: Starts ~$1,500/year for small collections
+</p>
+
+<h2>II. Media Preservation Tools</h2>
+
+<h3>8. youtube-dl / yt-dlp</h3>
+<p>
+<strong>Purpose</strong>: Video downloader for YouTube and 1000+ sites  
+<strong>Skill Level</strong>: Intermediate  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Windows, macOS, Linux  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://github.com/yt-dlp/yt-dlp
+</p>
+
+<p>
+<strong>What It Does</strong>: Downloads videos from streaming platforms including metadata, subtitles, thumbnails.
+</p>
+
+<p>
+<strong>Basic Usage</strong>:
+</code>`<code>bash
+yt-dlp --write-description --write-info-json --write-thumbnail https://youtube.com/watch?v=VIDEO_ID
+</code>`<code>
+</p>
+
+<p>
+<strong>Best For</strong>: Video archiving, preserving YouTube/Vimeo/TikTok content
+</p>
+
+<p>
+<strong>Note</strong>: yt-dlp is actively maintained fork of youtube-dl (use yt-dlp)
+</p>
+
+<h3>9. gallery-dl</h3>
+<p>
+<strong>Purpose</strong>: Image gallery downloader  
+<strong>Skill Level</strong>: Intermediate  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Windows, macOS, Linux  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://github.com/mikf/gallery-dl
+</p>
+
+<p>
+<strong>What It Does</strong>: Downloads images from image hosting sites (Imgur, Flickr, DeviantArt, Twitter, etc.)
+</p>
+
+<p>
+<strong>Best For</strong>: Image archiving, art preservation, meme collections
+</p>
+
+<h3>10. FFmpeg</h3>
+<p>
+<strong>Purpose</strong>: Multimedia conversion and processing  
+<strong>Skill Level</strong>: Intermediate-Advanced  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Windows, macOS, Linux  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://ffmpeg.org/
+</p>
+
+<p>
+<strong>What It Does</strong>: Converts video/audio formats, extracts frames, creates thumbnails, transcodes for preservation.
+</p>
+
+<p>
+<strong>Best For</strong>: Format migration, creating preservation masters, generating access copies
+</p>
+
+<p>
+<strong>Example</strong>:
+</code>`<code>bash
+ffmpeg -i input.flv -c:v libx264 -c:a aac output.mp4
+</code>``
+</p>
+
+<h2>III. Emulation & Obsolescence Tools</h2>
+
+<h3>11. Flashpoint Archive</h3>
+<p>
+<strong>Purpose</strong>: Flash game and animation preservation  
+<strong>Skill Level</strong>: Beginner  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Windows, Linux  
+<strong>Open Source</strong>: Partially  
+<strong>Website</strong>: https://bluemaxima.org/flashpoint/
+</p>
+
+<p>
+<strong>What It Does</strong>: Preserves and plays 500,000+ Flash games and animations using embedded emulators.
+</p>
+
+<p>
+<strong>Features</strong>:
+- Curated, playable collection
+- Built-in launcher
+- Metadata and screenshots
+- Regular updates
+</p>
+
+<p>
+<strong>Best For</strong>: Playing preserved Flash content, research, nostalgia
+</p>
+
+<p>
+<strong>Download Size</strong>: ~1TB for full collection (smaller curated versions available)
+</p>
+
+<h3>12. Ruffle</h3>
+<p>
+<strong>Purpose</strong>: Flash Player emulator in Rust  
+<strong>Skill Level</strong>: Beginner  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Web (browser extension), Desktop  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://ruffle.rs/
+</p>
+
+<p>
+<strong>What It Does</strong>: Open-source Flash Player replacement that runs in browsers and as standalone app.
+</p>
+
+<p>
+<strong>Best For</strong>: Viewing archived Flash content, embedding Flash in modern websites
+</p>
+
+<p>
+<strong>Status</strong>: Under active development, not 100% compatible yet
+</p>
+
+<h3>13. MAME (Multiple Arcade Machine Emulator)</h3>
+<p>
+<strong>Purpose</strong>: Arcade game preservation  
+<strong>Skill Level</strong>: Intermediate  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Windows, macOS, Linux  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://www.mamedev.org/
+</p>
+
+<p>
+<strong>What It Does</strong>: Emulates arcade hardware to preserve vintage arcade games.
+</p>
+
+<p>
+<strong>Best For</strong>: Arcade game preservation, historical research
+</p>
+
+<h3>14. DOSBox</h3>
+<p>
+<strong>Purpose</strong>: DOS emulator  
+<strong>Skill Level</strong>: Beginner  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Windows, macOS, Linux  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://www.dosbox.com/
+</p>
+
+<p>
+<strong>What It Does</strong>: Emulates MS-DOS environment for running old DOS games and software.
+</p>
+
+<p>
+<strong>Best For</strong>: 1980s-1990s software preservation
+</p>
+
+<h3>15. Internet Archive's Emularity</h3>
+<p>
+<strong>Purpose</strong>: Browser-based emulation framework  
+<strong>Skill Level</strong>: Advanced (for setup), Beginner (for use)  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Web-based  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://github.com/db48x/emularity
+</p>
+
+<p>
+<strong>What It Does</strong>: JavaScript framework for running emulators in web browsers. Powers Internet Archive's software collection.
+</p>
+
+<p>
+<strong>Best For</strong>: Making preserved software publicly playable via web
+</p>
+
+<h2>IV. Forensics & Data Recovery</h2>
+
+<h3>16. The Sleuth Kit / Autopsy</h3>
+<p>
+<strong>Purpose</strong>: Digital forensics and file recovery  
+<strong>Skill Level</strong>: Advanced  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Windows, macOS, Linux  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://www.sleuthkit.org/
+</p>
+
+<p>
+<strong>What It Does</strong>: Analyzes disk images, recovers deleted files, examines file systems.
+</p>
+
+<p>
+<strong>Best For</strong>: Forensic analysis of hard drives, recovering deleted content
+</p>
+
+<h3>17. FTK Imager</h3>
+<p>
+<strong>Purpose</strong>: Disk imaging tool  
+<strong>Skill Level</strong>: Intermediate  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Windows  
+<strong>Open Source</strong>: No  
+<strong>Website</strong>: https://www.exterro.com/ftk-imager
+</p>
+
+<p>
+<strong>What It Does</strong>: Creates forensic disk images (bit-by-bit copies) for preservation and analysis.
+</p>
+
+<p>
+<strong>Best For</strong>: Creating preservation masters of physical media
+</p>
+
+<h3>18. PhotoRec</h3>
+<p>
+<strong>Purpose</strong>: File recovery tool  
+<strong>Skill Level</strong>: Intermediate  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Windows, macOS, Linux  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://www.cgsecurity.org/wiki/PhotoRec
+</p>
+
+<p>
+<strong>What It Does</strong>: Recovers deleted files from hard drives, memory cards, etc.
+</p>
+
+<p>
+<strong>Best For</strong>: Recovering accidentally deleted content, salvaging corrupted media
+</p>
+
+<h3>19. Bulk Extractor</h3>
+<p>
+<strong>Purpose</strong>: Digital forensics tool for extracting information  
+<strong>Skill Level</strong>: Advanced  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Windows, macOS, Linux  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://github.com/simsong/bulk_extractor
+</p>
+
+<p>
+<strong>What It Does</strong>: Scans disk images and extracts emails, credit cards, URLs, etc. without mounting filesystem.
+</p>
+
+<p>
+<strong>Best For</strong>: Analyzing large datasets, finding specific types of information
+</p>
+
+<h2>V. Metadata & Organization</h2>
+
+<h3>20. Tropy</h3>
+<p>
+<strong>Purpose</strong>: Research photo management and annotation  
+<strong>Skill Level</strong>: Beginner  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Windows, macOS, Linux  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://tropy.org/
+</p>
+
+<p>
+<strong>What It Does</strong>: Organize, annotate, and tag research photos. Add metadata, transcribe, and create citations.
+</p>
+
+<p>
+<strong>Best For</strong>: Managing archival photos, research collections
+</p>
+
+<h3>21. Omeka</h3>
+<p>
+<strong>Purpose</strong>: Web publishing platform for digital collections  
+<strong>Skill Level</strong>: Intermediate  
+<strong>Cost</strong>: Free (self-hosted) or Paid (Omeka.net)  
+<strong>Platform</strong>: Web-based (PHP)  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://omeka.org/
+</p>
+
+<p>
+<strong>What It Does</strong>: Create online exhibits and digital archives with rich metadata.
+</p>
+
+<p>
+<strong>Features</strong>:
+- Dublin Core metadata
+- Exhibit builder
+- Item management
+- Public/private collections
+</p>
+
+<p>
+<strong>Best For</strong>: Small museums, libraries, digital humanities projects
+</p>
+
+<h3>22. Collective Access</h3>
+<p>
+<strong>Purpose</strong>: Museum and archival collections management  
+<strong>Skill Level</strong>: Advanced  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Web-based (PHP)  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://collectiveaccess.org/
+</p>
+
+<p>
+<strong>What It Does</strong>: Full-featured collections management system with cataloging, media management, and public access.
+</p>
+
+<p>
+<strong>Best For</strong>: Museums, archives, larger institutions
+</p>
+
+<h3>23. Calibre</h3>
+<p>
+<strong>Purpose</strong>: eBook management  
+<strong>Skill Level</strong>: Beginner  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Windows, macOS, Linux  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://calibre-ebook.com/
+</p>
+
+<p>
+<strong>What It Does</strong>: Organize, convert, and read eBooks. Powerful metadata editor.
+</p>
+
+<p>
+<strong>Best For</strong>: Managing personal book collections, format conversion
+</p>
+
+<h2>VI. Storage & Backup</h2>
+
+<h3>24. Nextcloud</h3>
+<p>
+<strong>Purpose</strong>: Self-hosted cloud storage  
+<strong>Skill Level</strong>: Intermediate  
+<strong>Cost</strong>: Free (self-hosted)  
+<strong>Platform</strong>: Web-based (PHP)  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://nextcloud.com/
+</p>
+
+<p>
+<strong>What It Does</strong>: Personal cloud storage like Dropbox but self-hosted. Sync files across devices.
+</p>
+
+<p>
+<strong>Features</strong>:
+- File sharing
+- Calendar/contacts
+- Collaborative editing
+- End-to-end encryption
+</p>
+
+<p>
+<strong>Best For</strong>: Personal sovereignty, institutional storage
+</p>
+
+<h3>25. Syncthing</h3>
+<p>
+<strong>Purpose</strong>: Peer-to-peer file synchronization  
+<strong>Skill Level</strong>: Beginner-Intermediate  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Windows, macOS, Linux, Android  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://syncthing.net/
+</p>
+
+<p>
+<strong>What It Does</strong>: Syncs files between devices without central server. True peer-to-peer.
+</p>
+
+<p>
+<strong>Best For</strong>: Personal backups, distributed storage without cloud dependency
+</p>
+
+<h3>26. Restic</h3>
+<p>
+<strong>Purpose</strong>: Encrypted backup program  
+<strong>Skill Level</strong>: Intermediate  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Windows, macOS, Linux  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://restic.net/
+</p>
+
+<p>
+<strong>What It Does</strong>: Fast, encrypted, deduplicated backups to local or cloud storage.
+</p>
+
+<p>
+<strong>Best For</strong>: Secure long-term backups
+</p>
+
+<h3>27. Duplicati</h3>
+<p>
+<strong>Purpose</strong>: Encrypted backup with cloud support  
+<strong>Skill Level</strong>: Beginner-Intermediate  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Windows, macOS, Linux  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://www.duplicati.com/
+</p>
+
+<p>
+<strong>What It Does</strong>: Encrypted backups to cloud storage (S3, Google Drive, Dropbox, etc.)
+</p>
+
+<p>
+<strong>Best For</strong>: Encrypted cloud backups, scheduled backups
+</p>
+
+<h2>VII. Distributed & P2P Technologies</h2>
+
+<h3>28. IPFS (InterPlanetary File System)</h3>
+<p>
+<strong>Purpose</strong>: Distributed file storage protocol  
+<strong>Skill Level</strong>: Advanced  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Cross-platform  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://ipfs.tech/
+</p>
+
+<p>
+<strong>What It Does</strong>: Content-addressed, peer-to-peer file system. Files stored across network, retrieved by hash.
+</p>
+
+<p>
+<strong>Best For</strong>: Censorship-resistant storage, distributed archives
+</p>
+
+<p>
+<strong>Challenges</strong>: Requires peers to "pin" content (host it) or content disappears
+</p>
+
+<h3>29. BitTorrent / qBittorrent</h3>
+<p>
+<strong>Purpose</strong>: Peer-to-peer file sharing  
+<strong>Skill Level</strong>: Beginner  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Windows, macOS, Linux  
+<strong>Open Source</strong>: Yes (qBittorrent)  
+<strong>Website</strong>: https://www.qbittorrent.org/
+</p>
+
+<p>
+<strong>What It Does</strong>: Download and seed torrents. Distributed file sharing without central server.
+</p>
+
+<p>
+<strong>Best For</strong>: Distributing large archives (GeoCities torrent), redundant preservation
+</p>
+
+<h3>30. Dat / Hyperdrive</h3>
+<p>
+<strong>Purpose</strong>: Peer-to-peer data sharing protocol  
+<strong>Skill Level</strong>: Advanced  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Cross-platform  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://dat.foundation/
+</p>
+
+<p>
+<strong>What It Does</strong>: Like BitTorrent but with versioning and live updates. Share datasets P2P.
+</p>
+
+<p>
+<strong>Best For</strong>: Scientific datasets, collaborative archiving
+</p>
+
+<h2>VIII. Web Publishing & Sovereignty Tools</h2>
+
+<h3>31. WordPress (Self-Hosted)</h3>
+<p>
+<strong>Purpose</strong>: Content management system  
+<strong>Skill Level</strong>: Beginner-Intermediate  
+<strong>Cost</strong>: Free (software), hosting costs vary  
+<strong>Platform</strong>: Web-based (PHP)  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://wordpress.org/
+</p>
+
+<p>
+<strong>What It Does</strong>: Build websites and blogs with full control. Powers 40%+ of the web.
+</p>
+
+<p>
+<strong>Best For</strong>: Personal websites, institutional sites, blogs with custom domains
+</p>
+
+<h3>32. Ghost</h3>
+<p>
+<strong>Purpose</strong>: Publishing platform for newsletters and memberships  
+<strong>Skill Level</strong>: Beginner (hosted) to Intermediate (self-hosted)  
+<strong>Cost</strong>: Freemium (Ghost Pro) or Free (self-hosted)  
+<strong>Platform</strong>: Web-based (Node.js)  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://ghost.org/
+</p>
+
+<p>
+<strong>What It Does</strong>: Blogging platform with built-in newsletter and membership features.
+</p>
+
+<p>
+<strong>Best For</strong>: Writers who want sovereignty + monetization
+</p>
+
+<h3>33. Hugo / Jekyll (Static Site Generators)</h3>
+<p>
+<strong>Purpose</strong>: Generate static HTML websites from markdown  
+<strong>Skill Level</strong>: Intermediate  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Cross-platform  
+<strong>Open Source</strong>: Yes  
+<strong>Websites</strong>: https://gohugo.io/ | https://jekyllrb.com/
+</p>
+
+<p>
+<strong>What It Does</strong>: Convert markdown files to HTML websites. No database, just files.
+</p>
+
+<p>
+<strong>Best For</strong>: Fast, secure websites, GitHub Pages hosting, technical users
+</p>
+
+<h3>34. Mastodon</h3>
+<p>
+<strong>Purpose</strong>: Federated social networking  
+<strong>Skill Level</strong>: Advanced (self-hosting), Beginner (joining instance)  
+<strong>Cost</strong>: Free (software), hosting costs vary  
+<strong>Platform</strong>: Web-based (Ruby)  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://joinmastodon.org/
+</p>
+
+<p>
+<strong>What It Does</strong>: Twitter-like social media but federated. Anyone can run an instance.
+</p>
+
+<p>
+<strong>Best For</strong>: Social networking with sovereignty, community hosting
+</p>
+
+<h2>IX. Digital Preservation Standards & Utilities</h2>
+
+<h3>35. DROID (Digital Record Object Identification)</h3>
+<p>
+<strong>Purpose</strong>: File format identification  
+<strong>Skill Level</strong>: Intermediate  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Windows, macOS, Linux (Java)  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://digital-preservation.github.io/droid/
+</p>
+
+<p>
+<strong>What It Does</strong>: Identifies file formats and versions for preservation planning.
+</p>
+
+<p>
+<strong>Best For</strong>: Surveying collections, format migration planning
+</p>
+
+<h3>36. Archivematica</h3>
+<p>
+<strong>Purpose</strong>: Digital preservation system  
+<strong>Skill Level</strong>: Advanced  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Linux  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://www.archivematica.org/
+</p>
+
+<p>
+<strong>What It Does</strong>: Complete digital preservation workflow from ingest to access. Creates OAIS-compliant preservation packages.
+</p>
+
+<p>
+<strong>Best For</strong>: Institutions with professional archival requirements
+</p>
+
+<h3>37. LOCKSS (Lots of Copies Keep Stuff Safe)</h3>
+<p>
+<strong>Purpose</strong>: Distributed preservation network  
+<strong>Skill Level</strong>: Advanced  
+<strong>Cost</strong>: Free (software), membership costs vary  
+<strong>Platform</strong>: Linux  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://www.lockss.org/
+</p>
+
+<p>
+<strong>What It Does</strong>: Creates distributed dark archives where institutions preserve copies of content.
+</p>
+
+<p>
+<strong>Best For</strong>: Consortial preservation, journal archiving
+</p>
+
+<h2>X. Learning & Reference Resources</h2>
+
+<h3>38. Archive Team Wiki</h3>
+<p>
+<strong>Purpose</strong>: Documentation of rescue projects and methods  
+<strong>Skill Level</strong>: All levels  
+<strong>Cost</strong>: Free  
+<strong>Website</strong>: https://wiki.archiveteam.org/
+</p>
+
+<p>
+<strong>What It Provides</strong>: Guides for archiving specific platforms, tool documentation, community projects.
+</p>
+
+<p>
+<strong>Best For</strong>: Learning web archiving, finding ongoing rescue projects
+</p>
+
+<h3>39. Digital Preservation Coalition (DPC)</h3>
+<p>
+<strong>Purpose</strong>: Professional organization for digital preservation  
+<strong>Skill Level</strong>: All levels  
+<strong>Cost</strong>: Free resources, membership fees for institutions  
+<strong>Website</strong>: https://www.dpconline.org/
+</p>
+
+<p>
+<strong>What It Provides</strong>: Handbook, tech watch reports, training, community
+</p>
+
+<h3>40. Library of Congress Digital Preservation</h3>
+<p>
+<strong>Purpose</strong>: Government standards and guidance  
+<strong>Skill Level</strong>: All levels  
+<strong>Cost</strong>: Free  
+<strong>Website</strong>: https://www.loc.gov/preservation/digital/
+</p>
+
+<p>
+<strong>What It Provides</strong>: Format recommendations, case studies, technical standards
+</p>
+
+<h2>XI. Community & Collaboration</h2>
+
+<h3>41. Internet Archive Scholar</h3>
+<p>
+<strong>Purpose</strong>: Academic paper search in preserved collections  
+<strong>Skill Level</strong>: Beginner  
+<strong>Cost</strong>: Free  
+<strong>Website</strong>: https://scholar.archive.org/
+</p>
+
+<p>
+<strong>What It Provides</strong>: Search 25+ million academic articles including deleted/paywalled content
+</p>
+
+<h3>42. Hypothes.is</h3>
+<p>
+<strong>Purpose</strong>: Web annotation tool  
+<strong>Skill Level</strong>: Beginner  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Web (browser extension)  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://hypothes.is/
+</p>
+
+<p>
+<strong>What It Does</strong>: Collaborative annotation of web pages and PDFs.
+</p>
+
+<p>
+<strong>Best For</strong>: Research collaboration, shared analysis of archived content
+</p>
+
+<h3>43. Zotero</h3>
+<p>
+<strong>Purpose</strong>: Reference management  
+<strong>Skill Level</strong>: Beginner  
+<strong>Cost</strong>: Free (with storage limits)  
+<strong>Platform</strong>: Windows, macOS, Linux  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://www.zotero.org/
+</p>
+
+<p>
+<strong>What It Does</strong>: Organize research sources, generate citations, share libraries.
+</p>
+
+<p>
+<strong>Best For</strong>: Academic research, bibliography management
+</p>
+
+<h2>XII. Advanced / Specialized Tools</h2>
+
+<h3>44. Scrapyd</h3>
+<p>
+<strong>Purpose</strong>: Web scraping framework  
+<strong>Skill Level</strong>: Advanced  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Python (cross-platform)  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://scrapyd.readthedocs.io/
+</p>
+
+<p>
+<strong>What It Does</strong>: Deploy and run web scraping spiders at scale.
+</p>
+
+<p>
+<strong>Best For</strong>: Custom large-scale scraping projects
+</p>
+
+<h3>45. Selenium</h3>
+<p>
+<strong>Purpose</strong>: Browser automation  
+<strong>Skill Level</strong>: Advanced  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Cross-platform  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://www.selenium.dev/
+</p>
+
+<p>
+<strong>What It Does</strong>: Automate web browser interactions for scraping JavaScript-heavy sites.
+</p>
+
+<p>
+<strong>Best For</strong>: Archiving dynamic web apps, automated testing
+</p>
+
+<h3>46. Beautiful Soup</h3>
+<p>
+<strong>Purpose</strong>: HTML/XML parsing library (Python)  
+<strong>Skill Level</strong>: Intermediate  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Python (cross-platform)  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://www.crummy.com/software/BeautifulSoup/
+</p>
+
+<p>
+<strong>What It Does</strong>: Parse and extract data from HTML documents.
+</p>
+
+<p>
+<strong>Best For</strong>: Custom scrapers, data extraction
+</p>
+
+<h3>47. ExifTool</h3>
+<p>
+<strong>Purpose</strong>: Metadata reading/writing for images  
+<strong>Skill Level</strong>: Intermediate  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Windows, macOS, Linux  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://exiftool.org/
+</p>
+
+<p>
+<strong>What It Does</strong>: Read and write metadata in images, videos, PDFs.
+</p>
+
+<p>
+<strong>Best For</strong>: Extracting metadata, adding preservation info to files
+</p>
+
+<h3>48. Voyant Tools</h3>
+<p>
+<strong>Purpose</strong>: Text analysis and visualization  
+<strong>Skill Level</strong>: Beginner  
+<strong>Cost</strong>: Free  
+<strong>Platform</strong>: Web-based  
+<strong>Open Source</strong>: Yes  
+<strong>Website</strong>: https://voyant-tools.org/
+</p>
+
+<p>
+<strong>What It Does</strong>: Analyze text corpuses with visualizations (word clouds, trends, etc.)
+</p>
+
+<p>
+<strong>Best For</strong>: Analyzing preserved text collections, research
+</p>
+
+<h2>XIII. Infrastructure & Hosting</h2>
+
+<h3>49. DigitalOcean / Linode / Vultr</h3>
+<p>
+<strong>Purpose</strong>: Cloud VPS hosting  
+<strong>Skill Level</strong>: Intermediate-Advanced  
+<strong>Cost</strong>: Paid (~$5-50/month)  
+<strong>Platform</strong>: Cloud infrastructure  
+<strong>Website</strong>: Various
+</p>
+
+<p>
+<strong>What They Do</strong>: Provide virtual servers for hosting tools, websites, archives.
+</p>
+
+<p>
+<strong>Best For</strong>: Self-hosting projects, institutional infrastructure
+</p>
+
+<h3>50. GitHub / GitLab</h3>
+<p>
+<strong>Purpose</strong>: Version control and code hosting  
+<strong>Skill Level</strong>: Intermediate  
+<strong>Cost</strong>: Free (with limits)  
+<strong>Platform</strong>: Web-based  
+<strong>Open Source</strong>: GitLab self-hosted is  
+<strong>Website</strong>: https://github.com | https://gitlab.com
+</p>
+
+<p>
+<strong>What They Do</strong>: Host code repositories, documentation, static sites (GitHub Pages).
+</p>
+
+<p>
+<strong>Best For</strong>: Collaborative development, documentation, portfolio
+</p>
+
+<h2>Conclusion</h2>
+
+<p>
+This toolkit represents the essential software infrastructure for Archaeobytological practice. Key principles:
+</p>
+
+<p>
+1. <strong>Open Source First</strong>: Prioritize tools you control (no vendor lock-in)
+2. <strong>Standard Formats</strong>: Use WARC, JSON, CSV, plain text (future-proof)
+3. <strong>Redundancy</strong>: Multiple tools for critical functions (no single points of failure)
+4. <strong>Learning Curve</strong>: Start with beginner tools, grow into advanced ones
+5. <strong>Community</strong>: Join user communities (Archive Team, COPTR, DPC) to learn
+</p>
+
+<p>
+The field evolves rapidly—new tools emerge, old ones are abandoned. Check the Archaeobytology Wiki regularly for updates.
+</p>
+
+<p>
+<strong>Next Steps</strong>:
+- Install 3-5 tools from this list that match your current projects
+- Join Archive Team IRC or Discord to see tools in action
+- Contribute to tool documentation when you learn something useful
+</p>
+
+<p>
+Tools are just means—the goal is preserving digital culture and building sovereign alternatives. Choose tools that serve those ends.
+</p>
+
+<p>
+<strong>For Updates</strong>: Visit archaeobytology.org/tools for latest versions and community recommendations.
+</p>
+
+
+        </article>
+        <div class="nav">
+            <a href="index.html">Back to Table of Contents</a>
+        </div>
+    </div>
+</body>
+</html>

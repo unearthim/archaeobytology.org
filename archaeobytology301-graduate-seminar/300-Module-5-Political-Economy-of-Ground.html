@@ -1,0 +1,834 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 5: The Political Economy of Ground | ARCH 300: Institution Building</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Lora', serif; line-height: 1.8; color: #2E2E2E; background: #F8F7F4; padding: 2rem 1rem; }
+        .container { max-width: 900px; margin: 0 auto; background: #FFFFFF; padding: 3rem; border-radius: 15px; box-shadow: 0 4px 20px rgba(46,46,46,0.1); border: 1px solid #D1D1D1; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; color: #2E2E2E; margin-top: 2rem; margin-bottom: 1rem; line-height: 1.3; }
+        h1 { font-size: 2.5rem; font-weight: 700; margin-top: 0; border-bottom: 3px solid #A1824A; padding-bottom: 0.5rem; }
+        h2 { font-size: 2rem; font-weight: 700; margin-top: 2.5rem; }
+        h3 { font-size: 1.5rem; font-weight: 600; color: #5A7D8C; }
+        h4 { font-size: 1.25rem; font-weight: 600; color: #5A7D8C; }
+        p { margin-bottom: 1.25rem; font-size: 1.1rem; }
+        a { color: #A93400; text-decoration: underline; transition: color 0.3s; }
+        a:hover { color: #A95C3D; }
+        strong { font-weight: 600; }
+        em { font-style: italic; }
+        code { font-family: 'Courier New', monospace; background: #F8F7F4; padding: 0.2rem 0.4rem; border-radius: 3px; border: 1px solid #D1D1D1; font-size: 0.95rem; }
+        blockquote { border-left: 4px solid #A1824A; padding: 1rem 1.5rem; margin: 1.5rem 0; font-style: italic; color: #5A7D8C; background: #F8F7F4; border-radius: 0 8px 8px 0; }
+        hr { border: none; border-top: 2px solid #D1D1D1; margin: 2rem 0; }
+        .nav { text-align: center; padding: 1rem 0; border-top: 2px solid #D1D1D1; margin-top: 2rem; }
+        .nav a { display: inline-block; padding: 0.75rem 1.5rem; background: #A93400; color: #F8F7F4; text-decoration: none; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 600; margin: 0.5rem; }
+        .nav a:hover { background: #A95C3D; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <article>
+<h1>Module 5: The Political Economy of Ground</h1>
+<p>
+<strong>Archaeobytology 300: Institution Building & Strategic Infrastructure</strong>
+</p>
+
+<h2>Module Overview</h2>
+
+<p>
+<strong>Core Question:</strong> Who controls digital real estate? How do we build ownership systems that resist enclosure, speculation, and platform capture?
+</p>
+
+<p>
+<strong>Learning Objective:</strong> Students will analyze existing domain/hosting/identity systems, identify systemic failures, and design alternative ownership infrastructures that embody Three Pillars sovereignty at scale.
+</p>
+
+<p>
+<strong>Time:</strong> Week 11-12
+</p>
+
+<h2>The Challenge: Sovereignty as Infrastructure</h2>
+
+<p>
+<strong>Modules 1-4</strong> built institutions:
+- Module 1: Archive (preservation org)
+- Module 2: Foundry (sovereignty business)
+- Module 3: Seed Bank (distributed infrastructure)
+- Module 4: Haunted Forest (memory institution)
+</p>
+
+<p>
+<strong>Module 5</strong> asks: <em>Who controls the underlying infrastructure all these institutions depend on?</em>
+</p>
+
+<h3>The Ground Problem</h3>
+
+<p>
+Every institution needs <strong>Ground</strong>—digital real estate:
+- <strong>Domains:</strong> example.com (who owns it? can it be seized?)
+- <strong>Hosting:</strong> Servers, bandwidth (who controls? can they be shut down?)
+- <strong>Identity:</strong> Authentication, verification (who certifies "you are you"?)
+- <strong>Money:</strong> Payment rails (who controls transactions?)
+</p>
+
+<p>
+<strong>Current Systems All Have Problems:</strong>
+</p>
+
+<p>
+| System | Controller | Failure Mode |
+|--------|-----------|--------------|
+| <strong>DNS (Domains)</strong> | ICANN, registrars | Can seize domains, censor, impose fees |
+| <strong>Hosting</strong> | AWS, Cloudflare, etc. | Can deplatform, surveil, change ToS |
+| <strong>Identity</strong> | Google, Facebook, Twitter | "Login with..." means they control access |
+| <strong>Payment</strong> | Visa, PayPal, Stripe | Can freeze accounts, ban industries |
+</p>
+
+<p>
+<strong>The Tension:</strong>
+- ✅ These systems work (billions use them)
+- ❌ They're centralized (single points of control)
+- ❌ They're extractive (rent-seeking, gatekeeping)
+- ❓ Can we build alternatives that are <em>both</em> sovereign <em>and</em> functional?
+</p>
+
+<h2>Core Reading</h2>
+
+<h3>Primary Texts</h3>
+
+<p>
+<strong>Lessig, L. (2006).</strong> <em>Code: Version 2.0.</em> Chapters 7-10: "Sovereignty"
+- Focus: Code is law—architecture determines freedom
+- Key Insight: Technical systems encode political choices
+- Question: Can we design systems that protect sovereignty by default?
+</p>
+
+<p>
+<strong>Schneier, B. (2015).</strong> <em>Data and Goliath.</em> Chapter 12: "What Can We Do?"
+- Focus: Surveillance capitalism is structural, not accidental
+- Key Insight: "Free" services trade privacy for profit—can't be reformed, must be replaced
+- Question: What does a non-surveillance infrastructure look like?
+</p>
+
+<p>
+<strong>Véliz, C. (2020).</strong> <em>Privacy Is Power.</em> Chapter 5: "Privacy as Collective Freedom"
+- Focus: Privacy is not individual—it's systemic
+- Key Insight: Your privacy depends on infrastructure, not personal choices
+- Question: How do we build collective systems that protect individual sovereignty?
+</p>
+
+<h3>Case Study Readings</h3>
+
+<p>
+<strong>ICANN & DNS Governance</strong>
+- System: Hierarchical (root servers → TLDs → registrars)
+- Control: ICANN (nominally independent, US government oversight until 2016)
+- Problems: Domain seizures (Libya's .ly seized from bit.ly), censorship (TLDs can be deleted), rent-seeking (expensive domains)
+- Question: Is DNS reformable, or must it be replaced?
+</p>
+
+<p>
+<strong>ENS (Ethereum Name Service)</strong>
+- System: Blockchain-based domains (.eth)
+- Control: Smart contracts (no central authority)
+- Problems: Speculation (names sold for millions), plutocracy (wealthy control desirable names), complexity (requires cryptocurrency)
+- Question: Is blockchain sovereignty, or just different landlords?
+</p>
+
+<p>
+<strong>Tor & Onion Routing</strong>
+- System: Anonymous networking (no central servers)
+- Control: Distributed (thousands of volunteer nodes)
+- Problems: Slow, association with illegal activity, exit node surveillance
+- Question: Can anonymity infrastructure scale to mainstream use?
+</p>
+
+<p>
+<strong>ActivityPub & The Fediverse</strong>
+- System: Federated social media (Mastodon, PixelFed, etc.)
+- Control: Each instance self-governs
+- Problems: Instance admin power (can ban users), interoperability fragility (defederation), hosting costs
+- Question: Is federation enough, or do we need deeper sovereignty?
+</p>
+
+<p>
+<strong>Solid Project (Tim Berners-Lee)</strong>
+- System: Personal data pods (you host your data, apps request access)
+- Control: Individual ownership
+- Problems: Requires technical literacy, hosting burden on individuals, no network effects
+- Question: Is individual sovereignty achievable without institutional infrastructure?
+</p>
+
+<h2>Lecture: The Sovereignty Stack</h2>
+
+<p>
+Digital sovereignty isn't one thing—it's a <strong>stack</strong> of interdependent layers. Each layer can be sovereign or captured.
+</p>
+
+<h3>Layer 1: Physical Infrastructure</h3>
+<p>
+<strong>What It Is:</strong> Cables, servers, datacenters, undersea fiber
+</p>
+
+<p>
+<strong>Current State:</strong>
+- Owned by ISPs, cloud providers (AWS, Azure, GCP)
+- Concentrated in US/EU (geographic centralization)
+- Subject to state surveillance (NSA taps, Great Firewall)
+</p>
+
+<p>
+<strong>Sovereignty Options:</strong>
+| Approach | Pros | Cons |
+|----------|------|------|
+| <strong>Community Networks</strong> (mesh networks, local ISPs) | Democratic control | Limited scale, technical complexity |
+| <strong>Cooperative Datacenters</strong> (member-owned) | Distributed ownership | High upfront cost |
+| <strong>Peer-to-Peer</strong> (no servers, only endpoints) | No central control | Slow, unreliable, legal risks |
+| <strong>Hybrid</strong> (co-ops + P2P) | Balances reliability and sovereignty | Complex to coordinate |
+</p>
+
+<p>
+<strong>Key Question:</strong> Can you have sovereignty without owning physical infrastructure?
+</p>
+
+<h3>Layer 2: Network Protocols</h3>
+<p>
+<strong>What It Is:</strong> TCP/IP, HTTP, DNS, TLS (how computers communicate)
+</p>
+
+<p>
+<strong>Current State:</strong>
+- Open standards (anyone can implement)
+- But controlled through IETF, W3C, ICANN (gatekeepers)
+- Centralized implementations (Google DNS, Cloudflare, AWS)
+</p>
+
+<p>
+<strong>Sovereignty Options:</strong>
+| Approach | Pros | Cons |
+|----------|------|------|
+| <strong>Federated Protocols</strong> (ActivityPub, Matrix) | No single server | Interop fragility, instance admin power |
+| <strong>P2P Protocols</strong> (IPFS, BitTorrent, Tor) | Fully distributed | Slow, complex, no guarantees |
+| <strong>Blockchain</strong> (Ethereum, Handshake DNS) | Cryptographic guarantees | Expensive, speculative, slow |
+| <strong>Hybrid</strong> (P2P + federated fallbacks) | Resilience + usability | Very complex |
+</p>
+
+<p>
+<strong>Key Question:</strong> Do we need new protocols, or better implementations of existing ones?
+</p>
+
+<h3>Layer 3: Identity Systems</h3>
+<p>
+<strong>What It Is:</strong> Authentication, verification ("you are who you say you are")
+</p>
+
+<p>
+<strong>Current State:</strong>
+- Dominated by platform logins (Google, Facebook, Twitter)
+- Centralized (platform controls your identity)
+- Surveillance-based (login = tracking)
+</p>
+
+<p>
+<strong>Sovereignty Options:</strong>
+| Approach | Pros | Cons |
+|----------|------|------|
+| <strong>Self-Hosted Identity</strong> (OpenID, IndieAuth) | You control your identity | Requires domain, technical setup |
+| <strong>Federated Identity</strong> (Mastodon handles) | Distributed control | Still depends on instance admin |
+| <strong>Public Key Crypto</strong> (PGP, SSH keys) | Cryptographically secure | Unusable for most people |
+| <strong>Blockchain Identity</strong> (ENS, Unstoppable Domains) | Censorship-resistant | Expensive, speculative |
+| <strong>Biometric</strong> (fingerprints, face scans) | Convenient | Surveillance dystopia |
+</p>
+
+<p>
+<strong>Key Question:</strong> Can identity be both sovereign <em>and</em> user-friendly?
+</p>
+
+<h3>Layer 4: Data Storage</h3>
+<p>
+<strong>What It Is:</strong> Where your files, posts, photos live
+</p>
+
+<p>
+<strong>Current State:</strong>
+- Cloud storage (Dropbox, Google Drive, iCloud)
+- Platform-hosted (Twitter, Instagram, TikTok)
+- Centralized, surveilled, subject to ToS changes
+</p>
+
+<p>
+<strong>Sovereignty Options:</strong>
+| Approach | Pros | Cons |
+|----------|------|------|
+| <strong>Self-Hosted</strong> (NAS, personal servers) | Full control | Technical burden, no redundancy |
+| <strong>Cooperative Storage</strong> (Nextcloud co-ops) | Shared infrastructure | Coordination challenges |
+| <strong>P2P Storage</strong> (IPFS, Tahoe-LAFS) | Distributed, resilient | Requires incentives (or files disappear) |
+| <strong>Encrypted Cloud</strong> (Tresorit, Sync.com) | Encrypted at rest | Still centralized, not exportable |
+</p>
+
+<p>
+<strong>Key Question:</strong> Can we have "set it and forget it" storage that's also sovereign?
+</p>
+
+<h3>Layer 5: Application Layer</h3>
+<p>
+<strong>What It Is:</strong> Social media, email, websites—what users interact with
+</p>
+
+<p>
+<strong>Current State:</strong>
+- Platforms (Twitter, Facebook, TikTok)
+- User-hostile (algorithms, ads, surveillance)
+- Network effects = lock-in
+</p>
+
+<p>
+<strong>Sovereignty Options:</strong>
+| Approach | Pros | Cons |
+|----------|------|------|
+| <strong>Self-Hosted Apps</strong> (WordPress, Mastodon instances) | Full control | Hosting burden, isolation |
+| <strong>Federated Apps</strong> (Mastodon, Matrix, PixelFed) | Interoperable + distributed | Admin power, defederation drama |
+| <strong>P2P Apps</strong> (Scuttlebutt, Secure Scuttlebutt) | No servers | Sync issues, no discoverability |
+| <strong>Local-First Software</strong> (Obsidian, Logseq) | Offline-first, you own data | No collaboration without extra setup |
+</p>
+
+<p>
+<strong>Key Question:</strong> Can sovereign apps compete with platforms on user experience?
+</p>
+
+<h3>Layer 6: Economic Layer</h3>
+<p>
+<strong>What It Is:</strong> Payment systems, monetization, transactions
+</p>
+
+<p>
+<strong>Current State:</strong>
+- Visa/Mastercard oligopoly
+- PayPal, Stripe (can freeze accounts)
+- Platform-controlled (YouTube ad revenue, Patreon fees)
+</p>
+
+<p>
+<strong>Sovereignty Options:</strong>
+| Approach | Pros | Cons |
+|----------|------|------|
+| <strong>Cryptocurrency</strong> (Bitcoin, Ethereum) | Censorship-resistant | Volatile, speculative, slow, expensive |
+| <strong>Cooperative Banks</strong> (credit unions, local banks) | Member-owned | Limited scale, still tied to Visa/MC |
+| <strong>Alternative Payment Rails</strong> (Dwolla, ACH) | Lower fees | Not widely adopted |
+| <strong>Barter/Gift Economy</strong> (no money) | No extraction | Doesn't scale |
+</p>
+
+<p>
+<strong>Key Question:</strong> Can you build a sovereign economy without cryptocurrency (and its problems)?
+</p>
+
+<h2>Framework: The Ground Ownership Canvas</h2>
+
+<p>
+Your assignment will design an alternative ownership system for <em>one layer</em> of the stack.
+</p>
+
+<h3>Section 1: Problem Definition</h3>
+
+<p>
+<strong>What's broken in the current system?</strong>
+</p>
+
+<p>
+Identify a specific failure mode:
+- <strong>Centralization:</strong> Single points of control/failure
+- <strong>Extraction:</strong> Rent-seeking, fees, gatekeeping
+- <strong>Censorship:</strong> Platforms/states can delete/block
+- <strong>Surveillance:</strong> Systems track/monetize user behavior
+- <strong>Capture:</strong> Supposed "neutrals" (ICANN, registrars) serve power, not users
+</p>
+
+<p>
+<strong>Example (DNS):</strong>
+</p>
+<blockquote><em>Problem:</em> Domain names are rented, not owned. ICANN can seize domains, registrars can raise prices arbitrarily, governments can censor TLDs. Result: Your domain is not truly <em>yours</em>.</blockquote>
+
+<h3>Section 2: Existing Alternatives Analysis</h3>
+
+<p>
+<strong>What have others tried? Why did it fail (or succeed)?</strong>
+</p>
+
+<p>
+| Alternative | Goals | Strengths | Weaknesses | Why It Didn't Replace the System |
+|------------|-------|-----------|------------|----------------------------------|
+| (List 3-5 real examples from case studies) | | | | |
+</p>
+
+<p>
+<strong>Example (DNS alternatives):</strong>
+| Alternative | Goals | Strengths | Weaknesses | Why It Didn't Replace DNS |
+|------------|-------|-----------|------------|---------------------------|
+| <strong>ENS (.eth)</strong> | Censorship-resistant domains | Blockchain-secured, no seizure risk | Expensive, speculative, requires crypto wallet | Too complex, not web-native |
+| <strong>Namecoin</strong> | Decentralized DNS | First blockchain DNS | Dead community, poor UX | No adoption, technically difficult |
+| <strong>Tor Onion Services</strong> | Anonymous domains (.onion) | Fully private | Not human-readable, slow | Association with dark web |
+| <strong>Handshake</strong> | Decentralized TLDs | No ICANN control | Speculative, complex setup | Not user-friendly |
+</p>
+
+<h3>Section 3: Your Proposed System</h3>
+
+<p>
+<strong>Design a new ownership infrastructure.</strong>
+</p>
+
+<h4>Core Principles</h4>
+<p>
+How does your system embody The Three Pillars?
+- <strong>Declaration:</strong> How is it sovereign? (No central authority can shut it down)
+- <strong>Connection:</strong> How is it intentional? (Users choose to participate)
+- <strong>Ground:</strong> How is it owned? (Users control their assets, not rent them)
+</p>
+
+<h4>Technical Architecture</h4>
+<p>
+- <strong>Governance:</strong> Who controls the system? (No one? Everyone? Elected body?)
+- <strong>Storage/Hosting:</strong> Where does data live? (Centralized? Federated? P2P?)
+- <strong>Access:</strong> How do users interact with it? (Web browser? Custom software? Both?)
+- <strong>Resilience:</strong> What's the single point of failure? (How do you eliminate it?)
+</p>
+
+<h4>User Experience</h4>
+<p>
+- <strong>Onboarding:</strong> How does someone start using it?
+- <strong>Daily Use:</strong> What does normal interaction look like?
+- <strong>Migration:</strong> Can users import from current systems?
+- <strong>Interoperability:</strong> Does it work with existing systems? (Or require full replacement?)
+</p>
+
+<h4>Economic Model</h4>
+<p>
+- <strong>Cost Structure:</strong> What does it cost to run? (Infrastructure, development, governance)
+- <strong>Funding:</strong> Who pays? (Users? Institutions? Donations? Blockchain incentives?)
+- <strong>Pricing:</strong> What do users pay? (Monthly? One-time? Free?)
+</p>
+
+<h3>Section 4: Adoption Strategy</h3>
+
+<p>
+<strong>How do you get people to use it?</strong>
+</p>
+
+<p>
+The hardest problem: <em>Existing systems work</em> (even if they're exploitative). Why would anyone switch?
+</p>
+
+<h4>Value Propositions</h4>
+<p>
+What does your system offer that the current one doesn't?
+- ✅ <strong>Sovereignty:</strong> You own it, can't be taken away
+- ✅ <strong>Privacy:</strong> No surveillance/tracking
+- ✅ <strong>Cost:</strong> Cheaper than current system
+- ✅ <strong>Features:</strong> Better functionality
+- ✅ <strong>Ethics:</strong> Aligned with users, not capital
+</p>
+
+<h4>Bootstrapping Problem</h4>
+<p>
+How do you overcome network effects?
+- <strong>Interoperability:</strong> Works alongside current system (e.g., Mastodon federates with ActivityPub)
+- <strong>Bridges:</strong> Automatic translation (e.g., .eth domains resolve to DNS)
+- <strong>Killer Use Case:</strong> One specific thing your system does <em>way</em> better
+- <strong>Community:</strong> Target a niche first (activists, artists, academics), expand later
+</p>
+
+<h4>Roadmap</h4>
+<p>
+- <strong>Phase 1 (Years 1-2):</strong> Proof of concept, early adopters
+- <strong>Phase 2 (Years 3-5):</strong> Community growth, feature parity with incumbents
+- <strong>Phase 3 (Years 6-10):</strong> Mainstream adoption, ecosystem development
+</p>
+
+<h3>Section 5: Threat Modeling</h3>
+
+<p>
+<strong>Who will try to destroy your system? How will they do it?</strong>
+</p>
+
+<p>
+| Threat Actor | Motivation | Attack Vector | Your Defense |
+|--------------|-----------|---------------|--------------|
+| <strong>Incumbent Platforms</strong> | Protect market dominance | Legal (sue for patent infringement), Technical (block interoperability) | Open standards, defensive patents, decentralization |
+| <strong>Governments</strong> | Maintain control | Regulation (ban your system), Enforcement (arrest developers) | Offshore governance, anonymous development |
+| <strong>Speculators</strong> | Profit from scarcity | Buy up scarce resources (domains, names), create artificial scarcity | Anti-speculation mechanisms (use-it-or-lose-it rules) |
+| <strong>Bad Actors</strong> | Exploit system | Spam, fraud, abuse | Moderation (but how, without centralized control?) |
+| <strong>Internal Capture</strong> | Gain control | Governance takeover, founder exit to acquirer | Mission-lock, distributed governance, no single founder |
+</p>
+
+<p>
+<strong>Key Question:</strong> What's your system's biggest vulnerability? How do you mitigate it?
+</p>
+
+<h3>Section 6: Three Pillars Stress Test</h3>
+
+<p>
+<strong>Does your system <em>truly</em> embody sovereignty?</strong>
+</p>
+
+<h4>Declaration Test</h4>
+<p>
+- ❓ Can a single entity shut it down? (If yes → not sovereign)
+- ❓ Can users be deplatformed? (If yes → not sovereign)
+- ❓ Is there a killswitch? (If yes → not sovereign)
+</p>
+
+<h4>Connection Test</h4>
+<p>
+- ❓ Can users choose their community? (Not algorithmically assigned)
+- ❓ Can users communicate directly? (Not mediated by a platform)
+- ❓ Can users leave and take their network? (Exportable connections)
+</p>
+
+<h4>Ground Test</h4>
+<p>
+- ❓ Do users own their assets? (Not renting, not licensed)
+- ❓ Can users export their data? (Portable, standards-based)
+- ❓ Can users fork the system? (Code is open source, governance is transparent)
+</p>
+
+<p>
+<strong>The Ultimate Test:</strong> If your system succeeded and became dominant, would it become the next exploitative platform? If yes, you failed.
+</p>
+
+<h2>Case Study Deep-Dives</h2>
+
+<h3>Case 1: DNS & ICANN (The Original Enclosure)</h3>
+
+<p>
+<strong>What It Controls:</strong> All domain names (.com, .org, country codes)
+</p>
+
+<p>
+<strong>How It Works:</strong>
+- ICANN (non-profit) manages root DNS servers
+- Registrars (GoDaddy, Namecheap, etc.) sell domains
+- You "rent" domains (annual fees), never own them
+</p>
+
+<p>
+<strong>Failure Modes:</strong>
+- <strong>Seizure:</strong> Libya reclaimed .ly domains, threatening bit.ly
+- <strong>Censorship:</strong> US ICE seized domains (filesharing sites)
+- <strong>Rent-Seeking:</strong> Premium domains cost thousands (artificial scarcity)
+- <strong>Centralization:</strong> Root servers are choke points
+</p>
+
+<p>
+<strong>Why It Persists:</strong>
+- ✅ Works reliably (billions of domains)
+- ✅ Human-readable (example.com vs. 93.184.216.34)
+- ✅ Integrated into all software (browsers, email, etc.)
+</p>
+
+<p>
+<strong>Alternatives' Failures:</strong>
+- <strong>ENS (.eth):</strong> Requires crypto wallet, not browser-native, speculative
+- <strong>Namecoin:</strong> Dead (poor UX, no adoption)
+- <strong>Handshake:</strong> Too complex, speculative bubble
+</p>
+
+<p>
+<strong>Student Discussion:</strong>
+1. Is DNS reformable (change ICANN governance), or must it be replaced?
+2. If you designed DNS today, what would you do differently?
+</p>
+
+<h3>Case 2: ENS (The Blockchain Attempt)</h3>
+
+<p>
+<strong>What It Promises:</strong> Censorship-resistant domain names (.eth)
+</p>
+
+<p>
+<strong>How It Works:</strong>
+- Smart contracts on Ethereum blockchain
+- You buy a name (one-time or renewable), own it via NFT
+- No ICANN, no registrars, no seizure risk
+</p>
+
+<p>
+<strong>Strengths:</strong>
+- ✅ Truly owned (no one can take your .eth name)
+- ✅ Censorship-resistant (blockchain is distributed)
+- ✅ Programmable (can point to IPFS, wallets, etc.)
+</p>
+
+<p>
+<strong>Weaknesses:</strong>
+- ❌ Expensive (gas fees + initial purchase)
+- ❌ Speculative (names sold for millions, like domain squatting 2.0)
+- ❌ Not browser-native (need extension or special browser)
+- ❌ Requires crypto literacy (wallet, transactions, etc.)
+</p>
+
+<p>
+<strong>Failure Mode:</strong>
+- Speculators bought all desirable names
+- Normal users can't afford them
+- Result: A sovereign system captured by the wealthy
+</p>
+
+<p>
+<strong>Student Discussion:</strong>
+1. How do you prevent speculation without centralized control?
+2. Can blockchain sovereignty work without becoming plutocratic?
+</p>
+
+<h3>Case 3: Mastodon/Fediverse (The Federation Experiment)</h3>
+
+<p>
+<strong>What It Promises:</strong> Decentralized social media (no corporate control)
+</p>
+
+<p>
+<strong>How It Works:</strong>
+- Anyone can run a Mastodon instance (server)
+- Instances federate (exchange posts via ActivityPub)
+- No central platform
+</p>
+
+<p>
+<strong>Strengths:</strong>
+- ✅ No single point of failure (thousands of instances)
+- ✅ Admin choice (pick instance with values you like)
+- ✅ Open source (can fork if unhappy)
+</p>
+
+<p>
+<strong>Weaknesses:</strong>
+- ❌ Instance admin power (can ban users, defederate)
+- ❌ Fragmentation (defederation breaks community)
+- ❌ Hosting burden (admins pay, burn out)
+- ❌ Discoverability (hard to find people across instances)
+</p>
+
+<p>
+<strong>Failure Mode:</strong>
+- Most users flock to large instances (mastodon.social)
+- Result: Recentralization (back to single points of failure)
+</p>
+
+<p>
+<strong>Student Discussion:</strong>
+1. Is federation <em>enough</em> sovereignty, or do we need deeper user control?
+2. How do you prevent recentralization in federated systems?
+</p>
+
+<h3>Case 4: Tor (The Anonymity Infrastructure)</h3>
+
+<p>
+<strong>What It Promises:</strong> Anonymous, uncensorable networking
+</p>
+
+<p>
+<strong>How It Works:</strong>
+- Onion routing (traffic bounces through encrypted nodes)
+- No central servers
+- .onion domains (not human-readable)
+</p>
+
+<p>
+<strong>Strengths:</strong>
+- ✅ Truly anonymous (very hard to trace)
+- ✅ Censorship-resistant (no single point to block)
+- ✅ No central authority
+</p>
+
+<p>
+<strong>Weaknesses:</strong>
+- ❌ Slow (routing overhead)
+- ❌ Association with crime (dark web markets, illegal content)
+- ❌ Exit node surveillance (final hop can see traffic)
+- ❌ Unusable domains (16-character random strings)
+</p>
+
+<p>
+<strong>Failure Mode:</strong>
+- Legitimate users avoid it (stigma)
+- Result: Marginalized to niche use
+</p>
+
+<p>
+<strong>Student Discussion:</strong>
+1. Can anonymity infrastructure ever go mainstream?
+2. Is the "dark web" stigma fixable, or inherent?
+</p>
+
+<h2>Assignment: Design Your Ground System</h2>
+
+<p>
+<strong>Objective:</strong> Design an alternative ownership infrastructure for one layer of the sovereignty stack.
+</p>
+
+<h3>Deliverable: System Architecture Document (4000-5000 words)</h3>
+
+<p>
+<strong>Required Sections:</strong>
+</p>
+
+<h4>1. Executive Summary (300 words)</h4>
+<p>
+- What layer are you redesigning? (Physical, network, identity, storage, application, economic)
+- What's broken in the current system?
+- What does your system do differently?
+- Three Pillars alignment
+</p>
+
+<h4>2. Problem Analysis (700 words)</h4>
+<p>
+- Current system failures (centralization, extraction, censorship, surveillance, capture)
+- Who benefits from current system? (Platforms, governments, speculators)
+- Who is harmed? (Users, creators, marginalized communities)
+- Why existing alternatives failed (ENS, Mastodon, Tor, etc.)
+</p>
+
+<h4>3. System Design (1200 words)</h4>
+<p>
+- <strong>Core Principles:</strong> How does it embody Declaration, Connection, Ground?
+- <strong>Technical Architecture:</strong> Centralized? Federated? P2P? Hybrid?
+- <strong>Governance:</strong> Who controls it? How are decisions made?
+- <strong>User Experience:</strong> Onboarding, daily use, migration path
+- <strong>Interoperability:</strong> Works with existing systems? Or requires replacement?
+</p>
+
+<h4>4. Economic Model (600 words)</h4>
+<p>
+- <strong>Cost Structure:</strong> Infrastructure, development, governance costs
+- <strong>Funding:</strong> Who pays? (Users, institutions, grants, donations)
+- <strong>Pricing:</strong> Free? Subscription? One-time? Tiered?
+- <strong>Sustainability:</strong> Can this last 10+ years?
+</p>
+
+<h4>5. Adoption Strategy (700 words)</h4>
+<p>
+- <strong>Value Proposition:</strong> Why would anyone switch?
+- <strong>Bootstrapping:</strong> How do you overcome network effects?
+- <strong>Target Community:</strong> Who adopts first? (Activists, artists, academics, general public)
+- <strong>Roadmap:</strong> Phase 1 (proof of concept), Phase 2 (growth), Phase 3 (mainstream)
+</p>
+
+<h4>6. Threat Modeling (600 words)</h4>
+<p>
+- <strong>Threat Actors:</strong> Platforms, governments, speculators, bad actors, internal capture
+- <strong>Attack Vectors:</strong> Legal, technical, economic, social
+- <strong>Defenses:</strong> How do you protect against each threat?
+- <strong>Single Point of Failure:</strong> What's your biggest vulnerability?
+</p>
+
+<h4>7. Three Pillars Stress Test (400 words)</h4>
+<p>
+- <strong>Declaration Test:</strong> Can it be shut down? Can users be deplatformed?
+- <strong>Connection Test:</strong> Is community intentional? Can users communicate directly?
+- <strong>Ground Test:</strong> Do users own assets? Can they export/fork?
+- <strong>The Ultimate Test:</strong> If this became dominant, would it become the next exploitative platform?
+</p>
+
+<h4>8. Comparison to Existing Systems (500 words)</h4>
+<p>
+- How is your design different from DNS, ENS, Mastodon, Tor, etc.?
+- What did you adopt from them?
+- What did you improve?
+- Why will your system succeed where others failed?
+</p>
+
+<h3>Evaluation Criteria:</h3>
+
+<p>
+| Criterion | Points | What We're Looking For |
+|-----------|--------|------------------------|
+| <strong>Three Pillars Integrity</strong> | 30 | Does it truly embody sovereignty? Or recreate current problems? |
+| <strong>Technical Feasibility</strong> | 25 | Can this be built? Is architecture sound? |
+| <strong>Adoption Realism</strong> | 20 | Will people actually use this? How do you overcome network effects? |
+| <strong>Threat Resistance</strong> | 15 | Can it survive attacks from platforms, governments, speculators? |
+| <strong>Originality</strong> | 10 | Genuinely new approach, or just copying ENS/Mastodon? |
+</p>
+
+<p>
+<strong>Total: 100 points</strong>
+</p>
+
+<h2>Discussion Questions for Seminar</h2>
+
+<p>
+1. <strong>The Interoperability Dilemma:</strong> Should sovereign systems interoperate with exploitative platforms (bridges to Twitter, DNS fallbacks), or stay pure?
+</p>
+
+<p>
+2. <strong>The Complexity Cost:</strong> Sovereign systems are often harder to use (crypto wallets, self-hosting, etc.). Is sovereignty worth the UX cost?
+</p>
+
+<p>
+3. <strong>The Speculation Problem:</strong> How do you prevent sovereign systems (ENS, blockchain domains) from becoming playgrounds for the wealthy?
+</p>
+
+<p>
+4. <strong>The Governance Paradox:</strong> If no one controls the system, how do you stop spam/abuse/nazis? If someone controls it, is it still sovereign?
+</p>
+
+<p>
+5. <strong>The Adoption Question:</strong> Existing systems work (even if exploitative). What's the killer use case that makes people switch?
+</p>
+
+<p>
+6. <strong>The Long Game:</strong> Even if your system starts sovereign, what prevents it from being captured (acquired, regulated, speculated) over time?
+</p>
+
+<h2>Module Deliverables</h2>
+
+<p>
+By the end of Module 5, students will have:
+</p>
+
+<p>
+1. ✅ <strong>Completed Reading Responses</strong> (Lessig, Schneier, Véliz on code, surveillance, privacy)
+2. ✅ <strong>Case Study Analysis</strong> (DNS/ICANN, ENS, Mastodon, Tor comparative analysis)
+3. ✅ <strong>System Architecture Document</strong> (4000-5000 words, complete redesign of one sovereignty layer)
+4. ✅ <strong>Threat Model</strong> (Identify attackers, vectors, defenses)
+5. ✅ <strong>Adoption Roadmap</strong> (How to bootstrap network effects, overcome incumbents)
+</p>
+
+<h2>Looking Ahead: Module 6</h2>
+
+<p>
+Next week, we shift from <em>systems</em> to <em>movements</em>.
+</p>
+
+<p>
+<strong>Module 6: From Practice to Discipline</strong> asks:
+</p>
+
+<p>
+<em>"How do we turn Archaeobytology from individual practice into a recognized field—with conferences, journals, career paths, and institutional legitimacy?"</em>
+</p>
+
+<p>
+You'll design a movement-building strategy to transform scattered practitioners into a coherent discipline.
+</p>
+
+<h2>Instructor Notes</h2>
+
+<p>
+- <strong>Guest Speaker:</strong> Invite someone who built alternative infrastructure (Tor developer, Mastodon admin, ENS team, mesh network organizer)
+- <strong>Hands-On:</strong> Have students set up sovereign tools (register .eth domain, run Mastodon instance, use Tor)
+- <strong>Debate:</strong> Blockchain sovereignty (pro: censorship-resistant; con: speculative, plutocratic)
+- <strong>Simulation:</strong> Role-play attacks (one student plays "government trying to shut down your system," others defend)
+- <strong>The "Would You Use It?" Test:</strong> If students wouldn't switch to their own system, it's not viable
+</p>
+
+<p>
+<strong>End of Module 5</strong>
+</p>
+
+        </article>
+        <div class="nav">
+            <a href="index.html">Back to Course Home</a>
+        </div>
+    </div>
+</body>
+</html>

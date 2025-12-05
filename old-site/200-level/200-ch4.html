@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 4: Preservation Strategies | Archaeobytology 200</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Lora', serif; 
+        }
+        .ui-font {
+            font-family: 'Inter', sans-serif;
+        }
+        .lora { font-family: 'Lora', serif; }
+        sup {
+            font-size: 0.75em;
+            vertical-align: super;
+            line-height: 0;
+        }
+    </style>
+</head>
+<body class="bg-[#F8F7F4] text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-[#435d7a] text-white py-6">
+        <div class="max-w-4xl mx-auto px-6">
+            <h1 class="text-4xl font-bold lora">Chapter 4: Preservation Strategies</h1>
+            <p class="text-lg mt-2 ui-font opacity-90">Emulation, Migration, and the Fight Against Entropy</p>
+            <p class="text-sm mt-4 ui-font opacity-75">
+                <a href="index.html" class="hover:underline">← Back to 200-Level Course</a>
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-6 py-12 leading-relaxed text-lg">
+
+        <!-- Abstract -->
+        <section class="mb-12 border-l-4 border-[#A95C3D] pl-6 bg-white p-6 rounded shadow-sm">
+            <h2 class="text-2xl font-bold mb-4 text-[#A95C3D] ui-font">Abstract</h2>
+            <p class="leading-relaxed">
+                After excavation, triage, and custodial clearance, the Archaeobytologist faces a fundamental technical question: <em>how do we preserve this artifact?</em> This chapter examines two competing preservation paradigms—<strong>emulation</strong> (recreating the original execution environment) and <strong>migration</strong> (translating artifacts into contemporary formats)—alongside hybrid approaches that navigate the tensions between authenticity and accessibility. We explore format obsolescence theory, the Ship of Theseus problem in digital preservation, practical decision frameworks for preservation strategy selection, and case studies demonstrating each approach's trade-offs. The goal is not to declare a single "correct" method, but to equip practitioners with the conceptual tools to make informed, context-sensitive preservation decisions.
+            </p>
+        </section>
+
+        <!-- Preamble -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 text-[#435d7a] ui-font">The Archaeobyte Lives—Now What?</h2>
+            
+            <p class="mb-6">
+                You have done the work. You excavated the artifact from the digital strata, diagnosed its ontological state with your three-axis Microscope, and cleared it through the Custodial Filter. The Archaeobyte sits before you—rescued from oblivion, ethically approved, ready for preservation. And yet, a new crisis emerges: <em>what form should this preservation take?</em>
+            </p>
+
+            <p class="mb-6">
+                In traditional archaeology, preservation is often straightforward. A clay pot can be cleaned, stabilized with consolidants, and displayed in a climate-controlled case. The pot remains, materially, <em>a pot</em>. But digital artifacts exist at the volatile intersection of hardware, software, and data—what preservation theorist Jeff Rothenberg calls "a dance between content and machine."<sup>1</sup> When the machine stops dancing, the content becomes unintelligible.
+            </p>
+
+            <p class="mb-6">
+                Consider a 1985 Lotus 1-2-3 spreadsheet stored on a 5.25" floppy disk. To preserve this artifact, we face cascading dependencies:
+            </p>
+
+            <ul class="list-disc list-inside mb-6 pl-6 space-y-2">
+                <li>The physical disk (magnetic medium vulnerable to bit rot)</li>
+                <li>The disk drive (hardware requiring vintage IBM PC architecture)</li>
+                <li>The operating system (MS-DOS 3.x or compatible)</li>
+                <li>The application (Lotus 1-2-3 v2.01 with its proprietary .WKS file format)</li>
+                <li>The contextual ecosystem (printer drivers, macro libraries, user documentation)</li>
+            </ul>
+
+            <p class="mb-6">
+                Each dependency layer introduces vulnerability. As David Bearman notes, "Digital preservation is not a product but a process—one that must be continuously enacted against the tide of technological obsolescence."<sup>2</sup> This is the paradox of digital preservation: <strong>formats are mortal, but meaning must persist.</strong>
+            </p>
+
+            <p class="mb-6">
+                Two competing philosophies have emerged to address this challenge. <strong>Emulation</strong> argues we should recreate the original machine—build a virtual IBM PC, install MS-DOS, run Lotus 1-2-3 exactly as it was in 1985, preserving not just data but the authentic <em>experience</em> of interaction. <strong>Migration</strong> argues we should translate the spreadsheet into a contemporary format like .XLSX or .CSV, accepting some loss of authenticity in exchange for guaranteed readability on modern systems.
+            </p>
+
+            <p class="mb-6">
+                Neither approach is universally correct. Each carries philosophical assumptions about what constitutes "preservation"—what matters most, what can be sacrificed, who the future audience is. This chapter provides the conceptual foundation and practical frameworks to navigate these decisions. We begin with format obsolescence theory, explore the emulation-migration spectrum, examine hybrid strategies, and conclude with a preservation decision matrix calibrated to your artifact's diagnostic profile.
+            </p>
+
+            <p class="mb-6 italic text-gray-600">
+                "To preserve is to choose what survives. To choose is to declare what matters."
+            </p>
+        </section>
+
+        <!-- Section 1: The Problem of Format Obsolescence -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 text-[#435d7a] ui-font">I. The Problem of Format Obsolescence</h2>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">Formats as Sociotechnical Contracts</h3>
+            
+            <p class="mb-6">
+                A file format is more than a technical specification—it is a <strong>sociotechnical contract</strong> between creator and future reader, mediated by software. When you save a document as .DOCX, you are making an implicit bet that Microsoft Word (or compatible software) will exist in the future to render that document. As Matthew Kirschenbaum observes, "File formats are stabilized agreements about how to encode meaning in machine-readable form."<sup>3</sup>
+            </p>
+
+            <p class="mb-6">
+                But agreements expire. Vendors go bankrupt. Standards bodies dissolve. Software architectures evolve. What happens when the contract can no longer be honored? Format obsolescence occurs when:
+            </p>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6 border-l-4 border-[#5A7D8C]">
+                <ol class="list-decimal list-inside space-y-3 pl-2">
+                    <li><strong>Software Extinction:</strong> No compatible application exists to parse the format (e.g., Aldus PageMaker .PM6 files after Adobe discontinued the product line)</li>
+                    <li><strong>Hardware Dependency:</strong> The format requires obsolete hardware to access (e.g., Iomega Zip disks)</li>
+                    <li><strong>Documentation Loss:</strong> The format specification is proprietary and no longer available (e.g., undocumented features in early QuickTime codecs)</li>
+                    <li><strong>Ecosystem Collapse:</strong> The format relies on external resources that no longer exist (e.g., Flash files calling remote APIs, multiplayer game servers)</li>
+                </ol>
+            </div>
+
+            <p class="mb-6">
+                The UK National Archives estimates that <strong>40% of digital government records from the 1990s are already at risk of format obsolescence</strong>, with proprietary database formats and email systems particularly vulnerable.<sup>4</sup> This is not a theoretical problem—it is an ongoing crisis.
+            </p>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">The Spectrum of Format Risk</h3>
+
+            <p class="mb-6">
+                Not all formats are equally vulnerable. The Library of Congress Sustainability of Digital Formats project identifies key risk factors:<sup>5</sup>
+            </p>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6">
+                <table class="w-full border-collapse">
+                    <thead>
+                        <tr class="bg-[#435d7a] text-white">
+                            <th class="border border-gray-300 px-4 py-2 text-left ui-font">Risk Factor</th>
+                            <th class="border border-gray-300 px-4 py-2 text-left ui-font">Low Risk Example</th>
+                            <th class="border border-gray-300 px-4 py-2 text-left ui-font">High Risk Example</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-base">
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2"><strong>Documentation</strong></td>
+                            <td class="border border-gray-300 px-4 py-2">PDF/A (ISO 19005 standard)</td>
+                            <td class="border border-gray-300 px-4 py-2">Proprietary game saves</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="border border-gray-300 px-4 py-2"><strong>Adoption</strong></td>
+                            <td class="border border-gray-300 px-4 py-2">JPEG (universal support)</td>
+                            <td class="border border-gray-300 px-4 py-2">Amiga IFF ILBM</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2"><strong>Transparency</strong></td>
+                            <td class="border border-gray-300 px-4 py-2">Plain text (.TXT)</td>
+                            <td class="border border-gray-300 px-4 py-2">Encrypted containers</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="border border-gray-300 px-4 py-2"><strong>Dependencies</strong></td>
+                            <td class="border border-gray-300 px-4 py-2">Standalone HTML</td>
+                            <td class="border border-gray-300 px-4 py-2">Flash with server calls</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2"><strong>Self-containment</strong></td>
+                            <td class="border border-gray-300 px-4 py-2">PNG (metadata in file)</td>
+                            <td class="border border-gray-300 px-4 py-2">JPEG + sidecar XMP</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="mb-6">
+                This risk assessment informs preservation strategy. Low-risk formats may only require <strong>refreshing</strong> (copying to new media) and <strong>monitoring</strong> (watching for software drift). High-risk formats demand immediate intervention—either emulation to freeze the execution environment or migration to a more sustainable format.
+            </p>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">The Ship of Theseus Problem</h3>
+
+            <p class="mb-6">
+                The ancient paradox haunts digital preservation: if you replace every plank of a ship over time, is it still the same ship? If you migrate a WordPerfect document through six format transformations (WPD → DOC → DOCX → ODT → HTML → PDF), is it still the <em>same document?</em>
+            </p>
+
+            <p class="mb-6">
+                Philosopher of technology Don Ihde distinguishes between <strong>instrumental preservation</strong> (preserving function—"can I still read it?") and <strong>hermeneutic preservation</strong> (preserving meaning—"does it still mean what it meant?").<sup>6</sup> A spreadsheet migrated to CSV preserves the data (instrumental success) but loses formulas, formatting, and macros (hermeneutic loss). An emulated Lotus 1-2-3 session preserves the entire phenomenological experience—loading times, menu navigation, even the CGA color palette—but requires future users to learn obsolete interfaces.
+            </p>
+
+            <p class="mb-6">
+                There is no escape from this paradox. <strong>Every preservation decision is an act of interpretation</strong>—a declaration of what aspects of the artifact constitute its "essential character." The question is not how to avoid choosing, but how to choose <em>consciously</em> and <em>transparently</em>.
+            </p>
+        </section>
+
+        <!-- Section 2: Strategy One - Emulation -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 text-[#435d7a] ui-font">II. Strategy One: Emulation (The Museum Approach)</h2>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">Philosophy and Implementation</h3>
+
+            <p class="mb-6">
+                <strong>Emulation</strong> preserves the artifact by recreating its original execution environment in software. Rather than translate the content, we build a virtual machine that mimics the hardware and operating system the artifact was designed for. Jeff Rothenberg, emulation's chief advocate, argues: "The only reliable way to preserve digital documents is to preserve the ability to recreate the original environment in which they were created."<sup>7</sup>
+            </p>
+
+            <p class="mb-6">
+                The emulation chain looks like this:
+            </p>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6 border-l-4 border-[#A95C3D]">
+                <pre class="text-sm overflow-x-auto ui-font">
+Modern OS (Windows 11/macOS/Linux)
+    └─ Emulator (DOSBox, QEMU, MAME, Basilisk II)
+        └─ Guest OS (MS-DOS, System 7, Windows 3.1)
+            └─ Historical Software (Lotus 1-2-3, HyperCard, Director)
+                └─ <strong>Original Artifact</strong> (the .WKS file, .HC stack, .DIR project)
+                </pre>
+            </div>
+
+            <p class="mb-6">
+                Each layer introduces complexity, but the payoff is <strong>authentic preservation</strong>. When you open a 1991 HyperCard stack in a Macintosh System 7 emulator, you experience the artifact as its creators intended—complete with pixel-perfect rendering, original sound synthesis, and interaction timing.
+            </p>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">Case Study: The Internet Archive's Emulation Infrastructure</h3>
+
+            <p class="mb-6">
+                The Internet Archive's Historical Software Collection demonstrates emulation at scale. Using Emularity (a JavaScript wrapper for emscripten-compiled emulators), they deliver in-browser experiences of MS-DOS games, early Macintosh software, and arcade cabinets.<sup>8</sup> Users can boot The Oregon Trail (1985) or Prince of Persia (1989) directly in their web browser, experiencing pixel-perfect recreations of the original software.
+            </p>
+
+            <p class="mb-6">
+                The technical stack:
+            </p>
+
+            <ul class="list-disc list-inside mb-6 pl-6 space-y-2">
+                <li><strong>Emscripten:</strong> Compiles C/C++ emulators (DOSBox, MAME) to WebAssembly</li>
+                <li><strong>EM-DOSBox:</strong> Browser-based DOS environment</li>
+                <li><strong>JSMESS:</strong> JavaScript port of MAME (Multiple Arcade Machine Emulator)</li>
+                <li><strong>Metadata Layer:</strong> JSON manifests describing boot sequences, required files, input mappings</li>
+            </ul>
+
+            <p class="mb-6">
+                As of 2024, the archive hosts <strong>over 100,000 emulated software titles</strong> spanning four decades of computing history. This is emulation as public infrastructure—a commitment to preserving not just files but <em>computational experiences</em>.
+            </p>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">Advantages of Emulation</h3>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6">
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <span class="text-green-600 font-bold mr-3 text-xl">✓</span>
+                        <div>
+                            <strong>Authenticity:</strong> Preserves the original artifact bit-for-bit, including bugs, quirks, and interaction patterns
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-600 font-bold mr-3 text-xl">✓</span>
+                        <div>
+                            <strong>Format Agnosticism:</strong> Works regardless of format opacity—if the original software could run it, the emulator can too
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-600 font-bold mr-3 text-xl">✓</span>
+                        <div>
+                            <strong>Ecosystem Preservation:</strong> Captures compound objects (applications + documents + plugins + settings)
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-600 font-bold mr-3 text-xl">✓</span>
+                        <div>
+                            <strong>Research Value:</strong> Enables study of software archaeology itself—how did people actually use this tool?
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">Disadvantages and Limitations</h3>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6">
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <span class="text-red-600 font-bold mr-3 text-xl">✗</span>
+                        <div>
+                            <strong>Complexity Cascade:</strong> Emulators themselves become obsolete, requiring "emulators for emulators" (the Universal Virtual Computer problem)<sup>9</sup>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-red-600 font-bold mr-3 text-xl">✗</span>
+                        <div>
+                            <strong>Performance Overhead:</strong> Each emulation layer adds computational cost; nested emulation can be unusably slow
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-red-600 font-bold mr-3 text-xl">✗</span>
+                        <div>
+                            <strong>Legal Ambiguity:</strong> Requires ROM dumps, BIOS images, and historical OS copies (see Chapter 3's copyright test)
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-red-600 font-bold mr-3 text-xl">✗</span>
+                        <div>
+                            <strong>Accessibility Barriers:</strong> Forces future users to learn obsolete interfaces (try explaining floppy disk boot sequences to someone born in 2010)
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-red-600 font-bold mr-3 text-xl">✗</span>
+                        <div>
+                            <strong>Maintenance Burden:</strong> Requires ongoing curation—emulator updates, bug fixes, configuration management
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <p class="mb-6">
+                Emulation is the <strong>museum approach</strong>—it preserves artifacts in their original context, but at the cost of accessibility and long-term sustainability. It is ideal for high-value artifacts where authenticity outweighs usability (interactive fiction, digital art, software as cultural artifact).
+            </p>
+        </section>
+
+        <!-- Section 3: Strategy Two - Migration -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 text-[#435d7a] ui-font">III. Strategy Two: Migration (The Translation Approach)</h2>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">Philosophy and Implementation</h3>
+
+            <p class="mb-6">
+                <strong>Migration</strong> preserves the artifact by translating it into a contemporary format. Rather than recreate the past, we bring the artifact into the present, accepting transformation as the price of survival. As digital preservation theorist Adrian Brown argues, "Migration acknowledges that change is inevitable—the question is whether we manage that change deliberately or let it happen through neglect."<sup>10</sup>
+            </p>
+
+            <p class="mb-6">
+                Migration strategies include:
+            </p>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6 border-l-4 border-[#5A7D8C]">
+                <ul class="space-y-3">
+                    <li><strong>Format Conversion:</strong> Translate to a more sustainable format (WPD → DOCX, TIFF → PNG, QuickTime → MP4)</li>
+                    <li><strong>Encapsulation:</strong> Wrap the original file in a preservation-friendly container (METS, BagIt, WARC)</li>
+                    <li><strong>Normalization:</strong> Extract content to a minimal canonical representation (all word processors → plain text + structural markup)</li>
+                    <li><strong>Regeneration:</strong> Recreate the artifact using contemporary tools (rebuild a website using modern HTML/CSS while preserving visual design)</li>
+                </ul>
+            </div>
+
+            <p class="mb-6">
+                The goal is not pixel-perfect reproduction, but <strong>semantic preservation</strong>—maintaining the artifact's informational content and functional purpose even as its material form changes.
+            </p>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">Case Study: The UK Web Archive's Migration Pipeline</h3>
+
+            <p class="mb-6">
+                The UK Web Archive, operated by the British Library, captures over 1 billion UK web pages annually. Given the scale and format diversity (HTML, CSS, JavaScript, Flash, Java applets, video codecs), emulation is impractical. Instead, they employ a <strong>normalization-on-ingest</strong> migration strategy:<sup>11</sup>
+            </p>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6">
+                <ol class="list-decimal list-inside space-y-3 pl-2">
+                    <li>Harvest websites using Heritrix web crawler (stores as WARC files)</li>
+                    <li>Identify file formats using DROID (Digital Record Object Identification)</li>
+                    <li>Migrate high-risk formats:
+                        <ul class="list-disc list-inside pl-6 mt-2 space-y-1">
+                            <li>Flash SWF → HTML5 Canvas (via Ruffle emulator or manual reconstruction)</li>
+                            <li>Java Applets → JavaScript equivalents (where possible)</li>
+                            <li>Obsolete video codecs → H.264/MP4</li>
+                            <li>Proprietary fonts → web-safe alternatives with visual similarity scoring</li>
+                        </ul>
+                    </li>
+                    <li>Preserve both original and migrated versions (with provenance metadata linking them)</li>
+                    <li>Serve migrated versions by default; offer originals for scholarly research</li>
+                </ol>
+            </div>
+
+            <p class="mb-6">
+                This hybrid approach balances accessibility (users see working pages) with scholarly integrity (researchers can audit transformations). The system processes <strong>~40TB of web data annually</strong>, demonstrating migration at institutional scale.
+            </p>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">Advantages of Migration</h3>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6">
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <span class="text-green-600 font-bold mr-3 text-xl">✓</span>
+                        <div>
+                            <strong>Accessibility:</strong> Artifacts open natively on contemporary systems without specialized software
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-600 font-bold mr-3 text-xl">✓</span>
+                        <div>
+                            <strong>Searchability:</strong> Normalized formats enable full-text indexing, metadata extraction, computational analysis
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-600 font-bold mr-3 text-xl">✓</span>
+                        <div>
+                            <strong>Integration:</strong> Migrated artifacts can participate in modern workflows (embed in documents, cite in databases, mashup with APIs)
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-600 font-bold mr-3 text-xl">✓</span>
+                        <div>
+                            <strong>Legal Clarity:</strong> Avoids ROM/BIOS copyright issues; migration often qualifies as fair use transformation
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-600 font-bold mr-3 text-xl">✓</span>
+                        <div>
+                            <strong>Proactive Intervention:</strong> Addresses format obsolescence before software becomes unavailable
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">Disadvantages and Losses</h3>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6">
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <span class="text-red-600 font-bold mr-3 text-xl">✗</span>
+                        <div>
+                            <strong>Semantic Loss:</strong> Each migration discards "inessential" features—but who decides what's essential?
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-red-600 font-bold mr-3 text-xl">✗</span>
+                        <div>
+                            <strong>Error Accumulation:</strong> Serial migration creates a "degradation cascade" (like photocopying a photocopy)
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-red-600 font-bold mr-3 text-xl">✗</span>
+                        <div>
+                            <strong>Context Collapse:</strong> Migrated artifacts lose their original software ecosystem (macros, plugins, settings)
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-red-600 font-bold mr-3 text-xl">✗</span>
+                        <div>
+                            <strong>Ongoing Commitment:</strong> Formats continue to evolve—migration is not "one and done" but a perpetual process
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-red-600 font-bold mr-3 text-xl">✗</span>
+                        <div>
+                            <strong>Triage Overhead:</strong> Requires format risk assessment, conversion validation, quality control for every artifact
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <p class="mb-6">
+                Migration is the <strong>translation approach</strong>—it prioritizes usability and integration over authenticity, accepting that the artifact will change over time. It is ideal for large-scale collections where access outweighs perfect preservation (government documents, email archives, web crawls).
+            </p>
+        </section>
+
+        <!-- Section 4: Hybrid Strategies -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 text-[#435d7a] ui-font">IV. Hybrid Strategies and the Middle Path</h2>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">Beyond Binary Choices</h3>
+
+            <p class="mb-6">
+                The emulation-versus-migration debate presents a false dichotomy. In practice, most preservation projects employ <strong>hybrid strategies</strong> that combine both approaches, tailored to specific use cases and user communities.
+            </p>
+
+            <p class="mb-6">
+                Consider three increasingly sophisticated hybrid models:
+            </p>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6 border-l-4 border-[#A95C3D]">
+                <h4 class="text-xl font-semibold mb-3 text-[#435d7a] ui-font">Model 1: Dual Preservation</h4>
+                <p class="mb-3">
+                    Preserve <em>both</em> the original format (for emulation) <em>and</em> a migrated version (for access). The Internet Archive's Historical Software Collection does this: they offer in-browser emulation of MS-DOS games while also providing extracted screenshots, manual PDFs, and gameplay videos in contemporary formats. Users choose their preferred access method based on their needs—researchers use emulation for authentic study, casual users view screenshots.
+                </p>
+                <p class="text-sm italic text-gray-600">
+                    <strong>Cost:</strong> Doubles storage and maintenance overhead<br>
+                    <strong>Benefit:</strong> Serves multiple audiences without compromise
+                </p>
+            </div>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6 border-l-4 border-[#5A7D8C]">
+                <h4 class="text-xl font-semibold mb-3 text-[#435d7a] ui-font">Model 2: Layered Preservation</h4>
+                <p class="mb-3">
+                    Create a <strong>preservation pyramid</strong> with different strategies at different access tiers:<sup>12</sup>
+                </p>
+                <ul class="list-disc list-inside pl-4 space-y-2 mb-3">
+                    <li><strong>Tier 1 (Public):</strong> Migrated versions optimized for accessibility (HTML5, PDF/A, MP4)</li>
+                    <li><strong>Tier 2 (Researchers):</strong> Original formats with emulation-on-demand</li>
+                    <li><strong>Tier 3 (Dark Archive):</strong> Bit-level preservation (disk images, raw bitstreams) for future unknown tools</li>
+                </ul>
+                <p class="text-sm italic text-gray-600">
+                    <strong>Example:</strong> The Library of Congress Web Archive serves normalized HTML to the public, but preserves original WARC files for computational researchers
+                </p>
+            </div>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6 border-l-4 border-[#A95C3D]">
+                <h4 class="text-xl font-semibold mb-3 text-[#435d7a] ui-font">Model 3: Progressive Enhancement</h4>
+                <p class="mb-3">
+                    Start with migration, layer emulation on top <em>only when necessary</em>. This is the approach championed by digital preservation consultancy DPC: migrate by default to reduce maintenance burden, but flag artifacts where migration causes unacceptable loss (interactive media, software as art, legally significant documents where bit-perfect preservation is required).<sup>13</sup> These flagged items enter an emulation track with dedicated resources.
+                </p>
+                <p class="text-sm italic text-gray-600">
+                    <strong>Decision Trigger:</strong> Migration quality score < 0.85 (significant properties loss > 15%) → escalate to emulation
+                </p>
+            </div>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">Format-Specific Strategies</h3>
+
+            <p class="mb-6">
+                Some formats demand specialized approaches that blend emulation and migration:
+            </p>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6">
+                <table class="w-full border-collapse text-base">
+                    <thead>
+                        <tr class="bg-[#435d7a] text-white">
+                            <th class="border border-gray-300 px-4 py-2 text-left ui-font">Format Type</th>
+                            <th class="border border-gray-300 px-4 py-2 text-left ui-font">Hybrid Strategy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2"><strong>Video Games</strong></td>
+                            <td class="border border-gray-300 px-4 py-2">Emulate gameplay, migrate supporting materials (manuals, screenshots, let's-play videos)</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="border border-gray-300 px-4 py-2"><strong>Interactive Art</strong></td>
+                            <td class="border border-gray-300 px-4 py-2">Emulate original + create documentation (artist interviews, behavior descriptions, recreation instructions)</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2"><strong>Email Archives</strong></td>
+                            <td class="border border-gray-300 px-4 py-2">Migrate to MBOX/EML + preserve original PST in disk image for forensic analysis</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="border border-gray-300 px-4 py-2"><strong>Web Archives</strong></td>
+                            <td class="border border-gray-300 px-4 py-2">Normalize HTML/CSS/JS, embed emulated Flash content via Ruffle, preserve WARC originals</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2"><strong>Office Documents</strong></td>
+                            <td class="border border-gray-300 px-4 py-2">Migrate to PDF/A for access, preserve original .DOC/.XLS for macro recovery if needed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="mb-6">
+                The key insight: <strong>preservation strategy should follow from preservation intent</strong>. What aspects of the artifact are considered "significant properties"? Who is the intended audience? What resources are available? These questions must be answered <em>before</em> choosing a technical approach.
+            </p>
+        </section>
+
+        <!-- Section 5: Decision Framework -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 text-[#435d7a] ui-font">V. The Preservation Decision Matrix</h2>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">Mapping Triage State to Strategy</h3>
+
+            <p class="mb-6">
+                Preservation strategy should align with your Chapter 2 triage diagnosis. The three-axis framework (Technical Legibility, Functional Integrity, Contextual Ecosystem) provides decision inputs:
+            </p>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6 border-l-4 border-[#5A7D8C]">
+                <table class="w-full border-collapse">
+                    <thead>
+                        <tr class="bg-[#435d7a] text-white">
+                            <th class="border border-gray-300 px-4 py-2 text-left ui-font">Triage State</th>
+                            <th class="border border-gray-300 px-4 py-2 text-left ui-font">Technical Legibility</th>
+                            <th class="border border-gray-300 px-4 py-2 text-left ui-font">Functional Integrity</th>
+                            <th class="border border-gray-300 px-4 py-2 text-left ui-font">Contextual Ecosystem</th>
+                            <th class="border border-gray-300 px-4 py-2 text-left ui-font">Recommended Strategy</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm">
+                        <tr class="bg-green-50">
+                            <td class="border border-gray-300 px-4 py-2"><strong>Vivibyte</strong></td>
+                            <td class="border border-gray-300 px-4 py-2">✓ YES</td>
+                            <td class="border border-gray-300 px-4 py-2">✓ YES</td>
+                            <td class="border border-gray-300 px-4 py-2">✓ YES</td>
+                            <td class="border border-gray-300 px-4 py-2"><strong>Monitor + Refresh:</strong> Low-risk; watch for format drift but no immediate action needed</td>
+                        </tr>
+                        <tr class="bg-orange-50">
+                            <td class="border border-gray-300 px-4 py-2"><strong>Umbrabyte<br>(Ecosystem Extinct)</strong></td>
+                            <td class="border border-gray-300 px-4 py-2">✓ YES</td>
+                            <td class="border border-gray-300 px-4 py-2">✓ YES</td>
+                            <td class="border border-gray-300 px-4 py-2">✗ NO</td>
+                            <td class="border border-gray-300 px-4 py-2"><strong>Migration Priority:</strong> Content readable; extract before software vanishes. Emulate only if context is research-critical</td>
+                        </tr>
+                        <tr class="bg-orange-50">
+                            <td class="border border-gray-300 px-4 py-2"><strong>Umbrabyte<br>(Conceptual Ghost)</strong></td>
+                            <td class="border border-gray-300 px-4 py-2">⚠ CONDITIONAL</td>
+                            <td class="border border-gray-300 px-4 py-2">✗ NO</td>
+                            <td class="border border-gray-300 px-4 py-2">✗ NO</td>
+                            <td class="border border-gray-300 px-4 py-2"><strong>Reconstruct + Document:</strong> Gather surrounding artifacts (screenshots, descriptions, code fragments). Migration impossible; focus on archaeological reconstruction</td>
+                        </tr>
+                        <tr class="bg-orange-50">
+                            <td class="border border-gray-300 px-4 py-2"><strong>Umbrabyte<br>(Resurrected Fossil)</strong></td>
+                            <td class="border border-gray-300 px-4 py-2">✓ YES</td>
+                            <td class="border border-gray-300 px-4 py-2">⚠ CONDITIONAL</td>
+                            <td class="border border-gray-300 px-4 py-2">⚠ CONDITIONAL</td>
+                            <td class="border border-gray-300 px-4 py-2"><strong>Dual Preservation:</strong> Emulate for authenticity research + migrate for functional access</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="border border-gray-300 px-4 py-2"><strong>Petribyte</strong></td>
+                            <td class="border border-gray-300 px-4 py-2">✗ NO</td>
+                            <td class="border border-gray-300 px-4 py-2">✗ NO</td>
+                            <td class="border border-gray-300 px-4 py-2">✗ NO</td>
+                            <td class="border border-gray-300 px-4 py-2"><strong>Forensic Recovery Only:</strong> Bit-level preservation (disk imaging). Wait for future tools; neither emulation nor migration viable</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">The Preservation Strategy Scorecard</h3>
+
+            <p class="mb-6">
+                When triage state is ambiguous or resources are constrained, use this weighted decision scorecard:
+            </p>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6">
+                <p class="font-semibold mb-4 ui-font text-lg">Score each factor from 1-5, then calculate:</p>
+                <div class="bg-gray-50 p-4 rounded mb-4">
+                    <p class="ui-font text-center text-xl mb-2">
+                        <strong>Emulation Score</strong> = (Authenticity × 3) + (Format Opacity × 2) + (Research Value × 2) − (Scale × 2) − (Maintenance Capacity × 1)
+                    </p>
+                    <p class="ui-font text-center text-xl">
+                        <strong>Migration Score</strong> = (Access Demand × 3) + (Format Transparency × 2) + (Scale × 2) − (Semantic Loss Risk × 2) − (Ongoing Commitment × 1)
+                    </p>
+                </div>
+
+                <p class="mb-4"><strong>Factor Definitions:</strong></p>
+                <ul class="space-y-2 text-base">
+                    <li><strong>Authenticity Need:</strong> 5 = legally significant/artwork, 1 = informational content only</li>
+                    <li><strong>Format Opacity:</strong> 5 = proprietary/undocumented, 1 = open standard</li>
+                    <li><strong>Research Value:</strong> 5 = unique historical artifact, 1 = one of many similar items</li>
+                    <li><strong>Access Demand:</strong> 5 = public archive, 1 = dark archive</li>
+                    <li><strong>Format Transparency:</strong> 5 = well-documented/parseable, 1 = binary blob</li>
+                    <li><strong>Scale:</strong> 5 = millions of files, 1 = single artifact</li>
+                    <li><strong>Semantic Loss Risk:</strong> 5 = rich interactive media, 1 = plain text</li>
+                    <li><strong>Maintenance Capacity:</strong> 5 = well-staffed institution, 1 = solo practitioner</li>
+                    <li><strong>Ongoing Commitment:</strong> 5 = rapid format evolution, 1 = stable format</li>
+                </ul>
+
+                <p class="mt-6 text-lg font-semibold text-[#435d7a]">
+                    <strong>Decision Rule:</strong> If Emulation Score > Migration Score by 5+ points → Emulate. If Migration Score > Emulation Score by 5+ points → Migrate. If scores within 5 points → Hybrid strategy.
+                </p>
+            </div>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">The Preservation Action Report</h3>
+
+            <p class="mb-6">
+                Just as Chapter 3 required a Custodial Report, Chapter 4 requires a <strong>Preservation Action Report</strong> documenting your strategy decision. This creates an audit trail for future practitioners and ensures transparency.
+            </p>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6 border-l-4 border-[#A95C3D]">
+                <h4 class="text-xl font-semibold mb-4 text-[#435d7a] ui-font">Preservation Action Report Template</h4>
+                <div class="bg-gray-50 p-4 rounded space-y-4 text-base">
+                    <div>
+                        <p class="font-semibold ui-font text-gray-700">Artifact Identifier:</p>
+                        <p class="text-gray-600">[Title, creator, date, format, unique ID]</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold ui-font text-gray-700">Triage State:</p>
+                        <p class="text-gray-600">[Vivibyte/Umbrabyte/Petribyte with three-axis scores]</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold ui-font text-gray-700">Chosen Strategy:</p>
+                        <p class="text-gray-600">[Emulation / Migration / Hybrid / Forensic Recovery Only]</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold ui-font text-gray-700">Rationale:</p>
+                        <p class="text-gray-600">[Why this strategy? What factors were weighted? What trade-offs accepted?]</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold ui-font text-gray-700">Implementation Details:</p>
+                        <p class="text-gray-600">
+                            <strong>If Emulation:</strong> Emulator used, guest OS version, required files (BIOS/ROMs), access method<br>
+                            <strong>If Migration:</strong> Source format → target format, conversion tools, validation method, quality score
+                        </p>
+                    </div>
+                    <div>
+                        <p class="font-semibold ui-font text-gray-700">Significant Properties Preserved:</p>
+                        <p class="text-gray-600">[What aspects of the artifact are guaranteed to survive this strategy?]</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold ui-font text-gray-700">Known Losses:</p>
+                        <p class="text-gray-600">[What will be lost? Why is this loss acceptable?]</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold ui-font text-gray-700">Maintenance Schedule:</p>
+                        <p class="text-gray-600">[When will this strategy be reviewed? What triggers re-evaluation?]</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold ui-font text-gray-700">Practitioner:</p>
+                        <p class="text-gray-600">[Name, organization, date, contact]</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">Example: GeoCities Vienna (from Chapter 1)</h3>
+
+            <p class="mb-6">
+                Let's apply the framework to the GeoCities Vienna case study:
+            </p>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6">
+                <div class="space-y-4 text-base">
+                    <p><strong class="ui-font">Artifact Identifier:</strong> GeoCities Vienna neighborhood (Austrian personal homepages, 1996-2009, HTML/GIF/MIDI)</p>
+                    <p><strong class="ui-font">Triage State:</strong> Umbrabyte (Ecosystem Extinct) — Technical Legibility: YES, Functional Integrity: CONDITIONAL (broken links), Contextual Ecosystem: NO (GeoCities server architecture gone)</p>
+                    <p><strong class="ui-font">Chosen Strategy:</strong> Hybrid (Layered Preservation)</p>
+                    <p><strong class="ui-font">Rationale:</strong></p>
+                    <ul class="list-disc list-inside pl-6 space-y-1">
+                        <li>Scale: 38,000 pages → migration more practical than per-page emulation</li>
+                        <li>Research value: High (early web culture, non-English internet history)</li>
+                        <li>Authenticity need: Moderate (scholar interest in "look and feel" but content primacy)</li>
+                    </ul>
+                    <p><strong class="ui-font">Implementation Details:</strong></p>
+                    <ul class="list-disc list-inside pl-6 space-y-1">
+                        <li><strong>Tier 1 (Public):</strong> Migrated to static HTML with broken links patched, MIDI converted to MP3</li>
+                        <li><strong>Tier 2 (Researchers):</strong> Original HTML preserved, viewable via Internet Archive's Wayback Machine (emulated 1998 Netscape Navigator available on request)</li>
+                        <li><strong>Tier 3 (Dark Archive):</strong> Bit-level WARC files stored offline</li>
+                    </ul>
+                    <p><strong class="ui-font">Significant Properties Preserved:</strong> Textual content, visual layout (CSS polyfilled), embedded images, site structure/navigation</p>
+                    <p><strong class="ui-font">Known Losses:</strong> JavaScript behaviors (limited in 1990s sites), MIDI timing (converted to static MP3), GeoCities watermarks/ads</p>
+                    <p><strong class="ui-font">Maintenance Schedule:</strong> Annual format risk assessment; re-migration if HTML/CSS standards shift significantly (monitoring CSS Working Group)</p>
+                    <p><strong class="ui-font">Practitioner:</strong> [Your name], Austrian Web Archive, November 21, 2025</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 text-[#435d7a] ui-font">Conclusion: The Operational Anvil</h2>
+
+            <p class="mb-6">
+                You have now assembled the complete toolkit:
+            </p>
+
+            <ul class="list-disc list-inside mb-6 pl-6 space-y-2">
+                <li><strong>The Trowel</strong> (Chapter 1): You can excavate digital artifacts from obscured strata</li>
+                <li><strong>The Microscope</strong> (Chapter 2): You can diagnose their ontological state with precision</li>
+                <li><strong>The Filter</strong> (Chapter 3): You can determine ethical clearance for preservation</li>
+                <li><strong>The Anvil</strong> (Chapter 4): You can forge preservation strategies that balance authenticity and accessibility</li>
+            </ul>
+
+            <p class="mb-6">
+                The Anvil is where theory becomes practice, where abstract debates about "what is preservation?" meet the concrete reality of storage budgets, staff time, and user needs. <strong>Preservation is not a technical problem with a universal solution—it is a <em>hermeneutic</em> problem requiring contextual judgment.</strong>
+            </p>
+
+            <p class="mb-6">
+                Emulation preserves the past at the cost of the present. Migration brings artifacts into the present at the cost of the past. Hybrid strategies attempt to serve both gods, but require twice the devotion. There is no escape from trade-offs. The question is not which strategy is "correct," but which trade-offs you—as custodian, not owner—are willing to accept on behalf of future communities.
+            </p>
+
+            <p class="mb-6">
+                As digital preservation pioneer Margaret Hedstrom wrote: "We preserve not things but the <em>capacity to make meaning</em> from things."<sup>14</sup> Whether that meaning emerges from pixel-perfect emulation or semantically migrated data is secondary to the fact that <em>meaning can still emerge at all</em>. The worst preservation strategy is the one never implemented—the artifact left to rot because we demanded perfection instead of accepting pragmatism.
+            </p>
+
+            <p class="mb-6">
+                You are now equipped to act. Excavate, diagnose, clear, and preserve. The Archaeobytes wait. The Anvil is hot. Strike while the iron—and the bits—still hold form.
+            </p>
+
+            <p class="mb-6 italic text-gray-600 text-center">
+                "Digital preservation is an act of optimism—a belief that the future will care about what we cared about, and that we can build bridges across the chasm of obsolescence to make that caring possible."<br>
+                — Trevor Owens, <em>The Theory and Craft of Digital Preservation</em>, 2018
+            </p>
+        </section>
+
+        <!-- Works Cited -->
+        <section class="mb-12 border-t-4 border-[#435d7a] pt-8">
+            <h2 class="text-3xl font-bold mb-6 text-[#435d7a] ui-font">Works Cited</h2>
+            <ol class="list-decimal list-inside space-y-3 text-base leading-relaxed">
+                <li>Rothenberg, Jeff. "Avoiding Technological Quicksand: Finding a Viable Technical Foundation for Digital Preservation." <em>Council on Library and Information Resources</em>, 1999.</li>
+                
+                <li>Bearman, David. "Reality and Chimeras in the Preservation of Electronic Records." <em>D-Lib Magazine</em> 5.4 (1999).</li>
+                
+                <li>Kirschenbaum, Matthew G. <em>Mechanisms: New Media and the Forensic Imagination</em>. MIT Press, 2008.</li>
+                
+                <li>Brown, Adrian. <em>Practical Digital Preservation: A How-To Guide for Organizations of Any Size</em>. Facet Publishing, 2013.</li>
+                
+                <li>Library of Congress. "Sustainability of Digital Formats: Planning for Library of Congress Collections." <em>Library of Congress</em>, 2024. https://www.loc.gov/preservation/digital/formats/</li>
+                
+                <li>Ihde, Don. <em>Technology and the Lifeworld: From Garden to Earth</em>. Indiana University Press, 1990.</li>
+                
+                <li>Rothenberg, Jeff. "Using Emulation to Preserve Digital Documents." <em>Koninklijke Bibliotheek</em>, 2000.</li>
+                
+                <li>Espenschied, Dragan, et al. "Browser-Based Emulation for Software Preservation." <em>Proceedings of iPres 2013</em>, Lisbon, Portugal.</li>
+                
+                <li>Lorie, Raymond A. "The UVC: A Method for Preserving Digital Documents." <em>IBM Research Report</em> RJ 10185, 2002.</li>
+                
+                <li>Brown, Adrian. "Selecting File Formats for Long-Term Preservation." <em>Digital Preservation Coalition</em>, 2008.</li>
+                
+                <li>Pennock, Maureen. "Web Archiving at the British Library: Current Approaches to Capturing the UK Web." <em>International Internet Preservation Consortium</em>, 2013.</li>
+                
+                <li>Caplan, Priscilla. <em>Understanding PREMIS: Preservation Metadata</em>. Library of Congress Network Development and MARC Standards Office, 2009.</li>
+                
+                <li>Digital Preservation Coalition. "Digital Preservation Handbook, 2nd Edition." <em>DPC</em>, 2015. https://www.dpconline.org/handbook</li>
+                
+                <li>Hedstrom, Margaret. "Digital Preservation: A Time Bomb for Digital Libraries." <em>Computers and the Humanities</em> 31.3 (1997): 189-202.</li>
+            </ol>
+        </section>
+
+        <!-- Footer Navigation -->
+        <nav class="border-t-2 border-gray-300 pt-6 ui-font">
+            <div class="flex justify-between items-center">
+                <a href="200-ch3.html" class="text-[#435d7a] hover:underline">← Previous: Chapter 3 (The Custodial Filter)</a>
+                <a href="index.html" class="text-[#435d7a] hover:underline">Back to Course Home</a>
+            </div>
+        </nav>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#435d7a] text-white py-6 mt-12">
+        <div class="max-w-4xl mx-auto px-6 text-center text-sm ui-font">
+            <p>&copy; 2025 Archaeobytology Project | <a href="../index.html" class="underline hover:text-[#A95C3D]">Return to Main Site</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

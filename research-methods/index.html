@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- === 1. Primary Meta Tags === -->
+    <title>Research Methods | Archaeobytology</title>
+    <meta name="title" content="Research Methods | Archaeobytology">
+    <meta name="description" content="Research methodologies for digital archaeology, covering excavation techniques, data collection, and analytical frameworks for platform studies.">
+    <meta name="keywords" content="Archaeobytology, research methods, digital archaeology methodology, excavation techniques, platform studies">
+    <meta name="author" content="archaeobytology.org (An unearth.im Project)">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <link rel="canonical" href="https://archaeobytology.org/research-methods/" />
+
+    <!-- === 2. Webmention Endpoint === -->
+    <link rel="webmention" href="https://webmention.io/unearth.im/webmention" />
+
+    <!-- === 3. Open Graph / Facebook === -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://archaeobytology.org/research-methods/">
+    <meta property="og:title" content="Research Methods | Archaeobytology">
+    <meta property="og:description" content="Research methodologies for digital archaeology, covering excavation techniques, data collection, and analytical frameworks.">
+    <meta property="og:image" content="https://archaeobytology.org/og-image.png">
+    <meta property="og:site_name" content="archaeobytology.org">
+
+    <!-- === 4. Twitter Card === -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://archaeobytology.org/research-methods/">
+    <meta property="twitter:title" content="Research Methods | Archaeobytology">
+    <meta property="twitter:description" content="Research methodologies for digital archaeology.">
+    <meta property="twitter:image" content="https://archaeobytology.org/og-image.png">
+    
+    <!-- === Favicons === -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta name="theme-color" content="#fcfaf5">
+    <meta name="msapplication-TileColor" content="#BF5700">
+    
+    <!-- === Tailwind CSS === -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'unearth-bg': '#fcfaf5',
+            'unearth-surface': '#f9fafb',
+            'unearth-main': '#1a1a1a',
+            'unearth-secondary': '#6b7280',
+            'unearth-primary': '#BF5700',
+            'unearth-border': '#e5e7eb',
+          },
+          fontFamily: {
+            'narrative': ['Lora', 'serif'],
+            'ui': ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+    </script>
+    
+    <!-- === Google Fonts === -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-unearth-bg text-unearth-main antialiased font-ui">
+
+    <!-- === Header === -->
+    <nav class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div class="flex justify-between items-center">
+            <a href="../index.html" title="archaeobytology.org" class="flex items-baseline space-x-2 group">
+                <span class="text-2xl font-bold tracking-tighter text-unearth-main group-hover:text-unearth-primary transition-colors font-narrative">archaeobytology</span>
+                <span class="text-xl font-bold text-unearth-primary font-narrative">.org</span>
+            </a>
+            <div class="relative group">
+                <button class="text-sm text-unearth-secondary hover:text-unearth-primary font-narrative cursor-pointer transition-colors">
+                    The Discipline of Archaeobytology ▾
+                </button>
+                <div class="hidden group-hover:block absolute right-0 mt-0 w-64 bg-white border border-unearth-border rounded-lg shadow-lg z-50">
+                    <div class="py-2">
+                        <a href="../index.html#core-curriculum" class="block px-4 py-2 text-sm text-unearth-main hover:bg-unearth-surface font-ui">Core Curriculum</a>
+                        <a href="../archaeobytology-textbook/index.html" class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">• Complete Textbook</a>
+                        <a href="../100-level/index.html" class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">• ARCH 101: Foundations</a>
+                        <a href="../200-level/index.html" class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">• ARCH 200: Methods</a>
+                        <a href="../300-level/index.html" class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">• ARCH 300: Capstone</a>
+                        <a href="../300-institution-building/index.html" class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">• ARCH 301: Graduate</a>
+                        <div class="border-t border-unearth-border my-2"></div>
+                        <a href="../index.html#supplementary" class="block px-4 py-2 text-sm text-unearth-main hover:bg-unearth-surface font-ui">Supplementary Materials</a>
+                        <a href="index.html" class="block px-4 py-3 text-xs text-unearth-primary hover:bg-unearth-surface font-ui pl-8 font-semibold">• Research Methods</a>
+                        <a href="../case-studies/index.html" class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">• Case Studies</a>
+                        <a href="../professional-practice/index.html" class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">• Professional Practice</a>
+                        <a href="../theoretical-foundations/index.html" class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">• Theoretical Foundations</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- === Hero Section === -->
+    <header class="py-16 sm:py-20 border-b border-unearth-border">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl sm:text-5xl font-bold tracking-tighter text-unearth-main leading-tight font-narrative">
+                Research Methods
+            </h1>
+            <p class="mt-6 text-lg sm:text-xl text-unearth-secondary max-w-3xl mx-auto font-narrative" style="line-height: 1.8;">
+                Advanced methodological frameworks for archaeobytological research. These essays provide systematic tools for translating archaeological wisdom into design principles, evaluating contemporary systems, and distinguishing genuine solutions from sovereignty theater.
+            </p>
+        </div>
+    </header>
+
+    <!-- === Main Content === -->
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+        
+        <section>
+            <h2 class="text-3xl font-bold tracking-tight text-unearth-main font-narrative mb-8">Available Resources</h2>
+
+            <div class="space-y-6">
+                <a href="anvil-translation.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-6 transition-all duration-200 hover:shadow-lg">
+                    <h3 class="text-2xl font-bold tracking-tight text-unearth-main font-narrative mb-3">
+                        The Anvil: Translating Archaeological Wisdom into Design Principles
+                    </h3>
+                    <p class="text-base text-unearth-secondary font-ui mb-4" style="line-height: 1.8;">
+                        A comprehensive methodology for converting excavated insights into testable design frameworks. Includes the Four-Step Translation Method, evaluation frameworks for contemporary platforms (Mastodon, Bluesky, Solid), diagnostic toolkits (Sovereignty Spectrum, Dependency Audit), and anti-pattern catalogs.
+                    </p>
+                    <p class="text-sm text-unearth-secondary font-ui mb-3">
+                        <strong>Topics covered:</strong> Translation frameworks • Evaluation methodology • Diagnostic toolkits • Anti-pattern recognition • Methodological positioning
+                    </p>
+                    <p class="text-base font-semibold text-unearth-primary font-ui">
+                        Read full essay &rarr;
+                    </p>
+                </a>
+            </div>
+        </section>
+
+        <section class="mt-16">
+            <h2 class="text-3xl font-bold tracking-tight text-unearth-main font-narrative mb-6">Future Research Methods</h2>
+            
+            <div class="bg-unearth-surface rounded-lg border border-unearth-border p-8">
+                <p class="text-base text-unearth-secondary font-ui mb-6" style="line-height: 1.8;">
+                    Additional methodological frameworks will be added as the discipline develops:
+                </p>
+                
+                <ul class="space-y-3">
+                    <li class="text-base text-unearth-secondary font-ui">
+                        <strong class="text-unearth-main">Forensic Excavation Protocols:</strong> Step-by-step guides for platform autopsy
+                    </li>
+                    <li class="text-base text-unearth-secondary font-ui">
+                        <strong class="text-unearth-main">Triage Decision Matrices:</strong> Frameworks for ethical preservation prioritization
+                    </li>
+                    <li class="text-base text-unearth-secondary font-ui">
+                        <strong class="text-unearth-main">Artifact Classification Systems:</strong> Taxonomies for digital archaeological finds
+                    </li>
+                    <li class="text-base text-unearth-secondary font-ui">
+                        <strong class="text-unearth-main">Resurrection Viability Assessment:</strong> Methods for evaluating Petribyte revival potential
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- === Footer === -->
+    <footer class="mt-16 sm:mt-24 py-12 border-t border-unearth-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm text-unearth-secondary font-ui">
+                &copy; 2025   
+                <a href="../index.html" class="font-semibold transition-colors group">
+                    <span class="text-unearth-main group-hover:text-unearth-primary">archaeobytology</span><span class="text-unearth-primary">.org</span>
+                </a> | Archive & Anvil
+            </p>
+            <p class="text-xs text-unearth-secondary font-ui mt-2">
+                All content licensed under Creative Commons BY-SA 4.0
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

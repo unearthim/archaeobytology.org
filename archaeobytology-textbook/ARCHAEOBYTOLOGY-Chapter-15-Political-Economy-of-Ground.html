@@ -1,0 +1,1140 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 15: The Political Economy of Digital Ground — Who Controls the Infrastructure? | Archaeobytology</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Lora', serif; line-height: 1.8; color: #2E2E2E; background: #F8F7F4; padding: 2rem 1rem; }
+        .container { max-width: 800px; margin: 0 auto; background: #FFFFFF; padding: 3rem; border-radius: 15px; box-shadow: 0 4px 20px rgba(46,46,46,0.1); border: 1px solid #D1D1D1; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; color: #2E2E2E; margin-top: 2rem; margin-bottom: 1rem; line-height: 1.3; }
+        h1 { font-size: 2.5rem; font-weight: 700; margin-top: 0; border-bottom: 3px solid #A1824A; padding-bottom: 0.5rem; }
+        h2 { font-size: 2rem; font-weight: 700; margin-top: 2.5rem; }
+        h3 { font-size: 1.5rem; font-weight: 600; color: #5A7D8C; }
+        h4 { font-size: 1.25rem; font-weight: 600; color: #5A7D8C; }
+        p { margin-bottom: 1.25rem; font-size: 1.1rem; }
+        a { color: #A93400; text-decoration: underline; transition: color 0.3s; }
+        a:hover { color: #A95C3D; }
+        strong { font-weight: 600; }
+        em { font-style: italic; }
+        code { font-family: 'Courier New', monospace; background: #F8F7F4; padding: 0.2rem 0.4rem; border-radius: 3px; border: 1px solid #D1D1D1; }
+        blockquote { border-left: 4px solid #A1824A; padding: 1rem 1.5rem; margin: 1.5rem 0; font-style: italic; color: #5A7D8C; background: #F8F7F4; border-radius: 0 8px 8px 0; }
+        hr { border: none; border-top: 2px solid #D1D1D1; margin: 2rem 0; }
+        .nav { text-align: center; padding: 1rem 0; border-top: 2px solid #D1D1D1; margin-top: 2rem; }
+        .nav a { display: inline-block; padding: 0.75rem 1.5rem; background: #A93400; color: #F8F7F4; text-decoration: none; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 600; margin: 0.5rem; }
+        .nav a:hover { background: #A95C3D; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <article>
+<h1>Chapter 15: The Political Economy of Digital Ground — Who Controls the Infrastructure?</h1>
+
+<h2>Opening: The Day the Domain Disappeared</h2>
+
+<p>
+In 2010, the United States government seized the domain <code>mooo.com</code>—a URL shortener popular with music fans and file sharers. Without warning, without trial, without due process, the Department of Homeland Security simply took control of the domain and replaced the site with a banner: "This domain name has been seized by ICE—Homeland Security Investigations."
+</p>
+
+<p>
+Thousands of links across the internet broke instantly. Blog posts, forum threads, social media shares—all pointed to dead URLs. The content those links pointed to still existed on other servers, but the <strong>naming system</strong> had been captured. The government didn't need to touch the actual files; they just seized the address that pointed to them.
+</p>
+
+<p>
+This wasn't an isolated incident:
+- <strong>Libya (.ly domains, 2010)</strong>: Shut down <code>vb.ly</code> (URL shortener) for "violating Islamic morality"
+- <strong>Kazakhstan (.kz, 2021)</strong>: Temporarily seized opposition media domains during protests
+- <strong>Ukraine (.ua, 2014)</strong>: Domains hijacked during Crimea annexation
+- <strong>China (.cn, ongoing)</strong>: Routine domain seizures for political speech
+</p>
+
+<p>
+<strong>The lesson:</strong> Even if you own your content, if you don't control the infrastructure that makes it accessible, you don't truly have Ground.
+</p>
+
+<p>
+This chapter explores the <strong>political economy of digital infrastructure</strong>—who controls the layers that make the internet work, how that control is exercised, and how we might redesign those layers to resist capture.
+</p>
+
+<p>
+We'll introduce the <strong>Sovereignty Stack</strong>: six layers of digital infrastructure, each with different ownership models and vulnerabilities. Then we'll examine case studies of each layer being captured or contested. Finally, we'll explore alternatives being built to resist centralized control.
+</p>
+
+<h2>Part I: The Sovereignty Stack — Six Layers of Digital Infrastructure</h2>
+
+<p>
+Digital sovereignty isn't just about owning a domain or hosting a website. It requires control (or at least resilience) across <strong>six interconnected layers</strong>:
+</p>
+
+<h3>Layer 1: Physical Infrastructure (Bottom Layer)</h3>
+
+<p>
+<strong>What it is:</strong>
+- Undersea cables carrying internet traffic between continents
+- Data centers housing servers
+- Cell towers and fiber optic lines
+- Electricity grids powering everything
+</p>
+
+<p>
+<strong>Who controls it:</strong>
+- Telecom corporations (AT&T, Comcast, China Telecom)
+- Cloud providers (Amazon AWS, Microsoft Azure, Google Cloud)
+- Nation-states (can cut cables, seize data centers)
+</p>
+
+<p>
+<strong>Sovereignty implications:</strong>
+- If you don't own physical hardware, you're renting from someone who can evict you
+- Governments can surveil traffic at chokepoints (NSA's undersea cable taps)
+- Interruptions (power outages, cable cuts) can take down entire regions
+</p>
+
+<p>
+<strong>Vulnerability:</strong>
+- <strong>Centralization</strong>: Most cloud traffic flows through a few companies' data centers
+- <strong>Geographic concentration</strong>: Major cable landing points are in a few cities
+- <strong>State power</strong>: Physical infrastructure is ultimately subject to whoever controls territory
+</p>
+
+<p>
+<strong>Resistance strategies:</strong>
+- Distributed hosting (content on multiple continents)
+- Peer-to-peer networks (no central servers)
+- Community-owned ISPs (fiber cooperatives)
+- Mesh networks (neighborhood-scale wireless networks)
+</p>
+
+<h3>Layer 2: Network Protocols (Transport Layer)</h3>
+
+<p>
+<strong>What it is:</strong>
+- TCP/IP (how data packets move across networks)
+- HTTP/HTTPS (how browsers talk to servers)
+- DNS (Domain Name System—translates names like google.com to IP addresses)
+- BGP (Border Gateway Protocol—routes traffic between networks)
+</p>
+
+<p>
+<strong>Who controls it:</strong>
+- Standards bodies (IETF, W3C—mostly open)
+- ICANN (manages DNS root servers)
+- ISPs and network operators (implement protocols)
+</p>
+
+<p>
+<strong>Sovereignty implications:</strong>
+- Open protocols (like TCP/IP) are more sovereign than proprietary ones
+- DNS is a single point of failure—if your domain is seized, your site becomes unreachable
+- BGP hijacking can redirect traffic (happened to YouTube, Amazon, others)
+</p>
+
+<p>
+<strong>Vulnerability:</strong>
+- <strong>DNS centralization</strong>: ICANN ultimately controls the root DNS servers
+- <strong>Certificate authorities</strong>: HTTPS requires CAs, which can be compromised or coerced
+- <strong>Routing attacks</strong>: BGP has no built-in authentication (trust-based)
+</p>
+
+<p>
+<strong>Resistance strategies:</strong>
+- Alternative DNS (blockchain-based names like ENS, Namecoin)
+- Onion routing (Tor—routes traffic through multiple nodes to hide destination)
+- IPFS (content-addressed instead of location-addressed—content hash is the "address")
+- Mesh routing (packets find paths dynamically, no central routing tables)
+</p>
+
+<h3>Layer 3: Identity Systems (Authentication Layer)</h3>
+
+<p>
+<strong>What it is:</strong>
+- How you prove you are who you claim to be
+- Username/password on platforms
+- Email addresses
+- Social login ("Sign in with Google/Facebook")
+- Digital certificates and keys
+</p>
+
+<p>
+<strong>Who controls it:</strong>
+- Platforms (Facebook, Google, Apple control their login systems)
+- Federated identity providers (OAuth services)
+- Individuals (if using self-hosted identity)
+</p>
+
+<p>
+<strong>Sovereignty implications:</strong>
+- Platform identity is <strong>leased</strong> (Facebook can delete your account, erasing your identity)
+- Email is more sovereign (you can change providers, keep your address if you own domain)
+- Federated identity (like Mastodon's @user@domain.com) gives you control
+</p>
+
+<p>
+<strong>Vulnerability:</strong>
+- <strong>Platform capture</strong>: Most people use "Sign in with Google/Facebook" (convenient but gives those companies control)
+- <strong>Real name policies</strong>: Platforms requiring legal names harm pseudonymous freedom
+- <strong>Account suspension</strong>: Losing your account means losing your identity across all connected services
+</p>
+
+<p>
+<strong>Resistance strategies:</strong>
+- Self-hosted identity (your own domain, your own email server)
+- Decentralized identifiers (DIDs—cryptographic identities not tied to any platform)
+- PGP/GPG keys (cryptographic proof of identity)
+- Federated identity (ActivityPub, IndieAuth)
+</p>
+
+<h3>Layer 4: Data Storage (Persistence Layer)</h3>
+
+<p>
+<strong>What it is:</strong>
+- Where your files, messages, posts, photos actually live
+- Cloud storage (Google Drive, Dropbox, iCloud)
+- Platform databases (Facebook's servers storing your posts)
+- Self-hosted storage (your own hard drive or server)
+</p>
+
+<p>
+<strong>Who controls it:</strong>
+- Cloud providers (Amazon S3, Google Cloud Storage)
+- Platforms (Twitter, Instagram, TikTok)
+- Individuals (if self-hosting)
+</p>
+
+<p>
+<strong>Sovereignty implications:</strong>
+- If your data lives on someone else's servers, they can delete it, surveil it, or lock you out
+- Export tools help (you can download your data), but migrating is often hard
+- Self-hosting gives you control but requires technical skill and maintenance
+</p>
+
+<p>
+<strong>Vulnerability:</strong>
+- <strong>Terms of Service changes</strong>: Provider can change terms, delete your data, or raise prices
+- <strong>Platform shutdown</strong>: If the company dies, your data dies (unless you exported)
+- <strong>Vendor lock-in</strong>: Proprietary formats make it hard to migrate
+</p>
+
+<p>
+<strong>Resistance strategies:</strong>
+- Self-hosting (Nextcloud, Syncthing)
+- Distributed storage (IPFS, BitTorrent, Filecoin)
+- Local-first software (data lives on your device, syncs peer-to-peer)
+- Regular exports (even if using cloud, keep local backups)
+</p>
+
+<h3>Layer 5: Application Layer (Interface Layer)</h3>
+
+<p>
+<strong>What it is:</strong>
+- The software you actually use: social media apps, email clients, browsers, editors
+- Web apps (run in browser, on company servers)
+- Native apps (run on your device, may or may not depend on servers)
+- Protocols (open standards that any app can implement)
+</p>
+
+<p>
+<strong>Who controls it:</strong>
+- Platform companies (Facebook, Twitter, TikTok)
+- Open source communities (Firefox, Linux, WordPress)
+- Standards bodies (W3C for web standards, IETF for internet protocols)
+</p>
+
+<p>
+<strong>Sovereignty implications:</strong>
+- Proprietary apps lock you into a platform's ecosystem
+- Open source apps can be forked if the company sells out
+- Open protocols allow multiple competing apps (email: Gmail, Outlook, Apple Mail all work together)
+</p>
+
+<p>
+<strong>Vulnerability:</strong>
+- <strong>Platform changes</strong>: Twitter can redesign its app, remove features users rely on
+- <strong>API shutdowns</strong>: Third-party apps can be killed (Twitter banned third-party clients in 2023)
+- <strong>Dark patterns</strong>: Apps designed to be addictive, manipulative (infinite scroll, notification spam)
+</p>
+
+<p>
+<strong>Resistance strategies:</strong>
+- Use open source apps (can't be taken away)
+- Use protocol-based tools (email, RSS, ActivityPub)
+- Support third-party clients (don't let platforms monopolize access)
+- Build alternatives (if platform sucks, fork it or build competitor)
+</p>
+
+<h3>Layer 6: Economic Layer (Value Layer)</h3>
+
+<p>
+<strong>What it is:</strong>
+- How money flows through digital systems
+- Payment processors (Visa, PayPal, Stripe)
+- Platform monetization (ads, subscriptions, cuts of transactions)
+- Cryptocurrency (Bitcoin, Ethereum)
+- Creator economy (Patreon, Ko-fi, OnlyFans)
+</p>
+
+<p>
+<strong>Who controls it:</strong>
+- Payment oligopolies (Visa/Mastercard process ~80% of transactions)
+- Platform companies (take 30% cuts on app stores, 15-50% on creator platforms)
+- Banks and regulators (can freeze accounts, block payments)
+</p>
+
+<p>
+<strong>Sovereignty implications:</strong>
+- If platforms or payment processors can cut off your income, you're not economically sovereign
+- Deplatforming often includes payment bans (see: sex workers, political dissidents, WikiLeaks)
+- Creator economy gives some independence, but platforms still take large cuts
+</p>
+
+<p>
+<strong>Vulnerability:</strong>
+- <strong>Payment processor power</strong>: Visa/PayPal can ban you, cutting off all income
+- <strong>Platform rent-seeking</strong>: App stores take 30%, creator platforms take 15-50%
+- <strong>Regulatory capture</strong>: Governments can pressure payment companies to ban disfavored actors
+</p>
+
+<p>
+<strong>Resistance strategies:</strong>
+- Cryptocurrency (censorship-resistant payments, but volatile and technical barriers)
+- Direct payments (checks, cash, wire transfers—cumbersome but sovereign)
+- Cooperatively-owned payment systems (credit unions, payment co-ops)
+- Multiple revenue streams (don't depend on one platform or processor)
+</p>
+
+<h2>Part II: The Stack in Practice — Case Studies of Control and Resistance</h2>
+
+<h3>Case Study 1: DNS Control — The .ly Seizure (Layer 2)</h3>
+
+<p>
+<strong>What Happened:</strong>
+</p>
+
+<p>
+In 2010, Libya (which controls the <code>.ly</code> top-level domain) seized <code>vb.ly</code>, a popular URL shortener, for "violating Libyan Islamic morality laws." The site had shortened links to content Libya deemed offensive.
+</p>
+
+<p>
+<strong>Impact:</strong>
+- Thousands of shortened URLs broke instantly
+- Blogs, tweets, forum posts—all pointing to dead links
+- Content wasn't deleted, but became unreachable via those URLs
+</p>
+
+<p>
+<strong>Sovereignty Stack Analysis:</strong>
+</p>
+
+<p>
+| Layer | Vulnerability | Lesson |
+|-------|---------------|--------|
+| Physical | Content was fine (on US servers) | Not the issue |
+| Network (DNS) | <strong>CRITICAL FAILURE</strong> | Libya controlled .ly TLD, seized the domain |
+| Identity | Vb.ly users lost identity (their short URLs) | Dependent on DNS |
+| Storage | Content still existed | But unreachable |
+| Application | URL shortener app still worked | But domain gone |
+| Economic | Vb.ly lost revenue | Revenue depends on domain access |
+</p>
+
+<p>
+<strong>Lesson:</strong> Even if you control Layers 4-6 (storage, apps, payment), if Layer 2 (DNS) is captured, you're toast.
+</p>
+
+<p>
+<strong>Resistance:</strong> Use domains under TLDs controlled by stable, rights-respecting jurisdictions. Or use alternative naming (onion addresses, IPFS hashes, blockchain names).
+</p>
+
+<h3>Case Study 2: AWS Deplatforming — Parler (Layer 1)</h3>
+
+<p>
+<strong>What Happened:</strong>
+</p>
+
+<p>
+In January 2021, Amazon Web Services (AWS) terminated Parler's hosting contract, citing Terms of Service violations (insufficient moderation of violent content). Parler went offline for a month until they found alternative hosting.
+</p>
+
+<p>
+<strong>Impact:</strong>
+- Entire platform inaccessible (no hosting = no site)
+- Millions of users locked out
+- Parler eventually returned via smaller hosting providers, but with degraded performance
+</p>
+
+<p>
+<strong>Sovereignty Stack Analysis:</strong>
+</p>
+
+<p>
+| Layer | Vulnerability | Lesson |
+|-------|---------------|--------|
+| Physical | <strong>CRITICAL FAILURE</strong> | AWS controlled servers, kicked Parler off |
+| Network | Parler still had their domain | But no servers to point to |
+| Identity | User accounts existed (in database) | But database offline |
+| Storage | Data existed (Parler had backups) | But no public access |
+| Application | Parler's app still existed | But servers offline |
+| Economic | Couldn't run ads or process payments | Business model dead |
+</p>
+
+<p>
+<strong>Lesson:</strong> If you don't own Layer 1 (physical infrastructure), you're vulnerable to hosting providers' decisions. AWS, Google Cloud, and Azure are de facto gatekeepers.
+</p>
+
+<p>
+<strong>Resistance:</strong> Self-host (expensive and technical), use offshore hosting (politically risky), or distribute across multiple providers (complex but resilient).
+</p>
+
+<h3>Case Study 3: Platform Identity Control — Facebook's Real Name Policy (Layer 3)</h3>
+
+<p>
+<strong>What Happened:</strong>
+</p>
+
+<p>
+Facebook required users to use their legal names (2014 policy enforcement wave). Thousands of accounts suspended:
+- Drag performers using stage names
+- Native Americans with non-Western naming conventions
+- Abuse survivors hiding from stalkers
+- LGBTQ+ people using chosen names
+</p>
+
+<p>
+<strong>Impact:</strong>
+- Users lost access to years of posts, photos, friend networks
+- Some lost business pages tied to stage personas
+- Forced outing for trans people using new names
+</p>
+
+<p>
+<strong>Sovereignty Stack Analysis:</strong>
+</p>
+
+<p>
+| Layer | Vulnerability | Lesson |
+|-------|---------------|--------|
+| Physical | Not the issue | Servers worked fine |
+| Network | Not the issue | DNS worked fine |
+| Identity | <strong>CRITICAL FAILURE</strong> | Facebook controlled identity, could revoke it |
+| Storage | Data existed but locked | Users couldn't access their own content |
+| Application | Facebook app worked | But identity removed |
+| Economic | Lost business pages | Revenue tied to identity |
+</p>
+
+<p>
+<strong>Lesson:</strong> Platform-controlled identity is <strong>leased</strong>, not owned. If the platform can delete your identity, you have no Declaration (Pillar 1).
+</p>
+
+<p>
+<strong>Resistance:</strong> Use federated identity (@user@your-domain.com), self-host identity, use cryptographic keys (not platform usernames).
+</p>
+
+<h3>Case Study 4: Payment Processor Deplatforming — WikiLeaks (Layer 6)</h3>
+
+<p>
+<strong>What Happened:</strong>
+</p>
+
+<p>
+In 2010, after WikiLeaks published classified US documents, Visa, Mastercard, PayPal, and Bank of America all cut off WikiLeaks' payment processing. Donations plummeted 95%.
+</p>
+
+<p>
+<strong>Impact:</strong>
+- WikiLeaks nearly went bankrupt
+- Couldn't accept credit card donations
+- Had to rely on Bitcoin (before it was widely adopted)
+</p>
+
+<p>
+<strong>Sovereignty Stack Analysis:</strong>
+</p>
+
+<p>
+| Layer | Vulnerability | Lesson |
+|-------|---------------|--------|
+| Physical | Hosting providers also pressured | But WikiLeaks migrated |
+| Network | Domain pressured but survived | DNS remained |
+| Identity | Not the issue | WikiLeaks identity intact |
+| Storage | Archives remained accessible | Data fine |
+| Application | Website worked | Accessible |
+| Economic | <strong>CRITICAL FAILURE</strong> | Payment processors cut off revenue |
+</p>
+
+<p>
+<strong>Lesson:</strong> Economic sovereignty (Layer 6) is essential. If payment processors can deplatform you, you're economically vulnerable no matter how technically sovereign you are.
+</p>
+
+<p>
+<strong>Resistance:</strong> Bitcoin (WikiLeaks adopted it, later profited from appreciation), direct bank transfers (slow, high fees), cash/checks (physical, not scalable).
+</p>
+
+<h3>Case Study 5: Mastodon Federation — Distributed Resilience (Layers 2-5)</h3>
+
+<p>
+<strong>What Happened:</strong>
+</p>
+
+<p>
+Mastodon launched in 2016 as a federated alternative to Twitter. Anyone can run a Mastodon instance (server); instances communicate via ActivityPub protocol.
+</p>
+
+<p>
+<strong>Resilience across layers:</strong>
+</p>
+
+<p>
+| Layer | How Mastodon Resists Capture |
+|-------|------------------------------|
+| Physical | Distributed servers (no single company owns all hosting) |
+| Network | Open protocol (ActivityPub—any server can join) |
+| Identity | Federated (@user@instance.com—tied to instance, but migratable) |
+| Storage | Instance admin controls data (users can export, migrate) |
+| Application | Open source (anyone can fork, improve, or run their own version) |
+| Economic | Varied models (donations, subscriptions, volunteer-run) |
+</p>
+
+<p>
+<strong>Advantages:</strong>
+- No single point of failure (if one instance dies, others survive)
+- No corporate control (community-governed instances)
+- Portable identity (can migrate between instances)
+</p>
+
+<p>
+<strong>Challenges:</strong>
+- Instance admin power (can still ban you from that instance)
+- Fragmentation (instances defederate, creating silos)
+- Technical barriers (running an instance requires skill)
+- Economic sustainability (many instances struggle to fund themselves)
+</p>
+
+<p>
+<strong>Lesson:</strong> Federation distributes sovereignty but doesn't eliminate all vulnerabilities. Still better than centralized platforms.
+</p>
+
+<h2>Part III: Redesigning the Stack — Alternatives to Centralized Control</h2>
+
+<h3>Layer 1 Alternatives: Physical Infrastructure</h3>
+
+<p>
+<strong>Problem:</strong> Cloud oligopoly (AWS, Google Cloud, Azure control most hosting)
+</p>
+
+<p>
+<strong>Alternatives:</strong>
+</p>
+
+<p>
+<strong>Community-Owned ISPs:</strong>
+- Fiber cooperatives (users own the network)
+- Examples: Chattanooga's municipal fiber, NYC Mesh
+- Advantages: Democratic control, no corporate extraction
+- Challenges: Requires local organizing, capital investment
+</p>
+
+<p>
+<strong>Peer-to-Peer Hosting:</strong>
+- IPFS (InterPlanetary File System): Content distributed across many nodes
+- BitTorrent: Files seeded by many users, no central server
+- Advantages: No single point of failure, censorship-resistant
+- Challenges: Slow for dynamic content, legal gray areas
+</p>
+
+<p>
+<strong>Mesh Networks:</strong>
+- Wireless networks where users' devices relay traffic
+- Example: Freifunk (Germany), NYC Mesh
+- Advantages: No central ISP, community-controlled
+- Challenges: Limited range, technical complexity
+</p>
+
+<h3>Layer 2 Alternatives: Network Protocols</h3>
+
+<p>
+<strong>Problem:</strong> DNS centralization (ICANN controls root servers, domain seizures possible)
+</p>
+
+<p>
+<strong>Alternatives:</strong>
+</p>
+
+<p>
+<strong>Blockchain-Based Naming:</strong>
+- <strong>ENS (Ethereum Name Service)</strong>: Register .eth names on Ethereum blockchain
+  - Advantages: Censorship-resistant (no government can seize), permanent ownership
+  - Challenges: Requires crypto wallet, expensive (gas fees), not browser-native
+- <strong>Namecoin</strong>: Bitcoin-based naming system (.bit domains)
+  - Similar trade-offs to ENS
+</p>
+
+<p>
+<strong>Onion Routing:</strong>
+- <strong>Tor hidden services</strong>: Sites with .onion addresses (e.g., <code>3g2upl4pq6kufc4m.onion</code> for DuckDuckGo)
+  - Advantages: Censorship-resistant, anonymous hosting
+  - Challenges: Slow, not user-friendly (long random addresses), stigma
+</p>
+
+<p>
+<strong>Content-Addressed Networking:</strong>
+- <strong>IPFS</strong>: Content identified by hash, not location
+  - Example: <code>ipfs://QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco</code> (instead of http://example.com)
+  - Advantages: Content can't be censored by taking down a domain
+  - Challenges: Not human-readable, requires IPFS-enabled browser
+</p>
+
+<h3>Layer 3 Alternatives: Identity Systems</h3>
+
+<p>
+<strong>Problem:</strong> Platform-controlled identity (Facebook, Google can delete your account)
+</p>
+
+<p>
+<strong>Alternatives:</strong>
+</p>
+
+<p>
+<strong>Federated Identity:</strong>
+- <strong>ActivityPub</strong>: @user@instance.com (like email addresses)
+- <strong>IndieAuth</strong>: Use your own domain as identity
+- Advantages: Portable (can migrate), not owned by one company
+- Challenges: Requires domain ownership, instances can still ban you
+</p>
+
+<p>
+<strong>Decentralized Identifiers (DIDs):</strong>
+- Cryptographic identities (public/private key pairs)
+- Not tied to any platform or domain
+- Advantages: Truly sovereign (you control the keys)
+- Challenges: Hard to remember (long strings of characters), key management risky (lose key = lose identity)
+</p>
+
+<p>
+<strong>Self-Hosted Email:</strong>
+- Run your own email server (user@yourdomain.com)
+- Advantages: Full control, federated (can email anyone)
+- Challenges: Technical (requires sysadmin skills), anti-spam filters often block self-hosted email
+</p>
+
+<h3>Layer 4 Alternatives: Data Storage</h3>
+
+<p>
+<strong>Problem:</strong> Cloud lock-in (Google, Dropbox, iCloud can delete your data or change terms)
+</p>
+
+<p>
+<strong>Alternatives:</strong>
+</p>
+
+<p>
+<strong>Self-Hosted Storage:</strong>
+- <strong>Nextcloud</strong>: Open-source cloud (like Dropbox, but you run it)
+- <strong>Syncthing</strong>: Peer-to-peer file sync (no central server)
+- Advantages: Full control, no surveillance
+- Challenges: Requires server management, backups are your responsibility
+</p>
+
+<p>
+<strong>Distributed Storage:</strong>
+- <strong>IPFS</strong>: Content stored across network, no single server
+- <strong>Filecoin</strong>: Pay for distributed storage with cryptocurrency
+- <strong>Arweave</strong>: "Permanent" storage (pay once, store forever)
+- Advantages: Censorship-resistant, redundant
+- Challenges: Cost, performance, complexity
+</p>
+
+<p>
+<strong>Local-First Software:</strong>
+- Apps that store data on your device, sync peer-to-peer
+- Examples: Obsidian (notes), Logseq (knowledge management)
+- Advantages: Your data, no cloud dependency
+- Challenges: Syncing across devices is harder
+</p>
+
+<h3>Layer 5 Alternatives: Application Layer</h3>
+
+<p>
+<strong>Problem:</strong> Proprietary apps (Twitter, Facebook control how you use their platforms)
+</p>
+
+<p>
+<strong>Alternatives:</strong>
+</p>
+
+<p>
+<strong>Open Source Apps:</strong>
+- <strong>Mastodon</strong>: Open-source Twitter alternative
+- <strong>Pixelfed</strong>: Open-source Instagram alternative
+- <strong>PeerTube</strong>: Open-source YouTube alternative
+- Advantages: Can fork if company sells out, community-governed
+- Challenges: Often lag in features, smaller user bases
+</p>
+
+<p>
+<strong>Protocol-Based Tools:</strong>
+- <strong>Email</strong>: Any client can access any server
+- <strong>RSS</strong>: Any reader can subscribe to any feed
+- <strong>ActivityPub</strong>: Any app can communicate with any instance
+- Advantages: No vendor lock-in, interoperability
+- Challenges: Less shiny than proprietary apps, requires coordination
+</p>
+
+<h3>Layer 6 Alternatives: Economic Layer</h3>
+
+<p>
+<strong>Problem:</strong> Payment processor oligopoly (Visa/PayPal can deplatform you)
+</p>
+
+<p>
+<strong>Alternatives:</strong>
+</p>
+
+<p>
+<strong>Cryptocurrency:</strong>
+- <strong>Bitcoin, Ethereum, etc.</strong>: Censorship-resistant payments
+- Advantages: No bank or processor can block you
+- Challenges: Volatile, technical barriers, environmental concerns, regulatory uncertainty
+</p>
+
+<p>
+<strong>Cooperatively-Owned Payment Systems:</strong>
+- <strong>Credit unions</strong>: Member-owned banks
+- <strong>Payment cooperatives</strong>: Users own the payment network
+- Advantages: Democratic control, aligned incentives
+- Challenges: Smaller networks, less convenient
+</p>
+
+<p>
+<strong>Direct Transactions:</strong>
+- <strong>Wire transfers, checks, cash</strong>: No intermediary
+- Advantages: Can't be deplatformed
+- Challenges: Slow, expensive, not scalable online
+</p>
+
+<p>
+<strong>Platform Cooperatives:</strong>
+- <strong>Stocksy</strong>: Photographer-owned stock photo agency
+- <strong>Resonate</strong>: Musician-owned streaming service
+- Advantages: Workers own the platform, keep more revenue
+- Challenges: Hard to scale, less capital for growth
+</p>
+
+<h2>Part IV: The Sovereignty Stack as Design Framework</h2>
+
+<p>
+When building new tools, platforms, or institutions, use the Sovereignty Stack as a <strong>design checklist</strong>:
+</p>
+
+<h3>Sovereignty Audit Template</h3>
+
+<p>
+For each layer, ask:
+</p>
+
+<p>
+<strong>Layer 1: Physical Infrastructure</strong>
+- [ ] Where are the servers? Who owns them?
+- [ ] What happens if the hosting provider kicks us off?
+- [ ] Do we have redundancy (multiple data centers)?
+</p>
+
+<p>
+<strong>Layer 2: Network Protocols</strong>
+- [ ] Are we using open protocols or proprietary ones?
+- [ ] Can we be censored via DNS (domain seizure)?
+- [ ] Do we have fallback addresses (onion, IPFS, etc.)?
+</p>
+
+<p>
+<strong>Layer 3: Identity</strong>
+- [ ] Do users own their identities (domain-based, cryptographic)?
+- [ ] Can we revoke identities (if so, under what conditions)?
+- [ ] Can users migrate identities to other systems?
+</p>
+
+<p>
+<strong>Layer 4: Storage</strong>
+- [ ] Do users own their data legally?
+- [ ] Can users export everything easily?
+- [ ] Is data stored centrally (vulnerable) or distributed?
+</p>
+
+<p>
+<strong>Layer 5: Application</strong>
+- [ ] Is the software open source (can users fork it)?
+- [ ] Does it depend on our servers, or is it peer-to-peer?
+- [ ] Can other apps interoperate with ours (open protocols)?
+</p>
+
+<p>
+<strong>Layer 6: Economic</strong>
+- [ ] How do we make money without surveillance/extraction?
+- [ ] What payment systems do we use (vulnerable to deplatforming)?
+- [ ] Do we have multiple revenue streams?
+</p>
+
+<h3>Example Audit: Ghost vs. Medium</h3>
+
+<p>
+<strong>Ghost (High Sovereignty):</strong>
+</p>
+
+<p>
+| Layer | Assessment |
+|-------|------------|
+| Physical | Self-hosted option (users run their own servers) OR Ghost(Pro) hosting (can migrate away) |
+| Network | Custom domains supported (users own their URLs) |
+| Identity | Domain-based (you@yourblog.com) |
+| Storage | Users own data, full export tools |
+| Application | Open source (can fork if Ghost Ltd dies) |
+| Economic | Subscriptions (users pay Ghost, or self-host for free), no ads |
+</p>
+
+<p>
+<strong>Medium (Low Sovereignty):</strong>
+</p>
+
+<p>
+| Layer | Assessment |
+|-------|------------|
+| Physical | Medium's servers only |
+| Network | medium.com/@username (don't own domain) |
+| Identity | Platform-controlled (Medium can ban you) |
+| Storage | Data on Medium's servers (export exists but limited) |
+| Application | Proprietary (can't fork, can't self-host) |
+| Economic | Ad/subscription-based (users don't control revenue model) |
+</p>
+
+<p>
+<strong>Result:</strong> Ghost embodies more sovereignty across all layers.
+</p>
+
+<h2>Part V: The Political Economy Question — Who Should Own Infrastructure?</h2>
+
+<h3>Three Models of Ownership</h3>
+
+<p>
+<strong>Model 1: Corporate Ownership (Status Quo)</strong>
+- Private companies own most infrastructure
+- Examples: AWS, Cloudflare, Visa, Google
+- Advantages: Convenient, well-funded, feature-rich
+- Disadvantages: Extractive, surveillance-based, can deplatform users
+</p>
+
+<p>
+<strong>Model 2: State Ownership</strong>
+- Governments own critical infrastructure
+- Examples: Postal service, public utilities, national postal banks
+- Advantages: Democratic accountability (in theory), public service mandate
+- Disadvantages: Vulnerable to authoritarianism, bureaucratic, underfunded
+</p>
+
+<p>
+<strong>Model 3: Commons Ownership</strong>
+- Users collectively own infrastructure
+- Examples: Wikipedia, cooperatives, federated networks
+- Advantages: Aligned incentives, democratic, mission-driven
+- Disadvantages: Coordination challenges, underfunded, slower innovation
+</p>
+
+<h3>Archaeobytology's Position: <strong>Pluralism</strong></h3>
+
+<p>
+We need <strong>all three models</strong> for different layers and contexts:
+</p>
+
+<p>
+- <strong>Layer 1 (Physical)</strong>: Mix of corporate, state, and community-owned (diversity prevents single point of failure)
+- <strong>Layer 2 (Network)</strong>: Open protocols (state/community standards-setting, anyone can implement)
+- <strong>Layer 3 (Identity)</strong>: Individual ownership (federated or cryptographic)
+- <strong>Layer 4 (Storage)</strong>: Mix of self-hosted and cooperatively-managed
+- <strong>Layer 5 (Application)</strong>: Open source (community-owned code)
+- <strong>Layer 6 (Economic)</strong>: Multiple options (crypto, co-ops, traditional payment—let users choose)
+</p>
+
+<p>
+<strong>No single model is perfect.</strong> The goal is <strong>pluralism</strong>: multiple ownership structures coexisting, so users aren't dependent on any one.
+</p>
+
+<h2>Part VI: Threat Modeling — Attacks on Each Layer</h2>
+
+<h3>Threat 1: State Surveillance (All Layers)</h3>
+
+<p>
+<strong>Attack Vector:</strong> Governments compel infrastructure providers to surveil users
+</p>
+
+<p>
+<strong>Examples:</strong>
+- NSA tapping undersea cables (Layer 1)
+- Forcing DNS providers to log queries (Layer 2)
+- Demanding user identity records (Layer 3)
+- Accessing cloud storage without warrants (Layer 4)
+- Installing backdoors in apps (Layer 5)
+- Tracking financial transactions (Layer 6)
+</p>
+
+<p>
+<strong>Defenses:</strong>
+- End-to-end encryption (can't surveil what you can't read)
+- Jurisdiction shopping (host in privacy-respecting countries)
+- Onion routing (obscure who's talking to whom)
+- Decentralization (harder to compel many actors than one)
+</p>
+
+<h3>Threat 2: Corporate Extraction (Layers 4-6)</h3>
+
+<p>
+<strong>Attack Vector:</strong> Companies monetize user data and attention
+</p>
+
+<p>
+<strong>Examples:</strong>
+- Surveillance advertising (Layer 4: data mining)
+- Algorithmic manipulation (Layer 5: addictive app design)
+- Platform rent (Layer 6: taking 30% cuts)
+</p>
+
+<p>
+<strong>Defenses:</strong>
+- Business models that don't require surveillance (subscriptions, donations)
+- Open source alternatives (no company owns the app)
+- Data ownership (users control, export, delete)
+</p>
+
+<h3>Threat 3: Platform Capture (Layers 3-5)</h3>
+
+<p>
+<strong>Attack Vector:</strong> Dominant platforms use network effects to lock in users
+</p>
+
+<p>
+<strong>Examples:</strong>
+- Identity capture (can't leave Facebook without losing social graph)
+- Data lock-in (hard to export and migrate)
+- API restrictions (third-party apps banned)
+</p>
+
+<p>
+<strong>Defenses:</strong>
+- Interoperability (force platforms to allow data portability)
+- Federation (multiple providers, users can migrate)
+- Open protocols (anyone can build competing apps)
+</p>
+
+<h3>Threat 4: Infrastructure Fragility (Layer 1)</h3>
+
+<p>
+<strong>Attack Vector:</strong> Physical infrastructure fails or is attacked
+</p>
+
+<p>
+<strong>Examples:</strong>
+- Undersea cable cuts (accidental or sabotage)
+- Data center fires (OVH fire in 2021 destroyed thousands of sites)
+- Power grid failures (take down entire regions)
+</p>
+
+<p>
+<strong>Defenses:</strong>
+- Redundancy (multiple data centers, geographic distribution)
+- Peer-to-peer architectures (no single server to attack)
+- Regular backups (distributed across locations)
+</p>
+
+<h2>Conclusion: Sovereignty Requires Stack Thinking</h2>
+
+<p>
+You cannot achieve digital sovereignty by fixing one layer. Even if you:
+- Own your domain (Layer 2)
+- Use open source software (Layer 5)
+- Self-host your data (Layer 4)
+</p>
+
+<p>
+...you're still vulnerable if:
+- Your hosting provider kicks you off (Layer 1)
+- Payment processors deplatform you (Layer 6)
+- Your identity depends on a platform (Layer 3)
+</p>
+
+<p>
+<strong>Sovereignty requires thinking across all six layers.</strong> It's not enough to own one part of the stack; you need resilience at every level.
+</p>
+
+<p>
+This is hard. Full-stack sovereignty is expensive, technical, and time-consuming. Most people will accept some vulnerability in exchange for convenience. That's okay—<strong>sovereignty is a spectrum</strong>, not binary.
+</p>
+
+<p>
+But the Sovereignty Stack helps you:
+- <strong>Diagnose vulnerabilities</strong>: Where are you most at risk?
+- <strong>Prioritize fixes</strong>: Which layer matters most for your use case?
+- <strong>Design resilient systems</strong>: How do you build across all layers?
+- <strong>Evaluate tools</strong>: Does this app/platform embody sovereignty?
+</p>
+
+<p>
+In the next chapter, we'll explore <strong>movement building</strong>—how to turn individual sovereignty into collective power. Because infrastructure isn't just technical; it's <strong>political</strong>. Changing who controls the stack requires organizing, advocacy, and policy change.
+</p>
+
+<p>
+The political economy of Ground isn't just about building alternatives. It's about <strong>fighting for a different kind of internet</strong>—one where users, not corporations or states, have power.
+</p>
+
+<p>
+That fight begins with understanding the Stack. Now you do.
+</p>
+
+<h2>Discussion Questions</h2>
+
+<p>
+1. <strong>Personal Sovereignty Audit</strong>: Use the Sovereignty Stack to audit your own digital life. Which layers are you most vulnerable on? Which are you most secure on?
+</p>
+
+<p>
+2. <strong>Trade-offs</strong>: Would you accept less convenience for more sovereignty? Where's your breaking point? (e.g., Would you run your own email server?)
+</p>
+
+<p>
+3. <strong>Threat Prioritization</strong>: Which threat is most dangerous: state surveillance, corporate extraction, platform capture, or infrastructure fragility? Does it depend on your context?
+</p>
+
+<p>
+4. <strong>Ownership Models</strong>: Should critical infrastructure (DNS, payment systems, cloud hosting) be owned by corporations, governments, or commons? What's best for sovereignty?
+</p>
+
+<p>
+5. <strong>Layer Interdependence</strong>: If you could only secure ONE layer of the stack, which would you choose? Why?
+</p>
+
+<p>
+6. <strong>Future Scenario</strong>: Imagine 2040. What does digital infrastructure look like if Archaeobytology succeeds? What if it fails?
+</p>
+
+<h2>Exercise: Redesign One Layer</h2>
+
+<p>
+<strong>Task</strong>: Choose one layer of the Sovereignty Stack. Redesign it to maximize sovereignty while remaining practically viable.
+</p>
+
+<p>
+<strong>Part 1: Critique Current State</strong> (500 words)
+- How does the current system work?
+- Who controls it?
+- What are the sovereignty failures?
+- What specific harms result from current design?
+</p>
+
+<p>
+<strong>Part 2: Design Alternative</strong> (1000 words)
+- How would you redesign this layer?
+- What technologies enable your design?
+- How does it resist capture (corporate, state, platform)?
+- How does it balance sovereignty with usability?
+</p>
+
+<p>
+<strong>Part 3: Adoption Strategy</strong> (500 words)
+- How do you get people to switch?
+- What's the transition path from current system to yours?
+- What are the obstacles (technical, economic, political)?
+</p>
+
+<p>
+<strong>Part 4: Threat Model</strong> (500 words)
+- How would each threat actor attack your system?
+  - State surveillance
+  - Corporate extraction
+  - Platform capture
+  - Infrastructure failure
+- What defenses have you built in?
+- What vulnerabilities remain?
+</p>
+
+<p>
+<strong>Part 5: Reflect</strong> (300 words)
+- What surprised you about this design exercise?
+- What compromises did you have to make?
+- Would you personally use the system you designed?
+</p>
+
+<h2>Further Reading</h2>
+
+<h3>On Infrastructure and Power</h3>
+
+<p>
+- Lessig, Lawrence. <em>Code: Version 2.0</em>. Basic Books, 2006.
+  - Classic on how digital architecture encodes power
+</p>
+
+<p>
+- Star, Susan Leigh. "The Ethnography of Infrastructure." <em>American Behavioral Scientist</em> 43, no. 3 (1999): 377-391.
+  - Infrastructure is political, not neutral
+</p>
+
+<p>
+- Winner, Langdon. "Do Artifacts Have Politics?" <em>Daedalus</em> 109, no. 1 (1980): 121-136.
+  - Technologies embody political choices
+</p>
+
+<h3>On Specific Layers</h3>
+
+<p>
+- Mueller, Milton. <em>Networks and States: The Global Politics of Internet Governance</em>. MIT Press, 2010.
+  - On DNS, ICANN, and network governance
+</p>
+
+<p>
+- Schneier, Bruce. <em>Data and Goliath</em>. W.W. Norton, 2015.
+  - On surveillance at every layer
+</p>
+
+<p>
+- DeNardis, Laura. <em>The Global War for Internet Governance</em>. Yale, 2014.
+  - Who controls protocols and standards
+</p>
+
+<h3>On Alternatives</h3>
+
+<p>
+- Doctorow, Cory. <em>The Internet Con: How to Seize the Means of Computation</em>. Verso, 2023.
+  - On interoperability and adversarial compat
+</p>
+
+<p>
+- Bauwens, Michel, and Vasilis Kostakis. <em>Network Society and Future Scenarios for a Collaborative Economy</em>. Palgrave, 2014.
+  - On commons-based alternatives
+</p>
+
+<p>
+- Schneider, Nathan. "Cryptoeconomics as a Limitation on Governance." COALA Workshop, 2017.
+  - On blockchain governance and limitations
+</p>
+
+<h3>Primary Sources</h3>
+
+<p>
+- Tor Project. "How Tor Works." https://www.torproject.org/about/history/
+- IPFS Documentation. https://docs.ipfs.tech/
+- ENS Documentation. https://docs.ens.domains/
+- Mastodon Documentation. https://docs.joinmastodon.org/
+</p>
+
+<p>
+<strong>End of Chapter 15</strong>
+</p>
+
+<p>
+<em>Next: Chapter 16 — From Practice to Discipline: Movement Building</em>
+</p>
+
+
+        </article>
+        <div class="nav">
+            <a href="index.html">Back to Table of Contents</a>
+        </div>
+    </div>
+</body>
+</html>

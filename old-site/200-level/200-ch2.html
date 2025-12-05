@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- === 1. Primary Meta Tags === -->
+    <title>Chapter 2: Deep Triage | Archaeobytology.org</title>
+    <meta name="title" content="Chapter 2: Deep Triage | Archaeobytology.org">
+    <meta name="description" content="This chapter establishes the advanced classification methodology of the Archaeobytologist: the Triage Protocol.">
+    <meta name="keywords" content="Deep Triage, Triage Protocol, Vivibyte, Umbrabyte, Petribyte, Digital Archaeology, Archaeobytology">
+    <meta name="author" content="archaeobytology.org (An unearth.im Project)">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <link rel="canonical" href="https://archaeobytology.org/200-level/200-ch2.html" />
+
+    <!-- === 2. Webmention Endpoint === -->
+    <link rel="webmention" href="https://webmention.io/unearth.im/webmention" />
+
+    <!-- === 3. Open Graph / Facebook === -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://archaeobytology.org/200-level/200-ch2.html">
+    <meta property="og:title" content="Chapter 2: Deep Triage | Archaeobytology.org">
+    <meta property="og:description" content="This chapter establishes the advanced classification methodology of the Archaeobytologist: the Triage Protocol.">
+    <meta property="og:image" content="https://archaeobytology.org/200-level/og-image.png">
+    <meta property="og:site_name" content="Archaeobytology.org">
+
+    <!-- === 4. Twitter Card === -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://archaeobytology.org/200-level/200-ch2.html">
+    <meta property="twitter:title" content="Chapter 2: Deep Triage | Archaeobytology.org">
+    <meta property="twitter:description" content="This chapter establishes the advanced classification methodology of the Archaeobytologist: the Triage Protocol.">
+    <meta property="twitter:image" content="https://archaeobytology.org/200-level/og-image.png">
+
+    <!-- === Favicons === -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta name="theme-color" content="#fcfaf5">
+    <meta name="msapplication-TileColor" content="#BF5700">
+
+    <!-- === Tailwind CSS === -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'unearth-bg': '#fcfaf5',
+            'unearth-surface': '#f9fafb',
+            'unearth-main': '#1a1a1a',
+            'unearth-secondary': '#6b7280',
+            'unearth-primary': '#BF5700',
+            'unearth-course-accent': '#435d7a', // Scholarly Blue
+            'unearth-border': '#e5e7eb',
+          },
+          fontFamily: {
+            'narrative': ['Lora', 'serif'],
+            'ui': ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+    </script>
+
+    <!-- === Google Fonts: Lora & Inter === -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        html { scroll-behavior: smooth; }
+        /* Simple styles for the prose */
+        .prose h2 {
+            font-size: 1.875rem; /* text-3xl */
+            line-height: 2.25rem;
+            font-weight: 700;
+            letter-spacing: -0.025em; /* tracking-tight */
+            color: #1a1a1a; /* unearth-main */
+            font-family: 'Lora', serif;
+            margin-top: 4rem; /* mt-16 */
+            margin-bottom: 1.5rem; /* mb-6 */
+        }
+        .prose h3 {
+            font-size: 1.5rem; /* text-2xl */
+            line-height: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.025em; /* tracking-tight */
+            color: #1a1a1a; /* unearth-main */
+            font-family: 'Lora', serif;
+            margin-top: 3rem; /* mt-12 */
+            margin-bottom: 1.5rem; /* mb-6 */
+        }
+        .prose h4 {
+            font-size: 1.25rem; /* text-xl */
+            line-height: 1.75rem;
+            font-weight: 700;
+            letter-spacing: -0.025em; /* tracking-tight */
+            color: #1a1a1a; /* unearth-main */
+            font-family: 'Lora', serif;
+            margin-top: 2rem; /* mt-8 */
+            margin-bottom: 1rem; /* mb-4 */
+        }
+        .prose p, .prose ul, .prose ol {
+            font-size: 1.25rem; /* text-xl */
+            font-family: 'Lora', serif;
+            line-height: 1.8;
+            margin-top: 1.5rem; /* mt-6 */
+            color: #1a1a1a; /* unearth-main */
+        }
+        .prose strong {
+            color: #1a1a1a; /* unearth-main */
+            font-weight: 700;
+        }
+        .prose em {
+            font-style: italic;
+        }
+        .prose sup {
+            color: #BF5700; /* unearth-primary */
+            font-weight: 600;
+            font-size: 0.8em;
+            vertical-align: super;
+            margin-left: 2px;
+        }
+        .prose code {
+            background-color: #e5e7eb; /* unearth-border */
+            padding: 0.125rem 0.375rem; /* px-1.5 py-0.5 */
+            border-radius: 0.25rem; /* rounded */
+            font-size: 1rem; /* text-base */
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            color: #BF5700; /* unearth-primary */
+        }
+        .works-cited ol { list-style: none; padding-left: 0; }
+        .works-cited li { display: flex; align-items: baseline; margin-top: 1rem; }
+        .works-cited li span:first-child { width: 4rem; flex-shrink: 0; }
+        .works-cited li span:last-child { flex: 1; }
+    </style>
+</head>
+<body class="bg-unearth-bg text-unearth-main antialiased font-ui relative">
+
+    <!-- === Section Indicator Bar === -->
+    <div class="h-2 w-full bg-unearth-course-accent"></div>
+
+    <!-- === Header === -->
+    <nav class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div class="flex justify-between items-center">
+            <!-- Logo / Title -->
+            <a href="../index.html" title="Back to archaeobytology.org" class="flex items-baseline space-x-2 group">
+                <span class="text-2xl font-bold tracking-tighter text-unearth-main group-hover:text-unearth-primary transition-colors font-narrative">archaeobytology</span>
+                <span class="text-xl font-bold text-unearth-primary font-narrative">.org</span>
+            </a>
+            <!-- Attribution Link -->
+            <div>
+                <span class="text-sm text-unearth-secondary hidden sm:inline">
+               an 
+                <a href="https://unearth.im" class="font-semibold transition-colors group">
+                    <span class="text-unearth-main group-hover:text-unearth-primary">unearth</span><span class="text-unearth-primary">.im</span></a> 
+        series    
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- === Hero Section === -->
+    <header class="py-24 sm:py-32 border-b border-unearth-border">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl sm:text-7xl font-bold tracking-tighter text-unearth-main leading-tight font-narrative">
+                Chapter 2<span class="text-unearth-course-accent">.</span> Deep Triage
+            </h1>
+            <p class="mt-6 text-xl sm:text-2xl text-unearth-secondary max-w-3xl mx-auto font-narrative" style="line-height: 1.8;">
+                The Microscope of Classification
+            </p>
+        </div>
+    </header>
+
+    <!-- === Main Content: Essay === -->
+    <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+        
+        <!-- Back to Index Link -->
+        <div class="mb-16">
+            <a href="../index.html" class="inline-block bg-unearth-course-accent text-white font-semibold font-ui px-6 py-3 rounded-lg shadow-md hover:bg-unearth-main transition-all duration-200">
+                &larr; Return to Main Index
+            </a>
+        </div>
+        
+        <article class="prose">
+            <div class="bg-unearth-surface border border-unearth-border rounded-lg p-6 mb-12 font-narrative text-lg">
+                <p class="!mt-0"><strong>Course:</strong> Archaeobytology 200: Advanced Triage & Methodology</p>
+                <p><strong>Section:</strong> Part I - The Trowel</p>
+                <p class="!mb-0"><strong>Status:</strong> Final Academic Draft</p>
+            </div>
+
+            <h3>Abstract</h3>
+            <p>This chapter establishes the advanced classification methodology of the Archaeobytologist: the Triage Protocol. While the foundational theses defined the three states of the Archaeobyte (Vivibyte, Umbrabyte, Petribyte), this chapter addresses the operational challenge of classification in practice. The digital artifact does not arrive with a label; it must be diagnosed. This text provides the formal decision framework for moving from the "find" (Chapter 1's Excavation Protocol) to the "diagnosis" (the act of Triage). Drawing on diagnostic frameworks from library science, information architecture, and digital preservation theory, this chapter establishes the "tests" and "edge cases" that allow the practitioner to navigate the ambiguous boundaries between living, liminal, and petrified states.</p>
+
+            <h2>Preamble: The Microscope and the Crisis of Ambiguity</h2>
+            <p>The Excavation Protocol (Chapter 1) provided the Trowel: the methodology for finding a discrete Archaeobyte within the "crisis of noise." The practitioner has successfully isolated an artifact. It sits before them—a file, a screenshot, a fragment of code. The first question has been answered: "What is this?"</p>
+            <p>Now comes the second, more profound question: "What <em>state</em> is this?"</p>
+            <p>This is the moment of Triage. The term itself comes from the French <em>trier</em>, meaning "to sort" or "to select." In emergency medicine, triage is the process of rapidly assessing patients to determine priority of treatment based on severity.<sup id="ref-1"><a href="#fn-1" class="text-unearth-course-accent hover:underline">[1]</a></sup> In Archaeobytology, triage is the process of rapidly assessing artifacts to determine their state of preservation and, therefore, their path through the Archive and toward the Anvil.</p>
+            <p>The foundational theses established three classifications:</p>
+            <ul>
+                <li><strong>Vivibyte:</strong> The Living Archaeobyte. An artifact whose native function remains intact in the modern ecosystem.</li>
+                <li><strong>Umbrabyte:</strong> The Liminal Archaeobyte. An artifact whose file is preserved but whose context or ecosystem is extinct.</li>
+                <li><strong>Petribyte:</strong> The Petrified Archaeobyte. An artifact whose native function is completely extinct, often unreadable without emulation.</li>
+            </ul>
+            <p>These definitions are philosophically sound. But in practice, the boundaries blur. The digital artifact is a shape-shifter. A Flash <code>.swf</code> file was a Petribyte for a decade—completely unreadable after Adobe killed the player in 2020. But then the Ruffle emulator emerged, "resurrecting" the format. Did the artifact change its state? Or did the ecosystem change around it?</p>
+            <p>This is the "crisis of ambiguity." The practitioner cannot simply memorize a list of file extensions and their states. They must develop a <em>diagnostic methodology</em>—a set of tests, questions, and frameworks that can be applied to any artifact, regardless of format, to determine its true state.</p>
+            <p>This chapter provides that methodology. It is the Microscope: the tool that allows the practitioner to examine the artifact at a granular level and render a formal diagnosis.</p>
+
+            <h2>The Diagnostic Framework: Three Axes of Analysis</h2>
+            <p>The Triage Protocol is not a flowchart with simple yes/no questions. It is a three-dimensional diagnostic framework. Every artifact must be examined along three distinct axes to determine its true classification.</p>
+
+            <h3>Axis 1: Technical Legibility (Can It Be Read?)</h3>
+            <p>This is the most straightforward axis. It asks: Can a modern system parse and render this artifact without additional intervention?</p>
+            <p><strong>The Test:</strong> Open the artifact in a standard, unmodified, current-generation environment (a modern browser, a current OS, a standard media player). Does it render? Does it execute? Does it function?</p>
+            <ul>
+                <li><strong>YES:</strong> The artifact passes the Technical Legibility test. It is a candidate for Vivibyte status.</li>
+                <li><strong>NO:</strong> The artifact fails. It is a candidate for Petribyte status (if completely unreadable) or Umbrabyte status (if partially readable but broken).</li>
+            </ul>
+            <p><strong>The Nuance:</strong> This test reveals the first edge case. An HTML file from 1996 may "render," but modern CSS rules may break its layout. It is <em>technically legible</em> but <em>visually corrupted</em>. This is not a Petribyte (it's not "stone"), but it's also not a pure Vivibyte. This ambiguity points to the need for the second axis.</p>
+            <p><strong>Academic Grounding:</strong> This axis aligns with the concept of "format obsolescence" in digital preservation theory. The Digital Preservation Coalition defines technical obsolescence as occurring when "the combination of media, hardware, and software required to access digital materials is no longer available."<sup id="ref-2"><a href="#fn-2" class="text-unearth-course-accent hover:underline">[2]</a></sup> This test measures whether that obsolescence has occurred.</p>
+
+            <h3>Axis 2: Functional Integrity (Does It Do What It Was Meant To Do?)</h3>
+            <p>This axis moves beyond mere rendering to ask: Does the artifact fulfill its <em>original purpose</em>?</p>
+            <p><strong>The Test:</strong> Identify the artifact's native function. Then test whether that function still operates in the modern environment.</p>
+            <p><strong>Examples:</strong></p>
+            <ul>
+                <li>A GeoCities homepage <em>renders</em> (passes Axis 1), but its guestbook.cgi script no longer executes. It <strong>fails Axis 2</strong>.</li>
+                <li>An MP3 file <em>plays</em> (passes Axis 1) and fulfills its function as an audio file. It <strong>passes Axis 2</strong>.</li>
+                <li>A 2008 blog post <em>displays</em> (passes Axis 1), but its embedded Google Maps widget shows an error. The <em>post</em> passes Axis 2, but the <em>widget</em> fails it.</li>
+            </ul>
+            <p><strong>The Nuance:</strong> This axis reveals the Umbrabyte. An artifact can be technically legible (Axis 1: YES) but functionally broken (Axis 2: NO). This is the "fly in amber"—the artifact whose form is preserved but whose purpose is extinct.</p>
+            <p><strong>Academic Grounding:</strong> This test applies the concept of "significant properties" from digital curation theory. Scholars like Margaret Hedstrom argue that preservation must focus not just on bitstream integrity, but on maintaining the "properties of digital objects that affect their quality, usability, rendering, and behavior."<sup id="ref-3"><a href="#fn-3" class="text-unearth-course-accent hover:underline">[3]</a></sup> Axis 2 tests whether those significant properties—the artifact's <em>purpose</em>—remain intact.</p>
+
+            <h3>Axis 3: Contextual Ecosystem (Does the World Around It Still Exist?)</h3>
+            <p>This is the most abstract and most critical axis. It asks: Is the artifact's native <em>cultural and technical ecosystem</em> still alive?</p>
+            <p><strong>The Test:</strong> Identify the artifact's original context—the platform, the community, the protocols, the rituals that gave it meaning. Does that context still exist?</p>
+            <p><strong>Examples:</strong></p>
+            <ul>
+                <li>A Vine video (six-second loop) technically plays (Axis 1: YES) and functions as a video (Axis 2: YES). But the Vine platform—with its "revine" feature, its six-second constraint, its specific community—is extinct. The video <strong>fails Axis 3</strong>.</li>
+                <li>A README.txt file renders (Axis 1: YES), functions as documentation (Axis 2: YES), and the ritual of "reading the README" is still alive in GitHub culture. It <strong>passes Axis 3</strong>.</li>
+                <li>A Flash game runs via Ruffle emulator (Axis 1: YES with emulation), plays correctly (Axis 2: YES), but the Newgrounds "favorite/comment/rate" ecosystem is fundamentally altered. It <strong>partially fails Axis 3</strong>.</li>
+            </ul>
+            <p><strong>The Nuance:</strong> This axis is where the Umbrabyte fully reveals itself. An artifact can be technically legible and even functionally intact, but if its ecosystem is extinct, it is still liminal. This is the "ghost in the machine"—the artifact that works but no longer <em>means</em> what it once meant.</p>
+            <p><strong>Academic Grounding:</strong> This test draws on the anthropological concept of "context collapse" as defined by danah boyd. She argues that social media flattens the "imagined audience," removing the contextual boundaries that once shaped communication.<sup id="ref-4"><a href="#fn-4" class="text-unearth-course-accent hover:underline">[4]</a></sup> In Archaeobytology, Axis 3 measures whether an artifact's original "imagined ecosystem" has collapsed.</p>
+
+            <h2>The Classification Matrix: Applying the Three Axes</h2>
+            <p>With these three axes established, the practitioner can now render a formal diagnosis. The artifact's state is determined by its performance across all three tests.</p>
+
+            <h3>Vivibyte: The Triple Pass (Yes/Yes/Yes)</h3>
+            <p><strong>Diagnostic Criteria:</strong></p>
+            <ul>
+                <li>Axis 1 (Technical Legibility): <strong>YES</strong> — Renders without emulation</li>
+                <li>Axis 2 (Functional Integrity): <strong>YES</strong> — Fulfills original purpose</li>
+                <li>Axis 3 (Contextual Ecosystem): <strong>YES</strong> — Original context is alive or successfully adapted</li>
+            </ul>
+            <p><strong>Classification:</strong> Vivibyte (Living Archaeobyte)</p>
+            <p><strong>Specimen:</strong> A 1999 MP3 file of a Radiohead song.</p>
+            <ul>
+                <li>Axis 1: ✓ Plays in any modern media player</li>
+                <li>Axis 2: ✓ Functions as intended (audio playback)</li>
+                <li>Axis 3: ✓ The MP3 format and music file ecosystem is thriving</li>
+            </ul>
+            <p><strong>Preservation Strategy:</strong> Episodic capture and format migration if needed. Minimal intervention.</p>
+
+            <h3>Petribyte: The Triple Fail (No/No/No)</h3>
+            <p><strong>Diagnostic Criteria:</strong></p>
+            <ul>
+                <li>Axis 1 (Technical Legibility): <strong>NO</strong> — Cannot render without specialized emulation</li>
+                <li>Axis 2 (Functional Integrity): <strong>NO</strong> — Original function is extinct</li>
+                <li>Axis 3 (Contextual Ecosystem): <strong>NO</strong> — Original context is completely extinct</li>
+            </ul>
+            <p><strong>Classification:</strong> Petribyte (Petrified Archaeobyte)</p>
+            <p><strong>Specimen:</strong> A RealPlayer <code>.rm</code> streaming video file from 1999, before Ruffle-like emulation existed for this format.</p>
+            <ul>
+                <li>Axis 1: ✗ Cannot play in modern systems without the extinct RealPlayer plugin</li>
+                <li>Axis 2: ✗ Streaming functionality (its original purpose) is extinct</li>
+                <li>Axis 3: ✗ The low-bandwidth streaming ecosystem of 1999 is dead</li>
+            </ul>
+            <p><strong>Preservation Strategy:</strong> Emulation or format migration required. High intervention. Treat as "fossil" requiring full contextual reconstruction.</p>
+
+            <h3>Umbrabyte: The Mixed State (The Liminal Cases)</h3>
+            <p>This is where the diagnostic framework proves most valuable. The Umbrabyte occupies the ambiguous middle ground. It is defined by <em>partial success</em> across the three axes. There are multiple patterns:</p>
+
+            <h4>Pattern 1: Technical Success, Functional Failure (Yes/No/No)</h4>
+            <p><strong>Diagnostic Profile:</strong></p>
+            <ul>
+                <li>Axis 1: <strong>YES</strong> — File renders</li>
+                <li>Axis 2: <strong>NO</strong> — Core function is broken</li>
+                <li>Axis 3: <strong>NO</strong> — Ecosystem extinct</li>
+            </ul>
+            <p><strong>Specimen:</strong> A GeoCities homepage HTML file on a mirror archive.</p>
+            <ul>
+                <li>Axis 1: ✓ The HTML/CSS renders in a modern browser</li>
+                <li>Axis 2: ✗ The guestbook.cgi script doesn't execute, the "neighborhood" navigation is broken</li>
+                <li>Axis 3: ✗ GeoCities is dead; the "homestead" metaphor is extinct</li>
+            </ul>
+            <p><strong>Classification:</strong> Umbrabyte (Type: Ecosystem Extinction / "Fly in Amber")</p>
+            <p><strong>Significance:</strong> This is the classic Umbrabyte. The <em>file</em> is a Vivibyte, but the <em>artifact</em> (the homestead as a living, editable space) is an Umbrabyte. This is what makes the Umbrabyte tragic—it is preserved perfectly, yet fundamentally broken.</p>
+
+            <h4>Pattern 2: Technical & Functional Success, Contextual Failure (Yes/Yes/No)</h4>
+            <p><strong>Diagnostic Profile:</strong></p>
+            <ul>
+                <li>Axis 1: <strong>YES</strong> — File renders</li>
+                <li>Axis 2: <strong>YES</strong> — Function works</li>
+                <li>Axis 3: <strong>NO</strong> — Original context is extinct</li>
+            </ul>
+            <p><strong>Specimen:</strong> A six-second Vine video, now hosted on YouTube.</p>
+            <ul>
+                <li>Axis 1: ✓ The MP4 plays perfectly</li>
+                <li>Axis 2: ✓ It functions as a video file</li>
+                <li>Axis 3: ✗ The Vine platform, the "revine" culture, the six-second creative constraint—all extinct</li>
+            </ul>
+            <p><strong>Classification:</strong> Umbrabyte (Type: Conceptual Ghost / "Statue in the Town Square")</p>
+            <p><strong>Significance:</strong> This is the most philosophically profound Umbrabyte. The artifact <em>works</em>, yet it is still liminal. Its meaning has been severed from its form. As media theorist Lev Manovich notes, when digital objects are "remediated" into new contexts, they undergo "transcoding"—a transformation of their cultural logic.<sup id="ref-5"><a href="#fn-5" class="text-unearth-course-accent hover:underline">[5]</a></sup> The Vine-on-YouTube is transcoded; it is a shadow of its former self.</p>
+
+            <h4>Pattern 3: Emulation-Dependent Revival (Conditional Yes/Yes/No)</h4>
+            <p><strong>Diagnostic Profile:</strong></p>
+            <ul>
+                <li>Axis 1: <strong>CONDITIONAL YES</strong> — Renders only via emulation</li>
+                <li>Axis 2: <strong>YES</strong> — Function restored via emulation</li>
+                <li>Axis 3: <strong>NO</strong> — Original ecosystem extinct</li>
+            </ul>
+            <p><strong>Specimen:</strong> A Flash <code>.swf</code> game, playable via Ruffle emulator.</p>
+            <ul>
+                <li>Axis 1: ⚠ Requires Ruffle (external emulation)</li>
+                <li>Axis 2: ✓ Game plays as intended</li>
+                <li>Axis 3: ✗ Flash ecosystem, browser plugin culture, Newgrounds era—all extinct</li>
+            </ul>
+            <p><strong>Classification:</strong> Umbrabyte (Type: Resurrected Fossil / "The Lazarus Artifact")</p>
+            <p><strong>Significance:</strong> This reveals that classification is <em>dynamic</em>, not static. The Flash file was a Petribyte (2020-2021), then became an Umbrabyte (2021-present via Ruffle). The artifact didn't change; the ecosystem around it did. This proves that triage is not a one-time event but an ongoing practice of re-assessment.</p>
+
+            <h2>Edge Cases and Diagnostic Challenges</h2>
+            <p>The three-axis framework handles most artifacts, but the digital past is full of edge cases that test the boundaries of classification.</p>
+
+            <h3>Edge Case 1: The Partial Artifact (Fragments and Dependencies)</h3>
+            <p><strong>The Problem:</strong> Many artifacts are not self-contained. A 2008 blog post may be intact, but it contains an embedded YouTube video that has been removed. What is the classification?</p>
+            <p><strong>The Solution:</strong> Treat the artifact as <em>composite</em> and classify each component separately.</p>
+            <ul>
+                <li>The blog post text: <strong>Vivibyte</strong> (renders and functions)</li>
+                <li>The embedded video: <strong>Umbrabyte</strong> (the <code>&lt;iframe&gt;</code> element remains, but the content is gone—a "ghost embed")</li>
+                <li>The overall artifact: <strong>Umbrabyte</strong> (because a significant component has failed Axis 2)</li>
+            </ul>
+            <p><strong>Academic Grounding:</strong> This approach aligns with the concept of "compound digital objects" in digital library science. Scholars like Seamus Ross note that many digital artifacts are assemblages of multiple files, each with its own preservation requirements.<sup id="ref-6"><a href="#fn-6" class="text-unearth-course-accent hover:underline">[6]</a></sup></p>
+
+            <h3>Edge Case 2: The Living Dead (Zombie Artifacts)</h3>
+            <p><strong>The Problem:</strong> Some artifacts appear to be Vivibytes but are actually "living dead"—they function only because of hidden dependencies or backwards-compatibility quirks that could break at any moment.</p>
+            <p><strong>Specimen:</strong> A website built with jQuery 1.x in 2010. It still works in 2025, but only because modern browsers maintain backwards compatibility. If browsers dropped support for deprecated JavaScript APIs, it would instantly become a Petribyte.</p>
+            <p><strong>The Solution:</strong> Introduce a <strong>fourth diagnostic criterion: Resilience Horizon</strong>.</p>
+            <ul>
+                <li><strong>Question:</strong> Is the artifact's functionality dependent on actively maintained systems, or on legacy support that could be removed?</li>
+                <li><strong>If dependent on legacy support:</strong> Classify as <strong>"Fragile Vivibyte"</strong> with a flag for high preservation priority.</li>
+            </ul>
+            <p><strong>Significance:</strong> This acknowledges that "living" is not binary. Some Vivibytes are more resilient than others. An HTML 4 page with no JavaScript is more resilient than a jQuery-dependent site, which is more resilient than a Flash site. Triage must account for this spectrum.</p>
+
+            <h3>Edge Case 3: The Conceptual Archaeobyte with No File</h3>
+            <p><strong>The Problem:</strong> Some artifacts are purely conceptual—behaviors or rituals that left no single file behind. How does one triage a "concept"?</p>
+            <p><strong>Specimen:</strong> The "AIM Away Message" ritual. There is no <code>.away</code> file to analyze. The artifact is the <em>practice</em>.</p>
+            <p><strong>The Solution:</strong> Apply the three axes to the <em>evidence of the practice</em>, not a single file.</p>
+            <ul>
+                <li>Axis 1: Can the practice be <em>observed</em> in extant artifacts? (Screenshots, logs, documentation) — <strong>YES</strong></li>
+                <li>Axis 2: Can the practice be <em>performed</em> today? — <strong>NO</strong> (AIM is dead)</li>
+                <li>Axis 3: Does the cultural context still exist? — <strong>NO</strong> (always-on mobile culture killed the need for "away" status)</li>
+            </ul>
+            <p><strong>Classification:</strong> Petribyte (Conceptual Petribyte)</p>
+            <p><strong>Significance:</strong> This extends the triage framework to non-file artifacts. The "away message" is as much a fossil as a <code>.rm</code> file. Both are extinct functions preserved only in documentation.</p>
+
+            <h2>The Triage Report: Formal Documentation</h2>
+            <p>Triage is not complete until it is documented. The practitioner must generate a <strong>Triage Report</strong> for each artifact, ensuring that future archaeobytologists understand the classification rationale.</p>
+
+            <h3>Required Elements of a Triage Report:</h3>
+            <ol>
+                <li><strong>Artifact Identifier:</strong> File name, URL, or unique descriptor</li>
+                <li><strong>Classification:</strong> Vivibyte / Umbrabyte / Petribyte (with subtype if applicable)</li>
+                <li><strong>Three-Axis Diagnosis:</strong>
+                    <ul>
+                        <li>Axis 1 (Technical Legibility): YES / NO / CONDITIONAL</li>
+                        <li>Axis 2 (Functional Integrity): YES / NO / PARTIAL</li>
+                        <li>Axis 3 (Contextual Ecosystem): YES / NO / DEGRADED</li>
+                    </ul>
+                </li>
+                <li><strong>Edge Case Flags:</strong> Composite artifact, zombie artifact, conceptual artifact, etc.</li>
+                <li><strong>Preservation Recommendation:</strong> Migration, emulation, episodic capture, or contextual reconstruction</li>
+                <li><strong>Rationale:</strong> 2-3 sentences explaining the classification decision</li>
+                <li><strong>Date of Triage:</strong> Because classification is dynamic, the date matters</li>
+            </ol>
+
+            <h3>Example Triage Report:</h3>
+            <p><strong>Artifact:</strong> <code>myspace_profile_2006_screenshot.png</code></p>
+            <p><strong>Classification:</strong> Umbrabyte (Type: Ecosystem Extinction)</p>
+            <p><strong>Diagnosis:</strong></p>
+            <ul>
+                <li>Axis 1: YES (PNG renders perfectly)</li>
+                <li>Axis 2: NO (The profile itself is static; no "Top 8" editing, no music player, no comments possible)</li>
+                <li>Axis 3: NO (MySpace's social ecosystem and customization culture are extinct)</li>
+            </ul>
+            <p><strong>Edge Case:</strong> This is a <em>screenshot</em> of an artifact, not the artifact itself. The underlying MySpace profile (the HTML/CSS) would require separate triage.</p>
+            <p><strong>Preservation Recommendation:</strong> Maintain screenshot for visual reference. Seek original HTML/CSS if possible for functional analysis.</p>
+            <p><strong>Rationale:</strong> While the image file is technically a Vivibyte (a PNG is alive), the <em>content</em> it preserves is an Umbrabyte. The MySpace profile as a living, editable, social space is extinct. This is a photograph of a ghost.</p>
+            <p><strong>Triage Date:</strong> November 21, 2025</p>
+
+            <h2>Conclusion: From Diagnosis to Action</h2>
+            <p>The Triage Protocol transforms the "find" into actionable intelligence. By applying the three-axis diagnostic framework, the Archaeobytologist moves from uncertainty ("What is this?") to clarity ("This is a Vivibyte/Umbrabyte/Petribyte, and here's why").</p>
+            <p>This clarity is not academic pedantry. It is the foundation for every subsequent action:</p>
+            <ul>
+                <li><strong>For the Archive:</strong> Classification determines preservation strategy (migration vs. emulation vs. episodic capture)</li>
+                <li><strong>For the Scholar:</strong> Classification determines research approach (What questions can this artifact answer?)</li>
+                <li><strong>For the Anvil:</strong> Classification determines creative application (Can this be revived? Should it be resurrected? What wisdom does its death teach?)</li>
+            </ul>
+            <p>The Microscope of Triage is not the end of the work. It is the gateway. With the artifact now classified, bagged, and tagged with its formal diagnosis, the practitioner can move to the next phase: preservation (Chapter 3's Custodial Filter) and, ultimately, application (the Anvil).</p>
+            <p>The artifact has been found. It has been named. Now it must be preserved, studied, and—when wisdom demands it—forged into a tool for the future.</p>
+
+            <div class="works-cited">
+                <h2>Works Cited</h2>
+                <ol>
+                    <li id="fn-1"><span><a href="#ref-1" class="text-unearth-secondary hover:underline">[1] &uarr;</a></span><span>Iserson, K. V., & Moskop, J. C. (2007). "Triage in medicine, part I: Concept, history, and types." <em>Annals of Emergency Medicine</em>, 49(3), 275-281. The medical origins of triage provide the conceptual framework for rapid classification under conditions of scarcity.</span></li>
+                    <li id="fn-2"><span><a href="#ref-2" class="text-unearth-secondary hover:underline">[2] &uarr;</a></span><span>Digital Preservation Coalition. (2015). <em>Digital Preservation Handbook</em> (2nd ed.). Retrieved from https://www.dpconline.org/handbook — The authoritative guide to format obsolescence and technical preservation challenges.</span></li>
+                    <li id="fn-3"><span><a href="#ref-3" class="text-unearth-secondary hover:underline">[3] &uarr;</a></span><span>Hedstrom, M., & Lee, C. A. (2002). "Significant properties of digital objects: Definitions, applications, implications." <em>Proceedings of the DLM-Forum</em>, 218-227. Foundational work on preserving not just bits, but the properties that make digital objects meaningful.</span></li>
+                    <li id="fn-4"><span><a href="#ref-4" class="text-unearth-secondary hover:underline">[4] &uarr;</a></span><span>boyd, d. (2011). "Social Network Sites as Networked Publics: Affordances, Dynamics, and Implications." In Papacharissi, Z. (Ed.), <em>A Networked Self</em> (pp. 39-58). Routledge. boyd's concept of context collapse is essential for understanding Axis 3 failures.</span></li>
+                    <li id="fn-5"><span><a href="#ref-5" class="text-unearth-secondary hover:underline">[5] &uarr;</a></span><span>Manovich, L. (2001). <em>The Language of New Media</em>. MIT Press. Manovich's concept of "transcoding" explains how digital artifacts transform meaning when moved between contexts.</span></li>
+                    <li id="fn-6"><span><a href="#ref-6" class="text-unearth-secondary hover:underline">[6] &uarr;</a></span><span>Ross, S., & Gow, A. (1999). <em>Digital Archaeology: Rescuing Neglected and Damaged Data Resources</em>. British Library Research and Innovation Report. Early work recognizing that digital objects are often compound assemblages requiring component-level preservation.</span></li>
+                </ol>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- === Footer === -->
+    <footer class="mt-16 sm:mt-24 py-12 border-t border-unearth-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm text-unearth-secondary font-ui">
+                &copy; 2025   
+                <a href="https://unearth.im" class="font-semibold transition-colors group">
+                    <span class="text-unearth-main group-hover:text-unearth-primary">unearth</span><span class="text-unearth-primary">.im</span></a> | Archive & Anvil
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

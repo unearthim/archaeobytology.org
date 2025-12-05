@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Archaeobytology: A comprehensive 200-level textbook on the study of murdered digital platforms and the craft of building sovereign alternatives.">
+    <meta name="keywords" content="Archaeobytology, digital preservation, platform studies, digital archaeology, sovereignty">
+    <title>Archaeobytology: The Textbook | 200-Level Course</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Lora', serif;
+            line-height: 1.6;
+            color: #2E2E2E;
+            background: #F8F7F4;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            background: #FFFFFF;
+            padding: 3rem 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(46, 46, 46, 0.1);
+            margin-bottom: 2rem;
+            text-align: center;
+            border: 1px solid #D1D1D1;
+        }
+        
+        h1 {
+            font-family: 'Inter', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: #2E2E2E;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+        
+        .subtitle {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #5A7D8C;
+            font-style: normal;
+            margin-bottom: 1rem;
+        }
+        
+        .tagline {
+            font-size: 1.1rem;
+            color: #2E2E2E;
+            max-width: 800px;
+            margin: 1rem auto;
+            line-height: 1.8;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .stat {
+            background: #A93400;
+            color: #F8F7F4;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            border: 2px solid #A95C3D;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            display: block;
+            font-weight: 700;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.95;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .section-card {
+            background: #FFFFFF;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(46, 46, 46, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #D1D1D1;
+        }
+        
+        .section-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(169, 52, 0, 0.15);
+            border-color: #A95C3D;
+        }
+        
+        .section-card h2 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            color: #2E2E2E;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            border-bottom: 3px solid #A1824A;
+            padding-bottom: 0.5rem;
+        }
+        
+        .section-card h3 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            color: #5A7D8C;
+            margin: 1rem 0 0.5rem 0;
+            font-size: 1.2rem;
+        }
+        
+        .section-card > p {
+            color: #8E8E8E;
+            margin-bottom: 0.5rem;
+        }
+        
+        .chapter-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+        
+        .chapter-list li {
+            margin: 0.8rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .chapter-list li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #A93400;
+            font-weight: bold;
+        }
+        
+        .chapter-list a {
+            color: #2E2E2E;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 1.05rem;
+        }
+        
+        .chapter-list a:hover {
+            color: #A93400;
+            text-decoration: underline;
+        }
+        
+        .appendix-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+        
+        .appendix-list li {
+            margin: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .appendix-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #A1824A;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        .appendix-list a {
+            color: #2E2E2E;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .appendix-list a:hover {
+            color: #A1824A;
+            text-decoration: underline;
+        }
+        
+        .vow-box {
+            background: #A93400;
+            color: #F8F7F4;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+            font-style: italic;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(169, 52, 0, 0.25);
+            border: 2px solid #A95C3D;
+        }
+        
+        .vow-box h3 {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #F8F7F4;
+            font-style: normal;
+        }
+        
+        .vow-box p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #8E8E8E;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #A93400;
+            text-decoration: underline;
+        }
+        
+        .download-btn {
+            font-family: 'Inter', sans-serif;
+            display: inline-block;
+            background: #A93400;
+            color: #F8F7F4;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            text-decoration: none;
+            margin-top: 1.5rem;
+            font-weight: 600;
+            transition: background 0.3s ease, transform 0.3s ease;
+            border: 2px solid #A95C3D;
+        }
+        
+        .download-btn:hover {
+            background: #A95C3D;
+            transform: scale(1.05);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+            
+            .stats {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Archaeobytology</h1>
+            <p class="subtitle">The Study of Murdered Digital Platforms and the Craft of Building Sovereign Alternatives</p>
+            <p class="tagline">A comprehensive 200-level textbook that excavates the graves of murdered digital platforms, preserves their lessons, and forges tools for a more sovereign digital future.</p>
+            
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-number">18</span>
+                    <span class="stat-label">Chapters</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">210K+</span>
+                    <span class="stat-label">Words</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">~750</span>
+                    <span class="stat-label">Pages</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">Appendices</span>
+                </div>
+            </div>
+        </header>
+        
+        <div class="content-grid">
+            <!-- Part I: Foundations -->
+            <div class="section-card">
+                <h2>Part I: Foundations</h2>
+                <p><strong>Building the discipline from the ground up</strong></p>
+                <ul class="chapter-list">
+                    <li><a href="TEXTBOOK-Chapter-1-Introduction.html">Chapter 1: Introduction to Archaeobytology</a></li>
+                    <li><a href="TEXTBOOK-Chapter-2-Archaeobyte-Taxonomy.html">Chapter 2: The Archaeobyte Taxonomy</a></li>
+                    <li><a href="TEXTBOOK-Chapter-3-Archive-and-Anvil.html">Chapter 3: The Archive and the Anvil</a></li>
+                    <li><a href="TEXTBOOK-Chapter-4-Three-Pillars.html">Chapter 4: The Three Pillars of Digital Sovereignty</a></li>
+                    <li><a href="TEXTBOOK-Chapter-5-Triage-Methodology.html">Chapter 5: Triage Methodology</a></li>
+                    <li><a href="TEXTBOOK-Chapter-6-Discipline-Formation.html">Chapter 6: Discipline Formation and Boundaries</a></li>
+                </ul>
+            </div>
+            
+            <!-- Part II: Excavation & Forensics -->
+            <div class="section-card">
+                <h2>Part II: Excavation & Forensics</h2>
+                <p><strong>Methods for studying the digital dead</strong></p>
+                <ul class="chapter-list">
+                    <li><a href="TEXTBOOK-Chapter-7-Archaeological-Methods.html">Chapter 7: Archaeological Methods for Digital Artifacts</a></li>
+                    <li><a href="TEXTBOOK-Chapter-8-Digital-Forensics.html">Chapter 8: Digital Forensics for Archaeobytologists</a></li>
+                    <li><a href="TEXTBOOK-Chapter-9-Custodial-Filter-Ethics.html">Chapter 9: The Custodial Filter — Ethics of Preservation</a></li>
+                    <li><a href="TEXTBOOK-Chapter-10-Triage-Workflow.html">Chapter 10: Triage Workflow — From Discovery to Preservation</a></li>
+                </ul>
+            </div>
+            
+            <!-- Part III: Institution Building -->
+            <div class="section-card">
+                <h2>Part III: Institution Building</h2>
+                <p><strong>Forging sovereign alternatives</strong></p>
+                <ul class="chapter-list">
+                    <li><a href="TEXTBOOK-Chapter-11-Sustainable-Preservation-Organizations.html">Chapter 11: Sustainable Preservation Organizations</a></li>
+                    <li><a href="TEXTBOOK-Chapter-12-Economics-of-Sovereignty.html">Chapter 12: The Economics of Sovereignty</a></li>
+                    <li><a href="TEXTBOOK-Chapter-13-Distributed-Commons-Governance.html">Chapter 13: Distributed Commons Governance</a></li>
+                    <li><a href="TEXTBOOK-Chapter-14-Memory-Institutions.html">Chapter 14: Memory Institutions for the Digital Age</a></li>
+                </ul>
+            </div>
+            
+            <!-- Part IV: Systems & Movements -->
+            <div class="section-card">
+                <h2>Part IV: Systems & Movements</h2>
+                <p><strong>Political economy and collective action</strong></p>
+                <ul class="chapter-list">
+                    <li><a href="TEXTBOOK-Chapter-15-Political-Economy-of-Ground.html">Chapter 15: The Political Economy of Digital Ground</a></li>
+                    <li><a href="TEXTBOOK-Chapter-16-Movement-Building.html">Chapter 16: From Practice to Discipline — Movement Building</a></li>
+                </ul>
+            </div>
+            
+            <!-- Part V: Public Scholarship & Futures -->
+            <div class="section-card">
+                <h2>Part V: Public Scholarship & Futures</h2>
+                <p><strong>Engaging the world and imagining what's next</strong></p>
+                <ul class="chapter-list">
+                    <li><a href="TEXTBOOK-Chapter-17-Public-Intellectual.html">Chapter 17: The Public Intellectual in Archaeobytology</a></li>
+                    <li><a href="TEXTBOOK-Chapter-18-Forging-Third-Way.html">Chapter 18: Forging the Third Way — Vision for a Post-Platform Future</a></li>
+                </ul>
+            </div>
+            
+            <!-- Appendices & Resources -->
+            <div class="section-card">
+                <h2>Appendices & Resources</h2>
+                <p><strong>Essential reference materials</strong></p>
+                <ul class="appendix-list">
+                    <li><a href="TEXTBOOK-Appendix-A-Glossary.html">Appendix A: Glossary of Terms</a></li>
+                    <li><a href="TEXTBOOK-Appendix-B-Tools-and-Resources.html">Appendix B: Tools and Resources</a></li>
+                    <li><a href="TEXTBOOK-Appendix-C-Sample-Syllabi.html">Appendix C: Sample Syllabi</a></li>
+                    <li><a href="TEXTBOOK-Appendix-D-Teaching-Resources.html">Appendix D: Teaching Resources</a></li>
+                    <li><a href="TEXTBOOK-Appendix-E-Professional-Resources.html">Appendix E: Professional Resources</a></li>
+                    <li><a href="TEXTBOOK-Bibliography.html">Bibliography</a></li>
+                    <li><a href="TEXTBOOK-Index.html">Index</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="vow-box">
+            <h3>The Archaeobytologist's Vow</h3>
+            <p>"I will excavate the murdered. I will preserve what can be saved. I will interpret the lessons of digital death. I will forge tools for sovereignty. I will teach others to do the same. I will not let the dead be forgotten, nor the living remain dependent on those who would murder them."</p>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 Archaeobytology Project | <a href="https://archaeobytology.org">archaeobytology.org</a></p>
+            <p>Licensed under Creative Commons BY-SA 4.0</p>
+        </footer>
+    </div>
+</body>
+</html>

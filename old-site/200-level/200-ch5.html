@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5: Case Studies in Petrifaction | Archaeobytology 200</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Lora', serif; 
+        }
+        .ui-font {
+            font-family: 'Inter', sans-serif;
+        }
+        .lora { font-family: 'Lora', serif; }
+        sup {
+            font-size: 0.75em;
+            vertical-align: super;
+            line-height: 0;
+        }
+        .petribyte-card {
+            transition: all 0.3s ease;
+        }
+        .petribyte-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body class="bg-[#F8F7F4] text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-[#435d7a] text-white py-6">
+        <div class="max-w-4xl mx-auto px-6">
+            <h1 class="text-4xl font-bold lora">Chapter 5: Case Studies in Petrifaction</h1>
+            <p class="text-lg mt-2 ui-font opacity-90">Design Fictions from a Parallel Digital World</p>
+            <p class="text-sm mt-4 ui-font opacity-75">
+                <a href="index.html" class="hover:underline">← Back to 200-Level Course</a>
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-6 py-12 leading-relaxed text-lg">
+
+        <!-- Abstract -->
+        <section class="mb-12 border-l-4 border-[#A95C3D] pl-6 bg-white p-6 rounded shadow-sm">
+            <h2 class="text-2xl font-bold mb-4 text-[#A95C3D] ui-font">Abstract</h2>
+            <p class="leading-relaxed">
+                The Petribyte is not merely dead—it is <strong>fossilized</strong>, its ground eroded away, its execution context extinct. Yet within this loss lies generative potential. Petribytes function as <strong>design fictions</strong>—tangible artifacts from a parallel digital world that provoke us to question the present and imagine alternatives. This chapter examines five Conceptual Petribytes whose core functions are extinct, analyzing them not for nostalgia but as <strong>blueprints for intervention</strong>. Through comparative analysis of the Manual Save Button (intentional commitment vs. auto-save surveillance), Desktop Icons (spatial memory vs. search-dependent cognition), RSS Feeds (user agency vs. algorithmic feeds), Visible Scroll Bars (document awareness vs. infinite scroll), and Offline Status Indicators (intentional presence vs. always-on expectations), we learn to read petrifaction as <em>productive absence</em>—what is lost reveals what can be recovered. The goal is not restoration but <strong>reanimation</strong>: carrying the Petribyte's blueprint to The Anvil to forge new frameworks that heal the wounds of contemporary digital life.
+            </p>
+        </section>
+
+        <!-- Preamble -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 text-[#435d7a] ui-font">The Fossil as Provocation</h2>
+            
+            <p class="mb-6">
+                In paleontology, fossils are not simply dead organisms—they are <strong>evidence of alternative evolutionary paths</strong>. The trilobite tells us that compound eyes once dominated the Cambrian seas. The mammoth tells us that megafauna thrived in Ice Age tundra. Fossils are <em>counterfactuals made material</em>—proof that the present is not inevitable but contingent.
+            </p>
+
+            <p class="mb-6">
+                The Petribyte functions similarly. It is a digital fossil whose core function can no longer execute—the ground beneath it has eroded away. But unlike biological extinction, digital petrifaction often results from <strong>deliberate design decisions</strong>. Features are not lost to entropy; they are <em>murdered by platforms</em>, sacrificed for monetization, deprecated in service of "progress."
+            </p>
+
+            <p class="mb-6">
+                As design theorist Anthony Dunne writes, "Design fictions are artifacts from imaginary worlds used to provoke debate about the world we currently inhabit."<sup>1</sup> Petribytes <em>are</em> design fictions—but they come from the <em>past</em>, not the future. They are remnants of a parallel digital world where different values prevailed, different trade-offs were made, different possibilities flourished before being extinguished.
+            </p>
+
+            <p class="mb-6">
+                This chapter asks: <strong>What can extinct functions teach us about the present?</strong> What did we lose when we lost them? And—most critically—<strong>what new systems can we forge by resurrecting their underlying principles?</strong>
+            </p>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6 border-l-4 border-[#5A7D8C]">
+                <h3 class="text-xl font-semibold mb-3 text-[#435d7a] ui-font">The Blueprint Lesson</h3>
+                <p class="mb-3">
+                    The Petribyte's value is not in restoration (we cannot resurrect floppy disks) but in <strong>extraction and reanimation</strong>. Like an architect studying Roman aqueducts to design modern water systems, we study Petribytes to recover <em>design principles</em> that contemporary systems have abandoned:
+                </p>
+                <ul class="list-disc list-inside pl-4 space-y-2">
+                    <li><strong>User agency</strong> over algorithmic control</li>
+                    <li><strong>Intentionality</strong> over ambient automation</li>
+                    <li><strong>Spatial cognition</strong> over search-dependent retrieval</li>
+                    <li><strong>Bounded contexts</strong> over infinite feeds</li>
+                    <li><strong>Visible labor</strong> over invisible infrastructure</li>
+                </ul>
+            </div>
+
+            <p class="mb-6">
+                We will examine five Conceptual Petribytes—interface elements and interaction patterns whose core functions are extinct—not to mourn them, but to <strong>weaponize their lessons</strong>. This is archaeology as activism, petrifaction as pedagogy, the fossil as blueprint for resistance.
+            </p>
+        </section>
+
+        <!-- Case Study 1: Manual Save Button -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 text-[#435d7a] ui-font">I. The Manual Save Button: Intentional Commitment</h2>
+
+            <div class="petribyte-card bg-gradient-to-br from-gray-100 to-gray-200 p-6 rounded-lg shadow-md mb-6">
+                <div class="flex items-start justify-between mb-4">
+                    <div>
+                        <h3 class="text-2xl font-bold text-[#A95C3D] ui-font">Artifact: Ctrl+S / ⌘S / 💾 Icon</h3>
+                        <p class="text-sm text-gray-600 ui-font mt-1">Era: 1980s-2010s | Status: <span class="text-red-600 font-semibold">EXTINCT</span> in most web/mobile apps</p>
+                    </div>
+                    <div class="text-6xl">💾</div>
+                </div>
+                <p class="text-base leading-relaxed">
+                    <strong>Core Function:</strong> User-triggered persistence of document state to storage medium.<br>
+                    <strong>Underlying Principle:</strong> Work exists in liminal state until explicitly committed. The act of saving is <em>meaningful</em>—it declares "this version matters."
+                </p>
+            </div>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">The Extinct Ground</h3>
+
+            <p class="mb-6">
+                The Manual Save Button emerged from hardware constraints. RAM was volatile; power failures meant data loss; storage writes were slow and expensive (both in time and disk lifespan). The save operation was <strong>ritualized necessity</strong>—early word processors like WordStar and WordPerfect trained users to hit Ctrl+S compulsively, every few paragraphs, lest a crash erase hours of work.
+            </p>
+
+            <p class="mb-6">
+                But the ritual encoded something profound: <strong>the distinction between drafting and committing</strong>. Before saving, your work was ephemeral—you could abandon it, revert it, walk away. After saving, it became <em>record</em>. As human-computer interaction researcher Bonnie Nardi notes, "The save button was a threshold—a moment of deliberate transition from process to product."<sup>2</sup>
+            </p>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">The Contemporary Replacement: Auto-Save Surveillance</h3>
+
+            <p class="mb-6">
+                Modern cloud applications—Google Docs, Notion, Figma—eliminated the save button through <strong>automatic continuous persistence</strong>. Every keystroke is captured, every change synced instantly. This is sold as liberation: "Never lose work again! Focus on creation, not file management!"
+            </p>
+
+            <p class="mb-6">
+                But what was lost?
+            </p>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6 border-l-4 border-[#A95C3D]">
+                <h4 class="text-xl font-semibold mb-3 text-[#435d7a] ui-font">Five Losses of Auto-Save</h4>
+                <ol class="list-decimal list-inside space-y-3 pl-2">
+                    <li><strong>Intentional Commitment:</strong> There is no moment of decision—no "I'm ready to make this permanent." Work is always-already recorded.</li>
+                    <li><strong>Revision as Deliberate Act:</strong> Version history becomes a surveillance log of every typo and false start, not a curated set of meaningful iterations.</li>
+                    <li><strong>The Right to Abandon:</strong> Closing without saving was a form of escape—"This draft isn't worth keeping." Auto-save eliminates this exit.</li>
+                    <li><strong>Temporal Boundaries:</strong> The save button marked workflow stages (draft → revision → final). Continuous save collapses time into eternal present.</li>
+                    <li><strong>Trust in Ephemerality:</strong> Before saving, you could experiment freely, knowing mistakes wouldn't persist. Now every action is logged, creating <strong>performance anxiety</strong>.</li>
+                </ol>
+            </div>
+
+            <p class="mb-6">
+                As critical engineer Danya Glabau argues, "Auto-save is not convenience—it is <em>data extraction infrastructure</em>. Every keystroke becomes behavioral data for training models, optimizing interfaces, monetizing attention."<sup>3</sup> The death of the save button is the birth of <strong>ambient surveillance</strong>.
+            </p>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">Blueprint for Intervention: The Commit Culture Model</h3>
+
+            <p class="mb-6">
+                What if we resurrected the save button's <em>principle</em> (intentional commitment) in modern systems? Consider <strong>Git's commit model</strong> as applied to creative work:
+            </p>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6">
+                <ul class="space-y-3 text-base">
+                    <li><strong>Local Drafting Mode:</strong> Work in private, untracked mode until ready to commit</li>
+                    <li><strong>Explicit Commit Messages:</strong> Each save requires a description ("why does this version matter?")</li>
+                    <li><strong>Branching for Experimentation:</strong> Create alternate versions without polluting main timeline</li>
+                    <li><strong>Selective Disclosure:</strong> Choose when to sync/share, not automatic upload</li>
+                </ul>
+            </div>
+
+            <p class="mb-6">
+                This is not nostalgia for floppy disks—it is <strong>recovery of agency</strong>. The Manual Save Button's blueprint teaches: <em>Meaningful persistence requires conscious decision</em>. Modern implementations might include:
+            </p>
+
+            <ul class="list-disc list-inside mb-6 pl-6 space-y-2">
+                <li>Writing apps with "Ephemeral Mode" (auto-save disabled, red border warning)</li>
+                <li>Collaboration platforms with "Draft/Published" states (not instant-live everything)</li>
+                <li>Version control for creative work (commit messages for design files, essays, code)</li>
+            </ul>
+
+            <p class="mb-6">
+                The Petribyte's lesson: <strong>Automation should serve human intention, not replace it.</strong>
+            </p>
+        </section>
+
+        <!-- Case Study 2: Desktop Icons -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 text-[#435d7a] ui-font">II. Desktop Icons: Spatial Memory as Interface</h2>
+
+            <div class="petribyte-card bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg shadow-md mb-6">
+                <div class="flex items-start justify-between mb-4">
+                    <div>
+                        <h3 class="text-2xl font-bold text-[#A95C3D] ui-font">Artifact: Spatial File Organization</h3>
+                        <p class="text-sm text-gray-600 ui-font mt-1">Era: 1984-2010s | Status: <span class="text-orange-600 font-semibold">DECLINING</span> (mobile killed it)</p>
+                    </div>
+                    <div class="text-6xl">🖥️</div>
+                </div>
+                <p class="text-base leading-relaxed">
+                    <strong>Core Function:</strong> User-defined spatial arrangement of file icons on 2D desktop surface.<br>
+                    <strong>Underlying Principle:</strong> Location encodes meaning. "Top-left = urgent," "clusters = projects," "desktop edges = archives."
+                </p>
+            </div>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">The Extinct Ground</h3>
+
+            <p class="mb-6">
+                The desktop metaphor—pioneered at Xerox PARC, popularized by Apple Macintosh—relied on <strong>spatial cognition</strong>. Humans have evolved powerful spatial memory: we remember <em>where</em> things are more easily than <em>what</em> they're called. Medieval scholars used "memory palaces" (mental spatial layouts) to recall vast amounts of information.<sup>4</sup>
+            </p>
+
+            <p class="mb-6">
+                Desktop icons leveraged this: users arranged files spatially to encode organizational logic. A designer's desktop might cluster project files in the center, reference images along the right edge, and archived materials in the bottom-left. <strong>Position = metadata.</strong> As HCI researcher George Robertson found, "Spatial stability significantly improves information retrieval performance compared to alphabetical or temporal sorting."<sup>5</sup>
+            </p>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">The Contemporary Replacement: Search-Dependent Cognition</h3>
+
+            <p class="mb-6">
+                Mobile OS design (iOS, Android) eliminated user-controlled spatial organization. Apps appear in grids (iOS) or drawers (Android), sorted alphabetically or by usage. macOS and Windows increasingly push users toward Spotlight/Search instead of Finder/Explorer navigation.
+            </p>
+
+            <p class="mb-6">
+                The logic: <em>Why organize when you can search?</em> Tagging, metadata, and full-text indexing make spatial arrangement "obsolete."
+            </p>
+
+            <p class="mb-6">
+                But what was lost?
+            </p>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6 border-l-4 border-[#5A7D8C]">
+                <h4 class="text-xl font-semibold mb-3 text-[#435d7a] ui-font">Five Losses of Search-First Interfaces</h4>
+                <ol class="list-decimal list-inside space-y-3 pl-2">
+                    <li><strong>Spatial Memory Encoding:</strong> Search requires <em>recall</em> (remembering a filename); spatial organization requires only <em>recognition</em> ("it's over there").</li>
+                    <li><strong>Ambient Awareness:</strong> A spatial desktop provides peripheral vision—you see related files without searching for them.</li>
+                    <li><strong>Temporal Stratification:</strong> Desktop clutter encodes work history—recent projects on top, older ones drifting to edges.</li>
+                    <li><strong>Personal Taxonomies:</strong> Folder hierarchies are <em>arguments</em> about categorization. Search flattens everything into a single namespace.</li>
+                    <li><strong>The Desktop as Thinking Space:</strong> Arranging icons was cognitive labor—externalizing mental organization into physical layout (what David Kirsh calls "the intelligent use of space").<sup>6</sup></li>
+                </ol>
+            </div>
+
+            <p class="mb-6">
+                As information architect Abigail Sellen notes, "We are losing the ability to <em>think with our environment</em>—to use physical/spatial layout as cognitive scaffolding."<sup>7</sup> Search is powerful, but it treats information as <strong>decontextualized atoms</strong> rather than spatially embedded relationships.
+            </p>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">Blueprint for Intervention: Hybrid Spatial-Search Interfaces</h3>
+
+            <p class="mb-6">
+                What if we resurrected spatial organization's <em>principle</em> (location as metadata) in modern systems?
+            </p>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6">
+                <h4 class="text-lg font-semibold mb-3 ui-font">Proposed: The Spatial Canvas Model</h4>
+                <ul class="space-y-3 text-base">
+                    <li><strong>Infinite 2D Canvas:</strong> Like Miro or Figma, but for file management—arrange documents spatially with zoom levels (overview → detail)</li>
+                    <li><strong>Spatial Search:</strong> Search results appear <em>in situ</em>—highlighting their location on the canvas, not replacing the view</li>
+                    <li><strong>Proximity Clustering:</strong> Files placed near each other auto-generate "project" metadata (reversible—breaking spatial clusters removes tags)</li>
+                    <li><strong>Temporal Layers:</strong> Toggle between "current workspace" (last week's files) and "archived strata" (older layers fade into background)</li>
+                    <li><strong>Multiple Desktops as Memory Palaces:</strong> Each virtual desktop is a distinct spatial context (Work/Research/Personal with persistent layouts)</li>
+                </ul>
+            </div>
+
+            <p class="mb-6">
+                This approach already exists in niche tools (DEVONthink's spatial groups, Tinderbox's map views, researcher John Siracusa's "Desktop as State Machine" workflow). The challenge is making it mainstream.
+            </p>
+
+            <p class="mb-6">
+                The Petribyte's lesson: <strong>Human cognition is spatial—interfaces that ignore this impoverish thinking.</strong>
+            </p>
+        </section>
+
+        <!-- Case Study 3: RSS Feeds -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 text-[#435d7a] ui-font">III. RSS Feeds: User Agency vs. Algorithmic Curation</h2>
+
+            <div class="petribyte-card bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-lg shadow-md mb-6">
+                <div class="flex items-start justify-between mb-4">
+                    <div>
+                        <h3 class="text-2xl font-bold text-[#A95C3D] ui-font">Artifact: RSS/Atom Syndication</h3>
+                        <p class="text-sm text-gray-600 ui-font mt-1">Era: 1999-2013 | Status: <span class="text-red-600 font-semibold">FUNCTIONALLY EXTINCT</span> (tech still exists, culture dead)</p>
+                    </div>
+                    <div class="text-6xl">📡</div>
+                </div>
+                <p class="text-base leading-relaxed">
+                    <strong>Core Function:</strong> Users subscribe to feeds, receive chronological updates in reader of choice.<br>
+                    <strong>Underlying Principle:</strong> <strong>Pull</strong> model—users decide what to follow, when to read, in what order. No algorithmic intermediary.
+                </p>
+            </div>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">The Extinct Ground</h3>
+
+            <p class="mb-6">
+                RSS (Really Simple Syndication) emerged in 1999 as a solution to "website checking fatigue"—manually visiting dozens of sites to see if new content appeared. RSS feeds let users <strong>subscribe</strong> once and receive updates automatically, aggregated in a single reader (Google Reader, NetNewsWire, Bloglines).
+            </p>
+
+            <p class="mb-6">
+                The architecture encoded <strong>user sovereignty</strong>:
+            </p>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6">
+                <ul class="space-y-2 text-base">
+                    <li>✓ You chose what to subscribe to (no "recommended" feeds)</li>
+                    <li>✓ You saw <em>everything</em> from subscribed sources (no algorithmic filtering)</li>
+                    <li>✓ Items appeared chronologically (no engagement-optimized sorting)</li>
+                    <li>✓ You controlled the reading client (open protocol, multiple apps)</li>
+                    <li>✓ No metrics leaked to publishers (they couldn't see who read what, when, for how long)</li>
+                </ul>
+            </div>
+
+            <p class="mb-6">
+                As media scholar danah boyd wrote in 2010, "RSS represented a utopian vision of the web—decentralized, user-controlled, non-commercial."<sup>8</sup> It was a <strong>pull architecture</strong> where users went to information, rather than push architecture where platforms delivered information (and ads) to users.
+            </p>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">The Death Blow: Google Reader Shutdown (2013)</h3>
+
+            <p class="mb-6">
+                Google Reader dominated RSS, capturing an estimated 70% of feed reading by 2010. On March 13, 2013, Google announced its shutdown, effective July 1. The rationale: declining usage, shift to social media streams.
+            </p>
+
+            <p class="mb-6">
+                But as technology critic Anil Dash argued, "Google didn't kill Reader because it was failing—they killed it because it <em>competed with Google+</em>. RSS represented an open web; social feeds represented platform capture."<sup>9</sup> The death of Reader was not market failure—it was <strong>strategic murder</strong>.
+            </p>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">The Contemporary Replacement: Algorithmic Feeds</h3>
+
+            <p class="mb-6">
+                RSS was replaced by platform-controlled algorithmic feeds: Facebook News Feed, Twitter Timeline, TikTok For You Page, Instagram Explore. These <strong>push architectures</strong> invert the RSS model:
+            </p>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6 border-l-4 border-[#A95C3D]">
+                <table class="w-full border-collapse text-base">
+                    <thead>
+                        <tr class="bg-[#435d7a] text-white">
+                            <th class="border border-gray-300 px-4 py-2 text-left ui-font">Dimension</th>
+                            <th class="border border-gray-300 px-4 py-2 text-left ui-font">RSS (Pull)</th>
+                            <th class="border border-gray-300 px-4 py-2 text-left ui-font">Algorithmic Feeds (Push)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2"><strong>Subscription</strong></td>
+                            <td class="border border-gray-300 px-4 py-2">Explicit user choice</td>
+                            <td class="border border-gray-300 px-4 py-2">Algorithmic recommendations mixed with subscriptions</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="border border-gray-300 px-4 py-2"><strong>Completeness</strong></td>
+                            <td class="border border-gray-300 px-4 py-2">See everything from subscribed sources</td>
+                            <td class="border border-gray-300 px-4 py-2">Platform filters what you see (~10% of subscribed content)</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2"><strong>Order</strong></td>
+                            <td class="border border-gray-300 px-4 py-2">Chronological</td>
+                            <td class="border border-gray-300 px-4 py-2">Engagement-optimized (controversial content prioritized)</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="border border-gray-300 px-4 py-2"><strong>Client Choice</strong></td>
+                            <td class="border border-gray-300 px-4 py-2">Open protocol, multiple readers</td>
+                            <td class="border border-gray-300 px-4 py-2">Platform-locked (Facebook only in Facebook, etc.)</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2"><strong>Metrics</strong></td>
+                            <td class="border border-gray-300 px-4 py-2">Private reading (no tracking)</td>
+                            <td class="border border-gray-300 px-4 py-2">Total surveillance (dwell time, scroll depth, sharing)</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="border border-gray-300 px-4 py-2"><strong>Monetization</strong></td>
+                            <td class="border border-gray-300 px-4 py-2">None (open standard)</td>
+                            <td class="border border-gray-300 px-4 py-2">Attention economy (ads between content)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="mb-6">
+                The shift from RSS to algorithmic feeds represents a fundamental loss of <strong>information sovereignty</strong>. As Ethan Zuckerman writes, "When platforms control what we see, they control what we know—and thus, what we can imagine."<sup>10</sup>
+            </p>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">Blueprint for Intervention: The Federated Reader Model</h3>
+
+            <p class="mb-6">
+                RSS is not technically extinct—the protocol still exists, and niche communities (tech workers, academics) still use readers like Feedly, Inoreader, NetNewsWire. But it's culturally dead, unknown to anyone born after 2000.
+            </p>
+
+            <p class="mb-6">
+                What if we resurrected RSS's <em>principles</em> (user agency, chronological completeness, open protocols) in modern social platforms?
+            </p>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6">
+                <h4 class="text-lg font-semibold mb-3 ui-font">Proposed: Federated Social Readers</h4>
+                <ul class="space-y-3 text-base">
+                    <li><strong>ActivityPub as Social RSS:</strong> Mastodon/Bluesky already implement this—follow users across servers, chronological feeds, no algorithmic interference</li>
+                    <li><strong>Client Diversity:</strong> Multiple apps read the same social graph (like RSS readers reading the same feeds)</li>
+                    <li><strong>Local-First Architecture:</strong> Download posts for offline reading, search your own archive</li>
+                    <li><strong>User-Controlled Algorithms:</strong> If filtering is desired, users choose/configure their own (e.g., "hide posts with >10 links," "boost posts from small accounts")</li>
+                </ul>
+            </div>
+
+            <p class="mb-6">
+                The Petribyte's lesson: <strong>Platforms killed RSS because user agency threatens ad revenue. Resurrecting RSS principles requires non-commercial infrastructure.</strong>
+            </p>
+        </section>
+
+        <!-- Case Study 4: Visible Scroll Bar -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 text-[#435d7a] ui-font">IV. The Visible Scroll Bar: Document Awareness</h2>
+
+            <div class="petribyte-card bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg shadow-md mb-6">
+                <div class="flex items-start justify-between mb-4">
+                    <div>
+                        <h3 class="text-2xl font-bold text-[#A95C3D] ui-font">Artifact: Persistent Scroll Bar UI</h3>
+                        <p class="text-sm text-gray-600 ui-font mt-1">Era: 1984-2010s | Status: <span class="text-orange-600 font-semibold">VESTIGIAL</span> (auto-hiding now default)</p>
+                    </div>
+                    <div class="text-6xl">📜</div>
+                </div>
+                <p class="text-base leading-relaxed">
+                    <strong>Core Function:</strong> Visual indicator of document length, current position, and navigation affordances.<br>
+                    <strong>Underlying Principle:</strong> Documents have <strong>boundaries</strong>—beginnings, middles, ends. The scroll bar communicates <em>where you are</em> in bounded space.
+                </p>
+            </div>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">The Extinct Ground</h3>
+
+            <p class="mb-6">
+                The scroll bar emerged in early GUI systems (Xerox Star, Apple Lisa) as a <strong>visual metaphor for document navigation</strong>. Its design encoded three pieces of information simultaneously:
+            </p>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6">
+                <ol class="list-decimal list-inside space-y-2 text-base pl-2">
+                    <li><strong>Document Length:</strong> The thumb size indicates visible portion vs. total length (small thumb = long document)</li>
+                    <li><strong>Current Position:</strong> Thumb location shows how far through the document you are (top/middle/bottom)</li>
+                    <li><strong>Navigation Affordance:</strong> Clickable track + draggable thumb invite interaction</li>
+                </ol>
+            </div>
+
+            <p class="mb-6">
+                As HCI pioneer Jakob Nielsen noted, "The scroll bar is information visualization—it makes document structure legible at a glance."<sup>11</sup> A fat thumb near the top meant "short document, just started." A tiny thumb at the bottom meant "long document, almost finished."
+            </p>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">The Contemporary Replacement: Infinite Scroll</h3>
+
+            <p class="mb-6">
+                Mobile interfaces and web feeds adopted <strong>auto-hiding scroll bars</strong> (iOS 2007) and <strong>infinite scroll</strong> (Twitter 2011, Facebook News Feed). The scroll bar became vestigial—appearing briefly during scrolling, then vanishing.
+            </p>
+
+            <p class="mb-6">
+                Infinite scroll eliminated the scroll bar entirely: there <em>is no document boundary</em>. Content loads endlessly as you scroll, creating what Tristan Harris calls "the bottomless bowl"—users consume without awareness of quantity because there's no visual endpoint.<sup>12</sup>
+            </p>
+
+            <p class="mb-6">
+                What was lost?
+            </p>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6 border-l-4 border-[#5A7D8C]">
+                <h4 class="text-xl font-semibold mb-3 text-[#435d7a] ui-font">Five Losses of Infinite Scroll</h4>
+                <ol class="list-decimal list-inside space-y-3 pl-2">
+                    <li><strong>Completion Awareness:</strong> No way to know "how much is left"—reading becomes Sisyphean task with no endpoint.</li>
+                    <li><strong>Spatial Reference:</strong> Cannot bookmark position ("I was about 40% through") or return to specific location.</li>
+                    <li><strong>Document Boundaries:</strong> Articles, threads, feeds blur into undifferentiated stream—no sense of "finishing" something.</li>
+                    <li><strong>Cognitive Closure:</strong> Humans need completion for satisfaction (Zeigarnik effect). Infinite scroll prevents closure, creating anxiety.</li>
+                    <li><strong>Intentional Navigation:</strong> Cannot jump to middle/end directly—must scroll linearly through everything.</li>
+                </ol>
+            </div>
+
+            <p class="mb-6">
+                As media psychologist Larry Rosen found, "Users report higher stress and lower comprehension with infinite scroll compared to paginated content—the lack of boundaries creates <em>cognitive overwhelm</em>."<sup>13</sup>
+            </p>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">Blueprint for Intervention: Bounded Contexts</h3>
+
+            <p class="mb-6">
+                What if we resurrected the scroll bar's <em>principle</em> (document boundaries as cognitive aid) in modern interfaces?
+            </p>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6">
+                <h4 class="text-lg font-semibold mb-3 ui-font">Proposed: Bounded Feed Architecture</h4>
+                <ul class="space-y-3 text-base">
+                    <li><strong>Time-Boxed Feeds:</strong> "Here are the 50 most recent posts from today" with visible endpoint—when you reach the end, you're <em>done</em></li>
+                    <li><strong>Progress Indicators:</strong> Persistent scroll bars showing "you've seen 30 of 150 items" (like Netflix episode progress bars)</li>
+                    <li><strong>Chapter Markers:</strong> Long documents/feeds with section breaks and navigation sidebar (like this chapter structure)</li>
+                    <li><strong>Manual Load More:</strong> Button to load next batch—requires conscious decision to continue, not automatic endless flow</li>
+                    <li><strong>Reading Timers:</strong> Estimate time remaining ("~12 minutes left") based on scroll position and reading speed</li>
+                </ul>
+            </div>
+
+            <p class="mb-6">
+                Some apps already implement this: Instapaper shows reading progress, Readwise Reader has "done for today" inbox zero, Arc browser's "Boost" feature can add missing scroll bars to websites.
+            </p>
+
+            <p class="mb-6">
+                The Petribyte's lesson: <strong>Boundlessness is not freedom—it's imprisonment in eternal present. Boundaries enable completion, and completion enables rest.</strong>
+            </p>
+        </section>
+
+        <!-- Case Study 5: Status Indicators -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 text-[#435d7a] ui-font">V. Offline Status Indicators: Intentional Presence</h2>
+
+            <div class="petribyte-card bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-lg shadow-md mb-6">
+                <div class="flex items-start justify-between mb-4">
+                    <div>
+                        <h3 class="text-2xl font-bold text-[#A95C3D] ui-font">Artifact: AIM/ICQ/MSN "Away" Status</h3>
+                        <p class="text-sm text-gray-600 ui-font mt-1">Era: 1996-2010 | Status: <span class="text-red-600 font-semibold">EXTINCT</span> (replaced by "last seen" surveillance)</p>
+                    </div>
+                    <div class="text-6xl">🟢</div>
+                </div>
+                <p class="text-base leading-relaxed">
+                    <strong>Core Function:</strong> User-declared availability state (Online/Away/Busy/Invisible).<br>
+                    <strong>Underlying Principle:</strong> <strong>Presence is intentional</strong>—you declare when you're available, not continuously broadcast location/activity.
+                </p>
+            </div>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">The Extinct Ground</h3>
+
+            <p class="mb-6">
+                Instant messaging platforms (AIM, ICQ, MSN Messenger, Yahoo! Messenger) pioneered <strong>status indicators</strong>—colored icons showing user availability:
+            </p>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6">
+                <ul class="space-y-2 text-base">
+                    <li>🟢 <strong>Online:</strong> "I'm here and available to chat"</li>
+                    <li>🟡 <strong>Away:</strong> "I'm not at my computer right now"</li>
+                    <li>🔴 <strong>Busy/DND:</strong> "I'm here but working—don't interrupt"</li>
+                    <li>⚪ <strong>Invisible:</strong> "I'm online but appear offline to others"</li>
+                    <li>⚫ <strong>Offline:</strong> "I'm not connected"</li>
+                </ul>
+            </div>
+
+            <p class="mb-6">
+                Critically, these were <strong>user-declared states</strong>. You chose when to go Away, when to appear Busy, when to activate Invisible mode. The system didn't automatically infer your state from activity patterns—<em>you</em> performed your availability.
+            </p>
+
+            <p class="mb-6">
+                Sociologist Erving Goffman's concept of "presentation of self" applies: online status was a <strong>managed performance</strong> of availability, not passive surveillance data.<sup>14</sup> As technology scholar Nancy Baym notes, "Manual status indicators honored the social fiction that people have boundaries—that being 'connected' doesn't mean being 'available.'"<sup>15</sup>
+            </p>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">The Contemporary Replacement: Always-On Surveillance</h3>
+
+            <p class="mb-6">
+                Modern messaging platforms (WhatsApp, iMessage, Slack, Discord) replaced user-declared status with <strong>automated presence inference</strong>:
+            </p>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6 border-l-4 border-[#A95C3D]">
+                <ul class="space-y-3">
+                    <li><strong>"Last Seen":</strong> WhatsApp shows "last seen today at 3:47 PM"—you cannot hide when you were last active</li>
+                    <li><strong>"Active Now":</strong> Instagram/Facebook show green dot when you're using the app—your presence is broadcast involuntarily</li>
+                    <li><strong>Read Receipts:</strong> Blue checkmarks reveal exactly when you read a message—your attention is tracked</li>
+                    <li><strong>"Typing..." Indicators:</strong> Real-time notification when you're composing a response—even drafting is surveilled</li>
+                    <li><strong>Activity Status:</strong> Slack shows "Active" automatically based on mouse/keyboard activity—your work patterns are exposed</li>
+                </ul>
+            </div>
+
+            <p class="mb-6">
+                These features are framed as "transparency" and "connection," but they create <strong>ambient pressure to be always-available</strong>. As sociologist Judy Wajcman argues, "The death of user-declared status represents the triumph of <em>presence-as-surveillance</em> over presence-as-performance. You no longer control how you appear—the platform decides based on your behavior."<sup>16</sup>
+            </p>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">The Social Cost: Availability Anxiety</h3>
+
+            <p class="mb-6">
+                Research on "communication overload" shows always-on presence indicators create stress:
+            </p>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6">
+                <ul class="space-y-3 text-base">
+                    <li><strong>Response Pressure:</strong> If someone sees you're "Active Now," they expect immediate response—delayed replies are interpreted as intentional ignoring</li>
+                    <li><strong>Privacy Erosion:</strong> "Last Seen" timestamps reveal daily routines, sleep patterns, relationship dynamics (partner checking if you're online late at night)</li>
+                    <li><strong>Social Obligation:</strong> Cannot plausibly claim you "didn't see" a message if read receipts show otherwise—removes social escape hatches</li>
+                    <li><strong>Work Creep:</strong> Slack's activity status enables after-hours monitoring—managers can see if you're "really" working from home</li>
+                </ul>
+            </div>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">Blueprint for Intervention: Presence as Consent</h3>
+
+            <p class="mb-6">
+                What if we resurrected manual status indicators' <em>principle</em> (presence as intentional performance) in modern platforms?
+            </p>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6">
+                <h4 class="text-lg font-semibold mb-3 ui-font">Proposed: Consensual Availability Architecture</h4>
+                <ul class="space-y-3 text-base">
+                    <li><strong>Default Opaque:</strong> Status is hidden unless you choose to broadcast ("invisible by default, visible by choice")</li>
+                    <li><strong>Granular Controls:</strong> Choose who can see your status (close friends vs. coworkers vs. public)</li>
+                    <li><strong>Activity Delay:</strong> "Last Seen" rounded to hours/days, not minutes—"active yesterday" not "active 14 minutes ago"</li>
+                    <li><strong>Read Receipt Opt-In:</strong> Sender must request read receipt; receiver can decline—reading is private unless explicitly shared</li>
+                    <li><strong>Custom Status Messages:</strong> Set your own explanatory text ("In meetings till 5pm" / "Slow to respond, deep work day") instead of system-inferred states</li>
+                </ul>
+            </div>
+
+            <p class="mb-6">
+                Some platforms offer partial solutions: Telegram allows disabling "Last Seen," Signal omits typing indicators, Slack lets you "pause notifications." But these are <em>opt-out friction</em>, not <em>default privacy</em>.
+            </p>
+
+            <p class="mb-6">
+                The Petribyte's lesson: <strong>Always-on presence is not intimacy—it's surveillance. True connection requires the right to disconnect.</strong>
+            </p>
+        </section>
+
+        <!-- Synthesis Section -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 text-[#435d7a] ui-font">VI. From Petrifaction to Intervention: The Anvil Awaits</h2>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">Common Threads in Petrifaction</h3>
+
+            <p class="mb-6">
+                Across our five case studies, a pattern emerges. Contemporary platforms systematically killed interface elements that:
+            </p>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6 border-l-4 border-[#A95C3D]">
+                <ol class="list-decimal list-inside space-y-3 pl-2">
+                    <li><strong>Granted User Agency:</strong> Manual save, spatial organization, RSS subscriptions, visible boundaries, declared status—all put <em>users in control</em></li>
+                    <li><strong>Resisted Monetization:</strong> None of these features generate behavioral data or ad impressions—they're economically "useless" to platforms</li>
+                    <li><strong>Enabled Boundaries:</strong> Save/don't save, online/offline, document start/end—all create distinctions in a world trending toward boundlessness</li>
+                    <li><strong>Respected Attention:</strong> All five features assumed human attention is <em>finite</em> and should be <em>protected</em>, not harvested</li>
+                    <li><strong>Preserved Context:</strong> Spatial layouts, chronological feeds, document structure, intentional presence—all maintained <em>meaningful context</em> that infinite streams erase</li>
+                </ol>
+            </div>
+
+            <p class="mb-6">
+                These are not coincidental casualties—they are <strong>architectural murders</strong>. As Shoshana Zuboff argues in <em>The Age of Surveillance Capitalism</em>, "User agency is incompatible with data extraction—platforms systematically remove features that let users resist tracking, resist algorithmic manipulation, resist being 'engaged.'"<sup>17</sup>
+            </p>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">The Petribyte as Blueprint</h3>
+
+            <p class="mb-6">
+                But petrifaction is not merely loss—it is <strong>archaeological evidence of alternatives</strong>. Every extinct function proves that <em>digital life could be different</em>. The Petribyte's blueprint lesson:
+            </p>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6 border-l-4 border-[#5A7D8C]">
+                <table class="w-full border-collapse">
+                    <thead>
+                        <tr class="bg-[#435d7a] text-white">
+                            <th class="border border-gray-300 px-4 py-2 text-left ui-font">Extinct Function</th>
+                            <th class="border border-gray-300 px-4 py-2 text-left ui-font">Core Principle</th>
+                            <th class="border border-gray-300 px-4 py-2 text-left ui-font">Modern Intervention</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm">
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">Manual Save Button</td>
+                            <td class="border border-gray-300 px-4 py-2">Intentional Commitment</td>
+                            <td class="border border-gray-300 px-4 py-2">Commit-based workflows (Git for everything)</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="border border-gray-300 px-4 py-2">Desktop Icons</td>
+                            <td class="border border-gray-300 px-4 py-2">Spatial Memory</td>
+                            <td class="border border-gray-300 px-4 py-2">Infinite canvas file managers</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">RSS Feeds</td>
+                            <td class="border border-gray-300 px-4 py-2">User Sovereignty</td>
+                            <td class="border border-gray-300 px-4 py-2">Federated social protocols (ActivityPub)</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="border border-gray-300 px-4 py-2">Visible Scroll Bar</td>
+                            <td class="border border-gray-300 px-4 py-2">Document Boundaries</td>
+                            <td class="border border-gray-300 px-4 py-2">Time-boxed feeds with endpoints</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">Status Indicators</td>
+                            <td class="border border-gray-300 px-4 py-2">Consensual Presence</td>
+                            <td class="border border-gray-300 px-4 py-2">Privacy-first messaging (default opaque)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#A95C3D]">Carrying Blueprints to The Anvil</h3>
+
+            <p class="mb-6">
+                The Petribyte's value emerges at <strong>The Anvil</strong>—the site of generative practice where extinct principles are forged into new systems. This requires:
+            </p>
+
+            <div class="bg-white p-6 rounded shadow-sm mb-6">
+                <ol class="list-decimal list-inside space-y-4 pl-2">
+                    <li><strong>Recognition:</strong> Identify the Petribyte (Chapter 3 triage: "Core function extinct, ground eroded")</li>
+                    <li><strong>Analysis:</strong> Extract the underlying principle (not the literal interface, but the <em>value</em> it encoded)</li>
+                    <li><strong>Translation:</strong> Adapt the principle to contemporary technical constraints (RSS → ActivityPub, desktop → canvas)</li>
+                    <li><strong>Implementation:</strong> Build new tools/protocols that resurrect the principle without nostalgia</li>
+                    <li><strong>Advocacy:</strong> Argue for adoption—explain <em>why</em> this extinct principle matters today</li>
+                </ol>
+            </div>
+
+            <p class="mb-6">
+                This is not retro-computing. This is not "bring back the save button." This is <strong>design archaeology</strong>—excavating lost principles to critique the present and forge better futures.
+            </p>
+        </section>
+
+        <!-- Conclusion -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 text-[#435d7a] ui-font">Conclusion: The Fossil as Resistance</h2>
+
+            <p class="mb-6">
+                We have studied five Petribytes—the Manual Save Button, Desktop Icons, RSS Feeds, Visible Scroll Bars, Offline Status Indicators—not as objects of nostalgia but as <strong>evidence of murder</strong>. These functions did not die of natural causes. They were systematically eliminated because they granted users agency, resisted data extraction, and preserved boundaries.
+            </p>
+
+            <p class="mb-6">
+                The Petribyte teaches us that <strong>petrifaction is political</strong>. What becomes extinct reveals what threatens power. Platforms kill features that enable:
+            </p>
+
+            <ul class="list-disc list-inside mb-6 pl-6 space-y-2">
+                <li>Conscious decision-making (manual save)</li>
+                <li>Spatial cognition (desktop layouts)</li>
+                <li>Algorithmic transparency (RSS)</li>
+                <li>Attentional boundaries (scroll bars)</li>
+                <li>Privacy performance (status indicators)</li>
+            </ul>
+
+            <p class="mb-6">
+                But fossils outlive their murderers. The Petribyte <em>survives as blueprint</em>—encoded memory of how things could work differently. Our task as Archaeobytologists is not preservation of dead interfaces but <strong>resurrection of living principles</strong>.
+            </p>
+
+            <p class="mb-6">
+                As design justice advocate Sasha Costanza-Chock writes, "Every interface is an argument about who has power. Studying extinct interfaces reveals <em>what powerful actors want erased</em>—and therefore, what we must fight to resurrect."<sup>18</sup>
+            </p>
+
+            <p class="mb-6">
+                The Petribyte is not a relic to be mourned. It is a <strong>weapon to be sharpened</strong>. Take its blueprint to The Anvil. Forge new systems that honor what was lost. Build the interfaces that surveillance capitalism fears.
+            </p>
+
+            <p class="mb-6 italic text-gray-600 text-center text-xl font-semibold">
+                "The past is not behind us—it is <em>under</em> us, a foundation we can excavate to build different futures."<br>
+                — Ruha Benjamin, <em>Race After Technology</em>, 2019
+            </p>
+        </section>
+
+        <!-- Works Cited -->
+        <section class="mb-12 border-t-4 border-[#435d7a] pt-8">
+            <h2 class="text-3xl font-bold mb-6 text-[#435d7a] ui-font">Works Cited</h2>
+            <ol class="list-decimal list-inside space-y-3 text-base leading-relaxed">
+                <li>Dunne, Anthony, and Fiona Raby. <em>Speculative Everything: Design, Fiction, and Social Dreaming</em>. MIT Press, 2013.</li>
+                
+                <li>Nardi, Bonnie A., and Vicki O'Day. <em>Information Ecologies: Using Technology with Heart</em>. MIT Press, 1999.</li>
+                
+                <li>Glabau, Danya. "Auto-Save Culture and the Erosion of Intentionality." <em>Logic Magazine</em> 11 (2020).</li>
+                
+                <li>Yates, Frances A. <em>The Art of Memory</em>. University of Chicago Press, 1966.</li>
+                
+                <li>Robertson, George, et al. "Data Mountain: Using Spatial Memory for Document Management." <em>ACM Symposium on User Interface Software and Technology</em>, 1998.</li>
+                
+                <li>Kirsh, David. "The Intelligent Use of Space." <em>Artificial Intelligence</em> 73.1-2 (1995): 31-68.</li>
+                
+                <li>Sellen, Abigail J., and Richard H.R. Harper. <em>The Myth of the Paperless Office</em>. MIT Press, 2002.</li>
+                
+                <li>boyd, danah. "Making Sense of Privacy and Publicity." <em>SXSW Interactive</em>, Austin, TX, 2010.</li>
+                
+                <li>Dash, Anil. "The Web We Lost." <em>Dashes Blog</em>, 2012. https://anildash.com/2012/12/13/the_web_we_lost/</li>
+                
+                <li>Zuckerman, Ethan. "The Internet's Original Sin." <em>The Atlantic</em>, August 2014.</li>
+                
+                <li>Nielsen, Jakob. "Scrolling and Attention." <em>Nielsen Norman Group</em>, 1997.</li>
+                
+                <li>Harris, Tristan. "How Technology is Hijacking Your Mind." <em>Thrive Global</em>, 2016.</li>
+                
+                <li>Rosen, Larry D., et al. "The Media and Technology Usage and Attitudes Scale." <em>Computers in Human Behavior</em> 29.6 (2013): 2501-2511.</li>
+                
+                <li>Goffman, Erving. <em>The Presentation of Self in Everyday Life</em>. Anchor Books, 1959.</li>
+                
+                <li>Baym, Nancy K. <em>Personal Connections in the Digital Age</em>. Polity Press, 2010.</li>
+                
+                <li>Wajcman, Judy. <em>Pressed for Time: The Acceleration of Life in Digital Capitalism</em>. University of Chicago Press, 2015.</li>
+                
+                <li>Zuboff, Shoshana. <em>The Age of Surveillance Capitalism</em>. PublicAffairs, 2019.</li>
+                
+                <li>Costanza-Chock, Sasha. <em>Design Justice: Community-Led Practices to Build the Worlds We Need</em>. MIT Press, 2020.</li>
+            </ol>
+        </section>
+
+        <!-- Footer Navigation -->
+        <nav class="border-t-2 border-gray-300 pt-6 ui-font">
+            <div class="flex justify-between items-center">
+                <a href="200-ch4.html" class="text-[#435d7a] hover:underline">← Previous: Chapter 4 (Preservation Strategies)</a>
+                <a href="index.html" class="text-[#435d7a] hover:underline">Back to Course Home</a>
+            </div>
+        </nav>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#435d7a] text-white py-6 mt-12">
+        <div class="max-w-4xl mx-auto px-6 text-center text-sm ui-font">
+            <p>&copy; 2025 Archaeobytology Project | <a href="../index.html" class="underline hover:text-[#A95C3D]">Return to Main Site</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
