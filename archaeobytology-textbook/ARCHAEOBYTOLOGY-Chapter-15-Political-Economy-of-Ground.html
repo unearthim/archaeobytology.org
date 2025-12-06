@@ -1,1140 +1,920 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 15: The Political Economy of Digital Ground — Who Controls the Infrastructure? | Archaeobytology</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Lora', serif; line-height: 1.8; color: #2E2E2E; background: #F8F7F4; padding: 2rem 1rem; }
-        .container { max-width: 800px; margin: 0 auto; background: #FFFFFF; padding: 3rem; border-radius: 15px; box-shadow: 0 4px 20px rgba(46,46,46,0.1); border: 1px solid #D1D1D1; }
-        h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; color: #2E2E2E; margin-top: 2rem; margin-bottom: 1rem; line-height: 1.3; }
-        h1 { font-size: 2.5rem; font-weight: 700; margin-top: 0; border-bottom: 3px solid #A1824A; padding-bottom: 0.5rem; }
-        h2 { font-size: 2rem; font-weight: 700; margin-top: 2.5rem; }
-        h3 { font-size: 1.5rem; font-weight: 600; color: #5A7D8C; }
-        h4 { font-size: 1.25rem; font-weight: 600; color: #5A7D8C; }
-        p { margin-bottom: 1.25rem; font-size: 1.1rem; }
-        a { color: #A93400; text-decoration: underline; transition: color 0.3s; }
-        a:hover { color: #A95C3D; }
-        strong { font-weight: 600; }
-        em { font-style: italic; }
-        code { font-family: 'Courier New', monospace; background: #F8F7F4; padding: 0.2rem 0.4rem; border-radius: 3px; border: 1px solid #D1D1D1; }
-        blockquote { border-left: 4px solid #A1824A; padding: 1rem 1.5rem; margin: 1.5rem 0; font-style: italic; color: #5A7D8C; background: #F8F7F4; border-radius: 0 8px 8px 0; }
-        hr { border: none; border-top: 2px solid #D1D1D1; margin: 2rem 0; }
-        .nav { text-align: center; padding: 1rem 0; border-top: 2px solid #D1D1D1; margin-top: 2rem; }
-        .nav a { display: inline-block; padding: 0.75rem 1.5rem; background: #A93400; color: #F8F7F4; text-decoration: none; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 600; margin: 0.5rem; }
-        .nav a:hover { background: #A95C3D; }
-    </style>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'><style type='text/css'>html {overflow-x: initial !important;}</style>
+<style type='text/css'  id="style-base">:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, "Segoe UI Emoji", "SF Pro", sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p *, #write.first-line-indent svg * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
+#write svg h1, #write svg h2, #write svg h3, #write svg h4, #write svg h5, #write svg h6, #write svg p { position: static; }
+.nodeLabel p { padding-right: 2px; padding-left: 2px; }
+.typora-export .nodeLabel p { padding-right: 0px; padding-left: 0px; }
+foreignobject { overflow: visible; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+li p { orphans: 1; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.mermaid-svg { margin: auto; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left: 0.25em solid rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
+
+</style>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;display=swap' type='text/css' />
+<style type='text/css'  id="style-theme_css">/*
+ * Unearth Light Theme for Typora
+ * Based on the Foundry Blueprint 4.1 - unearth.im
+ * 
+ * Color Palette:
+ * - Parchment (Background): #F8F7F4
+ * - Charcoal (Text): #2E2E2E
+ * - Burnt Sienna (Primary Accent): #A93400
+ * - Antique Gold (Secondary Accent): #A1824A
+ * - Slate Blue (Functional Accent): #5A7D8C
+ * - Light Stone: #D1D1D1
+ * - Medium Stone: #8E8E8E
+ *
+ * Typography:
+ * - Narrative: Lora (serif)
+ * - UI/Headlines: Inter (sans-serif)
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+:root {
+    --parchment: #F8F7F4;
+    --charcoal: #2E2E2E;
+    --burnt-sienna: #A93400;
+    --sienna-hover: #A95C3D;
+    --accent-color: #A95C3D;
+    --antique-gold: #A1824A;
+    --slate-blue: #5A7D8C;
+    --meta-text-color: #5A7D8C;
+    --light-stone: #D1D1D1;
+    --border-color: #e0e0e0;
+    --medium-stone: #8E8E8E;
+    --white: #FFFFFF;
+    
+    --font-narrative: 'Lora', Georgia, serif;
+    --font-ui: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
+}
+
+/* ========================================
+   BASE STYLES
+   ======================================== */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-narrative);
+    color: var(--charcoal);
+    background-color: var(--parchment);
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#write {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 64px 80px 100px;
+}
+
+/* ========================================
+   HEADINGS
+   ======================================== */
+
+h1 {
+    font-family: var(--font-narrative);
+    color: var(--charcoal);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-family: var(--font-narrative);
+    color: var(--charcoal);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--light-stone);
+    padding-bottom: 0.5rem;
+}
+
+h3, h4, h5, h6 {
+    font-family: var(--font-ui);
+    color: var(--charcoal);
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 1.25rem;
+    color: var(--charcoal);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+    color: var(--burnt-sienna);
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+h5 {
+    font-size: 1.1rem;
+    color: var(--slate-blue);
+}
+
+h6 {
+    font-size: 1rem;
+    color: var(--medium-stone);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ========================================
+   PARAGRAPHS & TEXT
+   ======================================== */
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.9;
+}
+
+strong, b {
+    font-weight: 700;
+    color: var(--charcoal);
+}
+
+em, i {
+    font-style: italic;
+}
+
+/* ========================================
+   LINKS
+   ======================================== */
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-color);
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    background-color: rgba(169, 92, 61, 0.1);
+    border-bottom-color: transparent;
+}
+
+/* ========================================
+   BLOCKQUOTES
+   ======================================== */
+
+blockquote {
+    margin: 2rem 0;
+    padding: 1.5rem 2rem;
+    border-left: 4px solid var(--antique-gold);
+    background-color: rgba(161, 130, 74, 0.08);
+    border-radius: 0 4px 4px 0;
+    color: var(--charcoal);
+}
+
+blockquote p {
+    margin: 0.5rem 0;
+    line-height: 1.8;
+}
+
+blockquote blockquote {
+    margin-left: 1rem;
+    border-left-color: var(--slate-blue);
+    background-color: rgba(90, 125, 140, 0.08);
+}
+
+/* ========================================
+   CODE
+   ======================================== */
+
+code {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    background-color: rgba(209, 209, 209, 0.4);
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    color: var(--burnt-sienna);
+}
+
+/* Code blocks */
+pre {
+    font-family: var(--font-mono);
+    background-color: var(--charcoal);
+    color: var(--parchment);
+    padding: 1rem 1.25rem;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    line-height: 1.6;
+}
+
+pre code {
+    background: none;
+    padding: 0;
+    color: inherit;
+    font-size: 0.875rem;
+}
+
+/* Code block with line numbers */
+.md-fences {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    background-color: var(--charcoal);
+    color: var(--parchment);
+    border: none;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1.5rem 0;
+}
+
+.CodeMirror-lines {
+    padding: 0;
+}
+
+/* ========================================
+   LISTS
+   ======================================== */
+
+ul, ol {
+    padding-left: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+li {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.9;
+}
+
+li > ul, li > ol {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+li > ul > li, li > ol > li {
+    margin-bottom: 0.5rem;
+}
+
+/* Unordered list markers */
+ul > li::marker {
+    color: var(--burnt-sienna);
+}
+
+/* Ordered list markers */
+ol > li::marker {
+    color: var(--antique-gold);
+    font-family: var(--font-ui);
+    font-weight: 600;
+}
+
+/* Task lists */
+.task-list-item {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.task-list-item input[type="checkbox"] {
+    margin-right: 0.5rem;
+    accent-color: var(--burnt-sienna);
+}
+
+/* ========================================
+   HORIZONTAL RULE
+   ======================================== */
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, var(--light-stone), var(--antique-gold), var(--light-stone));
+    margin: 2.5rem 0;
+}
+
+/* ========================================
+   TABLES
+   ======================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-family: var(--font-ui);
+    font-size: 0.9rem;
+}
+
+thead {
+    background-color: var(--charcoal);
+    color: var(--parchment);
+}
+
+th {
+    font-weight: 600;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--charcoal);
+}
+
+td {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--light-stone);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(209, 209, 209, 0.2);
+}
+
+tbody tr:hover {
+    background-color: rgba(161, 130, 74, 0.1);
+}
+
+/* ========================================
+   IMAGES
+   ======================================== */
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 1rem 0;
+    box-shadow: 0 2px 8px rgba(46, 46, 46, 0.1);
+}
+
+/* Image captions */
+figure {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+figcaption {
+    font-family: var(--font-ui);
+    font-size: 0.875rem;
+    color: var(--medium-stone);
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* ========================================
+   FOOTNOTES
+   ======================================== */
+
+.footnotes {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--light-stone);
+}
+
+.footnotes h2 {
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
+.footnotes ol {
+    padding-left: 20px;
+    color: #555;
+}
+
+.footnotes li {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.footnotes p {
+    font-size: 0.85rem;
+    margin-bottom: 0;
+}
+
+.footnote-ref, sup a {
+    font-family: var(--font-ui);
+    font-size: 0.8em;
+    font-weight: 600;
+    vertical-align: super;
+    color: var(--burnt-sienna);
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.footnote-ref:hover, sup a:hover {
+    background-color: transparent;
+}
+
+sup.md-footnote {
+    font-family: var(--font-ui);
+    font-size: 0.8em;
+    font-weight: 600;
+    color: var(--burnt-sienna);
+    background-color: transparent;
+    padding: 0;
+}
+
+/* ========================================
+   DEFINITION LISTS
+   ======================================== */
+
+dl {
+    margin: 1rem 0;
+}
+
+dt {
+    font-family: var(--font-ui);
+    font-weight: 700;
+    color: var(--burnt-sienna);
+    margin-top: 1rem;
+}
+
+dd {
+    margin-left: 1.5rem;
+    margin-top: 0.25rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--light-stone);
+}
+
+/* ========================================
+   MARK / HIGHLIGHT
+   ======================================== */
+
+mark {
+    background-color: rgba(161, 130, 74, 0.3);
+    color: var(--charcoal);
+    padding: 0.1rem 0.3rem;
+    border-radius: 2px;
+}
+
+/* ========================================
+   STRIKETHROUGH
+   ======================================== */
+
+del, s {
+    color: var(--medium-stone);
+    text-decoration: line-through;
+}
+
+/* ========================================
+   KEYBOARD
+   ======================================== */
+
+kbd {
+    font-family: var(--font-ui);
+    font-size: 0.85em;
+    background-color: var(--light-stone);
+    border: 1px solid var(--medium-stone);
+    border-radius: 3px;
+    padding: 0.1rem 0.4rem;
+    box-shadow: 0 1px 2px rgba(46, 46, 46, 0.1);
+}
+
+/* ========================================
+   ABBREVIATIONS
+   ======================================== */
+
+abbr {
+    text-decoration: underline dotted var(--slate-blue);
+    cursor: help;
+}
+
+/* ========================================
+   SELECTION
+   ======================================== */
+
+::selection {
+    background-color: rgba(169, 52, 0, 0.2);
+    color: var(--charcoal);
+}
+
+::-moz-selection {
+    background-color: rgba(169, 52, 0, 0.2);
+    color: var(--charcoal);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - SIDEBAR
+   ======================================== */
+
+#typora-sidebar {
+    background-color: var(--parchment);
+    border-right: 1px solid var(--light-stone);
+}
+
+.sidebar-content {
+    font-family: var(--font-ui);
+}
+
+.file-tree-node.active > .file-node-content {
+    background-color: rgba(169, 52, 0, 0.1);
+    color: var(--burnt-sienna);
+}
+
+.file-tree-node:hover > .file-node-content {
+    background-color: rgba(209, 209, 209, 0.3);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - SOURCE MODE
+   ======================================== */
+
+.cm-s-typora-default .cm-header {
+    color: var(--burnt-sienna);
+}
+
+.cm-s-typora-default .cm-link {
+    color: var(--slate-blue);
+}
+
+.cm-s-typora-default .cm-string {
+    color: var(--antique-gold);
+}
+
+.cm-s-typora-default .cm-comment {
+    color: var(--medium-stone);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - FOCUS MODE
+   ======================================== */
+
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) * {
+    color: var(--light-stone) !important;
+}
+
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) img {
+    opacity: 0.5;
+}
+
+/* ========================================
+   TYPORA SPECIFIC - MEGAMENU
+   ======================================== */
+
+.megamenu-menu-panel {
+    background-color: var(--parchment);
+    font-family: var(--font-ui);
+}
+
+.megamenu-menu-panel .btn {
+    background-color: var(--burnt-sienna);
+    color: var(--parchment);
+}
+
+.megamenu-menu-panel .btn:hover {
+    background-color: var(--sienna-hover);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - SEARCH
+   ======================================== */
+
+#md-searchpanel {
+    background-color: var(--parchment);
+    border-bottom: 1px solid var(--light-stone);
+}
+
+#md-searchpanel input {
+    font-family: var(--font-ui);
+    background-color: var(--white);
+    border: 1px solid var(--light-stone);
+    border-radius: 4px;
+}
+
+#md-searchpanel input:focus {
+    border-color: var(--burnt-sienna);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(169, 52, 0, 0.15);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - TOOLTIP
+   ======================================== */
+
+.md-hover-tip .md-arrow:after {
+    background-color: var(--charcoal);
+}
+
+.md-hover-tip .code-tooltip-content {
+    background-color: var(--charcoal);
+    color: var(--parchment);
+    font-family: var(--font-ui);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - META BLOCK
+   ======================================== */
+
+.md-meta-block {
+    background-color: rgba(209, 209, 209, 0.3);
+    border-radius: 6px;
+    padding: 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--medium-stone);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - TABLE OF CONTENTS
+   ======================================== */
+
+.md-toc {
+    font-family: var(--font-ui);
+}
+
+.md-toc-h1 {
+    font-weight: 700;
+    color: var(--charcoal);
+}
+
+.md-toc-h2 {
+    font-weight: 600;
+    color: var(--burnt-sienna);
+}
+
+.md-toc-h3, .md-toc-h4, .md-toc-h5, .md-toc-h6 {
+    color: var(--medium-stone);
+}
+
+/* ========================================
+   SCROLLBAR
+   ======================================== */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--parchment);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--light-stone);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--medium-stone);
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+
+@media print {
+    html {
+        font-size: 12pt;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+    
+    #write {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        color: black;
+        page-break-after: avoid;
+    }
+    
+    pre, blockquote {
+        page-break-inside: avoid;
+    }
+    
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+    
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        color: #666;
+    }
+}
+</style>
+<style type='text/css'  id="style-lp">ol, ul {padding-left: 40px}</style>
+
+<title>TEXTBOOK-Chapter-15-Political-Economy-of-Ground</title>
 </head>
-<body>
-    <div class="container">
-        <article>
-<h1>Chapter 15: The Political Economy of Digital Ground — Who Controls the Infrastructure?</h1>
-
-<h2>Opening: The Day the Domain Disappeared</h2>
-
-<p>
-In 2010, the United States government seized the domain <code>mooo.com</code>—a URL shortener popular with music fans and file sharers. Without warning, without trial, without due process, the Department of Homeland Security simply took control of the domain and replaced the site with a banner: "This domain name has been seized by ICE—Homeland Security Investigations."
-</p>
-
-<p>
-Thousands of links across the internet broke instantly. Blog posts, forum threads, social media shares—all pointed to dead URLs. The content those links pointed to still existed on other servers, but the <strong>naming system</strong> had been captured. The government didn't need to touch the actual files; they just seized the address that pointed to them.
-</p>
-
-<p>
-This wasn't an isolated incident:
-- <strong>Libya (.ly domains, 2010)</strong>: Shut down <code>vb.ly</code> (URL shortener) for "violating Islamic morality"
-- <strong>Kazakhstan (.kz, 2021)</strong>: Temporarily seized opposition media domains during protests
-- <strong>Ukraine (.ua, 2014)</strong>: Domains hijacked during Crimea annexation
-- <strong>China (.cn, ongoing)</strong>: Routine domain seizures for political speech
-</p>
-
-<p>
-<strong>The lesson:</strong> Even if you own your content, if you don't control the infrastructure that makes it accessible, you don't truly have Ground.
-</p>
-
-<p>
-This chapter explores the <strong>political economy of digital infrastructure</strong>—who controls the layers that make the internet work, how that control is exercised, and how we might redesign those layers to resist capture.
-</p>
-
-<p>
-We'll introduce the <strong>Sovereignty Stack</strong>: six layers of digital infrastructure, each with different ownership models and vulnerabilities. Then we'll examine case studies of each layer being captured or contested. Finally, we'll explore alternatives being built to resist centralized control.
-</p>
-
-<h2>Part I: The Sovereignty Stack — Six Layers of Digital Infrastructure</h2>
-
-<p>
-Digital sovereignty isn't just about owning a domain or hosting a website. It requires control (or at least resilience) across <strong>six interconnected layers</strong>:
-</p>
-
-<h3>Layer 1: Physical Infrastructure (Bottom Layer)</h3>
-
-<p>
-<strong>What it is:</strong>
-- Undersea cables carrying internet traffic between continents
-- Data centers housing servers
-- Cell towers and fiber optic lines
-- Electricity grids powering everything
-</p>
-
-<p>
-<strong>Who controls it:</strong>
-- Telecom corporations (AT&T, Comcast, China Telecom)
-- Cloud providers (Amazon AWS, Microsoft Azure, Google Cloud)
-- Nation-states (can cut cables, seize data centers)
-</p>
-
-<p>
-<strong>Sovereignty implications:</strong>
-- If you don't own physical hardware, you're renting from someone who can evict you
-- Governments can surveil traffic at chokepoints (NSA's undersea cable taps)
-- Interruptions (power outages, cable cuts) can take down entire regions
-</p>
-
-<p>
-<strong>Vulnerability:</strong>
-- <strong>Centralization</strong>: Most cloud traffic flows through a few companies' data centers
-- <strong>Geographic concentration</strong>: Major cable landing points are in a few cities
-- <strong>State power</strong>: Physical infrastructure is ultimately subject to whoever controls territory
-</p>
-
-<p>
-<strong>Resistance strategies:</strong>
-- Distributed hosting (content on multiple continents)
-- Peer-to-peer networks (no central servers)
-- Community-owned ISPs (fiber cooperatives)
-- Mesh networks (neighborhood-scale wireless networks)
-</p>
-
-<h3>Layer 2: Network Protocols (Transport Layer)</h3>
-
-<p>
-<strong>What it is:</strong>
-- TCP/IP (how data packets move across networks)
-- HTTP/HTTPS (how browsers talk to servers)
-- DNS (Domain Name System—translates names like google.com to IP addresses)
-- BGP (Border Gateway Protocol—routes traffic between networks)
-</p>
-
-<p>
-<strong>Who controls it:</strong>
-- Standards bodies (IETF, W3C—mostly open)
-- ICANN (manages DNS root servers)
-- ISPs and network operators (implement protocols)
-</p>
-
-<p>
-<strong>Sovereignty implications:</strong>
-- Open protocols (like TCP/IP) are more sovereign than proprietary ones
-- DNS is a single point of failure—if your domain is seized, your site becomes unreachable
-- BGP hijacking can redirect traffic (happened to YouTube, Amazon, others)
-</p>
-
-<p>
-<strong>Vulnerability:</strong>
-- <strong>DNS centralization</strong>: ICANN ultimately controls the root DNS servers
-- <strong>Certificate authorities</strong>: HTTPS requires CAs, which can be compromised or coerced
-- <strong>Routing attacks</strong>: BGP has no built-in authentication (trust-based)
-</p>
-
-<p>
-<strong>Resistance strategies:</strong>
-- Alternative DNS (blockchain-based names like ENS, Namecoin)
-- Onion routing (Tor—routes traffic through multiple nodes to hide destination)
-- IPFS (content-addressed instead of location-addressed—content hash is the "address")
-- Mesh routing (packets find paths dynamically, no central routing tables)
-</p>
-
-<h3>Layer 3: Identity Systems (Authentication Layer)</h3>
-
-<p>
-<strong>What it is:</strong>
-- How you prove you are who you claim to be
-- Username/password on platforms
-- Email addresses
-- Social login ("Sign in with Google/Facebook")
-- Digital certificates and keys
-</p>
-
-<p>
-<strong>Who controls it:</strong>
-- Platforms (Facebook, Google, Apple control their login systems)
-- Federated identity providers (OAuth services)
-- Individuals (if using self-hosted identity)
-</p>
-
-<p>
-<strong>Sovereignty implications:</strong>
-- Platform identity is <strong>leased</strong> (Facebook can delete your account, erasing your identity)
-- Email is more sovereign (you can change providers, keep your address if you own domain)
-- Federated identity (like Mastodon's @user@domain.com) gives you control
-</p>
-
-<p>
-<strong>Vulnerability:</strong>
-- <strong>Platform capture</strong>: Most people use "Sign in with Google/Facebook" (convenient but gives those companies control)
-- <strong>Real name policies</strong>: Platforms requiring legal names harm pseudonymous freedom
-- <strong>Account suspension</strong>: Losing your account means losing your identity across all connected services
-</p>
-
-<p>
-<strong>Resistance strategies:</strong>
-- Self-hosted identity (your own domain, your own email server)
-- Decentralized identifiers (DIDs—cryptographic identities not tied to any platform)
-- PGP/GPG keys (cryptographic proof of identity)
-- Federated identity (ActivityPub, IndieAuth)
-</p>
-
-<h3>Layer 4: Data Storage (Persistence Layer)</h3>
-
-<p>
-<strong>What it is:</strong>
-- Where your files, messages, posts, photos actually live
-- Cloud storage (Google Drive, Dropbox, iCloud)
-- Platform databases (Facebook's servers storing your posts)
-- Self-hosted storage (your own hard drive or server)
-</p>
-
-<p>
-<strong>Who controls it:</strong>
-- Cloud providers (Amazon S3, Google Cloud Storage)
-- Platforms (Twitter, Instagram, TikTok)
-- Individuals (if self-hosting)
-</p>
-
-<p>
-<strong>Sovereignty implications:</strong>
-- If your data lives on someone else's servers, they can delete it, surveil it, or lock you out
-- Export tools help (you can download your data), but migrating is often hard
-- Self-hosting gives you control but requires technical skill and maintenance
-</p>
-
-<p>
-<strong>Vulnerability:</strong>
-- <strong>Terms of Service changes</strong>: Provider can change terms, delete your data, or raise prices
-- <strong>Platform shutdown</strong>: If the company dies, your data dies (unless you exported)
-- <strong>Vendor lock-in</strong>: Proprietary formats make it hard to migrate
-</p>
-
-<p>
-<strong>Resistance strategies:</strong>
-- Self-hosting (Nextcloud, Syncthing)
-- Distributed storage (IPFS, BitTorrent, Filecoin)
-- Local-first software (data lives on your device, syncs peer-to-peer)
-- Regular exports (even if using cloud, keep local backups)
-</p>
-
-<h3>Layer 5: Application Layer (Interface Layer)</h3>
-
-<p>
-<strong>What it is:</strong>
-- The software you actually use: social media apps, email clients, browsers, editors
-- Web apps (run in browser, on company servers)
-- Native apps (run on your device, may or may not depend on servers)
-- Protocols (open standards that any app can implement)
-</p>
-
-<p>
-<strong>Who controls it:</strong>
-- Platform companies (Facebook, Twitter, TikTok)
-- Open source communities (Firefox, Linux, WordPress)
-- Standards bodies (W3C for web standards, IETF for internet protocols)
-</p>
-
-<p>
-<strong>Sovereignty implications:</strong>
-- Proprietary apps lock you into a platform's ecosystem
-- Open source apps can be forked if the company sells out
-- Open protocols allow multiple competing apps (email: Gmail, Outlook, Apple Mail all work together)
-</p>
-
-<p>
-<strong>Vulnerability:</strong>
-- <strong>Platform changes</strong>: Twitter can redesign its app, remove features users rely on
-- <strong>API shutdowns</strong>: Third-party apps can be killed (Twitter banned third-party clients in 2023)
-- <strong>Dark patterns</strong>: Apps designed to be addictive, manipulative (infinite scroll, notification spam)
-</p>
-
-<p>
-<strong>Resistance strategies:</strong>
-- Use open source apps (can't be taken away)
-- Use protocol-based tools (email, RSS, ActivityPub)
-- Support third-party clients (don't let platforms monopolize access)
-- Build alternatives (if platform sucks, fork it or build competitor)
-</p>
-
-<h3>Layer 6: Economic Layer (Value Layer)</h3>
-
-<p>
-<strong>What it is:</strong>
-- How money flows through digital systems
-- Payment processors (Visa, PayPal, Stripe)
-- Platform monetization (ads, subscriptions, cuts of transactions)
-- Cryptocurrency (Bitcoin, Ethereum)
-- Creator economy (Patreon, Ko-fi, OnlyFans)
-</p>
-
-<p>
-<strong>Who controls it:</strong>
-- Payment oligopolies (Visa/Mastercard process ~80% of transactions)
-- Platform companies (take 30% cuts on app stores, 15-50% on creator platforms)
-- Banks and regulators (can freeze accounts, block payments)
-</p>
-
-<p>
-<strong>Sovereignty implications:</strong>
-- If platforms or payment processors can cut off your income, you're not economically sovereign
-- Deplatforming often includes payment bans (see: sex workers, political dissidents, WikiLeaks)
-- Creator economy gives some independence, but platforms still take large cuts
-</p>
-
-<p>
-<strong>Vulnerability:</strong>
-- <strong>Payment processor power</strong>: Visa/PayPal can ban you, cutting off all income
-- <strong>Platform rent-seeking</strong>: App stores take 30%, creator platforms take 15-50%
-- <strong>Regulatory capture</strong>: Governments can pressure payment companies to ban disfavored actors
-</p>
-
-<p>
-<strong>Resistance strategies:</strong>
-- Cryptocurrency (censorship-resistant payments, but volatile and technical barriers)
-- Direct payments (checks, cash, wire transfers—cumbersome but sovereign)
-- Cooperatively-owned payment systems (credit unions, payment co-ops)
-- Multiple revenue streams (don't depend on one platform or processor)
-</p>
-
-<h2>Part II: The Stack in Practice — Case Studies of Control and Resistance</h2>
-
-<h3>Case Study 1: DNS Control — The .ly Seizure (Layer 2)</h3>
-
-<p>
-<strong>What Happened:</strong>
-</p>
-
-<p>
-In 2010, Libya (which controls the <code>.ly</code> top-level domain) seized <code>vb.ly</code>, a popular URL shortener, for "violating Libyan Islamic morality laws." The site had shortened links to content Libya deemed offensive.
-</p>
-
-<p>
-<strong>Impact:</strong>
-- Thousands of shortened URLs broke instantly
-- Blogs, tweets, forum posts—all pointing to dead links
-- Content wasn't deleted, but became unreachable via those URLs
-</p>
-
-<p>
-<strong>Sovereignty Stack Analysis:</strong>
-</p>
-
-<p>
-| Layer | Vulnerability | Lesson |
-|-------|---------------|--------|
-| Physical | Content was fine (on US servers) | Not the issue |
-| Network (DNS) | <strong>CRITICAL FAILURE</strong> | Libya controlled .ly TLD, seized the domain |
-| Identity | Vb.ly users lost identity (their short URLs) | Dependent on DNS |
-| Storage | Content still existed | But unreachable |
-| Application | URL shortener app still worked | But domain gone |
-| Economic | Vb.ly lost revenue | Revenue depends on domain access |
-</p>
-
-<p>
-<strong>Lesson:</strong> Even if you control Layers 4-6 (storage, apps, payment), if Layer 2 (DNS) is captured, you're toast.
-</p>
-
-<p>
-<strong>Resistance:</strong> Use domains under TLDs controlled by stable, rights-respecting jurisdictions. Or use alternative naming (onion addresses, IPFS hashes, blockchain names).
-</p>
-
-<h3>Case Study 2: AWS Deplatforming — Parler (Layer 1)</h3>
-
-<p>
-<strong>What Happened:</strong>
-</p>
-
-<p>
-In January 2021, Amazon Web Services (AWS) terminated Parler's hosting contract, citing Terms of Service violations (insufficient moderation of violent content). Parler went offline for a month until they found alternative hosting.
-</p>
-
-<p>
-<strong>Impact:</strong>
-- Entire platform inaccessible (no hosting = no site)
-- Millions of users locked out
-- Parler eventually returned via smaller hosting providers, but with degraded performance
-</p>
-
-<p>
-<strong>Sovereignty Stack Analysis:</strong>
-</p>
-
-<p>
-| Layer | Vulnerability | Lesson |
-|-------|---------------|--------|
-| Physical | <strong>CRITICAL FAILURE</strong> | AWS controlled servers, kicked Parler off |
-| Network | Parler still had their domain | But no servers to point to |
-| Identity | User accounts existed (in database) | But database offline |
-| Storage | Data existed (Parler had backups) | But no public access |
-| Application | Parler's app still existed | But servers offline |
-| Economic | Couldn't run ads or process payments | Business model dead |
-</p>
-
-<p>
-<strong>Lesson:</strong> If you don't own Layer 1 (physical infrastructure), you're vulnerable to hosting providers' decisions. AWS, Google Cloud, and Azure are de facto gatekeepers.
-</p>
-
-<p>
-<strong>Resistance:</strong> Self-host (expensive and technical), use offshore hosting (politically risky), or distribute across multiple providers (complex but resilient).
-</p>
-
-<h3>Case Study 3: Platform Identity Control — Facebook's Real Name Policy (Layer 3)</h3>
-
-<p>
-<strong>What Happened:</strong>
-</p>
-
-<p>
-Facebook required users to use their legal names (2014 policy enforcement wave). Thousands of accounts suspended:
-- Drag performers using stage names
-- Native Americans with non-Western naming conventions
-- Abuse survivors hiding from stalkers
-- LGBTQ+ people using chosen names
-</p>
-
-<p>
-<strong>Impact:</strong>
-- Users lost access to years of posts, photos, friend networks
-- Some lost business pages tied to stage personas
-- Forced outing for trans people using new names
-</p>
-
-<p>
-<strong>Sovereignty Stack Analysis:</strong>
-</p>
-
-<p>
-| Layer | Vulnerability | Lesson |
-|-------|---------------|--------|
-| Physical | Not the issue | Servers worked fine |
-| Network | Not the issue | DNS worked fine |
-| Identity | <strong>CRITICAL FAILURE</strong> | Facebook controlled identity, could revoke it |
-| Storage | Data existed but locked | Users couldn't access their own content |
-| Application | Facebook app worked | But identity removed |
-| Economic | Lost business pages | Revenue tied to identity |
-</p>
-
-<p>
-<strong>Lesson:</strong> Platform-controlled identity is <strong>leased</strong>, not owned. If the platform can delete your identity, you have no Declaration (Pillar 1).
-</p>
-
-<p>
-<strong>Resistance:</strong> Use federated identity (@user@your-domain.com), self-host identity, use cryptographic keys (not platform usernames).
-</p>
-
-<h3>Case Study 4: Payment Processor Deplatforming — WikiLeaks (Layer 6)</h3>
-
-<p>
-<strong>What Happened:</strong>
-</p>
-
-<p>
-In 2010, after WikiLeaks published classified US documents, Visa, Mastercard, PayPal, and Bank of America all cut off WikiLeaks' payment processing. Donations plummeted 95%.
-</p>
-
-<p>
-<strong>Impact:</strong>
-- WikiLeaks nearly went bankrupt
-- Couldn't accept credit card donations
-- Had to rely on Bitcoin (before it was widely adopted)
-</p>
-
-<p>
-<strong>Sovereignty Stack Analysis:</strong>
-</p>
-
-<p>
-| Layer | Vulnerability | Lesson |
-|-------|---------------|--------|
-| Physical | Hosting providers also pressured | But WikiLeaks migrated |
-| Network | Domain pressured but survived | DNS remained |
-| Identity | Not the issue | WikiLeaks identity intact |
-| Storage | Archives remained accessible | Data fine |
-| Application | Website worked | Accessible |
-| Economic | <strong>CRITICAL FAILURE</strong> | Payment processors cut off revenue |
-</p>
-
-<p>
-<strong>Lesson:</strong> Economic sovereignty (Layer 6) is essential. If payment processors can deplatform you, you're economically vulnerable no matter how technically sovereign you are.
-</p>
-
-<p>
-<strong>Resistance:</strong> Bitcoin (WikiLeaks adopted it, later profited from appreciation), direct bank transfers (slow, high fees), cash/checks (physical, not scalable).
-</p>
-
-<h3>Case Study 5: Mastodon Federation — Distributed Resilience (Layers 2-5)</h3>
-
-<p>
-<strong>What Happened:</strong>
-</p>
-
-<p>
-Mastodon launched in 2016 as a federated alternative to Twitter. Anyone can run a Mastodon instance (server); instances communicate via ActivityPub protocol.
-</p>
-
-<p>
-<strong>Resilience across layers:</strong>
-</p>
-
-<p>
-| Layer | How Mastodon Resists Capture |
-|-------|------------------------------|
-| Physical | Distributed servers (no single company owns all hosting) |
-| Network | Open protocol (ActivityPub—any server can join) |
-| Identity | Federated (@user@instance.com—tied to instance, but migratable) |
-| Storage | Instance admin controls data (users can export, migrate) |
-| Application | Open source (anyone can fork, improve, or run their own version) |
-| Economic | Varied models (donations, subscriptions, volunteer-run) |
-</p>
-
-<p>
-<strong>Advantages:</strong>
-- No single point of failure (if one instance dies, others survive)
-- No corporate control (community-governed instances)
-- Portable identity (can migrate between instances)
-</p>
-
-<p>
-<strong>Challenges:</strong>
-- Instance admin power (can still ban you from that instance)
-- Fragmentation (instances defederate, creating silos)
-- Technical barriers (running an instance requires skill)
-- Economic sustainability (many instances struggle to fund themselves)
-</p>
-
-<p>
-<strong>Lesson:</strong> Federation distributes sovereignty but doesn't eliminate all vulnerabilities. Still better than centralized platforms.
-</p>
-
-<h2>Part III: Redesigning the Stack — Alternatives to Centralized Control</h2>
-
-<h3>Layer 1 Alternatives: Physical Infrastructure</h3>
-
-<p>
-<strong>Problem:</strong> Cloud oligopoly (AWS, Google Cloud, Azure control most hosting)
-</p>
-
-<p>
-<strong>Alternatives:</strong>
-</p>
-
-<p>
-<strong>Community-Owned ISPs:</strong>
-- Fiber cooperatives (users own the network)
-- Examples: Chattanooga's municipal fiber, NYC Mesh
-- Advantages: Democratic control, no corporate extraction
-- Challenges: Requires local organizing, capital investment
-</p>
-
-<p>
-<strong>Peer-to-Peer Hosting:</strong>
-- IPFS (InterPlanetary File System): Content distributed across many nodes
-- BitTorrent: Files seeded by many users, no central server
-- Advantages: No single point of failure, censorship-resistant
-- Challenges: Slow for dynamic content, legal gray areas
-</p>
-
-<p>
-<strong>Mesh Networks:</strong>
-- Wireless networks where users' devices relay traffic
-- Example: Freifunk (Germany), NYC Mesh
-- Advantages: No central ISP, community-controlled
-- Challenges: Limited range, technical complexity
-</p>
-
-<h3>Layer 2 Alternatives: Network Protocols</h3>
-
-<p>
-<strong>Problem:</strong> DNS centralization (ICANN controls root servers, domain seizures possible)
-</p>
-
-<p>
-<strong>Alternatives:</strong>
-</p>
-
-<p>
-<strong>Blockchain-Based Naming:</strong>
-- <strong>ENS (Ethereum Name Service)</strong>: Register .eth names on Ethereum blockchain
-  - Advantages: Censorship-resistant (no government can seize), permanent ownership
-  - Challenges: Requires crypto wallet, expensive (gas fees), not browser-native
-- <strong>Namecoin</strong>: Bitcoin-based naming system (.bit domains)
-  - Similar trade-offs to ENS
-</p>
-
-<p>
-<strong>Onion Routing:</strong>
-- <strong>Tor hidden services</strong>: Sites with .onion addresses (e.g., <code>3g2upl4pq6kufc4m.onion</code> for DuckDuckGo)
-  - Advantages: Censorship-resistant, anonymous hosting
-  - Challenges: Slow, not user-friendly (long random addresses), stigma
-</p>
-
-<p>
-<strong>Content-Addressed Networking:</strong>
-- <strong>IPFS</strong>: Content identified by hash, not location
-  - Example: <code>ipfs://QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco</code> (instead of http://example.com)
-  - Advantages: Content can't be censored by taking down a domain
-  - Challenges: Not human-readable, requires IPFS-enabled browser
-</p>
-
-<h3>Layer 3 Alternatives: Identity Systems</h3>
-
-<p>
-<strong>Problem:</strong> Platform-controlled identity (Facebook, Google can delete your account)
-</p>
-
-<p>
-<strong>Alternatives:</strong>
-</p>
-
-<p>
-<strong>Federated Identity:</strong>
-- <strong>ActivityPub</strong>: @user@instance.com (like email addresses)
-- <strong>IndieAuth</strong>: Use your own domain as identity
-- Advantages: Portable (can migrate), not owned by one company
-- Challenges: Requires domain ownership, instances can still ban you
-</p>
-
-<p>
-<strong>Decentralized Identifiers (DIDs):</strong>
-- Cryptographic identities (public/private key pairs)
-- Not tied to any platform or domain
-- Advantages: Truly sovereign (you control the keys)
-- Challenges: Hard to remember (long strings of characters), key management risky (lose key = lose identity)
-</p>
-
-<p>
-<strong>Self-Hosted Email:</strong>
-- Run your own email server (user@yourdomain.com)
-- Advantages: Full control, federated (can email anyone)
-- Challenges: Technical (requires sysadmin skills), anti-spam filters often block self-hosted email
-</p>
-
-<h3>Layer 4 Alternatives: Data Storage</h3>
-
-<p>
-<strong>Problem:</strong> Cloud lock-in (Google, Dropbox, iCloud can delete your data or change terms)
-</p>
-
-<p>
-<strong>Alternatives:</strong>
-</p>
-
-<p>
-<strong>Self-Hosted Storage:</strong>
-- <strong>Nextcloud</strong>: Open-source cloud (like Dropbox, but you run it)
-- <strong>Syncthing</strong>: Peer-to-peer file sync (no central server)
-- Advantages: Full control, no surveillance
-- Challenges: Requires server management, backups are your responsibility
-</p>
-
-<p>
-<strong>Distributed Storage:</strong>
-- <strong>IPFS</strong>: Content stored across network, no single server
-- <strong>Filecoin</strong>: Pay for distributed storage with cryptocurrency
-- <strong>Arweave</strong>: "Permanent" storage (pay once, store forever)
-- Advantages: Censorship-resistant, redundant
-- Challenges: Cost, performance, complexity
-</p>
-
-<p>
-<strong>Local-First Software:</strong>
-- Apps that store data on your device, sync peer-to-peer
-- Examples: Obsidian (notes), Logseq (knowledge management)
-- Advantages: Your data, no cloud dependency
-- Challenges: Syncing across devices is harder
-</p>
-
-<h3>Layer 5 Alternatives: Application Layer</h3>
-
-<p>
-<strong>Problem:</strong> Proprietary apps (Twitter, Facebook control how you use their platforms)
-</p>
-
-<p>
-<strong>Alternatives:</strong>
-</p>
-
-<p>
-<strong>Open Source Apps:</strong>
-- <strong>Mastodon</strong>: Open-source Twitter alternative
-- <strong>Pixelfed</strong>: Open-source Instagram alternative
-- <strong>PeerTube</strong>: Open-source YouTube alternative
-- Advantages: Can fork if company sells out, community-governed
-- Challenges: Often lag in features, smaller user bases
-</p>
-
-<p>
-<strong>Protocol-Based Tools:</strong>
-- <strong>Email</strong>: Any client can access any server
-- <strong>RSS</strong>: Any reader can subscribe to any feed
-- <strong>ActivityPub</strong>: Any app can communicate with any instance
-- Advantages: No vendor lock-in, interoperability
-- Challenges: Less shiny than proprietary apps, requires coordination
-</p>
-
-<h3>Layer 6 Alternatives: Economic Layer</h3>
-
-<p>
-<strong>Problem:</strong> Payment processor oligopoly (Visa/PayPal can deplatform you)
-</p>
-
-<p>
-<strong>Alternatives:</strong>
-</p>
-
-<p>
-<strong>Cryptocurrency:</strong>
-- <strong>Bitcoin, Ethereum, etc.</strong>: Censorship-resistant payments
-- Advantages: No bank or processor can block you
-- Challenges: Volatile, technical barriers, environmental concerns, regulatory uncertainty
-</p>
-
-<p>
-<strong>Cooperatively-Owned Payment Systems:</strong>
-- <strong>Credit unions</strong>: Member-owned banks
-- <strong>Payment cooperatives</strong>: Users own the payment network
-- Advantages: Democratic control, aligned incentives
-- Challenges: Smaller networks, less convenient
-</p>
-
-<p>
-<strong>Direct Transactions:</strong>
-- <strong>Wire transfers, checks, cash</strong>: No intermediary
-- Advantages: Can't be deplatformed
-- Challenges: Slow, expensive, not scalable online
-</p>
-
-<p>
-<strong>Platform Cooperatives:</strong>
-- <strong>Stocksy</strong>: Photographer-owned stock photo agency
-- <strong>Resonate</strong>: Musician-owned streaming service
-- Advantages: Workers own the platform, keep more revenue
-- Challenges: Hard to scale, less capital for growth
-</p>
-
-<h2>Part IV: The Sovereignty Stack as Design Framework</h2>
-
-<p>
-When building new tools, platforms, or institutions, use the Sovereignty Stack as a <strong>design checklist</strong>:
-</p>
-
-<h3>Sovereignty Audit Template</h3>
-
-<p>
-For each layer, ask:
-</p>
-
-<p>
-<strong>Layer 1: Physical Infrastructure</strong>
-- [ ] Where are the servers? Who owns them?
-- [ ] What happens if the hosting provider kicks us off?
-- [ ] Do we have redundancy (multiple data centers)?
-</p>
-
-<p>
-<strong>Layer 2: Network Protocols</strong>
-- [ ] Are we using open protocols or proprietary ones?
-- [ ] Can we be censored via DNS (domain seizure)?
-- [ ] Do we have fallback addresses (onion, IPFS, etc.)?
-</p>
-
-<p>
-<strong>Layer 3: Identity</strong>
-- [ ] Do users own their identities (domain-based, cryptographic)?
-- [ ] Can we revoke identities (if so, under what conditions)?
-- [ ] Can users migrate identities to other systems?
-</p>
-
-<p>
-<strong>Layer 4: Storage</strong>
-- [ ] Do users own their data legally?
-- [ ] Can users export everything easily?
-- [ ] Is data stored centrally (vulnerable) or distributed?
-</p>
-
-<p>
-<strong>Layer 5: Application</strong>
-- [ ] Is the software open source (can users fork it)?
-- [ ] Does it depend on our servers, or is it peer-to-peer?
-- [ ] Can other apps interoperate with ours (open protocols)?
-</p>
-
-<p>
-<strong>Layer 6: Economic</strong>
-- [ ] How do we make money without surveillance/extraction?
-- [ ] What payment systems do we use (vulnerable to deplatforming)?
-- [ ] Do we have multiple revenue streams?
-</p>
-
-<h3>Example Audit: Ghost vs. Medium</h3>
-
-<p>
-<strong>Ghost (High Sovereignty):</strong>
-</p>
-
-<p>
-| Layer | Assessment |
-|-------|------------|
-| Physical | Self-hosted option (users run their own servers) OR Ghost(Pro) hosting (can migrate away) |
-| Network | Custom domains supported (users own their URLs) |
-| Identity | Domain-based (you@yourblog.com) |
-| Storage | Users own data, full export tools |
-| Application | Open source (can fork if Ghost Ltd dies) |
-| Economic | Subscriptions (users pay Ghost, or self-host for free), no ads |
-</p>
-
-<p>
-<strong>Medium (Low Sovereignty):</strong>
-</p>
-
-<p>
-| Layer | Assessment |
-|-------|------------|
-| Physical | Medium's servers only |
-| Network | medium.com/@username (don't own domain) |
-| Identity | Platform-controlled (Medium can ban you) |
-| Storage | Data on Medium's servers (export exists but limited) |
-| Application | Proprietary (can't fork, can't self-host) |
-| Economic | Ad/subscription-based (users don't control revenue model) |
-</p>
-
-<p>
-<strong>Result:</strong> Ghost embodies more sovereignty across all layers.
-</p>
-
-<h2>Part V: The Political Economy Question — Who Should Own Infrastructure?</h2>
-
-<h3>Three Models of Ownership</h3>
-
-<p>
-<strong>Model 1: Corporate Ownership (Status Quo)</strong>
-- Private companies own most infrastructure
-- Examples: AWS, Cloudflare, Visa, Google
-- Advantages: Convenient, well-funded, feature-rich
-- Disadvantages: Extractive, surveillance-based, can deplatform users
-</p>
-
-<p>
-<strong>Model 2: State Ownership</strong>
-- Governments own critical infrastructure
-- Examples: Postal service, public utilities, national postal banks
-- Advantages: Democratic accountability (in theory), public service mandate
-- Disadvantages: Vulnerable to authoritarianism, bureaucratic, underfunded
-</p>
-
-<p>
-<strong>Model 3: Commons Ownership</strong>
-- Users collectively own infrastructure
-- Examples: Wikipedia, cooperatives, federated networks
-- Advantages: Aligned incentives, democratic, mission-driven
-- Disadvantages: Coordination challenges, underfunded, slower innovation
-</p>
-
-<h3>Archaeobytology's Position: <strong>Pluralism</strong></h3>
-
-<p>
-We need <strong>all three models</strong> for different layers and contexts:
-</p>
-
-<p>
-- <strong>Layer 1 (Physical)</strong>: Mix of corporate, state, and community-owned (diversity prevents single point of failure)
-- <strong>Layer 2 (Network)</strong>: Open protocols (state/community standards-setting, anyone can implement)
-- <strong>Layer 3 (Identity)</strong>: Individual ownership (federated or cryptographic)
-- <strong>Layer 4 (Storage)</strong>: Mix of self-hosted and cooperatively-managed
-- <strong>Layer 5 (Application)</strong>: Open source (community-owned code)
-- <strong>Layer 6 (Economic)</strong>: Multiple options (crypto, co-ops, traditional payment—let users choose)
-</p>
-
-<p>
-<strong>No single model is perfect.</strong> The goal is <strong>pluralism</strong>: multiple ownership structures coexisting, so users aren't dependent on any one.
-</p>
-
-<h2>Part VI: Threat Modeling — Attacks on Each Layer</h2>
-
-<h3>Threat 1: State Surveillance (All Layers)</h3>
-
-<p>
-<strong>Attack Vector:</strong> Governments compel infrastructure providers to surveil users
-</p>
-
-<p>
-<strong>Examples:</strong>
-- NSA tapping undersea cables (Layer 1)
-- Forcing DNS providers to log queries (Layer 2)
-- Demanding user identity records (Layer 3)
-- Accessing cloud storage without warrants (Layer 4)
-- Installing backdoors in apps (Layer 5)
-- Tracking financial transactions (Layer 6)
-</p>
-
-<p>
-<strong>Defenses:</strong>
-- End-to-end encryption (can't surveil what you can't read)
-- Jurisdiction shopping (host in privacy-respecting countries)
-- Onion routing (obscure who's talking to whom)
-- Decentralization (harder to compel many actors than one)
-</p>
-
-<h3>Threat 2: Corporate Extraction (Layers 4-6)</h3>
-
-<p>
-<strong>Attack Vector:</strong> Companies monetize user data and attention
-</p>
-
-<p>
-<strong>Examples:</strong>
-- Surveillance advertising (Layer 4: data mining)
-- Algorithmic manipulation (Layer 5: addictive app design)
-- Platform rent (Layer 6: taking 30% cuts)
-</p>
-
-<p>
-<strong>Defenses:</strong>
-- Business models that don't require surveillance (subscriptions, donations)
-- Open source alternatives (no company owns the app)
-- Data ownership (users control, export, delete)
-</p>
-
-<h3>Threat 3: Platform Capture (Layers 3-5)</h3>
-
-<p>
-<strong>Attack Vector:</strong> Dominant platforms use network effects to lock in users
-</p>
-
-<p>
-<strong>Examples:</strong>
-- Identity capture (can't leave Facebook without losing social graph)
-- Data lock-in (hard to export and migrate)
-- API restrictions (third-party apps banned)
-</p>
-
-<p>
-<strong>Defenses:</strong>
-- Interoperability (force platforms to allow data portability)
-- Federation (multiple providers, users can migrate)
-- Open protocols (anyone can build competing apps)
-</p>
-
-<h3>Threat 4: Infrastructure Fragility (Layer 1)</h3>
-
-<p>
-<strong>Attack Vector:</strong> Physical infrastructure fails or is attacked
-</p>
-
-<p>
-<strong>Examples:</strong>
-- Undersea cable cuts (accidental or sabotage)
-- Data center fires (OVH fire in 2021 destroyed thousands of sites)
-- Power grid failures (take down entire regions)
-</p>
-
-<p>
-<strong>Defenses:</strong>
-- Redundancy (multiple data centers, geographic distribution)
-- Peer-to-peer architectures (no single server to attack)
-- Regular backups (distributed across locations)
-</p>
-
-<h2>Conclusion: Sovereignty Requires Stack Thinking</h2>
-
-<p>
-You cannot achieve digital sovereignty by fixing one layer. Even if you:
-- Own your domain (Layer 2)
-- Use open source software (Layer 5)
-- Self-host your data (Layer 4)
-</p>
-
-<p>
-...you're still vulnerable if:
-- Your hosting provider kicks you off (Layer 1)
-- Payment processors deplatform you (Layer 6)
-- Your identity depends on a platform (Layer 3)
-</p>
-
-<p>
-<strong>Sovereignty requires thinking across all six layers.</strong> It's not enough to own one part of the stack; you need resilience at every level.
-</p>
-
-<p>
-This is hard. Full-stack sovereignty is expensive, technical, and time-consuming. Most people will accept some vulnerability in exchange for convenience. That's okay—<strong>sovereignty is a spectrum</strong>, not binary.
-</p>
-
-<p>
-But the Sovereignty Stack helps you:
-- <strong>Diagnose vulnerabilities</strong>: Where are you most at risk?
-- <strong>Prioritize fixes</strong>: Which layer matters most for your use case?
-- <strong>Design resilient systems</strong>: How do you build across all layers?
-- <strong>Evaluate tools</strong>: Does this app/platform embody sovereignty?
-</p>
-
-<p>
-In the next chapter, we'll explore <strong>movement building</strong>—how to turn individual sovereignty into collective power. Because infrastructure isn't just technical; it's <strong>political</strong>. Changing who controls the stack requires organizing, advocacy, and policy change.
-</p>
-
-<p>
-The political economy of Ground isn't just about building alternatives. It's about <strong>fighting for a different kind of internet</strong>—one where users, not corporations or states, have power.
-</p>
-
-<p>
-That fight begins with understanding the Stack. Now you do.
-</p>
-
-<h2>Discussion Questions</h2>
-
-<p>
-1. <strong>Personal Sovereignty Audit</strong>: Use the Sovereignty Stack to audit your own digital life. Which layers are you most vulnerable on? Which are you most secure on?
-</p>
-
-<p>
-2. <strong>Trade-offs</strong>: Would you accept less convenience for more sovereignty? Where's your breaking point? (e.g., Would you run your own email server?)
-</p>
-
-<p>
-3. <strong>Threat Prioritization</strong>: Which threat is most dangerous: state surveillance, corporate extraction, platform capture, or infrastructure fragility? Does it depend on your context?
-</p>
-
-<p>
-4. <strong>Ownership Models</strong>: Should critical infrastructure (DNS, payment systems, cloud hosting) be owned by corporations, governments, or commons? What's best for sovereignty?
-</p>
-
-<p>
-5. <strong>Layer Interdependence</strong>: If you could only secure ONE layer of the stack, which would you choose? Why?
-</p>
-
-<p>
-6. <strong>Future Scenario</strong>: Imagine 2040. What does digital infrastructure look like if Archaeobytology succeeds? What if it fails?
-</p>
-
-<h2>Exercise: Redesign One Layer</h2>
-
-<p>
-<strong>Task</strong>: Choose one layer of the Sovereignty Stack. Redesign it to maximize sovereignty while remaining practically viable.
-</p>
-
-<p>
-<strong>Part 1: Critique Current State</strong> (500 words)
-- How does the current system work?
-- Who controls it?
-- What are the sovereignty failures?
-- What specific harms result from current design?
-</p>
-
-<p>
-<strong>Part 2: Design Alternative</strong> (1000 words)
-- How would you redesign this layer?
-- What technologies enable your design?
-- How does it resist capture (corporate, state, platform)?
-- How does it balance sovereignty with usability?
-</p>
-
-<p>
-<strong>Part 3: Adoption Strategy</strong> (500 words)
-- How do you get people to switch?
-- What's the transition path from current system to yours?
-- What are the obstacles (technical, economic, political)?
-</p>
-
-<p>
-<strong>Part 4: Threat Model</strong> (500 words)
-- How would each threat actor attack your system?
-  - State surveillance
-  - Corporate extraction
-  - Platform capture
-  - Infrastructure failure
-- What defenses have you built in?
-- What vulnerabilities remain?
-</p>
-
-<p>
-<strong>Part 5: Reflect</strong> (300 words)
-- What surprised you about this design exercise?
-- What compromises did you have to make?
-- Would you personally use the system you designed?
-</p>
-
-<h2>Further Reading</h2>
-
-<h3>On Infrastructure and Power</h3>
-
-<p>
-- Lessig, Lawrence. <em>Code: Version 2.0</em>. Basic Books, 2006.
-  - Classic on how digital architecture encodes power
-</p>
-
-<p>
-- Star, Susan Leigh. "The Ethnography of Infrastructure." <em>American Behavioral Scientist</em> 43, no. 3 (1999): 377-391.
-  - Infrastructure is political, not neutral
-</p>
-
-<p>
-- Winner, Langdon. "Do Artifacts Have Politics?" <em>Daedalus</em> 109, no. 1 (1980): 121-136.
-  - Technologies embody political choices
-</p>
-
-<h3>On Specific Layers</h3>
-
-<p>
-- Mueller, Milton. <em>Networks and States: The Global Politics of Internet Governance</em>. MIT Press, 2010.
-  - On DNS, ICANN, and network governance
-</p>
-
-<p>
-- Schneier, Bruce. <em>Data and Goliath</em>. W.W. Norton, 2015.
-  - On surveillance at every layer
-</p>
-
-<p>
-- DeNardis, Laura. <em>The Global War for Internet Governance</em>. Yale, 2014.
-  - Who controls protocols and standards
-</p>
-
-<h3>On Alternatives</h3>
-
-<p>
-- Doctorow, Cory. <em>The Internet Con: How to Seize the Means of Computation</em>. Verso, 2023.
-  - On interoperability and adversarial compat
-</p>
-
-<p>
-- Bauwens, Michel, and Vasilis Kostakis. <em>Network Society and Future Scenarios for a Collaborative Economy</em>. Palgrave, 2014.
-  - On commons-based alternatives
-</p>
-
-<p>
-- Schneider, Nathan. "Cryptoeconomics as a Limitation on Governance." COALA Workshop, 2017.
-  - On blockchain governance and limitations
-</p>
-
-<h3>Primary Sources</h3>
-
-<p>
-- Tor Project. "How Tor Works." https://www.torproject.org/about/history/
-- IPFS Documentation. https://docs.ipfs.tech/
-- ENS Documentation. https://docs.ens.domains/
-- Mastodon Documentation. https://docs.joinmastodon.org/
-</p>
-
-<p>
-<strong>End of Chapter 15</strong>
-</p>
-
-<p>
-<em>Next: Chapter 16 — From Practice to Discipline: Movement Building</em>
-</p>
-
-
-        </article>
-        <div class="nav">
-            <a href="index.html">Back to Table of Contents</a>
-        </div>
-    </div>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='chapter-15-the-political-economy-of-digital-ground-----who-controls-the-infrastructure'><span>Chapter 15: The Political Economy of Digital Ground — Who Controls the Infrastructure?</span></h1><hr /><h2 id='opening-the-day-the-domain-disappeared'><span>Opening: The Day the Domain Disappeared</span></h2><p><span>In 2010, the United States government seized the domain </span><code>mooo.com</code><span>—a URL shortener popular with music fans and file sharers. Without warning, without trial, without due process, the Department of Homeland Security simply took control of the domain and replaced the site with a banner: &quot;This domain name has been seized by ICE—Homeland Security Investigations.&quot;</span></p><p><span>Thousands of links across the internet broke instantly. Blog posts, forum threads, social media shares—all pointed to dead URLs. The content those links pointed to still existed on other servers, but the </span><strong><span>naming system</span></strong><span> had been captured. The government didn&#39;t need to touch the actual files; they just seized the address that pointed to them.</span></p><p><span>This wasn&#39;t an isolated incident:</span></p><ul><li><p><strong><span>Libya (.ly domains, 2010)</span></strong><span>: Shut down </span><code>vb.ly</code><span> (URL shortener) for &quot;violating Islamic morality&quot;</span></p></li><li><p><strong><span>Kazakhstan (.kz, 2021)</span></strong><span>: Temporarily seized opposition media domains during protests</span></p></li><li><p><strong><span>Ukraine (.ua, 2014)</span></strong><span>: Domains hijacked during Crimea annexation</span></p></li><li><p><strong><span>China (.cn, ongoing)</span></strong><span>: Routine domain seizures for political speech</span></p></li></ul><p><strong><span>The lesson:</span></strong><span> Even if you own your content, if you don&#39;t control the infrastructure that makes it accessible, you don&#39;t truly have Ground.</span></p><p><span>This chapter explores the </span><strong><span>political economy of digital infrastructure</span></strong><span>—who controls the layers that make the internet work, how that control is exercised, and how we might redesign those layers to resist capture.</span></p><p><span>We&#39;ll introduce the </span><strong><span>Sovereignty Stack</span></strong><span>: six layers of digital infrastructure, each with different ownership models and vulnerabilities. Then we&#39;ll examine case studies of each layer being captured or contested. Finally, we&#39;ll explore alternatives being built to resist centralized control.</span></p><hr /><h2 id='part-i-the-sovereignty-stack-----six-layers-of-digital-infrastructure'><span>Part I: The Sovereignty Stack — Six Layers of Digital Infrastructure</span></h2><p><span>Digital sovereignty isn&#39;t just about owning a domain or hosting a website. It requires control (or at least resilience) across </span><strong><span>six interconnected layers</span></strong><span>:</span></p><h3 id='layer-1-physical-infrastructure-bottom-layer'><span>Layer 1: Physical Infrastructure (Bottom Layer)</span></h3><p><strong><span>What it is:</span></strong></p><ul><li><p><span>Undersea cables carrying internet traffic between continents</span></p></li><li><p><span>Data centers housing servers</span></p></li><li><p><span>Cell towers and fiber optic lines</span></p></li><li><p><span>Electricity grids powering everything</span></p></li></ul><p><strong><span>Who controls it:</span></strong></p><ul><li><p><span>Telecom corporations (AT&amp;T, Comcast, China Telecom)</span></p></li><li><p><span>Cloud providers (Amazon AWS, Microsoft Azure, Google Cloud)</span></p></li><li><p><span>Nation-states (can cut cables, seize data centers)</span></p></li></ul><p><strong><span>Sovereignty implications:</span></strong></p><ul><li><p><span>If you don&#39;t own physical hardware, you&#39;re renting from someone who can evict you</span></p></li><li><p><span>Governments can surveil traffic at chokepoints (NSA&#39;s undersea cable taps)</span></p></li><li><p><span>Interruptions (power outages, cable cuts) can take down entire regions</span></p></li></ul><p><strong><span>Vulnerability:</span></strong></p><ul><li><p><strong><span>Centralization</span></strong><span>: Most cloud traffic flows through a few companies&#39; data centers</span></p></li><li><p><strong><span>Geographic concentration</span></strong><span>: Major cable landing points are in a few cities</span></p></li><li><p><strong><span>State power</span></strong><span>: Physical infrastructure is ultimately subject to whoever controls territory</span></p></li></ul><p><strong><span>Resistance strategies:</span></strong></p><ul><li><p><span>Distributed hosting (content on multiple continents)</span></p></li><li><p><span>Peer-to-peer networks (no central servers)</span></p></li><li><p><span>Community-owned ISPs (fiber cooperatives)</span></p></li><li><p><span>Mesh networks (neighborhood-scale wireless networks)</span></p></li></ul><h3 id='layer-2-network-protocols-transport-layer'><span>Layer 2: Network Protocols (Transport Layer)</span></h3><p><strong><span>What it is:</span></strong></p><ul><li><p><span>TCP/IP (how data packets move across networks)</span></p></li><li><p><span>HTTP/HTTPS (how browsers talk to servers)</span></p></li><li><p><span>DNS (Domain Name System—translates names like google.com to IP addresses)</span></p></li><li><p><span>BGP (Border Gateway Protocol—routes traffic between networks)</span></p></li></ul><p><strong><span>Who controls it:</span></strong></p><ul><li><p><span>Standards bodies (IETF, W3C—mostly open)</span></p></li><li><p><span>ICANN (manages DNS root servers)</span></p></li><li><p><span>ISPs and network operators (implement protocols)</span></p></li></ul><p><strong><span>Sovereignty implications:</span></strong></p><ul><li><p><span>Open protocols (like TCP/IP) are more sovereign than proprietary ones</span></p></li><li><p><span>DNS is a single point of failure—if your domain is seized, your site becomes unreachable</span></p></li><li><p><span>BGP hijacking can redirect traffic (happened to YouTube, Amazon, others)</span></p></li></ul><p><strong><span>Vulnerability:</span></strong></p><ul><li><p><strong><span>DNS centralization</span></strong><span>: ICANN ultimately controls the root DNS servers</span></p></li><li><p><strong><span>Certificate authorities</span></strong><span>: HTTPS requires CAs, which can be compromised or coerced</span></p></li><li><p><strong><span>Routing attacks</span></strong><span>: BGP has no built-in authentication (trust-based)</span></p></li></ul><p><strong><span>Resistance strategies:</span></strong></p><ul><li><p><span>Alternative DNS (blockchain-based names like ENS, Namecoin)</span></p></li><li><p><span>Onion routing (Tor—routes traffic through multiple nodes to hide destination)</span></p></li><li><p><span>IPFS (content-addressed instead of location-addressed—content hash is the &quot;address&quot;)</span></p></li><li><p><span>Mesh routing (packets find paths dynamically, no central routing tables)</span></p></li></ul><h3 id='layer-3-identity-systems-authentication-layer'><span>Layer 3: Identity Systems (Authentication Layer)</span></h3><p><strong><span>What it is:</span></strong></p><ul><li><p><span>How you prove you are who you claim to be</span></p></li><li><p><span>Username/password on platforms</span></p></li><li><p><span>Email addresses</span></p></li><li><p><span>Social login (&quot;Sign in with Google/Facebook&quot;)</span></p></li><li><p><span>Digital certificates and keys</span></p></li></ul><p><strong><span>Who controls it:</span></strong></p><ul><li><p><span>Platforms (Facebook, Google, Apple control their login systems)</span></p></li><li><p><span>Federated identity providers (OAuth services)</span></p></li><li><p><span>Individuals (if using self-hosted identity)</span></p></li></ul><p><strong><span>Sovereignty implications:</span></strong></p><ul><li><p><span>Platform identity is </span><strong><span>leased</span></strong><span> (Facebook can delete your account, erasing your identity)</span></p></li><li><p><span>Email is more sovereign (you can change providers, keep your address if you own domain)</span></p></li><li><p><span>Federated identity (like Mastodon&#39;s @</span><a href='mailto:user@domain.com' target='_blank' class='url'>user@domain.com</a><span>) gives you control</span></p></li></ul><p><strong><span>Vulnerability:</span></strong></p><ul><li><p><strong><span>Platform capture</span></strong><span>: Most people use &quot;Sign in with Google/Facebook&quot; (convenient but gives those companies control)</span></p></li><li><p><strong><span>Real name policies</span></strong><span>: Platforms requiring legal names harm pseudonymous freedom</span></p></li><li><p><strong><span>Account suspension</span></strong><span>: Losing your account means losing your identity across all connected services</span></p></li></ul><p><strong><span>Resistance strategies:</span></strong></p><ul><li><p><span>Self-hosted identity (your own domain, your own email server)</span></p></li><li><p><span>Decentralized identifiers (DIDs—cryptographic identities not tied to any platform)</span></p></li><li><p><span>PGP/GPG keys (cryptographic proof of identity)</span></p></li><li><p><span>Federated identity (ActivityPub, IndieAuth)</span></p></li></ul><h3 id='layer-4-data-storage-persistence-layer'><span>Layer 4: Data Storage (Persistence Layer)</span></h3><p><strong><span>What it is:</span></strong></p><ul><li><p><span>Where your files, messages, posts, photos actually live</span></p></li><li><p><span>Cloud storage (Google Drive, Dropbox, iCloud)</span></p></li><li><p><span>Platform databases (Facebook&#39;s servers storing your posts)</span></p></li><li><p><span>Self-hosted storage (your own hard drive or server)</span></p></li></ul><p><strong><span>Who controls it:</span></strong></p><ul><li><p><span>Cloud providers (Amazon S3, Google Cloud Storage)</span></p></li><li><p><span>Platforms (Twitter, Instagram, TikTok)</span></p></li><li><p><span>Individuals (if self-hosting)</span></p></li></ul><p><strong><span>Sovereignty implications:</span></strong></p><ul><li><p><span>If your data lives on someone else&#39;s servers, they can delete it, surveil it, or lock you out</span></p></li><li><p><span>Export tools help (you can download your data), but migrating is often hard</span></p></li><li><p><span>Self-hosting gives you control but requires technical skill and maintenance</span></p></li></ul><p><strong><span>Vulnerability:</span></strong></p><ul><li><p><strong><span>Terms of Service changes</span></strong><span>: Provider can change terms, delete your data, or raise prices</span></p></li><li><p><strong><span>Platform shutdown</span></strong><span>: If the company dies, your data dies (unless you exported)</span></p></li><li><p><strong><span>Vendor lock-in</span></strong><span>: Proprietary formats make it hard to migrate</span></p></li></ul><p><strong><span>Resistance strategies:</span></strong></p><ul><li><p><span>Self-hosting (Nextcloud, Syncthing)</span></p></li><li><p><span>Distributed storage (IPFS, BitTorrent, Filecoin)</span></p></li><li><p><span>Local-first software (data lives on your device, syncs peer-to-peer)</span></p></li><li><p><span>Regular exports (even if using cloud, keep local backups)</span></p></li></ul><h3 id='layer-5-application-layer-interface-layer'><span>Layer 5: Application Layer (Interface Layer)</span></h3><p><strong><span>What it is:</span></strong></p><ul><li><p><span>The software you actually use: social media apps, email clients, browsers, editors</span></p></li><li><p><span>Web apps (run in browser, on company servers)</span></p></li><li><p><span>Native apps (run on your device, may or may not depend on servers)</span></p></li><li><p><span>Protocols (open standards that any app can implement)</span></p></li></ul><p><strong><span>Who controls it:</span></strong></p><ul><li><p><span>Platform companies (Facebook, Twitter, TikTok)</span></p></li><li><p><span>Open source communities (Firefox, Linux, WordPress)</span></p></li><li><p><span>Standards bodies (W3C for web standards, IETF for internet protocols)</span></p></li></ul><p><strong><span>Sovereignty implications:</span></strong></p><ul><li><p><span>Proprietary apps lock you into a platform&#39;s ecosystem</span></p></li><li><p><span>Open source apps can be forked if the company sells out</span></p></li><li><p><span>Open protocols allow multiple competing apps (email: Gmail, Outlook, Apple Mail all work together)</span></p></li></ul><p><strong><span>Vulnerability:</span></strong></p><ul><li><p><strong><span>Platform changes</span></strong><span>: Twitter can redesign its app, remove features users rely on</span></p></li><li><p><strong><span>API shutdowns</span></strong><span>: Third-party apps can be killed (Twitter banned third-party clients in 2023)</span></p></li><li><p><strong><span>Dark patterns</span></strong><span>: Apps designed to be addictive, manipulative (infinite scroll, notification spam)</span></p></li></ul><p><strong><span>Resistance strategies:</span></strong></p><ul><li><p><span>Use open source apps (can&#39;t be taken away)</span></p></li><li><p><span>Use protocol-based tools (email, RSS, ActivityPub)</span></p></li><li><p><span>Support third-party clients (don&#39;t let platforms monopolize access)</span></p></li><li><p><span>Build alternatives (if platform sucks, fork it or build competitor)</span></p></li></ul><h3 id='layer-6-economic-layer-value-layer'><span>Layer 6: Economic Layer (Value Layer)</span></h3><p><strong><span>What it is:</span></strong></p><ul><li><p><span>How money flows through digital systems</span></p></li><li><p><span>Payment processors (Visa, PayPal, Stripe)</span></p></li><li><p><span>Platform monetization (ads, subscriptions, cuts of transactions)</span></p></li><li><p><span>Cryptocurrency (Bitcoin, Ethereum)</span></p></li><li><p><span>Creator economy (Patreon, Ko-fi, OnlyFans)</span></p></li></ul><p><strong><span>Who controls it:</span></strong></p><ul><li><p><span>Payment oligopolies (Visa/Mastercard process ~80% of transactions)</span></p></li><li><p><span>Platform companies (take 30% cuts on app stores, 15-50% on creator platforms)</span></p></li><li><p><span>Banks and regulators (can freeze accounts, block payments)</span></p></li></ul><p><strong><span>Sovereignty implications:</span></strong></p><ul><li><p><span>If platforms or payment processors can cut off your income, you&#39;re not economically sovereign</span></p></li><li><p><span>Deplatforming often includes payment bans (see: sex workers, political dissidents, WikiLeaks)</span></p></li><li><p><span>Creator economy gives some independence, but platforms still take large cuts</span></p></li></ul><p><strong><span>Vulnerability:</span></strong></p><ul><li><p><strong><span>Payment processor power</span></strong><span>: Visa/PayPal can ban you, cutting off all income</span></p></li><li><p><strong><span>Platform rent-seeking</span></strong><span>: App stores take 30%, creator platforms take 15-50%</span></p></li><li><p><strong><span>Regulatory capture</span></strong><span>: Governments can pressure payment companies to ban disfavored actors</span></p></li></ul><p><strong><span>Resistance strategies:</span></strong></p><ul><li><p><span>Cryptocurrency (censorship-resistant payments, but volatile and technical barriers)</span></p></li><li><p><span>Direct payments (checks, cash, wire transfers—cumbersome but sovereign)</span></p></li><li><p><span>Cooperatively-owned payment systems (credit unions, payment co-ops)</span></p></li><li><p><span>Multiple revenue streams (don&#39;t depend on one platform or processor)</span></p></li></ul><hr /><h2 id='part-ii-the-stack-in-practice-----case-studies-of-control-and-resistance'><span>Part II: The Stack in Practice — Case Studies of Control and Resistance</span></h2><h3 id='case-study-1-dns-control-----the-ly-seizure-layer-2'><span>Case Study 1: DNS Control — The .ly Seizure (Layer 2)</span></h3><p><strong><span>What Happened:</span></strong></p><p><span>In 2010, Libya (which controls the </span><code>.ly</code><span> top-level domain) seized </span><code>vb.ly</code><span>, a popular URL shortener, for &quot;violating Libyan Islamic morality laws.&quot; The site had shortened links to content Libya deemed offensive.</span></p><p><strong><span>Impact:</span></strong></p><ul><li><p><span>Thousands of shortened URLs broke instantly</span></p></li><li><p><span>Blogs, tweets, forum posts—all pointing to dead links</span></p></li><li><p><span>Content wasn&#39;t deleted, but became unreachable via those URLs</span></p></li></ul><p><strong><span>Sovereignty Stack Analysis:</span></strong></p><figure class='table-figure'><table><thead><tr><th><span>Layer</span></th><th><span>Vulnerability</span></th><th><span>Lesson</span></th></tr></thead><tbody><tr><td><span>Physical</span></td><td><span>Content was fine (on US servers)</span></td><td><span>Not the issue</span></td></tr><tr><td><span>Network (DNS)</span></td><td><strong><span>CRITICAL FAILURE</span></strong></td><td><span>Libya controlled .ly TLD, seized the domain</span></td></tr><tr><td><span>Identity</span></td><td><span>Vb.ly users lost identity (their short URLs)</span></td><td><span>Dependent on DNS</span></td></tr><tr><td><span>Storage</span></td><td><span>Content still existed</span></td><td><span>But unreachable</span></td></tr><tr><td><span>Application</span></td><td><span>URL shortener app still worked</span></td><td><span>But domain gone</span></td></tr><tr><td><span>Economic</span></td><td><span>Vb.ly lost revenue</span></td><td><span>Revenue depends on domain access</span></td></tr></tbody></table></figure><p><strong><span>Lesson:</span></strong><span> Even if you control Layers 4-6 (storage, apps, payment), if Layer 2 (DNS) is captured, you&#39;re toast.</span></p><p><strong><span>Resistance:</span></strong><span> Use domains under TLDs controlled by stable, rights-respecting jurisdictions. Or use alternative naming (onion addresses, IPFS hashes, blockchain names).</span></p><h3 id='case-study-2-aws-deplatforming-----parler-layer-1'><span>Case Study 2: AWS Deplatforming — Parler (Layer 1)</span></h3><p><strong><span>What Happened:</span></strong></p><p><span>In January 2021, Amazon Web Services (AWS) terminated Parler&#39;s hosting contract, citing Terms of Service violations (insufficient moderation of violent content). Parler went offline for a month until they found alternative hosting.</span></p><p><strong><span>Impact:</span></strong></p><ul><li><p><span>Entire platform inaccessible (no hosting = no site)</span></p></li><li><p><span>Millions of users locked out</span></p></li><li><p><span>Parler eventually returned via smaller hosting providers, but with degraded performance</span></p></li></ul><p><strong><span>Sovereignty Stack Analysis:</span></strong></p><figure class='table-figure'><table><thead><tr><th><span>Layer</span></th><th><span>Vulnerability</span></th><th><span>Lesson</span></th></tr></thead><tbody><tr><td><span>Physical</span></td><td><strong><span>CRITICAL FAILURE</span></strong></td><td><span>AWS controlled servers, kicked Parler off</span></td></tr><tr><td><span>Network</span></td><td><span>Parler still had their domain</span></td><td><span>But no servers to point to</span></td></tr><tr><td><span>Identity</span></td><td><span>User accounts existed (in database)</span></td><td><span>But database offline</span></td></tr><tr><td><span>Storage</span></td><td><span>Data existed (Parler had backups)</span></td><td><span>But no public access</span></td></tr><tr><td><span>Application</span></td><td><span>Parler&#39;s app still existed</span></td><td><span>But servers offline</span></td></tr><tr><td><span>Economic</span></td><td><span>Couldn&#39;t run ads or process payments</span></td><td><span>Business model dead</span></td></tr></tbody></table></figure><p><strong><span>Lesson:</span></strong><span> If you don&#39;t own Layer 1 (physical infrastructure), you&#39;re vulnerable to hosting providers&#39; decisions. AWS, Google Cloud, and Azure are de facto gatekeepers.</span></p><p><strong><span>Resistance:</span></strong><span> Self-host (expensive and technical), use offshore hosting (politically risky), or distribute across multiple providers (complex but resilient).</span></p><h3 id='case-study-3-platform-identity-control-----facebooks-real-name-policy-layer-3'><span>Case Study 3: Platform Identity Control — Facebook&#39;s Real Name Policy (Layer 3)</span></h3><p><strong><span>What Happened:</span></strong></p><p><span>Facebook required users to use their legal names (2014 policy enforcement wave). Thousands of accounts suspended:</span></p><ul><li><p><span>Drag performers using stage names</span></p></li><li><p><span>Native Americans with non-Western naming conventions</span></p></li><li><p><span>Abuse survivors hiding from stalkers</span></p></li><li><p><span>LGBTQ+ people using chosen names</span></p></li></ul><p><strong><span>Impact:</span></strong></p><ul><li><p><span>Users lost access to years of posts, photos, friend networks</span></p></li><li><p><span>Some lost business pages tied to stage personas</span></p></li><li><p><span>Forced outing for trans people using new names</span></p></li></ul><p><strong><span>Sovereignty Stack Analysis:</span></strong></p><figure class='table-figure'><table><thead><tr><th><span>Layer</span></th><th><span>Vulnerability</span></th><th><span>Lesson</span></th></tr></thead><tbody><tr><td><span>Physical</span></td><td><span>Not the issue</span></td><td><span>Servers worked fine</span></td></tr><tr><td><span>Network</span></td><td><span>Not the issue</span></td><td><span>DNS worked fine</span></td></tr><tr><td><span>Identity</span></td><td><strong><span>CRITICAL FAILURE</span></strong></td><td><span>Facebook controlled identity, could revoke it</span></td></tr><tr><td><span>Storage</span></td><td><span>Data existed but locked</span></td><td><span>Users couldn&#39;t access their own content</span></td></tr><tr><td><span>Application</span></td><td><span>Facebook app worked</span></td><td><span>But identity removed</span></td></tr><tr><td><span>Economic</span></td><td><span>Lost business pages</span></td><td><span>Revenue tied to identity</span></td></tr></tbody></table></figure><p><strong><span>Lesson:</span></strong><span> Platform-controlled identity is </span><strong><span>leased</span></strong><span>, not owned. If the platform can delete your identity, you have no Declaration (Pillar 1).</span></p><p><strong><span>Resistance:</span></strong><span> Use federated identity (@</span><a href='mailto:user@your-domain.com' target='_blank' class='url'>user@your-domain.com</a><span>), self-host identity, use cryptographic keys (not platform usernames).</span></p><h3 id='case-study-4-payment-processor-deplatforming-----wikileaks-layer-6'><span>Case Study 4: Payment Processor Deplatforming — WikiLeaks (Layer 6)</span></h3><p><strong><span>What Happened:</span></strong></p><p><span>In 2010, after WikiLeaks published classified US documents, Visa, Mastercard, PayPal, and Bank of America all cut off WikiLeaks&#39; payment processing. Donations plummeted 95%.</span></p><p><strong><span>Impact:</span></strong></p><ul><li><p><span>WikiLeaks nearly went bankrupt</span></p></li><li><p><span>Couldn&#39;t accept credit card donations</span></p></li><li><p><span>Had to rely on Bitcoin (before it was widely adopted)</span></p></li></ul><p><strong><span>Sovereignty Stack Analysis:</span></strong></p><figure class='table-figure'><table><thead><tr><th><span>Layer</span></th><th><span>Vulnerability</span></th><th><span>Lesson</span></th></tr></thead><tbody><tr><td><span>Physical</span></td><td><span>Hosting providers also pressured</span></td><td><span>But WikiLeaks migrated</span></td></tr><tr><td><span>Network</span></td><td><span>Domain pressured but survived</span></td><td><span>DNS remained</span></td></tr><tr><td><span>Identity</span></td><td><span>Not the issue</span></td><td><span>WikiLeaks identity intact</span></td></tr><tr><td><span>Storage</span></td><td><span>Archives remained accessible</span></td><td><span>Data fine</span></td></tr><tr><td><span>Application</span></td><td><span>Website worked</span></td><td><span>Accessible</span></td></tr><tr><td><span>Economic</span></td><td><strong><span>CRITICAL FAILURE</span></strong></td><td><span>Payment processors cut off revenue</span></td></tr></tbody></table></figure><p><strong><span>Lesson:</span></strong><span> Economic sovereignty (Layer 6) is essential. If payment processors can deplatform you, you&#39;re economically vulnerable no matter how technically sovereign you are.</span></p><p><strong><span>Resistance:</span></strong><span> Bitcoin (WikiLeaks adopted it, later profited from appreciation), direct bank transfers (slow, high fees), cash/checks (physical, not scalable).</span></p><h3 id='case-study-5-mastodon-federation-----distributed-resilience-layers-2-5'><span>Case Study 5: Mastodon Federation — Distributed Resilience (Layers 2-5)</span></h3><p><strong><span>What Happened:</span></strong></p><p><span>Mastodon launched in 2016 as a federated alternative to Twitter. Anyone can run a Mastodon instance (server); instances communicate via ActivityPub protocol.</span></p><p><strong><span>Resilience across layers:</span></strong></p><figure class='table-figure'><table><thead><tr><th><span>Layer</span></th><th><span>How Mastodon Resists Capture</span></th></tr></thead><tbody><tr><td><span>Physical</span></td><td><span>Distributed servers (no single company owns all hosting)</span></td></tr><tr><td><span>Network</span></td><td><span>Open protocol (ActivityPub—any server can join)</span></td></tr><tr><td><span>Identity</span></td><td><span>Federated (@</span><a href='mailto:user@instance.com' target='_blank' class='url'>user@instance.com</a><span>—tied to instance, but migratable)</span></td></tr><tr><td><span>Storage</span></td><td><span>Instance admin controls data (users can export, migrate)</span></td></tr><tr><td><span>Application</span></td><td><span>Open source (anyone can fork, improve, or run their own version)</span></td></tr><tr><td><span>Economic</span></td><td><span>Varied models (donations, subscriptions, volunteer-run)</span></td></tr></tbody></table></figure><p><strong><span>Advantages:</span></strong></p><ul><li><p><span>No single point of failure (if one instance dies, others survive)</span></p></li><li><p><span>No corporate control (community-governed instances)</span></p></li><li><p><span>Portable identity (can migrate between instances)</span></p></li></ul><p><strong><span>Challenges:</span></strong></p><ul><li><p><span>Instance admin power (can still ban you from that instance)</span></p></li><li><p><span>Fragmentation (instances defederate, creating silos)</span></p></li><li><p><span>Technical barriers (running an instance requires skill)</span></p></li><li><p><span>Economic sustainability (many instances struggle to fund themselves)</span></p></li></ul><p><strong><span>Lesson:</span></strong><span> Federation distributes sovereignty but doesn&#39;t eliminate all vulnerabilities. Still better than centralized platforms.</span></p><hr /><h2 id='part-iii-redesigning-the-stack-----alternatives-to-centralized-control'><span>Part III: Redesigning the Stack — Alternatives to Centralized Control</span></h2><h3 id='layer-1-alternatives-physical-infrastructure'><span>Layer 1 Alternatives: Physical Infrastructure</span></h3><p><strong><span>Problem:</span></strong><span> Cloud oligopoly (AWS, Google Cloud, Azure control most hosting)</span></p><p><strong><span>Alternatives:</span></strong></p><p><strong><span>Community-Owned ISPs:</span></strong></p><ul><li><p><span>Fiber cooperatives (users own the network)</span></p></li><li><p><span>Examples: Chattanooga&#39;s municipal fiber, NYC Mesh</span></p></li><li><p><span>Advantages: Democratic control, no corporate extraction</span></p></li><li><p><span>Challenges: Requires local organizing, capital investment</span></p></li></ul><p><strong><span>Peer-to-Peer Hosting:</span></strong></p><ul><li><p><span>IPFS (InterPlanetary File System): Content distributed across many nodes</span></p></li><li><p><span>BitTorrent: Files seeded by many users, no central server</span></p></li><li><p><span>Advantages: No single point of failure, censorship-resistant</span></p></li><li><p><span>Challenges: Slow for dynamic content, legal gray areas</span></p></li></ul><p><strong><span>Mesh Networks:</span></strong></p><ul><li><p><span>Wireless networks where users&#39; devices relay traffic</span></p></li><li><p><span>Example: Freifunk (Germany), NYC Mesh</span></p></li><li><p><span>Advantages: No central ISP, community-controlled</span></p></li><li><p><span>Challenges: Limited range, technical complexity</span></p></li></ul><h3 id='layer-2-alternatives-network-protocols'><span>Layer 2 Alternatives: Network Protocols</span></h3><p><strong><span>Problem:</span></strong><span> DNS centralization (ICANN controls root servers, domain seizures possible)</span></p><p><strong><span>Alternatives:</span></strong></p><p><strong><span>Blockchain-Based Naming:</span></strong></p><ul><li><p><strong><span>ENS (Ethereum Name Service)</span></strong><span>: Register .eth names on Ethereum blockchain</span></p><ul><li><p><span>Advantages: Censorship-resistant (no government can seize), permanent ownership</span></p></li><li><p><span>Challenges: Requires crypto wallet, expensive (gas fees), not browser-native</span></p></li></ul></li><li><p><strong><span>Namecoin</span></strong><span>: Bitcoin-based naming system (.bit domains)</span></p><ul><li><p><span>Similar trade-offs to ENS</span></p></li></ul></li></ul><p><strong><span>Onion Routing:</span></strong></p><ul><li><p><strong><span>Tor hidden services</span></strong><span>: Sites with .onion addresses (e.g., </span><code>3g2upl4pq6kufc4m.onion</code><span> for DuckDuckGo)</span></p><ul><li><p><span>Advantages: Censorship-resistant, anonymous hosting</span></p></li><li><p><span>Challenges: Slow, not user-friendly (long random addresses), stigma</span></p></li></ul></li></ul><p><strong><span>Content-Addressed Networking:</span></strong></p><ul><li><p><strong><span>IPFS</span></strong><span>: Content identified by hash, not location</span></p><ul><li><p><span>Example: </span><code>ipfs://QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco</code><span> (instead of </span><a href='http://example.com' target='_blank' class='url'>http://example.com</a><span>)</span></p></li><li><p><span>Advantages: Content can&#39;t be censored by taking down a domain</span></p></li><li><p><span>Challenges: Not human-readable, requires IPFS-enabled browser</span></p></li></ul></li></ul><h3 id='layer-3-alternatives-identity-systems'><span>Layer 3 Alternatives: Identity Systems</span></h3><p><strong><span>Problem:</span></strong><span> Platform-controlled identity (Facebook, Google can delete your account)</span></p><p><strong><span>Alternatives:</span></strong></p><p><strong><span>Federated Identity:</span></strong></p><ul><li><p><strong><span>ActivityPub</span></strong><span>: @</span><a href='mailto:user@instance.com' target='_blank' class='url'>user@instance.com</a><span> (like email addresses)</span></p></li><li><p><strong><span>IndieAuth</span></strong><span>: Use your own domain as identity</span></p></li><li><p><span>Advantages: Portable (can migrate), not owned by one company</span></p></li><li><p><span>Challenges: Requires domain ownership, instances can still ban you</span></p></li></ul><p><strong><span>Decentralized Identifiers (DIDs):</span></strong></p><ul><li><p><span>Cryptographic identities (public/private key pairs)</span></p></li><li><p><span>Not tied to any platform or domain</span></p></li><li><p><span>Advantages: Truly sovereign (you control the keys)</span></p></li><li><p><span>Challenges: Hard to remember (long strings of characters), key management risky (lose key = lose identity)</span></p></li></ul><p><strong><span>Self-Hosted Email:</span></strong></p><ul><li><p><span>Run your own email server (</span><a href='mailto:user@yourdomain.com' target='_blank' class='url'>user@yourdomain.com</a><span>)</span></p></li><li><p><span>Advantages: Full control, federated (can email anyone)</span></p></li><li><p><span>Challenges: Technical (requires sysadmin skills), anti-spam filters often block self-hosted email</span></p></li></ul><h3 id='layer-4-alternatives-data-storage'><span>Layer 4 Alternatives: Data Storage</span></h3><p><strong><span>Problem:</span></strong><span> Cloud lock-in (Google, Dropbox, iCloud can delete your data or change terms)</span></p><p><strong><span>Alternatives:</span></strong></p><p><strong><span>Self-Hosted Storage:</span></strong></p><ul><li><p><strong><span>Nextcloud</span></strong><span>: Open-source cloud (like Dropbox, but you run it)</span></p></li><li><p><strong><span>Syncthing</span></strong><span>: Peer-to-peer file sync (no central server)</span></p></li><li><p><span>Advantages: Full control, no surveillance</span></p></li><li><p><span>Challenges: Requires server management, backups are your responsibility</span></p></li></ul><p><strong><span>Distributed Storage:</span></strong></p><ul><li><p><strong><span>IPFS</span></strong><span>: Content stored across network, no single server</span></p></li><li><p><strong><span>Filecoin</span></strong><span>: Pay for distributed storage with cryptocurrency</span></p></li><li><p><strong><span>Arweave</span></strong><span>: &quot;Permanent&quot; storage (pay once, store forever)</span></p></li><li><p><span>Advantages: Censorship-resistant, redundant</span></p></li><li><p><span>Challenges: Cost, performance, complexity</span></p></li></ul><p><strong><span>Local-First Software:</span></strong></p><ul><li><p><span>Apps that store data on your device, sync peer-to-peer</span></p></li><li><p><span>Examples: Obsidian (notes), Logseq (knowledge management)</span></p></li><li><p><span>Advantages: Your data, no cloud dependency</span></p></li><li><p><span>Challenges: Syncing across devices is harder</span></p></li></ul><h3 id='layer-5-alternatives-application-layer'><span>Layer 5 Alternatives: Application Layer</span></h3><p><strong><span>Problem:</span></strong><span> Proprietary apps (Twitter, Facebook control how you use their platforms)</span></p><p><strong><span>Alternatives:</span></strong></p><p><strong><span>Open Source Apps:</span></strong></p><ul><li><p><strong><span>Mastodon</span></strong><span>: Open-source Twitter alternative</span></p></li><li><p><strong><span>Pixelfed</span></strong><span>: Open-source Instagram alternative</span></p></li><li><p><strong><span>PeerTube</span></strong><span>: Open-source YouTube alternative</span></p></li><li><p><span>Advantages: Can fork if company sells out, community-governed</span></p></li><li><p><span>Challenges: Often lag in features, smaller user bases</span></p></li></ul><p><strong><span>Protocol-Based Tools:</span></strong></p><ul><li><p><strong><span>Email</span></strong><span>: Any client can access any server</span></p></li><li><p><strong><span>RSS</span></strong><span>: Any reader can subscribe to any feed</span></p></li><li><p><strong><span>ActivityPub</span></strong><span>: Any app can communicate with any instance</span></p></li><li><p><span>Advantages: No vendor lock-in, interoperability</span></p></li><li><p><span>Challenges: Less shiny than proprietary apps, requires coordination</span></p></li></ul><h3 id='layer-6-alternatives-economic-layer'><span>Layer 6 Alternatives: Economic Layer</span></h3><p><strong><span>Problem:</span></strong><span> Payment processor oligopoly (Visa/PayPal can deplatform you)</span></p><p><strong><span>Alternatives:</span></strong></p><p><strong><span>Cryptocurrency:</span></strong></p><ul><li><p><strong><span>Bitcoin, Ethereum, etc.</span></strong><span>: Censorship-resistant payments</span></p></li><li><p><span>Advantages: No bank or processor can block you</span></p></li><li><p><span>Challenges: Volatile, technical barriers, environmental concerns, regulatory uncertainty</span></p></li></ul><p><strong><span>Cooperatively-Owned Payment Systems:</span></strong></p><ul><li><p><strong><span>Credit unions</span></strong><span>: Member-owned banks</span></p></li><li><p><strong><span>Payment cooperatives</span></strong><span>: Users own the payment network</span></p></li><li><p><span>Advantages: Democratic control, aligned incentives</span></p></li><li><p><span>Challenges: Smaller networks, less convenient</span></p></li></ul><p><strong><span>Direct Transactions:</span></strong></p><ul><li><p><strong><span>Wire transfers, checks, cash</span></strong><span>: No intermediary</span></p></li><li><p><span>Advantages: Can&#39;t be deplatformed</span></p></li><li><p><span>Challenges: Slow, expensive, not scalable online</span></p></li></ul><p><strong><span>Platform Cooperatives:</span></strong></p><ul><li><p><strong><span>Stocksy</span></strong><span>: Photographer-owned stock photo agency</span></p></li><li><p><strong><span>Resonate</span></strong><span>: Musician-owned streaming service</span></p></li><li><p><span>Advantages: Workers own the platform, keep more revenue</span></p></li><li><p><span>Challenges: Hard to scale, less capital for growth</span></p></li></ul><hr /><h2 id='part-iv-the-sovereignty-stack-as-design-framework'><span>Part IV: The Sovereignty Stack as Design Framework</span></h2><p><span>When building new tools, platforms, or institutions, use the Sovereignty Stack as a </span><strong><span>design checklist</span></strong><span>:</span></p><h3 id='sovereignty-audit-template'><span>Sovereignty Audit Template</span></h3><p><span>For each layer, ask:</span></p><p><strong><span>Layer 1: Physical Infrastructure</span></strong></p><ul><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Where are the servers? Who owns them?</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>What happens if the hosting provider kicks us off?</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Do we have redundancy (multiple data centers)?</span></p></li></ul><p><strong><span>Layer 2: Network Protocols</span></strong></p><ul><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Are we using open protocols or proprietary ones?</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Can we be censored via DNS (domain seizure)?</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Do we have fallback addresses (onion, IPFS, etc.)?</span></p></li></ul><p><strong><span>Layer 3: Identity</span></strong></p><ul><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Do users own their identities (domain-based, cryptographic)?</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Can we revoke identities (if so, under what conditions)?</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Can users migrate identities to other systems?</span></p></li></ul><p><strong><span>Layer 4: Storage</span></strong></p><ul><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Do users own their data legally?</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Can users export everything easily?</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Is data stored centrally (vulnerable) or distributed?</span></p></li></ul><p><strong><span>Layer 5: Application</span></strong></p><ul><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Is the software open source (can users fork it)?</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Does it depend on our servers, or is it peer-to-peer?</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Can other apps interoperate with ours (open protocols)?</span></p></li></ul><p><strong><span>Layer 6: Economic</span></strong></p><ul><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>How do we make money without surveillance/extraction?</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>What payment systems do we use (vulnerable to deplatforming)?</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Do we have multiple revenue streams?</span></p></li></ul><h3 id='example-audit-ghost-vs-medium'><span>Example Audit: Ghost vs. Medium</span></h3><p><strong><span>Ghost (High Sovereignty):</span></strong></p><figure class='table-figure'><table><thead><tr><th><span>Layer</span></th><th><span>Assessment</span></th></tr></thead><tbody><tr><td><span>Physical</span></td><td><span>Self-hosted option (users run their own servers) OR Ghost(Pro) hosting (can migrate away)</span></td></tr><tr><td><span>Network</span></td><td><span>Custom domains supported (users own their URLs)</span></td></tr><tr><td><span>Identity</span></td><td><span>Domain-based (</span><a href='mailto:you@yourblog.com' target='_blank' class='url'>you@yourblog.com</a><span>)</span></td></tr><tr><td><span>Storage</span></td><td><span>Users own data, full export tools</span></td></tr><tr><td><span>Application</span></td><td><span>Open source (can fork if Ghost Ltd dies)</span></td></tr><tr><td><span>Economic</span></td><td><span>Subscriptions (users pay Ghost, or self-host for free), no ads</span></td></tr></tbody></table></figure><p><strong><span>Medium (Low Sovereignty):</span></strong></p><figure class='table-figure'><table><thead><tr><th><span>Layer</span></th><th><span>Assessment</span></th></tr></thead><tbody><tr><td><span>Physical</span></td><td><span>Medium&#39;s servers only</span></td></tr><tr><td><span>Network</span></td><td><span>medium.com/@username (don&#39;t own domain)</span></td></tr><tr><td><span>Identity</span></td><td><span>Platform-controlled (Medium can ban you)</span></td></tr><tr><td><span>Storage</span></td><td><span>Data on Medium&#39;s servers (export exists but limited)</span></td></tr><tr><td><span>Application</span></td><td><span>Proprietary (can&#39;t fork, can&#39;t self-host)</span></td></tr><tr><td><span>Economic</span></td><td><span>Ad/subscription-based (users don&#39;t control revenue model)</span></td></tr></tbody></table></figure><p><strong><span>Result:</span></strong><span> Ghost embodies more sovereignty across all layers.</span></p><hr /><h2 id='part-v-the-political-economy-question-----who-should-own-infrastructure'><span>Part V: The Political Economy Question — Who Should Own Infrastructure?</span></h2><h3 id='three-models-of-ownership'><span>Three Models of Ownership</span></h3><p><strong><span>Model 1: Corporate Ownership (Status Quo)</span></strong></p><ul><li><p><span>Private companies own most infrastructure</span></p></li><li><p><span>Examples: AWS, Cloudflare, Visa, Google</span></p></li><li><p><span>Advantages: Convenient, well-funded, feature-rich</span></p></li><li><p><span>Disadvantages: Extractive, surveillance-based, can deplatform users</span></p></li></ul><p><strong><span>Model 2: State Ownership</span></strong></p><ul><li><p><span>Governments own critical infrastructure</span></p></li><li><p><span>Examples: Postal service, public utilities, national postal banks</span></p></li><li><p><span>Advantages: Democratic accountability (in theory), public service mandate</span></p></li><li><p><span>Disadvantages: Vulnerable to authoritarianism, bureaucratic, underfunded</span></p></li></ul><p><strong><span>Model 3: Commons Ownership</span></strong></p><ul><li><p><span>Users collectively own infrastructure</span></p></li><li><p><span>Examples: Wikipedia, cooperatives, federated networks</span></p></li><li><p><span>Advantages: Aligned incentives, democratic, mission-driven</span></p></li><li><p><span>Disadvantages: Coordination challenges, underfunded, slower innovation</span></p></li></ul><h3 id='archaeobytologys-position-pluralism'><span>Archaeobytology&#39;s Position: </span><strong><span>Pluralism</span></strong></h3><p><span>We need </span><strong><span>all three models</span></strong><span> for different layers and contexts:</span></p><ul><li><p><strong><span>Layer 1 (Physical)</span></strong><span>: Mix of corporate, state, and community-owned (diversity prevents single point of failure)</span></p></li><li><p><strong><span>Layer 2 (Network)</span></strong><span>: Open protocols (state/community standards-setting, anyone can implement)</span></p></li><li><p><strong><span>Layer 3 (Identity)</span></strong><span>: Individual ownership (federated or cryptographic)</span></p></li><li><p><strong><span>Layer 4 (Storage)</span></strong><span>: Mix of self-hosted and cooperatively-managed</span></p></li><li><p><strong><span>Layer 5 (Application)</span></strong><span>: Open source (community-owned code)</span></p></li><li><p><strong><span>Layer 6 (Economic)</span></strong><span>: Multiple options (crypto, co-ops, traditional payment—let users choose)</span></p></li></ul><p><strong><span>No single model is perfect.</span></strong><span> The goal is </span><strong><span>pluralism</span></strong><span>: multiple ownership structures coexisting, so users aren&#39;t dependent on any one.</span></p><hr /><h2 id='part-vi-threat-modeling-----attacks-on-each-layer'><span>Part VI: Threat Modeling — Attacks on Each Layer</span></h2><h3 id='threat-1-state-surveillance-all-layers'><span>Threat 1: State Surveillance (All Layers)</span></h3><p><strong><span>Attack Vector:</span></strong><span> Governments compel infrastructure providers to surveil users</span></p><p><strong><span>Examples:</span></strong></p><ul><li><p><span>NSA tapping undersea cables (Layer 1)</span></p></li><li><p><span>Forcing DNS providers to log queries (Layer 2)</span></p></li><li><p><span>Demanding user identity records (Layer 3)</span></p></li><li><p><span>Accessing cloud storage without warrants (Layer 4)</span></p></li><li><p><span>Installing backdoors in apps (Layer 5)</span></p></li><li><p><span>Tracking financial transactions (Layer 6)</span></p></li></ul><p><strong><span>Defenses:</span></strong></p><ul><li><p><span>End-to-end encryption (can&#39;t surveil what you can&#39;t read)</span></p></li><li><p><span>Jurisdiction shopping (host in privacy-respecting countries)</span></p></li><li><p><span>Onion routing (obscure who&#39;s talking to whom)</span></p></li><li><p><span>Decentralization (harder to compel many actors than one)</span></p></li></ul><h3 id='threat-2-corporate-extraction-layers-4-6'><span>Threat 2: Corporate Extraction (Layers 4-6)</span></h3><p><strong><span>Attack Vector:</span></strong><span> Companies monetize user data and attention</span></p><p><strong><span>Examples:</span></strong></p><ul><li><p><span>Surveillance advertising (Layer 4: data mining)</span></p></li><li><p><span>Algorithmic manipulation (Layer 5: addictive app design)</span></p></li><li><p><span>Platform rent (Layer 6: taking 30% cuts)</span></p></li></ul><p><strong><span>Defenses:</span></strong></p><ul><li><p><span>Business models that don&#39;t require surveillance (subscriptions, donations)</span></p></li><li><p><span>Open source alternatives (no company owns the app)</span></p></li><li><p><span>Data ownership (users control, export, delete)</span></p></li></ul><h3 id='threat-3-platform-capture-layers-3-5'><span>Threat 3: Platform Capture (Layers 3-5)</span></h3><p><strong><span>Attack Vector:</span></strong><span> Dominant platforms use network effects to lock in users</span></p><p><strong><span>Examples:</span></strong></p><ul><li><p><span>Identity capture (can&#39;t leave Facebook without losing social graph)</span></p></li><li><p><span>Data lock-in (hard to export and migrate)</span></p></li><li><p><span>API restrictions (third-party apps banned)</span></p></li></ul><p><strong><span>Defenses:</span></strong></p><ul><li><p><span>Interoperability (force platforms to allow data portability)</span></p></li><li><p><span>Federation (multiple providers, users can migrate)</span></p></li><li><p><span>Open protocols (anyone can build competing apps)</span></p></li></ul><h3 id='threat-4-infrastructure-fragility-layer-1'><span>Threat 4: Infrastructure Fragility (Layer 1)</span></h3><p><strong><span>Attack Vector:</span></strong><span> Physical infrastructure fails or is attacked</span></p><p><strong><span>Examples:</span></strong></p><ul><li><p><span>Undersea cable cuts (accidental or sabotage)</span></p></li><li><p><span>Data center fires (OVH fire in 2021 destroyed thousands of sites)</span></p></li><li><p><span>Power grid failures (take down entire regions)</span></p></li></ul><p><strong><span>Defenses:</span></strong></p><ul><li><p><span>Redundancy (multiple data centers, geographic distribution)</span></p></li><li><p><span>Peer-to-peer architectures (no single server to attack)</span></p></li><li><p><span>Regular backups (distributed across locations)</span></p></li></ul><hr /><h2 id='conclusion-sovereignty-requires-stack-thinking'><span>Conclusion: Sovereignty Requires Stack Thinking</span></h2><p><span>You cannot achieve digital sovereignty by fixing one layer. Even if you:</span></p><ul><li><p><span>Own your domain (Layer 2)</span></p></li><li><p><span>Use open source software (Layer 5)</span></p></li><li><p><span>Self-host your data (Layer 4)</span></p></li></ul><p><span>...you&#39;re still vulnerable if:</span></p><ul><li><p><span>Your hosting provider kicks you off (Layer 1)</span></p></li><li><p><span>Payment processors deplatform you (Layer 6)</span></p></li><li><p><span>Your identity depends on a platform (Layer 3)</span></p></li></ul><p><strong><span>Sovereignty requires thinking across all six layers.</span></strong><span> It&#39;s not enough to own one part of the stack; you need resilience at every level.</span></p><p><span>This is hard. Full-stack sovereignty is expensive, technical, and time-consuming. Most people will accept some vulnerability in exchange for convenience. That&#39;s okay—</span><strong><span>sovereignty is a spectrum</span></strong><span>, not binary.</span></p><p><span>But the Sovereignty Stack helps you:</span></p><ul><li><p><strong><span>Diagnose vulnerabilities</span></strong><span>: Where are you most at risk?</span></p></li><li><p><strong><span>Prioritize fixes</span></strong><span>: Which layer matters most for your use case?</span></p></li><li><p><strong><span>Design resilient systems</span></strong><span>: How do you build across all layers?</span></p></li><li><p><strong><span>Evaluate tools</span></strong><span>: Does this app/platform embody sovereignty?</span></p></li></ul><p><span>In the next chapter, we&#39;ll explore </span><strong><span>movement building</span></strong><span>—how to turn individual sovereignty into collective power. Because infrastructure isn&#39;t just technical; it&#39;s </span><strong><span>political</span></strong><span>. Changing who controls the stack requires organizing, advocacy, and policy change.</span></p><p><span>The political economy of Ground isn&#39;t just about building alternatives. It&#39;s about </span><strong><span>fighting for a different kind of internet</span></strong><span>—one where users, not corporations or states, have power.</span></p><p><span>That fight begins with understanding the Stack. Now you do.</span></p><hr /><h2 id='discussion-questions'><span>Discussion Questions</span></h2><ol start='' ><li><p><strong><span>Personal Sovereignty Audit</span></strong><span>: Use the Sovereignty Stack to audit your own digital life. Which layers are you most vulnerable on? Which are you most secure on?</span></p></li><li><p><strong><span>Trade-offs</span></strong><span>: Would you accept less convenience for more sovereignty? Where&#39;s your breaking point? (e.g., Would you run your own email server?)</span></p></li><li><p><strong><span>Threat Prioritization</span></strong><span>: Which threat is most dangerous: state surveillance, corporate extraction, platform capture, or infrastructure fragility? Does it depend on your context?</span></p></li><li><p><strong><span>Ownership Models</span></strong><span>: Should critical infrastructure (DNS, payment systems, cloud hosting) be owned by corporations, governments, or commons? What&#39;s best for sovereignty?</span></p></li><li><p><strong><span>Layer Interdependence</span></strong><span>: If you could only secure ONE layer of the stack, which would you choose? Why?</span></p></li><li><p><strong><span>Future Scenario</span></strong><span>: Imagine 2040. What does digital infrastructure look like if Archaeobytology succeeds? What if it fails?</span></p></li></ol><hr /><h2 id='exercise-redesign-one-layer'><span>Exercise: Redesign One Layer</span></h2><p><strong><span>Task</span></strong><span>: Choose one layer of the Sovereignty Stack. Redesign it to maximize sovereignty while remaining practically viable.</span></p><p><strong><span>Part 1: Critique Current State</span></strong><span> (500 words)</span></p><ul><li><p><span>How does the current system work?</span></p></li><li><p><span>Who controls it?</span></p></li><li><p><span>What are the sovereignty failures?</span></p></li><li><p><span>What specific harms result from current design?</span></p></li></ul><p><strong><span>Part 2: Design Alternative</span></strong><span> (1000 words)</span></p><ul><li><p><span>How would you redesign this layer?</span></p></li><li><p><span>What technologies enable your design?</span></p></li><li><p><span>How does it resist capture (corporate, state, platform)?</span></p></li><li><p><span>How does it balance sovereignty with usability?</span></p></li></ul><p><strong><span>Part 3: Adoption Strategy</span></strong><span> (500 words)</span></p><ul><li><p><span>How do you get people to switch?</span></p></li><li><p><span>What&#39;s the transition path from current system to yours?</span></p></li><li><p><span>What are the obstacles (technical, economic, political)?</span></p></li></ul><p><strong><span>Part 4: Threat Model</span></strong><span> (500 words)</span></p><ul><li><p><span>How would each threat actor attack your system?</span></p><ul><li><p><span>State surveillance</span></p></li><li><p><span>Corporate extraction</span></p></li><li><p><span>Platform capture</span></p></li><li><p><span>Infrastructure failure</span></p></li></ul></li><li><p><span>What defenses have you built in?</span></p></li><li><p><span>What vulnerabilities remain?</span></p></li></ul><p><strong><span>Part 5: Reflect</span></strong><span> (300 words)</span></p><ul><li><p><span>What surprised you about this design exercise?</span></p></li><li><p><span>What compromises did you have to make?</span></p></li><li><p><span>Would you personally use the system you designed?</span></p></li></ul><hr /><h2 id='further-reading'><span>Further Reading</span></h2><h3 id='on-infrastructure-and-power'><span>On Infrastructure and Power</span></h3><ul><li><p><span>Lessig, Lawrence. </span><em><span>Code: Version 2.0</span></em><span>. Basic Books, 2006.</span></p><ul><li><p><span>Classic on how digital architecture encodes power</span></p></li></ul></li><li><p><span>Star, Susan Leigh. &quot;The Ethnography of Infrastructure.&quot; </span><em><span>American Behavioral Scientist</span></em><span> 43, no. 3 (1999): 377-391.</span></p><ul><li><p><span>Infrastructure is political, not neutral</span></p></li></ul></li><li><p><span>Winner, Langdon. &quot;Do Artifacts Have Politics?&quot; </span><em><span>Daedalus</span></em><span> 109, no. 1 (1980): 121-136.</span></p><ul><li><p><span>Technologies embody political choices</span></p></li></ul></li></ul><h3 id='on-specific-layers'><span>On Specific Layers</span></h3><ul><li><p><span>Mueller, Milton. </span><em><span>Networks and States: The Global Politics of Internet Governance</span></em><span>. MIT Press, 2010.</span></p><ul><li><p><span>On DNS, ICANN, and network governance</span></p></li></ul></li><li><p><span>Schneier, Bruce. </span><em><span>Data and Goliath</span></em><span>. W.W. Norton, 2015.</span></p><ul><li><p><span>On surveillance at every layer</span></p></li></ul></li><li><p><span>DeNardis, Laura. </span><em><span>The Global War for Internet Governance</span></em><span>. Yale, 2014.</span></p><ul><li><p><span>Who controls protocols and standards</span></p></li></ul></li></ul><h3 id='on-alternatives'><span>On Alternatives</span></h3><ul><li><p><span>Doctorow, Cory. </span><em><span>The Internet Con: How to Seize the Means of Computation</span></em><span>. Verso, 2023.</span></p><ul><li><p><span>On interoperability and adversarial compat</span></p></li></ul></li><li><p><span>Bauwens, Michel, and Vasilis Kostakis. </span><em><span>Network Society and Future Scenarios for a Collaborative Economy</span></em><span>. Palgrave, 2014.</span></p><ul><li><p><span>On commons-based alternatives</span></p></li></ul></li><li><p><span>Schneider, Nathan. &quot;Cryptoeconomics as a Limitation on Governance.&quot; COALA Workshop, 2017.</span></p><ul><li><p><span>On blockchain governance and limitations</span></p></li></ul></li></ul><h3 id='primary-sources'><span>Primary Sources</span></h3><ul><li><p><span>Tor Project. &quot;How Tor Works.&quot; </span><a href='https://www.torproject.org/about/history/' target='_blank' class='url'>https://www.torproject.org/about/history/</a></p></li><li><p><span>IPFS Documentation. </span><a href='https://docs.ipfs.tech/' target='_blank' class='url'>https://docs.ipfs.tech/</a></p></li><li><p><span>ENS Documentation. </span><a href='https://docs.ens.domains/' target='_blank' class='url'>https://docs.ens.domains/</a></p></li><li><p><span>Mastodon Documentation. </span><a href='https://docs.joinmastodon.org/' target='_blank' class='url'>https://docs.joinmastodon.org/</a></p></li></ul><hr /><p><strong><span>End of Chapter 15</span></strong></p><p><em><span>Next: Chapter 16 — From Practice to Discipline: Movement Building</span></em></p><p>&nbsp;</p></div></div>
 </body>
 </html>

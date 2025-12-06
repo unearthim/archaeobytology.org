@@ -1,1280 +1,920 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 5: Triage Methodology — The Custodial Filter and Ethical Preservation | Archaeobytology</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Lora', serif; line-height: 1.8; color: #2E2E2E; background: #F8F7F4; padding: 2rem 1rem; }
-        .container { max-width: 800px; margin: 0 auto; background: #FFFFFF; padding: 3rem; border-radius: 15px; box-shadow: 0 4px 20px rgba(46,46,46,0.1); border: 1px solid #D1D1D1; }
-        h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; color: #2E2E2E; margin-top: 2rem; margin-bottom: 1rem; line-height: 1.3; }
-        h1 { font-size: 2.5rem; font-weight: 700; margin-top: 0; border-bottom: 3px solid #A1824A; padding-bottom: 0.5rem; }
-        h2 { font-size: 2rem; font-weight: 700; margin-top: 2.5rem; }
-        h3 { font-size: 1.5rem; font-weight: 600; color: #5A7D8C; }
-        h4 { font-size: 1.25rem; font-weight: 600; color: #5A7D8C; }
-        p { margin-bottom: 1.25rem; font-size: 1.1rem; }
-        a { color: #A93400; text-decoration: underline; transition: color 0.3s; }
-        a:hover { color: #A95C3D; }
-        strong { font-weight: 600; }
-        em { font-style: italic; }
-        code { font-family: 'Courier New', monospace; background: #F8F7F4; padding: 0.2rem 0.4rem; border-radius: 3px; border: 1px solid #D1D1D1; }
-        blockquote { border-left: 4px solid #A1824A; padding: 1rem 1.5rem; margin: 1.5rem 0; font-style: italic; color: #5A7D8C; background: #F8F7F4; border-radius: 0 8px 8px 0; }
-        hr { border: none; border-top: 2px solid #D1D1D1; margin: 2rem 0; }
-        .nav { text-align: center; padding: 1rem 0; border-top: 2px solid #D1D1D1; margin-top: 2rem; }
-        .nav a { display: inline-block; padding: 0.75rem 1.5rem; background: #A93400; color: #F8F7F4; text-decoration: none; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 600; margin: 0.5rem; }
-        .nav a:hover { background: #A95C3D; }
-    </style>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'><style type='text/css'>html {overflow-x: initial !important;}</style>
+<style type='text/css'  id="style-base">:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, "Segoe UI Emoji", "SF Pro", sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p *, #write.first-line-indent svg * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
+#write svg h1, #write svg h2, #write svg h3, #write svg h4, #write svg h5, #write svg h6, #write svg p { position: static; }
+.nodeLabel p { padding-right: 2px; padding-left: 2px; }
+.typora-export .nodeLabel p { padding-right: 0px; padding-left: 0px; }
+foreignobject { overflow: visible; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+li p { orphans: 1; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.mermaid-svg { margin: auto; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left: 0.25em solid rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
+
+</style>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;display=swap' type='text/css' />
+<style type='text/css'  id="style-theme_css">/*
+ * Unearth Light Theme for Typora
+ * Based on the Foundry Blueprint 4.1 - unearth.im
+ * 
+ * Color Palette:
+ * - Parchment (Background): #F8F7F4
+ * - Charcoal (Text): #2E2E2E
+ * - Burnt Sienna (Primary Accent): #A93400
+ * - Antique Gold (Secondary Accent): #A1824A
+ * - Slate Blue (Functional Accent): #5A7D8C
+ * - Light Stone: #D1D1D1
+ * - Medium Stone: #8E8E8E
+ *
+ * Typography:
+ * - Narrative: Lora (serif)
+ * - UI/Headlines: Inter (sans-serif)
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+:root {
+    --parchment: #F8F7F4;
+    --charcoal: #2E2E2E;
+    --burnt-sienna: #A93400;
+    --sienna-hover: #A95C3D;
+    --accent-color: #A95C3D;
+    --antique-gold: #A1824A;
+    --slate-blue: #5A7D8C;
+    --meta-text-color: #5A7D8C;
+    --light-stone: #D1D1D1;
+    --border-color: #e0e0e0;
+    --medium-stone: #8E8E8E;
+    --white: #FFFFFF;
+    
+    --font-narrative: 'Lora', Georgia, serif;
+    --font-ui: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
+}
+
+/* ========================================
+   BASE STYLES
+   ======================================== */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-narrative);
+    color: var(--charcoal);
+    background-color: var(--parchment);
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#write {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 64px 80px 100px;
+}
+
+/* ========================================
+   HEADINGS
+   ======================================== */
+
+h1 {
+    font-family: var(--font-narrative);
+    color: var(--charcoal);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-family: var(--font-narrative);
+    color: var(--charcoal);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--light-stone);
+    padding-bottom: 0.5rem;
+}
+
+h3, h4, h5, h6 {
+    font-family: var(--font-ui);
+    color: var(--charcoal);
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 1.25rem;
+    color: var(--charcoal);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+    color: var(--burnt-sienna);
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+h5 {
+    font-size: 1.1rem;
+    color: var(--slate-blue);
+}
+
+h6 {
+    font-size: 1rem;
+    color: var(--medium-stone);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ========================================
+   PARAGRAPHS & TEXT
+   ======================================== */
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.9;
+}
+
+strong, b {
+    font-weight: 700;
+    color: var(--charcoal);
+}
+
+em, i {
+    font-style: italic;
+}
+
+/* ========================================
+   LINKS
+   ======================================== */
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-color);
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    background-color: rgba(169, 92, 61, 0.1);
+    border-bottom-color: transparent;
+}
+
+/* ========================================
+   BLOCKQUOTES
+   ======================================== */
+
+blockquote {
+    margin: 2rem 0;
+    padding: 1.5rem 2rem;
+    border-left: 4px solid var(--antique-gold);
+    background-color: rgba(161, 130, 74, 0.08);
+    border-radius: 0 4px 4px 0;
+    color: var(--charcoal);
+}
+
+blockquote p {
+    margin: 0.5rem 0;
+    line-height: 1.8;
+}
+
+blockquote blockquote {
+    margin-left: 1rem;
+    border-left-color: var(--slate-blue);
+    background-color: rgba(90, 125, 140, 0.08);
+}
+
+/* ========================================
+   CODE
+   ======================================== */
+
+code {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    background-color: rgba(209, 209, 209, 0.4);
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    color: var(--burnt-sienna);
+}
+
+/* Code blocks */
+pre {
+    font-family: var(--font-mono);
+    background-color: var(--charcoal);
+    color: var(--parchment);
+    padding: 1rem 1.25rem;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    line-height: 1.6;
+}
+
+pre code {
+    background: none;
+    padding: 0;
+    color: inherit;
+    font-size: 0.875rem;
+}
+
+/* Code block with line numbers */
+.md-fences {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    background-color: var(--charcoal);
+    color: var(--parchment);
+    border: none;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1.5rem 0;
+}
+
+.CodeMirror-lines {
+    padding: 0;
+}
+
+/* ========================================
+   LISTS
+   ======================================== */
+
+ul, ol {
+    padding-left: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+li {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.9;
+}
+
+li > ul, li > ol {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+li > ul > li, li > ol > li {
+    margin-bottom: 0.5rem;
+}
+
+/* Unordered list markers */
+ul > li::marker {
+    color: var(--burnt-sienna);
+}
+
+/* Ordered list markers */
+ol > li::marker {
+    color: var(--antique-gold);
+    font-family: var(--font-ui);
+    font-weight: 600;
+}
+
+/* Task lists */
+.task-list-item {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.task-list-item input[type="checkbox"] {
+    margin-right: 0.5rem;
+    accent-color: var(--burnt-sienna);
+}
+
+/* ========================================
+   HORIZONTAL RULE
+   ======================================== */
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, var(--light-stone), var(--antique-gold), var(--light-stone));
+    margin: 2.5rem 0;
+}
+
+/* ========================================
+   TABLES
+   ======================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-family: var(--font-ui);
+    font-size: 0.9rem;
+}
+
+thead {
+    background-color: var(--charcoal);
+    color: var(--parchment);
+}
+
+th {
+    font-weight: 600;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--charcoal);
+}
+
+td {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--light-stone);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(209, 209, 209, 0.2);
+}
+
+tbody tr:hover {
+    background-color: rgba(161, 130, 74, 0.1);
+}
+
+/* ========================================
+   IMAGES
+   ======================================== */
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 1rem 0;
+    box-shadow: 0 2px 8px rgba(46, 46, 46, 0.1);
+}
+
+/* Image captions */
+figure {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+figcaption {
+    font-family: var(--font-ui);
+    font-size: 0.875rem;
+    color: var(--medium-stone);
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* ========================================
+   FOOTNOTES
+   ======================================== */
+
+.footnotes {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--light-stone);
+}
+
+.footnotes h2 {
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
+.footnotes ol {
+    padding-left: 20px;
+    color: #555;
+}
+
+.footnotes li {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.footnotes p {
+    font-size: 0.85rem;
+    margin-bottom: 0;
+}
+
+.footnote-ref, sup a {
+    font-family: var(--font-ui);
+    font-size: 0.8em;
+    font-weight: 600;
+    vertical-align: super;
+    color: var(--burnt-sienna);
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.footnote-ref:hover, sup a:hover {
+    background-color: transparent;
+}
+
+sup.md-footnote {
+    font-family: var(--font-ui);
+    font-size: 0.8em;
+    font-weight: 600;
+    color: var(--burnt-sienna);
+    background-color: transparent;
+    padding: 0;
+}
+
+/* ========================================
+   DEFINITION LISTS
+   ======================================== */
+
+dl {
+    margin: 1rem 0;
+}
+
+dt {
+    font-family: var(--font-ui);
+    font-weight: 700;
+    color: var(--burnt-sienna);
+    margin-top: 1rem;
+}
+
+dd {
+    margin-left: 1.5rem;
+    margin-top: 0.25rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--light-stone);
+}
+
+/* ========================================
+   MARK / HIGHLIGHT
+   ======================================== */
+
+mark {
+    background-color: rgba(161, 130, 74, 0.3);
+    color: var(--charcoal);
+    padding: 0.1rem 0.3rem;
+    border-radius: 2px;
+}
+
+/* ========================================
+   STRIKETHROUGH
+   ======================================== */
+
+del, s {
+    color: var(--medium-stone);
+    text-decoration: line-through;
+}
+
+/* ========================================
+   KEYBOARD
+   ======================================== */
+
+kbd {
+    font-family: var(--font-ui);
+    font-size: 0.85em;
+    background-color: var(--light-stone);
+    border: 1px solid var(--medium-stone);
+    border-radius: 3px;
+    padding: 0.1rem 0.4rem;
+    box-shadow: 0 1px 2px rgba(46, 46, 46, 0.1);
+}
+
+/* ========================================
+   ABBREVIATIONS
+   ======================================== */
+
+abbr {
+    text-decoration: underline dotted var(--slate-blue);
+    cursor: help;
+}
+
+/* ========================================
+   SELECTION
+   ======================================== */
+
+::selection {
+    background-color: rgba(169, 52, 0, 0.2);
+    color: var(--charcoal);
+}
+
+::-moz-selection {
+    background-color: rgba(169, 52, 0, 0.2);
+    color: var(--charcoal);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - SIDEBAR
+   ======================================== */
+
+#typora-sidebar {
+    background-color: var(--parchment);
+    border-right: 1px solid var(--light-stone);
+}
+
+.sidebar-content {
+    font-family: var(--font-ui);
+}
+
+.file-tree-node.active > .file-node-content {
+    background-color: rgba(169, 52, 0, 0.1);
+    color: var(--burnt-sienna);
+}
+
+.file-tree-node:hover > .file-node-content {
+    background-color: rgba(209, 209, 209, 0.3);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - SOURCE MODE
+   ======================================== */
+
+.cm-s-typora-default .cm-header {
+    color: var(--burnt-sienna);
+}
+
+.cm-s-typora-default .cm-link {
+    color: var(--slate-blue);
+}
+
+.cm-s-typora-default .cm-string {
+    color: var(--antique-gold);
+}
+
+.cm-s-typora-default .cm-comment {
+    color: var(--medium-stone);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - FOCUS MODE
+   ======================================== */
+
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) * {
+    color: var(--light-stone) !important;
+}
+
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) img {
+    opacity: 0.5;
+}
+
+/* ========================================
+   TYPORA SPECIFIC - MEGAMENU
+   ======================================== */
+
+.megamenu-menu-panel {
+    background-color: var(--parchment);
+    font-family: var(--font-ui);
+}
+
+.megamenu-menu-panel .btn {
+    background-color: var(--burnt-sienna);
+    color: var(--parchment);
+}
+
+.megamenu-menu-panel .btn:hover {
+    background-color: var(--sienna-hover);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - SEARCH
+   ======================================== */
+
+#md-searchpanel {
+    background-color: var(--parchment);
+    border-bottom: 1px solid var(--light-stone);
+}
+
+#md-searchpanel input {
+    font-family: var(--font-ui);
+    background-color: var(--white);
+    border: 1px solid var(--light-stone);
+    border-radius: 4px;
+}
+
+#md-searchpanel input:focus {
+    border-color: var(--burnt-sienna);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(169, 52, 0, 0.15);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - TOOLTIP
+   ======================================== */
+
+.md-hover-tip .md-arrow:after {
+    background-color: var(--charcoal);
+}
+
+.md-hover-tip .code-tooltip-content {
+    background-color: var(--charcoal);
+    color: var(--parchment);
+    font-family: var(--font-ui);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - META BLOCK
+   ======================================== */
+
+.md-meta-block {
+    background-color: rgba(209, 209, 209, 0.3);
+    border-radius: 6px;
+    padding: 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--medium-stone);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - TABLE OF CONTENTS
+   ======================================== */
+
+.md-toc {
+    font-family: var(--font-ui);
+}
+
+.md-toc-h1 {
+    font-weight: 700;
+    color: var(--charcoal);
+}
+
+.md-toc-h2 {
+    font-weight: 600;
+    color: var(--burnt-sienna);
+}
+
+.md-toc-h3, .md-toc-h4, .md-toc-h5, .md-toc-h6 {
+    color: var(--medium-stone);
+}
+
+/* ========================================
+   SCROLLBAR
+   ======================================== */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--parchment);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--light-stone);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--medium-stone);
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+
+@media print {
+    html {
+        font-size: 12pt;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+    
+    #write {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        color: black;
+        page-break-after: avoid;
+    }
+    
+    pre, blockquote {
+        page-break-inside: avoid;
+    }
+    
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+    
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        color: #666;
+    }
+}
+</style>
+<style type='text/css'  id="style-lp">ol, ul {padding-left: 40px}</style>
+
+<title>TEXTBOOK-Chapter-5-Triage-Methodology</title>
 </head>
-<body>
-    <div class="container">
-        <article>
-<h1>Chapter 5: Triage Methodology — The Custodial Filter and Ethical Preservation</h1>
-
-<h2>Opening: The Impossible Choice</h2>
-
-<p>
-October 16, 2016. Vine announces it will shut down in three months. Archive Team mobilizes immediately, but the math is brutal:
-</p>
-
-<p>
-- <strong>200 million videos</strong> exist on Vine
-- <strong>Three months</strong> until shutdown
-- <strong>Limited volunteers</strong>, storage, and bandwidth
-</p>
-
-<p>
-Even working around the clock, they can't save everything. They must choose.
-</p>
-
-<p>
-Do they prioritize:
-- <strong>Viral videos</strong> (most cultural impact, but already widely copied)?
-- <strong>Marginalized creators</strong> (underrepresented voices, but lower view counts)?
-- <strong>Complete user archives</strong> (preserving entire creator portfolios, but means fewer total creators saved)?
-- <strong>Representative sampling</strong> (cross-section of Vine culture, but many individual voices lost)?
-</p>
-
-<p>
-Every choice means something else dies. Every video saved means another left behind.
-</p>
-
-<p>
-This is <strong>triage</strong>—borrowed from battlefield medicine, where doctors must decide which wounded soldiers to treat first when resources are scarce. In emergency rooms, triage saves lives by allocating attention efficiently. In digital preservation, triage saves culture by allocating effort strategically.
-</p>
-
-<p>
-But triage is agony. It forces us to confront uncomfortable truths:
-- Not everything can be saved
-- Some artifacts matter more than others
-- Scarcity requires hierarchy
-- Every preservation decision is also a decision to let something die
-</p>
-
-<p>
-This chapter explores how to make those impossible choices—not perfectly (perfection is impossible), but <strong>ethically, systematically, and transparently</strong>.
-</p>
-
-<p>
-We call this framework the <strong>Custodial Filter</strong>: a methodology for deciding what to preserve, when to preserve it, and when—painfully—to let go.
-</p>
-
-<h2>Part I: The Ethics of Triage</h2>
-
-<h3>Why Triage Is Necessary</h3>
-
-<p>
-<strong>Infinite Culture, Finite Resources</strong>
-</p>
-
-<p>
-The internet produces content at a rate no human effort can fully capture:
-- <strong>Twitter</strong>: 500 million tweets per day (2023)
-- <strong>YouTube</strong>: 720,000 hours of video uploaded daily
-- <strong>Instagram</strong>: 95 million photos and videos daily
-- <strong>TikTok</strong>: Unknown, but comparable to YouTube
-- <strong>Plus</strong>: Blogs, forums, Discord servers, newsletters, personal websites, etc.
-</p>
-
-<p>
-Even with unlimited storage (which doesn't exist), the <strong>labor of curation</strong>—adding metadata, providing context, ensuring accessibility—is scarce.
-</p>
-
-<p>
-<strong>Platform Death Accelerates Urgency</strong>
-</p>
-
-<p>
-When a platform announces shutdown, the timeline collapses:
-- GeoCities: 3 weeks warning
-- Vine: 3 months warning
-- Google Reader: 4 months warning
-- Tumblr NSFW purge: 2 weeks warning
-</p>
-
-<p>
-In crisis mode, triage becomes life-or-death for artifacts.
-</p>
-
-<p>
-<strong>Preservation Requires Stewardship</strong>
-</p>
-
-<p>
-Saving bits is relatively cheap (storage costs drop constantly). But <strong>meaningful preservation</strong> requires:
-- Metadata creation (who, what, when, why, context)
-- Format migration (as technology evolves)
-- Access infrastructure (search, browse, display)
-- Legal navigation (copyright, privacy, consent)
-- Institutional maintenance (organizations must survive decades)
-</p>
-
-<p>
-These activities consume human time and expertise—resources that will always be scarce.
-</p>
-
-<h3>The Ethical Stakes of Triage</h3>
-
-<p>
-<strong>Who Decides What's Worth Saving?</strong>
-</p>
-
-<p>
-Triage decisions encode <strong>power and values</strong>:
-- If we prioritize "viral" content, we amplify mainstream voices and erase margins
-- If we prioritize "cultural significance," we risk bias toward dominant cultures
-- If we prioritize ease of preservation, we lose complex, fragile artifacts
-- If we prioritize consent, we may lose important historical evidence
-</p>
-
-<p>
-Every triage framework embodies ethical commitments, whether explicit or not.
-</p>
-
-<p>
-<strong>The Permanence of Loss</strong>
-</p>
-
-<p>
-Physical artifacts can be rediscovered—buried ruins excavated, manuscripts found in attics. But digital artifacts <strong>vanish completely</strong> when platforms shut down. There's no archaeological dig 100 years later to recover what we failed to save.
-</p>
-
-<p>
-Triage decisions are <strong>irreversible</strong>. What we don't preserve now is lost forever.
-</p>
-
-<p>
-<strong>The Burden of Custodianship</strong>
-</p>
-
-<p>
-To preserve is to claim <strong>custodial responsibility</strong>:
-- You decide what future generations can know about this era
-- You become a gatekeeper—your choices shape historical memory
-- You bear ethical weight of what you saved and what you didn't
-</p>
-
-<p>
-This burden can't be escaped. Even choosing <em>not</em> to preserve is a choice with consequences.
-</p>
-
-<h2>Part II: The Custodial Filter — A Five-Question Framework</h2>
-
-<p>
-The <strong>Custodial Filter</strong> is a systematic methodology for triage. Before preserving any artifact, ask five questions:
-</p>
-
-<h3>Question 1: Cultural Significance</h3>
-
-<p>
-<strong>Does this artifact represent a community, movement, or cultural moment that would otherwise be lost?</strong>
-</p>
-
-<p>
-<strong>Criteria:</strong>
-- <strong>Representational value</strong>: Does it document an underrepresented community?
-- <strong>Historical importance</strong>: Does it capture a significant event or movement?
-- <strong>Aesthetic innovation</strong>: Does it represent creative achievement or technical pioneering?
-- <strong>Community meaning</strong>: Do people who created/used this consider it important?
-</p>
-
-<p>
-<strong>High Significance Examples:</strong>
-- <strong>Early Black Twitter threads</strong> (2010-2015): Document emergence of hashtag activism (#BlackLivesMatter, #SayHerName)
-- <strong>Early trans YouTubers</strong> (2006-2012): Chronicle transition vlogs before mainstream visibility
-- <strong>GeoCities fan communities</strong> (1995-2000): Archive of early fandom, particularly marginalized fandoms (slash fiction, queer representation)
-</p>
-
-<p>
-<strong>Lower Significance Examples:</strong>
-- <strong>Corporate spam accounts</strong>: Minimal cultural value, widely preserved elsewhere if needed
-- <strong>Duplicate viral videos</strong>: Already archived by multiple sources
-- <strong>Auto-generated content</strong>: Bot posts with no human creative input
-</p>
-
-<p>
-<strong>Challenge: Whose Significance?</strong>
-</p>
-
-<p>
-What's "significant" is contested:
-- Academic historians prioritize different artifacts than community members
-- Mainstream culture dismisses subcultures as trivial (but those subcultures have rich internal meaning)
-- Future generations may value what present dismisses
-</p>
-
-<p>
-<strong>Best Practice:</strong> Default to <strong>over-preservation</strong> when significance is uncertain. We can't predict what future scholars will want to study.
-</p>
-
-<h3>Question 2: Technical Fragility</h3>
-
-<p>
-<strong>How close to disappearance is this artifact?</strong>
-</p>
-
-<p>
-<strong>Fragility Spectrum:</strong>
-</p>
-
-<p>
-<strong>Critical (Hours/Days)</strong>
-- Platform announced shutdown imminent
-- Server errors suggest infrastructure collapse
-- DMCA takedowns being issued
-- Legal threats to hosting
-</p>
-
-<p>
-<strong>High (Weeks/Months)</strong>
-- Platform announced future shutdown
-- Company in financial distress
-- Terms of Service changes pending (mass deletions coming)
-- Migration waves beginning (users leaving)
-</p>
-
-<p>
-<strong>Medium (Years)</strong>
-- Platform declining but stable
-- No imminent shutdown threat
-- Content still accessible but endangered long-term
-</p>
-
-<p>
-<strong>Low (Decades)</strong>
-- Stable institutions (library collections, government archives)
-- Already preserved with redundancy
-- Open formats, no proprietary lock-in
-</p>
-
-<p>
-<strong>Triage Priority:</strong>
-- <strong>Critical fragility → Act immediately</strong> (even if cultural significance is uncertain)
-- <strong>Low fragility → Defer</strong> (focus on more endangered artifacts)
-</p>
-
-<p>
-<strong>Example: GeoCities vs. Library of Congress</strong>
-</p>
-
-<p>
-When both GeoCities and LOC's web archive need attention:
-- <strong>GeoCities</strong>: Critical fragility (3 weeks to shutdown) → Priority 1
-- <strong>LOC</strong>: Low fragility (institutional stability, funded mandate) → Priority 3
-</p>
-
-<h3>Question 3: Rescue Difficulty</h3>
-
-<p>
-<strong>How hard is this artifact to preserve?</strong>
-</p>
-
-<p>
-<strong>Ease Assessment:</strong>
-</p>
-
-<p>
-<strong>Easy (Can automate)</strong>
-- Static HTML pages (wget scraper)
-- Public APIs with bulk export
-- Standard formats (plain text, images, HTML)
-- Already-crawled by Internet Archive
-</p>
-
-<p>
-<strong>Medium (Requires manual effort)</strong>
-- Dynamic content (JavaScript-heavy sites)
-- Private/login-walled content
-- Embedded media (Flash, Java applets)
-- Metadata extraction needed
-</p>
-
-<p>
-<strong>Hard (Technical barriers)</strong>
-- Complex databases without export tools
-- DRM-protected content
-- Real-time/ephemeral content (Snapchat stories, Clubhouse rooms)
-- Server-side logic required for functionality
-</p>
-
-<p>
-<strong>Very Hard (Near-impossible)</strong>
-- Fully encrypted with lost keys
-- Proprietary formats with no documentation
-- Deleted content with no backups
-- Hardware-specific content (arcade games requiring original boards)
-</p>
-
-<p>
-<strong>Triage Tension:</strong>
-</p>
-
-<p>
-Should you spend 100 hours preserving one hard artifact, or preserve 100 easy artifacts in the same time?
-</p>
-
-<p>
-<strong>No universal answer</strong>, but factors to consider:
-- If hard artifact is uniquely significant (e.g., only documentation of a marginalized community), worth the effort
-- If easy artifacts are low-significance duplicates, hard artifact may be better use of time
-- If you're in crisis mode (imminent shutdown), prioritize quantity (easy artifacts)
-</p>
-
-<p>
-<strong>Example: Flash Games</strong>
-</p>
-
-<p>
-Flashpoint Project prioritized Flash games (medium-hard difficulty) because:
-- High cultural significance (entire generation's childhood)
-- Critical fragility (Flash Player discontinued)
-- Doable difficulty (emulation possible with effort)
-</p>
-
-<p>
-They chose one hard project over many easy ones—and succeeded.
-</p>
-
-<h3>Question 4: Existing Redundancy</h3>
-
-<p>
-<strong>Is someone else already preserving this?</strong>
-</p>
-
-<p>
-<strong>Check for Redundancy:</strong>
-- <strong>Internet Archive's Wayback Machine</strong>: Has it been crawled?
-- <strong>Library of Congress</strong>: Do they have it? (Web archive, Twitter archive)
-- <strong>Other institutions</strong>: University archives, national libraries, museums
-- <strong>Community efforts</strong>: Fan archives, Discord channels, subreddit backups
-- <strong>Individual users</strong>: Have creators exported their own content?
-</p>
-
-<p>
-<strong>Redundancy Matrix:</strong>
-</p>
-
-<p>
-| Situation | Action |
-|-----------|--------|
-| No one preserving | <strong>Urgent priority</strong> (you might be the only chance) |
-| One fragile preservation | <strong>Valuable redundancy</strong> (create backup of backup) |
-| Multiple stable institutions | <strong>Lower priority</strong> (focus elsewhere unless you add unique value) |
-| Already in Internet Archive + LOC + universities | <strong>Deprioritize</strong> (unless you're doing different kind of curation) |
-</p>
-
-<p>
-<strong>Exception: "Preserve Differently"</strong>
-</p>
-
-<p>
-Even if something is archived, you might preserve it differently:
-- Internet Archive: Comprehensive but minimal metadata
-- Your project: Smaller sample with rich contextualization
-- Both add value
-</p>
-
-<p>
-<strong>Example: Vine</strong>
-</p>
-
-<p>
-Internet Archive scraped Vine comprehensively (quantity). Individual fans created curated collections (quality—"Best Vines 2013-2017"). Both were valuable.
-</p>
-
-<h3>Question 5: Consent and Ethics</h3>
-
-<p>
-<strong><em>Should</em> we preserve this?</strong>
-</p>
-
-<p>
-This is the hardest question—and the one most often skipped. Just because you <em>can</em> preserve something doesn't mean you <em>should</em>.
-</p>
-
-<p>
-<strong>Ethical Red Flags:</strong>
-</p>
-
-<p>
-<strong>Privacy Violations</strong>
-- Personal information shared under expectation of ephemerality (Snapchat-style content)
-- Medical, financial, or intimate details
-- Children's content (especially if they can't consent now)
-- Location data that could enable stalking
-</p>
-
-<p>
-<strong>Potential for Harm</strong>
-- Revenge porn or non-consensual intimate images
-- Doxxing (personal addresses, phone numbers)
-- Harassment campaigns
-- Misinformation that continues to cause harm
-</p>
-
-<p>
-<strong>Contested Consent</strong>
-- Creator deleted content intentionally (wanted it forgotten)
-- Content was private or "friends-only" (context collapse if made public)
-- Platform TOS forbade scraping (legal gray area)
-</p>
-
-<p>
-<strong>Cultural Sensitivity</strong>
-- Indigenous knowledge that communities want kept within community
-- Religious or spiritual content with access restrictions
-- Closed cultural practices not meant for outsiders
-</p>
-
-<p>
-<strong>Trauma and Re-traumatization</strong>
-- 9/11 jumper photos (newsworthy but deeply painful)
-- Mass shooting livestreams
-- Graphic violence or suffering
-</p>
-
-<p>
-<strong>The Ethical Tension:</strong>
-</p>
-
-<p>
-Preservation often conflicts with privacy/consent:
-- <strong>Historian's view</strong>: "Everything is historically important; preserve now, restrict access if needed"
-- <strong>Privacy advocate's view</strong>: "People have a right to be forgotten; preservation without consent is violence"
-</p>
-
-<p>
-<strong>No Easy Resolution</strong>, but principles to guide:
-</p>
-
-<p>
-<strong>Principle 1: Minimize Harm</strong>
-- If preserving causes direct, immediate harm (endangers someone's safety), don't do it
-- Example: Don't archive doxxing threads that reveal someone's address
-</p>
-
-<p>
-<strong>Principle 2: Respect Explicit Deletion</strong>
-- If a creator <em>intentionally</em> deleted something (not platform-deleted), presume they wanted it gone
-- Exception: Public figures, historical importance (politicians deleting compromising tweets)
-</p>
-
-<p>
-<strong>Principle 3: Restrict Access When Appropriate</strong>
-- Preserve but don't make public (researcher-only access, embargoes)
-- Example: Archive controversial forum but require IRB approval to access
-</p>
-
-<p>
-<strong>Principle 4: Community Consultation</strong>
-- When preserving community-created content, ask the community
-- Example: Indigenous archives often require tribal consultation
-</p>
-
-<p>
-<strong>Principle 5: Transparent Decision-Making</strong>
-- Document <em>why</em> you preserved or didn't
-- Allow for appeals/reconsideration
-</p>
-
-<p>
-<strong>Case Study: Tumblr NSFW Purge</strong>
-</p>
-
-<p>
-In 2018, Tumblr banned all "adult content," deleting millions of posts, many of which were:
-- LGBTQ+ identity exploration
-- Sex education resources
-- Art (nudes, erotic fiction)
-- Sex worker portfolios
-</p>
-
-<p>
-<strong>Ethical Dilemma:</strong> Should archivists preserve purged content?
-</p>
-
-<p>
-<strong>Arguments FOR:</strong>
-- Cultural/historical significance (LGBTQ+ history)
-- Censorship resistance (corporation shouldn't decide what's "obscene")
-- Creators may have lost only copies
-</p>
-
-<p>
-<strong>Arguments AGAINST:</strong>
-- Some creators wanted content ephemeral (chosen not to archive personally)
-- Adult content has complex consent issues (performers may not want redistribution)
-- Legal risks (some purged content may have been illegal, archivists don't want liability)
-</p>
-
-<p>
-<strong>What Actually Happened:</strong>
-- Some archivists saved portions (research access only)
-- Many creators self-archived (exported their own blogs)
-- Much was permanently lost (no comprehensive rescue)
-</p>
-
-<p>
-<strong>Ethical Assessment:</strong>
-- No single right answer
-- Case-by-case determination based on consent signals, cultural value, harm potential
-</p>
-
-<h2>Part III: The Triage Decision Matrix</h2>
-
-<p>
-Combine all five questions into a <strong>scoring system</strong> to prioritize artifacts systematically.
-</p>
-
-<h3>Scoring Framework (0-5 scale for each dimension)</h3>
-
-<p>
-<strong>Cultural Significance</strong> (0 = spam, 5 = irreplaceable cultural artifact)
-</p>
-
-<p>
-<strong>Technical Fragility</strong> (0 = stable/safe, 5 = will disappear in hours)
-</p>
-
-<p>
-<strong>Rescue Feasibility</strong> (0 = impossible, 5 = trivial to preserve; <em>inverted for priority</em>)
-</p>
-
-<p>
-<strong>Redundancy Gap</strong> (0 = many redundant copies, 5 = unique, no other preservation)
-</p>
-
-<p>
-<strong>Ethical Clarity</strong> (0 = serious ethical problems, 5 = clearly ethical to preserve)
-</p>
-
-<h3>Example Triage Matrix: Vine Shutdown</h3>
-
-<p>
-| Artifact | Significance | Fragility | Feasibility | Redundancy | Ethics | <strong>Total</strong> | <strong>Priority</strong> |
-|----------|--------------|-----------|-------------|------------|--------|-----------|--------------|
-| Viral memes (already copied) | 4 | 5 | 5 | 2 | 5 | 21 | Medium |
-| Small creator archives | 5 | 5 | 4 | 5 | 5 | 24 | <strong>High</strong> |
-| Corporate brand accounts | 2 | 5 | 5 | 1 | 5 | 18 | Low |
-| Private accounts | 3 | 5 | 3 | 5 | 2 | 18 | Low (ethics) |
-| Representative sample | 4 | 5 | 5 | 4 | 5 | 23 | High |
-</p>
-
-<p>
-<strong>Priority Ranking:</strong>
-1. <strong>Small creator archives</strong> (24 points) — Unique voices, no other preservation, highly fragile
-2. <strong>Representative sample</strong> (23 points) — Cultural cross-section, high feasibility
-3. <strong>Viral memes</strong> (21 points) — Significant but already widely copied
-4. <strong>Private accounts</strong> (18 points) — Ethical concerns override other factors
-5. <strong>Corporate accounts</strong> (18 points) — Low cultural value
-</p>
-
-<h3>Triage in Action: Three Scenarios</h3>
-
-<h4>Scenario 1: Imminent Shutdown (48 hours)</h4>
-
-<p>
-<strong>Situation:</strong> Small forum announces shutdown in 2 days. 10,000 posts, no warning.
-</p>
-
-<p>
-<strong>Triage Decision:</strong>
-- <strong>Significance</strong>: Medium (small community, but may be only documentation)
-- <strong>Fragility</strong>: Critical (48 hours)
-- <strong>Feasibility</strong>: Medium (need to scrape + login walls)
-- <strong>Redundancy</strong>: High (probably no one else saving)
-- <strong>Ethics</strong>: Medium (public forum, but check for privacy issues)
-</p>
-
-<p>
-<strong>Action:</strong> <strong>Immediate scrape</strong>. Archive everything, sort out curation later. In crisis, preservation > perfection.
-</p>
-
-<p>
-<strong>Method:</strong>
-1. Use wget or HTTrack to scrape visible content
-2. Ask community members for database dump (if possible)
-3. Archive now, curate later (when not under deadline)
-</p>
-
-<h4>Scenario 2: Declining Platform (1-2 years warning)</h4>
-
-<p>
-<strong>Situation:</strong> Google+ shutdown announced for 2019. Company gives 1 year notice.
-</p>
-
-<p>
-<strong>Triage Decision:</strong>
-- <strong>Significance</strong>: Medium (smaller than Facebook/Twitter, but had communities)
-- <strong>Fragility</strong>: High (shutdown certain) but not immediate
-- <strong>Feasibility</strong>: Medium-high (Google provided data export tools)
-- <strong>Redundancy</strong>: Low (Google+ not widely archived)
-- <strong>Ethics</strong>: High (users had export options, most content public)
-</p>
-
-<p>
-<strong>Action:</strong> <strong>Systematic preservation with community partnership</strong>
-</p>
-
-<p>
-<strong>Method:</strong>
-1. Partner with Internet Archive for Wayback crawls
-2. Create guides for users to export their own data
-3. Identify high-value communities (e.g., Photography+ had professional communities)
-4. Curate sample collections (not everything, but representative)
-5. Take full year to do it right (not crisis mode)
-</p>
-
-<h4>Scenario 3: Ongoing Platform with Contested Content</h4>
-
-<p>
-<strong>Situation:</strong> Twitter still operational, but waves of account suspensions. Some suspended accounts have historically important content.
-</p>
-
-<p>
-<strong>Triage Decision:</strong>
-- <strong>Significance</strong>: Varies (some accounts very significant, others not)
-- <strong>Fragility</strong>: Medium (accounts suspended but may be reinstated, or may be permanent)
-- <strong>Feasibility</strong>: High (if archived before suspension; impossible after)
-- <strong>Redundancy</strong>: Low (Twitter doesn't preserve suspended accounts)
-- <strong>Ethics</strong>: Complex (some suspensions justified, some censorship)
-</p>
-
-<p>
-<strong>Action:</strong> <strong>Selective proactive archiving with ethical review</strong>
-</p>
-
-<p>
-<strong>Method:</strong>
-1. Identify accounts with high historical/cultural value (activists, journalists, politicians)
-2. Proactively archive (before suspension) using tools like Twitter Archiver
-3. For already-suspended: check if Internet Archive captured (Wayback Machine)
-4. Ethical case-by-case: Don't archive hate groups, do archive wrongfully suspended activists
-5. Restrict access for contentious material (researcher-only)
-</p>
-
-<h2>Part IV: Practical Triage Workflows</h2>
-
-<h3>Workflow 1: Crisis Triage (Platform Shutdown Imminent)</h3>
-
-<p>
-<strong>Phase 1: Assess (Hours 1-4)</strong>
-1. How much time until shutdown?
-2. How much content exists?
-3. Who else is archiving?
-4. What tools are available?
-</p>
-
-<p>
-<strong>Phase 2: Mobilize (Hours 4-24)</strong>
-1. Recruit volunteers (Archive Team, Twitter, Reddit)
-2. Set up infrastructure (servers, storage, coordination)
-3. Divide labor (different people scrape different sections)
-</p>
-
-<p>
-<strong>Phase 3: Execute (Remaining time)</strong>
-1. <strong>Quantity over quality</strong>: Save everything you can
-2. Metadata is secondary (just get the bits)
-3. Accept losses (you won't get everything)
-</p>
-
-<p>
-<strong>Phase 4: Post-Shutdown</strong>
-1. Consolidate scraped data
-2. Remove duplicates
-3. Begin curation (add metadata, organize)
-4. Make accessible (upload to Internet Archive, create search interface)
-</p>
-
-<p>
-<strong>Example: GeoCities Rescue</strong>
-- 3 weeks warning → Archive Team scraped 650GB
-- Post-shutdown → Organized into browseable torrent
-- Years later → Cameron's World and other curated projects emerged
-</p>
-
-<h3>Workflow 2: Anticipatory Preservation (Platform Declining)</h3>
-
-<p>
-<strong>Phase 1: Monitor (Ongoing)</strong>
-- Watch for signs of platform instability (layoffs, financial trouble, user exodus)
-- Begin proactive archiving <em>before</em> shutdown announced
-</p>
-
-<p>
-<strong>Phase 2: Plan (When decline evident)</strong>
-1. Identify most valuable content (communities, creators, cultural artifacts)
-2. Assess redundancy (what's already archived?)
-3. Develop curation strategy (can't save everything, but can save representative sample)
-</p>
-
-<p>
-<strong>Phase 3: Execute (Before crisis)</strong>
-1. Methodical crawling (not frantic scraping)
-2. Add metadata as you go
-3. Coordinate with platform (ask for data dumps, export tools)
-</p>
-
-<p>
-<strong>Phase 4: Maintain (After shutdown)</strong>
-1. Preserve archives long-term (storage, format migration)
-2. Make accessible (search, browse, context)
-3. Document (write history of the platform for future scholars)
-</p>
-
-<p>
-<strong>Example: LiveJournal Migration</strong>
-- Decline gradual (2007-2017)
-- Many users migrated to Dreamwidth, taking archives
-- Internet Archive captured public posts
-- By time Russian ownership happened (2017), most preservation already done
-</p>
-
-<h3>Workflow 3: Continuous Curation (Ongoing Platforms)</h3>
-
-<p>
-<strong>Phase 1: Define Scope</strong>
-- You can't archive the entire internet
-- Choose specific communities, topics, or creators to follow
-</p>
-
-<p>
-<strong>Phase 2: Automate</strong>
-- Set up tools to continuously archive (RSS readers, auto-scrapers, bot accounts)
-- Example: ArchiveTeam's "web sheriff" bots monitor for site deaths
-</p>
-
-<p>
-<strong>Phase 3: Curate Regularly</strong>
-- Review captured content quarterly
-- Add metadata, context, interpretation
-- Identify gaps (what are you missing?)
-</p>
-
-<p>
-<strong>Phase 4: Respond to Crises</strong>
-- When your monitored platforms face threats, escalate to crisis mode
-- You have head start (already archiving proactively)
-</p>
-
-<p>
-<strong>Example: Internet Archive's Wayback Machine</strong>
-- Continuous crawling since 1996
-- 800+ billion pages captured
-- When site dies, already have historical snapshots
-</p>
-
-<h2>Part V: Ethical Edge Cases</h2>
-
-<h3>Edge Case 1: The Deleted Tweet from a Public Figure</h3>
-
-<p>
-<strong>Scenario:</strong> A politician tweets something racist, then deletes it 20 minutes later. Should you archive it?
-</p>
-
-<p>
-<strong>Ethical Considerations:</strong>
-</p>
-
-<p>
-<strong>FOR Archiving:</strong>
-- Public figure's public statement (not private communication)
-- Accountability: politicians should be held responsible for their words
-- Historical record: deletion is an act of historical revisionism
-</p>
-
-<p>
-<strong>AGAINST Archiving:</strong>
-- Person deleted it (signal they regret it, want it forgotten)
-- Could be taken out of context or misunderstood
-- Perpetuates harm by keeping racist content circulating
-</p>
-
-<p>
-<strong>Custodial Filter Analysis:</strong>
-- <strong>Significance</strong>: High (public accountability)
-- <strong>Fragility</strong>: Critical (already deleted, may vanish from screenshots)
-- <strong>Feasibility</strong>: Easy (single tweet, text)
-- <strong>Redundancy</strong>: Medium (others likely screenshotted, but could be lost)
-- <strong>Ethics</strong>: Medium-high (public figure, accountability trumps right to be forgotten)
-</p>
-
-<p>
-<strong>Recommendation:</strong> <strong>Preserve with context</strong>
-- Archive the tweet + surrounding context (what prompted it, reactions, apology if any)
-- Include in politician's archival record
-- Make accessible (not hidden, but not amplified—no need to splash it on front page)
-</p>
-
-<h3>Edge Case 2: The Fan Fiction Archive</h3>
-
-<p>
-<strong>Scenario:</strong> A LiveJournal community for a specific fandom (slash fiction, LGBTQ+ content) is abandoned. Creators have scattered. Should you archive?
-</p>
-
-<p>
-<strong>Ethical Considerations:</strong>
-</p>
-
-<p>
-<strong>FOR Archiving:</strong>
-- LGBTQ+ cultural history (much early queer culture happened in fandom)
-- Risk of permanent loss (creators may not have backups)
-- Literary/cultural value (transformative works, creative community)
-</p>
-
-<p>
-<strong>AGAINST Archiving:</strong>
-- Many authors used pseudonyms, may not want real identities connected
-- Some authors were minors when writing (consent issues)
-- Fan fiction culture values ephemerality (archives disrupt gift economy)
-- Copyright gray area (transformative works, but still derivative)
-</p>
-
-<p>
-<strong>Custodial Filter Analysis:</strong>
-- <strong>Significance</strong>: High (queer history, literary culture)
-- <strong>Fragility</strong>: High (no one maintaining it)
-- <strong>Feasibility</strong>: Medium (may need login, scraping fanfic sites common)
-- <strong>Redundancy</strong>: Low (likely not preserved elsewhere)
-- <strong>Ethics</strong>: Complex (consent unclear, cultural sensitivity needed)
-</p>
-
-<p>
-<strong>Recommendation:</strong> <strong>Archive with restrictions</strong>
-1. Scrape the content (preserve the bits)
-2. Don't make fully public (no Google indexing)
-3. Researcher access only (require application, explain use)
-4. Allow author-requested takedowns (if someone says "please remove my fic," do it)
-5. Document the community culture (not just stories, but context of why this mattered)
-</p>
-
-<h3>Edge Case 3: The Hate Forum</h3>
-
-<p>
-<strong>Scenario:</strong> A white supremacist forum announces shutdown. It documents radicalization pathways and extremist organizing. Should you archive?
-</p>
-
-<p>
-<strong>Ethical Considerations:</strong>
-</p>
-
-<p>
-<strong>FOR Archiving:</strong>
-- Research value (understanding radicalization, deradicalization efforts need data)
-- Legal accountability (evidence of planned violence)
-- Historical record (documenting extremism is important, even/especially if ugly)
-</p>
-
-<p>
-<strong>AGAINST Archiving:</strong>
-- Amplifies hate speech (giving platform to harmful ideology)
-- Could be used as recruitment tool (if archive is public)
-- Privacy of victims (hate content often targets individuals)
-- Moral complicity (by preserving, are you endorsing?)
-</p>
-
-<p>
-<strong>Custodial Filter Analysis:</strong>
-- <strong>Significance</strong>: Medium-high (historical/research value, but harmful)
-- <strong>Fragility</strong>: High (extremist sites often shut down by hosts or law enforcement)
-- <strong>Feasibility</strong>: Medium (may require Tor, technical barriers)
-- <strong>Redundancy</strong>: Low (mainstream archives avoid extremist content)
-- <strong>Ethics</strong>: Low (serious concerns about harm)
-</p>
-
-<p>
-<strong>Recommendation:</strong> <strong>Very restricted archive, if at all</strong>
-</p>
-
-<p>
-<strong>Option A (Maximum Security):</strong>
-1. Archive for research only (no public access)
-2. Require IRB approval + academic credentials to access
-3. Redact personal information of victims
-4. Coordinate with law enforcement (if active threats)
-5. Provide to hate-monitoring organizations (ADL, SPLC)
-</p>
-
-<p>
-<strong>Option B (Don't Archive):</strong>
-- Some things should be lost
-- If research value is low and harm potential is high, destruction is ethical
-- Document that it existed (metadata, description) without preserving content itself
-</p>
-
-<p>
-<strong>Most archivists choose Option A:</strong> Preserve but lock down tightly. History includes ugly things, and understanding extremism requires evidence.
-</p>
-
-<h3>Edge Case 4: The Private Message Leak</h3>
-
-<p>
-<strong>Scenario:</strong> Someone leaks a trove of private Discord messages revealing corporate malfeasance. The messages are newsworthy but were shared under expectation of privacy. Should you archive?
-</p>
-
-<p>
-<strong>Ethical Considerations:</strong>
-</p>
-
-<p>
-<strong>FOR Archiving:</strong>
-- Public interest (corporate wrongdoing should be documented)
-- Whistleblower protection (if original leaker is endangered, redundant copies help)
-- Historical record (evidence of how corporations operate behind closed doors)
-</p>
-
-<p>
-<strong>AGAINST Archiving:</strong>
-- Privacy violation (people wrote those messages expecting privacy)
-- Consent (participants didn't agree to archiving)
-- Collateral damage (leaks often include innocent bystanders' private info)
-</p>
-
-<p>
-<strong>Custodial Filter Analysis:</strong>
-- <strong>Significance</strong>: High (public interest, accountability)
-- <strong>Fragility</strong>: Medium (leak may be taken down via DMCA, threats)
-- <strong>Feasibility</strong>: Easy (already leaked, just need to copy)
-- <strong>Redundancy</strong>: Medium (likely others saving, but could be suppressed)
-- <strong>Ethics</strong>: Low-medium (privacy violation vs. public interest)
-</p>
-
-<p>
-<strong>Recommendation:</strong> <strong>Selective archive with redaction</strong>
-1. Archive the newsworthy messages (evidence of wrongdoing)
-2. Redact personal information of non-involved parties (people who just happened to be in the server)
-3. Remove sensitive personal details (even of wrongdoers—focus on the malfeasance, not their kids' names)
-4. Make available to journalists and researchers
-5. Consider time embargo (publish now, release full archive in 10 years when people involved are less vulnerable)
-</p>
-
-<p>
-<strong>Principle:</strong> Public interest can override privacy, but minimize collateral damage.
-</p>
-
-<h2>Part VI: Institutional Triage Policies</h2>
-
-<h3>Building a Triage Policy for Your Organization</h3>
-
-<p>
-If you're creating an archive, museum, or preservation institution, codify your triage principles:
-</p>
-
-<p>
-<strong>Policy Components:</strong>
-</p>
-
-<p>
-<strong>1. Mission Statement</strong>
-- What are you preserving and why?
-- Example: "We preserve LGBTQ+ digital culture to ensure queer history isn't erased"
-</p>
-
-<p>
-<strong>2. Significance Criteria</strong>
-- What makes something worth preserving in your collection?
-- Be specific: representational gaps, community value, historical importance
-</p>
-
-<p>
-<strong>3. Ethical Red Lines</strong>
-- What will you NOT preserve, no matter what?
-- Examples: "We do not preserve non-consensual intimate images" or "We do not archive active doxxing campaigns"
-</p>
-
-<p>
-<strong>4. Restricted Access Guidelines</strong>
-- Under what conditions do you restrict access?
-- Who can access restricted materials?
-</p>
-
-<p>
-<strong>5. Takedown Process</strong>
-- How can people request removal of material?
-- What's the review process?
-</p>
-
-<p>
-<strong>6. Transparency Commitment</strong>
-- How do you document triage decisions?
-- Do you publish criteria publicly?
-</p>
-
-<p>
-<strong>Example: The Internet Archive's Policy (Simplified)</strong>
-</p>
-
-<p>
-- <strong>Mission</strong>: "Universal access to all knowledge"
-- <strong>Significance</strong>: Broad crawling (no strict curation—preserve as much as possible)
-- <strong>Ethics</strong>: Respect robots.txt (if site owner says "don't crawl," they don't), DMCA takedowns honored
-- <strong>Access</strong>: Public by default, but allow author/site owner opt-out
-- <strong>Transparency</strong>: Public-facing form for takedown requests, documents policies on website
-</p>
-
-<p>
-<strong>Example: A Hypothetical Trans Archive's Policy</strong>
-</p>
-
-<p>
-- <strong>Mission</strong>: "Preserve trans people's digital self-documentation and community organizing"
-- <strong>Significance</strong>: Prioritize trans creators, especially early/formative content (pre-2010), survival resources, community organizing
-- <strong>Ethics</strong>: Strong consent focus—reach out to creators when possible, honor deletion requests, never out people
-- <strong>Access</strong>: Public access for educational/research use, but some material (private forums, DMs) restricted to trans researchers only
-- <strong>Transparency</strong>: Advisory board of trans community members reviews contested triage decisions
-</p>
-
-<h2>Part VII: When to Let Go</h2>
-
-<h3>The Hardest Lesson: Accepting Loss</h3>
-
-<p>
-Not everything can be saved. Sometimes, the ethical choice—or the practical choice—is to <strong>let something die</strong>.
-</p>
-
-<p>
-<strong>When to Let Go:</strong>
-</p>
-
-<p>
-<strong>1. Ethical Harm Outweighs Value</strong>
-- If preserving actively hurts people (doxxing, revenge porn), don't do it
-</p>
-
-<p>
-<strong>2. No Viable Path to Preservation</strong>
-- Some artifacts are technologically impossible to save (encrypted with lost keys, hardware-specific with no working hardware)
-</p>
-
-<p>
-<strong>3. Resources Better Spent Elsewhere</strong>
-- If saving one low-value artifact means letting a high-value artifact die, let the low-value one go
-</p>
-
-<p>
-<strong>4. Respecting Intentional Ephemerality</strong>
-- Some cultures and communities value impermanence (Snapchat culture, Buddhist sand mandalas)
-- Forcing permanence violates cultural values
-</p>
-
-<p>
-<strong>The Grief of Triage</strong>
-</p>
-
-<p>
-Letting artifacts die is painful. You're choosing what future generations can never know. You're accepting that some stories will be lost, some voices silenced, some memories erased.
-</p>
-
-<p>
-This grief is unavoidable. The role of the Archaeobytologist includes <strong>mourning</strong>.
-</p>
-
-<p>
-<strong>But:</strong> Grief that paralyzes is counterproductive. Mourn, then act. Save what you can. Document what you couldn't save (at least record that it existed). Move forward.
-</p>
-
-<p>
-<strong>The Triage Paradox:</strong>
-</p>
-
-<p>
-The better you get at triage, the more aware you become of loss. Beginners think they can save everything. Experts know they can't—and carry the weight of every choice.
-</p>
-
-<p>
-This is the burden of custodianship.
-</p>
-
-<h2>Conclusion: Triage as Ethical Practice</h2>
-
-<p>
-The Custodial Filter isn't a formula—it's a <strong>framework for ethical deliberation</strong>. It forces you to ask hard questions:
-- What makes this artifact matter?
-- How urgently endangered is it?
-- Can we realistically save it?
-- Are others already saving it?
-- <strong>Should</strong> we save it?
-</p>
-
-<p>
-Every triage decision is an <strong>ethical act</strong>. You're deciding what the future can know about the past. You're allocating scarce resources (time, labor, storage, attention). You're potentially overriding someone's wishes (to be forgotten, to be private).
-</p>
-
-<p>
-These decisions should be:
-- <strong>Systematic</strong> (not arbitrary or impulsive)
-- <strong>Transparent</strong> (document your reasoning)
-- <strong>Revisable</strong> (be willing to reconsider)
-- <strong>Humble</strong> (acknowledge you could be wrong)
-</p>
-
-<p>
-The Custodial Filter provides structure for these decisions—not certainty, but <strong>rigorous ethical thinking</strong>.
-</p>
-
-<p>
-In the next chapter, we'll explore the boundaries of Archaeobytology as a discipline—how it differs from adjacent fields, what makes it distinct, and why it deserves recognition as its own domain of study.
-</p>
-
-<p>
-But first, practice triage. Look at your own digital life. What would you save if you had 48 hours to archive everything? What would you let go? And how would you justify those choices?
-</p>
-
-<p>
-The Custodial Filter begins with seeing your own values clearly.
-</p>
-
-<h2>Discussion Questions</h2>
-
-<p>
-1. <strong>Personal Triage</strong>: If your email account announced shutdown in 48 hours, what would you prioritize saving? Why? What would you let go?
-</p>
-
-<p>
-2. <strong>Ethical Boundaries</strong>: Where do you draw the line? What content should never be archived, even if historically significant?
-</p>
-
-<p>
-3. <strong>Competing Values</strong>: How do you balance (a) preserving everything for future research vs. (b) respecting privacy and consent?
-</p>
-
-<p>
-4. <strong>Bias and Representation</strong>: How can triage avoid reproducing systemic biases (racism, sexism, class privilege)? Is "objective" triage possible?
-</p>
-
-<p>
-5. <strong>Institutional vs. Individual</strong>: Should triage decisions be made by institutions (museums, archives) or individuals (you with your hard drive)? What are the pros/cons of each?
-</p>
-
-<p>
-6. <strong>Future Regret</strong>: Imagine it's 2075. What digital culture from 2020s do you think future historians will wish we'd preserved but didn't?
-</p>
-
-<h2>Exercise: Conduct a Triage Simulation</h2>
-
-<p>
-<strong>Scenario</strong>: You have 72 hours and 1TB of storage to archive a dying platform before it shuts down. The platform has:
-- 50,000 user accounts
-- 5 million posts (text, images, videos)
-- 200 communities/groups
-- 10 years of history
-</p>
-
-<p>
-You cannot save everything. Conduct triage.
-</p>
-
-<p>
-<strong>Part 1: Define Your Values</strong> (300 words)
-- What's your preservation mission?
-- What criteria matter most to you (representation, popularity, rarity, etc.)?
-</p>
-
-<p>
-<strong>Part 2: Apply the Custodial Filter</strong> (500 words)
-</p>
-
-<p>
-Create a triage matrix for these artifact types:
-1. Viral posts (high engagement, widely seen)
-2. Marginalized community content (LGBTQ+, disability, etc.)
-3. Long-form creative work (fiction, art, tutorials)
-4. Personal journaling/diaries
-5. Corporate/brand accounts
-</p>
-
-<p>
-Score each on:
-- Cultural Significance (0-5)
-- Technical Fragility (0-5)
-- Rescue Feasibility (0-5)
-- Redundancy Gap (0-5)
-- Ethical Clarity (0-5)
-</p>
-
-<p>
-<strong>Part 3: Make Decisions</strong> (500 words)
-- Given your 1TB limit, what do you save?
-- What do you deprioritize or leave behind?
-- How do you handle ethical dilemmas (private content, deleted posts)?
-</p>
-
-<p>
-<strong>Part 4: Reflect</strong> (200 words)
-- How did it feel to make these choices?
-- What surprised you about your own values?
-- Would you make different choices under different constraints?
-</p>
-
-<h2>Further Reading</h2>
-
-<h3>On Triage and Preservation Ethics</h3>
-
-<p>
-- Caswell, Michelle. "Seeing Yourself in History: Community Archives and the Fight Against Symbolic Annihilation." <em>The Public Historian</em> 36, no. 4 (2014): 26-37.
-- Flinn, Andrew. "Community Histories, Community Archives: Some Opportunities and Challenges." <em>Journal of the Society of Archivists</em> 28, no. 2 (2007): 151-176.
-- Jimerson, Randall. <em>Archives Power: Memory, Accountability, and Social Justice</em>. SAA, 2009.
-</p>
-
-<h3>On Privacy and Consent</h3>
-
-<p>
-- Nissenbaum, Helen. <em>Privacy in Context: Technology, Policy, and the Integrity of Social Life</em>. Stanford, 2009.
-- Solove, Daniel. <em>Nothing to Hide: The False Tradeoff Between Privacy and Security</em>. Yale, 2011.
-- Rosen, Jeffrey. "The Right to Be Forgotten." <em>Stanford Law Review Online</em> 64 (2012): 88.
-</p>
-
-<h3>On Digital Preservation Methods</h3>
-
-<p>
-- Brügger, Niels, and Ralph Schroeder, eds. <em>The Web as History</em>. UCL Press, 2017.
-- Kirschenbaum, Matthew, et al. "Digital Materiality: Preserving Access to Computers as Complete Environments." <em>iPRES</em> (2009).
-- Archives Team. "So You Want to Archive a Website." https://wiki.archiveteam.org/
-</p>
-
-<h3>On Ethics of Difficult Knowledge</h3>
-
-<p>
-- Simon, Roger, et al. "Witness as Study: Attending to the Testimonies of Trauma, Memory, and Injustice." <em>Equity & Excellence in Education</em> 38, no. 3 (2005): 191-198.
-- Caswell, Michelle. <em>Urgent Archives: Enacting Liberatory Memory Work</em>. Routledge, 2021.
-</p>
-
-<p>
-<strong>End of Chapter 5</strong>
-</p>
-
-<p>
-<em>Next: Chapter 6 — Discipline Formation and Boundaries: Why Archaeobytology Needs to Exist</em>
-</p>
-
-
-        </article>
-        <div class="nav">
-            <a href="index.html">Back to Table of Contents</a>
-        </div>
-    </div>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='chapter-5-triage-methodology-----the-custodial-filter-and-ethical-preservation'><span>Chapter 5: Triage Methodology — The Custodial Filter and Ethical Preservation</span></h1><hr /><h2 id='opening-the-impossible-choice'><span>Opening: The Impossible Choice</span></h2><p><span>October 16, 2016. Vine announces it will shut down in three months. Archive Team mobilizes immediately, but the math is brutal:</span></p><ul><li><p><strong><span>200 million videos</span></strong><span> exist on Vine</span></p></li><li><p><strong><span>Three months</span></strong><span> until shutdown</span></p></li><li><p><strong><span>Limited volunteers</span></strong><span>, storage, and bandwidth</span></p></li></ul><p><span>Even working around the clock, they can&#39;t save everything. They must choose.</span></p><p><span>Do they prioritize:</span></p><ul><li><p><strong><span>Viral videos</span></strong><span> (most cultural impact, but already widely copied)?</span></p></li><li><p><strong><span>Marginalized creators</span></strong><span> (underrepresented voices, but lower view counts)?</span></p></li><li><p><strong><span>Complete user archives</span></strong><span> (preserving entire creator portfolios, but means fewer total creators saved)?</span></p></li><li><p><strong><span>Representative sampling</span></strong><span> (cross-section of Vine culture, but many individual voices lost)?</span></p></li></ul><p><span>Every choice means something else dies. Every video saved means another left behind.</span></p><p><span>This is </span><strong><span>triage</span></strong><span>—borrowed from battlefield medicine, where doctors must decide which wounded soldiers to treat first when resources are scarce. In emergency rooms, triage saves lives by allocating attention efficiently. In digital preservation, triage saves culture by allocating effort strategically.</span></p><p><span>But triage is agony. It forces us to confront uncomfortable truths:</span></p><ul><li><p><span>Not everything can be saved</span></p></li><li><p><span>Some artifacts matter more than others</span></p></li><li><p><span>Scarcity requires hierarchy</span></p></li><li><p><span>Every preservation decision is also a decision to let something die</span></p></li></ul><p><span>This chapter explores how to make those impossible choices—not perfectly (perfection is impossible), but </span><strong><span>ethically, systematically, and transparently</span></strong><span>.</span></p><p><span>We call this framework the </span><strong><span>Custodial Filter</span></strong><span>: a methodology for deciding what to preserve, when to preserve it, and when—painfully—to let go.</span></p><hr /><h2 id='part-i-the-ethics-of-triage'><span>Part I: The Ethics of Triage</span></h2><h3 id='why-triage-is-necessary'><span>Why Triage Is Necessary</span></h3><p><strong><span>Infinite Culture, Finite Resources</span></strong></p><p><span>The internet produces content at a rate no human effort can fully capture:</span></p><ul><li><p><strong><span>Twitter</span></strong><span>: 500 million tweets per day (2023)</span></p></li><li><p><strong><span>YouTube</span></strong><span>: 720,000 hours of video uploaded daily</span></p></li><li><p><strong><span>Instagram</span></strong><span>: 95 million photos and videos daily</span></p></li><li><p><strong><span>TikTok</span></strong><span>: Unknown, but comparable to YouTube</span></p></li><li><p><strong><span>Plus</span></strong><span>: Blogs, forums, Discord servers, newsletters, personal websites, etc.</span></p></li></ul><p><span>Even with unlimited storage (which doesn&#39;t exist), the </span><strong><span>labor of curation</span></strong><span>—adding metadata, providing context, ensuring accessibility—is scarce.</span></p><p><strong><span>Platform Death Accelerates Urgency</span></strong></p><p><span>When a platform announces shutdown, the timeline collapses:</span></p><ul><li><p><span>GeoCities: 3 weeks warning</span></p></li><li><p><span>Vine: 3 months warning</span></p></li><li><p><span>Google Reader: 4 months warning</span></p></li><li><p><span>Tumblr NSFW purge: 2 weeks warning</span></p></li></ul><p><span>In crisis mode, triage becomes life-or-death for artifacts.</span></p><p><strong><span>Preservation Requires Stewardship</span></strong></p><p><span>Saving bits is relatively cheap (storage costs drop constantly). But </span><strong><span>meaningful preservation</span></strong><span> requires:</span></p><ul><li><p><span>Metadata creation (who, what, when, why, context)</span></p></li><li><p><span>Format migration (as technology evolves)</span></p></li><li><p><span>Access infrastructure (search, browse, display)</span></p></li><li><p><span>Legal navigation (copyright, privacy, consent)</span></p></li><li><p><span>Institutional maintenance (organizations must survive decades)</span></p></li></ul><p><span>These activities consume human time and expertise—resources that will always be scarce.</span></p><h3 id='the-ethical-stakes-of-triage'><span>The Ethical Stakes of Triage</span></h3><p><strong><span>Who Decides What&#39;s Worth Saving?</span></strong></p><p><span>Triage decisions encode </span><strong><span>power and values</span></strong><span>:</span></p><ul><li><p><span>If we prioritize &quot;viral&quot; content, we amplify mainstream voices and erase margins</span></p></li><li><p><span>If we prioritize &quot;cultural significance,&quot; we risk bias toward dominant cultures</span></p></li><li><p><span>If we prioritize ease of preservation, we lose complex, fragile artifacts</span></p></li><li><p><span>If we prioritize consent, we may lose important historical evidence</span></p></li></ul><p><span>Every triage framework embodies ethical commitments, whether explicit or not.</span></p><p><strong><span>The Permanence of Loss</span></strong></p><p><span>Physical artifacts can be rediscovered—buried ruins excavated, manuscripts found in attics. But digital artifacts </span><strong><span>vanish completely</span></strong><span> when platforms shut down. There&#39;s no archaeological dig 100 years later to recover what we failed to save.</span></p><p><span>Triage decisions are </span><strong><span>irreversible</span></strong><span>. What we don&#39;t preserve now is lost forever.</span></p><p><strong><span>The Burden of Custodianship</span></strong></p><p><span>To preserve is to claim </span><strong><span>custodial responsibility</span></strong><span>:</span></p><ul><li><p><span>You decide what future generations can know about this era</span></p></li><li><p><span>You become a gatekeeper—your choices shape historical memory</span></p></li><li><p><span>You bear ethical weight of what you saved and what you didn&#39;t</span></p></li></ul><p><span>This burden can&#39;t be escaped. Even choosing </span><em><span>not</span></em><span> to preserve is a choice with consequences.</span></p><hr /><h2 id='part-ii-the-custodial-filter-----a-five-question-framework'><span>Part II: The Custodial Filter — A Five-Question Framework</span></h2><p><span>The </span><strong><span>Custodial Filter</span></strong><span> is a systematic methodology for triage. Before preserving any artifact, ask five questions:</span></p><h3 id='question-1-cultural-significance'><span>Question 1: Cultural Significance</span></h3><p><strong><span>Does this artifact represent a community, movement, or cultural moment that would otherwise be lost?</span></strong></p><p><strong><span>Criteria:</span></strong></p><ul><li><p><strong><span>Representational value</span></strong><span>: Does it document an underrepresented community?</span></p></li><li><p><strong><span>Historical importance</span></strong><span>: Does it capture a significant event or movement?</span></p></li><li><p><strong><span>Aesthetic innovation</span></strong><span>: Does it represent creative achievement or technical pioneering?</span></p></li><li><p><strong><span>Community meaning</span></strong><span>: Do people who created/used this consider it important?</span></p></li></ul><p><strong><span>High Significance Examples:</span></strong></p><ul><li><p><strong><span>Early Black Twitter threads</span></strong><span> (2010-2015): Document emergence of hashtag activism (#BlackLivesMatter, #SayHerName)</span></p></li><li><p><strong><span>Early trans YouTubers</span></strong><span> (2006-2012): Chronicle transition vlogs before mainstream visibility</span></p></li><li><p><strong><span>GeoCities fan communities</span></strong><span> (1995-2000): Archive of early fandom, particularly marginalized fandoms (slash fiction, queer representation)</span></p></li></ul><p><strong><span>Lower Significance Examples:</span></strong></p><ul><li><p><strong><span>Corporate spam accounts</span></strong><span>: Minimal cultural value, widely preserved elsewhere if needed</span></p></li><li><p><strong><span>Duplicate viral videos</span></strong><span>: Already archived by multiple sources</span></p></li><li><p><strong><span>Auto-generated content</span></strong><span>: Bot posts with no human creative input</span></p></li></ul><p><strong><span>Challenge: Whose Significance?</span></strong></p><p><span>What&#39;s &quot;significant&quot; is contested:</span></p><ul><li><p><span>Academic historians prioritize different artifacts than community members</span></p></li><li><p><span>Mainstream culture dismisses subcultures as trivial (but those subcultures have rich internal meaning)</span></p></li><li><p><span>Future generations may value what present dismisses</span></p></li></ul><p><strong><span>Best Practice:</span></strong><span> Default to </span><strong><span>over-preservation</span></strong><span> when significance is uncertain. We can&#39;t predict what future scholars will want to study.</span></p><h3 id='question-2-technical-fragility'><span>Question 2: Technical Fragility</span></h3><p><strong><span>How close to disappearance is this artifact?</span></strong></p><p><strong><span>Fragility Spectrum:</span></strong></p><p><strong><span>Critical (Hours/Days)</span></strong></p><ul><li><p><span>Platform announced shutdown imminent</span></p></li><li><p><span>Server errors suggest infrastructure collapse</span></p></li><li><p><span>DMCA takedowns being issued</span></p></li><li><p><span>Legal threats to hosting</span></p></li></ul><p><strong><span>High (Weeks/Months)</span></strong></p><ul><li><p><span>Platform announced future shutdown</span></p></li><li><p><span>Company in financial distress</span></p></li><li><p><span>Terms of Service changes pending (mass deletions coming)</span></p></li><li><p><span>Migration waves beginning (users leaving)</span></p></li></ul><p><strong><span>Medium (Years)</span></strong></p><ul><li><p><span>Platform declining but stable</span></p></li><li><p><span>No imminent shutdown threat</span></p></li><li><p><span>Content still accessible but endangered long-term</span></p></li></ul><p><strong><span>Low (Decades)</span></strong></p><ul><li><p><span>Stable institutions (library collections, government archives)</span></p></li><li><p><span>Already preserved with redundancy</span></p></li><li><p><span>Open formats, no proprietary lock-in</span></p></li></ul><p><strong><span>Triage Priority:</span></strong></p><ul><li><p><strong><span>Critical fragility → Act immediately</span></strong><span> (even if cultural significance is uncertain)</span></p></li><li><p><strong><span>Low fragility → Defer</span></strong><span> (focus on more endangered artifacts)</span></p></li></ul><p><strong><span>Example: GeoCities vs. Library of Congress</span></strong></p><p><span>When both GeoCities and LOC&#39;s web archive need attention:</span></p><ul><li><p><strong><span>GeoCities</span></strong><span>: Critical fragility (3 weeks to shutdown) → Priority 1</span></p></li><li><p><strong><span>LOC</span></strong><span>: Low fragility (institutional stability, funded mandate) → Priority 3</span></p></li></ul><h3 id='question-3-rescue-difficulty'><span>Question 3: Rescue Difficulty</span></h3><p><strong><span>How hard is this artifact to preserve?</span></strong></p><p><strong><span>Ease Assessment:</span></strong></p><p><strong><span>Easy (Can automate)</span></strong></p><ul><li><p><span>Static HTML pages (wget scraper)</span></p></li><li><p><span>Public APIs with bulk export</span></p></li><li><p><span>Standard formats (plain text, images, HTML)</span></p></li><li><p><span>Already-crawled by Internet Archive</span></p></li></ul><p><strong><span>Medium (Requires manual effort)</span></strong></p><ul><li><p><span>Dynamic content (JavaScript-heavy sites)</span></p></li><li><p><span>Private/login-walled content</span></p></li><li><p><span>Embedded media (Flash, Java applets)</span></p></li><li><p><span>Metadata extraction needed</span></p></li></ul><p><strong><span>Hard (Technical barriers)</span></strong></p><ul><li><p><span>Complex databases without export tools</span></p></li><li><p><span>DRM-protected content</span></p></li><li><p><span>Real-time/ephemeral content (Snapchat stories, Clubhouse rooms)</span></p></li><li><p><span>Server-side logic required for functionality</span></p></li></ul><p><strong><span>Very Hard (Near-impossible)</span></strong></p><ul><li><p><span>Fully encrypted with lost keys</span></p></li><li><p><span>Proprietary formats with no documentation</span></p></li><li><p><span>Deleted content with no backups</span></p></li><li><p><span>Hardware-specific content (arcade games requiring original boards)</span></p></li></ul><p><strong><span>Triage Tension:</span></strong></p><p><span>Should you spend 100 hours preserving one hard artifact, or preserve 100 easy artifacts in the same time?</span></p><p><strong><span>No universal answer</span></strong><span>, but factors to consider:</span></p><ul><li><p><span>If hard artifact is uniquely significant (e.g., only documentation of a marginalized community), worth the effort</span></p></li><li><p><span>If easy artifacts are low-significance duplicates, hard artifact may be better use of time</span></p></li><li><p><span>If you&#39;re in crisis mode (imminent shutdown), prioritize quantity (easy artifacts)</span></p></li></ul><p><strong><span>Example: Flash Games</span></strong></p><p><span>Flashpoint Project prioritized Flash games (medium-hard difficulty) because:</span></p><ul><li><p><span>High cultural significance (entire generation&#39;s childhood)</span></p></li><li><p><span>Critical fragility (Flash Player discontinued)</span></p></li><li><p><span>Doable difficulty (emulation possible with effort)</span></p></li></ul><p><span>They chose one hard project over many easy ones—and succeeded.</span></p><h3 id='question-4-existing-redundancy'><span>Question 4: Existing Redundancy</span></h3><p><strong><span>Is someone else already preserving this?</span></strong></p><p><strong><span>Check for Redundancy:</span></strong></p><ul><li><p><strong><span>Internet Archive&#39;s Wayback Machine</span></strong><span>: Has it been crawled?</span></p></li><li><p><strong><span>Library of Congress</span></strong><span>: Do they have it? (Web archive, Twitter archive)</span></p></li><li><p><strong><span>Other institutions</span></strong><span>: University archives, national libraries, museums</span></p></li><li><p><strong><span>Community efforts</span></strong><span>: Fan archives, Discord channels, subreddit backups</span></p></li><li><p><strong><span>Individual users</span></strong><span>: Have creators exported their own content?</span></p></li></ul><p><strong><span>Redundancy Matrix:</span></strong></p><figure class='table-figure'><table><thead><tr><th><span>Situation</span></th><th><span>Action</span></th></tr></thead><tbody><tr><td><span>No one preserving</span></td><td><strong><span>Urgent priority</span></strong><span> (you might be the only chance)</span></td></tr><tr><td><span>One fragile preservation</span></td><td><strong><span>Valuable redundancy</span></strong><span> (create backup of backup)</span></td></tr><tr><td><span>Multiple stable institutions</span></td><td><strong><span>Lower priority</span></strong><span> (focus elsewhere unless you add unique value)</span></td></tr><tr><td><span>Already in Internet Archive + LOC + universities</span></td><td><strong><span>Deprioritize</span></strong><span> (unless you&#39;re doing different kind of curation)</span></td></tr></tbody></table></figure><p><strong><span>Exception: &quot;Preserve Differently&quot;</span></strong></p><p><span>Even if something is archived, you might preserve it differently:</span></p><ul><li><p><span>Internet Archive: Comprehensive but minimal metadata</span></p></li><li><p><span>Your project: Smaller sample with rich contextualization</span></p></li><li><p><span>Both add value</span></p></li></ul><p><strong><span>Example: Vine</span></strong></p><p><span>Internet Archive scraped Vine comprehensively (quantity). Individual fans created curated collections (quality—&quot;Best Vines 2013-2017&quot;). Both were valuable.</span></p><h3 id='question-5-consent-and-ethics'><span>Question 5: Consent and Ethics</span></h3><p><strong><em><span>Should</span></em><span> we preserve this?</span></strong></p><p><span>This is the hardest question—and the one most often skipped. Just because you </span><em><span>can</span></em><span> preserve something doesn&#39;t mean you </span><em><span>should</span></em><span>.</span></p><p><strong><span>Ethical Red Flags:</span></strong></p><p><strong><span>Privacy Violations</span></strong></p><ul><li><p><span>Personal information shared under expectation of ephemerality (Snapchat-style content)</span></p></li><li><p><span>Medical, financial, or intimate details</span></p></li><li><p><span>Children&#39;s content (especially if they can&#39;t consent now)</span></p></li><li><p><span>Location data that could enable stalking</span></p></li></ul><p><strong><span>Potential for Harm</span></strong></p><ul><li><p><span>Revenge porn or non-consensual intimate images</span></p></li><li><p><span>Doxxing (personal addresses, phone numbers)</span></p></li><li><p><span>Harassment campaigns</span></p></li><li><p><span>Misinformation that continues to cause harm</span></p></li></ul><p><strong><span>Contested Consent</span></strong></p><ul><li><p><span>Creator deleted content intentionally (wanted it forgotten)</span></p></li><li><p><span>Content was private or &quot;friends-only&quot; (context collapse if made public)</span></p></li><li><p><span>Platform TOS forbade scraping (legal gray area)</span></p></li></ul><p><strong><span>Cultural Sensitivity</span></strong></p><ul><li><p><span>Indigenous knowledge that communities want kept within community</span></p></li><li><p><span>Religious or spiritual content with access restrictions</span></p></li><li><p><span>Closed cultural practices not meant for outsiders</span></p></li></ul><p><strong><span>Trauma and Re-traumatization</span></strong></p><ul><li><p><span>9/11 jumper photos (newsworthy but deeply painful)</span></p></li><li><p><span>Mass shooting livestreams</span></p></li><li><p><span>Graphic violence or suffering</span></p></li></ul><p><strong><span>The Ethical Tension:</span></strong></p><p><span>Preservation often conflicts with privacy/consent:</span></p><ul><li><p><strong><span>Historian&#39;s view</span></strong><span>: &quot;Everything is historically important; preserve now, restrict access if needed&quot;</span></p></li><li><p><strong><span>Privacy advocate&#39;s view</span></strong><span>: &quot;People have a right to be forgotten; preservation without consent is violence&quot;</span></p></li></ul><p><strong><span>No Easy Resolution</span></strong><span>, but principles to guide:</span></p><p><strong><span>Principle 1: Minimize Harm</span></strong></p><ul><li><p><span>If preserving causes direct, immediate harm (endangers someone&#39;s safety), don&#39;t do it</span></p></li><li><p><span>Example: Don&#39;t archive doxxing threads that reveal someone&#39;s address</span></p></li></ul><p><strong><span>Principle 2: Respect Explicit Deletion</span></strong></p><ul><li><p><span>If a creator </span><em><span>intentionally</span></em><span> deleted something (not platform-deleted), presume they wanted it gone</span></p></li><li><p><span>Exception: Public figures, historical importance (politicians deleting compromising tweets)</span></p></li></ul><p><strong><span>Principle 3: Restrict Access When Appropriate</span></strong></p><ul><li><p><span>Preserve but don&#39;t make public (researcher-only access, embargoes)</span></p></li><li><p><span>Example: Archive controversial forum but require IRB approval to access</span></p></li></ul><p><strong><span>Principle 4: Community Consultation</span></strong></p><ul><li><p><span>When preserving community-created content, ask the community</span></p></li><li><p><span>Example: Indigenous archives often require tribal consultation</span></p></li></ul><p><strong><span>Principle 5: Transparent Decision-Making</span></strong></p><ul><li><p><span>Document </span><em><span>why</span></em><span> you preserved or didn&#39;t</span></p></li><li><p><span>Allow for appeals/reconsideration</span></p></li></ul><p><strong><span>Case Study: Tumblr NSFW Purge</span></strong></p><p><span>In 2018, Tumblr banned all &quot;adult content,&quot; deleting millions of posts, many of which were:</span></p><ul><li><p><span>LGBTQ+ identity exploration</span></p></li><li><p><span>Sex education resources</span></p></li><li><p><span>Art (nudes, erotic fiction)</span></p></li><li><p><span>Sex worker portfolios</span></p></li></ul><p><strong><span>Ethical Dilemma:</span></strong><span> Should archivists preserve purged content?</span></p><p><strong><span>Arguments FOR:</span></strong></p><ul><li><p><span>Cultural/historical significance (LGBTQ+ history)</span></p></li><li><p><span>Censorship resistance (corporation shouldn&#39;t decide what&#39;s &quot;obscene&quot;)</span></p></li><li><p><span>Creators may have lost only copies</span></p></li></ul><p><strong><span>Arguments AGAINST:</span></strong></p><ul><li><p><span>Some creators wanted content ephemeral (chosen not to archive personally)</span></p></li><li><p><span>Adult content has complex consent issues (performers may not want redistribution)</span></p></li><li><p><span>Legal risks (some purged content may have been illegal, archivists don&#39;t want liability)</span></p></li></ul><p><strong><span>What Actually Happened:</span></strong></p><ul><li><p><span>Some archivists saved portions (research access only)</span></p></li><li><p><span>Many creators self-archived (exported their own blogs)</span></p></li><li><p><span>Much was permanently lost (no comprehensive rescue)</span></p></li></ul><p><strong><span>Ethical Assessment:</span></strong></p><ul><li><p><span>No single right answer</span></p></li><li><p><span>Case-by-case determination based on consent signals, cultural value, harm potential</span></p></li></ul><hr /><h2 id='part-iii-the-triage-decision-matrix'><span>Part III: The Triage Decision Matrix</span></h2><p><span>Combine all five questions into a </span><strong><span>scoring system</span></strong><span> to prioritize artifacts systematically.</span></p><h3 id='scoring-framework-0-5-scale-for-each-dimension'><span>Scoring Framework (0-5 scale for each dimension)</span></h3><p><strong><span>Cultural Significance</span></strong><span> (0 = spam, 5 = irreplaceable cultural artifact)</span></p><p><strong><span>Technical Fragility</span></strong><span> (0 = stable/safe, 5 = will disappear in hours)</span></p><p><strong><span>Rescue Feasibility</span></strong><span> (0 = impossible, 5 = trivial to preserve; </span><em><span>inverted for priority</span></em><span>)</span></p><p><strong><span>Redundancy Gap</span></strong><span> (0 = many redundant copies, 5 = unique, no other preservation)</span></p><p><strong><span>Ethical Clarity</span></strong><span> (0 = serious ethical problems, 5 = clearly ethical to preserve)</span></p><h3 id='example-triage-matrix-vine-shutdown'><span>Example Triage Matrix: Vine Shutdown</span></h3><figure class='table-figure'><table><thead><tr><th><span>Artifact</span></th><th><span>Significance</span></th><th><span>Fragility</span></th><th><span>Feasibility</span></th><th><span>Redundancy</span></th><th><span>Ethics</span></th><th><strong><span>Total</span></strong></th><th><strong><span>Priority</span></strong></th></tr></thead><tbody><tr><td><span>Viral memes (already copied)</span></td><td><span>4</span></td><td><span>5</span></td><td><span>5</span></td><td><span>2</span></td><td><span>5</span></td><td><span>21</span></td><td><span>Medium</span></td></tr><tr><td><span>Small creator archives</span></td><td><span>5</span></td><td><span>5</span></td><td><span>4</span></td><td><span>5</span></td><td><span>5</span></td><td><span>24</span></td><td><strong><span>High</span></strong></td></tr><tr><td><span>Corporate brand accounts</span></td><td><span>2</span></td><td><span>5</span></td><td><span>5</span></td><td><span>1</span></td><td><span>5</span></td><td><span>18</span></td><td><span>Low</span></td></tr><tr><td><span>Private accounts</span></td><td><span>3</span></td><td><span>5</span></td><td><span>3</span></td><td><span>5</span></td><td><span>2</span></td><td><span>18</span></td><td><span>Low (ethics)</span></td></tr><tr><td><span>Representative sample</span></td><td><span>4</span></td><td><span>5</span></td><td><span>5</span></td><td><span>4</span></td><td><span>5</span></td><td><span>23</span></td><td><span>High</span></td></tr></tbody></table></figure><p><strong><span>Priority Ranking:</span></strong></p><ol start='' ><li><p><strong><span>Small creator archives</span></strong><span> (24 points) — Unique voices, no other preservation, highly fragile</span></p></li><li><p><strong><span>Representative sample</span></strong><span> (23 points) — Cultural cross-section, high feasibility</span></p></li><li><p><strong><span>Viral memes</span></strong><span> (21 points) — Significant but already widely copied</span></p></li><li><p><strong><span>Private accounts</span></strong><span> (18 points) — Ethical concerns override other factors</span></p></li><li><p><strong><span>Corporate accounts</span></strong><span> (18 points) — Low cultural value</span></p></li></ol><h3 id='triage-in-action-three-scenarios'><span>Triage in Action: Three Scenarios</span></h3><h4 id='scenario-1-imminent-shutdown-48-hours'><span>Scenario 1: Imminent Shutdown (48 hours)</span></h4><p><strong><span>Situation:</span></strong><span> Small forum announces shutdown in 2 days. 10,000 posts, no warning.</span></p><p><strong><span>Triage Decision:</span></strong></p><ul><li><p><strong><span>Significance</span></strong><span>: Medium (small community, but may be only documentation)</span></p></li><li><p><strong><span>Fragility</span></strong><span>: Critical (48 hours)</span></p></li><li><p><strong><span>Feasibility</span></strong><span>: Medium (need to scrape + login walls)</span></p></li><li><p><strong><span>Redundancy</span></strong><span>: High (probably no one else saving)</span></p></li><li><p><strong><span>Ethics</span></strong><span>: Medium (public forum, but check for privacy issues)</span></p></li></ul><p><strong><span>Action:</span></strong><span> </span><strong><span>Immediate scrape</span></strong><span>. Archive everything, sort out curation later. In crisis, preservation &gt; perfection.</span></p><p><strong><span>Method:</span></strong></p><ol start='' ><li><p><span>Use wget or HTTrack to scrape visible content</span></p></li><li><p><span>Ask community members for database dump (if possible)</span></p></li><li><p><span>Archive now, curate later (when not under deadline)</span></p></li></ol><h4 id='scenario-2-declining-platform-1-2-years-warning'><span>Scenario 2: Declining Platform (1-2 years warning)</span></h4><p><strong><span>Situation:</span></strong><span> Google+ shutdown announced for 2019. Company gives 1 year notice.</span></p><p><strong><span>Triage Decision:</span></strong></p><ul><li><p><strong><span>Significance</span></strong><span>: Medium (smaller than Facebook/Twitter, but had communities)</span></p></li><li><p><strong><span>Fragility</span></strong><span>: High (shutdown certain) but not immediate</span></p></li><li><p><strong><span>Feasibility</span></strong><span>: Medium-high (Google provided data export tools)</span></p></li><li><p><strong><span>Redundancy</span></strong><span>: Low (Google+ not widely archived)</span></p></li><li><p><strong><span>Ethics</span></strong><span>: High (users had export options, most content public)</span></p></li></ul><p><strong><span>Action:</span></strong><span> </span><strong><span>Systematic preservation with community partnership</span></strong></p><p><strong><span>Method:</span></strong></p><ol start='' ><li><p><span>Partner with Internet Archive for Wayback crawls</span></p></li><li><p><span>Create guides for users to export their own data</span></p></li><li><p><span>Identify high-value communities (e.g., Photography+ had professional communities)</span></p></li><li><p><span>Curate sample collections (not everything, but representative)</span></p></li><li><p><span>Take full year to do it right (not crisis mode)</span></p></li></ol><h4 id='scenario-3-ongoing-platform-with-contested-content'><span>Scenario 3: Ongoing Platform with Contested Content</span></h4><p><strong><span>Situation:</span></strong><span> Twitter still operational, but waves of account suspensions. Some suspended accounts have historically important content.</span></p><p><strong><span>Triage Decision:</span></strong></p><ul><li><p><strong><span>Significance</span></strong><span>: Varies (some accounts very significant, others not)</span></p></li><li><p><strong><span>Fragility</span></strong><span>: Medium (accounts suspended but may be reinstated, or may be permanent)</span></p></li><li><p><strong><span>Feasibility</span></strong><span>: High (if archived before suspension; impossible after)</span></p></li><li><p><strong><span>Redundancy</span></strong><span>: Low (Twitter doesn&#39;t preserve suspended accounts)</span></p></li><li><p><strong><span>Ethics</span></strong><span>: Complex (some suspensions justified, some censorship)</span></p></li></ul><p><strong><span>Action:</span></strong><span> </span><strong><span>Selective proactive archiving with ethical review</span></strong></p><p><strong><span>Method:</span></strong></p><ol start='' ><li><p><span>Identify accounts with high historical/cultural value (activists, journalists, politicians)</span></p></li><li><p><span>Proactively archive (before suspension) using tools like Twitter Archiver</span></p></li><li><p><span>For already-suspended: check if Internet Archive captured (Wayback Machine)</span></p></li><li><p><span>Ethical case-by-case: Don&#39;t archive hate groups, do archive wrongfully suspended activists</span></p></li><li><p><span>Restrict access for contentious material (researcher-only)</span></p></li></ol><hr /><h2 id='part-iv-practical-triage-workflows'><span>Part IV: Practical Triage Workflows</span></h2><h3 id='workflow-1-crisis-triage-platform-shutdown-imminent'><span>Workflow 1: Crisis Triage (Platform Shutdown Imminent)</span></h3><p><strong><span>Phase 1: Assess (Hours 1-4)</span></strong></p><ol start='' ><li><p><span>How much time until shutdown?</span></p></li><li><p><span>How much content exists?</span></p></li><li><p><span>Who else is archiving?</span></p></li><li><p><span>What tools are available?</span></p></li></ol><p><strong><span>Phase 2: Mobilize (Hours 4-24)</span></strong></p><ol start='' ><li><p><span>Recruit volunteers (Archive Team, Twitter, Reddit)</span></p></li><li><p><span>Set up infrastructure (servers, storage, coordination)</span></p></li><li><p><span>Divide labor (different people scrape different sections)</span></p></li></ol><p><strong><span>Phase 3: Execute (Remaining time)</span></strong></p><ol start='' ><li><p><strong><span>Quantity over quality</span></strong><span>: Save everything you can</span></p></li><li><p><span>Metadata is secondary (just get the bits)</span></p></li><li><p><span>Accept losses (you won&#39;t get everything)</span></p></li></ol><p><strong><span>Phase 4: Post-Shutdown</span></strong></p><ol start='' ><li><p><span>Consolidate scraped data</span></p></li><li><p><span>Remove duplicates</span></p></li><li><p><span>Begin curation (add metadata, organize)</span></p></li><li><p><span>Make accessible (upload to Internet Archive, create search interface)</span></p></li></ol><p><strong><span>Example: GeoCities Rescue</span></strong></p><ul><li><p><span>3 weeks warning → Archive Team scraped 650GB</span></p></li><li><p><span>Post-shutdown → Organized into browseable torrent</span></p></li><li><p><span>Years later → Cameron&#39;s World and other curated projects emerged</span></p></li></ul><h3 id='workflow-2-anticipatory-preservation-platform-declining'><span>Workflow 2: Anticipatory Preservation (Platform Declining)</span></h3><p><strong><span>Phase 1: Monitor (Ongoing)</span></strong></p><ul><li><p><span>Watch for signs of platform instability (layoffs, financial trouble, user exodus)</span></p></li><li><p><span>Begin proactive archiving </span><em><span>before</span></em><span> shutdown announced</span></p></li></ul><p><strong><span>Phase 2: Plan (When decline evident)</span></strong></p><ol start='' ><li><p><span>Identify most valuable content (communities, creators, cultural artifacts)</span></p></li><li><p><span>Assess redundancy (what&#39;s already archived?)</span></p></li><li><p><span>Develop curation strategy (can&#39;t save everything, but can save representative sample)</span></p></li></ol><p><strong><span>Phase 3: Execute (Before crisis)</span></strong></p><ol start='' ><li><p><span>Methodical crawling (not frantic scraping)</span></p></li><li><p><span>Add metadata as you go</span></p></li><li><p><span>Coordinate with platform (ask for data dumps, export tools)</span></p></li></ol><p><strong><span>Phase 4: Maintain (After shutdown)</span></strong></p><ol start='' ><li><p><span>Preserve archives long-term (storage, format migration)</span></p></li><li><p><span>Make accessible (search, browse, context)</span></p></li><li><p><span>Document (write history of the platform for future scholars)</span></p></li></ol><p><strong><span>Example: LiveJournal Migration</span></strong></p><ul><li><p><span>Decline gradual (2007-2017)</span></p></li><li><p><span>Many users migrated to Dreamwidth, taking archives</span></p></li><li><p><span>Internet Archive captured public posts</span></p></li><li><p><span>By time Russian ownership happened (2017), most preservation already done</span></p></li></ul><h3 id='workflow-3-continuous-curation-ongoing-platforms'><span>Workflow 3: Continuous Curation (Ongoing Platforms)</span></h3><p><strong><span>Phase 1: Define Scope</span></strong></p><ul><li><p><span>You can&#39;t archive the entire internet</span></p></li><li><p><span>Choose specific communities, topics, or creators to follow</span></p></li></ul><p><strong><span>Phase 2: Automate</span></strong></p><ul><li><p><span>Set up tools to continuously archive (RSS readers, auto-scrapers, bot accounts)</span></p></li><li><p><span>Example: ArchiveTeam&#39;s &quot;web sheriff&quot; bots monitor for site deaths</span></p></li></ul><p><strong><span>Phase 3: Curate Regularly</span></strong></p><ul><li><p><span>Review captured content quarterly</span></p></li><li><p><span>Add metadata, context, interpretation</span></p></li><li><p><span>Identify gaps (what are you missing?)</span></p></li></ul><p><strong><span>Phase 4: Respond to Crises</span></strong></p><ul><li><p><span>When your monitored platforms face threats, escalate to crisis mode</span></p></li><li><p><span>You have head start (already archiving proactively)</span></p></li></ul><p><strong><span>Example: Internet Archive&#39;s Wayback Machine</span></strong></p><ul><li><p><span>Continuous crawling since 1996</span></p></li><li><p><span>800+ billion pages captured</span></p></li><li><p><span>When site dies, already have historical snapshots</span></p></li></ul><hr /><h2 id='part-v-ethical-edge-cases'><span>Part V: Ethical Edge Cases</span></h2><h3 id='edge-case-1-the-deleted-tweet-from-a-public-figure'><span>Edge Case 1: The Deleted Tweet from a Public Figure</span></h3><p><strong><span>Scenario:</span></strong><span> A politician tweets something racist, then deletes it 20 minutes later. Should you archive it?</span></p><p><strong><span>Ethical Considerations:</span></strong></p><p><strong><span>FOR Archiving:</span></strong></p><ul><li><p><span>Public figure&#39;s public statement (not private communication)</span></p></li><li><p><span>Accountability: politicians should be held responsible for their words</span></p></li><li><p><span>Historical record: deletion is an act of historical revisionism</span></p></li></ul><p><strong><span>AGAINST Archiving:</span></strong></p><ul><li><p><span>Person deleted it (signal they regret it, want it forgotten)</span></p></li><li><p><span>Could be taken out of context or misunderstood</span></p></li><li><p><span>Perpetuates harm by keeping racist content circulating</span></p></li></ul><p><strong><span>Custodial Filter Analysis:</span></strong></p><ul><li><p><strong><span>Significance</span></strong><span>: High (public accountability)</span></p></li><li><p><strong><span>Fragility</span></strong><span>: Critical (already deleted, may vanish from screenshots)</span></p></li><li><p><strong><span>Feasibility</span></strong><span>: Easy (single tweet, text)</span></p></li><li><p><strong><span>Redundancy</span></strong><span>: Medium (others likely screenshotted, but could be lost)</span></p></li><li><p><strong><span>Ethics</span></strong><span>: Medium-high (public figure, accountability trumps right to be forgotten)</span></p></li></ul><p><strong><span>Recommendation:</span></strong><span> </span><strong><span>Preserve with context</span></strong></p><ul><li><p><span>Archive the tweet + surrounding context (what prompted it, reactions, apology if any)</span></p></li><li><p><span>Include in politician&#39;s archival record</span></p></li><li><p><span>Make accessible (not hidden, but not amplified—no need to splash it on front page)</span></p></li></ul><h3 id='edge-case-2-the-fan-fiction-archive'><span>Edge Case 2: The Fan Fiction Archive</span></h3><p><strong><span>Scenario:</span></strong><span> A LiveJournal community for a specific fandom (slash fiction, LGBTQ+ content) is abandoned. Creators have scattered. Should you archive?</span></p><p><strong><span>Ethical Considerations:</span></strong></p><p><strong><span>FOR Archiving:</span></strong></p><ul><li><p><span>LGBTQ+ cultural history (much early queer culture happened in fandom)</span></p></li><li><p><span>Risk of permanent loss (creators may not have backups)</span></p></li><li><p><span>Literary/cultural value (transformative works, creative community)</span></p></li></ul><p><strong><span>AGAINST Archiving:</span></strong></p><ul><li><p><span>Many authors used pseudonyms, may not want real identities connected</span></p></li><li><p><span>Some authors were minors when writing (consent issues)</span></p></li><li><p><span>Fan fiction culture values ephemerality (archives disrupt gift economy)</span></p></li><li><p><span>Copyright gray area (transformative works, but still derivative)</span></p></li></ul><p><strong><span>Custodial Filter Analysis:</span></strong></p><ul><li><p><strong><span>Significance</span></strong><span>: High (queer history, literary culture)</span></p></li><li><p><strong><span>Fragility</span></strong><span>: High (no one maintaining it)</span></p></li><li><p><strong><span>Feasibility</span></strong><span>: Medium (may need login, scraping fanfic sites common)</span></p></li><li><p><strong><span>Redundancy</span></strong><span>: Low (likely not preserved elsewhere)</span></p></li><li><p><strong><span>Ethics</span></strong><span>: Complex (consent unclear, cultural sensitivity needed)</span></p></li></ul><p><strong><span>Recommendation:</span></strong><span> </span><strong><span>Archive with restrictions</span></strong></p><ol start='' ><li><p><span>Scrape the content (preserve the bits)</span></p></li><li><p><span>Don&#39;t make fully public (no Google indexing)</span></p></li><li><p><span>Researcher access only (require application, explain use)</span></p></li><li><p><span>Allow author-requested takedowns (if someone says &quot;please remove my fic,&quot; do it)</span></p></li><li><p><span>Document the community culture (not just stories, but context of why this mattered)</span></p></li></ol><h3 id='edge-case-3-the-hate-forum'><span>Edge Case 3: The Hate Forum</span></h3><p><strong><span>Scenario:</span></strong><span> A white supremacist forum announces shutdown. It documents radicalization pathways and extremist organizing. Should you archive?</span></p><p><strong><span>Ethical Considerations:</span></strong></p><p><strong><span>FOR Archiving:</span></strong></p><ul><li><p><span>Research value (understanding radicalization, deradicalization efforts need data)</span></p></li><li><p><span>Legal accountability (evidence of planned violence)</span></p></li><li><p><span>Historical record (documenting extremism is important, even/especially if ugly)</span></p></li></ul><p><strong><span>AGAINST Archiving:</span></strong></p><ul><li><p><span>Amplifies hate speech (giving platform to harmful ideology)</span></p></li><li><p><span>Could be used as recruitment tool (if archive is public)</span></p></li><li><p><span>Privacy of victims (hate content often targets individuals)</span></p></li><li><p><span>Moral complicity (by preserving, are you endorsing?)</span></p></li></ul><p><strong><span>Custodial Filter Analysis:</span></strong></p><ul><li><p><strong><span>Significance</span></strong><span>: Medium-high (historical/research value, but harmful)</span></p></li><li><p><strong><span>Fragility</span></strong><span>: High (extremist sites often shut down by hosts or law enforcement)</span></p></li><li><p><strong><span>Feasibility</span></strong><span>: Medium (may require Tor, technical barriers)</span></p></li><li><p><strong><span>Redundancy</span></strong><span>: Low (mainstream archives avoid extremist content)</span></p></li><li><p><strong><span>Ethics</span></strong><span>: Low (serious concerns about harm)</span></p></li></ul><p><strong><span>Recommendation:</span></strong><span> </span><strong><span>Very restricted archive, if at all</span></strong></p><p><strong><span>Option A (Maximum Security):</span></strong></p><ol start='' ><li><p><span>Archive for research only (no public access)</span></p></li><li><p><span>Require IRB approval + academic credentials to access</span></p></li><li><p><span>Redact personal information of victims</span></p></li><li><p><span>Coordinate with law enforcement (if active threats)</span></p></li><li><p><span>Provide to hate-monitoring organizations (ADL, SPLC)</span></p></li></ol><p><strong><span>Option B (Don&#39;t Archive):</span></strong></p><ul><li><p><span>Some things should be lost</span></p></li><li><p><span>If research value is low and harm potential is high, destruction is ethical</span></p></li><li><p><span>Document that it existed (metadata, description) without preserving content itself</span></p></li></ul><p><strong><span>Most archivists choose Option A:</span></strong><span> Preserve but lock down tightly. History includes ugly things, and understanding extremism requires evidence.</span></p><h3 id='edge-case-4-the-private-message-leak'><span>Edge Case 4: The Private Message Leak</span></h3><p><strong><span>Scenario:</span></strong><span> Someone leaks a trove of private Discord messages revealing corporate malfeasance. The messages are newsworthy but were shared under expectation of privacy. Should you archive?</span></p><p><strong><span>Ethical Considerations:</span></strong></p><p><strong><span>FOR Archiving:</span></strong></p><ul><li><p><span>Public interest (corporate wrongdoing should be documented)</span></p></li><li><p><span>Whistleblower protection (if original leaker is endangered, redundant copies help)</span></p></li><li><p><span>Historical record (evidence of how corporations operate behind closed doors)</span></p></li></ul><p><strong><span>AGAINST Archiving:</span></strong></p><ul><li><p><span>Privacy violation (people wrote those messages expecting privacy)</span></p></li><li><p><span>Consent (participants didn&#39;t agree to archiving)</span></p></li><li><p><span>Collateral damage (leaks often include innocent bystanders&#39; private info)</span></p></li></ul><p><strong><span>Custodial Filter Analysis:</span></strong></p><ul><li><p><strong><span>Significance</span></strong><span>: High (public interest, accountability)</span></p></li><li><p><strong><span>Fragility</span></strong><span>: Medium (leak may be taken down via DMCA, threats)</span></p></li><li><p><strong><span>Feasibility</span></strong><span>: Easy (already leaked, just need to copy)</span></p></li><li><p><strong><span>Redundancy</span></strong><span>: Medium (likely others saving, but could be suppressed)</span></p></li><li><p><strong><span>Ethics</span></strong><span>: Low-medium (privacy violation vs. public interest)</span></p></li></ul><p><strong><span>Recommendation:</span></strong><span> </span><strong><span>Selective archive with redaction</span></strong></p><ol start='' ><li><p><span>Archive the newsworthy messages (evidence of wrongdoing)</span></p></li><li><p><span>Redact personal information of non-involved parties (people who just happened to be in the server)</span></p></li><li><p><span>Remove sensitive personal details (even of wrongdoers—focus on the malfeasance, not their kids&#39; names)</span></p></li><li><p><span>Make available to journalists and researchers</span></p></li><li><p><span>Consider time embargo (publish now, release full archive in 10 years when people involved are less vulnerable)</span></p></li></ol><p><strong><span>Principle:</span></strong><span> Public interest can override privacy, but minimize collateral damage.</span></p><hr /><h2 id='part-vi-institutional-triage-policies'><span>Part VI: Institutional Triage Policies</span></h2><h3 id='building-a-triage-policy-for-your-organization'><span>Building a Triage Policy for Your Organization</span></h3><p><span>If you&#39;re creating an archive, museum, or preservation institution, codify your triage principles:</span></p><p><strong><span>Policy Components:</span></strong></p><p><strong><span>1. Mission Statement</span></strong></p><ul><li><p><span>What are you preserving and why?</span></p></li><li><p><span>Example: &quot;We preserve LGBTQ+ digital culture to ensure queer history isn&#39;t erased&quot;</span></p></li></ul><p><strong><span>2. Significance Criteria</span></strong></p><ul><li><p><span>What makes something worth preserving in your collection?</span></p></li><li><p><span>Be specific: representational gaps, community value, historical importance</span></p></li></ul><p><strong><span>3. Ethical Red Lines</span></strong></p><ul><li><p><span>What will you NOT preserve, no matter what?</span></p></li><li><p><span>Examples: &quot;We do not preserve non-consensual intimate images&quot; or &quot;We do not archive active doxxing campaigns&quot;</span></p></li></ul><p><strong><span>4. Restricted Access Guidelines</span></strong></p><ul><li><p><span>Under what conditions do you restrict access?</span></p></li><li><p><span>Who can access restricted materials?</span></p></li></ul><p><strong><span>5. Takedown Process</span></strong></p><ul><li><p><span>How can people request removal of material?</span></p></li><li><p><span>What&#39;s the review process?</span></p></li></ul><p><strong><span>6. Transparency Commitment</span></strong></p><ul><li><p><span>How do you document triage decisions?</span></p></li><li><p><span>Do you publish criteria publicly?</span></p></li></ul><p><strong><span>Example: The Internet Archive&#39;s Policy (Simplified)</span></strong></p><ul><li><p><strong><span>Mission</span></strong><span>: &quot;Universal access to all knowledge&quot;</span></p></li><li><p><strong><span>Significance</span></strong><span>: Broad crawling (no strict curation—preserve as much as possible)</span></p></li><li><p><strong><span>Ethics</span></strong><span>: Respect robots.txt (if site owner says &quot;don&#39;t crawl,&quot; they don&#39;t), DMCA takedowns honored</span></p></li><li><p><strong><span>Access</span></strong><span>: Public by default, but allow author/site owner opt-out</span></p></li><li><p><strong><span>Transparency</span></strong><span>: Public-facing form for takedown requests, documents policies on website</span></p></li></ul><p><strong><span>Example: A Hypothetical Trans Archive&#39;s Policy</span></strong></p><ul><li><p><strong><span>Mission</span></strong><span>: &quot;Preserve trans people&#39;s digital self-documentation and community organizing&quot;</span></p></li><li><p><strong><span>Significance</span></strong><span>: Prioritize trans creators, especially early/formative content (pre-2010), survival resources, community organizing</span></p></li><li><p><strong><span>Ethics</span></strong><span>: Strong consent focus—reach out to creators when possible, honor deletion requests, never out people</span></p></li><li><p><strong><span>Access</span></strong><span>: Public access for educational/research use, but some material (private forums, DMs) restricted to trans researchers only</span></p></li><li><p><strong><span>Transparency</span></strong><span>: Advisory board of trans community members reviews contested triage decisions</span></p></li></ul><hr /><h2 id='part-vii-when-to-let-go'><span>Part VII: When to Let Go</span></h2><h3 id='the-hardest-lesson-accepting-loss'><span>The Hardest Lesson: Accepting Loss</span></h3><p><span>Not everything can be saved. Sometimes, the ethical choice—or the practical choice—is to </span><strong><span>let something die</span></strong><span>.</span></p><p><strong><span>When to Let Go:</span></strong></p><p><strong><span>1. Ethical Harm Outweighs Value</span></strong></p><ul><li><p><span>If preserving actively hurts people (doxxing, revenge porn), don&#39;t do it</span></p></li></ul><p><strong><span>2. No Viable Path to Preservation</span></strong></p><ul><li><p><span>Some artifacts are technologically impossible to save (encrypted with lost keys, hardware-specific with no working hardware)</span></p></li></ul><p><strong><span>3. Resources Better Spent Elsewhere</span></strong></p><ul><li><p><span>If saving one low-value artifact means letting a high-value artifact die, let the low-value one go</span></p></li></ul><p><strong><span>4. Respecting Intentional Ephemerality</span></strong></p><ul><li><p><span>Some cultures and communities value impermanence (Snapchat culture, Buddhist sand mandalas)</span></p></li><li><p><span>Forcing permanence violates cultural values</span></p></li></ul><p><strong><span>The Grief of Triage</span></strong></p><p><span>Letting artifacts die is painful. You&#39;re choosing what future generations can never know. You&#39;re accepting that some stories will be lost, some voices silenced, some memories erased.</span></p><p><span>This grief is unavoidable. The role of the Archaeobytologist includes </span><strong><span>mourning</span></strong><span>.</span></p><p><strong><span>But:</span></strong><span> Grief that paralyzes is counterproductive. Mourn, then act. Save what you can. Document what you couldn&#39;t save (at least record that it existed). Move forward.</span></p><p><strong><span>The Triage Paradox:</span></strong></p><p><span>The better you get at triage, the more aware you become of loss. Beginners think they can save everything. Experts know they can&#39;t—and carry the weight of every choice.</span></p><p><span>This is the burden of custodianship.</span></p><hr /><h2 id='conclusion-triage-as-ethical-practice'><span>Conclusion: Triage as Ethical Practice</span></h2><p><span>The Custodial Filter isn&#39;t a formula—it&#39;s a </span><strong><span>framework for ethical deliberation</span></strong><span>. It forces you to ask hard questions:</span></p><ul><li><p><span>What makes this artifact matter?</span></p></li><li><p><span>How urgently endangered is it?</span></p></li><li><p><span>Can we realistically save it?</span></p></li><li><p><span>Are others already saving it?</span></p></li><li><p><strong><span>Should</span></strong><span> we save it?</span></p></li></ul><p><span>Every triage decision is an </span><strong><span>ethical act</span></strong><span>. You&#39;re deciding what the future can know about the past. You&#39;re allocating scarce resources (time, labor, storage, attention). You&#39;re potentially overriding someone&#39;s wishes (to be forgotten, to be private).</span></p><p><span>These decisions should be:</span></p><ul><li><p><strong><span>Systematic</span></strong><span> (not arbitrary or impulsive)</span></p></li><li><p><strong><span>Transparent</span></strong><span> (document your reasoning)</span></p></li><li><p><strong><span>Revisable</span></strong><span> (be willing to reconsider)</span></p></li><li><p><strong><span>Humble</span></strong><span> (acknowledge you could be wrong)</span></p></li></ul><p><span>The Custodial Filter provides structure for these decisions—not certainty, but </span><strong><span>rigorous ethical thinking</span></strong><span>.</span></p><p><span>In the next chapter, we&#39;ll explore the boundaries of Archaeobytology as a discipline—how it differs from adjacent fields, what makes it distinct, and why it deserves recognition as its own domain of study.</span></p><p><span>But first, practice triage. Look at your own digital life. What would you save if you had 48 hours to archive everything? What would you let go? And how would you justify those choices?</span></p><p><span>The Custodial Filter begins with seeing your own values clearly.</span></p><hr /><h2 id='discussion-questions'><span>Discussion Questions</span></h2><ol start='' ><li><p><strong><span>Personal Triage</span></strong><span>: If your email account announced shutdown in 48 hours, what would you prioritize saving? Why? What would you let go?</span></p></li><li><p><strong><span>Ethical Boundaries</span></strong><span>: Where do you draw the line? What content should never be archived, even if historically significant?</span></p></li><li><p><strong><span>Competing Values</span></strong><span>: How do you balance (a) preserving everything for future research vs. (b) respecting privacy and consent?</span></p></li><li><p><strong><span>Bias and Representation</span></strong><span>: How can triage avoid reproducing systemic biases (racism, sexism, class privilege)? Is &quot;objective&quot; triage possible?</span></p></li><li><p><strong><span>Institutional vs. Individual</span></strong><span>: Should triage decisions be made by institutions (museums, archives) or individuals (you with your hard drive)? What are the pros/cons of each?</span></p></li><li><p><strong><span>Future Regret</span></strong><span>: Imagine it&#39;s 2075. What digital culture from 2020s do you think future historians will wish we&#39;d preserved but didn&#39;t?</span></p></li></ol><hr /><h2 id='exercise-conduct-a-triage-simulation'><span>Exercise: Conduct a Triage Simulation</span></h2><p><strong><span>Scenario</span></strong><span>: You have 72 hours and 1TB of storage to archive a dying platform before it shuts down. The platform has:</span></p><ul><li><p><span>50,000 user accounts</span></p></li><li><p><span>5 million posts (text, images, videos)</span></p></li><li><p><span>200 communities/groups</span></p></li><li><p><span>10 years of history</span></p></li></ul><p><span>You cannot save everything. Conduct triage.</span></p><p><strong><span>Part 1: Define Your Values</span></strong><span> (300 words)</span></p><ul><li><p><span>What&#39;s your preservation mission?</span></p></li><li><p><span>What criteria matter most to you (representation, popularity, rarity, etc.)?</span></p></li></ul><p><strong><span>Part 2: Apply the Custodial Filter</span></strong><span> (500 words)</span></p><p><span>Create a triage matrix for these artifact types:</span></p><ol start='' ><li><p><span>Viral posts (high engagement, widely seen)</span></p></li><li><p><span>Marginalized community content (LGBTQ+, disability, etc.)</span></p></li><li><p><span>Long-form creative work (fiction, art, tutorials)</span></p></li><li><p><span>Personal journaling/diaries</span></p></li><li><p><span>Corporate/brand accounts</span></p></li></ol><p><span>Score each on:</span></p><ul><li><p><span>Cultural Significance (0-5)</span></p></li><li><p><span>Technical Fragility (0-5)</span></p></li><li><p><span>Rescue Feasibility (0-5)</span></p></li><li><p><span>Redundancy Gap (0-5)</span></p></li><li><p><span>Ethical Clarity (0-5)</span></p></li></ul><p><strong><span>Part 3: Make Decisions</span></strong><span> (500 words)</span></p><ul><li><p><span>Given your 1TB limit, what do you save?</span></p></li><li><p><span>What do you deprioritize or leave behind?</span></p></li><li><p><span>How do you handle ethical dilemmas (private content, deleted posts)?</span></p></li></ul><p><strong><span>Part 4: Reflect</span></strong><span> (200 words)</span></p><ul><li><p><span>How did it feel to make these choices?</span></p></li><li><p><span>What surprised you about your own values?</span></p></li><li><p><span>Would you make different choices under different constraints?</span></p></li></ul><hr /><h2 id='further-reading'><span>Further Reading</span></h2><h3 id='on-triage-and-preservation-ethics'><span>On Triage and Preservation Ethics</span></h3><ul><li><p><span>Caswell, Michelle. &quot;Seeing Yourself in History: Community Archives and the Fight Against Symbolic Annihilation.&quot; </span><em><span>The Public Historian</span></em><span> 36, no. 4 (2014): 26-37.</span></p></li><li><p><span>Flinn, Andrew. &quot;Community Histories, Community Archives: Some Opportunities and Challenges.&quot; </span><em><span>Journal of the Society of Archivists</span></em><span> 28, no. 2 (2007): 151-176.</span></p></li><li><p><span>Jimerson, Randall. </span><em><span>Archives Power: Memory, Accountability, and Social Justice</span></em><span>. SAA, 2009.</span></p></li></ul><h3 id='on-privacy-and-consent'><span>On Privacy and Consent</span></h3><ul><li><p><span>Nissenbaum, Helen. </span><em><span>Privacy in Context: Technology, Policy, and the Integrity of Social Life</span></em><span>. Stanford, 2009.</span></p></li><li><p><span>Solove, Daniel. </span><em><span>Nothing to Hide: The False Tradeoff Between Privacy and Security</span></em><span>. Yale, 2011.</span></p></li><li><p><span>Rosen, Jeffrey. &quot;The Right to Be Forgotten.&quot; </span><em><span>Stanford Law Review Online</span></em><span> 64 (2012): 88.</span></p></li></ul><h3 id='on-digital-preservation-methods'><span>On Digital Preservation Methods</span></h3><ul><li><p><span>Brügger, Niels, and Ralph Schroeder, eds. </span><em><span>The Web as History</span></em><span>. UCL Press, 2017.</span></p></li><li><p><span>Kirschenbaum, Matthew, et al. &quot;Digital Materiality: Preserving Access to Computers as Complete Environments.&quot; </span><em><span>iPRES</span></em><span> (2009).</span></p></li><li><p><span>Archives Team. &quot;So You Want to Archive a Website.&quot; </span><a href='https://wiki.archiveteam.org/' target='_blank' class='url'>https://wiki.archiveteam.org/</a></p></li></ul><h3 id='on-ethics-of-difficult-knowledge'><span>On Ethics of Difficult Knowledge</span></h3><ul><li><p><span>Simon, Roger, et al. &quot;Witness as Study: Attending to the Testimonies of Trauma, Memory, and Injustice.&quot; </span><em><span>Equity &amp; Excellence in Education</span></em><span> 38, no. 3 (2005): 191-198.</span></p></li><li><p><span>Caswell, Michelle. </span><em><span>Urgent Archives: Enacting Liberatory Memory Work</span></em><span>. Routledge, 2021.</span></p></li></ul><hr /><p><strong><span>End of Chapter 5</span></strong></p><p><em><span>Next: Chapter 6 — Discipline Formation and Boundaries: Why Archaeobytology Needs to Exist</span></em></p><p>&nbsp;</p></div></div>
 </body>
 </html>

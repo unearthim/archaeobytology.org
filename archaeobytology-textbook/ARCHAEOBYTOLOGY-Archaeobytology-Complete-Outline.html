@@ -1,1027 +1,921 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARCHAEOBYTOLOGY: Theory, Practice, and Institution Building | Archaeobytology</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Lora', serif; line-height: 1.8; color: #2E2E2E; background: #F8F7F4; padding: 2rem 1rem; }
-        .container { max-width: 800px; margin: 0 auto; background: #FFFFFF; padding: 3rem; border-radius: 15px; box-shadow: 0 4px 20px rgba(46,46,46,0.1); border: 1px solid #D1D1D1; }
-        h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; color: #2E2E2E; margin-top: 2rem; margin-bottom: 1rem; line-height: 1.3; }
-        h1 { font-size: 2.5rem; font-weight: 700; margin-top: 0; border-bottom: 3px solid #A1824A; padding-bottom: 0.5rem; }
-        h2 { font-size: 2rem; font-weight: 700; margin-top: 2.5rem; }
-        h3 { font-size: 1.5rem; font-weight: 600; color: #5A7D8C; }
-        h4 { font-size: 1.25rem; font-weight: 600; color: #5A7D8C; }
-        p { margin-bottom: 1.25rem; font-size: 1.1rem; }
-        a { color: #A93400; text-decoration: underline; transition: color 0.3s; }
-        a:hover { color: #A95C3D; }
-        strong { font-weight: 600; }
-        em { font-style: italic; }
-        code { font-family: 'Courier New', monospace; background: #F8F7F4; padding: 0.2rem 0.4rem; border-radius: 3px; border: 1px solid #D1D1D1; }
-        blockquote { border-left: 4px solid #A1824A; padding: 1rem 1.5rem; margin: 1.5rem 0; font-style: italic; color: #5A7D8C; background: #F8F7F4; border-radius: 0 8px 8px 0; }
-        hr { border: none; border-top: 2px solid #D1D1D1; margin: 2rem 0; }
-        .nav { text-align: center; padding: 1rem 0; border-top: 2px solid #D1D1D1; margin-top: 2rem; }
-        .nav a { display: inline-block; padding: 0.75rem 1.5rem; background: #A93400; color: #F8F7F4; text-decoration: none; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 600; margin: 0.5rem; }
-        .nav a:hover { background: #A95C3D; }
-    </style>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'><style type='text/css'>html {overflow-x: initial !important;}</style>
+<style type='text/css'  id="style-base">:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, "Segoe UI Emoji", "SF Pro", sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p *, #write.first-line-indent svg * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
+#write svg h1, #write svg h2, #write svg h3, #write svg h4, #write svg h5, #write svg h6, #write svg p { position: static; }
+.nodeLabel p { padding-right: 2px; padding-left: 2px; }
+.typora-export .nodeLabel p { padding-right: 0px; padding-left: 0px; }
+foreignobject { overflow: visible; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+li p { orphans: 1; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.mermaid-svg { margin: auto; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left: 0.25em solid rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
+
+</style>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;display=swap' type='text/css' />
+<style type='text/css'  id="style-theme_css">/*
+ * Unearth Light Theme for Typora
+ * Based on the Foundry Blueprint 4.1 - unearth.im
+ * 
+ * Color Palette:
+ * - Parchment (Background): #F8F7F4
+ * - Charcoal (Text): #2E2E2E
+ * - Burnt Sienna (Primary Accent): #A93400
+ * - Antique Gold (Secondary Accent): #A1824A
+ * - Slate Blue (Functional Accent): #5A7D8C
+ * - Light Stone: #D1D1D1
+ * - Medium Stone: #8E8E8E
+ *
+ * Typography:
+ * - Narrative: Lora (serif)
+ * - UI/Headlines: Inter (sans-serif)
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+:root {
+    --parchment: #F8F7F4;
+    --charcoal: #2E2E2E;
+    --burnt-sienna: #A93400;
+    --sienna-hover: #A95C3D;
+    --accent-color: #A95C3D;
+    --antique-gold: #A1824A;
+    --slate-blue: #5A7D8C;
+    --meta-text-color: #5A7D8C;
+    --light-stone: #D1D1D1;
+    --border-color: #e0e0e0;
+    --medium-stone: #8E8E8E;
+    --white: #FFFFFF;
+    
+    --font-narrative: 'Lora', Georgia, serif;
+    --font-ui: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
+}
+
+/* ========================================
+   BASE STYLES
+   ======================================== */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-narrative);
+    color: var(--charcoal);
+    background-color: var(--parchment);
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#write {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 64px 80px 100px;
+}
+
+/* ========================================
+   HEADINGS
+   ======================================== */
+
+h1 {
+    font-family: var(--font-narrative);
+    color: var(--charcoal);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-family: var(--font-narrative);
+    color: var(--charcoal);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--light-stone);
+    padding-bottom: 0.5rem;
+}
+
+h3, h4, h5, h6 {
+    font-family: var(--font-ui);
+    color: var(--charcoal);
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 1.25rem;
+    color: var(--charcoal);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+    color: var(--burnt-sienna);
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+h5 {
+    font-size: 1.1rem;
+    color: var(--slate-blue);
+}
+
+h6 {
+    font-size: 1rem;
+    color: var(--medium-stone);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ========================================
+   PARAGRAPHS & TEXT
+   ======================================== */
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.9;
+}
+
+strong, b {
+    font-weight: 700;
+    color: var(--charcoal);
+}
+
+em, i {
+    font-style: italic;
+}
+
+/* ========================================
+   LINKS
+   ======================================== */
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-color);
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    background-color: rgba(169, 92, 61, 0.1);
+    border-bottom-color: transparent;
+}
+
+/* ========================================
+   BLOCKQUOTES
+   ======================================== */
+
+blockquote {
+    margin: 2rem 0;
+    padding: 1.5rem 2rem;
+    border-left: 4px solid var(--antique-gold);
+    background-color: rgba(161, 130, 74, 0.08);
+    border-radius: 0 4px 4px 0;
+    color: var(--charcoal);
+}
+
+blockquote p {
+    margin: 0.5rem 0;
+    line-height: 1.8;
+}
+
+blockquote blockquote {
+    margin-left: 1rem;
+    border-left-color: var(--slate-blue);
+    background-color: rgba(90, 125, 140, 0.08);
+}
+
+/* ========================================
+   CODE
+   ======================================== */
+
+code {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    background-color: rgba(209, 209, 209, 0.4);
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    color: var(--burnt-sienna);
+}
+
+/* Code blocks */
+pre {
+    font-family: var(--font-mono);
+    background-color: var(--charcoal);
+    color: var(--parchment);
+    padding: 1rem 1.25rem;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    line-height: 1.6;
+}
+
+pre code {
+    background: none;
+    padding: 0;
+    color: inherit;
+    font-size: 0.875rem;
+}
+
+/* Code block with line numbers */
+.md-fences {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    background-color: var(--charcoal);
+    color: var(--parchment);
+    border: none;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1.5rem 0;
+}
+
+.CodeMirror-lines {
+    padding: 0;
+}
+
+/* ========================================
+   LISTS
+   ======================================== */
+
+ul, ol {
+    padding-left: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+li {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.9;
+}
+
+li > ul, li > ol {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+li > ul > li, li > ol > li {
+    margin-bottom: 0.5rem;
+}
+
+/* Unordered list markers */
+ul > li::marker {
+    color: var(--burnt-sienna);
+}
+
+/* Ordered list markers */
+ol > li::marker {
+    color: var(--antique-gold);
+    font-family: var(--font-ui);
+    font-weight: 600;
+}
+
+/* Task lists */
+.task-list-item {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.task-list-item input[type="checkbox"] {
+    margin-right: 0.5rem;
+    accent-color: var(--burnt-sienna);
+}
+
+/* ========================================
+   HORIZONTAL RULE
+   ======================================== */
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, var(--light-stone), var(--antique-gold), var(--light-stone));
+    margin: 2.5rem 0;
+}
+
+/* ========================================
+   TABLES
+   ======================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-family: var(--font-ui);
+    font-size: 0.9rem;
+}
+
+thead {
+    background-color: var(--charcoal);
+    color: var(--parchment);
+}
+
+th {
+    font-weight: 600;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--charcoal);
+}
+
+td {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--light-stone);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(209, 209, 209, 0.2);
+}
+
+tbody tr:hover {
+    background-color: rgba(161, 130, 74, 0.1);
+}
+
+/* ========================================
+   IMAGES
+   ======================================== */
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 1rem 0;
+    box-shadow: 0 2px 8px rgba(46, 46, 46, 0.1);
+}
+
+/* Image captions */
+figure {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+figcaption {
+    font-family: var(--font-ui);
+    font-size: 0.875rem;
+    color: var(--medium-stone);
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* ========================================
+   FOOTNOTES
+   ======================================== */
+
+.footnotes {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--light-stone);
+}
+
+.footnotes h2 {
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
+.footnotes ol {
+    padding-left: 20px;
+    color: #555;
+}
+
+.footnotes li {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.footnotes p {
+    font-size: 0.85rem;
+    margin-bottom: 0;
+}
+
+.footnote-ref, sup a {
+    font-family: var(--font-ui);
+    font-size: 0.8em;
+    font-weight: 600;
+    vertical-align: super;
+    color: var(--burnt-sienna);
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.footnote-ref:hover, sup a:hover {
+    background-color: transparent;
+}
+
+sup.md-footnote {
+    font-family: var(--font-ui);
+    font-size: 0.8em;
+    font-weight: 600;
+    color: var(--burnt-sienna);
+    background-color: transparent;
+    padding: 0;
+}
+
+/* ========================================
+   DEFINITION LISTS
+   ======================================== */
+
+dl {
+    margin: 1rem 0;
+}
+
+dt {
+    font-family: var(--font-ui);
+    font-weight: 700;
+    color: var(--burnt-sienna);
+    margin-top: 1rem;
+}
+
+dd {
+    margin-left: 1.5rem;
+    margin-top: 0.25rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--light-stone);
+}
+
+/* ========================================
+   MARK / HIGHLIGHT
+   ======================================== */
+
+mark {
+    background-color: rgba(161, 130, 74, 0.3);
+    color: var(--charcoal);
+    padding: 0.1rem 0.3rem;
+    border-radius: 2px;
+}
+
+/* ========================================
+   STRIKETHROUGH
+   ======================================== */
+
+del, s {
+    color: var(--medium-stone);
+    text-decoration: line-through;
+}
+
+/* ========================================
+   KEYBOARD
+   ======================================== */
+
+kbd {
+    font-family: var(--font-ui);
+    font-size: 0.85em;
+    background-color: var(--light-stone);
+    border: 1px solid var(--medium-stone);
+    border-radius: 3px;
+    padding: 0.1rem 0.4rem;
+    box-shadow: 0 1px 2px rgba(46, 46, 46, 0.1);
+}
+
+/* ========================================
+   ABBREVIATIONS
+   ======================================== */
+
+abbr {
+    text-decoration: underline dotted var(--slate-blue);
+    cursor: help;
+}
+
+/* ========================================
+   SELECTION
+   ======================================== */
+
+::selection {
+    background-color: rgba(169, 52, 0, 0.2);
+    color: var(--charcoal);
+}
+
+::-moz-selection {
+    background-color: rgba(169, 52, 0, 0.2);
+    color: var(--charcoal);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - SIDEBAR
+   ======================================== */
+
+#typora-sidebar {
+    background-color: var(--parchment);
+    border-right: 1px solid var(--light-stone);
+}
+
+.sidebar-content {
+    font-family: var(--font-ui);
+}
+
+.file-tree-node.active > .file-node-content {
+    background-color: rgba(169, 52, 0, 0.1);
+    color: var(--burnt-sienna);
+}
+
+.file-tree-node:hover > .file-node-content {
+    background-color: rgba(209, 209, 209, 0.3);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - SOURCE MODE
+   ======================================== */
+
+.cm-s-typora-default .cm-header {
+    color: var(--burnt-sienna);
+}
+
+.cm-s-typora-default .cm-link {
+    color: var(--slate-blue);
+}
+
+.cm-s-typora-default .cm-string {
+    color: var(--antique-gold);
+}
+
+.cm-s-typora-default .cm-comment {
+    color: var(--medium-stone);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - FOCUS MODE
+   ======================================== */
+
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) * {
+    color: var(--light-stone) !important;
+}
+
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) img {
+    opacity: 0.5;
+}
+
+/* ========================================
+   TYPORA SPECIFIC - MEGAMENU
+   ======================================== */
+
+.megamenu-menu-panel {
+    background-color: var(--parchment);
+    font-family: var(--font-ui);
+}
+
+.megamenu-menu-panel .btn {
+    background-color: var(--burnt-sienna);
+    color: var(--parchment);
+}
+
+.megamenu-menu-panel .btn:hover {
+    background-color: var(--sienna-hover);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - SEARCH
+   ======================================== */
+
+#md-searchpanel {
+    background-color: var(--parchment);
+    border-bottom: 1px solid var(--light-stone);
+}
+
+#md-searchpanel input {
+    font-family: var(--font-ui);
+    background-color: var(--white);
+    border: 1px solid var(--light-stone);
+    border-radius: 4px;
+}
+
+#md-searchpanel input:focus {
+    border-color: var(--burnt-sienna);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(169, 52, 0, 0.15);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - TOOLTIP
+   ======================================== */
+
+.md-hover-tip .md-arrow:after {
+    background-color: var(--charcoal);
+}
+
+.md-hover-tip .code-tooltip-content {
+    background-color: var(--charcoal);
+    color: var(--parchment);
+    font-family: var(--font-ui);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - META BLOCK
+   ======================================== */
+
+.md-meta-block {
+    background-color: rgba(209, 209, 209, 0.3);
+    border-radius: 6px;
+    padding: 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--medium-stone);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - TABLE OF CONTENTS
+   ======================================== */
+
+.md-toc {
+    font-family: var(--font-ui);
+}
+
+.md-toc-h1 {
+    font-weight: 700;
+    color: var(--charcoal);
+}
+
+.md-toc-h2 {
+    font-weight: 600;
+    color: var(--burnt-sienna);
+}
+
+.md-toc-h3, .md-toc-h4, .md-toc-h5, .md-toc-h6 {
+    color: var(--medium-stone);
+}
+
+/* ========================================
+   SCROLLBAR
+   ======================================== */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--parchment);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--light-stone);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--medium-stone);
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+
+@media print {
+    html {
+        font-size: 12pt;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+    
+    #write {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        color: black;
+        page-break-after: avoid;
+    }
+    
+    pre, blockquote {
+        page-break-inside: avoid;
+    }
+    
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+    
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        color: #666;
+    }
+}
+</style>
+<style type='text/css'  id="style-lp">ol, ul {padding-left: 40px}</style>
+
+<title>TEXTBOOK-Archaeobytology-Complete-Outline</title>
 </head>
-<body>
-    <div class="container">
-        <article>
-<h1>ARCHAEOBYTOLOGY: Theory, Practice, and Institution Building</h1>
-<h2>A Comprehensive Textbook</h2>
-
-<p>
-<strong>Edited by [To Be Determined]</strong>
-</p>
-
-<h2>Book Information</h2>
-
-<p>
-<strong>Publisher:</strong> MIT Press (or open-access equivalent)  
-<strong>Format:</strong> 600-700 pages, hardcover + open-access PDF  
-<strong>Audience:</strong> Upper-level undergraduates, graduate students, practitioners  
-<strong>Pedagogy:</strong> Each chapter includes case studies, discussion questions, exercises, further reading  
-<strong>Companion Website:</strong> archaeobytology.org (with datasets, tools, tutorials)
-</p>
-
-<h2>Book Structure</h2>
-
-<p>
-The textbook follows the 101 → 200 → 300 curriculum progression, divided into <strong>5 Parts</strong> (18 chapters total):
-</p>
-
-<h1>PART I: FOUNDATIONS (Chapters 1-6)</h1>
-<p>
-<em>What is Archaeobytology?</em>
-</p>
-
-<h2>Chapter 1: Introduction to Archaeobytology</h2>
-<p>
-<strong>Author:</strong> [Lead editor, discipline founder]
-</p>
-
-<h3>Contents:</h3>
-<p>
-- What is Archaeobytology? (Definition, scope, why it matters)
-- A Brief History of Digital Mortality (From floppy disks to platform shutdowns)
-- The Three Pillars: Declaration, Connection, Ground
-- Why We Need a Discipline (Not just digital history or media studies)
-- How to Use This Book (Roadmap for instructors and students)
-</p>
-
-<p>
-<strong>Case Study:</strong> The GeoCities Shutdown (2009)—30 million sites murdered overnight
-</p>
-
-<p>
-<strong>Discussion Questions:</strong>
-1. Is digital preservation a technical problem or a political one?
-2. Who is responsible for preserving our digital culture?
-</p>
-
-<p>
-<strong>Exercise:</strong> Find three "murdered" platforms from your lifetime. What was lost?
-</p>
-
-<p>
-<strong>Further Reading:</strong>
-- Kirschenbaum, <em>Mechanisms</em>
-- Parikka, <em>What Is Media Archaeology?</em>
-- Ernst, <em>Digital Memory and the Archive</em>
-</p>
-
-<h2>Chapter 2: The Archaeobyte Taxonomy</h2>
-<p>
-<strong>Author:</strong> [Theorist/taxonomist]
-</p>
-
-<h3>Contents:</h3>
-<p>
-- Why We Need New Terms (Platform death ≠ obsolescence)
-- <strong>The Archaeobyte:</strong> Excavated from living platforms (MySpace, LiveJournal)
-- <strong>The Vivibyte:</strong> Alive on sovereign ground (personal domains, self-hosted)
-- <strong>The Umbrabyte:</strong> Murdered by platform shutdowns (GeoCities, Vine, Google Reader)
-- <strong>The Petribyte:</strong> Petrified in obsolete formats (floppy disks, Flash, Java applets)
-- Borderline Cases and Taxonomic Ambiguity
-</p>
-
-<p>
-<strong>Case Studies:</strong>
-- Archaeobytes: The MySpace Music Archive (17M songs, partial rescue 2019)
-- Vivibiytes: Tim Berners-Lee's First Website (still online at CERN, 1991)
-- Umbrabytes: Vine (200M videos, murdered 2017)
-- Petribytes: Flash Games (10,000+ games, unplayable after 2020)
-</p>
-
-<p>
-<strong>Discussion Questions:</strong>
-1. Can a Vivibyte become an Umbrabyte? (What if your hosting company shuts down?)
-2. Are Petribytes "dead" or "dormant"? (Emulation can resurrect them)
-</p>
-
-<p>
-<strong>Exercise:</strong> Classify 20 digital artifacts using the taxonomy
-</p>
-
-<p>
-<strong>Further Reading:</strong>
-- Chun, "The Enduring Ephemeral"
-- Sterling, "Dead Media Project"
-- Zittrain, "Digital Tethering and Content Control"
-</p>
-
-<h2>Chapter 3: The Archive and the Anvil</h2>
-<p>
-<strong>Author:</strong> [Practitioner/archivist]
-</p>
-
-<h3>Contents:</h3>
-<p>
-- Dual Soul of the Archaeobytologist
-- <strong>The Archive:</strong> Preservation, curation, memory
-- <strong>The Anvil:</strong> Forging, building, creation
-- Why Both Are Necessary (Preservation without creation is hoarding; creation without preservation is ephemeral)
-- Historical Precedents (Librarians who were also publishers; archivists who built institutions)
-</p>
-
-<p>
-<strong>Case Studies:</strong>
-- Brewster Kahle: Built Internet Archive (Archive) and invented Alexa (Anvil)
-- Jason Scott: Archives platforms (Archive Team) and creates documentaries (Anvil)
-- Anita Sarkeesian: Archives gaming culture and forges critical frameworks
-</p>
-
-<p>
-<strong>Discussion Questions:</strong>
-1. Can you specialize in one (Archive or Anvil), or must you do both?
-2. What happens when Archive and Anvil conflict? (Preservation vs. innovation)
-</p>
-
-<p>
-<strong>Exercise:</strong> Design a monument (Anvil) using preserved artifacts (Archive)
-</p>
-
-<p>
-<strong>Further Reading:</strong>
-- Derrida, <em>Archive Fever</em>
-- Sennett, <em>The Craftsman</em>
-- Ratto, "Critical Making"
-</p>
-
-<h2>Chapter 4: The Three Pillars of Digital Sovereignty</h2>
-<p>
-<strong>Author:</strong> [Political theorist/ethicist]
-</p>
-
-<h3>Contents:</h3>
-<p>
-- Why "Sovereignty" Not "Ownership" (Sovereignty is inalienable; ownership can be sold)
-- <strong>Pillar 1: Declaration (I Am)</strong> — Sovereign identity, no platform intermediary
-- <strong>Pillar 2: Connection (Instant Message)</strong> — Direct communication, intentional community
-- <strong>Pillar 3: Ground (Digital Real Estate)</strong> — Owned infrastructure, permanent address
-- Historical Roots (Greek <em>authentikos</em>, Enlightenment sovereignty, property rights)
-- Three Pillars in Practice (Domain + hosting + email = basic sovereignty)
-</p>
-
-<p>
-<strong>Case Studies:</strong>
-- GeoCities: Had Ground, lost Connection (isolated homepages)
-- Facebook: Has Connection, no Ground (rented land, no export)
-- Email: All Three Pillars (if self-hosted: your@yourdomain.com)
-</p>
-
-<p>
-<strong>Discussion Questions:</strong>
-1. Can you have sovereignty without technical literacy?
-2. Is sovereignty scalable? (Can billions have Ground?)
-</p>
-
-<p>
-<strong>Exercise:</strong> Audit your own digital sovereignty (Do you own your domain? Data? Identity?)
-</p>
-
-<p>
-<strong>Further Reading:</strong>
-- Lessig, <em>Code: Version 2.0</em>
-- Schneier, <em>Data and Goliath</em>
-- Véliz, <em>Privacy Is Power</em>
-</p>
-
-<h2>Chapter 5: Triage Methodology</h2>
-<p>
-<strong>Author:</strong> [Methodologist/practitioner]
-</p>
-
-<h3>Contents:</h3>
-<p>
-- Why Triage? (Can't save everything; must prioritize)
-- The Custodial Filter (Ethical framework for what to preserve)
-- Triage Criteria:
-  1. <strong>Cultural Significance:</strong> Does this represent a community, movement, moment?
-  2. <strong>Technical Fragility:</strong> How close to disappearance?
-  3. <strong>Rescue Difficulty:</strong> How hard to preserve?
-  4. <strong>Existing Redundancy:</strong> Is someone else preserving this?
-  5. <strong>Consent & Ethics:</strong> Should we preserve this? (Privacy, trauma, harm)
-- Triage in Practice (Workflow, tools, decision-making)
-</p>
-
-<p>
-<strong>Case Studies:</strong>
-- Archive Team's Rapid Response (When Geocities announced shutdown, prioritized most unique sites)
-- 9/11 Digital Archive (Community submissions + curatorial selection)
-- Software Heritage (Algorithmic triage: preserve all public source code)
-</p>
-
-<p>
-<strong>Discussion Questions:</strong>
-1. Who decides what's "culturally significant"? (Curators, communities, algorithms?)
-2. When should we NOT preserve something? (Revenge porn, doxxing, hate speech)
-</p>
-
-<p>
-<strong>Exercise:</strong> You have 48 hours before a platform shuts down. Triage 100 artifacts.
-</p>
-
-<p>
-<strong>Further Reading:</strong>
-- Manoff, "Theories of the Archive"
-- Caswell, "Seeing Yourself in History"
-- Zuboff, <em>The Surveillance Capitalism</em>
-</p>
-
-<h2>Chapter 6: Discipline Formation and Boundaries</h2>
-<p>
-<strong>Author:</strong> [Historian of science/STS scholar]
-</p>
-
-<h3>Contents:</h3>
-<p>
-- How Disciplines Form (Kuhn's paradigms, boundary work, professionalization)
-- Why Archaeobytology Is Not:
-  - Digital History (broader; includes non-historical artifacts)
-  - Media Archaeology (deeper; focuses on lived practice, not just dead media)
-  - Library Science (includes creation, not just cataloging)
-  - Computer Science (humanistic, not just technical)
-- Interdisciplinary Foundations (History, Library Science, STS, Media Studies, CS)
-- The Path to Legitimacy (Journals, conferences, departments, careers)
-</p>
-
-<p>
-<strong>Case Studies:</strong>
-- Digital Humanities: 40-year journey from "humanities computing" to departments
-- Data Science: Industry-led rapid professionalization (5 years)
-- Science & Technology Studies (STS): Coalition building across disciplines
-</p>
-
-<p>
-<strong>Discussion Questions:</strong>
-1. Should Archaeobytology be standalone or interdisciplinary?
-2. What are the risks of professionalization? (Gatekeeping, credentialism)
-</p>
-
-<p>
-<strong>Exercise:</strong> Draft a mission statement for the first Archaeobytology department
-</p>
-
-<p>
-<strong>Further Reading:</strong>
-- Kuhn, <em>The Structure of Scientific Revolutions</em>
-- Small, "Disciplinarity and Its Discontent"
-- Klein, <em>Interdisciplining Digital Humanities</em>
-</p>
-
-<h1>PART II: EXCAVATION & FORENSICS (Chapters 7-10)</h1>
-<p>
-<em>How do we find, recover, and analyze digital artifacts?</em>
-</p>
-
-<h2>Chapter 7: Archaeological Methods for Digital Artifacts</h2>
-<p>
-<strong>Author:</strong> [Digital archaeologist/technologist]
-</p>
-
-<h3>Contents:</h3>
-<p>
-- Adapting Physical Archaeology to Digital Contexts
-- <strong>Stratigraphic Analysis:</strong> Layers of code, version histories, migrations
-- <strong>Site Surveys:</strong> Mapping platform architectures, link networks, user communities
-- <strong>Excavation Techniques:</strong> Web scraping, API harvesting, forensic recovery
-- <strong>Provenance Research:</strong> Who made this? When? Why? For whom?
-- <strong>Ethical Excavation:</strong> Consent, privacy, harm reduction
-</p>
-
-<p>
-<strong>Case Studies:</strong>
-- The ONE Terabyte of Kilobyte Age Project (GeoCities excavation)
-- Wayback Machine's WARC Format (Web ARChive standard)
-- Flash Decompilation (Reverse-engineering SWF files)
-</p>
-
-<p>
-<strong>Discussion Questions:</strong>
-1. Is web scraping "theft" or "preservation"?
-2. How do you excavate ephemeral content? (Stories, Snapchat, disappearing messages)
-</p>
-
-<p>
-<strong>Exercise:</strong> Excavate a defunct platform using Wayback Machine + archive.org tools
-</p>
-
-<p>
-<strong>Further Reading:</strong>
-- Kirschenbaum, "The .txtual Condition"
-- Brügger, <em>The Archived Web</em>
-- Ankerson, "Writing Web Histories with an Eye on the Analog Past"
-</p>
-
-<h2>Chapter 8: Digital Forensics for Archaeobytologists</h2>
-<p>
-<strong>Author:</strong> [Forensic technologist]
-</p>
-
-<h3>Contents:</h3>
-<p>
-- What Is Digital Forensics? (Recovering data, establishing authenticity, chain of custody)
-- Forensic Tools:
-  - <strong>Hex Editors:</strong> Reading raw file structures
-  - <strong>Metadata Extraction:</strong> EXIF, file properties, timestamps
-  - <strong>Emulation:</strong> Running old software in sandboxes
-  - <strong>Reverse Engineering:</strong> Decompiling code, format reconstruction
-- Authentication Challenges (How do you prove this is "the original"?)
-- Legal & Ethical Issues (Copyright, privacy, hacking laws)
-</p>
-
-<p>
-<strong>Case Studies:</strong>
-- The Domesday Project (1986 BBC multimedia project became unreadable by 2002; forensically recovered)
-- NSA's Tape Recovery (Decades-old tapes required custom hardware to read)
-- Flash Preservation (Ruffle emulator project)
-</p>
-
-<p>
-<strong>Discussion Questions:</strong>
-1. When does forensic recovery cross into hacking?
-2. Can digital artifacts have "authenticity"? (Everything is a copy)
-</p>
-
-<p>
-<strong>Exercise:</strong> Use forensic tools to recover deleted files from a disk image
-</p>
-
-<p>
-<strong>Further Reading:</strong>
-- Carrier, <em>File System Forensic Analysis</em>
-- Kirschenbaum, <em>Mechanisms</em>
-- McDonough et al., "Preserving Virtual Worlds"
-</p>
-
-<h2>Chapter 9: The Custodial Filter—Ethics of Preservation</h2>
-<p>
-<strong>Author:</strong> [Ethicist/archivist]
-</p>
-
-<h3>Contents:</h3>
-<p>
-- When Preservation Causes Harm (Revenge porn, doxxing, hate speech, trauma)
-- The Custodial Filter Framework:
-  1. <strong>Consent:</strong> Did creators consent to preservation?
-  2. <strong>Context:</strong> Can we preserve context (or will it be misunderstood)?
-  3. <strong>Harm Reduction:</strong> Does preservation harm individuals/communities?
-  4. <strong>Public Interest:</strong> Is there cultural/historical value that outweighs harm?
-  5. <strong>Right to Be Forgotten:</strong> When should things be allowed to disappear?
-- Case Studies of Ethical Dilemmas
-- Policies for Memory Institutions
-</p>
-
-<p>
-<strong>Case Studies:</strong>
-- Gamergate Harassment Archives (Preserve as evidence of harm? Or amplify abuse?)
-- Tumblr NSFW Purge (Sex workers' livelihoods deleted; should archives rescue?)
-- 9/11 Digital Archive (Preserving trauma with care, consent, embargo)
-</p>
-
-<p>
-<strong>Discussion Questions:</strong>
-1. Who decides what should be forgotten?
-2. Can you preserve context when the platform is dead?
-</p>
-
-<p>
-<strong>Exercise:</strong> Apply Custodial Filter to 10 controversial artifacts. Preserve or delete?
-</p>
-
-<p>
-<strong>Further Reading:</strong>
-- Caswell, "Urgent Archives"
-- Noble, <em>Algorithms of Oppression</em>
-- Dunbar-Hester, "Listening to Cybernetics"
-</p>
-
-<h2>Chapter 10: Triage Workflow—From Discovery to Preservation</h2>
-<p>
-<strong>Author:</strong> [Archivist/project manager]
-</p>
-
-<h3>Contents:</h3>
-<p>
-- The Complete Triage Pipeline:
-  1. <strong>Discovery:</strong> Monitoring platforms for shutdown announcements
-  2. <strong>Assessment:</strong> Applying triage criteria (significance, fragility, etc.)
-  3. <strong>Mobilization:</strong> Recruiting volunteers, allocating resources
-  4. <strong>Capture:</strong> Web scraping, API harvesting, community submissions
-  5. <strong>Validation:</strong> Checking data integrity, metadata completeness
-  6. <strong>Storage:</strong> Redundant backups, distributed preservation
-  7. <strong>Access:</strong> Making artifacts retrievable (catalog, search, browse)
-  8. <strong>Interpretation:</strong> Curating, contextualizing, exhibiting
-- Tools & Automation (Archive Team scripts, Webrecorder, Conifer)
-- Rapid Response Protocols (48-hour shutdown scenarios)
-</p>
-
-<p>
-<strong>Case Studies:</strong>
-- Archive Team's Vine Rescue (200M videos saved in weeks)
-- Google+ Shutdown (Users had months' notice; community coordination)
-- Flash's Death (Years of warning; community built Ruffle emulator)
-</p>
-
-<p>
-<strong>Discussion Questions:</strong>
-1. Can triage be fully automated? (Or does it require human judgment?)
-2. What happens when you rescue something no one wants? (Hoarding vs. preservation)
-</p>
-
-<p>
-<strong>Exercise:</strong> Design a rapid response plan for TikTok shutdown (hypothetical)
-</p>
-
-<p>
-<strong>Further Reading:</strong>
-- Archive Team documentation
-- Phillips & Milner, <em>You Are Here: A Field Guide to the Internet</em>
-- Brügger & Schroeder, <em>The Web as History</em>
-</p>
-
-<h1>PART III: INSTITUTION BUILDING (Chapters 11-14)</h1>
-<p>
-<em>How do we build organizations that outlast us?</em>
-</p>
-
-<h2>Chapter 11: Sustainable Preservation Organizations (The Archive)</h2>
-<p>
-<strong>Author:</strong> [Non-profit director/archivist]
-</p>
-
-<h3>Contents:</h3>
-<p>
-- Why Individual Heroism Fails (Burnout, death, loss of interest)
-- Institutional Design:
-  - <strong>Governance Models:</strong> Non-profit, co-op, university-hosted, government
-  - <strong>Revenue Models:</strong> Donations, memberships, grants, earned revenue
-  - <strong>Technical Architecture:</strong> Centralized, federated, P2P, hybrid
-  - <strong>Succession Planning:</strong> What happens when founder leaves?
-- Case Study Deep-Dives (Internet Archive, LOCKSS, Software Heritage)
-- 10-Year Sustainability Planning
-</p>
-
-<p>
-<strong>Case Studies:</strong>
-- Internet Archive: $40M budget, 70 employees, 25+ years, but single point of failure (San Francisco)
-- LOCKSS: 300 libraries, distributed redundancy, 20+ years
-- Perma.cc: University consortium, federated, member-funded
-</p>
-
-<p>
-<strong>Discussion Questions:</strong>
-1. Should preservation organizations be centralized (efficient) or distributed (resilient)?
-2. How do you fund preservation work that never generates revenue?
-</p>
-
-<p>
-<strong>Exercise:</strong> Design a preservation organization with 10-year budget and governance
-</p>
-
-<p>
-<strong>Further Reading:</strong>
-- Kahle, "Preserving the Internet"
-- Ostrom, <em>Governing the Commons</em>
-- Benkler, <em>The Wealth of Networks</em>
-</p>
-
-<h2>Chapter 12: The Economics of Sovereignty (The Anvil)</h2>
-<p>
-<strong>Author:</strong> [Entrepreneur/business scholar]
-</p>
-
-<h3>Contents:</h3>
-<p>
-- Can You Monetize Sovereignty? (Selling domains, hosting, tools without becoming a landlord)
-- Business Models That Work:
-  - <strong>Open Core:</strong> Free software + paid managed services (Ghost, WordPress.com)
-  - <strong>Tooling Sales:</strong> Sell sovereignty-enabling products (themes, plugins, frameworks)
-  - <strong>Consulting:</strong> Help organizations build their own sovereignty
-  - <strong>Cooperatives:</strong> Member-owned businesses (Stocksy, Resonate)
-- Business Models to Avoid:
-  - VC-funded startups (exit pressure → enshittification)
-  - Surveillance advertising (violates Three Pillars)
-  - Speculative models (blockchain domain squatting)
-- Case Study Comparisons
-</p>
-
-<p>
-<strong>Case Studies:</strong>
-- Ghost: Non-profit owns for-profit subsidiary, sustainable open source
-- Basecamp: Bootstrapped, calm company, but still a platform (customers don't own Ground)
-- ENS (.eth domains): Censorship-resistant, but speculative and exclusionary
-</p>
-
-<p>
-<strong>Discussion Questions:</strong>
-1. Can you be profitable AND principled?
-2. Is "open core" exploitative? (Free users subsidize paying customers)
-</p>
-
-<p>
-<strong>Exercise:</strong> Design a "foundry" business selling sovereignty tools
-</p>
-
-<p>
-<strong>Further Reading:</strong>
-- Rushkoff, <em>Throwing Rocks at the Google Bus</em>
-- Doctorow, <em>The Internet Con</em>
-- Scholz, <em>Platform Cooperativism</em>
-</p>
-
-<h2>Chapter 13: Distributed Commons Governance (The Seed Bank)</h2>
-<p>
-<strong>Author:</strong> [Commons scholar/Ostrom expert]
-</p>
-
-<h3>Contents:</h3>
-<p>
-- Why Commons? (What individuals can't do alone, markets won't fund, states won't prioritize)
-- Elinor Ostrom's 8 Design Principles Applied to Digital Preservation:
-  1. Clear boundaries
-  2. Proportional equivalence (costs/benefits)
-  3. Collective choice
-  4. Monitoring
-  5. Graduated sanctions
-  6. Conflict resolution
-  7. Recognition of rights
-  8. Nested enterprises
-- Case Study Comparisons (LOCKSS vs. Mastodon vs. IPFS)
-- Designing a Seed Bank (Distributed preservation commons)
-</p>
-
-<p>
-<strong>Case Studies:</strong>
-- LOCKSS: Gold standard (applies all 8 principles)
-- Mastodon: Federation works, but governance failures (admin burnout, fragmentation)
-- IPFS: P2P storage, but no governance (files disappear if no one pins them)
-</p>
-
-<p>
-<strong>Discussion Questions:</strong>
-1. Can digital commons scale to millions of users?
-2. How do you balance openness (anyone can join) with accountability (no bad actors)?
-</p>
-
-<p>
-<strong>Exercise:</strong> Design a federated preservation network using Ostrom's principles
-</p>
-
-<p>
-<strong>Further Reading:</strong>
-- Ostrom, <em>Governing the Commons</em>
-- Benkler, "The Political Economy of Commons"
-- Schneier, <em>Liars and Outliers</em>
-</p>
-
-<h2>Chapter 14: Memory Institutions for the Digital Age (The Haunted Forest)</h2>
-<p>
-<strong>Author:</strong> [Museum curator/memory studies scholar]
-</p>
-
-<h3>Contents:</h3>
-<p>
-- What Is a Memory Institution? (Museum, archive, library, memorial)
-- Challenges of Digital Curation:
-  - <strong>Decontextualization:</strong> Platform death erases context
-  - <strong>Illegibility:</strong> Requires dead software to read
-  - <strong>Scale:</strong> Millions of artifacts, limited curation capacity
-  - <strong>Ephemerality:</strong> Digital objects decay, migrate, mutate
-- Curatorial Strategies:
-  - <strong>Comprehensive:</strong> Preserve everything (Internet Archive model)
-  - <strong>Curated:</strong> Select representative artifacts (museum model)
-  - <strong>Community-Driven:</strong> User submissions (9/11 Digital Archive model)
-- Technical Preservation (Screenshots → static → emulation → live preservation)
-</p>
-
-<p>
-<strong>Case Studies:</strong>
-- Internet Archive Wayback Machine: Comprehensive, but no curation
-- The Strong Museum: Curated video game exhibits, playable
-- GeoCities Archive: Data dump, no interpretation
-</p>
-
-<p>
-<strong>Discussion Questions:</strong>
-1. Is the Wayback Machine a museum or a warehouse?
-2. Who decides what's "culturally significant"?
-</p>
-
-<p>
-<strong>Exercise:</strong> Design a museum exhibit for a murdered platform (Vine, Google Reader, etc.)
-</p>
-
-<p>
-<strong>Further Reading:</strong>
-- Drucker, "Is There a 'Digital' Art History?"
-- Manoff, "Theories of the Archive"
-- Chun, "The Enduring Ephemeral"
-</p>
-
-<h1>PART IV: SYSTEMS & MOVEMENTS (Chapters 15-16)</h1>
-<p>
-<em>How do we change the world?</em>
-</p>
-
-<h2>Chapter 15: The Political Economy of Digital Ground</h2>
-<p>
-<strong>Author:</strong> [Political economist/tech policy scholar]
-</p>
-
-<h3>Contents:</h3>
-<p>
-- Who Controls Digital Infrastructure?
-  - <strong>Domains:</strong> ICANN, registrars (can seize, censor, rent-seek)
-  - <strong>Hosting:</strong> AWS, Cloudflare (can deplatform, surveil)
-  - <strong>Identity:</strong> Google, Facebook (control who you are)
-  - <strong>Payment:</strong> Visa, PayPal (can freeze accounts)
-- Why Existing Alternatives Fail (ENS too speculative, Mastodon too complex, Tor too stigmatized)
-- Designing Sovereign Alternatives (Case studies + frameworks)
-- The Sovereignty Stack (Physical → Network → Identity → Storage → Application → Economic)
-</p>
-
-<p>
-<strong>Case Studies:</strong>
-- DNS/ICANN: Centralized, subject to seizure, rent-seeking
-- ENS (.eth): Decentralized, but speculative and exclusionary
-- Mastodon: Federated, but admin power and fragmentation
-- Tor: Anonymous, but slow and stigmatized
-</p>
-
-<p>
-<strong>Discussion Questions:</strong>
-1. Is DNS reformable, or must it be replaced?
-2. Can blockchain sovereignty avoid plutocracy?
-</p>
-
-<p>
-<strong>Exercise:</strong> Redesign one layer of the sovereignty stack (domain, hosting, identity, etc.)
-</p>
-
-<p>
-<strong>Further Reading:</strong>
-- Lessig, <em>Code: Version 2.0</em>
-- Schneier, <em>Data and Goliath</em>
-- Doctorow, <em>The Internet Con</em>
-</p>
-
-<h2>Chapter 16: From Practice to Discipline—Movement Building</h2>
-<p>
-<strong>Author:</strong> [STS scholar/discipline historian]
-</p>
-
-<h3>Contents:</h3>
-<p>
-- How Disciplines Form (Boundaries, methods, institutions, professionalization)
-- Building Knowledge Infrastructure:
-  - Journals, conferences, textbooks, handbooks
-- Institutional Anchors:
-  - Departments, programs, centers, labs
-- Professional Pathways:
-  - Academic, curator, consultant, industry, non-profit, government
-- Public Visibility:
-  - Books, podcasts, documentaries, op-eds, TED talks
-- Policy Advocacy:
-  - Right to Archive Act, Platform Accountability, Digital Heritage Protection
-- Timeline: 10-20 year roadmap to legitimacy
-</p>
-
-<p>
-<strong>Case Studies:</strong>
-- Digital Humanities: 40-year slow burn
-- Data Science: Industry-led rapid professionalization (5 years)
-- STS: Coalition building across disciplines
-</p>
-
-<p>
-<strong>Discussion Questions:</strong>
-1. Should Archaeobytology be standalone or interdisciplinary?
-2. Can we accelerate discipline formation? (What's the catalyst?)
-</p>
-
-<p>
-<strong>Exercise:</strong> Design a 10-year movement strategy (conferences, journals, departments, advocacy)
-</p>
-
-<p>
-<strong>Further Reading:</strong>
-- Kuhn, <em>The Structure of Scientific Revolutions</em>
-- Small, "Disciplinarity and Its Discontent"
-- Klein, <em>Interdisciplining Digital Humanities</em>
-</p>
-
-<h1>PART V: PUBLIC SCHOLARSHIP & THE FUTURE (Chapters 17-18)</h1>
-
-<h2>Chapter 17: The Public Intellectual in Archaeobytology</h2>
-<p>
-<strong>Author:</strong> [Public intellectual/journalist scholar]
-</p>
-
-<h3>Contents:</h3>
-<p>
-- Why Public Scholarship Matters (Academic work stays in journals; public work shapes culture)
-- Translating Research for Audiences:
-  - Academic: Journal articles (8,000 words, jargon, citations)
-  - Practitioners: Trade publications (2,000 words, actionable)
-  - Policymakers: Policy briefs (1,500 words, recommendations)
-  - Public: Op-eds (800 words, urgent, accessible)
-  - Social media: Threads (500 words, shareable)
-- Building Platforms (Blog, newsletter, podcast, speaking circuit)
-- Media Engagement (Working with journalists, pitching op-eds)
-- Policy Influence (Testimony, whitepapers, model legislation)
-</p>
-
-<p>
-<strong>Case Studies:</strong>
-- Cory Doctorow: Daily blog (Pluralistic), policy influence
-- Safiya Noble: Academic research → public book → Congressional testimony
-- Brewster Kahle: Built Internet Archive → evangelist for preservation
-- Zeynep Tufekci: Sociologist → <em>New York Times</em> columnist
-</p>
-
-<p>
-<strong>Discussion Questions:</strong>
-1. Can you be a rigorous scholar AND a public intellectual?
-2. How do you balance tenure expectations with public impact?
-</p>
-
-<p>
-<strong>Exercise:</strong> Write three versions of the same idea (academic article, op-ed, tweet thread)
-</p>
-
-<p>
-<strong>Further Reading:</strong>
-- Posner, <em>Public Intellectuals</em>
-- Burawoy, "For Public Sociology"
-- McKenzie, "How Academics Can Better Engage Media"
-</p>
-
-<h2>Chapter 18: Forging the Third Way—Vision for a Post-Platform Future</h2>
-<p>
-<strong>Author:</strong> [Lead editor + multiple contributors]
-</p>
-
-<h3>Contents:</h3>
-<p>
-- What Is a "Third Way"? (Rejects platform capitalism AND tech solutionism)
-- Principles of Third Way Systems:
-  - Sovereignty without speculation
-  - Connection without surveillance
-  - Infrastructure without extraction
-- Case Studies of Emerging Alternatives:
-  - Platform cooperatives (Stocksy, Resonate)
-  - Federated networks (Mastodon, Matrix, PeerTube)
-  - Commons infrastructure (LOCKSS, Software Heritage)
-  - Open protocols (ActivityPub, IPFS, Solid)
-- Integrated Design Framework (Technical + Governance + Economic + Movement)
-- The Next 50 Years: What We Must Build
-</p>
-
-<p>
-<strong>Vision Statements from Multiple Contributors:</strong>
-- What would a sovereign social network look like?
-- What would a national digital archive system look like?
-- What would a movement for digital sovereignty look like?
-</p>
-
-<p>
-<strong>Capstone Exercise:</strong>
-Design a complete Third Way system (platform alternative, institutional infrastructure, or movement+policy package)
-</p>
-
-<p>
-<strong>Closing Essay: "The Archaeobytologist's Manifesto"</strong>
-- Own your Ground. Tell your story. Forge your future.
-- We are scholars and smiths, custodians and strategists.
-- We preserve what platforms murder. We build what outlasts us.
-- This is Archaeobytology.
-</p>
-
-<p>
-<strong>Further Reading:</strong>
-- Rushkoff, <em>Throwing Rocks at the Google Bus</em>
-- Doctorow, <em>The Internet Con</em>
-- Benkler, <em>The Wealth of Networks</em>
-- Schneier, <em>Data and Goliath</em>
-- The entire bibliography from this course
-</p>
-
-<h1>APPENDICES</h1>
-
-<h2>Appendix A: Glossary of Terms</h2>
-<p>
-- Archaeobyte, Vivibyte, Umbrabyte, Petribyte
-- Archive, Anvil, Triage, Custodial Filter
-- Three Pillars: Declaration, Connection, Ground
-- Seed Bank, Haunted Forest, Foundry
-- Platform Landlord, Digital Sovereignty, Institutional Void
-</p>
-
-<h2>Appendix B: Essential Tools & Resources</h2>
-<p>
-- Web archiving: Wayback Machine, Archive-It, Webrecorder, Conifer
-- Emulation: Ruffle (Flash), DOSBox, RetroArch
-- Forensics: Hex editors, metadata extractors, disk imaging
-- Community: Archive Team, Internet Archive, EFF
-</p>
-
-<h2>Appendix C: Sample Syllabi</h2>
-<p>
-- 101-level: Introduction to Archaeobytology (undergraduate survey)
-- 200-level: Methods in Digital Preservation (hands-on technical)
-- 300-level: Institution Building (graduate seminar)
-</p>
-
-<h2>Appendix D: Teaching Resources</h2>
-<p>
-- Discussion prompts
-- Assignment templates
-- Grading rubrics
-- Case study datasets
-</p>
-
-<h2>Appendix E: Professional Resources</h2>
-<p>
-- Career pathways (academic, curatorial, consulting, industry)
-- Job boards and listings
-- Professional societies
-- Conferences and journals
-</p>
-
-<h2>Comprehensive Bibliography (200+ sources)</h2>
-
-<h3>Foundational Theory</h3>
-<p>
-- Derrida, <em>Archive Fever</em>
-- Foucault, <em>The Archaeology of Knowledge</em>
-- Kuhn, <em>The Structure of Scientific Revolutions</em>
-- Benjamin, "The Work of Art in the Age of Mechanical Reproduction"
-</p>
-
-<h3>Media Archaeology</h3>
-<p>
-- Ernst, <em>Digital Memory and the Archive</em>
-- Parikka, <em>What Is Media Archaeology?</em>
-- Zielinski, <em>Deep Time of the Media</em>
-- Huhtamo & Parikka, <em>Media Archaeology: Approaches, Applications, Implications</em>
-</p>
-
-<h3>Digital Preservation</h3>
-<p>
-- Kirschenbaum, <em>Mechanisms</em>
-- Chun, "The Enduring Ephemeral"
-- Brügger, <em>The Archived Web</em>
-- Kahle, "Preserving the Internet"
-</p>
-
-<h3>Platform Studies & Critique</h3>
-<p>
-- Zuboff, <em>The Surveillance Capitalism</em>
-- Noble, <em>Algorithms of Oppression</em>
-- Gillespie, <em>Custodians of the Internet</em>
-- Doctorow, <em>The Internet Con</em>
-</p>
-
-<h3>Commons & Governance</h3>
-<p>
-- Ostrom, <em>Governing the Commons</em>
-- Benkler, <em>The Wealth of Networks</em>
-- Bollier, <em>Think Like a Commoner</em>
-- Schneier, <em>Liars and Outliers</em>
-</p>
-
-<h3>Tech Policy & Ethics</h3>
-<p>
-- Lessig, <em>Code: Version 2.0</em>
-- Schneier, <em>Data and Goliath</em>
-- Véliz, <em>Privacy Is Power</em>
-- Rushkoff, <em>Throwing Rocks at the Google Bus</em>
-</p>
-
-<h3>Craft & Making</h3>
-<p>
-- Sennett, <em>The Craftsman</em>
-- Ratto, "Critical Making"
-- Pye, <em>The Nature and Art of Workmanship</em>
-</p>
-
-<h3>Public Scholarship</h3>
-<p>
-- Posner, <em>Public Intellectuals</em>
-- Burawoy, "For Public Sociology"
-</p>
-
-<h3>Discipline Formation</h3>
-<p>
-- Small, "Disciplinarity and Its Discontent"
-- Klein, <em>Interdisciplining Digital Humanities</em>
-</p>
-
-<h2>About the Editors</h2>
-
-<p>
-[To be filled with actual contributors when book is commissioned]
-</p>
-
-<h2>Index</h2>
-
-<p>
-[Comprehensive index of terms, concepts, people, platforms, organizations]
-</p>
-
-<p>
-<strong>End of Textbook Outline</strong>
-</p>
-
-<h2>Publication Strategy</h2>
-
-<h3>Open Access Model (Recommended)</h3>
-<p>
-- <strong>Publisher:</strong> MIT Press Open, punctum books, or self-published with ISBN
-- <strong>Format:</strong> Free PDF + print-on-demand (~$40 paperback, $80 hardcover)
-- <strong>Companion Website:</strong> archaeobytology.org
-  - Datasets for exercises
-  - Video tutorials
-  - Community forum
-  - Teaching resources
-</p>
-
-<h3>Why Open Access?</h3>
-<p>
-- Embodies Three Pillars (accessible Ground, not paywalled)
-- Maximizes adoption (professors can assign without cost barrier)
-- Builds discipline faster (more readers = more practitioners)
-- Can still generate revenue (print sales, institutional sales, consulting)
-</p>
-
-<h3>Companion Course Materials</h3>
-<p>
-- <strong>Instructor's Guide</strong> (200 pages: lecture notes, answer keys, grading rubrics)
-- <strong>Student Workbook</strong> (100 pages: exercises, templates, checklists)
-- <strong>Case Study Database</strong> (Searchable repository of 100+ platform deaths with teaching notes)
-- <strong>Video Lectures</strong> (YouTube series: 18 chapters × 20 min = 6 hours)
-</p>
-
-<h2>Marketing & Adoption Strategy</h2>
-
-<h3>Target Audiences:</h3>
-<p>
-1. <strong>Universities:</strong> History, Library Science, Media Studies, CS, STS programs
-2. <strong>Practitioners:</strong> Archivists, curators, preservation specialists
-3. <strong>Industry:</strong> Tech companies needing institutional memory
-4. <strong>General Public:</strong> Trade press reviews, public library acquisition
-</p>
-
-<h3>Launch Strategy:</h3>
-<p>
-- Announce at major conferences (ADHO, SAA, 4S)
-- Op-eds in <em>Chronicle of Higher Education</em>, <em>Inside Higher Ed</em>
-- Social media campaign (Twitter threads on each chapter)
-- Free chapter downloads (Chapter 1 + one technical chapter)
-- Author talks at 20 universities (book tour)
-</p>
-
-<h3>Adoption Metrics (5-year goals):</h3>
-<p>
-- 50 universities adopt (syllabi on record)
-- 5,000 copies circulated (print + PDF downloads)
-- 10 derivative courses developed (200-level, 400-level variations)
-- First Archaeobytology departments launched (using textbook as foundation)
-</p>
-
-<p>
-<strong>This textbook would be ~600-700 pages and serve as the definitive introduction to the field, used for decades as Archaeobytology becomes a recognized discipline.</strong>
-</p>
-
-        </article>
-        <div class="nav">
-            <a href="index.html">Back to Table of Contents</a>
-        </div>
-    </div>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='archaeobytology-theory-practice-and-institution-building'><span>ARCHAEOBYTOLOGY: Theory, Practice, and Institution Building</span></h1><h2 id='a-comprehensive-textbook'><span>A Comprehensive Textbook</span></h2><p><strong><span>Edited by [To Be Determined]</span></strong></p><hr /><h2 id='book-information'><span>Book Information</span></h2><p><strong><span>Publisher:</span></strong><span> MIT Press (or open-access equivalent)</span><br/><strong><span>Format:</span></strong><span> 600-700 pages, hardcover + open-access PDF</span><br/><strong><span>Audience:</span></strong><span> Upper-level undergraduates, graduate students, practitioners</span><br/><strong><span>Pedagogy:</span></strong><span> Each chapter includes case studies, discussion questions, exercises, further reading</span><br/><strong><span>Companion Website:</span></strong><span> archaeobytology.org (with datasets, tools, tutorials)</span></p><hr /><h2 id='book-structure'><span>Book Structure</span></h2><p><span>The textbook follows the 101 → 200 → 300 curriculum progression, divided into </span><strong><span>5 Parts</span></strong><span> (18 chapters total):</span></p><hr /><h1 id='part-i-foundations-chapters-1-6'><span>PART I: FOUNDATIONS (Chapters 1-6)</span></h1><p><em><span>What is Archaeobytology?</span></em></p><h2 id='chapter-1-introduction-to-archaeobytology'><span>Chapter 1: Introduction to Archaeobytology</span></h2><p><strong><span>Author:</span></strong><span> [Lead editor, discipline founder]</span></p><h3 id='contents'><span>Contents:</span></h3><ul><li><p><span>What is Archaeobytology? (Definition, scope, why it matters)</span></p></li><li><p><span>A Brief History of Digital Mortality (From floppy disks to platform shutdowns)</span></p></li><li><p><span>The Three Pillars: Declaration, Connection, Ground</span></p></li><li><p><span>Why We Need a Discipline (Not just digital history or media studies)</span></p></li><li><p><span>How to Use This Book (Roadmap for instructors and students)</span></p></li></ul><p><strong><span>Case Study:</span></strong><span> The GeoCities Shutdown (2009)—30 million sites murdered overnight</span></p><p><strong><span>Discussion Questions:</span></strong></p><ol start='' ><li><p><span>Is digital preservation a technical problem or a political one?</span></p></li><li><p><span>Who is responsible for preserving our digital culture?</span></p></li></ol><p><strong><span>Exercise:</span></strong><span> Find three &quot;murdered&quot; platforms from your lifetime. What was lost?</span></p><p><strong><span>Further Reading:</span></strong></p><ul><li><p><span>Kirschenbaum, </span><em><span>Mechanisms</span></em></p></li><li><p><span>Parikka, </span><em><span>What Is Media Archaeology?</span></em></p></li><li><p><span>Ernst, </span><em><span>Digital Memory and the Archive</span></em></p></li></ul><hr /><h2 id='chapter-2-the-archaeobyte-taxonomy'><span>Chapter 2: The Archaeobyte Taxonomy</span></h2><p><strong><span>Author:</span></strong><span> [Theorist/taxonomist]</span></p><h3 id='contents-2'><span>Contents:</span></h3><ul><li><p><span>Why We Need New Terms (Platform death ≠ obsolescence)</span></p></li><li><p><strong><span>The Archaeobyte:</span></strong><span> Excavated from living platforms (MySpace, LiveJournal)</span></p></li><li><p><strong><span>The Vivibyte:</span></strong><span> Alive on sovereign ground (personal domains, self-hosted)</span></p></li><li><p><strong><span>The Umbrabyte:</span></strong><span> Murdered by platform shutdowns (GeoCities, Vine, Google Reader)</span></p></li><li><p><strong><span>The Petribyte:</span></strong><span> Petrified in obsolete formats (floppy disks, Flash, Java applets)</span></p></li><li><p><span>Borderline Cases and Taxonomic Ambiguity</span></p></li></ul><p><strong><span>Case Studies:</span></strong></p><ul><li><p><span>Archaeobytes: The MySpace Music Archive (17M songs, partial rescue 2019)</span></p></li><li><p><span>Vivibiytes: Tim Berners-Lee&#39;s First Website (still online at CERN, 1991)</span></p></li><li><p><span>Umbrabytes: Vine (200M videos, murdered 2017)</span></p></li><li><p><span>Petribytes: Flash Games (10,000+ games, unplayable after 2020)</span></p></li></ul><p><strong><span>Discussion Questions:</span></strong></p><ol start='' ><li><p><span>Can a Vivibyte become an Umbrabyte? (What if your hosting company shuts down?)</span></p></li><li><p><span>Are Petribytes &quot;dead&quot; or &quot;dormant&quot;? (Emulation can resurrect them)</span></p></li></ol><p><strong><span>Exercise:</span></strong><span> Classify 20 digital artifacts using the taxonomy</span></p><p><strong><span>Further Reading:</span></strong></p><ul><li><p><span>Chun, &quot;The Enduring Ephemeral&quot;</span></p></li><li><p><span>Sterling, &quot;Dead Media Project&quot;</span></p></li><li><p><span>Zittrain, &quot;Digital Tethering and Content Control&quot;</span></p></li></ul><hr /><h2 id='chapter-3-the-archive-and-the-anvil'><span>Chapter 3: The Archive and the Anvil</span></h2><p><strong><span>Author:</span></strong><span> [Practitioner/archivist]</span></p><h3 id='contents-3'><span>Contents:</span></h3><ul><li><p><span>Dual Soul of the Archaeobytologist</span></p></li><li><p><strong><span>The Archive:</span></strong><span> Preservation, curation, memory</span></p></li><li><p><strong><span>The Anvil:</span></strong><span> Forging, building, creation</span></p></li><li><p><span>Why Both Are Necessary (Preservation without creation is hoarding; creation without preservation is ephemeral)</span></p></li><li><p><span>Historical Precedents (Librarians who were also publishers; archivists who built institutions)</span></p></li></ul><p><strong><span>Case Studies:</span></strong></p><ul><li><p><span>Brewster Kahle: Built Internet Archive (Archive) and invented Alexa (Anvil)</span></p></li><li><p><span>Jason Scott: Archives platforms (Archive Team) and creates documentaries (Anvil)</span></p></li><li><p><span>Anita Sarkeesian: Archives gaming culture and forges critical frameworks</span></p></li></ul><p><strong><span>Discussion Questions:</span></strong></p><ol start='' ><li><p><span>Can you specialize in one (Archive or Anvil), or must you do both?</span></p></li><li><p><span>What happens when Archive and Anvil conflict? (Preservation vs. innovation)</span></p></li></ol><p><strong><span>Exercise:</span></strong><span> Design a monument (Anvil) using preserved artifacts (Archive)</span></p><p><strong><span>Further Reading:</span></strong></p><ul><li><p><span>Derrida, </span><em><span>Archive Fever</span></em></p></li><li><p><span>Sennett, </span><em><span>The Craftsman</span></em></p></li><li><p><span>Ratto, &quot;Critical Making&quot;</span></p></li></ul><hr /><h2 id='chapter-4-the-three-pillars-of-digital-sovereignty'><span>Chapter 4: The Three Pillars of Digital Sovereignty</span></h2><p><strong><span>Author:</span></strong><span> [Political theorist/ethicist]</span></p><h3 id='contents-4'><span>Contents:</span></h3><ul><li><p><span>Why &quot;Sovereignty&quot; Not &quot;Ownership&quot; (Sovereignty is inalienable; ownership can be sold)</span></p></li><li><p><strong><span>Pillar 1: Declaration (I Am)</span></strong><span> — Sovereign identity, no platform intermediary</span></p></li><li><p><strong><span>Pillar 2: Connection (Instant Message)</span></strong><span> — Direct communication, intentional community</span></p></li><li><p><strong><span>Pillar 3: Ground (Digital Real Estate)</span></strong><span> — Owned infrastructure, permanent address</span></p></li><li><p><span>Historical Roots (Greek </span><em><span>authentikos</span></em><span>, Enlightenment sovereignty, property rights)</span></p></li><li><p><span>Three Pillars in Practice (Domain + hosting + email = basic sovereignty)</span></p></li></ul><p><strong><span>Case Studies:</span></strong></p><ul><li><p><span>GeoCities: Had Ground, lost Connection (isolated homepages)</span></p></li><li><p><span>Facebook: Has Connection, no Ground (rented land, no export)</span></p></li><li><p><span>Email: All Three Pillars (if self-hosted: </span><a href='mailto:your@yourdomain.com' target='_blank' class='url'>your@yourdomain.com</a><span>)</span></p></li></ul><p><strong><span>Discussion Questions:</span></strong></p><ol start='' ><li><p><span>Can you have sovereignty without technical literacy?</span></p></li><li><p><span>Is sovereignty scalable? (Can billions have Ground?)</span></p></li></ol><p><strong><span>Exercise:</span></strong><span> Audit your own digital sovereignty (Do you own your domain? Data? Identity?)</span></p><p><strong><span>Further Reading:</span></strong></p><ul><li><p><span>Lessig, </span><em><span>Code: Version 2.0</span></em></p></li><li><p><span>Schneier, </span><em><span>Data and Goliath</span></em></p></li><li><p><span>Véliz, </span><em><span>Privacy Is Power</span></em></p></li></ul><hr /><h2 id='chapter-5-triage-methodology'><span>Chapter 5: Triage Methodology</span></h2><p><strong><span>Author:</span></strong><span> [Methodologist/practitioner]</span></p><h3 id='contents-5'><span>Contents:</span></h3><ul><li><p><span>Why Triage? (Can&#39;t save everything; must prioritize)</span></p></li><li><p><span>The Custodial Filter (Ethical framework for what to preserve)</span></p></li><li><p><span>Triage Criteria:</span></p><ol start='' ><li><p><strong><span>Cultural Significance:</span></strong><span> Does this represent a community, movement, moment?</span></p></li><li><p><strong><span>Technical Fragility:</span></strong><span> How close to disappearance?</span></p></li><li><p><strong><span>Rescue Difficulty:</span></strong><span> How hard to preserve?</span></p></li><li><p><strong><span>Existing Redundancy:</span></strong><span> Is someone else preserving this?</span></p></li><li><p><strong><span>Consent &amp; Ethics:</span></strong><span> Should we preserve this? (Privacy, trauma, harm)</span></p></li></ol></li><li><p><span>Triage in Practice (Workflow, tools, decision-making)</span></p></li></ul><p><strong><span>Case Studies:</span></strong></p><ul><li><p><span>Archive Team&#39;s Rapid Response (When Geocities announced shutdown, prioritized most unique sites)</span></p></li><li><p><span>9/11 Digital Archive (Community submissions + curatorial selection)</span></p></li><li><p><span>Software Heritage (Algorithmic triage: preserve all public source code)</span></p></li></ul><p><strong><span>Discussion Questions:</span></strong></p><ol start='' ><li><p><span>Who decides what&#39;s &quot;culturally significant&quot;? (Curators, communities, algorithms?)</span></p></li><li><p><span>When should we NOT preserve something? (Revenge porn, doxxing, hate speech)</span></p></li></ol><p><strong><span>Exercise:</span></strong><span> You have 48 hours before a platform shuts down. Triage 100 artifacts.</span></p><p><strong><span>Further Reading:</span></strong></p><ul><li><p><span>Manoff, &quot;Theories of the Archive&quot;</span></p></li><li><p><span>Caswell, &quot;Seeing Yourself in History&quot;</span></p></li><li><p><span>Zuboff, </span><em><span>The Surveillance Capitalism</span></em></p></li></ul><hr /><h2 id='chapter-6-discipline-formation-and-boundaries'><span>Chapter 6: Discipline Formation and Boundaries</span></h2><p><strong><span>Author:</span></strong><span> [Historian of science/STS scholar]</span></p><h3 id='contents-6'><span>Contents:</span></h3><ul><li><p><span>How Disciplines Form (Kuhn&#39;s paradigms, boundary work, professionalization)</span></p></li><li><p><span>Why Archaeobytology Is Not:</span></p><ul><li><p><span>Digital History (broader; includes non-historical artifacts)</span></p></li><li><p><span>Media Archaeology (deeper; focuses on lived practice, not just dead media)</span></p></li><li><p><span>Library Science (includes creation, not just cataloging)</span></p></li><li><p><span>Computer Science (humanistic, not just technical)</span></p></li></ul></li><li><p><span>Interdisciplinary Foundations (History, Library Science, STS, Media Studies, CS)</span></p></li><li><p><span>The Path to Legitimacy (Journals, conferences, departments, careers)</span></p></li></ul><p><strong><span>Case Studies:</span></strong></p><ul><li><p><span>Digital Humanities: 40-year journey from &quot;humanities computing&quot; to departments</span></p></li><li><p><span>Data Science: Industry-led rapid professionalization (5 years)</span></p></li><li><p><span>Science &amp; Technology Studies (STS): Coalition building across disciplines</span></p></li></ul><p><strong><span>Discussion Questions:</span></strong></p><ol start='' ><li><p><span>Should Archaeobytology be standalone or interdisciplinary?</span></p></li><li><p><span>What are the risks of professionalization? (Gatekeeping, credentialism)</span></p></li></ol><p><strong><span>Exercise:</span></strong><span> Draft a mission statement for the first Archaeobytology department</span></p><p><strong><span>Further Reading:</span></strong></p><ul><li><p><span>Kuhn, </span><em><span>The Structure of Scientific Revolutions</span></em></p></li><li><p><span>Small, &quot;Disciplinarity and Its Discontent&quot;</span></p></li><li><p><span>Klein, </span><em><span>Interdisciplining Digital Humanities</span></em></p></li></ul><hr /><h1 id='part-ii-excavation--forensics-chapters-7-10'><span>PART II: EXCAVATION &amp; FORENSICS (Chapters 7-10)</span></h1><p><em><span>How do we find, recover, and analyze digital artifacts?</span></em></p><h2 id='chapter-7-archaeological-methods-for-digital-artifacts'><span>Chapter 7: Archaeological Methods for Digital Artifacts</span></h2><p><strong><span>Author:</span></strong><span> [Digital archaeologist/technologist]</span></p><h3 id='contents-7'><span>Contents:</span></h3><ul><li><p><span>Adapting Physical Archaeology to Digital Contexts</span></p></li><li><p><strong><span>Stratigraphic Analysis:</span></strong><span> Layers of code, version histories, migrations</span></p></li><li><p><strong><span>Site Surveys:</span></strong><span> Mapping platform architectures, link networks, user communities</span></p></li><li><p><strong><span>Excavation Techniques:</span></strong><span> Web scraping, API harvesting, forensic recovery</span></p></li><li><p><strong><span>Provenance Research:</span></strong><span> Who made this? When? Why? For whom?</span></p></li><li><p><strong><span>Ethical Excavation:</span></strong><span> Consent, privacy, harm reduction</span></p></li></ul><p><strong><span>Case Studies:</span></strong></p><ul><li><p><span>The ONE Terabyte of Kilobyte Age Project (GeoCities excavation)</span></p></li><li><p><span>Wayback Machine&#39;s WARC Format (Web ARChive standard)</span></p></li><li><p><span>Flash Decompilation (Reverse-engineering SWF files)</span></p></li></ul><p><strong><span>Discussion Questions:</span></strong></p><ol start='' ><li><p><span>Is web scraping &quot;theft&quot; or &quot;preservation&quot;?</span></p></li><li><p><span>How do you excavate ephemeral content? (Stories, Snapchat, disappearing messages)</span></p></li></ol><p><strong><span>Exercise:</span></strong><span> Excavate a defunct platform using Wayback Machine + archive.org tools</span></p><p><strong><span>Further Reading:</span></strong></p><ul><li><p><span>Kirschenbaum, &quot;The .txtual Condition&quot;</span></p></li><li><p><span>Brügger, </span><em><span>The Archived Web</span></em></p></li><li><p><span>Ankerson, &quot;Writing Web Histories with an Eye on the Analog Past&quot;</span></p></li></ul><hr /><h2 id='chapter-8-digital-forensics-for-archaeobytologists'><span>Chapter 8: Digital Forensics for Archaeobytologists</span></h2><p><strong><span>Author:</span></strong><span> [Forensic technologist]</span></p><h3 id='contents-8'><span>Contents:</span></h3><ul><li><p><span>What Is Digital Forensics? (Recovering data, establishing authenticity, chain of custody)</span></p></li><li><p><span>Forensic Tools:</span></p><ul><li><p><strong><span>Hex Editors:</span></strong><span> Reading raw file structures</span></p></li><li><p><strong><span>Metadata Extraction:</span></strong><span> EXIF, file properties, timestamps</span></p></li><li><p><strong><span>Emulation:</span></strong><span> Running old software in sandboxes</span></p></li><li><p><strong><span>Reverse Engineering:</span></strong><span> Decompiling code, format reconstruction</span></p></li></ul></li><li><p><span>Authentication Challenges (How do you prove this is &quot;the original&quot;?)</span></p></li><li><p><span>Legal &amp; Ethical Issues (Copyright, privacy, hacking laws)</span></p></li></ul><p><strong><span>Case Studies:</span></strong></p><ul><li><p><span>The Domesday Project (1986 BBC multimedia project became unreadable by 2002; forensically recovered)</span></p></li><li><p><span>NSA&#39;s Tape Recovery (Decades-old tapes required custom hardware to read)</span></p></li><li><p><span>Flash Preservation (Ruffle emulator project)</span></p></li></ul><p><strong><span>Discussion Questions:</span></strong></p><ol start='' ><li><p><span>When does forensic recovery cross into hacking?</span></p></li><li><p><span>Can digital artifacts have &quot;authenticity&quot;? (Everything is a copy)</span></p></li></ol><p><strong><span>Exercise:</span></strong><span> Use forensic tools to recover deleted files from a disk image</span></p><p><strong><span>Further Reading:</span></strong></p><ul><li><p><span>Carrier, </span><em><span>File System Forensic Analysis</span></em></p></li><li><p><span>Kirschenbaum, </span><em><span>Mechanisms</span></em></p></li><li><p><span>McDonough et al., &quot;Preserving Virtual Worlds&quot;</span></p></li></ul><hr /><h2 id='chapter-9-the-custodial-filter---ethics-of-preservation'><span>Chapter 9: The Custodial Filter—Ethics of Preservation</span></h2><p><strong><span>Author:</span></strong><span> [Ethicist/archivist]</span></p><h3 id='contents-9'><span>Contents:</span></h3><ul><li><p><span>When Preservation Causes Harm (Revenge porn, doxxing, hate speech, trauma)</span></p></li><li><p><span>The Custodial Filter Framework:</span></p><ol start='' ><li><p><strong><span>Consent:</span></strong><span> Did creators consent to preservation?</span></p></li><li><p><strong><span>Context:</span></strong><span> Can we preserve context (or will it be misunderstood)?</span></p></li><li><p><strong><span>Harm Reduction:</span></strong><span> Does preservation harm individuals/communities?</span></p></li><li><p><strong><span>Public Interest:</span></strong><span> Is there cultural/historical value that outweighs harm?</span></p></li><li><p><strong><span>Right to Be Forgotten:</span></strong><span> When should things be allowed to disappear?</span></p></li></ol></li><li><p><span>Case Studies of Ethical Dilemmas</span></p></li><li><p><span>Policies for Memory Institutions</span></p></li></ul><p><strong><span>Case Studies:</span></strong></p><ul><li><p><span>Gamergate Harassment Archives (Preserve as evidence of harm? Or amplify abuse?)</span></p></li><li><p><span>Tumblr NSFW Purge (Sex workers&#39; livelihoods deleted; should archives rescue?)</span></p></li><li><p><span>9/11 Digital Archive (Preserving trauma with care, consent, embargo)</span></p></li></ul><p><strong><span>Discussion Questions:</span></strong></p><ol start='' ><li><p><span>Who decides what should be forgotten?</span></p></li><li><p><span>Can you preserve context when the platform is dead?</span></p></li></ol><p><strong><span>Exercise:</span></strong><span> Apply Custodial Filter to 10 controversial artifacts. Preserve or delete?</span></p><p><strong><span>Further Reading:</span></strong></p><ul><li><p><span>Caswell, &quot;Urgent Archives&quot;</span></p></li><li><p><span>Noble, </span><em><span>Algorithms of Oppression</span></em></p></li><li><p><span>Dunbar-Hester, &quot;Listening to Cybernetics&quot;</span></p></li></ul><hr /><h2 id='chapter-10-triage-workflow---from-discovery-to-preservation'><span>Chapter 10: Triage Workflow—From Discovery to Preservation</span></h2><p><strong><span>Author:</span></strong><span> [Archivist/project manager]</span></p><h3 id='contents-10'><span>Contents:</span></h3><ul><li><p><span>The Complete Triage Pipeline:</span></p><ol start='' ><li><p><strong><span>Discovery:</span></strong><span> Monitoring platforms for shutdown announcements</span></p></li><li><p><strong><span>Assessment:</span></strong><span> Applying triage criteria (significance, fragility, etc.)</span></p></li><li><p><strong><span>Mobilization:</span></strong><span> Recruiting volunteers, allocating resources</span></p></li><li><p><strong><span>Capture:</span></strong><span> Web scraping, API harvesting, community submissions</span></p></li><li><p><strong><span>Validation:</span></strong><span> Checking data integrity, metadata completeness</span></p></li><li><p><strong><span>Storage:</span></strong><span> Redundant backups, distributed preservation</span></p></li><li><p><strong><span>Access:</span></strong><span> Making artifacts retrievable (catalog, search, browse)</span></p></li><li><p><strong><span>Interpretation:</span></strong><span> Curating, contextualizing, exhibiting</span></p></li></ol></li><li><p><span>Tools &amp; Automation (Archive Team scripts, Webrecorder, Conifer)</span></p></li><li><p><span>Rapid Response Protocols (48-hour shutdown scenarios)</span></p></li></ul><p><strong><span>Case Studies:</span></strong></p><ul><li><p><span>Archive Team&#39;s Vine Rescue (200M videos saved in weeks)</span></p></li><li><p><span>Google+ Shutdown (Users had months&#39; notice; community coordination)</span></p></li><li><p><span>Flash&#39;s Death (Years of warning; community built Ruffle emulator)</span></p></li></ul><p><strong><span>Discussion Questions:</span></strong></p><ol start='' ><li><p><span>Can triage be fully automated? (Or does it require human judgment?)</span></p></li><li><p><span>What happens when you rescue something no one wants? (Hoarding vs. preservation)</span></p></li></ol><p><strong><span>Exercise:</span></strong><span> Design a rapid response plan for TikTok shutdown (hypothetical)</span></p><p><strong><span>Further Reading:</span></strong></p><ul><li><p><span>Archive Team documentation</span></p></li><li><p><span>Phillips &amp; Milner, </span><em><span>You Are Here: A Field Guide to the Internet</span></em></p></li><li><p><span>Brügger &amp; Schroeder, </span><em><span>The Web as History</span></em></p></li></ul><hr /><h1 id='part-iii-institution-building-chapters-11-14'><span>PART III: INSTITUTION BUILDING (Chapters 11-14)</span></h1><p><em><span>How do we build organizations that outlast us?</span></em></p><h2 id='chapter-11-sustainable-preservation-organizations-the-archive'><span>Chapter 11: Sustainable Preservation Organizations (The Archive)</span></h2><p><strong><span>Author:</span></strong><span> [Non-profit director/archivist]</span></p><h3 id='contents-11'><span>Contents:</span></h3><ul><li><p><span>Why Individual Heroism Fails (Burnout, death, loss of interest)</span></p></li><li><p><span>Institutional Design:</span></p><ul><li><p><strong><span>Governance Models:</span></strong><span> Non-profit, co-op, university-hosted, government</span></p></li><li><p><strong><span>Revenue Models:</span></strong><span> Donations, memberships, grants, earned revenue</span></p></li><li><p><strong><span>Technical Architecture:</span></strong><span> Centralized, federated, P2P, hybrid</span></p></li><li><p><strong><span>Succession Planning:</span></strong><span> What happens when founder leaves?</span></p></li></ul></li><li><p><span>Case Study Deep-Dives (Internet Archive, LOCKSS, Software Heritage)</span></p></li><li><p><span>10-Year Sustainability Planning</span></p></li></ul><p><strong><span>Case Studies:</span></strong></p><ul><li><p><span>Internet Archive: $40M budget, 70 employees, 25+ years, but single point of failure (San Francisco)</span></p></li><li><p><span>LOCKSS: 300 libraries, distributed redundancy, 20+ years</span></p></li><li><p><span>Perma.cc: University consortium, federated, member-funded</span></p></li></ul><p><strong><span>Discussion Questions:</span></strong></p><ol start='' ><li><p><span>Should preservation organizations be centralized (efficient) or distributed (resilient)?</span></p></li><li><p><span>How do you fund preservation work that never generates revenue?</span></p></li></ol><p><strong><span>Exercise:</span></strong><span> Design a preservation organization with 10-year budget and governance</span></p><p><strong><span>Further Reading:</span></strong></p><ul><li><p><span>Kahle, &quot;Preserving the Internet&quot;</span></p></li><li><p><span>Ostrom, </span><em><span>Governing the Commons</span></em></p></li><li><p><span>Benkler, </span><em><span>The Wealth of Networks</span></em></p></li></ul><hr /><h2 id='chapter-12-the-economics-of-sovereignty-the-anvil'><span>Chapter 12: The Economics of Sovereignty (The Anvil)</span></h2><p><strong><span>Author:</span></strong><span> [Entrepreneur/business scholar]</span></p><h3 id='contents-12'><span>Contents:</span></h3><ul><li><p><span>Can You Monetize Sovereignty? (Selling domains, hosting, tools without becoming a landlord)</span></p></li><li><p><span>Business Models That Work:</span></p><ul><li><p><strong><span>Open Core:</span></strong><span> Free software + paid managed services (Ghost, WordPress.com)</span></p></li><li><p><strong><span>Tooling Sales:</span></strong><span> Sell sovereignty-enabling products (themes, plugins, frameworks)</span></p></li><li><p><strong><span>Consulting:</span></strong><span> Help organizations build their own sovereignty</span></p></li><li><p><strong><span>Cooperatives:</span></strong><span> Member-owned businesses (Stocksy, Resonate)</span></p></li></ul></li><li><p><span>Business Models to Avoid:</span></p><ul><li><p><span>VC-funded startups (exit pressure → enshittification)</span></p></li><li><p><span>Surveillance advertising (violates Three Pillars)</span></p></li><li><p><span>Speculative models (blockchain domain squatting)</span></p></li></ul></li><li><p><span>Case Study Comparisons</span></p></li></ul><p><strong><span>Case Studies:</span></strong></p><ul><li><p><span>Ghost: Non-profit owns for-profit subsidiary, sustainable open source</span></p></li><li><p><span>Basecamp: Bootstrapped, calm company, but still a platform (customers don&#39;t own Ground)</span></p></li><li><p><span>ENS (.eth domains): Censorship-resistant, but speculative and exclusionary</span></p></li></ul><p><strong><span>Discussion Questions:</span></strong></p><ol start='' ><li><p><span>Can you be profitable AND principled?</span></p></li><li><p><span>Is &quot;open core&quot; exploitative? (Free users subsidize paying customers)</span></p></li></ol><p><strong><span>Exercise:</span></strong><span> Design a &quot;foundry&quot; business selling sovereignty tools</span></p><p><strong><span>Further Reading:</span></strong></p><ul><li><p><span>Rushkoff, </span><em><span>Throwing Rocks at the Google Bus</span></em></p></li><li><p><span>Doctorow, </span><em><span>The Internet Con</span></em></p></li><li><p><span>Scholz, </span><em><span>Platform Cooperativism</span></em></p></li></ul><hr /><h2 id='chapter-13-distributed-commons-governance-the-seed-bank'><span>Chapter 13: Distributed Commons Governance (The Seed Bank)</span></h2><p><strong><span>Author:</span></strong><span> [Commons scholar/Ostrom expert]</span></p><h3 id='contents-13'><span>Contents:</span></h3><ul><li><p><span>Why Commons? (What individuals can&#39;t do alone, markets won&#39;t fund, states won&#39;t prioritize)</span></p></li><li><p><span>Elinor Ostrom&#39;s 8 Design Principles Applied to Digital Preservation:</span></p><ol start='' ><li><p><span>Clear boundaries</span></p></li><li><p><span>Proportional equivalence (costs/benefits)</span></p></li><li><p><span>Collective choice</span></p></li><li><p><span>Monitoring</span></p></li><li><p><span>Graduated sanctions</span></p></li><li><p><span>Conflict resolution</span></p></li><li><p><span>Recognition of rights</span></p></li><li><p><span>Nested enterprises</span></p></li></ol></li><li><p><span>Case Study Comparisons (LOCKSS vs. Mastodon vs. IPFS)</span></p></li><li><p><span>Designing a Seed Bank (Distributed preservation commons)</span></p></li></ul><p><strong><span>Case Studies:</span></strong></p><ul><li><p><span>LOCKSS: Gold standard (applies all 8 principles)</span></p></li><li><p><span>Mastodon: Federation works, but governance failures (admin burnout, fragmentation)</span></p></li><li><p><span>IPFS: P2P storage, but no governance (files disappear if no one pins them)</span></p></li></ul><p><strong><span>Discussion Questions:</span></strong></p><ol start='' ><li><p><span>Can digital commons scale to millions of users?</span></p></li><li><p><span>How do you balance openness (anyone can join) with accountability (no bad actors)?</span></p></li></ol><p><strong><span>Exercise:</span></strong><span> Design a federated preservation network using Ostrom&#39;s principles</span></p><p><strong><span>Further Reading:</span></strong></p><ul><li><p><span>Ostrom, </span><em><span>Governing the Commons</span></em></p></li><li><p><span>Benkler, &quot;The Political Economy of Commons&quot;</span></p></li><li><p><span>Schneier, </span><em><span>Liars and Outliers</span></em></p></li></ul><hr /><h2 id='chapter-14-memory-institutions-for-the-digital-age-the-haunted-forest'><span>Chapter 14: Memory Institutions for the Digital Age (The Haunted Forest)</span></h2><p><strong><span>Author:</span></strong><span> [Museum curator/memory studies scholar]</span></p><h3 id='contents-14'><span>Contents:</span></h3><ul><li><p><span>What Is a Memory Institution? (Museum, archive, library, memorial)</span></p></li><li><p><span>Challenges of Digital Curation:</span></p><ul><li><p><strong><span>Decontextualization:</span></strong><span> Platform death erases context</span></p></li><li><p><strong><span>Illegibility:</span></strong><span> Requires dead software to read</span></p></li><li><p><strong><span>Scale:</span></strong><span> Millions of artifacts, limited curation capacity</span></p></li><li><p><strong><span>Ephemerality:</span></strong><span> Digital objects decay, migrate, mutate</span></p></li></ul></li><li><p><span>Curatorial Strategies:</span></p><ul><li><p><strong><span>Comprehensive:</span></strong><span> Preserve everything (Internet Archive model)</span></p></li><li><p><strong><span>Curated:</span></strong><span> Select representative artifacts (museum model)</span></p></li><li><p><strong><span>Community-Driven:</span></strong><span> User submissions (9/11 Digital Archive model)</span></p></li></ul></li><li><p><span>Technical Preservation (Screenshots → static → emulation → live preservation)</span></p></li></ul><p><strong><span>Case Studies:</span></strong></p><ul><li><p><span>Internet Archive Wayback Machine: Comprehensive, but no curation</span></p></li><li><p><span>The Strong Museum: Curated video game exhibits, playable</span></p></li><li><p><span>GeoCities Archive: Data dump, no interpretation</span></p></li></ul><p><strong><span>Discussion Questions:</span></strong></p><ol start='' ><li><p><span>Is the Wayback Machine a museum or a warehouse?</span></p></li><li><p><span>Who decides what&#39;s &quot;culturally significant&quot;?</span></p></li></ol><p><strong><span>Exercise:</span></strong><span> Design a museum exhibit for a murdered platform (Vine, Google Reader, etc.)</span></p><p><strong><span>Further Reading:</span></strong></p><ul><li><p><span>Drucker, &quot;Is There a &#39;Digital&#39; Art History?&quot;</span></p></li><li><p><span>Manoff, &quot;Theories of the Archive&quot;</span></p></li><li><p><span>Chun, &quot;The Enduring Ephemeral&quot;</span></p></li></ul><hr /><h1 id='part-iv-systems--movements-chapters-15-16'><span>PART IV: SYSTEMS &amp; MOVEMENTS (Chapters 15-16)</span></h1><p><em><span>How do we change the world?</span></em></p><h2 id='chapter-15-the-political-economy-of-digital-ground'><span>Chapter 15: The Political Economy of Digital Ground</span></h2><p><strong><span>Author:</span></strong><span> [Political economist/tech policy scholar]</span></p><h3 id='contents-15'><span>Contents:</span></h3><ul><li><p><span>Who Controls Digital Infrastructure?</span></p><ul><li><p><strong><span>Domains:</span></strong><span> ICANN, registrars (can seize, censor, rent-seek)</span></p></li><li><p><strong><span>Hosting:</span></strong><span> AWS, Cloudflare (can deplatform, surveil)</span></p></li><li><p><strong><span>Identity:</span></strong><span> Google, Facebook (control who you are)</span></p></li><li><p><strong><span>Payment:</span></strong><span> Visa, PayPal (can freeze accounts)</span></p></li></ul></li><li><p><span>Why Existing Alternatives Fail (ENS too speculative, Mastodon too complex, Tor too stigmatized)</span></p></li><li><p><span>Designing Sovereign Alternatives (Case studies + frameworks)</span></p></li><li><p><span>The Sovereignty Stack (Physical → Network → Identity → Storage → Application → Economic)</span></p></li></ul><p><strong><span>Case Studies:</span></strong></p><ul><li><p><span>DNS/ICANN: Centralized, subject to seizure, rent-seeking</span></p></li><li><p><span>ENS (.eth): Decentralized, but speculative and exclusionary</span></p></li><li><p><span>Mastodon: Federated, but admin power and fragmentation</span></p></li><li><p><span>Tor: Anonymous, but slow and stigmatized</span></p></li></ul><p><strong><span>Discussion Questions:</span></strong></p><ol start='' ><li><p><span>Is DNS reformable, or must it be replaced?</span></p></li><li><p><span>Can blockchain sovereignty avoid plutocracy?</span></p></li></ol><p><strong><span>Exercise:</span></strong><span> Redesign one layer of the sovereignty stack (domain, hosting, identity, etc.)</span></p><p><strong><span>Further Reading:</span></strong></p><ul><li><p><span>Lessig, </span><em><span>Code: Version 2.0</span></em></p></li><li><p><span>Schneier, </span><em><span>Data and Goliath</span></em></p></li><li><p><span>Doctorow, </span><em><span>The Internet Con</span></em></p></li></ul><hr /><h2 id='chapter-16-from-practice-to-discipline---movement-building'><span>Chapter 16: From Practice to Discipline—Movement Building</span></h2><p><strong><span>Author:</span></strong><span> [STS scholar/discipline historian]</span></p><h3 id='contents-16'><span>Contents:</span></h3><ul><li><p><span>How Disciplines Form (Boundaries, methods, institutions, professionalization)</span></p></li><li><p><span>Building Knowledge Infrastructure:</span></p><ul><li><p><span>Journals, conferences, textbooks, handbooks</span></p></li></ul></li><li><p><span>Institutional Anchors:</span></p><ul><li><p><span>Departments, programs, centers, labs</span></p></li></ul></li><li><p><span>Professional Pathways:</span></p><ul><li><p><span>Academic, curator, consultant, industry, non-profit, government</span></p></li></ul></li><li><p><span>Public Visibility:</span></p><ul><li><p><span>Books, podcasts, documentaries, op-eds, TED talks</span></p></li></ul></li><li><p><span>Policy Advocacy:</span></p><ul><li><p><span>Right to Archive Act, Platform Accountability, Digital Heritage Protection</span></p></li></ul></li><li><p><span>Timeline: 10-20 year roadmap to legitimacy</span></p></li></ul><p><strong><span>Case Studies:</span></strong></p><ul><li><p><span>Digital Humanities: 40-year slow burn</span></p></li><li><p><span>Data Science: Industry-led rapid professionalization (5 years)</span></p></li><li><p><span>STS: Coalition building across disciplines</span></p></li></ul><p><strong><span>Discussion Questions:</span></strong></p><ol start='' ><li><p><span>Should Archaeobytology be standalone or interdisciplinary?</span></p></li><li><p><span>Can we accelerate discipline formation? (What&#39;s the catalyst?)</span></p></li></ol><p><strong><span>Exercise:</span></strong><span> Design a 10-year movement strategy (conferences, journals, departments, advocacy)</span></p><p><strong><span>Further Reading:</span></strong></p><ul><li><p><span>Kuhn, </span><em><span>The Structure of Scientific Revolutions</span></em></p></li><li><p><span>Small, &quot;Disciplinarity and Its Discontent&quot;</span></p></li><li><p><span>Klein, </span><em><span>Interdisciplining Digital Humanities</span></em></p></li></ul><hr /><h1 id='part-v-public-scholarship--the-future-chapters-17-18'><span>PART V: PUBLIC SCHOLARSHIP &amp; THE FUTURE (Chapters 17-18)</span></h1><h2 id='chapter-17-the-public-intellectual-in-archaeobytology'><span>Chapter 17: The Public Intellectual in Archaeobytology</span></h2><p><strong><span>Author:</span></strong><span> [Public intellectual/journalist scholar]</span></p><h3 id='contents-17'><span>Contents:</span></h3><ul><li><p><span>Why Public Scholarship Matters (Academic work stays in journals; public work shapes culture)</span></p></li><li><p><span>Translating Research for Audiences:</span></p><ul><li><p><span>Academic: Journal articles (8,000 words, jargon, citations)</span></p></li><li><p><span>Practitioners: Trade publications (2,000 words, actionable)</span></p></li><li><p><span>Policymakers: Policy briefs (1,500 words, recommendations)</span></p></li><li><p><span>Public: Op-eds (800 words, urgent, accessible)</span></p></li><li><p><span>Social media: Threads (500 words, shareable)</span></p></li></ul></li><li><p><span>Building Platforms (Blog, newsletter, podcast, speaking circuit)</span></p></li><li><p><span>Media Engagement (Working with journalists, pitching op-eds)</span></p></li><li><p><span>Policy Influence (Testimony, whitepapers, model legislation)</span></p></li></ul><p><strong><span>Case Studies:</span></strong></p><ul><li><p><span>Cory Doctorow: Daily blog (Pluralistic), policy influence</span></p></li><li><p><span>Safiya Noble: Academic research → public book → Congressional testimony</span></p></li><li><p><span>Brewster Kahle: Built Internet Archive → evangelist for preservation</span></p></li><li><p><span>Zeynep Tufekci: Sociologist → </span><em><span>New York Times</span></em><span> columnist</span></p></li></ul><p><strong><span>Discussion Questions:</span></strong></p><ol start='' ><li><p><span>Can you be a rigorous scholar AND a public intellectual?</span></p></li><li><p><span>How do you balance tenure expectations with public impact?</span></p></li></ol><p><strong><span>Exercise:</span></strong><span> Write three versions of the same idea (academic article, op-ed, tweet thread)</span></p><p><strong><span>Further Reading:</span></strong></p><ul><li><p><span>Posner, </span><em><span>Public Intellectuals</span></em></p></li><li><p><span>Burawoy, &quot;For Public Sociology&quot;</span></p></li><li><p><span>McKenzie, &quot;How Academics Can Better Engage Media&quot;</span></p></li></ul><hr /><h2 id='chapter-18-forging-the-third-way---vision-for-a-post-platform-future'><span>Chapter 18: Forging the Third Way—Vision for a Post-Platform Future</span></h2><p><strong><span>Author:</span></strong><span> [Lead editor + multiple contributors]</span></p><h3 id='contents-18'><span>Contents:</span></h3><ul><li><p><span>What Is a &quot;Third Way&quot;? (Rejects platform capitalism AND tech solutionism)</span></p></li><li><p><span>Principles of Third Way Systems:</span></p><ul><li><p><span>Sovereignty without speculation</span></p></li><li><p><span>Connection without surveillance</span></p></li><li><p><span>Infrastructure without extraction</span></p></li></ul></li><li><p><span>Case Studies of Emerging Alternatives:</span></p><ul><li><p><span>Platform cooperatives (Stocksy, Resonate)</span></p></li><li><p><span>Federated networks (Mastodon, Matrix, PeerTube)</span></p></li><li><p><span>Commons infrastructure (LOCKSS, Software Heritage)</span></p></li><li><p><span>Open protocols (ActivityPub, IPFS, Solid)</span></p></li></ul></li><li><p><span>Integrated Design Framework (Technical + Governance + Economic + Movement)</span></p></li><li><p><span>The Next 50 Years: What We Must Build</span></p></li></ul><p><strong><span>Vision Statements from Multiple Contributors:</span></strong></p><ul><li><p><span>What would a sovereign social network look like?</span></p></li><li><p><span>What would a national digital archive system look like?</span></p></li><li><p><span>What would a movement for digital sovereignty look like?</span></p></li></ul><p><strong><span>Capstone Exercise:</span></strong>
+<span>Design a complete Third Way system (platform alternative, institutional infrastructure, or movement+policy package)</span></p><p><strong><span>Closing Essay: &quot;The Archaeobytologist&#39;s Manifesto&quot;</span></strong></p><ul><li><p><span>Own your Ground. Tell your story. Forge your future.</span></p></li><li><p><span>We are scholars and smiths, custodians and strategists.</span></p></li><li><p><span>We preserve what platforms murder. We build what outlasts us.</span></p></li><li><p><span>This is Archaeobytology.</span></p></li></ul><p><strong><span>Further Reading:</span></strong></p><ul><li><p><span>Rushkoff, </span><em><span>Throwing Rocks at the Google Bus</span></em></p></li><li><p><span>Doctorow, </span><em><span>The Internet Con</span></em></p></li><li><p><span>Benkler, </span><em><span>The Wealth of Networks</span></em></p></li><li><p><span>Schneier, </span><em><span>Data and Goliath</span></em></p></li><li><p><span>The entire bibliography from this course</span></p></li></ul><hr /><h1 id='appendices'><span>APPENDICES</span></h1><h2 id='appendix-a-glossary-of-terms'><span>Appendix A: Glossary of Terms</span></h2><ul><li><p><span>Archaeobyte, Vivibyte, Umbrabyte, Petribyte</span></p></li><li><p><span>Archive, Anvil, Triage, Custodial Filter</span></p></li><li><p><span>Three Pillars: Declaration, Connection, Ground</span></p></li><li><p><span>Seed Bank, Haunted Forest, Foundry</span></p></li><li><p><span>Platform Landlord, Digital Sovereignty, Institutional Void</span></p></li></ul><h2 id='appendix-b-essential-tools--resources'><span>Appendix B: Essential Tools &amp; Resources</span></h2><ul><li><p><span>Web archiving: Wayback Machine, Archive-It, Webrecorder, Conifer</span></p></li><li><p><span>Emulation: Ruffle (Flash), DOSBox, RetroArch</span></p></li><li><p><span>Forensics: Hex editors, metadata extractors, disk imaging</span></p></li><li><p><span>Community: Archive Team, Internet Archive, EFF</span></p></li></ul><h2 id='appendix-c-sample-syllabi'><span>Appendix C: Sample Syllabi</span></h2><ul><li><p><span>101-level: Introduction to Archaeobytology (undergraduate survey)</span></p></li><li><p><span>200-level: Methods in Digital Preservation (hands-on technical)</span></p></li><li><p><span>300-level: Institution Building (graduate seminar)</span></p></li></ul><h2 id='appendix-d-teaching-resources'><span>Appendix D: Teaching Resources</span></h2><ul><li><p><span>Discussion prompts</span></p></li><li><p><span>Assignment templates</span></p></li><li><p><span>Grading rubrics</span></p></li><li><p><span>Case study datasets</span></p></li></ul><h2 id='appendix-e-professional-resources'><span>Appendix E: Professional Resources</span></h2><ul><li><p><span>Career pathways (academic, curatorial, consulting, industry)</span></p></li><li><p><span>Job boards and listings</span></p></li><li><p><span>Professional societies</span></p></li><li><p><span>Conferences and journals</span></p></li></ul><hr /><h2 id='comprehensive-bibliography-200-sources'><span>Comprehensive Bibliography (200+ sources)</span></h2><h3 id='foundational-theory'><span>Foundational Theory</span></h3><ul><li><p><span>Derrida, </span><em><span>Archive Fever</span></em></p></li><li><p><span>Foucault, </span><em><span>The Archaeology of Knowledge</span></em></p></li><li><p><span>Kuhn, </span><em><span>The Structure of Scientific Revolutions</span></em></p></li><li><p><span>Benjamin, &quot;The Work of Art in the Age of Mechanical Reproduction&quot;</span></p></li></ul><h3 id='media-archaeology'><span>Media Archaeology</span></h3><ul><li><p><span>Ernst, </span><em><span>Digital Memory and the Archive</span></em></p></li><li><p><span>Parikka, </span><em><span>What Is Media Archaeology?</span></em></p></li><li><p><span>Zielinski, </span><em><span>Deep Time of the Media</span></em></p></li><li><p><span>Huhtamo &amp; Parikka, </span><em><span>Media Archaeology: Approaches, Applications, Implications</span></em></p></li></ul><h3 id='digital-preservation'><span>Digital Preservation</span></h3><ul><li><p><span>Kirschenbaum, </span><em><span>Mechanisms</span></em></p></li><li><p><span>Chun, &quot;The Enduring Ephemeral&quot;</span></p></li><li><p><span>Brügger, </span><em><span>The Archived Web</span></em></p></li><li><p><span>Kahle, &quot;Preserving the Internet&quot;</span></p></li></ul><h3 id='platform-studies--critique'><span>Platform Studies &amp; Critique</span></h3><ul><li><p><span>Zuboff, </span><em><span>The Surveillance Capitalism</span></em></p></li><li><p><span>Noble, </span><em><span>Algorithms of Oppression</span></em></p></li><li><p><span>Gillespie, </span><em><span>Custodians of the Internet</span></em></p></li><li><p><span>Doctorow, </span><em><span>The Internet Con</span></em></p></li></ul><h3 id='commons--governance'><span>Commons &amp; Governance</span></h3><ul><li><p><span>Ostrom, </span><em><span>Governing the Commons</span></em></p></li><li><p><span>Benkler, </span><em><span>The Wealth of Networks</span></em></p></li><li><p><span>Bollier, </span><em><span>Think Like a Commoner</span></em></p></li><li><p><span>Schneier, </span><em><span>Liars and Outliers</span></em></p></li></ul><h3 id='tech-policy--ethics'><span>Tech Policy &amp; Ethics</span></h3><ul><li><p><span>Lessig, </span><em><span>Code: Version 2.0</span></em></p></li><li><p><span>Schneier, </span><em><span>Data and Goliath</span></em></p></li><li><p><span>Véliz, </span><em><span>Privacy Is Power</span></em></p></li><li><p><span>Rushkoff, </span><em><span>Throwing Rocks at the Google Bus</span></em></p></li></ul><h3 id='craft--making'><span>Craft &amp; Making</span></h3><ul><li><p><span>Sennett, </span><em><span>The Craftsman</span></em></p></li><li><p><span>Ratto, &quot;Critical Making&quot;</span></p></li><li><p><span>Pye, </span><em><span>The Nature and Art of Workmanship</span></em></p></li></ul><h3 id='public-scholarship'><span>Public Scholarship</span></h3><ul><li><p><span>Posner, </span><em><span>Public Intellectuals</span></em></p></li><li><p><span>Burawoy, &quot;For Public Sociology&quot;</span></p></li></ul><h3 id='discipline-formation'><span>Discipline Formation</span></h3><ul><li><p><span>Small, &quot;Disciplinarity and Its Discontent&quot;</span></p></li><li><p><span>Klein, </span><em><span>Interdisciplining Digital Humanities</span></em></p></li></ul><hr /><h2 id='about-the-editors'><span>About the Editors</span></h2><p><span>[To be filled with actual contributors when book is commissioned]</span></p><hr /><h2 id='index'><span>Index</span></h2><p><span>[Comprehensive index of terms, concepts, people, platforms, organizations]</span></p><hr /><p><strong><span>End of Textbook Outline</span></strong></p><hr /><h2 id='publication-strategy'><span>Publication Strategy</span></h2><h3 id='open-access-model-recommended'><span>Open Access Model (Recommended)</span></h3><ul><li><p><strong><span>Publisher:</span></strong><span> MIT Press Open, punctum books, or self-published with ISBN</span></p></li><li><p><strong><span>Format:</span></strong><span> Free PDF + print-on-demand (~$40 paperback, $80 hardcover)</span></p></li><li><p><strong><span>Companion Website:</span></strong><span> archaeobytology.org</span></p><ul><li><p><span>Datasets for exercises</span></p></li><li><p><span>Video tutorials</span></p></li><li><p><span>Community forum</span></p></li><li><p><span>Teaching resources</span></p></li></ul></li></ul><h3 id='why-open-access'><span>Why Open Access?</span></h3><ul><li><p><span>Embodies Three Pillars (accessible Ground, not paywalled)</span></p></li><li><p><span>Maximizes adoption (professors can assign without cost barrier)</span></p></li><li><p><span>Builds discipline faster (more readers = more practitioners)</span></p></li><li><p><span>Can still generate revenue (print sales, institutional sales, consulting)</span></p></li></ul><h3 id='companion-course-materials'><span>Companion Course Materials</span></h3><ul><li><p><strong><span>Instructor&#39;s Guide</span></strong><span> (200 pages: lecture notes, answer keys, grading rubrics)</span></p></li><li><p><strong><span>Student Workbook</span></strong><span> (100 pages: exercises, templates, checklists)</span></p></li><li><p><strong><span>Case Study Database</span></strong><span> (Searchable repository of 100+ platform deaths with teaching notes)</span></p></li><li><p><strong><span>Video Lectures</span></strong><span> (YouTube series: 18 chapters × 20 min = 6 hours)</span></p></li></ul><hr /><h2 id='marketing--adoption-strategy'><span>Marketing &amp; Adoption Strategy</span></h2><h3 id='target-audiences'><span>Target Audiences:</span></h3><ol start='' ><li><p><strong><span>Universities:</span></strong><span> History, Library Science, Media Studies, CS, STS programs</span></p></li><li><p><strong><span>Practitioners:</span></strong><span> Archivists, curators, preservation specialists</span></p></li><li><p><strong><span>Industry:</span></strong><span> Tech companies needing institutional memory</span></p></li><li><p><strong><span>General Public:</span></strong><span> Trade press reviews, public library acquisition</span></p></li></ol><h3 id='launch-strategy'><span>Launch Strategy:</span></h3><ul><li><p><span>Announce at major conferences (ADHO, SAA, 4S)</span></p></li><li><p><span>Op-eds in </span><em><span>Chronicle of Higher Education</span></em><span>, </span><em><span>Inside Higher Ed</span></em></p></li><li><p><span>Social media campaign (Twitter threads on each chapter)</span></p></li><li><p><span>Free chapter downloads (Chapter 1 + one technical chapter)</span></p></li><li><p><span>Author talks at 20 universities (book tour)</span></p></li></ul><h3 id='adoption-metrics-5-year-goals'><span>Adoption Metrics (5-year goals):</span></h3><ul><li><p><span>50 universities adopt (syllabi on record)</span></p></li><li><p><span>5,000 copies circulated (print + PDF downloads)</span></p></li><li><p><span>10 derivative courses developed (200-level, 400-level variations)</span></p></li><li><p><span>First Archaeobytology departments launched (using textbook as foundation)</span></p></li></ul><hr /><p><strong><span>This textbook would be ~600-700 pages and serve as the definitive introduction to the field, used for decades as Archaeobytology becomes a recognized discipline.</span></strong></p></div></div>
 </body>
 </html>

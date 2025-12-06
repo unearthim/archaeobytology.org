@@ -1,698 +1,924 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index | Archaeobytology</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Lora', serif; line-height: 1.8; color: #2E2E2E; background: #F8F7F4; padding: 2rem 1rem; }
-        .container { max-width: 800px; margin: 0 auto; background: #FFFFFF; padding: 3rem; border-radius: 15px; box-shadow: 0 4px 20px rgba(46,46,46,0.1); border: 1px solid #D1D1D1; }
-        h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; color: #2E2E2E; margin-top: 2rem; margin-bottom: 1rem; line-height: 1.3; }
-        h1 { font-size: 2.5rem; font-weight: 700; margin-top: 0; border-bottom: 3px solid #A1824A; padding-bottom: 0.5rem; }
-        h2 { font-size: 2rem; font-weight: 700; margin-top: 2.5rem; }
-        h3 { font-size: 1.5rem; font-weight: 600; color: #5A7D8C; }
-        h4 { font-size: 1.25rem; font-weight: 600; color: #5A7D8C; }
-        p { margin-bottom: 1.25rem; font-size: 1.1rem; }
-        a { color: #A93400; text-decoration: underline; transition: color 0.3s; }
-        a:hover { color: #A95C3D; }
-        strong { font-weight: 600; }
-        em { font-style: italic; }
-        code { font-family: 'Courier New', monospace; background: #F8F7F4; padding: 0.2rem 0.4rem; border-radius: 3px; border: 1px solid #D1D1D1; }
-        blockquote { border-left: 4px solid #A1824A; padding: 1rem 1.5rem; margin: 1.5rem 0; font-style: italic; color: #5A7D8C; background: #F8F7F4; border-radius: 0 8px 8px 0; }
-        hr { border: none; border-top: 2px solid #D1D1D1; margin: 2rem 0; }
-        .nav { text-align: center; padding: 1rem 0; border-top: 2px solid #D1D1D1; margin-top: 2rem; }
-        .nav a { display: inline-block; padding: 0.75rem 1.5rem; background: #A93400; color: #F8F7F4; text-decoration: none; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 600; margin: 0.5rem; }
-        .nav a:hover { background: #A95C3D; }
-    </style>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'><style type='text/css'>html {overflow-x: initial !important;}</style>
+<style type='text/css'  id="style-base">:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, "Segoe UI Emoji", "SF Pro", sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p *, #write.first-line-indent svg * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
+#write svg h1, #write svg h2, #write svg h3, #write svg h4, #write svg h5, #write svg h6, #write svg p { position: static; }
+.nodeLabel p { padding-right: 2px; padding-left: 2px; }
+.typora-export .nodeLabel p { padding-right: 0px; padding-left: 0px; }
+foreignobject { overflow: visible; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+li p { orphans: 1; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.mermaid-svg { margin: auto; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left: 0.25em solid rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
+
+</style>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;display=swap' type='text/css' />
+<style type='text/css'  id="style-theme_css">/*
+ * Unearth Light Theme for Typora
+ * Based on the Foundry Blueprint 4.1 - unearth.im
+ * 
+ * Color Palette:
+ * - Parchment (Background): #F8F7F4
+ * - Charcoal (Text): #2E2E2E
+ * - Burnt Sienna (Primary Accent): #A93400
+ * - Antique Gold (Secondary Accent): #A1824A
+ * - Slate Blue (Functional Accent): #5A7D8C
+ * - Light Stone: #D1D1D1
+ * - Medium Stone: #8E8E8E
+ *
+ * Typography:
+ * - Narrative: Lora (serif)
+ * - UI/Headlines: Inter (sans-serif)
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+:root {
+    --parchment: #F8F7F4;
+    --charcoal: #2E2E2E;
+    --burnt-sienna: #A93400;
+    --sienna-hover: #A95C3D;
+    --accent-color: #A95C3D;
+    --antique-gold: #A1824A;
+    --slate-blue: #5A7D8C;
+    --meta-text-color: #5A7D8C;
+    --light-stone: #D1D1D1;
+    --border-color: #e0e0e0;
+    --medium-stone: #8E8E8E;
+    --white: #FFFFFF;
+    
+    --font-narrative: 'Lora', Georgia, serif;
+    --font-ui: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
+}
+
+/* ========================================
+   BASE STYLES
+   ======================================== */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-narrative);
+    color: var(--charcoal);
+    background-color: var(--parchment);
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#write {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 64px 80px 100px;
+}
+
+/* ========================================
+   HEADINGS
+   ======================================== */
+
+h1 {
+    font-family: var(--font-narrative);
+    color: var(--charcoal);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-family: var(--font-narrative);
+    color: var(--charcoal);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--light-stone);
+    padding-bottom: 0.5rem;
+}
+
+h3, h4, h5, h6 {
+    font-family: var(--font-ui);
+    color: var(--charcoal);
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 1.25rem;
+    color: var(--charcoal);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+    color: var(--burnt-sienna);
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+h5 {
+    font-size: 1.1rem;
+    color: var(--slate-blue);
+}
+
+h6 {
+    font-size: 1rem;
+    color: var(--medium-stone);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ========================================
+   PARAGRAPHS & TEXT
+   ======================================== */
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.9;
+}
+
+strong, b {
+    font-weight: 700;
+    color: var(--charcoal);
+}
+
+em, i {
+    font-style: italic;
+}
+
+/* ========================================
+   LINKS
+   ======================================== */
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-color);
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    background-color: rgba(169, 92, 61, 0.1);
+    border-bottom-color: transparent;
+}
+
+/* ========================================
+   BLOCKQUOTES
+   ======================================== */
+
+blockquote {
+    margin: 2rem 0;
+    padding: 1.5rem 2rem;
+    border-left: 4px solid var(--antique-gold);
+    background-color: rgba(161, 130, 74, 0.08);
+    border-radius: 0 4px 4px 0;
+    color: var(--charcoal);
+}
+
+blockquote p {
+    margin: 0.5rem 0;
+    line-height: 1.8;
+}
+
+blockquote blockquote {
+    margin-left: 1rem;
+    border-left-color: var(--slate-blue);
+    background-color: rgba(90, 125, 140, 0.08);
+}
+
+/* ========================================
+   CODE
+   ======================================== */
+
+code {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    background-color: rgba(209, 209, 209, 0.4);
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    color: var(--burnt-sienna);
+}
+
+/* Code blocks */
+pre {
+    font-family: var(--font-mono);
+    background-color: var(--charcoal);
+    color: var(--parchment);
+    padding: 1rem 1.25rem;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    line-height: 1.6;
+}
+
+pre code {
+    background: none;
+    padding: 0;
+    color: inherit;
+    font-size: 0.875rem;
+}
+
+/* Code block with line numbers */
+.md-fences {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    background-color: var(--charcoal);
+    color: var(--parchment);
+    border: none;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1.5rem 0;
+}
+
+.CodeMirror-lines {
+    padding: 0;
+}
+
+/* ========================================
+   LISTS
+   ======================================== */
+
+ul, ol {
+    padding-left: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+li {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.9;
+}
+
+li > ul, li > ol {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+li > ul > li, li > ol > li {
+    margin-bottom: 0.5rem;
+}
+
+/* Unordered list markers */
+ul > li::marker {
+    color: var(--burnt-sienna);
+}
+
+/* Ordered list markers */
+ol > li::marker {
+    color: var(--antique-gold);
+    font-family: var(--font-ui);
+    font-weight: 600;
+}
+
+/* Task lists */
+.task-list-item {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.task-list-item input[type="checkbox"] {
+    margin-right: 0.5rem;
+    accent-color: var(--burnt-sienna);
+}
+
+/* ========================================
+   HORIZONTAL RULE
+   ======================================== */
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, var(--light-stone), var(--antique-gold), var(--light-stone));
+    margin: 2.5rem 0;
+}
+
+/* ========================================
+   TABLES
+   ======================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-family: var(--font-ui);
+    font-size: 0.9rem;
+}
+
+thead {
+    background-color: var(--charcoal);
+    color: var(--parchment);
+}
+
+th {
+    font-weight: 600;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--charcoal);
+}
+
+td {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--light-stone);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(209, 209, 209, 0.2);
+}
+
+tbody tr:hover {
+    background-color: rgba(161, 130, 74, 0.1);
+}
+
+/* ========================================
+   IMAGES
+   ======================================== */
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 1rem 0;
+    box-shadow: 0 2px 8px rgba(46, 46, 46, 0.1);
+}
+
+/* Image captions */
+figure {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+figcaption {
+    font-family: var(--font-ui);
+    font-size: 0.875rem;
+    color: var(--medium-stone);
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* ========================================
+   FOOTNOTES
+   ======================================== */
+
+.footnotes {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--light-stone);
+}
+
+.footnotes h2 {
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
+.footnotes ol {
+    padding-left: 20px;
+    color: #555;
+}
+
+.footnotes li {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.footnotes p {
+    font-size: 0.85rem;
+    margin-bottom: 0;
+}
+
+.footnote-ref, sup a {
+    font-family: var(--font-ui);
+    font-size: 0.8em;
+    font-weight: 600;
+    vertical-align: super;
+    color: var(--burnt-sienna);
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.footnote-ref:hover, sup a:hover {
+    background-color: transparent;
+}
+
+sup.md-footnote {
+    font-family: var(--font-ui);
+    font-size: 0.8em;
+    font-weight: 600;
+    color: var(--burnt-sienna);
+    background-color: transparent;
+    padding: 0;
+}
+
+/* ========================================
+   DEFINITION LISTS
+   ======================================== */
+
+dl {
+    margin: 1rem 0;
+}
+
+dt {
+    font-family: var(--font-ui);
+    font-weight: 700;
+    color: var(--burnt-sienna);
+    margin-top: 1rem;
+}
+
+dd {
+    margin-left: 1.5rem;
+    margin-top: 0.25rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--light-stone);
+}
+
+/* ========================================
+   MARK / HIGHLIGHT
+   ======================================== */
+
+mark {
+    background-color: rgba(161, 130, 74, 0.3);
+    color: var(--charcoal);
+    padding: 0.1rem 0.3rem;
+    border-radius: 2px;
+}
+
+/* ========================================
+   STRIKETHROUGH
+   ======================================== */
+
+del, s {
+    color: var(--medium-stone);
+    text-decoration: line-through;
+}
+
+/* ========================================
+   KEYBOARD
+   ======================================== */
+
+kbd {
+    font-family: var(--font-ui);
+    font-size: 0.85em;
+    background-color: var(--light-stone);
+    border: 1px solid var(--medium-stone);
+    border-radius: 3px;
+    padding: 0.1rem 0.4rem;
+    box-shadow: 0 1px 2px rgba(46, 46, 46, 0.1);
+}
+
+/* ========================================
+   ABBREVIATIONS
+   ======================================== */
+
+abbr {
+    text-decoration: underline dotted var(--slate-blue);
+    cursor: help;
+}
+
+/* ========================================
+   SELECTION
+   ======================================== */
+
+::selection {
+    background-color: rgba(169, 52, 0, 0.2);
+    color: var(--charcoal);
+}
+
+::-moz-selection {
+    background-color: rgba(169, 52, 0, 0.2);
+    color: var(--charcoal);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - SIDEBAR
+   ======================================== */
+
+#typora-sidebar {
+    background-color: var(--parchment);
+    border-right: 1px solid var(--light-stone);
+}
+
+.sidebar-content {
+    font-family: var(--font-ui);
+}
+
+.file-tree-node.active > .file-node-content {
+    background-color: rgba(169, 52, 0, 0.1);
+    color: var(--burnt-sienna);
+}
+
+.file-tree-node:hover > .file-node-content {
+    background-color: rgba(209, 209, 209, 0.3);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - SOURCE MODE
+   ======================================== */
+
+.cm-s-typora-default .cm-header {
+    color: var(--burnt-sienna);
+}
+
+.cm-s-typora-default .cm-link {
+    color: var(--slate-blue);
+}
+
+.cm-s-typora-default .cm-string {
+    color: var(--antique-gold);
+}
+
+.cm-s-typora-default .cm-comment {
+    color: var(--medium-stone);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - FOCUS MODE
+   ======================================== */
+
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) * {
+    color: var(--light-stone) !important;
+}
+
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) img {
+    opacity: 0.5;
+}
+
+/* ========================================
+   TYPORA SPECIFIC - MEGAMENU
+   ======================================== */
+
+.megamenu-menu-panel {
+    background-color: var(--parchment);
+    font-family: var(--font-ui);
+}
+
+.megamenu-menu-panel .btn {
+    background-color: var(--burnt-sienna);
+    color: var(--parchment);
+}
+
+.megamenu-menu-panel .btn:hover {
+    background-color: var(--sienna-hover);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - SEARCH
+   ======================================== */
+
+#md-searchpanel {
+    background-color: var(--parchment);
+    border-bottom: 1px solid var(--light-stone);
+}
+
+#md-searchpanel input {
+    font-family: var(--font-ui);
+    background-color: var(--white);
+    border: 1px solid var(--light-stone);
+    border-radius: 4px;
+}
+
+#md-searchpanel input:focus {
+    border-color: var(--burnt-sienna);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(169, 52, 0, 0.15);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - TOOLTIP
+   ======================================== */
+
+.md-hover-tip .md-arrow:after {
+    background-color: var(--charcoal);
+}
+
+.md-hover-tip .code-tooltip-content {
+    background-color: var(--charcoal);
+    color: var(--parchment);
+    font-family: var(--font-ui);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - META BLOCK
+   ======================================== */
+
+.md-meta-block {
+    background-color: rgba(209, 209, 209, 0.3);
+    border-radius: 6px;
+    padding: 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--medium-stone);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - TABLE OF CONTENTS
+   ======================================== */
+
+.md-toc {
+    font-family: var(--font-ui);
+}
+
+.md-toc-h1 {
+    font-weight: 700;
+    color: var(--charcoal);
+}
+
+.md-toc-h2 {
+    font-weight: 600;
+    color: var(--burnt-sienna);
+}
+
+.md-toc-h3, .md-toc-h4, .md-toc-h5, .md-toc-h6 {
+    color: var(--medium-stone);
+}
+
+/* ========================================
+   SCROLLBAR
+   ======================================== */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--parchment);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--light-stone);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--medium-stone);
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+
+@media print {
+    html {
+        font-size: 12pt;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+    
+    #write {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        color: black;
+        page-break-after: avoid;
+    }
+    
+    pre, blockquote {
+        page-break-inside: avoid;
+    }
+    
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+    
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        color: #666;
+    }
+}
+</style>
+<style type='text/css'  id="style-lp">ol, ul {padding-left: 40px}</style>
+
+<title>TEXTBOOK-Index</title>
 </head>
-<body>
-    <div class="container">
-        <article>
-<h1>Index</h1>
-
-<h2>Core Concepts</h2>
-
-<p>
-<strong>Archaeobyte</strong> - Digital artifact that was once alive, died through platform shutdown or obsolescence, and has been preserved in some form
-</p>
-
-<p>
-<strong>Archaeobytology</strong> - The study and practice of excavating, preserving, interpreting, and building with digital artifacts, particularly those murdered by platforms
-</p>
-
-<p>
-<strong>Anvil, The</strong> - The creative/building practice of Archaeobytology; forging tools, protocols, and institutions that embody digital sovereignty
-</p>
-
-<p>
-<strong>Archive, The</strong> - The preservation/memory practice of Archaeobytology; excavating and maintaining murdered digital artifacts
-</p>
-
-<p>
-<strong>Bit Rot</strong> - Gradual degradation of digital storage media leading to data loss
-</p>
-
-<p>
-<strong>Chain of Custody</strong> - Documentation of who handled an artifact and when, essential for forensic integrity
-</p>
-
-<p>
-<strong>Context Collapse</strong> - When content created for specific audience becomes accessible to unintended audiences (e.g., private forum posts made public in archive)
-</p>
-
-<p>
-<strong>Custodial Filter, The</strong> - Five-question ethical framework for triage decisions (significance, fragility, feasibility, redundancy, ethics)
-</p>
-
-<p>
-<strong>Digital Ground</strong> - Infrastructure and storage a user controls; Third Pillar of sovereignty
-</p>
-
-<p>
-<strong>Digital Sovereignty</strong> - Ability to exist, communicate, and build in digital space without corporate gatekeeping; embodied in Three Pillars
-</p>
-
-<p>
-<strong>Dual Soul</strong> - Archaeobytology's integrated practice of preservation (Archive) and creation (Anvil)
-</p>
-
-<p>
-<strong>Emulation</strong> - Running old software/platforms on modern systems by simulating original hardware/OS
-</p>
-
-<p>
-<strong>Format Migration</strong> - Converting files from obsolete formats to current standards
-</p>
-
-<p>
-<strong>Link Rot</strong> - URLs breaking over time as sites move, reorganize, or disappear
-</p>
-
-<p>
-<strong>Murdered Platform</strong> - Platform deliberately killed by corporate decision, not natural obsolescence
-</p>
-
-<p>
-<strong>Petribyte</strong> - Digital artifact so old and well-preserved it's achieved monument status (like stone tablets)
-</p>
-
-<p>
-<strong>Platform Death</strong> - Shutdown of digital platform resulting in loss of hosted content and communities
-</p>
-
-<p>
-<strong>POSSE</strong> - "Post On your Site, Syndicate Elsewhere" - IndieWeb practice of owning original content
-</p>
-
-<p>
-<strong>Provenance</strong> - Documentation of artifact's origin, creation, and history
-</p>
-
-<p>
-<strong>Shadow Preservation</strong> - Archiving content without explicit permission, often in legal gray areas
-</p>
-
-<p>
-<strong>Stratigraphic Analysis</strong> - Studying layers of digital artifacts to understand temporal and contextual relationships
-</p>
-
-<p>
-<strong>Surveillance Capitalism</strong> - Business model extracting behavioral data for profit (Zuboff)
-</p>
-
-<p>
-<strong>Triage</strong> - Systematic methodology for deciding what to preserve when resources are scarce
-</p>
-
-<p>
-<strong>Umbrabyte</strong> - Digital artifact that's technically dead but exists in fragmentary form; haunting but not fully preserved
-</p>
-
-<p>
-<strong>Vivibyte</strong> - Digital artifact currently alive but endangered by platform instability
-</p>
-
-<p>
-<strong>Web Scraping</strong> - Automated extraction of website content for preservation
-</p>
-
-<h2>Three Pillars of Digital Sovereignty</h2>
-
-<p>
-<strong>Pillar 1: Declaration (I Am)</strong> - Self-owned identity and persistent presence without platform permission
-</p>
-
-<p>
-<strong>Pillar 2: Connection (Instant Message)</strong> - Direct communication and portable relationships without corporate intermediation
-</p>
-
-<p>
-<strong>Pillar 3: Ground (Digital Real Estate)</strong> - Owned infrastructure, data, and domains; ability to migrate without loss
-</p>
-
-<h2>Four Institutions</h2>
-
-<p>
-<strong>The Archive</strong> - Preservation organization; saves murdered platforms and maintains artifacts for decades
-</p>
-
-<p>
-<strong>The Anvil</strong> - Profitable business building sovereign tools/platforms while embodying Three Pillars
-</p>
-
-<p>
-<strong>The Seed Bank</strong> - Distributed commons governance structure; peer-to-peer preservation without single point of failure
-</p>
-
-<p>
-<strong>The Haunted Forest</strong> - Memory institution (museum/memorial); curates and interprets preserved artifacts for public
-</p>
-
-<h2>Key Organizations</h2>
-
-<p>
-<strong>Archive Team</strong> - Guerrilla digital archiving collective that mobilizes to rescue dying platforms
-</p>
-
-<p>
-<strong>Creative Commons</strong> - Organization providing open licensing frameworks for content sharing
-</p>
-
-<p>
-<strong>Electronic Frontier Foundation (EFF)</strong> - Digital rights advocacy organization
-</p>
-
-<p>
-<strong>Internet Archive</strong> - Non-profit digital library providing free access to websites, books, media, and software
-</p>
-
-<p>
-<strong>Library of Congress</strong> - U.S. national library with extensive digital preservation programs
-</p>
-
-<p>
-<strong>Mozilla Foundation</strong> - Non-profit supporting open web technologies and user sovereignty
-</p>
-
-<p>
-<strong>Wikimedia Foundation</strong> - Operates Wikipedia and sister projects; model of commons governance
-</p>
-
-<h2>Technologies and Protocols</h2>
-
-<p>
-<strong>ActivityPub</strong> - W3C standard for federated social networking (used by Mastodon, Pixelfed, PeerTube)
-</p>
-
-<p>
-<strong>Archive-It</strong> - Web archiving service provided by Internet Archive
-</p>
-
-<p>
-<strong>ArchiveBox</strong> - Open-source self-hosted web archiving tool
-</p>
-
-<p>
-<strong>BitTorrent</strong> - Peer-to-peer file sharing protocol used for distributed preservation
-</p>
-
-<p>
-<strong>DNS (Domain Name System)</strong> - Internet addressing system (centralized, vulnerable to control)
-</p>
-
-<p>
-<strong>Emularity</strong> - JavaScript emulator framework allowing old software to run in web browsers
-</p>
-
-<p>
-<strong>ENS (Ethereum Name Service)</strong> - Blockchain-based naming system for decentralized identity
-</p>
-
-<p>
-<strong>Flashpoint</strong> - Preservation project saving Flash games and animations
-</p>
-
-<p>
-<strong>Ghost</strong> - Open-source publishing platform supporting custom domains and data export
-</p>
-
-<p>
-<strong>IPFS (InterPlanetary File System)</strong> - Peer-to-peer distributed file system for permanent web storage
-</p>
-
-<p>
-<strong>Matrix</strong> - Open protocol for federated, end-to-end encrypted communication
-</p>
-
-<p>
-<strong>Mastodon</strong> - Federated social network using ActivityPub protocol
-</p>
-
-<p>
-<strong>Nextcloud</strong> - Open-source self-hosted productivity platform (alternative to Google Workspace)
-</p>
-
-<p>
-<strong>Obsidian</strong> - Knowledge management app storing files locally in Markdown (data sovereignty)
-</p>
-
-<p>
-<strong>RSS (Really Simple Syndication)</strong> - Open protocol for content syndication and subscriptions
-</p>
-
-<p>
-<strong>Signal</strong> - End-to-end encrypted messaging app using Signal Protocol
-</p>
-
-<p>
-<strong>WARC (Web ARChive format)</strong> - ISO standard file format for web archiving
-</p>
-
-<p>
-<strong>Wayback Machine</strong> - Internet Archive's web page archiving service (800+ billion pages)
-</p>
-
-<p>
-<strong>WebRecorder</strong> - Tool for high-fidelity web archiving including dynamic content
-</p>
-
-<p>
-<strong>WordPress</strong> - Open-source content management system powering 40%+ of web
-</p>
-
-<p>
-<strong>wget</strong> - Command-line tool for downloading websites
-</p>
-
-<h2>Platforms (Murdered or Endangered)</h2>
-
-<p>
-<strong>AOL (America Online)</strong> - Early internet service provider; email service declined/abandoned
-</p>
-
-<p>
-<strong>Blogger</strong> - Google-owned blogging platform; free but corporate-controlled
-</p>
-
-<p>
-<strong>Discord</strong> - Proprietary chat platform; communities at risk if platform shuts down
-</p>
-
-<p>
-<strong>Ello</strong> - Anti-advertising social network; failed to achieve sustainability
-</p>
-
-<p>
-<strong>Facebook/Meta</strong> - Social media monopoly; extractive business model, surveillance capitalism
-</p>
-
-<p>
-<strong>Flickr</strong> - Photo sharing platform; multiple ownership changes threatened survival
-</p>
-
-<p>
-<strong>FriendFeed</strong> - Social aggregation platform; acquired and killed by Facebook (2009)
-</p>
-
-<p>
-<strong>GeoCities</strong> - Early web hosting service; murdered by Yahoo in 2009 (30 million sites lost)
-</p>
-
-<p>
-<strong>Google+</strong> - Google's social network; shut down 2019
-</p>
-
-<p>
-<strong>Google Reader</strong> - RSS feed reader; killed by Google 2013 despite millions of users
-</p>
-
-<p>
-<strong>Instagram</strong> - Photo sharing owned by Meta; algorithmic feed, no data portability
-</p>
-
-<p>
-<strong>LiveJournal</strong> - Blogging/social platform; Russian ownership drove user exodus
-</p>
-
-<p>
-<strong>Medium</strong> - Publishing platform; multiple business model pivots, corporate control
-</p>
-
-<p>
-<strong>Mixer</strong> - Game streaming platform; Microsoft shut down 2020
-</p>
-
-<p>
-<strong>MySpace</strong> - Early social network; lost 12 years of music in 2019 server migration
-</p>
-
-<p>
-<strong>Snapchat</strong> - Ephemeral messaging app; content designed to disappear
-</p>
-
-<p>
-<strong>Substack</strong> - Newsletter platform; writers don't own domains or full subscriber relationships
-</p>
-
-<p>
-<strong>TikTok</strong> - Video sharing platform; facing potential bans, Chinese ownership controversy
-</p>
-
-<p>
-<strong>Tumblr</strong> - Blogging platform; 2018 NSFW purge deleted millions of posts
-</p>
-
-<p>
-<strong>Twitter/X</strong> - Microblogging platform; chaotic ownership under Musk, mass exodus
-</p>
-
-<p>
-<strong>Vine</strong> - 6-second video platform; Twitter shut down 2017 (200 million videos at risk)
-</p>
-
-<p>
-<strong>WhatsApp</strong> - Encrypted messaging owned by Meta; metadata surveillance, closed platform
-</p>
-
-<h2>Key Thinkers and Practitioners</h2>
-
-<p>
-<strong>Benkler, Yochai</strong> - Scholar of peer production and commons-based alternatives
-</p>
-
-<p>
-<strong>Bowker, Geoffrey C.</strong> - Information studies scholar; classification and infrastructure
-</p>
-
-<p>
-<strong>Brewster Kahle</strong> - Founder of Internet Archive; digital preservation advocate
-</p>
-
-<p>
-<strong>Caswell, Michelle</strong> - Archival studies scholar; community archives and social justice
-</p>
-
-<p>
-<strong>Chun, Wendy Hui Kyong</strong> - Media studies scholar; digital memory and ephemerality
-</p>
-
-<p>
-<strong>Doctorow, Cory</strong> - Science fiction author and digital rights activist; adversarial interoperability
-</p>
-
-<p>
-<strong>Eugen Rochko</strong> - Creator of Mastodon federated social network
-</p>
-
-<p>
-<strong>Gillespie, Tarleton</strong> - Media scholar studying platforms and content moderation
-</p>
-
-<p>
-<strong>Kirschenbaum, Matthew</strong> - Digital humanities scholar; forensic approaches to digital artifacts
-</p>
-
-<p>
-<strong>Lessig, Lawrence</strong> - Legal scholar; "code is law," Creative Commons founder
-</p>
-
-<p>
-<strong>Nissenbaum, Helen</strong> - Privacy scholar; contextual integrity framework
-</p>
-
-<p>
-<strong>Noble, Safiya Umoja</strong> - Scholar of algorithmic bias and racism in technology
-</p>
-
-<p>
-<strong>Ostrom, Elinor</strong> - Nobel laureate; commons governance frameworks
-</p>
-
-<p>
-<strong>Parikka, Jussi</strong> - Media archaeology scholar; dead media studies
-</p>
-
-<p>
-<strong>Schneier, Bruce</strong> - Security expert and cryptographer; surveillance and privacy
-</p>
-
-<p>
-<strong>Star, Susan Leigh</strong> - Sociologist of science and infrastructure
-</p>
-
-<p>
-<strong>Zuboff, Shoshana</strong> - Scholar of surveillance capitalism
-</p>
-
-<h2>Legal and Policy Concepts</h2>
-
-<p>
-<strong>DMCA (Digital Millennium Copyright Act)</strong> - U.S. law criminalizing circumvention of DRM; complicates preservation
-</p>
-
-<p>
-<strong>Fair Use</strong> - Legal doctrine allowing limited use of copyrighted material without permission
-</p>
-
-<p>
-<strong>GDPR (General Data Protection Regulation)</strong> - EU privacy law requiring data portability and deletion rights
-</p>
-
-<p>
-<strong>Interoperability</strong> - Ability of different systems to communicate; essential for sovereignty
-</p>
-
-<p>
-<strong>Platform Liability</strong> - Legal responsibility of platforms for user-generated content
-</p>
-
-<p>
-<strong>Right to Archive</strong> - Proposed legal right to preserve digital content for historical purposes
-</p>
-
-<p>
-<strong>Right to Be Forgotten</strong> - Legal right to request deletion of personal data (conflicts with preservation)
-</p>
-
-<p>
-<strong>Right to Repair</strong> - Legal right to fix devices without manufacturer permission; relevant to digital sovereignty
-</p>
-
-<p>
-<strong>Section 230</strong> - U.S. law protecting platforms from liability for user content
-</p>
-
-<p>
-<strong>Terms of Service (ToS)</strong> - Legal agreement users accept when joining platform; often restricts data ownership
-</p>
-
-<h2>Methodological Terms</h2>
-
-<p>
-<strong>API Harvesting</strong> - Using platform APIs to bulk-download data for preservation
-</p>
-
-<p>
-<strong>Chain-of-Custody Documentation</strong> - Recording who handled artifact and when; forensic integrity
-</p>
-
-<p>
-<strong>Checksum/Hash</strong> - Mathematical signature verifying file hasn't been altered
-</p>
-
-<p>
-<strong>Crawler</strong> - Automated program systematically browsing and indexing web content
-</p>
-
-<p>
-<strong>Defederation</strong> - Severing connections between federated instances due to moderation conflicts
-</p>
-
-<p>
-<strong>Digital Forensics</strong> - Investigating digital artifacts to determine authenticity, provenance, and history
-</p>
-
-<p>
-<strong>Metadata</strong> - Data about data (creation date, author, file type, etc.)
-</p>
-
-<p>
-<strong>Robots.txt</strong> - File telling web crawlers which parts of site not to archive
-</p>
-
-<p>
-<strong>Screen Scraping</strong> - Extracting visible content from websites (distinct from API access)
-</p>
-
-<p>
-<strong>Site Mirroring</strong> - Creating complete local copy of website
-</p>
-
-<p>
-<strong>Stratigraphic Excavation</strong> - Methodical layer-by-layer preservation documenting relationships between artifacts
-</p>
-
-<h2>Economic and Governance Models</h2>
-
-<p>
-<strong>Cooperative (Co-op)</strong> - Business owned and controlled democratically by members/workers
-</p>
-
-<p>
-<strong>Freemium</strong> - Free basic service with paid premium features
-</p>
-
-<p>
-<strong>Open Core</strong> - Open-source base product with proprietary enterprise features
-</p>
-
-<p>
-<strong>Platform Cooperative</strong> - Platform owned by users/workers rather than investors
-</p>
-
-<p>
-<strong>Public Funding</strong> - Government grants, contracts, or direct funding for preservation
-</p>
-
-<p>
-<strong>Subscription Model</strong> - Recurring payments for ongoing service/access
-</p>
-
-<p>
-<strong>Venture Capital (VC)</strong> - Investment funding requiring exponential growth and exit (problematic for sovereignty)
-</p>
-
-<h2>Cultural and Community Terms</h2>
-
-<p>
-<strong>Digital Humanities</strong> - Interdisciplinary field applying computational methods to humanities research
-</p>
-
-<p>
-<strong>Fandom</strong> - Fan communities creating derivative works and cultural artifacts
-</p>
-
-<p>
-<strong>IndieWeb</strong> - Movement promoting personal websites and data ownership
-</p>
-
-<p>
-<strong>Media Archaeology</strong> - Field studying dead, obsolete, and imaginary media
-</p>
-
-<p>
-<strong>Platform Studies</strong> - Examining how platform architectures shape culture and behavior
-</p>
-
-<p>
-<strong>Science and Technology Studies (STS)</strong> - Interdisciplinary field studying science/tech and society
-</p>
-
-<p>
-<strong>Slash Fiction</strong> - Fan fiction featuring romantic/sexual relationships; often LGBTQ+
-</p>
-
-<p>
-<strong>Web 1.0</strong> - Early web era (1990s-2000s) characterized by static pages and personal sites
-</p>
-
-<p>
-<strong>Web 2.0</strong> - Social web era (2000s-2010s) dominated by user-generated content on platforms
-</p>
-
-<p>
-<strong>Web 3.0</strong> - Contested term; blockchain advocates claim decentralized future; critics see financialization
-</p>
-
-<h2>Timeline of Platform Deaths</h2>
-
-<p>
-<strong>1996</strong> - ARPANET decommissioned (replaced by modern Internet)
-</p>
-
-<p>
-<strong>2001</strong> - Napster shut down by court order
-</p>
-
-<p>
-<strong>2009</strong> - GeoCities shut down by Yahoo (October 26)
-</p>
-
-<p>
-<strong>2013</strong> - Google Reader shut down (July 1)
-</p>
-
-<p>
-<strong>2017</strong> - Vine shut down by Twitter (January 17)
-</p>
-
-<p>
-<strong>2018</strong> - Tumblr NSFW purge (December 17)
-</p>
-
-<p>
-<strong>2019</strong> - Google+ shut down (April 2)
-</p>
-
-<p>
-<strong>2019</strong> - MySpace loses 12 years of music in server migration
-</p>
-
-<p>
-<strong>2020</strong> - Mixer shut down by Microsoft (July 22)
-</p>
-
-<p>
-<strong>2022</strong> - Twitter chaos begins under Musk ownership (October 27)
-</p>
-
-<h2>Core Questions</h2>
-
-<p>
-<strong>"What should be preserved?"</strong> - Central triage question requiring ethical deliberation
-</p>
-
-<p>
-<strong>"Who owns your identity?"</strong> - Question revealing platform control vs. user sovereignty
-</p>
-
-<p>
-<strong>"Can you take your data with you?"</strong> - Test of true data ownership and portability
-</p>
-
-<p>
-<strong>"What happens when the platform dies?"</strong> - Question exposing infrastructure vulnerability
-</p>
-
-<p>
-<strong>"Who decides what the future can know about the past?"</strong> - Question of archival power and responsibility
-</p>
-
-<h2>Appendices Note</h2>
-
-<p>
-For detailed tool instructions, see <strong>Appendix B: Tools & Resources</strong>
-For sample curricula, see <strong>Appendix C: Sample Syllabi</strong>
-For teaching materials, see <strong>Appendix D: Teaching Resources</strong>
-For career pathways, see <strong>Appendix E: Professional Resources</strong>
-For citations, see <strong>Bibliography</strong>
-</p>
-
-<p>
-<strong>End of Index</strong>
-</p>
-
-<p>
-<em>This index provides quick reference to key concepts, organizations, technologies, and terms throughout the textbook. For definitions and context, consult the Glossary (Appendix A) or the chapters where terms first appear.</em>
-</p>
-
-
-        </article>
-        <div class="nav">
-            <a href="index.html">Back to Table of Contents</a>
-        </div>
-    </div>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='index'><span>Index</span></h1><hr /><h2 id='core-concepts'><span>Core Concepts</span></h2><p><strong><span>Archaeobyte</span></strong><span> - Digital artifact that was once alive, died through platform shutdown or obsolescence, and has been preserved in some form</span></p><p><strong><span>Archaeobytology</span></strong><span> - The study and practice of excavating, preserving, interpreting, and building with digital artifacts, particularly those murdered by platforms</span></p><p><strong><span>Anvil, The</span></strong><span> - The creative/building practice of Archaeobytology; forging tools, protocols, and institutions that embody digital sovereignty</span></p><p><strong><span>Archive, The</span></strong><span> - The preservation/memory practice of Archaeobytology; excavating and maintaining murdered digital artifacts</span></p><p><strong><span>Bit Rot</span></strong><span> - Gradual degradation of digital storage media leading to data loss</span></p><p><strong><span>Chain of Custody</span></strong><span> - Documentation of who handled an artifact and when, essential for forensic integrity</span></p><p><strong><span>Context Collapse</span></strong><span> - When content created for specific audience becomes accessible to unintended audiences (e.g., private forum posts made public in archive)</span></p><p><strong><span>Custodial Filter, The</span></strong><span> - Five-question ethical framework for triage decisions (significance, fragility, feasibility, redundancy, ethics)</span></p><p><strong><span>Digital Ground</span></strong><span> - Infrastructure and storage a user controls; Third Pillar of sovereignty</span></p><p><strong><span>Digital Sovereignty</span></strong><span> - Ability to exist, communicate, and build in digital space without corporate gatekeeping; embodied in Three Pillars</span></p><p><strong><span>Dual Soul</span></strong><span> - Archaeobytology&#39;s integrated practice of preservation (Archive) and creation (Anvil)</span></p><p><strong><span>Emulation</span></strong><span> - Running old software/platforms on modern systems by simulating original hardware/OS</span></p><p><strong><span>Format Migration</span></strong><span> - Converting files from obsolete formats to current standards</span></p><p><strong><span>Link Rot</span></strong><span> - URLs breaking over time as sites move, reorganize, or disappear</span></p><p><strong><span>Murdered Platform</span></strong><span> - Platform deliberately killed by corporate decision, not natural obsolescence</span></p><p><strong><span>Petribyte</span></strong><span> - Digital artifact so old and well-preserved it&#39;s achieved monument status (like stone tablets)</span></p><p><strong><span>Platform Death</span></strong><span> - Shutdown of digital platform resulting in loss of hosted content and communities</span></p><p><strong><span>POSSE</span></strong><span> - &quot;Post On your Site, Syndicate Elsewhere&quot; - IndieWeb practice of owning original content</span></p><p><strong><span>Provenance</span></strong><span> - Documentation of artifact&#39;s origin, creation, and history</span></p><p><strong><span>Shadow Preservation</span></strong><span> - Archiving content without explicit permission, often in legal gray areas</span></p><p><strong><span>Stratigraphic Analysis</span></strong><span> - Studying layers of digital artifacts to understand temporal and contextual relationships</span></p><p><strong><span>Surveillance Capitalism</span></strong><span> - Business model extracting behavioral data for profit (Zuboff)</span></p><p><strong><span>Triage</span></strong><span> - Systematic methodology for deciding what to preserve when resources are scarce</span></p><p><strong><span>Umbrabyte</span></strong><span> - Digital artifact that&#39;s technically dead but exists in fragmentary form; haunting but not fully preserved</span></p><p><strong><span>Vivibyte</span></strong><span> - Digital artifact currently alive but endangered by platform instability</span></p><p><strong><span>Web Scraping</span></strong><span> - Automated extraction of website content for preservation</span></p><hr /><h2 id='three-pillars-of-digital-sovereignty'><span>Three Pillars of Digital Sovereignty</span></h2><p><strong><span>Pillar 1: Declaration (I Am)</span></strong><span> - Self-owned identity and persistent presence without platform permission</span></p><p><strong><span>Pillar 2: Connection (Instant Message)</span></strong><span> - Direct communication and portable relationships without corporate intermediation</span></p><p><strong><span>Pillar 3: Ground (Digital Real Estate)</span></strong><span> - Owned infrastructure, data, and domains; ability to migrate without loss</span></p><hr /><h2 id='four-institutions'><span>Four Institutions</span></h2><p><strong><span>The Archive</span></strong><span> - Preservation organization; saves murdered platforms and maintains artifacts for decades</span></p><p><strong><span>The Anvil</span></strong><span> - Profitable business building sovereign tools/platforms while embodying Three Pillars</span></p><p><strong><span>The Seed Bank</span></strong><span> - Distributed commons governance structure; peer-to-peer preservation without single point of failure</span></p><p><strong><span>The Haunted Forest</span></strong><span> - Memory institution (museum/memorial); curates and interprets preserved artifacts for public</span></p><hr /><h2 id='key-organizations'><span>Key Organizations</span></h2><p><strong><span>Archive Team</span></strong><span> - Guerrilla digital archiving collective that mobilizes to rescue dying platforms</span></p><p><strong><span>Creative Commons</span></strong><span> - Organization providing open licensing frameworks for content sharing</span></p><p><strong><span>Electronic Frontier Foundation (EFF)</span></strong><span> - Digital rights advocacy organization</span></p><p><strong><span>Internet Archive</span></strong><span> - Non-profit digital library providing free access to websites, books, media, and software</span></p><p><strong><span>Library of Congress</span></strong><span> - U.S. national library with extensive digital preservation programs</span></p><p><strong><span>Mozilla Foundation</span></strong><span> - Non-profit supporting open web technologies and user sovereignty</span></p><p><strong><span>Wikimedia Foundation</span></strong><span> - Operates Wikipedia and sister projects; model of commons governance</span></p><hr /><h2 id='technologies-and-protocols'><span>Technologies and Protocols</span></h2><p><strong><span>ActivityPub</span></strong><span> - W3C standard for federated social networking (used by Mastodon, Pixelfed, PeerTube)</span></p><p><strong><span>Archive-It</span></strong><span> - Web archiving service provided by Internet Archive</span></p><p><strong><span>ArchiveBox</span></strong><span> - Open-source self-hosted web archiving tool</span></p><p><strong><span>BitTorrent</span></strong><span> - Peer-to-peer file sharing protocol used for distributed preservation</span></p><p><strong><span>DNS (Domain Name System)</span></strong><span> - Internet addressing system (centralized, vulnerable to control)</span></p><p><strong><span>Emularity</span></strong><span> - JavaScript emulator framework allowing old software to run in web browsers</span></p><p><strong><span>ENS (Ethereum Name Service)</span></strong><span> - Blockchain-based naming system for decentralized identity</span></p><p><strong><span>Flashpoint</span></strong><span> - Preservation project saving Flash games and animations</span></p><p><strong><span>Ghost</span></strong><span> - Open-source publishing platform supporting custom domains and data export</span></p><p><strong><span>IPFS (InterPlanetary File System)</span></strong><span> - Peer-to-peer distributed file system for permanent web storage</span></p><p><strong><span>Matrix</span></strong><span> - Open protocol for federated, end-to-end encrypted communication</span></p><p><strong><span>Mastodon</span></strong><span> - Federated social network using ActivityPub protocol</span></p><p><strong><span>Nextcloud</span></strong><span> - Open-source self-hosted productivity platform (alternative to Google Workspace)</span></p><p><strong><span>Obsidian</span></strong><span> - Knowledge management app storing files locally in Markdown (data sovereignty)</span></p><p><strong><span>RSS (Really Simple Syndication)</span></strong><span> - Open protocol for content syndication and subscriptions</span></p><p><strong><span>Signal</span></strong><span> - End-to-end encrypted messaging app using Signal Protocol</span></p><p><strong><span>WARC (Web ARChive format)</span></strong><span> - ISO standard file format for web archiving</span></p><p><strong><span>Wayback Machine</span></strong><span> - Internet Archive&#39;s web page archiving service (800+ billion pages)</span></p><p><strong><span>WebRecorder</span></strong><span> - Tool for high-fidelity web archiving including dynamic content</span></p><p><strong><span>WordPress</span></strong><span> - Open-source content management system powering 40%+ of web</span></p><p><strong><span>wget</span></strong><span> - Command-line tool for downloading websites</span></p><hr /><h2 id='platforms-murdered-or-endangered'><span>Platforms (Murdered or Endangered)</span></h2><p><strong><span>AOL (America Online)</span></strong><span> - Early internet service provider; email service declined/abandoned</span></p><p><strong><span>Blogger</span></strong><span> - Google-owned blogging platform; free but corporate-controlled</span></p><p><strong><span>Discord</span></strong><span> - Proprietary chat platform; communities at risk if platform shuts down</span></p><p><strong><span>Ello</span></strong><span> - Anti-advertising social network; failed to achieve sustainability</span></p><p><strong><span>Facebook/Meta</span></strong><span> - Social media monopoly; extractive business model, surveillance capitalism</span></p><p><strong><span>Flickr</span></strong><span> - Photo sharing platform; multiple ownership changes threatened survival</span></p><p><strong><span>FriendFeed</span></strong><span> - Social aggregation platform; acquired and killed by Facebook (2009)</span></p><p><strong><span>GeoCities</span></strong><span> - Early web hosting service; murdered by Yahoo in 2009 (30 million sites lost)</span></p><p><strong><span>Google+</span></strong><span> - Google&#39;s social network; shut down 2019</span></p><p><strong><span>Google Reader</span></strong><span> - RSS feed reader; killed by Google 2013 despite millions of users</span></p><p><strong><span>Instagram</span></strong><span> - Photo sharing owned by Meta; algorithmic feed, no data portability</span></p><p><strong><span>LiveJournal</span></strong><span> - Blogging/social platform; Russian ownership drove user exodus</span></p><p><strong><span>Medium</span></strong><span> - Publishing platform; multiple business model pivots, corporate control</span></p><p><strong><span>Mixer</span></strong><span> - Game streaming platform; Microsoft shut down 2020</span></p><p><strong><span>MySpace</span></strong><span> - Early social network; lost 12 years of music in 2019 server migration</span></p><p><strong><span>Snapchat</span></strong><span> - Ephemeral messaging app; content designed to disappear</span></p><p><strong><span>Substack</span></strong><span> - Newsletter platform; writers don&#39;t own domains or full subscriber relationships</span></p><p><strong><span>TikTok</span></strong><span> - Video sharing platform; facing potential bans, Chinese ownership controversy</span></p><p><strong><span>Tumblr</span></strong><span> - Blogging platform; 2018 NSFW purge deleted millions of posts</span></p><p><strong><span>Twitter/X</span></strong><span> - Microblogging platform; chaotic ownership under Musk, mass exodus</span></p><p><strong><span>Vine</span></strong><span> - 6-second video platform; Twitter shut down 2017 (200 million videos at risk)</span></p><p><strong><span>WhatsApp</span></strong><span> - Encrypted messaging owned by Meta; metadata surveillance, closed platform</span></p><hr /><h2 id='key-thinkers-and-practitioners'><span>Key Thinkers and Practitioners</span></h2><p><strong><span>Benkler, Yochai</span></strong><span> - Scholar of peer production and commons-based alternatives</span></p><p><strong><span>Bowker, Geoffrey C.</span></strong><span> - Information studies scholar; classification and infrastructure</span></p><p><strong><span>Brewster Kahle</span></strong><span> - Founder of Internet Archive; digital preservation advocate</span></p><p><strong><span>Caswell, Michelle</span></strong><span> - Archival studies scholar; community archives and social justice</span></p><p><strong><span>Chun, Wendy Hui Kyong</span></strong><span> - Media studies scholar; digital memory and ephemerality</span></p><p><strong><span>Doctorow, Cory</span></strong><span> - Science fiction author and digital rights activist; adversarial interoperability</span></p><p><strong><span>Eugen Rochko</span></strong><span> - Creator of Mastodon federated social network</span></p><p><strong><span>Gillespie, Tarleton</span></strong><span> - Media scholar studying platforms and content moderation</span></p><p><strong><span>Kirschenbaum, Matthew</span></strong><span> - Digital humanities scholar; forensic approaches to digital artifacts</span></p><p><strong><span>Lessig, Lawrence</span></strong><span> - Legal scholar; &quot;code is law,&quot; Creative Commons founder</span></p><p><strong><span>Nissenbaum, Helen</span></strong><span> - Privacy scholar; contextual integrity framework</span></p><p><strong><span>Noble, Safiya Umoja</span></strong><span> - Scholar of algorithmic bias and racism in technology</span></p><p><strong><span>Ostrom, Elinor</span></strong><span> - Nobel laureate; commons governance frameworks</span></p><p><strong><span>Parikka, Jussi</span></strong><span> - Media archaeology scholar; dead media studies</span></p><p><strong><span>Schneier, Bruce</span></strong><span> - Security expert and cryptographer; surveillance and privacy</span></p><p><strong><span>Star, Susan Leigh</span></strong><span> - Sociologist of science and infrastructure</span></p><p><strong><span>Zuboff, Shoshana</span></strong><span> - Scholar of surveillance capitalism</span></p><hr /><h2 id='legal-and-policy-concepts'><span>Legal and Policy Concepts</span></h2><p><strong><span>DMCA (Digital Millennium Copyright Act)</span></strong><span> - U.S. law criminalizing circumvention of DRM; complicates preservation</span></p><p><strong><span>Fair Use</span></strong><span> - Legal doctrine allowing limited use of copyrighted material without permission</span></p><p><strong><span>GDPR (General Data Protection Regulation)</span></strong><span> - EU privacy law requiring data portability and deletion rights</span></p><p><strong><span>Interoperability</span></strong><span> - Ability of different systems to communicate; essential for sovereignty</span></p><p><strong><span>Platform Liability</span></strong><span> - Legal responsibility of platforms for user-generated content</span></p><p><strong><span>Right to Archive</span></strong><span> - Proposed legal right to preserve digital content for historical purposes</span></p><p><strong><span>Right to Be Forgotten</span></strong><span> - Legal right to request deletion of personal data (conflicts with preservation)</span></p><p><strong><span>Right to Repair</span></strong><span> - Legal right to fix devices without manufacturer permission; relevant to digital sovereignty</span></p><p><strong><span>Section 230</span></strong><span> - U.S. law protecting platforms from liability for user content</span></p><p><strong><span>Terms of Service (ToS)</span></strong><span> - Legal agreement users accept when joining platform; often restricts data ownership</span></p><hr /><h2 id='methodological-terms'><span>Methodological Terms</span></h2><p><strong><span>API Harvesting</span></strong><span> - Using platform APIs to bulk-download data for preservation</span></p><p><strong><span>Chain-of-Custody Documentation</span></strong><span> - Recording who handled artifact and when; forensic integrity</span></p><p><strong><span>Checksum/Hash</span></strong><span> - Mathematical signature verifying file hasn&#39;t been altered</span></p><p><strong><span>Crawler</span></strong><span> - Automated program systematically browsing and indexing web content</span></p><p><strong><span>Defederation</span></strong><span> - Severing connections between federated instances due to moderation conflicts</span></p><p><strong><span>Digital Forensics</span></strong><span> - Investigating digital artifacts to determine authenticity, provenance, and history</span></p><p><strong><span>Metadata</span></strong><span> - Data about data (creation date, author, file type, etc.)</span></p><p><strong><span>Robots.txt</span></strong><span> - File telling web crawlers which parts of site not to archive</span></p><p><strong><span>Screen Scraping</span></strong><span> - Extracting visible content from websites (distinct from API access)</span></p><p><strong><span>Site Mirroring</span></strong><span> - Creating complete local copy of website</span></p><p><strong><span>Stratigraphic Excavation</span></strong><span> - Methodical layer-by-layer preservation documenting relationships between artifacts</span></p><hr /><h2 id='economic-and-governance-models'><span>Economic and Governance Models</span></h2><p><strong><span>Cooperative (Co-op)</span></strong><span> - Business owned and controlled democratically by members/workers</span></p><p><strong><span>Freemium</span></strong><span> - Free basic service with paid premium features</span></p><p><strong><span>Open Core</span></strong><span> - Open-source base product with proprietary enterprise features</span></p><p><strong><span>Platform Cooperative</span></strong><span> - Platform owned by users/workers rather than investors</span></p><p><strong><span>Public Funding</span></strong><span> - Government grants, contracts, or direct funding for preservation</span></p><p><strong><span>Subscription Model</span></strong><span> - Recurring payments for ongoing service/access</span></p><p><strong><span>Venture Capital (VC)</span></strong><span> - Investment funding requiring exponential growth and exit (problematic for sovereignty)</span></p><hr /><h2 id='cultural-and-community-terms'><span>Cultural and Community Terms</span></h2><p><strong><span>Digital Humanities</span></strong><span> - Interdisciplinary field applying computational methods to humanities research</span></p><p><strong><span>Fandom</span></strong><span> - Fan communities creating derivative works and cultural artifacts</span></p><p><strong><span>IndieWeb</span></strong><span> - Movement promoting personal websites and data ownership</span></p><p><strong><span>Media Archaeology</span></strong><span> - Field studying dead, obsolete, and imaginary media</span></p><p><strong><span>Platform Studies</span></strong><span> - Examining how platform architectures shape culture and behavior</span></p><p><strong><span>Science and Technology Studies (STS)</span></strong><span> - Interdisciplinary field studying science/tech and society</span></p><p><strong><span>Slash Fiction</span></strong><span> - Fan fiction featuring romantic/sexual relationships; often LGBTQ+</span></p><p><strong><span>Web 1.0</span></strong><span> - Early web era (1990s-2000s) characterized by static pages and personal sites</span></p><p><strong><span>Web 2.0</span></strong><span> - Social web era (2000s-2010s) dominated by user-generated content on platforms</span></p><p><strong><span>Web 3.0</span></strong><span> - Contested term; blockchain advocates claim decentralized future; critics see financialization</span></p><hr /><h2 id='timeline-of-platform-deaths'><span>Timeline of Platform Deaths</span></h2><p><strong><span>1996</span></strong><span> - ARPANET decommissioned (replaced by modern Internet)</span></p><p><strong><span>2001</span></strong><span> - Napster shut down by court order</span></p><p><strong><span>2009</span></strong><span> - GeoCities shut down by Yahoo (October 26)</span></p><p><strong><span>2013</span></strong><span> - Google Reader shut down (July 1)</span></p><p><strong><span>2017</span></strong><span> - Vine shut down by Twitter (January 17)</span></p><p><strong><span>2018</span></strong><span> - Tumblr NSFW purge (December 17)</span></p><p><strong><span>2019</span></strong><span> - Google+ shut down (April 2)</span></p><p><strong><span>2019</span></strong><span> - MySpace loses 12 years of music in server migration</span></p><p><strong><span>2020</span></strong><span> - Mixer shut down by Microsoft (July 22)</span></p><p><strong><span>2022</span></strong><span> - Twitter chaos begins under Musk ownership (October 27)</span></p><hr /><h2 id='core-questions'><span>Core Questions</span></h2><p><strong><span>&quot;What should be preserved?&quot;</span></strong><span> - Central triage question requiring ethical deliberation</span></p><p><strong><span>&quot;Who owns your identity?&quot;</span></strong><span> - Question revealing platform control vs. user sovereignty</span></p><p><strong><span>&quot;Can you take your data with you?&quot;</span></strong><span> - Test of true data ownership and portability</span></p><p><strong><span>&quot;What happens when the platform dies?&quot;</span></strong><span> - Question exposing infrastructure vulnerability</span></p><p><strong><span>&quot;Who decides what the future can know about the past?&quot;</span></strong><span> - Question of archival power and responsibility</span></p><hr /><h2 id='appendices-note'><span>Appendices Note</span></h2><p><span>For detailed tool instructions, see </span><strong><span>Appendix B: Tools &amp; Resources</span></strong>
+<span>For sample curricula, see </span><strong><span>Appendix C: Sample Syllabi</span></strong>
+<span>For teaching materials, see </span><strong><span>Appendix D: Teaching Resources</span></strong>
+<span>For career pathways, see </span><strong><span>Appendix E: Professional Resources</span></strong>
+<span>For citations, see </span><strong><span>Bibliography</span></strong></p><hr /><p><strong><span>End of Index</span></strong></p><p><em><span>This index provides quick reference to key concepts, organizations, technologies, and terms throughout the textbook. For definitions and context, consult the Glossary (Appendix A) or the chapters where terms first appear.</span></em></p><p>&nbsp;</p></div></div>
 </body>
 </html>

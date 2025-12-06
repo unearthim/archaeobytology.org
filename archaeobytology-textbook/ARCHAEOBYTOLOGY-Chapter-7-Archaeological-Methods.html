@@ -1,1290 +1,1017 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 7: Archaeological Methods for Digital Artifacts | Archaeobytology</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Lora', serif; line-height: 1.8; color: #2E2E2E; background: #F8F7F4; padding: 2rem 1rem; }
-        .container { max-width: 800px; margin: 0 auto; background: #FFFFFF; padding: 3rem; border-radius: 15px; box-shadow: 0 4px 20px rgba(46,46,46,0.1); border: 1px solid #D1D1D1; }
-        h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; color: #2E2E2E; margin-top: 2rem; margin-bottom: 1rem; line-height: 1.3; }
-        h1 { font-size: 2.5rem; font-weight: 700; margin-top: 0; border-bottom: 3px solid #A1824A; padding-bottom: 0.5rem; }
-        h2 { font-size: 2rem; font-weight: 700; margin-top: 2.5rem; }
-        h3 { font-size: 1.5rem; font-weight: 600; color: #5A7D8C; }
-        h4 { font-size: 1.25rem; font-weight: 600; color: #5A7D8C; }
-        p { margin-bottom: 1.25rem; font-size: 1.1rem; }
-        a { color: #A93400; text-decoration: underline; transition: color 0.3s; }
-        a:hover { color: #A95C3D; }
-        strong { font-weight: 600; }
-        em { font-style: italic; }
-        code { font-family: 'Courier New', monospace; background: #F8F7F4; padding: 0.2rem 0.4rem; border-radius: 3px; border: 1px solid #D1D1D1; }
-        blockquote { border-left: 4px solid #A1824A; padding: 1rem 1.5rem; margin: 1.5rem 0; font-style: italic; color: #5A7D8C; background: #F8F7F4; border-radius: 0 8px 8px 0; }
-        hr { border: none; border-top: 2px solid #D1D1D1; margin: 2rem 0; }
-        .nav { text-align: center; padding: 1rem 0; border-top: 2px solid #D1D1D1; margin-top: 2rem; }
-        .nav a { display: inline-block; padding: 0.75rem 1.5rem; background: #A93400; color: #F8F7F4; text-decoration: none; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 600; margin: 0.5rem; }
-        .nav a:hover { background: #A95C3D; }
-    </style>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'><style type='text/css'>html {overflow-x: initial !important;}</style>
+<style type='text/css'  id="style-base">:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, "Segoe UI Emoji", "SF Pro", sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p *, #write.first-line-indent svg * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
+#write svg h1, #write svg h2, #write svg h3, #write svg h4, #write svg h5, #write svg h6, #write svg p { position: static; }
+.nodeLabel p { padding-right: 2px; padding-left: 2px; }
+.typora-export .nodeLabel p { padding-right: 0px; padding-left: 0px; }
+foreignobject { overflow: visible; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+li p { orphans: 1; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.mermaid-svg { margin: auto; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left: 0.25em solid rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
+
+</style>
+<style type='text/css'  id="style-codemirror">.CodeMirror { height: auto; }
+.CodeMirror.cm-s-inner { background: inherit; }
+.CodeMirror-scroll { overflow: auto hidden; z-index: 3; }
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
+.CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); background: inherit; white-space: nowrap; }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: 700; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: red; }
+.cm-invalidchar { color: red; }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background: inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background: inherit; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; outline: 0px; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: auto hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 10px; z-index: 3; overflow-y: hidden; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; background: 0px 0px !important; border: none !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-radius: 0px; border-width: 0px; background: 0px 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; overflow-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; }
+.CodeMirror-wrap pre { overflow-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right: 30px solid transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right: none; width: auto; }
+.CodeMirror-linebackground { position: absolute; inset: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right: none; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.cm-searching { background: rgba(255, 255, 0, 0.4); }
+span.cm-underlined { text-decoration: underline; }
+span.cm-strikethrough { text-decoration: line-through; }
+.cm-tw-syntaxerror { color: rgb(255, 255, 255); background-color: rgb(153, 0, 0); }
+.cm-tw-deleted { text-decoration: line-through; }
+.cm-tw-header5 { font-weight: 700; }
+.cm-tw-listitem:first-child { padding-left: 10px; }
+.cm-tw-box { border-style: solid; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-color: inherit; border-top-width: 0px !important; }
+.cm-tw-underline { text-decoration: underline; }
+@media print {
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+</style>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;display=swap' type='text/css' />
+<style type='text/css'  id="style-theme_css">/*
+ * Unearth Light Theme for Typora
+ * Based on the Foundry Blueprint 4.1 - unearth.im
+ * 
+ * Color Palette:
+ * - Parchment (Background): #F8F7F4
+ * - Charcoal (Text): #2E2E2E
+ * - Burnt Sienna (Primary Accent): #A93400
+ * - Antique Gold (Secondary Accent): #A1824A
+ * - Slate Blue (Functional Accent): #5A7D8C
+ * - Light Stone: #D1D1D1
+ * - Medium Stone: #8E8E8E
+ *
+ * Typography:
+ * - Narrative: Lora (serif)
+ * - UI/Headlines: Inter (sans-serif)
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+:root {
+    --parchment: #F8F7F4;
+    --charcoal: #2E2E2E;
+    --burnt-sienna: #A93400;
+    --sienna-hover: #A95C3D;
+    --accent-color: #A95C3D;
+    --antique-gold: #A1824A;
+    --slate-blue: #5A7D8C;
+    --meta-text-color: #5A7D8C;
+    --light-stone: #D1D1D1;
+    --border-color: #e0e0e0;
+    --medium-stone: #8E8E8E;
+    --white: #FFFFFF;
+    
+    --font-narrative: 'Lora', Georgia, serif;
+    --font-ui: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
+}
+
+/* ========================================
+   BASE STYLES
+   ======================================== */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-narrative);
+    color: var(--charcoal);
+    background-color: var(--parchment);
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#write {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 64px 80px 100px;
+}
+
+/* ========================================
+   HEADINGS
+   ======================================== */
+
+h1 {
+    font-family: var(--font-narrative);
+    color: var(--charcoal);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-family: var(--font-narrative);
+    color: var(--charcoal);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--light-stone);
+    padding-bottom: 0.5rem;
+}
+
+h3, h4, h5, h6 {
+    font-family: var(--font-ui);
+    color: var(--charcoal);
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 1.25rem;
+    color: var(--charcoal);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+    color: var(--burnt-sienna);
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+h5 {
+    font-size: 1.1rem;
+    color: var(--slate-blue);
+}
+
+h6 {
+    font-size: 1rem;
+    color: var(--medium-stone);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ========================================
+   PARAGRAPHS & TEXT
+   ======================================== */
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.9;
+}
+
+strong, b {
+    font-weight: 700;
+    color: var(--charcoal);
+}
+
+em, i {
+    font-style: italic;
+}
+
+/* ========================================
+   LINKS
+   ======================================== */
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-color);
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    background-color: rgba(169, 92, 61, 0.1);
+    border-bottom-color: transparent;
+}
+
+/* ========================================
+   BLOCKQUOTES
+   ======================================== */
+
+blockquote {
+    margin: 2rem 0;
+    padding: 1.5rem 2rem;
+    border-left: 4px solid var(--antique-gold);
+    background-color: rgba(161, 130, 74, 0.08);
+    border-radius: 0 4px 4px 0;
+    color: var(--charcoal);
+}
+
+blockquote p {
+    margin: 0.5rem 0;
+    line-height: 1.8;
+}
+
+blockquote blockquote {
+    margin-left: 1rem;
+    border-left-color: var(--slate-blue);
+    background-color: rgba(90, 125, 140, 0.08);
+}
+
+/* ========================================
+   CODE
+   ======================================== */
+
+code {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    background-color: rgba(209, 209, 209, 0.4);
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    color: var(--burnt-sienna);
+}
+
+/* Code blocks */
+pre {
+    font-family: var(--font-mono);
+    background-color: var(--charcoal);
+    color: var(--parchment);
+    padding: 1rem 1.25rem;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    line-height: 1.6;
+}
+
+pre code {
+    background: none;
+    padding: 0;
+    color: inherit;
+    font-size: 0.875rem;
+}
+
+/* Code block with line numbers */
+.md-fences {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    background-color: var(--charcoal);
+    color: var(--parchment);
+    border: none;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1.5rem 0;
+}
+
+.CodeMirror-lines {
+    padding: 0;
+}
+
+/* ========================================
+   LISTS
+   ======================================== */
+
+ul, ol {
+    padding-left: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+li {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.9;
+}
+
+li > ul, li > ol {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+li > ul > li, li > ol > li {
+    margin-bottom: 0.5rem;
+}
+
+/* Unordered list markers */
+ul > li::marker {
+    color: var(--burnt-sienna);
+}
+
+/* Ordered list markers */
+ol > li::marker {
+    color: var(--antique-gold);
+    font-family: var(--font-ui);
+    font-weight: 600;
+}
+
+/* Task lists */
+.task-list-item {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.task-list-item input[type="checkbox"] {
+    margin-right: 0.5rem;
+    accent-color: var(--burnt-sienna);
+}
+
+/* ========================================
+   HORIZONTAL RULE
+   ======================================== */
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, var(--light-stone), var(--antique-gold), var(--light-stone));
+    margin: 2.5rem 0;
+}
+
+/* ========================================
+   TABLES
+   ======================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-family: var(--font-ui);
+    font-size: 0.9rem;
+}
+
+thead {
+    background-color: var(--charcoal);
+    color: var(--parchment);
+}
+
+th {
+    font-weight: 600;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--charcoal);
+}
+
+td {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--light-stone);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(209, 209, 209, 0.2);
+}
+
+tbody tr:hover {
+    background-color: rgba(161, 130, 74, 0.1);
+}
+
+/* ========================================
+   IMAGES
+   ======================================== */
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 1rem 0;
+    box-shadow: 0 2px 8px rgba(46, 46, 46, 0.1);
+}
+
+/* Image captions */
+figure {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+figcaption {
+    font-family: var(--font-ui);
+    font-size: 0.875rem;
+    color: var(--medium-stone);
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* ========================================
+   FOOTNOTES
+   ======================================== */
+
+.footnotes {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--light-stone);
+}
+
+.footnotes h2 {
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
+.footnotes ol {
+    padding-left: 20px;
+    color: #555;
+}
+
+.footnotes li {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.footnotes p {
+    font-size: 0.85rem;
+    margin-bottom: 0;
+}
+
+.footnote-ref, sup a {
+    font-family: var(--font-ui);
+    font-size: 0.8em;
+    font-weight: 600;
+    vertical-align: super;
+    color: var(--burnt-sienna);
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.footnote-ref:hover, sup a:hover {
+    background-color: transparent;
+}
+
+sup.md-footnote {
+    font-family: var(--font-ui);
+    font-size: 0.8em;
+    font-weight: 600;
+    color: var(--burnt-sienna);
+    background-color: transparent;
+    padding: 0;
+}
+
+/* ========================================
+   DEFINITION LISTS
+   ======================================== */
+
+dl {
+    margin: 1rem 0;
+}
+
+dt {
+    font-family: var(--font-ui);
+    font-weight: 700;
+    color: var(--burnt-sienna);
+    margin-top: 1rem;
+}
+
+dd {
+    margin-left: 1.5rem;
+    margin-top: 0.25rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--light-stone);
+}
+
+/* ========================================
+   MARK / HIGHLIGHT
+   ======================================== */
+
+mark {
+    background-color: rgba(161, 130, 74, 0.3);
+    color: var(--charcoal);
+    padding: 0.1rem 0.3rem;
+    border-radius: 2px;
+}
+
+/* ========================================
+   STRIKETHROUGH
+   ======================================== */
+
+del, s {
+    color: var(--medium-stone);
+    text-decoration: line-through;
+}
+
+/* ========================================
+   KEYBOARD
+   ======================================== */
+
+kbd {
+    font-family: var(--font-ui);
+    font-size: 0.85em;
+    background-color: var(--light-stone);
+    border: 1px solid var(--medium-stone);
+    border-radius: 3px;
+    padding: 0.1rem 0.4rem;
+    box-shadow: 0 1px 2px rgba(46, 46, 46, 0.1);
+}
+
+/* ========================================
+   ABBREVIATIONS
+   ======================================== */
+
+abbr {
+    text-decoration: underline dotted var(--slate-blue);
+    cursor: help;
+}
+
+/* ========================================
+   SELECTION
+   ======================================== */
+
+::selection {
+    background-color: rgba(169, 52, 0, 0.2);
+    color: var(--charcoal);
+}
+
+::-moz-selection {
+    background-color: rgba(169, 52, 0, 0.2);
+    color: var(--charcoal);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - SIDEBAR
+   ======================================== */
+
+#typora-sidebar {
+    background-color: var(--parchment);
+    border-right: 1px solid var(--light-stone);
+}
+
+.sidebar-content {
+    font-family: var(--font-ui);
+}
+
+.file-tree-node.active > .file-node-content {
+    background-color: rgba(169, 52, 0, 0.1);
+    color: var(--burnt-sienna);
+}
+
+.file-tree-node:hover > .file-node-content {
+    background-color: rgba(209, 209, 209, 0.3);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - SOURCE MODE
+   ======================================== */
+
+.cm-s-typora-default .cm-header {
+    color: var(--burnt-sienna);
+}
+
+.cm-s-typora-default .cm-link {
+    color: var(--slate-blue);
+}
+
+.cm-s-typora-default .cm-string {
+    color: var(--antique-gold);
+}
+
+.cm-s-typora-default .cm-comment {
+    color: var(--medium-stone);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - FOCUS MODE
+   ======================================== */
+
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) * {
+    color: var(--light-stone) !important;
+}
+
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) img {
+    opacity: 0.5;
+}
+
+/* ========================================
+   TYPORA SPECIFIC - MEGAMENU
+   ======================================== */
+
+.megamenu-menu-panel {
+    background-color: var(--parchment);
+    font-family: var(--font-ui);
+}
+
+.megamenu-menu-panel .btn {
+    background-color: var(--burnt-sienna);
+    color: var(--parchment);
+}
+
+.megamenu-menu-panel .btn:hover {
+    background-color: var(--sienna-hover);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - SEARCH
+   ======================================== */
+
+#md-searchpanel {
+    background-color: var(--parchment);
+    border-bottom: 1px solid var(--light-stone);
+}
+
+#md-searchpanel input {
+    font-family: var(--font-ui);
+    background-color: var(--white);
+    border: 1px solid var(--light-stone);
+    border-radius: 4px;
+}
+
+#md-searchpanel input:focus {
+    border-color: var(--burnt-sienna);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(169, 52, 0, 0.15);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - TOOLTIP
+   ======================================== */
+
+.md-hover-tip .md-arrow:after {
+    background-color: var(--charcoal);
+}
+
+.md-hover-tip .code-tooltip-content {
+    background-color: var(--charcoal);
+    color: var(--parchment);
+    font-family: var(--font-ui);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - META BLOCK
+   ======================================== */
+
+.md-meta-block {
+    background-color: rgba(209, 209, 209, 0.3);
+    border-radius: 6px;
+    padding: 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--medium-stone);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - TABLE OF CONTENTS
+   ======================================== */
+
+.md-toc {
+    font-family: var(--font-ui);
+}
+
+.md-toc-h1 {
+    font-weight: 700;
+    color: var(--charcoal);
+}
+
+.md-toc-h2 {
+    font-weight: 600;
+    color: var(--burnt-sienna);
+}
+
+.md-toc-h3, .md-toc-h4, .md-toc-h5, .md-toc-h6 {
+    color: var(--medium-stone);
+}
+
+/* ========================================
+   SCROLLBAR
+   ======================================== */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--parchment);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--light-stone);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--medium-stone);
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+
+@media print {
+    html {
+        font-size: 12pt;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+    
+    #write {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        color: black;
+        page-break-after: avoid;
+    }
+    
+    pre, blockquote {
+        page-break-inside: avoid;
+    }
+    
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+    
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        color: #666;
+    }
+}
+</style>
+<style type='text/css'  id="style-lp">ol, ul {padding-left: 40px}</style>
+
+<title>TEXTBOOK-Chapter-7-Archaeological-Methods</title>
 </head>
-<body>
-    <div class="container">
-        <article>
-<h1>Chapter 7: Archaeological Methods for Digital Artifacts</h1>
-
-<h2>Opening: The Dig Site Is Ephemeral</h2>
-
-<p>
-In 1922, Howard Carter discovered Tutankhamun's tomb. The artifacts had been buried for 3,000 years. They would remain buried for 3,000 more if Carter didn't act. But once found, he had <strong>time</strong>—years to carefully excavate, photograph, catalog, and preserve each object.
-</p>
-
-<p>
-In 2009, Archive Team discovered that GeoCities would shut down in three weeks. The "artifacts" had existed for 15 years. They would exist for <strong>21 more days</strong>, then vanish forever. No time for careful documentation. No room for archaeological precision. Just frantic scraping before the servers went dark.
-</p>
-
-<p>
-This is the fundamental difference between physical and digital archaeology:
-</p>
-
-<p>
-<strong>Physical archaeology:</strong>
-- Sites persist for centuries
-- Excavation is slow, methodical, non-destructive
-- You can return to a site years later
-</p>
-
-<p>
-<strong>Digital archaeology:</strong>
-- Sites vanish in days or weeks
-- Excavation is fast, opportunistic, often destructive (scraping overloads servers)
-- You get <strong>one chance</strong>—once the platform dies, it's gone
-</p>
-
-<p>
-Yet despite these differences, physical archaeology offers valuable methods for digital practice. Stratigraphic analysis, site surveys, provenance tracking, and ethical excavation frameworks all translate to digital contexts—if adapted properly.
-</p>
-
-<p>
-This chapter explores how to <strong>excavate digital artifacts</strong> using archaeological methods modified for digital ephemera. You'll learn:
-- Site reconnaissance and mapping
-- Stratigraphic analysis of digital layers
-- Excavation techniques (scraping, API harvesting, forensic recovery)
-- Provenance and chain-of-custody documentation
-- Ethical frameworks for excavation
-</p>
-
-<p>
-By the end, you'll know how to approach a dying platform like an archaeological dig site—systematic, ethical, and effective.
-</p>
-
-<h2>Part I: Site Reconnaissance — Mapping the Digital Landscape</h2>
-
-<h3>Before You Dig: Understanding the Site</h3>
-
-<p>
-Physical archaeologists don't start digging randomly. They survey the site, create maps, test soil composition, and plan their excavation strategy. Digital archaeologists must do the same.
-</p>
-
-<h3>Step 1: Platform Architecture Assessment</h3>
-
-<p>
-<strong>Goal:</strong> Understand the platform's technical structure before attempting to preserve it.
-</p>
-
-<p>
-<strong>Questions to Answer:</strong>
-</p>
-
-<p>
-<strong>1. What type of platform is this?</strong>
-- Static website (HTML/CSS, easy to scrape)
-- Dynamic web app (JavaScript-heavy, requires browser automation)
-- Mobile app (API-based, may require reverse engineering)
-- Forum/BBS (database-driven, need to capture structure)
-- Social network (graph-based, relationships matter as much as content)
-</p>
-
-<p>
-<strong>2. What are the data types?</strong>
-- Text (posts, comments, messages)
-- Images (user photos, avatars, UI elements)
-- Videos (hosted on platform or embedded from elsewhere?)
-- Metadata (timestamps, user IDs, like counts, tags)
-- Relationships (follows, friends, replies, shares)
-</p>
-
-<p>
-<strong>3. What's the scale?</strong>
-- How many users?
-- How much content (posts, pages, files)?
-- How much storage required?
-</p>
-
-<p>
-<strong>4. What are the access patterns?</strong>
-- Public (anyone can view)
-- Login-required (need account)
-- Private/friends-only (restricted access)
-- Ephemeral (content disappears after viewing, like Snapchat)
-</p>
-
-<p>
-<strong>5. What are the technical barriers?</strong>
-- Rate limiting (how many requests per hour?)
-- JavaScript rendering (can't scrape with simple wget)
-- CAPTCHAs (need human intervention)
-- DRM/encryption (legally/technically protected)
-- APIs (do they exist? are they documented?)
-</p>
-
-<p>
-<strong>Example: GeoCities Architecture Assessment (2009)</strong>
-</p>
-
-<p>
-| Dimension | Assessment |
-|-----------|------------|
-| Type | Static HTML sites (mostly) |
-| Data types | HTML, images, GIFs, MIDI files, JavaScript |
-| Scale | ~30 million sites, estimated TB of data |
-| Access | Public (no login required) |
-| Barriers | Rate limiting (Yahoo would block aggressive scrapers), broken links (sites linked to each other, many links dead) |
-| Strategy | Distributed scraping (many volunteers, different IPs), prioritize unique content over duplicates |
-</p>
-
-<h3>Step 2: Existing Documentation</h3>
-
-<p>
-<strong>Check what's already known:</strong>
-</p>
-
-<p>
-<strong>Internet Archive's Wayback Machine:</strong>
-- Has it been crawled? When? How comprehensively?
-- Gaps in coverage?
-</p>
-
-<p>
-<strong>Platform's Official Archives:</strong>
-- Does the platform provide data export tools?
-- What format? How complete?
-</p>
-
-<p>
-<strong>Community Knowledge:</strong>
-- Are there fan wikis, documentation, user guides?
-- Former employees willing to share insider knowledge?
-</p>
-
-<p>
-<strong>Technical Documentation:</strong>
-- API documentation (if APIs exist)
-- Terms of Service (what's legal to scrape?)
-- robots.txt (what does platform want crawled?)
-</p>
-
-<p>
-<strong>Example: Vine Documentation Check (2016)</strong>
-</p>
-
-<p>
-- <strong>Wayback Machine:</strong> Some Vines captured, but incomplete (many videos not archived)
-- <strong>Official Export:</strong> Vine provided "Download Your Vines" tool (good, but required users to act)
-- <strong>Community:</strong> Vine Wiki documented popular creators, memes, culture
-- <strong>API:</strong> Public API existed (allowed bulk downloading until shutdown)
-</p>
-
-<p>
-<strong>Decision:</strong> Use API while it exists, supplement with manual scraping for videos API misses.
-</p>
-
-<h3>Step 3: Reconnaissance Scraping</h3>
-
-<p>
-<strong>Goal:</strong> Capture a small sample to understand structure before full excavation.
-</p>
-
-<p>
-<strong>Method:</strong>
-1. Scrape 100-1000 pages/posts (small representative sample)
-2. Analyze structure:
-   - What HTML tags are used?
-   - Where is metadata stored? (JSON in page source? Separate API calls?)
-   - What's the URL pattern? (Can you enumerate all pages?)
-3. Test tools:
-   - Does wget work? Or need Selenium (browser automation)?
-   - How fast can you scrape without getting blocked?
-</p>
-
-<p>
-<strong>Deliverable:</strong> Reconnaissance report documenting:
-- Platform structure
-- Technical barriers
-- Estimated scale
-- Recommended tools
-- Estimated time to complete full excavation
-</p>
-
-<p>
-<strong>Example: Small Forum Reconnaissance</strong>
-</p>
-
-<p>
-``<code>
-Platform: Example Forum (phpBB)
-Date: 2024-11-15
-Estimated Shutdown: 2024-12-01 (15 days)
-</p>
-
-<p>
-Structure:
-- Forum software: phpBB 3.2
-- Content: 10,000 threads, ~50,000 posts
-- Users: 1,500 registered, ~500 active
-</p>
-
-<p>
-Technical Assessment:
-- Public access (no login for reading)
-- Standard HTML structure (easy to parse)
-- URL pattern: /viewtopic.php?t=[thread_id]
-- Thread IDs appear sequential (can enumerate)
-</p>
-
-<p>
-Barriers:
-- Rate limit: ~60 requests/minute before 503 errors
-- Some images externally hosted (may be lost)
-- User profile pages require login (skip for now)
-</p>
-
-<p>
-Strategy:
-- Use wget with --wait=1 (stay under rate limit)
-- Scrape all threads over 5 days
-- Capture HTML + images
-- Parse HTML to extract structured data (JSON)
-</p>
-
-<p>
-Estimated Storage: 2-5GB
-Estimated Time: 5 days (continuous scraping)
-</code>`<code>
-</p>
-
-<h2>Part II: Stratigraphic Analysis — Understanding Digital Layers</h2>
-
-<p>
-Physical archaeologists use <strong>stratigraphy</strong>—the study of layers—to understand how a site was formed over time. Lower layers are older; upper layers are more recent. Disruptions in layers indicate events (fires, floods, invasions).
-</p>
-
-<p>
-Digital platforms also have layers. Understanding them is crucial for preservation.
-</p>
-
-<h3>Digital Stratigraphy: The Technology Stack</h3>
-
-<p>
-<strong>Layer 1: Content (Surface Layer)</strong>
-- What users see: posts, images, videos
-- This is the "archaeological treasure"—the artifacts themselves
-</p>
-
-<p>
-<strong>Layer 2: Metadata (Context Layer)</strong>
-- Timestamps, user IDs, like counts, tags, geolocation
-- Essential for interpreting content
-</p>
-
-<p>
-<strong>Layer 3: Relationships (Social Layer)</strong>
-- Follower graphs, reply threads, retweets/shares
-- Network structure that gives content meaning
-</p>
-
-<p>
-<strong>Layer 4: Platform Affordances (Infrastructure Layer)</strong>
-- Character limits (Twitter's 140/280), video length limits (Vine's 6 seconds)
-- UI design (Facebook's "like" button, Tumblr's reblog)
-- These shape what could be expressed
-</p>
-
-<p>
-<strong>Layer 5: Code and Protocols (Base Layer)</strong>
-- HTML/CSS, JavaScript, APIs
-- The technical substrate everything else is built on
-</p>
-
-<p>
-<strong>Why This Matters:</strong>
-</p>
-
-<p>
-If you only preserve Layer 1 (content), you lose context. A tweet without timestamp, author, and reply chain is nearly meaningless. A Vine without knowledge that it's 6 seconds (platform affordance) loses its cultural significance.
-</p>
-
-<p>
-<strong>Best Practice:</strong> Preserve <strong>all accessible layers</strong>, not just content.
-</p>
-
-<h3>Temporal Stratigraphy: Change Over Time</h3>
-
-<p>
-Platforms evolve. Preserving multiple snapshots captures this evolution.
-</p>
-
-<p>
-<strong>Example: Twitter's Stratigraphy (2006-2025)</strong>
-</p>
-
-<p>
-| Period | Character Limit | Key Features | Cultural Context |
-|--------|----------------|--------------|------------------|
-| 2006-2009 | 140 characters | SMS-based, public only | Early adopters, tech culture |
-| 2010-2013 | 140 | @mentions, hashtags, retweets | Mainstream adoption, Arab Spring |
-| 2014-2017 | 140 | Embedded images/video, polls | Visual turn, meme culture |
-| 2017-2022 | 280 | Threads, longer tweets | Discourse shift, Trump era |
-| 2022-2025 | 280+ | Elon ownership, chaos | Decline, exodus to alternatives |
-</p>
-
-<p>
-If you only archived Twitter in 2025, you'd miss how 140-character limit shaped early Twitter culture. Stratigraphic preservation (periodic snapshots) captures evolution.
-</p>
-
-<h3>Excavating Through Layers: Practical Example</h3>
-
-<p>
-<strong>Scenario:</strong> Preserving a Tumblr blog (before or after NSFW purge).
-</p>
-
-<p>
-<strong>Layer 1 — Content:</strong>
-- Use Tumblr's API or export tool to download posts
-- Format: JSON or HTML
-- Includes text, images, embedded media
-</p>
-
-<p>
-<strong>Layer 2 — Metadata:</strong>
-- Post timestamps (when was this published?)
-- Tags (how did author categorize this?)
-- Post type (text, photo, quote, link, chat, audio, video)
-- Note count (likes + reblogs)
-</p>
-
-<p>
-<strong>Layer 3 — Relationships:</strong>
-- Reblog chain (who reblogged from whom?)
-- Follower graph (if accessible)
-- External links (what other sites/blogs mentioned?)
-</p>
-
-<p>
-<strong>Layer 4 — Platform Affordances:</strong>
-- Tumblr's "reblog" culture (different from Twitter's "quote tweet")
-- Tag system (used for discovery, not just categorization)
-- Dashboard feed (algorithmic? chronological?)
-</p>
-
-<p>
-<strong>Layer 5 — Code:</strong>
-- Tumblr's HTML theme (custom CSS)
-- Embedded JavaScript (any interactive elements?)
-</p>
-
-<p>
-<strong>Preservation Strategy:</strong>
-1. Download JSON export (Layers 1-2)
-2. Scrape full HTML (captures Layer 4 affordances via design)
-3. Reconstruct reblog chains from metadata (Layer 3)
-4. Document platform context in README (Layer 4 cultural norms)
-</p>
-
-<h2>Part III: Excavation Techniques — Tools and Methods</h2>
-
-<h3>Technique 1: Simple Web Scraping (Static Sites)</h3>
-
-<p>
-<strong>Use Case:</strong> Static HTML sites (blogs, personal homepages, early web).
-</p>
-
-<p>
-<strong>Tools:</strong>
-- <strong>wget</strong>: Command-line downloader (recursive crawling)
-- <strong>HTTrack</strong>: GUI-based website copier
-- <strong>ArchiveBox</strong>: Modern, full-featured archiver
-</p>
-
-<p>
-<strong>Example: wget Command</strong>
-</p>
-
-<p>
-</code>`<code>bash
-wget --recursive --level=5 --no-parent --wait=1 \
-     --convert-links --page-requisites \
-     --user-agent="ArchiveBot/1.0" \
-     https://example.com
-</code>`<code>
-</p>
-
-<p>
-<strong>Explanation:</strong>
-- </code>--recursive<code>: Follow links
-- </code>--level=5<code>: Crawl up to 5 levels deep
-- </code>--no-parent<code>: Don't ascend to parent directories
-- </code>--wait=1<code>: Wait 1 second between requests (polite crawling)
-- </code>--convert-links<code>: Make links work offline
-- </code>--page-requisites<code>: Download CSS, images, JavaScript
-- </code>--user-agent<code>: Identify yourself (ethical scraping)
-</p>
-
-<p>
-<strong>Pros:</strong>
-- Fast, simple, reliable for static sites
-</p>
-
-<p>
-<strong>Cons:</strong>
-- Fails on JavaScript-heavy sites (doesn't execute JS)
-- Can't handle logins or authenticated content
-</p>
-
-<h3>Technique 2: Browser Automation (Dynamic Sites)</h3>
-
-<p>
-<strong>Use Case:</strong> JavaScript-heavy sites (React, Angular apps) or sites requiring interaction.
-</p>
-
-<p>
-<strong>Tools:</strong>
-- <strong>Selenium</strong>: Browser automation framework
-- <strong>Puppeteer</strong>: Headless Chrome control (Node.js)
-- <strong>Playwright</strong>: Modern cross-browser automation
-</p>
-
-<p>
-<strong>Example: Puppeteer Script (Simplified)</strong>
-</p>
-
-<p>
-</code>`<code>javascript
-const puppeteer = require('puppeteer');
-const fs = require('fs');
-</p>
-
-<p>
-(async () => {
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage();
-</p>
-
-<p>
-  // Navigate to page
-  await page.goto('https://example.com/post/12345');
-</p>
-
-<p>
-  // Wait for dynamic content to load
-  await page.waitForSelector('.post-content');
-</p>
-
-<p>
-  // Extract content
-  const content = await page.evaluate(() => {
-    return {
-      title: document.querySelector('.post-title').innerText,
-      body: document.querySelector('.post-content').innerText,
-      timestamp: document.querySelector('.post-date').innerText
-    };
-  });
-</p>
-
-<p>
-  // Save as JSON
-  fs.writeFileSync('post_12345.json', JSON.stringify(content, null, 2));
-</p>
-
-<p>
-  await browser.close();
-})();
-</code>`<code>
-</p>
-
-<p>
-<strong>Pros:</strong>
-- Handles JavaScript rendering
-- Can simulate user interactions (clicks, scrolls)
-- Can log in to authenticated sites
-</p>
-
-<p>
-<strong>Cons:</strong>
-- Slower than wget (must render pages)
-- More complex to set up
-</p>
-
-<h3>Technique 3: API Harvesting (Structured Data)</h3>
-
-<p>
-<strong>Use Case:</strong> Platforms with public APIs (Twitter, Reddit, Mastodon).
-</p>
-
-<p>
-<strong>Tools:</strong>
-- <strong>Platform-specific libraries</strong>: tweepy (Twitter), PRAW (Reddit)
-- <strong>HTTP clients</strong>: curl, requests (Python), fetch (JavaScript)
-</p>
-
-<p>
-<strong>Example: Twitter API (Pre-Elon, when API was good)</strong>
-</p>
-
-<p>
-</code>`<code>python
-import tweepy
-import json
-</p>
-
-<h1>Authenticate</h1>
-<p>
-auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-auth.set_access_token(access_token, access_token_secret)
-api = tweepy.API(auth)
-</p>
-
-<h1>Download user's timeline</h1>
-<p>
-tweets = []
-for tweet in tweepy.Cursor(api.user_timeline, screen_name='example_user', tweet_mode='extended').items():
-    tweets.append({
-        'id': tweet.id_str,
-        'text': tweet.full_text,
-        'created_at': str(tweet.created_at),
-        'retweet_count': tweet.retweet_count,
-        'favorite_count': tweet.favorite_count
-    })
-</p>
-
-<h1>Save as JSON</h1>
-<p>
-with open('example_user_tweets.json', 'w') as f:
-    json.dump(tweets, f, indent=2)
-</code>`<code>
-</p>
-
-<p>
-<strong>Pros:</strong>
-- Structured data (JSON, XML)
-- Includes metadata (timestamps, IDs, relationships)
-- Respects rate limits (built into libraries)
-</p>
-
-<p>
-<strong>Cons:</strong>
-- Platform must have API (many don't, or shut it down before dying)
-- Rate limits can be restrictive (slow)
-- APIs often sunset before platforms die (Twitter 2023)
-</p>
-
-<h3>Technique 4: Database Extraction (Direct Access)</h3>
-
-<p>
-<strong>Use Case:</strong> You have legitimate access to platform's database (employee, owner, partnership).
-</p>
-
-<p>
-<strong>Method:</strong>
-- SQL dump (if relational database)
-- NoSQL export (if MongoDB, CouchDB, etc.)
-- File system copy (if files stored on disk)
-</p>
-
-<p>
-<strong>Example: MySQL Dump</strong>
-</p>
-
-<p>
-</code>`<code>bash
-mysqldump -u username -p database_name > backup.sql
-</code>`<code>
-</p>
-
-<p>
-<strong>Pros:</strong>
-- Complete, perfect fidelity
-- Includes all metadata, relationships, deleted content
-</p>
-
-<p>
-<strong>Cons:</strong>
-- Rare (requires cooperation from platform)
-- May include sensitive data (must redact)
-</p>
-
-<h3>Technique 5: Forensic Recovery (Post-Mortem)</h3>
-
-<p>
-<strong>Use Case:</strong> Platform already shut down, but you might recover fragments.
-</p>
-
-<p>
-<strong>Methods:</strong>
-</p>
-
-<p>
-<strong>Google Cache:</strong>
-- Search </code>cache:example.com<code> in Google
-- Captures recent snapshots (but only for indexed pages)
-</p>
-
-<p>
-<strong>Wayback Machine:</strong>
-- Check Internet Archive's Wayback Machine
-- May have periodic snapshots
-</p>
-
-<p>
-<strong>User Backups:</strong>
-- Ask former users if they exported their data
-- Crowdsource fragments
-</p>
-
-<p>
-<strong>Web Archives:</strong>
-- Other web archives (UK Web Archive, Library of Congress)
-</p>
-
-<p>
-<strong>Old Hard Drives:</strong>
-- If servers were sold/discarded, forensic data recovery possible (rare, expensive)
-</p>
-
-<p>
-<strong>Example: MySpace Music Recovery Attempt</strong>
-</p>
-
-<p>
-After MySpace lost 50 million songs (2019):
-- Internet Archive had some (but not comprehensive)
-- Users who downloaded MP3s shared them
-- Some songs recovered via Google Cache before it expired
-- Most (~90%) permanently lost
-</p>
-
-<p>
-<strong>Lesson:</strong> Forensic recovery is last resort. Success rate is low. Better to preserve proactively.
-</p>
-
-<h2>Part IV: Provenance and Chain of Custody</h2>
-
-<h3>Why Provenance Matters</h3>
-
-<p>
-In physical archaeology, <strong>provenance</strong> (where an artifact came from) is crucial. An Egyptian vase in a museum is worthless if you don't know which tomb it came from. Context gives meaning.
-</p>
-
-<p>
-In digital archaeology, provenance includes:
-1. <strong>Where did you get this?</strong> (scraped from live site? downloaded via API? recovered from backup?)
-2. <strong>When did you capture it?</strong> (date/time of preservation)
-3. <strong>Who captured it?</strong> (individual, institution, bot)
-4. <strong>What modifications were made?</strong> (did you redact personal info? convert formats?)
-</p>
-
-<p>
-Without provenance, digital artifacts lose credibility.
-</p>
-
-<h3>Chain of Custody Documentation</h3>
-
-<p>
-<strong>Best Practice:</strong> Document every step from capture to storage.
-</p>
-
-<p>
-<strong>Template: Provenance Record</strong>
-</p>
-
-<p>
-</code>`<code>
-Artifact: GeoCities site "geocities.com/SiliconValley/1234"
-Captured: 2009-11-15 03:42 UTC
-Method: wget recursive scrape
-Captured By: Archive Team volunteer #7823
-Source State: Live website (platform still online)
-Completeness: 87% (some images 404'd during capture)
-Storage: Initial storage on volunteer's hard drive
-Transfer: Uploaded to Archive Team torrent 2009-11-20
-Current Location: Internet Archive, GeoCities torrent seed
-Format: Original HTML + images (no conversion)
-Modifications: None (bit-perfect capture)
-Verification: MD5 checksums recorded at capture
-Access: Public (torrent freely downloadable)
-</code>`<code>
-</p>
-
-<p>
-<strong>Why Each Field Matters:</strong>
-</p>
-
-<p>
-- <strong>Captured date:</strong> Proves this is snapshot from specific moment
-- <strong>Method:</strong> Explains why some content might be missing (wget can't execute JavaScript)
-- <strong>Completeness:</strong> Honest about gaps (87% is still valuable)
-- <strong>Chain of custody:</strong> Volunteer → Torrent → Internet Archive (transparent)
-- <strong>Modifications:</strong> None (proves authenticity)
-- <strong>Verification:</strong> Checksums prove files unchanged since capture
-</p>
-
-<h3>Metadata Standards</h3>
-
-<p>
-Use existing standards when possible:
-</p>
-
-<p>
-<strong>Dublin Core:</strong>
-- Standard metadata for digital objects
-- Fields: Creator, Date, Title, Description, Format, Rights
-</p>
-
-<p>
-<strong>METS (Metadata Encoding and Transmission Standard):</strong>
-- Library of Congress standard
-- Used for complex digital objects (multiple files, relationships)
-</p>
-
-<p>
-<strong>PREMIS (Preservation Metadata):</strong>
-- Focuses on provenance and preservation actions
-- Records: who did what, when, why
-</p>
-
-<p>
-<strong>Example: Dublin Core for Preserved Vine</strong>
-</p>
-
-<p>
-</code>`<code>xml
-<metadata>
-  <dc:title>Vine #284619204 "Why You Always Lying"</dc:title>
-  <dc:creator>Nicholas Fraser (@downgoes.fraser)</dc:creator>
-  <dc:date>2015-09-02</dc:date>
-  <dc:type>Video (6 seconds, looped)</dc:type>
-  <dc:format>MP4 (H.264)</dc:format>
-  <dc:description>Viral Vine meme, 30M+ loops, inspired song</dc:description>
-  <dc:rights>Fair Use (platform shutdown, cultural preservation)</dc:rights>
-  <dc:source>Vine.co (platform shut down 2017)</dc:source>
-  <dc:coverage>Internet Archive, Vine Archive Collection</dc:coverage>
-  <dc:identifier>IA-Vine-284619204</dc:identifier>
-</metadata>
-</code>`<code>
-</p>
-
-<h2>Part V: Ethical Excavation</h2>
-
-<h3>Archaeology's Ethical Evolution</h3>
-
-<p>
-Physical archaeology has a dark history:
-- Colonial looting (British Museum filled with stolen artifacts)
-- Destroying sites (19th-century excavations were destructive)
-- Ignoring indigenous communities (treating their ancestors as "objects of study")
-</p>
-
-<p>
-Modern archaeology has reformed:
-- <strong>Repatriation</strong>: Returning artifacts to communities of origin
-- <strong>Community consultation</strong>: Indigenous peoples have say in excavations
-- <strong>Non-destructive methods</strong>: Ground-penetrating radar instead of digging
-- <strong>Context preservation</strong>: Documenting everything, not just taking treasures
-</p>
-
-<p>
-<strong>Digital archaeology must learn these lessons.</strong>
-</p>
-
-<h3>Ethical Principles for Digital Excavation</h3>
-
-<p>
-<strong>1. Minimize Harm</strong>
-</p>
-
-<p>
-<strong>To the platform:</strong>
-- Don't overload servers (respect rate limits)
-- Identify your scraper (user-agent string)
-- Stop if platform asks (honor robots.txt)
-</p>
-
-<p>
-Even if you oppose the platform's business model, harming their infrastructure isn't ethical (hurts users, not executives).
-</p>
-
-<p>
-<strong>To users:</strong>
-- Don't expose private information
-- Respect deleted content (if user intentionally deleted, presume they wanted it gone—with exceptions for public figures)
-</p>
-
-<p>
-<strong>2. Respect robots.txt (Mostly)</strong>
-</p>
-
-<p>
-</code>robots.txt<code> is a file that tells crawlers what they can/can't scrape.
-</p>
-
-<p>
-<strong>Example:</strong>
-</code>`<code>
-User-agent: <em>
-Disallow: /private/
-Disallow: /user-settings/
-Allow: /public/
-</code>`<code>
-</p>
-
-<p>
-<strong>Ethical debate:</strong>
-- <strong>Strict interpretation</strong>: Always obey robots.txt (it's the site owner's wishes)
-- <strong>Preservation exception</strong>: Platform is dying, robots.txt doesn't apply (saving culture > obeying soon-to-be-dead platform)
-</p>
-
-<p>
-<strong>Compromise:</strong>
-- Respect robots.txt for living platforms
-- Override for dying platforms (with documentation: "We scraped despite robots.txt because platform announced shutdown")
-</p>
-
-<p>
-<strong>3. Document Ethical Decisions</strong>
-</p>
-
-<p>
-When you make ethically contested choices (scraping private content, overriding robots.txt, preserving deleted posts), <strong>document why</strong>.
-</p>
-
-<p>
-<strong>Example:</strong>
-</p>
-
-<p>
-</code>`<code>
-ETHICAL NOTE: Tumblr Post #12345
-</p>
-
-<p>
-This post was deleted by the author in 2018 (pre-NSFW purge).
-We preserved it because:
-1. Author is public figure (political activist with 100k followers)
-2. Post documents historically significant event (protest organization)
-3. Post was public for 3 years (widely shared, cited in news)
-</p>
-
-<p>
-However, we restricted access:
-- Not searchable via Google
-- Requires researcher credentials to view
-- Will honor takedown request if author contacts us
-</p>
-
-<p>
-Decision made: 2024-11-15
-Decision maker: [Archivist ID]
-</code>`<code>
-</p>
-
-<p>
-<strong>Transparency builds trust.</strong>
-</p>
-
-<p>
-<strong>4. Community Consultation (When Possible)</strong>
-</p>
-
-<p>
-If you're preserving a community's content (fandom, activist group, cultural community), <strong>ask them</strong>.
-</p>
-
-<p>
-<strong>Example: Fan Fiction Archive</strong>
-</p>
-
-<p>
-Before scraping abandoned LiveJournal fandom:
-1. Post in fandom spaces: "We're considering archiving [fandom] LiveJournal. Thoughts?"
-2. Listen to concerns (privacy, consent, cultural norms)
-3. Adapt plans (maybe restrict access, or honor individual takedown requests)
-</p>
-
-<p>
-Not always possible (no time, or community scattered). But when possible, consultation is ethical.
-</p>
-
-<p>
-<strong>5. Allow Takedowns</strong>
-</p>
-
-<p>
-Even after preserving, respect author requests to remove their content.
-</p>
-
-<p>
-<strong>Process:</strong>
-1. Public takedown request form
-2. Verify requester is original author (prevent abuse)
-3. Remove content within reasonable time (7-30 days)
-4. Document removal (provenance: "Content removed 2024-11-20 at author's request")
-</p>
-
-<h2>Part VI: Case Study — Excavating a Dying Forum</h2>
-
-<h3>Scenario: Small Community Forum (2024)</h3>
-
-<p>
-<strong>Background:</strong>
-- Forum: "VintageGamers" (retro gaming community)
-- Software: vBulletin 3.8 (old forum software)
-- Content: 15 years of discussions (2009-2024)
-- Size: 5,000 members, 100,000 posts
-- Announcement: Shutting down in 30 days (hosting costs too high)
-</p>
-
-<p>
-<strong>Reconnaissance (Days 1-3):</strong>
-</p>
-
-<p>
-1. <strong>Platform assessment:</strong>
-   - vBulletin forum (database-driven)
-   - Public content (no login to read, but login to see images)
-   - URL pattern: </code>/showthread.php?t=[thread_id]<code>
-   - Estimated 10,000 threads
-</p>
-
-<p>
-2. <strong>Existing documentation:</strong>
-   - Not in Internet Archive (robots.txt blocked crawlers)
-   - No official export tool
-   - Community members panicking, want it saved
-</p>
-
-<p>
-3. <strong>Contact admin:</strong>
-   - Email forum owner: "Can you provide database dump?"
-   - Owner agrees! (relieved someone cares)
-   - Owner provides MySQL dump (20MB compressed)
-</p>
-
-<p>
-<strong>Database Excavation (Days 4-7):</strong>
-</p>
-
-<p>
-1. <strong>Import database locally:</strong>
-   </code>`<code>bash
-   mysql -u root -p < vintagegamers_backup.sql
-   </code>`<code>
-</p>
-
-<p>
-2. <strong>Analyze schema:</strong>
-   - Tables: </code>posts<code>, </code>threads<code>, </code>users<code>, </code>attachments<code>
-   - Relationships: </code>thread_id<code> links posts to threads
-   - Metadata: timestamps, user IDs, post counts
-</p>
-
-<p>
-3. <strong>Export to JSON:</strong>
-   </code>`<code>python
-   import mysql.connector
-   import json
-</p>
-
-<p>
-   db = mysql.connector.connect(host="localhost", user="root", password="...", database="vintagegamers")
-   cursor = db.cursor()
-</p>
-
-<p>
-   # Export threads
-   cursor.execute("SELECT thread_id, title, user_id, post_date FROM threads")
-   threads = [{'id': row[0], 'title': row[1], 'user_id': row[2], 'date': str(row[3])} for row in cursor.fetchall()]
-</p>
-
-<p>
-   with open('threads.json', 'w') as f:
-       json.dump(threads, f, indent=2)
-</p>
-
-<p>
-   # (Repeat for posts, users, etc.)
-   </code>`<code>
-</p>
-
-<p>
-4. <strong>Download attachments:</strong>
-   - Images stored in </code>/attachments/<code> directory
-   - Use wget to download all:
-   </code>`<code>bash
-   wget -r -l 1 -A jpg,png,gif https://vintagegamers.com/attachments/
-   </code>`<code>
-</p>
-
-<p>
-<strong>Curation (Days 8-14):</strong>
-</p>
-
-<p>
-1. <strong>Redact personal info:</strong>
-   - Email addresses in user profiles → removed
-   - IP addresses in logs → removed
-   - Private messages → excluded from export
-</p>
-
-<p>
-2. <strong>Add metadata:</strong>
-   - Create </code>README.md<code> documenting forum history
-   - List notable threads ("Best of VintageGamers")
-   - Interview longtime members (oral history)
-</p>
-
-<p>
-3. <strong>Build search interface:</strong>
-   - Use Elasticsearch to index posts
-   - Simple web UI: search by keyword, date, user
-</p>
-
-<p>
-<strong>Preservation (Days 15-30):</strong>
-</p>
-
-<p>
-1. <strong>Upload to Internet Archive:</strong>
-   - Create "VintageGamers Archive" collection
-   - Upload database dump, JSON exports, attachment images, README
-</p>
-
-<p>
-2. <strong>Seed BitTorrent:</strong>
-   - Create torrent of full archive
-   - Ensure redundancy (if IA ever goes down)
-</p>
-
-<p>
-3. <strong>Announce to community:</strong>
-   - Post in forum: "Archive complete! Here's where to find it."
-   - Community grateful, downloads personal copies
-</p>
-
-<p>
-<strong>Provenance Record:</strong>
-</p>
-
-<p>
-</code>`<code>
-Archive: VintageGamers Forum (2009-2024)
-Captured: 2024-11-01 to 2024-11-15
-Method: MySQL database dump provided by forum administrator
-Captured By: [Archaeobytologist Name], with admin cooperation
-Completeness: 100% (full database export)
-Redactions: Email addresses, IP addresses, private messages removed
-Storage: Internet Archive + BitTorrent
-Format: MySQL dump (raw), JSON (parsed), HTML (rendered)
-Access: Public (Internet Archive), with restricted personal data
-License: CC BY-NC-SA 4.0 (preserves community content, non-commercial)
-</code>``
-</p>
-
-<p>
-<strong>Outcome:</strong>
-- Forum shuts down on schedule
-- 100% of content preserved
-- Community can still access their history
-- Future researchers can study retro gaming community
-</p>
-
-<h2>Conclusion: The Archaeologist's Mindset</h2>
-
-<p>
-Digital excavation isn't just about running scripts. It's about bringing an <strong>archaeological mindset</strong> to ephemeral platforms:
-</p>
-
-<p>
-<strong>1. Systematic:</strong> Survey before digging. Plan your excavation. Document everything.
-</p>
-
-<p>
-<strong>2. Stratigraphic:</strong> Preserve all layers (content, metadata, relationships, affordances), not just surface.
-</p>
-
-<p>
-<strong>3. Contextual:</strong> Provenance matters. Where did this come from? When? Who captured it?
-</p>
-
-<p>
-<strong>4. Ethical:</strong> Minimize harm. Respect communities. Be transparent about contested choices.
-</p>
-
-<p>
-<strong>5. Urgent:</strong> Unlike physical archaeology, you don't have centuries. You have days or weeks. Move fast—but systematically.
-</p>
-
-<p>
-In the next chapter, we'll dive deeper into <strong>Digital Forensics</strong>—the technical methods for recovering data from damaged, corrupted, or deliberately deleted sources. Sometimes, platforms don't give you clean MySQL dumps. Sometimes, you're working with fragments, corrupted files, and deleted evidence.
-</p>
-
-<p>
-Digital forensics teaches you how to work with what's broken.
-</p>
-
-<h2>Discussion Questions</h2>
-
-<p>
-1. <strong>Methodology:</strong> Should digital archaeology prioritize speed (scrape everything quickly) or precision (careful documentation)? How do you balance urgency with rigor?
-</p>
-
-<p>
-2. <strong>Ethics:</strong> Is it ethical to scrape a platform that explicitly forbids it (robots.txt, ToS) if the platform is dying and content will be lost?
-</p>
-
-<p>
-3. <strong>Provenance:</strong> Why does documenting where you got an artifact matter? What happens if provenance is unclear or contested?
-</p>
-
-<p>
-4. <strong>Stratigraphic Layers:</strong> What digital "layers" do you think are most important to preserve? Content? Metadata? Relationships? Platform affordances?
-</p>
-
-<p>
-5. <strong>Community Consultation:</strong> When is it necessary to consult communities before preserving their content? When is it acceptable to preserve without asking?
-</p>
-
-<p>
-6. <strong>Personal Practice:</strong> Have you ever "excavated" your own digital artifacts (downloaded Facebook archive, exported tweets)? What did you learn?
-</p>
-
-<h2>Exercise: Plan a Digital Excavation</h2>
-
-<p>
-<strong>Scenario:</strong> A platform you use announces shutdown in 60 days. Plan its excavation.
-</p>
-
-<p>
-<strong>Choose a platform:</strong>
-- Small forum you participate in
-- Discord server you're part of
-- Niche social network
-- Personal blog community
-</p>
-
-<p>
-<strong>Part 1: Reconnaissance Report</strong> (500 words)
-- Platform type, scale, data types
-- Technical barriers (login walls, APIs, rate limits)
-- Existing documentation (Wayback Machine, community wikis)
-- Estimated preservation time and storage
-</p>
-
-<p>
-<strong>Part 2: Excavation Strategy</strong> (800 words)
-- What tools will you use? (wget, Puppeteer, API clients)
-- What layers will you preserve? (content, metadata, relationships)
-- What's your timeline? (week-by-week plan)
-- How will you handle rate limits or technical barriers?
-</p>
-
-<p>
-<strong>Part 3: Ethical Framework</strong> (500 words)
-- What content should NOT be preserved? (privacy, consent, harm)
-- Will you respect robots.txt? Why/why not?
-- Will you consult the community? How?
-- How will you handle takedown requests?
-</p>
-
-<p>
-<strong>Part 4: Provenance Documentation</strong> (300 words)
-- Write a provenance record for your imagined excavation
-- Include: capture method, date, completeness, modifications, storage
-</p>
-
-<p>
-<strong>Part 5: Reflection</strong> (200 words)
-- What's the hardest part of this excavation?
-- What ethical dilemmas did you face?
-- Would you actually do this if the platform announced shutdown?
-</p>
-
-<h2>Further Reading</h2>
-
-<h3>On Web Archiving Methods</h3>
-
-<p>
-- Brügger, Niels. </em>The Archived Web: Doing History in the Digital Age<em>. MIT Press, 2018.
-  - How to work with web archives as historical sources
-</p>
-
-<p>
-- Niu, Jinfang. "An Overview of Web Archiving." </em>D-Lib Magazine<em> 18, no. 3/4 (2012).
-  - Technical methods for web preservation
-</p>
-
-<p>
-- Archive Team. "So You Want to Archive a Website." https://wiki.archiveteam.org/
-  - Practical guide from guerrilla archivists
-</p>
-
-<h3>On Digital Forensics</h3>
-
-<p>
-- Carrier, Brian. </em>File System Forensic Analysis<em>. Addison-Wesley, 2005.
-  - Technical deep dive on recovering deleted data
-</p>
-
-<p>
-- Kirschenbaum, Matthew. </em>Mechanisms: New Media and the Forensic Imagination<em>. MIT Press, 2008.
-  - Humanistic approach to digital forensics
-</p>
-
-<h3>On Archaeological Methods (Physical)</h3>
-
-<p>
-- Renfrew, Colin, and Paul Bahn. </em>Archaeology: Theories, Methods, and Practice<em>. Thames & Hudson, 2016.
-  - Classic textbook (useful for understanding stratigraphic thinking)
-</p>
-
-<p>
-- Hodder, Ian. "The Interpretation of Documents and Material Culture." In </em>Handbook of Qualitative Research<em>, edited by Norman Denzin and Yvonna Lincoln, 393-402. Sage, 2000.
-  - Interpretive archaeology (translates to digital context)
-</p>
-
-<h3>On Ethics</h3>
-
-<p>
-- Society for American Archaeology. "Principles of Archaeological Ethics." https://www.saa.org/
-  - Professional ethics code (adaptable to digital)
-</p>
-
-<p>
-- Caswell, Michelle. </em>Urgent Archives: Enacting Liberatory Memory Work<em>. Routledge, 2021.
-  - Ethics of archiving marginalized communities
-</p>
-
-<p>
-<strong>End of Chapter 7</strong>
-</p>
-
-<p>
-</em>Next: Chapter 8 — Digital Forensics for Archaeobytologists*
-</p>
-
-
-        </article>
-        <div class="nav">
-            <a href="index.html">Back to Table of Contents</a>
-        </div>
-    </div>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='chapter-7-archaeological-methods-for-digital-artifacts'><span>Chapter 7: Archaeological Methods for Digital Artifacts</span></h1><hr /><h2 id='opening-the-dig-site-is-ephemeral'><span>Opening: The Dig Site Is Ephemeral</span></h2><p><span>In 1922, Howard Carter discovered Tutankhamun&#39;s tomb. The artifacts had been buried for 3,000 years. They would remain buried for 3,000 more if Carter didn&#39;t act. But once found, he had </span><strong><span>time</span></strong><span>—years to carefully excavate, photograph, catalog, and preserve each object.</span></p><p><span>In 2009, Archive Team discovered that GeoCities would shut down in three weeks. The &quot;artifacts&quot; had existed for 15 years. They would exist for </span><strong><span>21 more days</span></strong><span>, then vanish forever. No time for careful documentation. No room for archaeological precision. Just frantic scraping before the servers went dark.</span></p><p><span>This is the fundamental difference between physical and digital archaeology:</span></p><p><strong><span>Physical archaeology:</span></strong></p><ul><li><p><span>Sites persist for centuries</span></p></li><li><p><span>Excavation is slow, methodical, non-destructive</span></p></li><li><p><span>You can return to a site years later</span></p></li></ul><p><strong><span>Digital archaeology:</span></strong></p><ul><li><p><span>Sites vanish in days or weeks</span></p></li><li><p><span>Excavation is fast, opportunistic, often destructive (scraping overloads servers)</span></p></li><li><p><span>You get </span><strong><span>one chance</span></strong><span>—once the platform dies, it&#39;s gone</span></p></li></ul><p><span>Yet despite these differences, physical archaeology offers valuable methods for digital practice. Stratigraphic analysis, site surveys, provenance tracking, and ethical excavation frameworks all translate to digital contexts—if adapted properly.</span></p><p><span>This chapter explores how to </span><strong><span>excavate digital artifacts</span></strong><span> using archaeological methods modified for digital ephemera. You&#39;ll learn:</span></p><ul><li><p><span>Site reconnaissance and mapping</span></p></li><li><p><span>Stratigraphic analysis of digital layers</span></p></li><li><p><span>Excavation techniques (scraping, API harvesting, forensic recovery)</span></p></li><li><p><span>Provenance and chain-of-custody documentation</span></p></li><li><p><span>Ethical frameworks for excavation</span></p></li></ul><p><span>By the end, you&#39;ll know how to approach a dying platform like an archaeological dig site—systematic, ethical, and effective.</span></p><hr /><h2 id='part-i-site-reconnaissance-----mapping-the-digital-landscape'><span>Part I: Site Reconnaissance — Mapping the Digital Landscape</span></h2><h3 id='before-you-dig-understanding-the-site'><span>Before You Dig: Understanding the Site</span></h3><p><span>Physical archaeologists don&#39;t start digging randomly. They survey the site, create maps, test soil composition, and plan their excavation strategy. Digital archaeologists must do the same.</span></p><h3 id='step-1-platform-architecture-assessment'><span>Step 1: Platform Architecture Assessment</span></h3><p><strong><span>Goal:</span></strong><span> Understand the platform&#39;s technical structure before attempting to preserve it.</span></p><p><strong><span>Questions to Answer:</span></strong></p><p><strong><span>1. What type of platform is this?</span></strong></p><ul><li><p><span>Static website (HTML/CSS, easy to scrape)</span></p></li><li><p><span>Dynamic web app (JavaScript-heavy, requires browser automation)</span></p></li><li><p><span>Mobile app (API-based, may require reverse engineering)</span></p></li><li><p><span>Forum/BBS (database-driven, need to capture structure)</span></p></li><li><p><span>Social network (graph-based, relationships matter as much as content)</span></p></li></ul><p><strong><span>2. What are the data types?</span></strong></p><ul><li><p><span>Text (posts, comments, messages)</span></p></li><li><p><span>Images (user photos, avatars, UI elements)</span></p></li><li><p><span>Videos (hosted on platform or embedded from elsewhere?)</span></p></li><li><p><span>Metadata (timestamps, user IDs, like counts, tags)</span></p></li><li><p><span>Relationships (follows, friends, replies, shares)</span></p></li></ul><p><strong><span>3. What&#39;s the scale?</span></strong></p><ul><li><p><span>How many users?</span></p></li><li><p><span>How much content (posts, pages, files)?</span></p></li><li><p><span>How much storage required?</span></p></li></ul><p><strong><span>4. What are the access patterns?</span></strong></p><ul><li><p><span>Public (anyone can view)</span></p></li><li><p><span>Login-required (need account)</span></p></li><li><p><span>Private/friends-only (restricted access)</span></p></li><li><p><span>Ephemeral (content disappears after viewing, like Snapchat)</span></p></li></ul><p><strong><span>5. What are the technical barriers?</span></strong></p><ul><li><p><span>Rate limiting (how many requests per hour?)</span></p></li><li><p><span>JavaScript rendering (can&#39;t scrape with simple wget)</span></p></li><li><p><span>CAPTCHAs (need human intervention)</span></p></li><li><p><span>DRM/encryption (legally/technically protected)</span></p></li><li><p><span>APIs (do they exist? are they documented?)</span></p></li></ul><p><strong><span>Example: GeoCities Architecture Assessment (2009)</span></strong></p><figure class='table-figure'><table><thead><tr><th><span>Dimension</span></th><th><span>Assessment</span></th></tr></thead><tbody><tr><td><span>Type</span></td><td><span>Static HTML sites (mostly)</span></td></tr><tr><td><span>Data types</span></td><td><span>HTML, images, GIFs, MIDI files, JavaScript</span></td></tr><tr><td><span>Scale</span></td><td><span>~30 million sites, estimated TB of data</span></td></tr><tr><td><span>Access</span></td><td><span>Public (no login required)</span></td></tr><tr><td><span>Barriers</span></td><td><span>Rate limiting (Yahoo would block aggressive scrapers), broken links (sites linked to each other, many links dead)</span></td></tr><tr><td><span>Strategy</span></td><td><span>Distributed scraping (many volunteers, different IPs), prioritize unique content over duplicates</span></td></tr></tbody></table></figure><h3 id='step-2-existing-documentation'><span>Step 2: Existing Documentation</span></h3><p><strong><span>Check what&#39;s already known:</span></strong></p><p><strong><span>Internet Archive&#39;s Wayback Machine:</span></strong></p><ul><li><p><span>Has it been crawled? When? How comprehensively?</span></p></li><li><p><span>Gaps in coverage?</span></p></li></ul><p><strong><span>Platform&#39;s Official Archives:</span></strong></p><ul><li><p><span>Does the platform provide data export tools?</span></p></li><li><p><span>What format? How complete?</span></p></li></ul><p><strong><span>Community Knowledge:</span></strong></p><ul><li><p><span>Are there fan wikis, documentation, user guides?</span></p></li><li><p><span>Former employees willing to share insider knowledge?</span></p></li></ul><p><strong><span>Technical Documentation:</span></strong></p><ul><li><p><span>API documentation (if APIs exist)</span></p></li><li><p><span>Terms of Service (what&#39;s legal to scrape?)</span></p></li><li><p><span>robots.txt (what does platform want crawled?)</span></p></li></ul><p><strong><span>Example: Vine Documentation Check (2016)</span></strong></p><ul><li><p><strong><span>Wayback Machine:</span></strong><span> Some Vines captured, but incomplete (many videos not archived)</span></p></li><li><p><strong><span>Official Export:</span></strong><span> Vine provided &quot;Download Your Vines&quot; tool (good, but required users to act)</span></p></li><li><p><strong><span>Community:</span></strong><span> Vine Wiki documented popular creators, memes, culture</span></p></li><li><p><strong><span>API:</span></strong><span> Public API existed (allowed bulk downloading until shutdown)</span></p></li></ul><p><strong><span>Decision:</span></strong><span> Use API while it exists, supplement with manual scraping for videos API misses.</span></p><h3 id='step-3-reconnaissance-scraping'><span>Step 3: Reconnaissance Scraping</span></h3><p><strong><span>Goal:</span></strong><span> Capture a small sample to understand structure before full excavation.</span></p><p><strong><span>Method:</span></strong></p><ol start='' ><li><p><span>Scrape 100-1000 pages/posts (small representative sample)</span></p></li><li><p><span>Analyze structure:</span></p><ul><li><p><span>What HTML tags are used?</span></p></li><li><p><span>Where is metadata stored? (JSON in page source? Separate API calls?)</span></p></li><li><p><span>What&#39;s the URL pattern? (Can you enumerate all pages?)</span></p></li></ul></li><li><p><span>Test tools:</span></p><ul><li><p><span>Does wget work? Or need Selenium (browser automation)?</span></p></li><li><p><span>How fast can you scrape without getting blocked?</span></p></li></ul></li></ol><p><strong><span>Deliverable:</span></strong><span> Reconnaissance report documenting:</span></p><ul><li><p><span>Platform structure</span></p></li><li><p><span>Technical barriers</span></p></li><li><p><span>Estimated scale</span></p></li><li><p><span>Recommended tools</span></p></li><li><p><span>Estimated time to complete full excavation</span></p></li></ul><p><strong><span>Example: Small Forum Reconnaissance</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="" style="break-inside: unset;"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.19531px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><span><span>​</span>x</span></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Platform: Example Forum (phpBB)</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Date: 2024-11-15</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Estimated Shutdown: 2024-12-01 (15 days)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Structure:</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">- Forum software: phpBB 3.2</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">- Content: 10,000 threads, ~50,000 posts</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">- Users: 1,500 registered, ~500 active</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Technical Assessment:</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">- Public access (no login for reading)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">- Standard HTML structure (easy to parse)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">- URL pattern: /viewtopic.php?t=[thread_id]</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">- Thread IDs appear sequential (can enumerate)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Barriers:</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">- Rate limit: ~60 requests/minute before 503 errors</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">- Some images externally hosted (may be lost)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">- User profile pages require login (skip for now)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Strategy:</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">- Use wget with --wait=1 (stay under rate limit)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">- Scrape all threads over 5 days</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">- Capture HTML + images</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">- Parse HTML to extract structured data (JSON)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Estimated Storage: 2-5GB</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Estimated Time: 5 days (continuous scraping)</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 627px;"></div><div class="CodeMirror-gutters" style="display: none; height: 627px;"></div></div></div></pre><hr /><h2 id='part-ii-stratigraphic-analysis-----understanding-digital-layers'><span>Part II: Stratigraphic Analysis — Understanding Digital Layers</span></h2><p><span>Physical archaeologists use </span><strong><span>stratigraphy</span></strong><span>—the study of layers—to understand how a site was formed over time. Lower layers are older; upper layers are more recent. Disruptions in layers indicate events (fires, floods, invasions).</span></p><p><span>Digital platforms also have layers. Understanding them is crucial for preservation.</span></p><h3 id='digital-stratigraphy-the-technology-stack'><span>Digital Stratigraphy: The Technology Stack</span></h3><p><strong><span>Layer 1: Content (Surface Layer)</span></strong></p><ul><li><p><span>What users see: posts, images, videos</span></p></li><li><p><span>This is the &quot;archaeological treasure&quot;—the artifacts themselves</span></p></li></ul><p><strong><span>Layer 2: Metadata (Context Layer)</span></strong></p><ul><li><p><span>Timestamps, user IDs, like counts, tags, geolocation</span></p></li><li><p><span>Essential for interpreting content</span></p></li></ul><p><strong><span>Layer 3: Relationships (Social Layer)</span></strong></p><ul><li><p><span>Follower graphs, reply threads, retweets/shares</span></p></li><li><p><span>Network structure that gives content meaning</span></p></li></ul><p><strong><span>Layer 4: Platform Affordances (Infrastructure Layer)</span></strong></p><ul><li><p><span>Character limits (Twitter&#39;s 140/280), video length limits (Vine&#39;s 6 seconds)</span></p></li><li><p><span>UI design (Facebook&#39;s &quot;like&quot; button, Tumblr&#39;s reblog)</span></p></li><li><p><span>These shape what could be expressed</span></p></li></ul><p><strong><span>Layer 5: Code and Protocols (Base Layer)</span></strong></p><ul><li><p><span>HTML/CSS, JavaScript, APIs</span></p></li><li><p><span>The technical substrate everything else is built on</span></p></li></ul><p><strong><span>Why This Matters:</span></strong></p><p><span>If you only preserve Layer 1 (content), you lose context. A tweet without timestamp, author, and reply chain is nearly meaningless. A Vine without knowledge that it&#39;s 6 seconds (platform affordance) loses its cultural significance.</span></p><p><strong><span>Best Practice:</span></strong><span> Preserve </span><strong><span>all accessible layers</span></strong><span>, not just content.</span></p><h3 id='temporal-stratigraphy-change-over-time'><span>Temporal Stratigraphy: Change Over Time</span></h3><p><span>Platforms evolve. Preserving multiple snapshots captures this evolution.</span></p><p><strong><span>Example: Twitter&#39;s Stratigraphy (2006-2025)</span></strong></p><figure class='table-figure'><table><thead><tr><th><span>Period</span></th><th><span>Character Limit</span></th><th><span>Key Features</span></th><th><span>Cultural Context</span></th></tr></thead><tbody><tr><td><span>2006-2009</span></td><td><span>140 characters</span></td><td><span>SMS-based, public only</span></td><td><span>Early adopters, tech culture</span></td></tr><tr><td><span>2010-2013</span></td><td><span>140</span></td><td><span>@mentions, hashtags, retweets</span></td><td><span>Mainstream adoption, Arab Spring</span></td></tr><tr><td><span>2014-2017</span></td><td><span>140</span></td><td><span>Embedded images/video, polls</span></td><td><span>Visual turn, meme culture</span></td></tr><tr><td><span>2017-2022</span></td><td><span>280</span></td><td><span>Threads, longer tweets</span></td><td><span>Discourse shift, Trump era</span></td></tr><tr><td><span>2022-2025</span></td><td><span>280+</span></td><td><span>Elon ownership, chaos</span></td><td><span>Decline, exodus to alternatives</span></td></tr></tbody></table></figure><p><span>If you only archived Twitter in 2025, you&#39;d miss how 140-character limit shaped early Twitter culture. Stratigraphic preservation (periodic snapshots) captures evolution.</span></p><h3 id='excavating-through-layers-practical-example'><span>Excavating Through Layers: Practical Example</span></h3><p><strong><span>Scenario:</span></strong><span> Preserving a Tumblr blog (before or after NSFW purge).</span></p><p><strong><span>Layer 1 — Content:</span></strong></p><ul><li><p><span>Use Tumblr&#39;s API or export tool to download posts</span></p></li><li><p><span>Format: JSON or HTML</span></p></li><li><p><span>Includes text, images, embedded media</span></p></li></ul><p><strong><span>Layer 2 — Metadata:</span></strong></p><ul><li><p><span>Post timestamps (when was this published?)</span></p></li><li><p><span>Tags (how did author categorize this?)</span></p></li><li><p><span>Post type (text, photo, quote, link, chat, audio, video)</span></p></li><li><p><span>Note count (likes + reblogs)</span></p></li></ul><p><strong><span>Layer 3 — Relationships:</span></strong></p><ul><li><p><span>Reblog chain (who reblogged from whom?)</span></p></li><li><p><span>Follower graph (if accessible)</span></p></li><li><p><span>External links (what other sites/blogs mentioned?)</span></p></li></ul><p><strong><span>Layer 4 — Platform Affordances:</span></strong></p><ul><li><p><span>Tumblr&#39;s &quot;reblog&quot; culture (different from Twitter&#39;s &quot;quote tweet&quot;)</span></p></li><li><p><span>Tag system (used for discovery, not just categorization)</span></p></li><li><p><span>Dashboard feed (algorithmic? chronological?)</span></p></li></ul><p><strong><span>Layer 5 — Code:</span></strong></p><ul><li><p><span>Tumblr&#39;s HTML theme (custom CSS)</span></p></li><li><p><span>Embedded JavaScript (any interactive elements?)</span></p></li></ul><p><strong><span>Preservation Strategy:</span></strong></p><ol start='' ><li><p><span>Download JSON export (Layers 1-2)</span></p></li><li><p><span>Scrape full HTML (captures Layer 4 affordances via design)</span></p></li><li><p><span>Reconstruct reblog chains from metadata (Layer 3)</span></p></li><li><p><span>Document platform context in README (Layer 4 cultural norms)</span></p></li></ol><hr /><h2 id='part-iii-excavation-techniques-----tools-and-methods'><span>Part III: Excavation Techniques — Tools and Methods</span></h2><h3 id='technique-1-simple-web-scraping-static-sites'><span>Technique 1: Simple Web Scraping (Static Sites)</span></h3><p><strong><span>Use Case:</span></strong><span> Static HTML sites (blogs, personal homepages, early web).</span></p><p><strong><span>Tools:</span></strong></p><ul><li><p><strong><span>wget</span></strong><span>: Command-line downloader (recursive crawling)</span></p></li><li><p><strong><span>HTTrack</span></strong><span>: GUI-based website copier</span></p></li><li><p><strong><span>ArchiveBox</span></strong><span>: Modern, full-featured archiver</span></p></li></ul><p><strong><span>Example: wget Command</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.19531px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">wget</span> <span class="cm-attribute">--recursive</span> <span class="cm-attribute">--level</span><span class="cm-operator">=</span><span class="cm-number">5</span> <span class="cm-attribute">--no-parent</span> <span class="cm-attribute">--wait</span><span class="cm-operator">=</span><span class="cm-number">1</span> \</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; <span class="cm-attribute">--convert-links</span> <span class="cm-attribute">--page-requisites</span> \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; <span class="cm-attribute">--user-agent</span><span class="cm-operator">=</span><span class="cm-string">"ArchiveBot/1.0"</span> \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; https://example.com</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 90px;"></div><div class="CodeMirror-gutters" style="display: none; height: 90px;"></div></div></div></pre><p><strong><span>Explanation:</span></strong></p><ul><li><p><code>--recursive</code><span>: Follow links</span></p></li><li><p><code>--level=5</code><span>: Crawl up to 5 levels deep</span></p></li><li><p><code>--no-parent</code><span>: Don&#39;t ascend to parent directories</span></p></li><li><p><code>--wait=1</code><span>: Wait 1 second between requests (polite crawling)</span></p></li><li><p><code>--convert-links</code><span>: Make links work offline</span></p></li><li><p><code>--page-requisites</code><span>: Download CSS, images, JavaScript</span></p></li><li><p><code>--user-agent</code><span>: Identify yourself (ethical scraping)</span></p></li></ul><p><strong><span>Pros:</span></strong></p><ul><li><p><span>Fast, simple, reliable for static sites</span></p></li></ul><p><strong><span>Cons:</span></strong></p><ul><li><p><span>Fails on JavaScript-heavy sites (doesn&#39;t execute JS)</span></p></li><li><p><span>Can&#39;t handle logins or authenticated content</span></p></li></ul><h3 id='technique-2-browser-automation-dynamic-sites'><span>Technique 2: Browser Automation (Dynamic Sites)</span></h3><p><strong><span>Use Case:</span></strong><span> JavaScript-heavy sites (React, Angular apps) or sites requiring interaction.</span></p><p><strong><span>Tools:</span></strong></p><ul><li><p><strong><span>Selenium</span></strong><span>: Browser automation framework</span></p></li><li><p><strong><span>Puppeteer</span></strong><span>: Headless Chrome control (Node.js)</span></p></li><li><p><strong><span>Playwright</span></strong><span>: Modern cross-browser automation</span></p></li></ul><p><strong><span>Example: Puppeteer Script (Simplified)</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="javascript" style="break-inside: unset;"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="javascript"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.19531px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">const</span> <span class="cm-def">puppeteer</span> <span class="cm-operator">=</span> <span class="cm-variable">require</span>(<span class="cm-string">'puppeteer'</span>);</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">const</span> <span class="cm-def">fs</span> <span class="cm-operator">=</span> <span class="cm-variable">require</span>(<span class="cm-string">'fs'</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">(<span class="cm-keyword">async</span> () <span class="cm-operator">=&gt;</span> {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-keyword">const</span> <span class="cm-def">browser</span> <span class="cm-operator">=</span> <span class="cm-keyword">await</span> <span class="cm-variable">puppeteer</span>.<span class="cm-property">launch</span>();</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-keyword">const</span> <span class="cm-def">page</span> <span class="cm-operator">=</span> <span class="cm-keyword">await</span> <span class="cm-variable-2">browser</span>.<span class="cm-property">newPage</span>();</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-comment">// Navigate to page</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-keyword">await</span> <span class="cm-variable-2">page</span>.<span class="cm-property">goto</span>(<span class="cm-string">'https://example.com/post/12345'</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-comment">// Wait for dynamic content to load</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-keyword">await</span> <span class="cm-variable-2">page</span>.<span class="cm-property">waitForSelector</span>(<span class="cm-string">'.post-content'</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-comment">// Extract content</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-keyword">const</span> <span class="cm-def">content</span> <span class="cm-operator">=</span> <span class="cm-keyword">await</span> <span class="cm-variable-2">page</span>.<span class="cm-property">evaluate</span>(() <span class="cm-operator">=&gt;</span> {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">return</span> {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;<span class="cm-property">title</span>: <span class="cm-variable">document</span>.<span class="cm-property">querySelector</span>(<span class="cm-string">'.post-title'</span>).<span class="cm-property">innerText</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;<span class="cm-property">body</span>: <span class="cm-variable">document</span>.<span class="cm-property">querySelector</span>(<span class="cm-string">'.post-content'</span>).<span class="cm-property">innerText</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;<span class="cm-property">timestamp</span>: <span class="cm-variable">document</span>.<span class="cm-property">querySelector</span>(<span class="cm-string">'.post-date'</span>).<span class="cm-property">innerText</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  };</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  });</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-comment">// Save as JSON</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">fs</span>.<span class="cm-property">writeFileSync</span>(<span class="cm-string">'post_12345.json'</span>, <span class="cm-variable">JSON</span>.<span class="cm-property">stringify</span>(<span class="cm-variable-2">content</span>, <span class="cm-atom">null</span>, <span class="cm-number">2</span>));</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-keyword">await</span> <span class="cm-variable-2">browser</span>.<span class="cm-property">close</span>();</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">})();</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 605px;"></div><div class="CodeMirror-gutters" style="display: none; height: 605px;"></div></div></div></pre><p><strong><span>Pros:</span></strong></p><ul><li><p><span>Handles JavaScript rendering</span></p></li><li><p><span>Can simulate user interactions (clicks, scrolls)</span></p></li><li><p><span>Can log in to authenticated sites</span></p></li></ul><p><strong><span>Cons:</span></strong></p><ul><li><p><span>Slower than wget (must render pages)</span></p></li><li><p><span>More complex to set up</span></p></li></ul><h3 id='technique-3-api-harvesting-structured-data'><span>Technique 3: API Harvesting (Structured Data)</span></h3><p><strong><span>Use Case:</span></strong><span> Platforms with public APIs (Twitter, Reddit, Mastodon).</span></p><p><strong><span>Tools:</span></strong></p><ul><li><p><strong><span>Platform-specific libraries</span></strong><span>: tweepy (Twitter), PRAW (Reddit)</span></p></li><li><p><strong><span>HTTP clients</span></strong><span>: curl, requests (Python), fetch (JavaScript)</span></p></li></ul><p><strong><span>Example: Twitter API (Pre-Elon, when API was good)</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="python" style="break-inside: unset;"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="python"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.19531px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">import</span> <span class="cm-variable">tweepy</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">import</span> <span class="cm-variable">json</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># Authenticate</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">auth</span> <span class="cm-operator">=</span> <span class="cm-variable">tweepy</span>.<span class="cm-property">OAuthHandler</span>(<span class="cm-variable">consumer_key</span>, <span class="cm-variable">consumer_secret</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">auth</span>.<span class="cm-property">set_access_token</span>(<span class="cm-variable">access_token</span>, <span class="cm-variable">access_token_secret</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">api</span> <span class="cm-operator">=</span> <span class="cm-variable">tweepy</span>.<span class="cm-property">API</span>(<span class="cm-variable">auth</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># Download user's timeline</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">tweets</span> <span class="cm-operator">=</span> []</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">for</span> <span class="cm-variable">tweet</span> <span class="cm-keyword">in</span> <span class="cm-variable">tweepy</span>.<span class="cm-property">Cursor</span>(<span class="cm-variable">api</span>.<span class="cm-property">user_timeline</span>, <span class="cm-variable">screen_name</span><span class="cm-operator">=</span><span class="cm-string">'example_user'</span>, <span class="cm-variable">tweet_mode</span><span class="cm-operator">=</span><span class="cm-string">'extended'</span>).<span class="cm-property">items</span>():</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">tweets</span>.<span class="cm-property">append</span>({</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-string">'id'</span>: <span class="cm-variable">tweet</span>.<span class="cm-property">id_str</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-string">'text'</span>: <span class="cm-variable">tweet</span>.<span class="cm-property">full_text</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-string">'created_at'</span>: <span class="cm-builtin">str</span>(<span class="cm-variable">tweet</span>.<span class="cm-property">created_at</span>),</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-string">'retweet_count'</span>: <span class="cm-variable">tweet</span>.<span class="cm-property">retweet_count</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-string">'favorite_count'</span>: <span class="cm-variable">tweet</span>.<span class="cm-property">favorite_count</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  })</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># Save as JSON</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">with</span> <span class="cm-builtin">open</span>(<span class="cm-string">'example_user_tweets.json'</span>, <span class="cm-string">'w'</span>) <span class="cm-keyword">as</span> <span class="cm-variable">f</span>:</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">json</span>.<span class="cm-property">dump</span>(<span class="cm-variable">tweets</span>, <span class="cm-variable">f</span>, <span class="cm-variable">indent</span><span class="cm-operator">=</span><span class="cm-number">2</span>)</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 515px;"></div><div class="CodeMirror-gutters" style="display: none; height: 515px;"></div></div></div></pre><p><strong><span>Pros:</span></strong></p><ul><li><p><span>Structured data (JSON, XML)</span></p></li><li><p><span>Includes metadata (timestamps, IDs, relationships)</span></p></li><li><p><span>Respects rate limits (built into libraries)</span></p></li></ul><p><strong><span>Cons:</span></strong></p><ul><li><p><span>Platform must have API (many don&#39;t, or shut it down before dying)</span></p></li><li><p><span>Rate limits can be restrictive (slow)</span></p></li><li><p><span>APIs often sunset before platforms die (Twitter 2023)</span></p></li></ul><h3 id='technique-4-database-extraction-direct-access'><span>Technique 4: Database Extraction (Direct Access)</span></h3><p><strong><span>Use Case:</span></strong><span> You have legitimate access to platform&#39;s database (employee, owner, partnership).</span></p><p><strong><span>Method:</span></strong></p><ul><li><p><span>SQL dump (if relational database)</span></p></li><li><p><span>NoSQL export (if MongoDB, CouchDB, etc.)</span></p></li><li><p><span>File system copy (if files stored on disk)</span></p></li></ul><p><strong><span>Example: MySQL Dump</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.19531px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">mysqldump <span class="cm-attribute">-u</span> username <span class="cm-attribute">-p</span> database_name &gt; backup.sql</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><strong><span>Pros:</span></strong></p><ul><li><p><span>Complete, perfect fidelity</span></p></li><li><p><span>Includes all metadata, relationships, deleted content</span></p></li></ul><p><strong><span>Cons:</span></strong></p><ul><li><p><span>Rare (requires cooperation from platform)</span></p></li><li><p><span>May include sensitive data (must redact)</span></p></li></ul><h3 id='technique-5-forensic-recovery-post-mortem'><span>Technique 5: Forensic Recovery (Post-Mortem)</span></h3><p><strong><span>Use Case:</span></strong><span> Platform already shut down, but you might recover fragments.</span></p><p><strong><span>Methods:</span></strong></p><p><strong><span>Google Cache:</span></strong></p><ul><li><p><span>Search </span><code>cache:example.com</code><span> in Google</span></p></li><li><p><span>Captures recent snapshots (but only for indexed pages)</span></p></li></ul><p><strong><span>Wayback Machine:</span></strong></p><ul><li><p><span>Check Internet Archive&#39;s Wayback Machine</span></p></li><li><p><span>May have periodic snapshots</span></p></li></ul><p><strong><span>User Backups:</span></strong></p><ul><li><p><span>Ask former users if they exported their data</span></p></li><li><p><span>Crowdsource fragments</span></p></li></ul><p><strong><span>Web Archives:</span></strong></p><ul><li><p><span>Other web archives (UK Web Archive, Library of Congress)</span></p></li></ul><p><strong><span>Old Hard Drives:</span></strong></p><ul><li><p><span>If servers were sold/discarded, forensic data recovery possible (rare, expensive)</span></p></li></ul><p><strong><span>Example: MySpace Music Recovery Attempt</span></strong></p><p><span>After MySpace lost 50 million songs (2019):</span></p><ul><li><p><span>Internet Archive had some (but not comprehensive)</span></p></li><li><p><span>Users who downloaded MP3s shared them</span></p></li><li><p><span>Some songs recovered via Google Cache before it expired</span></p></li><li><p><span>Most (~90%) permanently lost</span></p></li></ul><p><strong><span>Lesson:</span></strong><span> Forensic recovery is last resort. Success rate is low. Better to preserve proactively.</span></p><hr /><h2 id='part-iv-provenance-and-chain-of-custody'><span>Part IV: Provenance and Chain of Custody</span></h2><h3 id='why-provenance-matters'><span>Why Provenance Matters</span></h3><p><span>In physical archaeology, </span><strong><span>provenance</span></strong><span> (where an artifact came from) is crucial. An Egyptian vase in a museum is worthless if you don&#39;t know which tomb it came from. Context gives meaning.</span></p><p><span>In digital archaeology, provenance includes:</span></p><ol start='' ><li><p><strong><span>Where did you get this?</span></strong><span> (scraped from live site? downloaded via API? recovered from backup?)</span></p></li><li><p><strong><span>When did you capture it?</span></strong><span> (date/time of preservation)</span></p></li><li><p><strong><span>Who captured it?</span></strong><span> (individual, institution, bot)</span></p></li><li><p><strong><span>What modifications were made?</span></strong><span> (did you redact personal info? convert formats?)</span></p></li></ol><p><span>Without provenance, digital artifacts lose credibility.</span></p><h3 id='chain-of-custody-documentation'><span>Chain of Custody Documentation</span></h3><p><strong><span>Best Practice:</span></strong><span> Document every step from capture to storage.</span></p><p><strong><span>Template: Provenance Record</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.19531px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Artifact: GeoCities site "geocities.com/SiliconValley/1234"</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Captured: 2009-11-15 03:42 UTC</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Method: wget recursive scrape</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Captured By: Archive Team volunteer #7823</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Source State: Live website (platform still online)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Completeness: 87% (some images 404'd during capture)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Storage: Initial storage on volunteer's hard drive</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Transfer: Uploaded to Archive Team torrent 2009-11-20</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Current Location: Internet Archive, GeoCities torrent seed</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Format: Original HTML + images (no conversion)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Modifications: None (bit-perfect capture)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Verification: MD5 checksums recorded at capture</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Access: Public (torrent freely downloadable)</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 291px;"></div><div class="CodeMirror-gutters" style="display: none; height: 291px;"></div></div></div></pre><p><strong><span>Why Each Field Matters:</span></strong></p><ul><li><p><strong><span>Captured date:</span></strong><span> Proves this is snapshot from specific moment</span></p></li><li><p><strong><span>Method:</span></strong><span> Explains why some content might be missing (wget can&#39;t execute JavaScript)</span></p></li><li><p><strong><span>Completeness:</span></strong><span> Honest about gaps (87% is still valuable)</span></p></li><li><p><strong><span>Chain of custody:</span></strong><span> Volunteer → Torrent → Internet Archive (transparent)</span></p></li><li><p><strong><span>Modifications:</span></strong><span> None (proves authenticity)</span></p></li><li><p><strong><span>Verification:</span></strong><span> Checksums prove files unchanged since capture</span></p></li></ul><h3 id='metadata-standards'><span>Metadata Standards</span></h3><p><span>Use existing standards when possible:</span></p><p><strong><span>Dublin Core:</span></strong></p><ul><li><p><span>Standard metadata for digital objects</span></p></li><li><p><span>Fields: Creator, Date, Title, Description, Format, Rights</span></p></li></ul><p><strong><span>METS (Metadata Encoding and Transmission Standard):</span></strong></p><ul><li><p><span>Library of Congress standard</span></p></li><li><p><span>Used for complex digital objects (multiple files, relationships)</span></p></li></ul><p><strong><span>PREMIS (Preservation Metadata):</span></strong></p><ul><li><p><span>Focuses on provenance and preservation actions</span></p></li><li><p><span>Records: who did what, when, why</span></p></li></ul><p><strong><span>Example: Dublin Core for Preserved Vine</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="xml"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="xml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.19531px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">metadata</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">dc:title</span><span class="cm-tag cm-bracket">&gt;</span>Vine #284619204 "Why You Always Lying"<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">dc:title</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">dc:creator</span><span class="cm-tag cm-bracket">&gt;</span>Nicholas Fraser (@downgoes.fraser)<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">dc:creator</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">dc:date</span><span class="cm-tag cm-bracket">&gt;</span>2015-09-02<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">dc:date</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">dc:type</span><span class="cm-tag cm-bracket">&gt;</span>Video (6 seconds, looped)<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">dc:type</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">dc:format</span><span class="cm-tag cm-bracket">&gt;</span>MP4 (H.264)<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">dc:format</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">dc:description</span><span class="cm-tag cm-bracket">&gt;</span>Viral Vine meme, 30M+ loops, inspired song<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">dc:description</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">dc:rights</span><span class="cm-tag cm-bracket">&gt;</span>Fair Use (platform shutdown, cultural preservation)<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">dc:rights</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">dc:source</span><span class="cm-tag cm-bracket">&gt;</span>Vine.co (platform shut down 2017)<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">dc:source</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">dc:coverage</span><span class="cm-tag cm-bracket">&gt;</span>Internet Archive, Vine Archive Collection<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">dc:coverage</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">dc:identifier</span><span class="cm-tag cm-bracket">&gt;</span>IA-Vine-284619204<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">dc:identifier</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">metadata</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 269px;"></div><div class="CodeMirror-gutters" style="display: none; height: 269px;"></div></div></div></pre><hr /><h2 id='part-v-ethical-excavation'><span>Part V: Ethical Excavation</span></h2><h3 id='archaeologys-ethical-evolution'><span>Archaeology&#39;s Ethical Evolution</span></h3><p><span>Physical archaeology has a dark history:</span></p><ul><li><p><span>Colonial looting (British Museum filled with stolen artifacts)</span></p></li><li><p><span>Destroying sites (19th-century excavations were destructive)</span></p></li><li><p><span>Ignoring indigenous communities (treating their ancestors as &quot;objects of study&quot;)</span></p></li></ul><p><span>Modern archaeology has reformed:</span></p><ul><li><p><strong><span>Repatriation</span></strong><span>: Returning artifacts to communities of origin</span></p></li><li><p><strong><span>Community consultation</span></strong><span>: Indigenous peoples have say in excavations</span></p></li><li><p><strong><span>Non-destructive methods</span></strong><span>: Ground-penetrating radar instead of digging</span></p></li><li><p><strong><span>Context preservation</span></strong><span>: Documenting everything, not just taking treasures</span></p></li></ul><p><strong><span>Digital archaeology must learn these lessons.</span></strong></p><h3 id='ethical-principles-for-digital-excavation'><span>Ethical Principles for Digital Excavation</span></h3><p><strong><span>1. Minimize Harm</span></strong></p><p><strong><span>To the platform:</span></strong></p><ul><li><p><span>Don&#39;t overload servers (respect rate limits)</span></p></li><li><p><span>Identify your scraper (user-agent string)</span></p></li><li><p><span>Stop if platform asks (honor robots.txt)</span></p></li></ul><p><span>Even if you oppose the platform&#39;s business model, harming their infrastructure isn&#39;t ethical (hurts users, not executives).</span></p><p><strong><span>To users:</span></strong></p><ul><li><p><span>Don&#39;t expose private information</span></p></li><li><p><span>Respect deleted content (if user intentionally deleted, presume they wanted it gone—with exceptions for public figures)</span></p></li></ul><p><strong><span>2. Respect robots.txt (Mostly)</span></strong></p><p><code>robots.txt</code><span> is a file that tells crawlers what they can/can&#39;t scrape.</span></p><p><strong><span>Example:</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.19531px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">User-agent: *</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Disallow: /private/</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Disallow: /user-settings/</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Allow: /public/</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 90px;"></div><div class="CodeMirror-gutters" style="display: none; height: 90px;"></div></div></div></pre><p><strong><span>Ethical debate:</span></strong></p><ul><li><p><strong><span>Strict interpretation</span></strong><span>: Always obey robots.txt (it&#39;s the site owner&#39;s wishes)</span></p></li><li><p><strong><span>Preservation exception</span></strong><span>: Platform is dying, robots.txt doesn&#39;t apply (saving culture &gt; obeying soon-to-be-dead platform)</span></p></li></ul><p><strong><span>Compromise:</span></strong></p><ul><li><p><span>Respect robots.txt for living platforms</span></p></li><li><p><span>Override for dying platforms (with documentation: &quot;We scraped despite robots.txt because platform announced shutdown&quot;)</span></p></li></ul><p><strong><span>3. Document Ethical Decisions</span></strong></p><p><span>When you make ethically contested choices (scraping private content, overriding robots.txt, preserving deleted posts), </span><strong><span>document why</span></strong><span>.</span></p><p><strong><span>Example:</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="" style="break-inside: unset;"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.19531px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">ETHICAL NOTE: Tumblr Post #12345</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">This post was deleted by the author in 2018 (pre-NSFW purge).</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">We preserved it because:</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">1. Author is public figure (political activist with 100k followers)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">2. Post documents historically significant event (protest organization)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">3. Post was public for 3 years (widely shared, cited in news)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">However, we restricted access:</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">- Not searchable via Google</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">- Requires researcher credentials to view</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">- Will honor takedown request if author contacts us</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Decision made: 2024-11-15</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Decision maker: [Archivist ID]</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 336px;"></div><div class="CodeMirror-gutters" style="display: none; height: 336px;"></div></div></div></pre><p><strong><span>Transparency builds trust.</span></strong></p><p><strong><span>4. Community Consultation (When Possible)</span></strong></p><p><span>If you&#39;re preserving a community&#39;s content (fandom, activist group, cultural community), </span><strong><span>ask them</span></strong><span>.</span></p><p><strong><span>Example: Fan Fiction Archive</span></strong></p><p><span>Before scraping abandoned LiveJournal fandom:</span></p><ol start='' ><li><p><span>Post in fandom spaces: &quot;We&#39;re considering archiving [fandom] LiveJournal. Thoughts?&quot;</span></p></li><li><p><span>Listen to concerns (privacy, consent, cultural norms)</span></p></li><li><p><span>Adapt plans (maybe restrict access, or honor individual takedown requests)</span></p></li></ol><p><span>Not always possible (no time, or community scattered). But when possible, consultation is ethical.</span></p><p><strong><span>5. Allow Takedowns</span></strong></p><p><span>Even after preserving, respect author requests to remove their content.</span></p><p><strong><span>Process:</span></strong></p><ol start='' ><li><p><span>Public takedown request form</span></p></li><li><p><span>Verify requester is original author (prevent abuse)</span></p></li><li><p><span>Remove content within reasonable time (7-30 days)</span></p></li><li><p><span>Document removal (provenance: &quot;Content removed 2024-11-20 at author&#39;s request&quot;)</span></p></li></ol><hr /><h2 id='part-vi-case-study-----excavating-a-dying-forum'><span>Part VI: Case Study — Excavating a Dying Forum</span></h2><h3 id='scenario-small-community-forum-2024'><span>Scenario: Small Community Forum (2024)</span></h3><p><strong><span>Background:</span></strong></p><ul><li><p><span>Forum: &quot;VintageGamers&quot; (retro gaming community)</span></p></li><li><p><span>Software: vBulletin 3.8 (old forum software)</span></p></li><li><p><span>Content: 15 years of discussions (2009-2024)</span></p></li><li><p><span>Size: 5,000 members, 100,000 posts</span></p></li><li><p><span>Announcement: Shutting down in 30 days (hosting costs too high)</span></p></li></ul><p><strong><span>Reconnaissance (Days 1-3):</span></strong></p><ol start='' ><li><p><strong><span>Platform assessment:</span></strong></p><ul><li><p><span>vBulletin forum (database-driven)</span></p></li><li><p><span>Public content (no login to read, but login to see images)</span></p></li><li><p><span>URL pattern: </span><code>/showthread.php?t=[thread_id]</code></p></li><li><p><span>Estimated 10,000 threads</span></p></li></ul></li><li><p><strong><span>Existing documentation:</span></strong></p><ul><li><p><span>Not in Internet Archive (robots.txt blocked crawlers)</span></p></li><li><p><span>No official export tool</span></p></li><li><p><span>Community members panicking, want it saved</span></p></li></ul></li><li><p><strong><span>Contact admin:</span></strong></p><ul><li><p><span>Email forum owner: &quot;Can you provide database dump?&quot;</span></p></li><li><p><span>Owner agrees! (relieved someone cares)</span></p></li><li><p><span>Owner provides MySQL dump (20MB compressed)</span></p></li></ul></li></ol><p><strong><span>Database Excavation (Days 4-7):</span></strong></p><ol start='' ><li><p><strong><span>Import database locally:</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.19531px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">mysql <span class="cm-attribute">-u</span> root <span class="cm-attribute">-p</span> &lt; vintagegamers_backup.sql</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><strong><span>Analyze schema:</span></strong></p><ul><li><p><span>Tables: </span><code>posts</code><span>, </span><code>threads</code><span>, </span><code>users</code><span>, </span><code>attachments</code></p></li><li><p><span>Relationships: </span><code>thread_id</code><span> links posts to threads</span></p></li><li><p><span>Metadata: timestamps, user IDs, post counts</span></p></li></ul></li><li><p><strong><span>Export to JSON:</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="python" style="break-inside: unset;"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="python"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.19531px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">import</span> <span class="cm-variable">mysql</span>.<span class="cm-property">connector</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">import</span> <span class="cm-variable">json</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">db</span> <span class="cm-operator">=</span> <span class="cm-variable">mysql</span>.<span class="cm-property">connector</span>.<span class="cm-property">connect</span>(<span class="cm-variable">host</span><span class="cm-operator">=</span><span class="cm-string">"localhost"</span>, <span class="cm-variable">user</span><span class="cm-operator">=</span><span class="cm-string">"root"</span>, <span class="cm-variable">password</span><span class="cm-operator">=</span><span class="cm-string">"..."</span>, <span class="cm-variable">database</span><span class="cm-operator">=</span><span class="cm-string">"vintagegamers"</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">cursor</span> <span class="cm-operator">=</span> <span class="cm-variable">db</span>.<span class="cm-property">cursor</span>()</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># Export threads</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">cursor</span>.<span class="cm-property">execute</span>(<span class="cm-string">"SELECT thread_id, title, user_id, post_date FROM threads"</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">threads</span> <span class="cm-operator">=</span> [{<span class="cm-string">'id'</span>: <span class="cm-variable">row</span>[<span class="cm-number">0</span>], <span class="cm-string">'title'</span>: <span class="cm-variable">row</span>[<span class="cm-number">1</span>], <span class="cm-string">'user_id'</span>: <span class="cm-variable">row</span>[<span class="cm-number">2</span>], <span class="cm-string">'date'</span>: <span class="cm-builtin">str</span>(<span class="cm-variable">row</span>[<span class="cm-number">3</span>])} <span class="cm-keyword">for</span> <span class="cm-variable">row</span> <span class="cm-keyword">in</span> <span class="cm-variable">cursor</span>.<span class="cm-property">fetchall</span>()]</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">with</span> <span class="cm-builtin">open</span>(<span class="cm-string">'threads.json'</span>, <span class="cm-string">'w'</span>) <span class="cm-keyword">as</span> <span class="cm-variable">f</span>:</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">json</span>.<span class="cm-property">dump</span>(<span class="cm-variable">threads</span>, <span class="cm-variable">f</span>, <span class="cm-variable">indent</span><span class="cm-operator">=</span><span class="cm-number">2</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># (Repeat for posts, users, etc.)</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 358px;"></div><div class="CodeMirror-gutters" style="display: none; height: 358px;"></div></div></div></pre></li><li><p><strong><span>Download attachments:</span></strong></p><ul><li><p><span>Images stored in </span><code>/attachments/</code><span> directory</span></p></li><li><p><span>Use wget to download all:</span></p></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.19531px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">wget</span> <span class="cm-attribute">-r</span> <span class="cm-attribute">-l</span> <span class="cm-number">1</span> <span class="cm-attribute">-A</span> jpg,png,gif https://vintagegamers.com/attachments/</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li></ol><p><strong><span>Curation (Days 8-14):</span></strong></p><ol start='' ><li><p><strong><span>Redact personal info:</span></strong></p><ul><li><p><span>Email addresses in user profiles → removed</span></p></li><li><p><span>IP addresses in logs → removed</span></p></li><li><p><span>Private messages → excluded from export</span></p></li></ul></li><li><p><strong><span>Add metadata:</span></strong></p><ul><li><p><span>Create </span><code>README.md</code><span> documenting forum history</span></p></li><li><p><span>List notable threads (&quot;Best of VintageGamers&quot;)</span></p></li><li><p><span>Interview longtime members (oral history)</span></p></li></ul></li><li><p><strong><span>Build search interface:</span></strong></p><ul><li><p><span>Use Elasticsearch to index posts</span></p></li><li><p><span>Simple web UI: search by keyword, date, user</span></p></li></ul></li></ol><p><strong><span>Preservation (Days 15-30):</span></strong></p><ol start='' ><li><p><strong><span>Upload to Internet Archive:</span></strong></p><ul><li><p><span>Create &quot;VintageGamers Archive&quot; collection</span></p></li><li><p><span>Upload database dump, JSON exports, attachment images, README</span></p></li></ul></li><li><p><strong><span>Seed BitTorrent:</span></strong></p><ul><li><p><span>Create torrent of full archive</span></p></li><li><p><span>Ensure redundancy (if IA ever goes down)</span></p></li></ul></li><li><p><strong><span>Announce to community:</span></strong></p><ul><li><p><span>Post in forum: &quot;Archive complete! Here&#39;s where to find it.&quot;</span></p></li><li><p><span>Community grateful, downloads personal copies</span></p></li></ul></li></ol><p><strong><span>Provenance Record:</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.19531px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Archive: VintageGamers Forum (2009-2024)</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Captured: 2024-11-01 to 2024-11-15</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Method: MySQL database dump provided by forum administrator</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Captured By: [Archaeobytologist Name], with admin cooperation</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Completeness: 100% (full database export)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Redactions: Email addresses, IP addresses, private messages removed</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Storage: Internet Archive + BitTorrent</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Format: MySQL dump (raw), JSON (parsed), HTML (rendered)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Access: Public (Internet Archive), with restricted personal data</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">License: CC BY-NC-SA 4.0 (preserves community content, non-commercial)</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 224px;"></div><div class="CodeMirror-gutters" style="display: none; height: 224px;"></div></div></div></pre><p><strong><span>Outcome:</span></strong></p><ul><li><p><span>Forum shuts down on schedule</span></p></li><li><p><span>100% of content preserved</span></p></li><li><p><span>Community can still access their history</span></p></li><li><p><span>Future researchers can study retro gaming community</span></p></li></ul><hr /><h2 id='conclusion-the-archaeologists-mindset'><span>Conclusion: The Archaeologist&#39;s Mindset</span></h2><p><span>Digital excavation isn&#39;t just about running scripts. It&#39;s about bringing an </span><strong><span>archaeological mindset</span></strong><span> to ephemeral platforms:</span></p><p><strong><span>1. Systematic:</span></strong><span> Survey before digging. Plan your excavation. Document everything.</span></p><p><strong><span>2. Stratigraphic:</span></strong><span> Preserve all layers (content, metadata, relationships, affordances), not just surface.</span></p><p><strong><span>3. Contextual:</span></strong><span> Provenance matters. Where did this come from? When? Who captured it?</span></p><p><strong><span>4. Ethical:</span></strong><span> Minimize harm. Respect communities. Be transparent about contested choices.</span></p><p><strong><span>5. Urgent:</span></strong><span> Unlike physical archaeology, you don&#39;t have centuries. You have days or weeks. Move fast—but systematically.</span></p><p><span>In the next chapter, we&#39;ll dive deeper into </span><strong><span>Digital Forensics</span></strong><span>—the technical methods for recovering data from damaged, corrupted, or deliberately deleted sources. Sometimes, platforms don&#39;t give you clean MySQL dumps. Sometimes, you&#39;re working with fragments, corrupted files, and deleted evidence.</span></p><p><span>Digital forensics teaches you how to work with what&#39;s broken.</span></p><hr /><h2 id='discussion-questions'><span>Discussion Questions</span></h2><ol start='' ><li><p><strong><span>Methodology:</span></strong><span> Should digital archaeology prioritize speed (scrape everything quickly) or precision (careful documentation)? How do you balance urgency with rigor?</span></p></li><li><p><strong><span>Ethics:</span></strong><span> Is it ethical to scrape a platform that explicitly forbids it (robots.txt, ToS) if the platform is dying and content will be lost?</span></p></li><li><p><strong><span>Provenance:</span></strong><span> Why does documenting where you got an artifact matter? What happens if provenance is unclear or contested?</span></p></li><li><p><strong><span>Stratigraphic Layers:</span></strong><span> What digital &quot;layers&quot; do you think are most important to preserve? Content? Metadata? Relationships? Platform affordances?</span></p></li><li><p><strong><span>Community Consultation:</span></strong><span> When is it necessary to consult communities before preserving their content? When is it acceptable to preserve without asking?</span></p></li><li><p><strong><span>Personal Practice:</span></strong><span> Have you ever &quot;excavated&quot; your own digital artifacts (downloaded Facebook archive, exported tweets)? What did you learn?</span></p></li></ol><hr /><h2 id='exercise-plan-a-digital-excavation'><span>Exercise: Plan a Digital Excavation</span></h2><p><strong><span>Scenario:</span></strong><span> A platform you use announces shutdown in 60 days. Plan its excavation.</span></p><p><strong><span>Choose a platform:</span></strong></p><ul><li><p><span>Small forum you participate in</span></p></li><li><p><span>Discord server you&#39;re part of</span></p></li><li><p><span>Niche social network</span></p></li><li><p><span>Personal blog community</span></p></li></ul><p><strong><span>Part 1: Reconnaissance Report</span></strong><span> (500 words)</span></p><ul><li><p><span>Platform type, scale, data types</span></p></li><li><p><span>Technical barriers (login walls, APIs, rate limits)</span></p></li><li><p><span>Existing documentation (Wayback Machine, community wikis)</span></p></li><li><p><span>Estimated preservation time and storage</span></p></li></ul><p><strong><span>Part 2: Excavation Strategy</span></strong><span> (800 words)</span></p><ul><li><p><span>What tools will you use? (wget, Puppeteer, API clients)</span></p></li><li><p><span>What layers will you preserve? (content, metadata, relationships)</span></p></li><li><p><span>What&#39;s your timeline? (week-by-week plan)</span></p></li><li><p><span>How will you handle rate limits or technical barriers?</span></p></li></ul><p><strong><span>Part 3: Ethical Framework</span></strong><span> (500 words)</span></p><ul><li><p><span>What content should NOT be preserved? (privacy, consent, harm)</span></p></li><li><p><span>Will you respect robots.txt? Why/why not?</span></p></li><li><p><span>Will you consult the community? How?</span></p></li><li><p><span>How will you handle takedown requests?</span></p></li></ul><p><strong><span>Part 4: Provenance Documentation</span></strong><span> (300 words)</span></p><ul><li><p><span>Write a provenance record for your imagined excavation</span></p></li><li><p><span>Include: capture method, date, completeness, modifications, storage</span></p></li></ul><p><strong><span>Part 5: Reflection</span></strong><span> (200 words)</span></p><ul><li><p><span>What&#39;s the hardest part of this excavation?</span></p></li><li><p><span>What ethical dilemmas did you face?</span></p></li><li><p><span>Would you actually do this if the platform announced shutdown?</span></p></li></ul><hr /><h2 id='further-reading'><span>Further Reading</span></h2><h3 id='on-web-archiving-methods'><span>On Web Archiving Methods</span></h3><ul><li><p><span>Brügger, Niels. </span><em><span>The Archived Web: Doing History in the Digital Age</span></em><span>. MIT Press, 2018.</span></p><ul><li><p><span>How to work with web archives as historical sources</span></p></li></ul></li><li><p><span>Niu, Jinfang. &quot;An Overview of Web Archiving.&quot; </span><em><span>D-Lib Magazine</span></em><span> 18, no. 3/4 (2012).</span></p><ul><li><p><span>Technical methods for web preservation</span></p></li></ul></li><li><p><span>Archive Team. &quot;So You Want to Archive a Website.&quot; </span><a href='https://wiki.archiveteam.org/' target='_blank' class='url'>https://wiki.archiveteam.org/</a></p><ul><li><p><span>Practical guide from guerrilla archivists</span></p></li></ul></li></ul><h3 id='on-digital-forensics'><span>On Digital Forensics</span></h3><ul><li><p><span>Carrier, Brian. </span><em><span>File System Forensic Analysis</span></em><span>. Addison-Wesley, 2005.</span></p><ul><li><p><span>Technical deep dive on recovering deleted data</span></p></li></ul></li><li><p><span>Kirschenbaum, Matthew. </span><em><span>Mechanisms: New Media and the Forensic Imagination</span></em><span>. MIT Press, 2008.</span></p><ul><li><p><span>Humanistic approach to digital forensics</span></p></li></ul></li></ul><h3 id='on-archaeological-methods-physical'><span>On Archaeological Methods (Physical)</span></h3><ul><li><p><span>Renfrew, Colin, and Paul Bahn. </span><em><span>Archaeology: Theories, Methods, and Practice</span></em><span>. Thames &amp; Hudson, 2016.</span></p><ul><li><p><span>Classic textbook (useful for understanding stratigraphic thinking)</span></p></li></ul></li><li><p><span>Hodder, Ian. &quot;The Interpretation of Documents and Material Culture.&quot; In </span><em><span>Handbook of Qualitative Research</span></em><span>, edited by Norman Denzin and Yvonna Lincoln, 393-402. Sage, 2000.</span></p><ul><li><p><span>Interpretive archaeology (translates to digital context)</span></p></li></ul></li></ul><h3 id='on-ethics'><span>On Ethics</span></h3><ul><li><p><span>Society for American Archaeology. &quot;Principles of Archaeological Ethics.&quot; </span><a href='https://www.saa.org/' target='_blank' class='url'>https://www.saa.org/</a></p><ul><li><p><span>Professional ethics code (adaptable to digital)</span></p></li></ul></li><li><p><span>Caswell, Michelle. </span><em><span>Urgent Archives: Enacting Liberatory Memory Work</span></em><span>. Routledge, 2021.</span></p><ul><li><p><span>Ethics of archiving marginalized communities</span></p></li></ul></li></ul><hr /><p><strong><span>End of Chapter 7</span></strong></p><p><em><span>Next: Chapter 8 — Digital Forensics for Archaeobytologists</span></em></p><p>&nbsp;</p></div></div>
 </body>
 </html>

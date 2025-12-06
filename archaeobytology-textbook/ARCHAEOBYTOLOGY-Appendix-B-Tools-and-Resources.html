@@ -1,1112 +1,1001 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appendix B: Essential Tools & Resources | Archaeobytology</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Lora', serif; line-height: 1.8; color: #2E2E2E; background: #F8F7F4; padding: 2rem 1rem; }
-        .container { max-width: 800px; margin: 0 auto; background: #FFFFFF; padding: 3rem; border-radius: 15px; box-shadow: 0 4px 20px rgba(46,46,46,0.1); border: 1px solid #D1D1D1; }
-        h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; color: #2E2E2E; margin-top: 2rem; margin-bottom: 1rem; line-height: 1.3; }
-        h1 { font-size: 2.5rem; font-weight: 700; margin-top: 0; border-bottom: 3px solid #A1824A; padding-bottom: 0.5rem; }
-        h2 { font-size: 2rem; font-weight: 700; margin-top: 2.5rem; }
-        h3 { font-size: 1.5rem; font-weight: 600; color: #5A7D8C; }
-        h4 { font-size: 1.25rem; font-weight: 600; color: #5A7D8C; }
-        p { margin-bottom: 1.25rem; font-size: 1.1rem; }
-        a { color: #A93400; text-decoration: underline; transition: color 0.3s; }
-        a:hover { color: #A95C3D; }
-        strong { font-weight: 600; }
-        em { font-style: italic; }
-        code { font-family: 'Courier New', monospace; background: #F8F7F4; padding: 0.2rem 0.4rem; border-radius: 3px; border: 1px solid #D1D1D1; }
-        blockquote { border-left: 4px solid #A1824A; padding: 1rem 1.5rem; margin: 1.5rem 0; font-style: italic; color: #5A7D8C; background: #F8F7F4; border-radius: 0 8px 8px 0; }
-        hr { border: none; border-top: 2px solid #D1D1D1; margin: 2rem 0; }
-        .nav { text-align: center; padding: 1rem 0; border-top: 2px solid #D1D1D1; margin-top: 2rem; }
-        .nav a { display: inline-block; padding: 0.75rem 1.5rem; background: #A93400; color: #F8F7F4; text-decoration: none; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 600; margin: 0.5rem; }
-        .nav a:hover { background: #A95C3D; }
-    </style>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'><style type='text/css'>html {overflow-x: initial !important;}</style>
+<style type='text/css'  id="style-base">:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, "Segoe UI Emoji", "SF Pro", sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p *, #write.first-line-indent svg * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
+#write svg h1, #write svg h2, #write svg h3, #write svg h4, #write svg h5, #write svg h6, #write svg p { position: static; }
+.nodeLabel p { padding-right: 2px; padding-left: 2px; }
+.typora-export .nodeLabel p { padding-right: 0px; padding-left: 0px; }
+foreignobject { overflow: visible; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+li p { orphans: 1; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.mermaid-svg { margin: auto; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left: 0.25em solid rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
+
+</style>
+<style type='text/css'  id="style-codemirror">.CodeMirror { height: auto; }
+.CodeMirror.cm-s-inner { background: inherit; }
+.CodeMirror-scroll { overflow: auto hidden; z-index: 3; }
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
+.CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); background: inherit; white-space: nowrap; }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: 700; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: red; }
+.cm-invalidchar { color: red; }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background: inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background: inherit; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; outline: 0px; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: auto hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 10px; z-index: 3; overflow-y: hidden; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; background: 0px 0px !important; border: none !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-radius: 0px; border-width: 0px; background: 0px 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; overflow-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; }
+.CodeMirror-wrap pre { overflow-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right: 30px solid transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right: none; width: auto; }
+.CodeMirror-linebackground { position: absolute; inset: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right: none; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.cm-searching { background: rgba(255, 255, 0, 0.4); }
+span.cm-underlined { text-decoration: underline; }
+span.cm-strikethrough { text-decoration: line-through; }
+.cm-tw-syntaxerror { color: rgb(255, 255, 255); background-color: rgb(153, 0, 0); }
+.cm-tw-deleted { text-decoration: line-through; }
+.cm-tw-header5 { font-weight: 700; }
+.cm-tw-listitem:first-child { padding-left: 10px; }
+.cm-tw-box { border-style: solid; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-color: inherit; border-top-width: 0px !important; }
+.cm-tw-underline { text-decoration: underline; }
+@media print {
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+</style>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;display=swap' type='text/css' />
+<style type='text/css'  id="style-theme_css">/*
+ * Unearth Light Theme for Typora
+ * Based on the Foundry Blueprint 4.1 - unearth.im
+ * 
+ * Color Palette:
+ * - Parchment (Background): #F8F7F4
+ * - Charcoal (Text): #2E2E2E
+ * - Burnt Sienna (Primary Accent): #A93400
+ * - Antique Gold (Secondary Accent): #A1824A
+ * - Slate Blue (Functional Accent): #5A7D8C
+ * - Light Stone: #D1D1D1
+ * - Medium Stone: #8E8E8E
+ *
+ * Typography:
+ * - Narrative: Lora (serif)
+ * - UI/Headlines: Inter (sans-serif)
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+:root {
+    --parchment: #F8F7F4;
+    --charcoal: #2E2E2E;
+    --burnt-sienna: #A93400;
+    --sienna-hover: #A95C3D;
+    --accent-color: #A95C3D;
+    --antique-gold: #A1824A;
+    --slate-blue: #5A7D8C;
+    --meta-text-color: #5A7D8C;
+    --light-stone: #D1D1D1;
+    --border-color: #e0e0e0;
+    --medium-stone: #8E8E8E;
+    --white: #FFFFFF;
+    
+    --font-narrative: 'Lora', Georgia, serif;
+    --font-ui: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
+}
+
+/* ========================================
+   BASE STYLES
+   ======================================== */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-narrative);
+    color: var(--charcoal);
+    background-color: var(--parchment);
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#write {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 64px 80px 100px;
+}
+
+/* ========================================
+   HEADINGS
+   ======================================== */
+
+h1 {
+    font-family: var(--font-narrative);
+    color: var(--charcoal);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-family: var(--font-narrative);
+    color: var(--charcoal);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--light-stone);
+    padding-bottom: 0.5rem;
+}
+
+h3, h4, h5, h6 {
+    font-family: var(--font-ui);
+    color: var(--charcoal);
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 1.25rem;
+    color: var(--charcoal);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+    color: var(--burnt-sienna);
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+h5 {
+    font-size: 1.1rem;
+    color: var(--slate-blue);
+}
+
+h6 {
+    font-size: 1rem;
+    color: var(--medium-stone);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ========================================
+   PARAGRAPHS & TEXT
+   ======================================== */
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.9;
+}
+
+strong, b {
+    font-weight: 700;
+    color: var(--charcoal);
+}
+
+em, i {
+    font-style: italic;
+}
+
+/* ========================================
+   LINKS
+   ======================================== */
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-color);
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    background-color: rgba(169, 92, 61, 0.1);
+    border-bottom-color: transparent;
+}
+
+/* ========================================
+   BLOCKQUOTES
+   ======================================== */
+
+blockquote {
+    margin: 2rem 0;
+    padding: 1.5rem 2rem;
+    border-left: 4px solid var(--antique-gold);
+    background-color: rgba(161, 130, 74, 0.08);
+    border-radius: 0 4px 4px 0;
+    color: var(--charcoal);
+}
+
+blockquote p {
+    margin: 0.5rem 0;
+    line-height: 1.8;
+}
+
+blockquote blockquote {
+    margin-left: 1rem;
+    border-left-color: var(--slate-blue);
+    background-color: rgba(90, 125, 140, 0.08);
+}
+
+/* ========================================
+   CODE
+   ======================================== */
+
+code {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    background-color: rgba(209, 209, 209, 0.4);
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    color: var(--burnt-sienna);
+}
+
+/* Code blocks */
+pre {
+    font-family: var(--font-mono);
+    background-color: var(--charcoal);
+    color: var(--parchment);
+    padding: 1rem 1.25rem;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    line-height: 1.6;
+}
+
+pre code {
+    background: none;
+    padding: 0;
+    color: inherit;
+    font-size: 0.875rem;
+}
+
+/* Code block with line numbers */
+.md-fences {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    background-color: var(--charcoal);
+    color: var(--parchment);
+    border: none;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1.5rem 0;
+}
+
+.CodeMirror-lines {
+    padding: 0;
+}
+
+/* ========================================
+   LISTS
+   ======================================== */
+
+ul, ol {
+    padding-left: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+li {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.9;
+}
+
+li > ul, li > ol {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+li > ul > li, li > ol > li {
+    margin-bottom: 0.5rem;
+}
+
+/* Unordered list markers */
+ul > li::marker {
+    color: var(--burnt-sienna);
+}
+
+/* Ordered list markers */
+ol > li::marker {
+    color: var(--antique-gold);
+    font-family: var(--font-ui);
+    font-weight: 600;
+}
+
+/* Task lists */
+.task-list-item {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.task-list-item input[type="checkbox"] {
+    margin-right: 0.5rem;
+    accent-color: var(--burnt-sienna);
+}
+
+/* ========================================
+   HORIZONTAL RULE
+   ======================================== */
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, var(--light-stone), var(--antique-gold), var(--light-stone));
+    margin: 2.5rem 0;
+}
+
+/* ========================================
+   TABLES
+   ======================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-family: var(--font-ui);
+    font-size: 0.9rem;
+}
+
+thead {
+    background-color: var(--charcoal);
+    color: var(--parchment);
+}
+
+th {
+    font-weight: 600;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--charcoal);
+}
+
+td {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--light-stone);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(209, 209, 209, 0.2);
+}
+
+tbody tr:hover {
+    background-color: rgba(161, 130, 74, 0.1);
+}
+
+/* ========================================
+   IMAGES
+   ======================================== */
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 1rem 0;
+    box-shadow: 0 2px 8px rgba(46, 46, 46, 0.1);
+}
+
+/* Image captions */
+figure {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+figcaption {
+    font-family: var(--font-ui);
+    font-size: 0.875rem;
+    color: var(--medium-stone);
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* ========================================
+   FOOTNOTES
+   ======================================== */
+
+.footnotes {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--light-stone);
+}
+
+.footnotes h2 {
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
+.footnotes ol {
+    padding-left: 20px;
+    color: #555;
+}
+
+.footnotes li {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.footnotes p {
+    font-size: 0.85rem;
+    margin-bottom: 0;
+}
+
+.footnote-ref, sup a {
+    font-family: var(--font-ui);
+    font-size: 0.8em;
+    font-weight: 600;
+    vertical-align: super;
+    color: var(--burnt-sienna);
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.footnote-ref:hover, sup a:hover {
+    background-color: transparent;
+}
+
+sup.md-footnote {
+    font-family: var(--font-ui);
+    font-size: 0.8em;
+    font-weight: 600;
+    color: var(--burnt-sienna);
+    background-color: transparent;
+    padding: 0;
+}
+
+/* ========================================
+   DEFINITION LISTS
+   ======================================== */
+
+dl {
+    margin: 1rem 0;
+}
+
+dt {
+    font-family: var(--font-ui);
+    font-weight: 700;
+    color: var(--burnt-sienna);
+    margin-top: 1rem;
+}
+
+dd {
+    margin-left: 1.5rem;
+    margin-top: 0.25rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--light-stone);
+}
+
+/* ========================================
+   MARK / HIGHLIGHT
+   ======================================== */
+
+mark {
+    background-color: rgba(161, 130, 74, 0.3);
+    color: var(--charcoal);
+    padding: 0.1rem 0.3rem;
+    border-radius: 2px;
+}
+
+/* ========================================
+   STRIKETHROUGH
+   ======================================== */
+
+del, s {
+    color: var(--medium-stone);
+    text-decoration: line-through;
+}
+
+/* ========================================
+   KEYBOARD
+   ======================================== */
+
+kbd {
+    font-family: var(--font-ui);
+    font-size: 0.85em;
+    background-color: var(--light-stone);
+    border: 1px solid var(--medium-stone);
+    border-radius: 3px;
+    padding: 0.1rem 0.4rem;
+    box-shadow: 0 1px 2px rgba(46, 46, 46, 0.1);
+}
+
+/* ========================================
+   ABBREVIATIONS
+   ======================================== */
+
+abbr {
+    text-decoration: underline dotted var(--slate-blue);
+    cursor: help;
+}
+
+/* ========================================
+   SELECTION
+   ======================================== */
+
+::selection {
+    background-color: rgba(169, 52, 0, 0.2);
+    color: var(--charcoal);
+}
+
+::-moz-selection {
+    background-color: rgba(169, 52, 0, 0.2);
+    color: var(--charcoal);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - SIDEBAR
+   ======================================== */
+
+#typora-sidebar {
+    background-color: var(--parchment);
+    border-right: 1px solid var(--light-stone);
+}
+
+.sidebar-content {
+    font-family: var(--font-ui);
+}
+
+.file-tree-node.active > .file-node-content {
+    background-color: rgba(169, 52, 0, 0.1);
+    color: var(--burnt-sienna);
+}
+
+.file-tree-node:hover > .file-node-content {
+    background-color: rgba(209, 209, 209, 0.3);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - SOURCE MODE
+   ======================================== */
+
+.cm-s-typora-default .cm-header {
+    color: var(--burnt-sienna);
+}
+
+.cm-s-typora-default .cm-link {
+    color: var(--slate-blue);
+}
+
+.cm-s-typora-default .cm-string {
+    color: var(--antique-gold);
+}
+
+.cm-s-typora-default .cm-comment {
+    color: var(--medium-stone);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - FOCUS MODE
+   ======================================== */
+
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) * {
+    color: var(--light-stone) !important;
+}
+
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) img {
+    opacity: 0.5;
+}
+
+/* ========================================
+   TYPORA SPECIFIC - MEGAMENU
+   ======================================== */
+
+.megamenu-menu-panel {
+    background-color: var(--parchment);
+    font-family: var(--font-ui);
+}
+
+.megamenu-menu-panel .btn {
+    background-color: var(--burnt-sienna);
+    color: var(--parchment);
+}
+
+.megamenu-menu-panel .btn:hover {
+    background-color: var(--sienna-hover);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - SEARCH
+   ======================================== */
+
+#md-searchpanel {
+    background-color: var(--parchment);
+    border-bottom: 1px solid var(--light-stone);
+}
+
+#md-searchpanel input {
+    font-family: var(--font-ui);
+    background-color: var(--white);
+    border: 1px solid var(--light-stone);
+    border-radius: 4px;
+}
+
+#md-searchpanel input:focus {
+    border-color: var(--burnt-sienna);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(169, 52, 0, 0.15);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - TOOLTIP
+   ======================================== */
+
+.md-hover-tip .md-arrow:after {
+    background-color: var(--charcoal);
+}
+
+.md-hover-tip .code-tooltip-content {
+    background-color: var(--charcoal);
+    color: var(--parchment);
+    font-family: var(--font-ui);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - META BLOCK
+   ======================================== */
+
+.md-meta-block {
+    background-color: rgba(209, 209, 209, 0.3);
+    border-radius: 6px;
+    padding: 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--medium-stone);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - TABLE OF CONTENTS
+   ======================================== */
+
+.md-toc {
+    font-family: var(--font-ui);
+}
+
+.md-toc-h1 {
+    font-weight: 700;
+    color: var(--charcoal);
+}
+
+.md-toc-h2 {
+    font-weight: 600;
+    color: var(--burnt-sienna);
+}
+
+.md-toc-h3, .md-toc-h4, .md-toc-h5, .md-toc-h6 {
+    color: var(--medium-stone);
+}
+
+/* ========================================
+   SCROLLBAR
+   ======================================== */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--parchment);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--light-stone);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--medium-stone);
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+
+@media print {
+    html {
+        font-size: 12pt;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+    
+    #write {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        color: black;
+        page-break-after: avoid;
+    }
+    
+    pre, blockquote {
+        page-break-inside: avoid;
+    }
+    
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+    
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        color: #666;
+    }
+}
+</style>
+<style type='text/css'  id="style-lp">ol, ul {padding-left: 40px}</style>
+
+<title>TEXTBOOK-Appendix-B-Tools-and-Resources</title>
 </head>
-<body>
-    <div class="container">
-        <article>
-<h1>Appendix B: Essential Tools & Resources</h1>
-
-<h2>Introduction</h2>
-
-<p>
-This appendix provides a curated catalog of tools, software, services, and resources essential for Archaeobytological practice. Tools are organized by function and annotated with:
-- <strong>Purpose</strong>: What the tool does
-- <strong>Skill Level</strong>: Beginner, Intermediate, Advanced
-- <strong>Cost</strong>: Free, Freemium, Paid
-- <strong>Platform</strong>: Windows, macOS, Linux, Web-based
-- <strong>Open Source</strong>: Yes/No
-</p>
-
-<p>
-Tools are current as of 2025 but the digital preservation landscape evolves rapidly. Check the Archaeobytology community wiki (archaeobytology.org/wiki) for updates.
-</p>
-
-<h2>I. Web Archiving & Scraping Tools</h2>
-
-<h3>1. Wget</h3>
-<p>
-<strong>Purpose</strong>: Command-line tool for downloading websites recursively  
-<strong>Skill Level</strong>: Beginner-Intermediate  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Windows, macOS, Linux  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://www.gnu.org/software/wget/
-</p>
-
-<p>
-<strong>What It Does</strong>: Downloads web pages and their linked resources (images, CSS, JavaScript). Creates mirror copies of websites on your local machine.
-</p>
-
-<p>
-<strong>Basic Usage</strong>:
-``<code>bash
-wget --recursive --level=2 --no-parent --wait=1 https://example.com
-</code>`<code>
-</p>
-
-<p>
-<strong>Best For</strong>: Static HTML sites, simple scraping projects
-</p>
-
-<p>
-<strong>Limitations</strong>: Doesn't handle JavaScript-heavy sites well, can't navigate login walls
-</p>
-
-<h3>2. HTTrack</h3>
-<p>
-<strong>Purpose</strong>: Website copier with GUI interface  
-<strong>Skill Level</strong>: Beginner  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Windows, macOS, Linux  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://www.httrack.com/
-</p>
-
-<p>
-<strong>What It Does</strong>: Similar to wget but with graphical interface. Easier for beginners who don't want command-line tools.
-</p>
-
-<p>
-<strong>Best For</strong>: One-time website archiving, beginners
-</p>
-
-<p>
-<strong>Limitations</strong>: Slower than command-line tools, less flexible configuration
-</p>
-
-<h3>3. ArchiveBox</h3>
-<p>
-<strong>Purpose</strong>: Self-hosted web archiving platform  
-<strong>Skill Level</strong>: Intermediate  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Windows, macOS, Linux, Docker  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://archivebox.io/
-</p>
-
-<p>
-<strong>What It Does</strong>: Creates permanent archives of web pages including HTML, screenshots, PDFs, videos, and git repositories. Provides web interface for browsing archives.
-</p>
-
-<p>
-<strong>Features</strong>:
-- Multiple capture methods (wget, Chrome headless, youtube-dl, etc.)
-- Scheduled archiving (cron jobs)
-- Full-text search
-- Deduplication
-</p>
-
-<p>
-<strong>Best For</strong>: Personal archiving projects, research collections, small organizations
-</p>
-
-<p>
-<strong>Setup Complexity</strong>: Requires server or Docker knowledge
-</p>
-
-<h3>4. Webrecorder (ArchiveWeb.page)</h3>
-<p>
-<strong>Purpose</strong>: Browser-based interactive web archiving  
-<strong>Skill Level</strong>: Beginner  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Web (browser extension also available)  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://archiveweb.page/
-</p>
-
-<p>
-<strong>What It Does</strong>: Records your browsing session including JavaScript interactions, videos, and dynamic content. Creates WARC (Web ARChive) files you can replay.
-</p>
-
-<p>
-<strong>Features</strong>:
-- Captures JavaScript-heavy sites
-- Records social media feeds (Twitter, Instagram)
-- Exports to standard WARC format
-- Replay archives offline
-</p>
-
-<p>
-<strong>Best For</strong>: Social media archiving, dynamic websites, personal projects
-</p>
-
-<p>
-<strong>Unique Advantage</strong>: Works in browser, no installation required
-</p>
-
-<h3>5. Heritrix</h3>
-<p>
-<strong>Purpose</strong>: Industrial-strength web crawler  
-<strong>Skill Level</strong>: Advanced  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Java (cross-platform)  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://github.com/internetarchive/heritrix3
-</p>
-
-<p>
-<strong>What It Does</strong>: Internet Archive's production crawler. Designed for massive-scale archiving (billions of URLs).
-</p>
-
-<p>
-<strong>Features</strong>:
-- Highly configurable crawl policies
-- Distributed crawling
-- Respects robots.txt
-- Creates WARC files
-</p>
-
-<p>
-<strong>Best For</strong>: Large institutions, comprehensive web archiving
-</p>
-
-<p>
-<strong>Limitations</strong>: Steep learning curve, requires significant infrastructure
-</p>
-
-<h3>6. Browsertrix Crawler</h3>
-<p>
-<strong>Purpose</strong>: High-fidelity browser-based crawling  
-<strong>Skill Level</strong>: Intermediate-Advanced  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Docker  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://github.com/webrecorder/browsertrix-crawler
-</p>
-
-<p>
-<strong>What It Does</strong>: Uses real browsers (Chrome) to capture JavaScript-heavy sites with perfect fidelity. Creates WARC files.
-</p>
-
-<p>
-<strong>Best For</strong>: Modern web apps, single-page applications, sites requiring JavaScript
-</p>
-
-<h3>7. Archive-It</h3>
-<p>
-<strong>Purpose</strong>: Subscription web archiving service  
-<strong>Skill Level</strong>: Beginner  
-<strong>Cost</strong>: Paid (subscription based on storage)  
-<strong>Platform</strong>: Web-based  
-<strong>Open Source</strong>: No  
-<strong>Website</strong>: https://archive-it.org/
-</p>
-
-<p>
-<strong>What It Does</strong>: Managed web archiving service by Internet Archive. Point-and-click interface for creating and managing web archives.
-</p>
-
-<p>
-<strong>Features</strong>:
-- Scheduled recurring crawls
-- Metadata management
-- Public or private collections
-- Integration with Wayback Machine
-</p>
-
-<p>
-<strong>Best For</strong>: Institutions without technical staff, organizations needing reliable managed service
-</p>
-
-<p>
-<strong>Cost</strong>: Starts ~$1,500/year for small collections
-</p>
-
-<h2>II. Media Preservation Tools</h2>
-
-<h3>8. youtube-dl / yt-dlp</h3>
-<p>
-<strong>Purpose</strong>: Video downloader for YouTube and 1000+ sites  
-<strong>Skill Level</strong>: Intermediate  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Windows, macOS, Linux  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://github.com/yt-dlp/yt-dlp
-</p>
-
-<p>
-<strong>What It Does</strong>: Downloads videos from streaming platforms including metadata, subtitles, thumbnails.
-</p>
-
-<p>
-<strong>Basic Usage</strong>:
-</code>`<code>bash
-yt-dlp --write-description --write-info-json --write-thumbnail https://youtube.com/watch?v=VIDEO_ID
-</code>`<code>
-</p>
-
-<p>
-<strong>Best For</strong>: Video archiving, preserving YouTube/Vimeo/TikTok content
-</p>
-
-<p>
-<strong>Note</strong>: yt-dlp is actively maintained fork of youtube-dl (use yt-dlp)
-</p>
-
-<h3>9. gallery-dl</h3>
-<p>
-<strong>Purpose</strong>: Image gallery downloader  
-<strong>Skill Level</strong>: Intermediate  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Windows, macOS, Linux  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://github.com/mikf/gallery-dl
-</p>
-
-<p>
-<strong>What It Does</strong>: Downloads images from image hosting sites (Imgur, Flickr, DeviantArt, Twitter, etc.)
-</p>
-
-<p>
-<strong>Best For</strong>: Image archiving, art preservation, meme collections
-</p>
-
-<h3>10. FFmpeg</h3>
-<p>
-<strong>Purpose</strong>: Multimedia conversion and processing  
-<strong>Skill Level</strong>: Intermediate-Advanced  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Windows, macOS, Linux  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://ffmpeg.org/
-</p>
-
-<p>
-<strong>What It Does</strong>: Converts video/audio formats, extracts frames, creates thumbnails, transcodes for preservation.
-</p>
-
-<p>
-<strong>Best For</strong>: Format migration, creating preservation masters, generating access copies
-</p>
-
-<p>
-<strong>Example</strong>:
-</code>`<code>bash
-ffmpeg -i input.flv -c:v libx264 -c:a aac output.mp4
-</code>``
-</p>
-
-<h2>III. Emulation & Obsolescence Tools</h2>
-
-<h3>11. Flashpoint Archive</h3>
-<p>
-<strong>Purpose</strong>: Flash game and animation preservation  
-<strong>Skill Level</strong>: Beginner  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Windows, Linux  
-<strong>Open Source</strong>: Partially  
-<strong>Website</strong>: https://bluemaxima.org/flashpoint/
-</p>
-
-<p>
-<strong>What It Does</strong>: Preserves and plays 500,000+ Flash games and animations using embedded emulators.
-</p>
-
-<p>
-<strong>Features</strong>:
-- Curated, playable collection
-- Built-in launcher
-- Metadata and screenshots
-- Regular updates
-</p>
-
-<p>
-<strong>Best For</strong>: Playing preserved Flash content, research, nostalgia
-</p>
-
-<p>
-<strong>Download Size</strong>: ~1TB for full collection (smaller curated versions available)
-</p>
-
-<h3>12. Ruffle</h3>
-<p>
-<strong>Purpose</strong>: Flash Player emulator in Rust  
-<strong>Skill Level</strong>: Beginner  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Web (browser extension), Desktop  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://ruffle.rs/
-</p>
-
-<p>
-<strong>What It Does</strong>: Open-source Flash Player replacement that runs in browsers and as standalone app.
-</p>
-
-<p>
-<strong>Best For</strong>: Viewing archived Flash content, embedding Flash in modern websites
-</p>
-
-<p>
-<strong>Status</strong>: Under active development, not 100% compatible yet
-</p>
-
-<h3>13. MAME (Multiple Arcade Machine Emulator)</h3>
-<p>
-<strong>Purpose</strong>: Arcade game preservation  
-<strong>Skill Level</strong>: Intermediate  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Windows, macOS, Linux  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://www.mamedev.org/
-</p>
-
-<p>
-<strong>What It Does</strong>: Emulates arcade hardware to preserve vintage arcade games.
-</p>
-
-<p>
-<strong>Best For</strong>: Arcade game preservation, historical research
-</p>
-
-<h3>14. DOSBox</h3>
-<p>
-<strong>Purpose</strong>: DOS emulator  
-<strong>Skill Level</strong>: Beginner  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Windows, macOS, Linux  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://www.dosbox.com/
-</p>
-
-<p>
-<strong>What It Does</strong>: Emulates MS-DOS environment for running old DOS games and software.
-</p>
-
-<p>
-<strong>Best For</strong>: 1980s-1990s software preservation
-</p>
-
-<h3>15. Internet Archive's Emularity</h3>
-<p>
-<strong>Purpose</strong>: Browser-based emulation framework  
-<strong>Skill Level</strong>: Advanced (for setup), Beginner (for use)  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Web-based  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://github.com/db48x/emularity
-</p>
-
-<p>
-<strong>What It Does</strong>: JavaScript framework for running emulators in web browsers. Powers Internet Archive's software collection.
-</p>
-
-<p>
-<strong>Best For</strong>: Making preserved software publicly playable via web
-</p>
-
-<h2>IV. Forensics & Data Recovery</h2>
-
-<h3>16. The Sleuth Kit / Autopsy</h3>
-<p>
-<strong>Purpose</strong>: Digital forensics and file recovery  
-<strong>Skill Level</strong>: Advanced  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Windows, macOS, Linux  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://www.sleuthkit.org/
-</p>
-
-<p>
-<strong>What It Does</strong>: Analyzes disk images, recovers deleted files, examines file systems.
-</p>
-
-<p>
-<strong>Best For</strong>: Forensic analysis of hard drives, recovering deleted content
-</p>
-
-<h3>17. FTK Imager</h3>
-<p>
-<strong>Purpose</strong>: Disk imaging tool  
-<strong>Skill Level</strong>: Intermediate  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Windows  
-<strong>Open Source</strong>: No  
-<strong>Website</strong>: https://www.exterro.com/ftk-imager
-</p>
-
-<p>
-<strong>What It Does</strong>: Creates forensic disk images (bit-by-bit copies) for preservation and analysis.
-</p>
-
-<p>
-<strong>Best For</strong>: Creating preservation masters of physical media
-</p>
-
-<h3>18. PhotoRec</h3>
-<p>
-<strong>Purpose</strong>: File recovery tool  
-<strong>Skill Level</strong>: Intermediate  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Windows, macOS, Linux  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://www.cgsecurity.org/wiki/PhotoRec
-</p>
-
-<p>
-<strong>What It Does</strong>: Recovers deleted files from hard drives, memory cards, etc.
-</p>
-
-<p>
-<strong>Best For</strong>: Recovering accidentally deleted content, salvaging corrupted media
-</p>
-
-<h3>19. Bulk Extractor</h3>
-<p>
-<strong>Purpose</strong>: Digital forensics tool for extracting information  
-<strong>Skill Level</strong>: Advanced  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Windows, macOS, Linux  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://github.com/simsong/bulk_extractor
-</p>
-
-<p>
-<strong>What It Does</strong>: Scans disk images and extracts emails, credit cards, URLs, etc. without mounting filesystem.
-</p>
-
-<p>
-<strong>Best For</strong>: Analyzing large datasets, finding specific types of information
-</p>
-
-<h2>V. Metadata & Organization</h2>
-
-<h3>20. Tropy</h3>
-<p>
-<strong>Purpose</strong>: Research photo management and annotation  
-<strong>Skill Level</strong>: Beginner  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Windows, macOS, Linux  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://tropy.org/
-</p>
-
-<p>
-<strong>What It Does</strong>: Organize, annotate, and tag research photos. Add metadata, transcribe, and create citations.
-</p>
-
-<p>
-<strong>Best For</strong>: Managing archival photos, research collections
-</p>
-
-<h3>21. Omeka</h3>
-<p>
-<strong>Purpose</strong>: Web publishing platform for digital collections  
-<strong>Skill Level</strong>: Intermediate  
-<strong>Cost</strong>: Free (self-hosted) or Paid (Omeka.net)  
-<strong>Platform</strong>: Web-based (PHP)  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://omeka.org/
-</p>
-
-<p>
-<strong>What It Does</strong>: Create online exhibits and digital archives with rich metadata.
-</p>
-
-<p>
-<strong>Features</strong>:
-- Dublin Core metadata
-- Exhibit builder
-- Item management
-- Public/private collections
-</p>
-
-<p>
-<strong>Best For</strong>: Small museums, libraries, digital humanities projects
-</p>
-
-<h3>22. Collective Access</h3>
-<p>
-<strong>Purpose</strong>: Museum and archival collections management  
-<strong>Skill Level</strong>: Advanced  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Web-based (PHP)  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://collectiveaccess.org/
-</p>
-
-<p>
-<strong>What It Does</strong>: Full-featured collections management system with cataloging, media management, and public access.
-</p>
-
-<p>
-<strong>Best For</strong>: Museums, archives, larger institutions
-</p>
-
-<h3>23. Calibre</h3>
-<p>
-<strong>Purpose</strong>: eBook management  
-<strong>Skill Level</strong>: Beginner  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Windows, macOS, Linux  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://calibre-ebook.com/
-</p>
-
-<p>
-<strong>What It Does</strong>: Organize, convert, and read eBooks. Powerful metadata editor.
-</p>
-
-<p>
-<strong>Best For</strong>: Managing personal book collections, format conversion
-</p>
-
-<h2>VI. Storage & Backup</h2>
-
-<h3>24. Nextcloud</h3>
-<p>
-<strong>Purpose</strong>: Self-hosted cloud storage  
-<strong>Skill Level</strong>: Intermediate  
-<strong>Cost</strong>: Free (self-hosted)  
-<strong>Platform</strong>: Web-based (PHP)  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://nextcloud.com/
-</p>
-
-<p>
-<strong>What It Does</strong>: Personal cloud storage like Dropbox but self-hosted. Sync files across devices.
-</p>
-
-<p>
-<strong>Features</strong>:
-- File sharing
-- Calendar/contacts
-- Collaborative editing
-- End-to-end encryption
-</p>
-
-<p>
-<strong>Best For</strong>: Personal sovereignty, institutional storage
-</p>
-
-<h3>25. Syncthing</h3>
-<p>
-<strong>Purpose</strong>: Peer-to-peer file synchronization  
-<strong>Skill Level</strong>: Beginner-Intermediate  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Windows, macOS, Linux, Android  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://syncthing.net/
-</p>
-
-<p>
-<strong>What It Does</strong>: Syncs files between devices without central server. True peer-to-peer.
-</p>
-
-<p>
-<strong>Best For</strong>: Personal backups, distributed storage without cloud dependency
-</p>
-
-<h3>26. Restic</h3>
-<p>
-<strong>Purpose</strong>: Encrypted backup program  
-<strong>Skill Level</strong>: Intermediate  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Windows, macOS, Linux  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://restic.net/
-</p>
-
-<p>
-<strong>What It Does</strong>: Fast, encrypted, deduplicated backups to local or cloud storage.
-</p>
-
-<p>
-<strong>Best For</strong>: Secure long-term backups
-</p>
-
-<h3>27. Duplicati</h3>
-<p>
-<strong>Purpose</strong>: Encrypted backup with cloud support  
-<strong>Skill Level</strong>: Beginner-Intermediate  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Windows, macOS, Linux  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://www.duplicati.com/
-</p>
-
-<p>
-<strong>What It Does</strong>: Encrypted backups to cloud storage (S3, Google Drive, Dropbox, etc.)
-</p>
-
-<p>
-<strong>Best For</strong>: Encrypted cloud backups, scheduled backups
-</p>
-
-<h2>VII. Distributed & P2P Technologies</h2>
-
-<h3>28. IPFS (InterPlanetary File System)</h3>
-<p>
-<strong>Purpose</strong>: Distributed file storage protocol  
-<strong>Skill Level</strong>: Advanced  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Cross-platform  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://ipfs.tech/
-</p>
-
-<p>
-<strong>What It Does</strong>: Content-addressed, peer-to-peer file system. Files stored across network, retrieved by hash.
-</p>
-
-<p>
-<strong>Best For</strong>: Censorship-resistant storage, distributed archives
-</p>
-
-<p>
-<strong>Challenges</strong>: Requires peers to "pin" content (host it) or content disappears
-</p>
-
-<h3>29. BitTorrent / qBittorrent</h3>
-<p>
-<strong>Purpose</strong>: Peer-to-peer file sharing  
-<strong>Skill Level</strong>: Beginner  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Windows, macOS, Linux  
-<strong>Open Source</strong>: Yes (qBittorrent)  
-<strong>Website</strong>: https://www.qbittorrent.org/
-</p>
-
-<p>
-<strong>What It Does</strong>: Download and seed torrents. Distributed file sharing without central server.
-</p>
-
-<p>
-<strong>Best For</strong>: Distributing large archives (GeoCities torrent), redundant preservation
-</p>
-
-<h3>30. Dat / Hyperdrive</h3>
-<p>
-<strong>Purpose</strong>: Peer-to-peer data sharing protocol  
-<strong>Skill Level</strong>: Advanced  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Cross-platform  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://dat.foundation/
-</p>
-
-<p>
-<strong>What It Does</strong>: Like BitTorrent but with versioning and live updates. Share datasets P2P.
-</p>
-
-<p>
-<strong>Best For</strong>: Scientific datasets, collaborative archiving
-</p>
-
-<h2>VIII. Web Publishing & Sovereignty Tools</h2>
-
-<h3>31. WordPress (Self-Hosted)</h3>
-<p>
-<strong>Purpose</strong>: Content management system  
-<strong>Skill Level</strong>: Beginner-Intermediate  
-<strong>Cost</strong>: Free (software), hosting costs vary  
-<strong>Platform</strong>: Web-based (PHP)  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://wordpress.org/
-</p>
-
-<p>
-<strong>What It Does</strong>: Build websites and blogs with full control. Powers 40%+ of the web.
-</p>
-
-<p>
-<strong>Best For</strong>: Personal websites, institutional sites, blogs with custom domains
-</p>
-
-<h3>32. Ghost</h3>
-<p>
-<strong>Purpose</strong>: Publishing platform for newsletters and memberships  
-<strong>Skill Level</strong>: Beginner (hosted) to Intermediate (self-hosted)  
-<strong>Cost</strong>: Freemium (Ghost Pro) or Free (self-hosted)  
-<strong>Platform</strong>: Web-based (Node.js)  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://ghost.org/
-</p>
-
-<p>
-<strong>What It Does</strong>: Blogging platform with built-in newsletter and membership features.
-</p>
-
-<p>
-<strong>Best For</strong>: Writers who want sovereignty + monetization
-</p>
-
-<h3>33. Hugo / Jekyll (Static Site Generators)</h3>
-<p>
-<strong>Purpose</strong>: Generate static HTML websites from markdown  
-<strong>Skill Level</strong>: Intermediate  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Cross-platform  
-<strong>Open Source</strong>: Yes  
-<strong>Websites</strong>: https://gohugo.io/ | https://jekyllrb.com/
-</p>
-
-<p>
-<strong>What It Does</strong>: Convert markdown files to HTML websites. No database, just files.
-</p>
-
-<p>
-<strong>Best For</strong>: Fast, secure websites, GitHub Pages hosting, technical users
-</p>
-
-<h3>34. Mastodon</h3>
-<p>
-<strong>Purpose</strong>: Federated social networking  
-<strong>Skill Level</strong>: Advanced (self-hosting), Beginner (joining instance)  
-<strong>Cost</strong>: Free (software), hosting costs vary  
-<strong>Platform</strong>: Web-based (Ruby)  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://joinmastodon.org/
-</p>
-
-<p>
-<strong>What It Does</strong>: Twitter-like social media but federated. Anyone can run an instance.
-</p>
-
-<p>
-<strong>Best For</strong>: Social networking with sovereignty, community hosting
-</p>
-
-<h2>IX. Digital Preservation Standards & Utilities</h2>
-
-<h3>35. DROID (Digital Record Object Identification)</h3>
-<p>
-<strong>Purpose</strong>: File format identification  
-<strong>Skill Level</strong>: Intermediate  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Windows, macOS, Linux (Java)  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://digital-preservation.github.io/droid/
-</p>
-
-<p>
-<strong>What It Does</strong>: Identifies file formats and versions for preservation planning.
-</p>
-
-<p>
-<strong>Best For</strong>: Surveying collections, format migration planning
-</p>
-
-<h3>36. Archivematica</h3>
-<p>
-<strong>Purpose</strong>: Digital preservation system  
-<strong>Skill Level</strong>: Advanced  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Linux  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://www.archivematica.org/
-</p>
-
-<p>
-<strong>What It Does</strong>: Complete digital preservation workflow from ingest to access. Creates OAIS-compliant preservation packages.
-</p>
-
-<p>
-<strong>Best For</strong>: Institutions with professional archival requirements
-</p>
-
-<h3>37. LOCKSS (Lots of Copies Keep Stuff Safe)</h3>
-<p>
-<strong>Purpose</strong>: Distributed preservation network  
-<strong>Skill Level</strong>: Advanced  
-<strong>Cost</strong>: Free (software), membership costs vary  
-<strong>Platform</strong>: Linux  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://www.lockss.org/
-</p>
-
-<p>
-<strong>What It Does</strong>: Creates distributed dark archives where institutions preserve copies of content.
-</p>
-
-<p>
-<strong>Best For</strong>: Consortial preservation, journal archiving
-</p>
-
-<h2>X. Learning & Reference Resources</h2>
-
-<h3>38. Archive Team Wiki</h3>
-<p>
-<strong>Purpose</strong>: Documentation of rescue projects and methods  
-<strong>Skill Level</strong>: All levels  
-<strong>Cost</strong>: Free  
-<strong>Website</strong>: https://wiki.archiveteam.org/
-</p>
-
-<p>
-<strong>What It Provides</strong>: Guides for archiving specific platforms, tool documentation, community projects.
-</p>
-
-<p>
-<strong>Best For</strong>: Learning web archiving, finding ongoing rescue projects
-</p>
-
-<h3>39. Digital Preservation Coalition (DPC)</h3>
-<p>
-<strong>Purpose</strong>: Professional organization for digital preservation  
-<strong>Skill Level</strong>: All levels  
-<strong>Cost</strong>: Free resources, membership fees for institutions  
-<strong>Website</strong>: https://www.dpconline.org/
-</p>
-
-<p>
-<strong>What It Provides</strong>: Handbook, tech watch reports, training, community
-</p>
-
-<h3>40. Library of Congress Digital Preservation</h3>
-<p>
-<strong>Purpose</strong>: Government standards and guidance  
-<strong>Skill Level</strong>: All levels  
-<strong>Cost</strong>: Free  
-<strong>Website</strong>: https://www.loc.gov/preservation/digital/
-</p>
-
-<p>
-<strong>What It Provides</strong>: Format recommendations, case studies, technical standards
-</p>
-
-<h2>XI. Community & Collaboration</h2>
-
-<h3>41. Internet Archive Scholar</h3>
-<p>
-<strong>Purpose</strong>: Academic paper search in preserved collections  
-<strong>Skill Level</strong>: Beginner  
-<strong>Cost</strong>: Free  
-<strong>Website</strong>: https://scholar.archive.org/
-</p>
-
-<p>
-<strong>What It Provides</strong>: Search 25+ million academic articles including deleted/paywalled content
-</p>
-
-<h3>42. Hypothes.is</h3>
-<p>
-<strong>Purpose</strong>: Web annotation tool  
-<strong>Skill Level</strong>: Beginner  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Web (browser extension)  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://hypothes.is/
-</p>
-
-<p>
-<strong>What It Does</strong>: Collaborative annotation of web pages and PDFs.
-</p>
-
-<p>
-<strong>Best For</strong>: Research collaboration, shared analysis of archived content
-</p>
-
-<h3>43. Zotero</h3>
-<p>
-<strong>Purpose</strong>: Reference management  
-<strong>Skill Level</strong>: Beginner  
-<strong>Cost</strong>: Free (with storage limits)  
-<strong>Platform</strong>: Windows, macOS, Linux  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://www.zotero.org/
-</p>
-
-<p>
-<strong>What It Does</strong>: Organize research sources, generate citations, share libraries.
-</p>
-
-<p>
-<strong>Best For</strong>: Academic research, bibliography management
-</p>
-
-<h2>XII. Advanced / Specialized Tools</h2>
-
-<h3>44. Scrapyd</h3>
-<p>
-<strong>Purpose</strong>: Web scraping framework  
-<strong>Skill Level</strong>: Advanced  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Python (cross-platform)  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://scrapyd.readthedocs.io/
-</p>
-
-<p>
-<strong>What It Does</strong>: Deploy and run web scraping spiders at scale.
-</p>
-
-<p>
-<strong>Best For</strong>: Custom large-scale scraping projects
-</p>
-
-<h3>45. Selenium</h3>
-<p>
-<strong>Purpose</strong>: Browser automation  
-<strong>Skill Level</strong>: Advanced  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Cross-platform  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://www.selenium.dev/
-</p>
-
-<p>
-<strong>What It Does</strong>: Automate web browser interactions for scraping JavaScript-heavy sites.
-</p>
-
-<p>
-<strong>Best For</strong>: Archiving dynamic web apps, automated testing
-</p>
-
-<h3>46. Beautiful Soup</h3>
-<p>
-<strong>Purpose</strong>: HTML/XML parsing library (Python)  
-<strong>Skill Level</strong>: Intermediate  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Python (cross-platform)  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://www.crummy.com/software/BeautifulSoup/
-</p>
-
-<p>
-<strong>What It Does</strong>: Parse and extract data from HTML documents.
-</p>
-
-<p>
-<strong>Best For</strong>: Custom scrapers, data extraction
-</p>
-
-<h3>47. ExifTool</h3>
-<p>
-<strong>Purpose</strong>: Metadata reading/writing for images  
-<strong>Skill Level</strong>: Intermediate  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Windows, macOS, Linux  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://exiftool.org/
-</p>
-
-<p>
-<strong>What It Does</strong>: Read and write metadata in images, videos, PDFs.
-</p>
-
-<p>
-<strong>Best For</strong>: Extracting metadata, adding preservation info to files
-</p>
-
-<h3>48. Voyant Tools</h3>
-<p>
-<strong>Purpose</strong>: Text analysis and visualization  
-<strong>Skill Level</strong>: Beginner  
-<strong>Cost</strong>: Free  
-<strong>Platform</strong>: Web-based  
-<strong>Open Source</strong>: Yes  
-<strong>Website</strong>: https://voyant-tools.org/
-</p>
-
-<p>
-<strong>What It Does</strong>: Analyze text corpuses with visualizations (word clouds, trends, etc.)
-</p>
-
-<p>
-<strong>Best For</strong>: Analyzing preserved text collections, research
-</p>
-
-<h2>XIII. Infrastructure & Hosting</h2>
-
-<h3>49. DigitalOcean / Linode / Vultr</h3>
-<p>
-<strong>Purpose</strong>: Cloud VPS hosting  
-<strong>Skill Level</strong>: Intermediate-Advanced  
-<strong>Cost</strong>: Paid (~$5-50/month)  
-<strong>Platform</strong>: Cloud infrastructure  
-<strong>Website</strong>: Various
-</p>
-
-<p>
-<strong>What They Do</strong>: Provide virtual servers for hosting tools, websites, archives.
-</p>
-
-<p>
-<strong>Best For</strong>: Self-hosting projects, institutional infrastructure
-</p>
-
-<h3>50. GitHub / GitLab</h3>
-<p>
-<strong>Purpose</strong>: Version control and code hosting  
-<strong>Skill Level</strong>: Intermediate  
-<strong>Cost</strong>: Free (with limits)  
-<strong>Platform</strong>: Web-based  
-<strong>Open Source</strong>: GitLab self-hosted is  
-<strong>Website</strong>: https://github.com | https://gitlab.com
-</p>
-
-<p>
-<strong>What They Do</strong>: Host code repositories, documentation, static sites (GitHub Pages).
-</p>
-
-<p>
-<strong>Best For</strong>: Collaborative development, documentation, portfolio
-</p>
-
-<h2>Conclusion</h2>
-
-<p>
-This toolkit represents the essential software infrastructure for Archaeobytological practice. Key principles:
-</p>
-
-<p>
-1. <strong>Open Source First</strong>: Prioritize tools you control (no vendor lock-in)
-2. <strong>Standard Formats</strong>: Use WARC, JSON, CSV, plain text (future-proof)
-3. <strong>Redundancy</strong>: Multiple tools for critical functions (no single points of failure)
-4. <strong>Learning Curve</strong>: Start with beginner tools, grow into advanced ones
-5. <strong>Community</strong>: Join user communities (Archive Team, COPTR, DPC) to learn
-</p>
-
-<p>
-The field evolves rapidly—new tools emerge, old ones are abandoned. Check the Archaeobytology Wiki regularly for updates.
-</p>
-
-<p>
-<strong>Next Steps</strong>:
-- Install 3-5 tools from this list that match your current projects
-- Join Archive Team IRC or Discord to see tools in action
-- Contribute to tool documentation when you learn something useful
-</p>
-
-<p>
-Tools are just means—the goal is preserving digital culture and building sovereign alternatives. Choose tools that serve those ends.
-</p>
-
-<p>
-<strong>For Updates</strong>: Visit archaeobytology.org/tools for latest versions and community recommendations.
-</p>
-
-
-        </article>
-        <div class="nav">
-            <a href="index.html">Back to Table of Contents</a>
-        </div>
-    </div>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='appendix-b-essential-tools--resources'><span>Appendix B: Essential Tools &amp; Resources</span></h1><hr /><h2 id='introduction'><span>Introduction</span></h2><p><span>This appendix provides a curated catalog of tools, software, services, and resources essential for Archaeobytological practice. Tools are organized by function and annotated with:</span></p><ul><li><p><strong><span>Purpose</span></strong><span>: What the tool does</span></p></li><li><p><strong><span>Skill Level</span></strong><span>: Beginner, Intermediate, Advanced</span></p></li><li><p><strong><span>Cost</span></strong><span>: Free, Freemium, Paid</span></p></li><li><p><strong><span>Platform</span></strong><span>: Windows, macOS, Linux, Web-based</span></p></li><li><p><strong><span>Open Source</span></strong><span>: Yes/No</span></p></li></ul><p><span>Tools are current as of 2025 but the digital preservation landscape evolves rapidly. Check the Archaeobytology community wiki (archaeobytology.org/wiki) for updates.</span></p><hr /><h2 id='i-web-archiving--scraping-tools'><span>I. Web Archiving &amp; Scraping Tools</span></h2><h3 id='1-wget'><span>1. Wget</span></h3><p><strong><span>Purpose</span></strong><span>: Command-line tool for downloading websites recursively</span><br/><strong><span>Skill Level</span></strong><span>: Beginner-Intermediate</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Windows, macOS, Linux</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://www.gnu.org/software/wget/' target='_blank' class='url'>https://www.gnu.org/software/wget/</a></p><p><strong><span>What It Does</span></strong><span>: Downloads web pages and their linked resources (images, CSS, JavaScript). Creates mirror copies of websites on your local machine.</span></p><p><strong><span>Basic Usage</span></strong><span>:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.19531px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">wget</span> <span class="cm-attribute">--recursive</span> <span class="cm-attribute">--level</span><span class="cm-operator">=</span><span class="cm-number">2</span> <span class="cm-attribute">--no-parent</span> <span class="cm-attribute">--wait</span><span class="cm-operator">=</span><span class="cm-number">1</span> https://example.com</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><strong><span>Best For</span></strong><span>: Static HTML sites, simple scraping projects</span></p><p><strong><span>Limitations</span></strong><span>: Doesn&#39;t handle JavaScript-heavy sites well, can&#39;t navigate login walls</span></p><hr /><h3 id='2-httrack'><span>2. HTTrack</span></h3><p><strong><span>Purpose</span></strong><span>: Website copier with GUI interface</span><br/><strong><span>Skill Level</span></strong><span>: Beginner</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Windows, macOS, Linux</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://www.httrack.com/' target='_blank' class='url'>https://www.httrack.com/</a></p><p><strong><span>What It Does</span></strong><span>: Similar to wget but with graphical interface. Easier for beginners who don&#39;t want command-line tools.</span></p><p><strong><span>Best For</span></strong><span>: One-time website archiving, beginners</span></p><p><strong><span>Limitations</span></strong><span>: Slower than command-line tools, less flexible configuration</span></p><hr /><h3 id='3-archivebox'><span>3. ArchiveBox</span></h3><p><strong><span>Purpose</span></strong><span>: Self-hosted web archiving platform</span><br/><strong><span>Skill Level</span></strong><span>: Intermediate</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Windows, macOS, Linux, Docker</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://archivebox.io/' target='_blank' class='url'>https://archivebox.io/</a></p><p><strong><span>What It Does</span></strong><span>: Creates permanent archives of web pages including HTML, screenshots, PDFs, videos, and git repositories. Provides web interface for browsing archives.</span></p><p><strong><span>Features</span></strong><span>:</span></p><ul><li><p><span>Multiple capture methods (wget, Chrome headless, youtube-dl, etc.)</span></p></li><li><p><span>Scheduled archiving (cron jobs)</span></p></li><li><p><span>Full-text search</span></p></li><li><p><span>Deduplication</span></p></li></ul><p><strong><span>Best For</span></strong><span>: Personal archiving projects, research collections, small organizations</span></p><p><strong><span>Setup Complexity</span></strong><span>: Requires server or Docker knowledge</span></p><hr /><h3 id='4-webrecorder-archivewebpage'><span>4. Webrecorder (ArchiveWeb.page)</span></h3><p><strong><span>Purpose</span></strong><span>: Browser-based interactive web archiving</span><br/><strong><span>Skill Level</span></strong><span>: Beginner</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Web (browser extension also available)</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://archiveweb.page/' target='_blank' class='url'>https://archiveweb.page/</a></p><p><strong><span>What It Does</span></strong><span>: Records your browsing session including JavaScript interactions, videos, and dynamic content. Creates WARC (Web ARChive) files you can replay.</span></p><p><strong><span>Features</span></strong><span>:</span></p><ul><li><p><span>Captures JavaScript-heavy sites</span></p></li><li><p><span>Records social media feeds (Twitter, Instagram)</span></p></li><li><p><span>Exports to standard WARC format</span></p></li><li><p><span>Replay archives offline</span></p></li></ul><p><strong><span>Best For</span></strong><span>: Social media archiving, dynamic websites, personal projects</span></p><p><strong><span>Unique Advantage</span></strong><span>: Works in browser, no installation required</span></p><hr /><h3 id='5-heritrix'><span>5. Heritrix</span></h3><p><strong><span>Purpose</span></strong><span>: Industrial-strength web crawler</span><br/><strong><span>Skill Level</span></strong><span>: Advanced</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Java (cross-platform)</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://github.com/internetarchive/heritrix3' target='_blank' class='url'>https://github.com/internetarchive/heritrix3</a></p><p><strong><span>What It Does</span></strong><span>: Internet Archive&#39;s production crawler. Designed for massive-scale archiving (billions of URLs).</span></p><p><strong><span>Features</span></strong><span>:</span></p><ul><li><p><span>Highly configurable crawl policies</span></p></li><li><p><span>Distributed crawling</span></p></li><li><p><span>Respects robots.txt</span></p></li><li><p><span>Creates WARC files</span></p></li></ul><p><strong><span>Best For</span></strong><span>: Large institutions, comprehensive web archiving</span></p><p><strong><span>Limitations</span></strong><span>: Steep learning curve, requires significant infrastructure</span></p><hr /><h3 id='6-browsertrix-crawler'><span>6. Browsertrix Crawler</span></h3><p><strong><span>Purpose</span></strong><span>: High-fidelity browser-based crawling</span><br/><strong><span>Skill Level</span></strong><span>: Intermediate-Advanced</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Docker</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://github.com/webrecorder/browsertrix-crawler' target='_blank' class='url'>https://github.com/webrecorder/browsertrix-crawler</a></p><p><strong><span>What It Does</span></strong><span>: Uses real browsers (Chrome) to capture JavaScript-heavy sites with perfect fidelity. Creates WARC files.</span></p><p><strong><span>Best For</span></strong><span>: Modern web apps, single-page applications, sites requiring JavaScript</span></p><hr /><h3 id='7-archive-it'><span>7. Archive-It</span></h3><p><strong><span>Purpose</span></strong><span>: Subscription web archiving service</span><br/><strong><span>Skill Level</span></strong><span>: Beginner</span><br/><strong><span>Cost</span></strong><span>: Paid (subscription based on storage)</span><br/><strong><span>Platform</span></strong><span>: Web-based</span><br/><strong><span>Open Source</span></strong><span>: No</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://archive-it.org/' target='_blank' class='url'>https://archive-it.org/</a></p><p><strong><span>What It Does</span></strong><span>: Managed web archiving service by Internet Archive. Point-and-click interface for creating and managing web archives.</span></p><p><strong><span>Features</span></strong><span>:</span></p><ul><li><p><span>Scheduled recurring crawls</span></p></li><li><p><span>Metadata management</span></p></li><li><p><span>Public or private collections</span></p></li><li><p><span>Integration with Wayback Machine</span></p></li></ul><p><strong><span>Best For</span></strong><span>: Institutions without technical staff, organizations needing reliable managed service</span></p><p><strong><span>Cost</span></strong><span>: Starts ~$1,500/year for small collections</span></p><hr /><h2 id='ii-media-preservation-tools'><span>II. Media Preservation Tools</span></h2><h3 id='8-youtube-dl--yt-dlp'><span>8. youtube-dl / yt-dlp</span></h3><p><strong><span>Purpose</span></strong><span>: Video downloader for YouTube and 1000+ sites</span><br/><strong><span>Skill Level</span></strong><span>: Intermediate</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Windows, macOS, Linux</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://github.com/yt-dlp/yt-dlp' target='_blank' class='url'>https://github.com/yt-dlp/yt-dlp</a></p><p><strong><span>What It Does</span></strong><span>: Downloads videos from streaming platforms including metadata, subtitles, thumbnails.</span></p><p><strong><span>Basic Usage</span></strong><span>:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.19531px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">yt-dlp <span class="cm-attribute">--write-description</span> <span class="cm-attribute">--write-info-json</span> <span class="cm-attribute">--write-thumbnail</span> https://youtube.com/watch<span class="cm-def">?v</span><span class="cm-operator">=</span>VIDEO_ID</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><strong><span>Best For</span></strong><span>: Video archiving, preserving YouTube/Vimeo/TikTok content</span></p><p><strong><span>Note</span></strong><span>: yt-dlp is actively maintained fork of youtube-dl (use yt-dlp)</span></p><hr /><h3 id='9-gallery-dl'><span>9. gallery-dl</span></h3><p><strong><span>Purpose</span></strong><span>: Image gallery downloader</span><br/><strong><span>Skill Level</span></strong><span>: Intermediate</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Windows, macOS, Linux</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://github.com/mikf/gallery-dl' target='_blank' class='url'>https://github.com/mikf/gallery-dl</a></p><p><strong><span>What It Does</span></strong><span>: Downloads images from image hosting sites (Imgur, Flickr, DeviantArt, Twitter, etc.)</span></p><p><strong><span>Best For</span></strong><span>: Image archiving, art preservation, meme collections</span></p><hr /><h3 id='10-ffmpeg'><span>10. FFmpeg</span></h3><p><strong><span>Purpose</span></strong><span>: Multimedia conversion and processing</span><br/><strong><span>Skill Level</span></strong><span>: Intermediate-Advanced</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Windows, macOS, Linux</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://ffmpeg.org/' target='_blank' class='url'>https://ffmpeg.org/</a></p><p><strong><span>What It Does</span></strong><span>: Converts video/audio formats, extracts frames, creates thumbnails, transcodes for preservation.</span></p><p><strong><span>Best For</span></strong><span>: Format migration, creating preservation masters, generating access copies</span></p><p><strong><span>Example</span></strong><span>:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.19531px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">ffmpeg <span class="cm-attribute">-i</span> input.flv <span class="cm-attribute">-c</span>:v libx264 <span class="cm-attribute">-c</span>:a aac output.mp4</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><hr /><h2 id='iii-emulation--obsolescence-tools'><span>III. Emulation &amp; Obsolescence Tools</span></h2><h3 id='11-flashpoint-archive'><span>11. Flashpoint Archive</span></h3><p><strong><span>Purpose</span></strong><span>: Flash game and animation preservation</span><br/><strong><span>Skill Level</span></strong><span>: Beginner</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Windows, Linux</span><br/><strong><span>Open Source</span></strong><span>: Partially</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://bluemaxima.org/flashpoint/' target='_blank' class='url'>https://bluemaxima.org/flashpoint/</a></p><p><strong><span>What It Does</span></strong><span>: Preserves and plays 500,000+ Flash games and animations using embedded emulators.</span></p><p><strong><span>Features</span></strong><span>:</span></p><ul><li><p><span>Curated, playable collection</span></p></li><li><p><span>Built-in launcher</span></p></li><li><p><span>Metadata and screenshots</span></p></li><li><p><span>Regular updates</span></p></li></ul><p><strong><span>Best For</span></strong><span>: Playing preserved Flash content, research, nostalgia</span></p><p><strong><span>Download Size</span></strong><span>: ~1TB for full collection (smaller curated versions available)</span></p><hr /><h3 id='12-ruffle'><span>12. Ruffle</span></h3><p><strong><span>Purpose</span></strong><span>: Flash Player emulator in Rust</span><br/><strong><span>Skill Level</span></strong><span>: Beginner</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Web (browser extension), Desktop</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://ruffle.rs/' target='_blank' class='url'>https://ruffle.rs/</a></p><p><strong><span>What It Does</span></strong><span>: Open-source Flash Player replacement that runs in browsers and as standalone app.</span></p><p><strong><span>Best For</span></strong><span>: Viewing archived Flash content, embedding Flash in modern websites</span></p><p><strong><span>Status</span></strong><span>: Under active development, not 100% compatible yet</span></p><hr /><h3 id='13-mame-multiple-arcade-machine-emulator'><span>13. MAME (Multiple Arcade Machine Emulator)</span></h3><p><strong><span>Purpose</span></strong><span>: Arcade game preservation</span><br/><strong><span>Skill Level</span></strong><span>: Intermediate</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Windows, macOS, Linux</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://www.mamedev.org/' target='_blank' class='url'>https://www.mamedev.org/</a></p><p><strong><span>What It Does</span></strong><span>: Emulates arcade hardware to preserve vintage arcade games.</span></p><p><strong><span>Best For</span></strong><span>: Arcade game preservation, historical research</span></p><hr /><h3 id='14-dosbox'><span>14. DOSBox</span></h3><p><strong><span>Purpose</span></strong><span>: DOS emulator</span><br/><strong><span>Skill Level</span></strong><span>: Beginner</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Windows, macOS, Linux</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://www.dosbox.com/' target='_blank' class='url'>https://www.dosbox.com/</a></p><p><strong><span>What It Does</span></strong><span>: Emulates MS-DOS environment for running old DOS games and software.</span></p><p><strong><span>Best For</span></strong><span>: 1980s-1990s software preservation</span></p><hr /><h3 id='15-internet-archives-emularity'><span>15. Internet Archive&#39;s Emularity</span></h3><p><strong><span>Purpose</span></strong><span>: Browser-based emulation framework</span><br/><strong><span>Skill Level</span></strong><span>: Advanced (for setup), Beginner (for use)</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Web-based</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://github.com/db48x/emularity' target='_blank' class='url'>https://github.com/db48x/emularity</a></p><p><strong><span>What It Does</span></strong><span>: JavaScript framework for running emulators in web browsers. Powers Internet Archive&#39;s software collection.</span></p><p><strong><span>Best For</span></strong><span>: Making preserved software publicly playable via web</span></p><hr /><h2 id='iv-forensics--data-recovery'><span>IV. Forensics &amp; Data Recovery</span></h2><h3 id='16-the-sleuth-kit--autopsy'><span>16. The Sleuth Kit / Autopsy</span></h3><p><strong><span>Purpose</span></strong><span>: Digital forensics and file recovery</span><br/><strong><span>Skill Level</span></strong><span>: Advanced</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Windows, macOS, Linux</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://www.sleuthkit.org/' target='_blank' class='url'>https://www.sleuthkit.org/</a></p><p><strong><span>What It Does</span></strong><span>: Analyzes disk images, recovers deleted files, examines file systems.</span></p><p><strong><span>Best For</span></strong><span>: Forensic analysis of hard drives, recovering deleted content</span></p><hr /><h3 id='17-ftk-imager'><span>17. FTK Imager</span></h3><p><strong><span>Purpose</span></strong><span>: Disk imaging tool</span><br/><strong><span>Skill Level</span></strong><span>: Intermediate</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Windows</span><br/><strong><span>Open Source</span></strong><span>: No</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://www.exterro.com/ftk-imager' target='_blank' class='url'>https://www.exterro.com/ftk-imager</a></p><p><strong><span>What It Does</span></strong><span>: Creates forensic disk images (bit-by-bit copies) for preservation and analysis.</span></p><p><strong><span>Best For</span></strong><span>: Creating preservation masters of physical media</span></p><hr /><h3 id='18-photorec'><span>18. PhotoRec</span></h3><p><strong><span>Purpose</span></strong><span>: File recovery tool</span><br/><strong><span>Skill Level</span></strong><span>: Intermediate</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Windows, macOS, Linux</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://www.cgsecurity.org/wiki/PhotoRec' target='_blank' class='url'>https://www.cgsecurity.org/wiki/PhotoRec</a></p><p><strong><span>What It Does</span></strong><span>: Recovers deleted files from hard drives, memory cards, etc.</span></p><p><strong><span>Best For</span></strong><span>: Recovering accidentally deleted content, salvaging corrupted media</span></p><hr /><h3 id='19-bulk-extractor'><span>19. Bulk Extractor</span></h3><p><strong><span>Purpose</span></strong><span>: Digital forensics tool for extracting information</span><br/><strong><span>Skill Level</span></strong><span>: Advanced</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Windows, macOS, Linux</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://github.com/simsong/bulk_extractor' target='_blank' class='url'>https://github.com/simsong/bulk_extractor</a></p><p><strong><span>What It Does</span></strong><span>: Scans disk images and extracts emails, credit cards, URLs, etc. without mounting filesystem.</span></p><p><strong><span>Best For</span></strong><span>: Analyzing large datasets, finding specific types of information</span></p><hr /><h2 id='v-metadata--organization'><span>V. Metadata &amp; Organization</span></h2><h3 id='20-tropy'><span>20. Tropy</span></h3><p><strong><span>Purpose</span></strong><span>: Research photo management and annotation</span><br/><strong><span>Skill Level</span></strong><span>: Beginner</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Windows, macOS, Linux</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://tropy.org/' target='_blank' class='url'>https://tropy.org/</a></p><p><strong><span>What It Does</span></strong><span>: Organize, annotate, and tag research photos. Add metadata, transcribe, and create citations.</span></p><p><strong><span>Best For</span></strong><span>: Managing archival photos, research collections</span></p><hr /><h3 id='21-omeka'><span>21. Omeka</span></h3><p><strong><span>Purpose</span></strong><span>: Web publishing platform for digital collections</span><br/><strong><span>Skill Level</span></strong><span>: Intermediate</span><br/><strong><span>Cost</span></strong><span>: Free (self-hosted) or Paid (Omeka.net)</span><br/><strong><span>Platform</span></strong><span>: Web-based (PHP)</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://omeka.org/' target='_blank' class='url'>https://omeka.org/</a></p><p><strong><span>What It Does</span></strong><span>: Create online exhibits and digital archives with rich metadata.</span></p><p><strong><span>Features</span></strong><span>:</span></p><ul><li><p><span>Dublin Core metadata</span></p></li><li><p><span>Exhibit builder</span></p></li><li><p><span>Item management</span></p></li><li><p><span>Public/private collections</span></p></li></ul><p><strong><span>Best For</span></strong><span>: Small museums, libraries, digital humanities projects</span></p><hr /><h3 id='22-collective-access'><span>22. Collective Access</span></h3><p><strong><span>Purpose</span></strong><span>: Museum and archival collections management</span><br/><strong><span>Skill Level</span></strong><span>: Advanced</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Web-based (PHP)</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://collectiveaccess.org/' target='_blank' class='url'>https://collectiveaccess.org/</a></p><p><strong><span>What It Does</span></strong><span>: Full-featured collections management system with cataloging, media management, and public access.</span></p><p><strong><span>Best For</span></strong><span>: Museums, archives, larger institutions</span></p><hr /><h3 id='23-calibre'><span>23. Calibre</span></h3><p><strong><span>Purpose</span></strong><span>: eBook management</span><br/><strong><span>Skill Level</span></strong><span>: Beginner</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Windows, macOS, Linux</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://calibre-ebook.com/' target='_blank' class='url'>https://calibre-ebook.com/</a></p><p><strong><span>What It Does</span></strong><span>: Organize, convert, and read eBooks. Powerful metadata editor.</span></p><p><strong><span>Best For</span></strong><span>: Managing personal book collections, format conversion</span></p><hr /><h2 id='vi-storage--backup'><span>VI. Storage &amp; Backup</span></h2><h3 id='24-nextcloud'><span>24. Nextcloud</span></h3><p><strong><span>Purpose</span></strong><span>: Self-hosted cloud storage</span><br/><strong><span>Skill Level</span></strong><span>: Intermediate</span><br/><strong><span>Cost</span></strong><span>: Free (self-hosted)</span><br/><strong><span>Platform</span></strong><span>: Web-based (PHP)</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://nextcloud.com/' target='_blank' class='url'>https://nextcloud.com/</a></p><p><strong><span>What It Does</span></strong><span>: Personal cloud storage like Dropbox but self-hosted. Sync files across devices.</span></p><p><strong><span>Features</span></strong><span>:</span></p><ul><li><p><span>File sharing</span></p></li><li><p><span>Calendar/contacts</span></p></li><li><p><span>Collaborative editing</span></p></li><li><p><span>End-to-end encryption</span></p></li></ul><p><strong><span>Best For</span></strong><span>: Personal sovereignty, institutional storage</span></p><hr /><h3 id='25-syncthing'><span>25. Syncthing</span></h3><p><strong><span>Purpose</span></strong><span>: Peer-to-peer file synchronization</span><br/><strong><span>Skill Level</span></strong><span>: Beginner-Intermediate</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Windows, macOS, Linux, Android</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://syncthing.net/' target='_blank' class='url'>https://syncthing.net/</a></p><p><strong><span>What It Does</span></strong><span>: Syncs files between devices without central server. True peer-to-peer.</span></p><p><strong><span>Best For</span></strong><span>: Personal backups, distributed storage without cloud dependency</span></p><hr /><h3 id='26-restic'><span>26. Restic</span></h3><p><strong><span>Purpose</span></strong><span>: Encrypted backup program</span><br/><strong><span>Skill Level</span></strong><span>: Intermediate</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Windows, macOS, Linux</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://restic.net/' target='_blank' class='url'>https://restic.net/</a></p><p><strong><span>What It Does</span></strong><span>: Fast, encrypted, deduplicated backups to local or cloud storage.</span></p><p><strong><span>Best For</span></strong><span>: Secure long-term backups</span></p><hr /><h3 id='27-duplicati'><span>27. Duplicati</span></h3><p><strong><span>Purpose</span></strong><span>: Encrypted backup with cloud support</span><br/><strong><span>Skill Level</span></strong><span>: Beginner-Intermediate</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Windows, macOS, Linux</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://www.duplicati.com/' target='_blank' class='url'>https://www.duplicati.com/</a></p><p><strong><span>What It Does</span></strong><span>: Encrypted backups to cloud storage (S3, Google Drive, Dropbox, etc.)</span></p><p><strong><span>Best For</span></strong><span>: Encrypted cloud backups, scheduled backups</span></p><hr /><h2 id='vii-distributed--p2p-technologies'><span>VII. Distributed &amp; P2P Technologies</span></h2><h3 id='28-ipfs-interplanetary-file-system'><span>28. IPFS (InterPlanetary File System)</span></h3><p><strong><span>Purpose</span></strong><span>: Distributed file storage protocol</span><br/><strong><span>Skill Level</span></strong><span>: Advanced</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Cross-platform</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://ipfs.tech/' target='_blank' class='url'>https://ipfs.tech/</a></p><p><strong><span>What It Does</span></strong><span>: Content-addressed, peer-to-peer file system. Files stored across network, retrieved by hash.</span></p><p><strong><span>Best For</span></strong><span>: Censorship-resistant storage, distributed archives</span></p><p><strong><span>Challenges</span></strong><span>: Requires peers to &quot;pin&quot; content (host it) or content disappears</span></p><hr /><h3 id='29-bittorrent--qbittorrent'><span>29. BitTorrent / qBittorrent</span></h3><p><strong><span>Purpose</span></strong><span>: Peer-to-peer file sharing</span><br/><strong><span>Skill Level</span></strong><span>: Beginner</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Windows, macOS, Linux</span><br/><strong><span>Open Source</span></strong><span>: Yes (qBittorrent)</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://www.qbittorrent.org/' target='_blank' class='url'>https://www.qbittorrent.org/</a></p><p><strong><span>What It Does</span></strong><span>: Download and seed torrents. Distributed file sharing without central server.</span></p><p><strong><span>Best For</span></strong><span>: Distributing large archives (GeoCities torrent), redundant preservation</span></p><hr /><h3 id='30-dat--hyperdrive'><span>30. Dat / Hyperdrive</span></h3><p><strong><span>Purpose</span></strong><span>: Peer-to-peer data sharing protocol</span><br/><strong><span>Skill Level</span></strong><span>: Advanced</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Cross-platform</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://dat.foundation/' target='_blank' class='url'>https://dat.foundation/</a></p><p><strong><span>What It Does</span></strong><span>: Like BitTorrent but with versioning and live updates. Share datasets P2P.</span></p><p><strong><span>Best For</span></strong><span>: Scientific datasets, collaborative archiving</span></p><hr /><h2 id='viii-web-publishing--sovereignty-tools'><span>VIII. Web Publishing &amp; Sovereignty Tools</span></h2><h3 id='31-wordpress-self-hosted'><span>31. WordPress (Self-Hosted)</span></h3><p><strong><span>Purpose</span></strong><span>: Content management system</span><br/><strong><span>Skill Level</span></strong><span>: Beginner-Intermediate</span><br/><strong><span>Cost</span></strong><span>: Free (software), hosting costs vary</span><br/><strong><span>Platform</span></strong><span>: Web-based (PHP)</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://wordpress.org/' target='_blank' class='url'>https://wordpress.org/</a></p><p><strong><span>What It Does</span></strong><span>: Build websites and blogs with full control. Powers 40%+ of the web.</span></p><p><strong><span>Best For</span></strong><span>: Personal websites, institutional sites, blogs with custom domains</span></p><hr /><h3 id='32-ghost'><span>32. Ghost</span></h3><p><strong><span>Purpose</span></strong><span>: Publishing platform for newsletters and memberships</span><br/><strong><span>Skill Level</span></strong><span>: Beginner (hosted) to Intermediate (self-hosted)</span><br/><strong><span>Cost</span></strong><span>: Freemium (Ghost Pro) or Free (self-hosted)</span><br/><strong><span>Platform</span></strong><span>: Web-based (Node.js)</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://ghost.org/' target='_blank' class='url'>https://ghost.org/</a></p><p><strong><span>What It Does</span></strong><span>: Blogging platform with built-in newsletter and membership features.</span></p><p><strong><span>Best For</span></strong><span>: Writers who want sovereignty + monetization</span></p><hr /><h3 id='33-hugo--jekyll-static-site-generators'><span>33. Hugo / Jekyll (Static Site Generators)</span></h3><p><strong><span>Purpose</span></strong><span>: Generate static HTML websites from markdown</span><br/><strong><span>Skill Level</span></strong><span>: Intermediate</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Cross-platform</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Websites</span></strong><span>: </span><a href='https://gohugo.io/' target='_blank' class='url'>https://gohugo.io/</a><span> | </span><a href='https://jekyllrb.com/' target='_blank' class='url'>https://jekyllrb.com/</a></p><p><strong><span>What It Does</span></strong><span>: Convert markdown files to HTML websites. No database, just files.</span></p><p><strong><span>Best For</span></strong><span>: Fast, secure websites, GitHub Pages hosting, technical users</span></p><hr /><h3 id='34-mastodon'><span>34. Mastodon</span></h3><p><strong><span>Purpose</span></strong><span>: Federated social networking</span><br/><strong><span>Skill Level</span></strong><span>: Advanced (self-hosting), Beginner (joining instance)</span><br/><strong><span>Cost</span></strong><span>: Free (software), hosting costs vary</span><br/><strong><span>Platform</span></strong><span>: Web-based (Ruby)</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://joinmastodon.org/' target='_blank' class='url'>https://joinmastodon.org/</a></p><p><strong><span>What It Does</span></strong><span>: Twitter-like social media but federated. Anyone can run an instance.</span></p><p><strong><span>Best For</span></strong><span>: Social networking with sovereignty, community hosting</span></p><hr /><h2 id='ix-digital-preservation-standards--utilities'><span>IX. Digital Preservation Standards &amp; Utilities</span></h2><h3 id='35-droid-digital-record-object-identification'><span>35. DROID (Digital Record Object Identification)</span></h3><p><strong><span>Purpose</span></strong><span>: File format identification</span><br/><strong><span>Skill Level</span></strong><span>: Intermediate</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Windows, macOS, Linux (Java)</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://digital-preservation.github.io/droid/' target='_blank' class='url'>https://digital-preservation.github.io/droid/</a></p><p><strong><span>What It Does</span></strong><span>: Identifies file formats and versions for preservation planning.</span></p><p><strong><span>Best For</span></strong><span>: Surveying collections, format migration planning</span></p><hr /><h3 id='36-archivematica'><span>36. Archivematica</span></h3><p><strong><span>Purpose</span></strong><span>: Digital preservation system</span><br/><strong><span>Skill Level</span></strong><span>: Advanced</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Linux</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://www.archivematica.org/' target='_blank' class='url'>https://www.archivematica.org/</a></p><p><strong><span>What It Does</span></strong><span>: Complete digital preservation workflow from ingest to access. Creates OAIS-compliant preservation packages.</span></p><p><strong><span>Best For</span></strong><span>: Institutions with professional archival requirements</span></p><hr /><h3 id='37-lockss-lots-of-copies-keep-stuff-safe'><span>37. LOCKSS (Lots of Copies Keep Stuff Safe)</span></h3><p><strong><span>Purpose</span></strong><span>: Distributed preservation network</span><br/><strong><span>Skill Level</span></strong><span>: Advanced</span><br/><strong><span>Cost</span></strong><span>: Free (software), membership costs vary</span><br/><strong><span>Platform</span></strong><span>: Linux</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://www.lockss.org/' target='_blank' class='url'>https://www.lockss.org/</a></p><p><strong><span>What It Does</span></strong><span>: Creates distributed dark archives where institutions preserve copies of content.</span></p><p><strong><span>Best For</span></strong><span>: Consortial preservation, journal archiving</span></p><hr /><h2 id='x-learning--reference-resources'><span>X. Learning &amp; Reference Resources</span></h2><h3 id='38-archive-team-wiki'><span>38. Archive Team Wiki</span></h3><p><strong><span>Purpose</span></strong><span>: Documentation of rescue projects and methods</span><br/><strong><span>Skill Level</span></strong><span>: All levels</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://wiki.archiveteam.org/' target='_blank' class='url'>https://wiki.archiveteam.org/</a></p><p><strong><span>What It Provides</span></strong><span>: Guides for archiving specific platforms, tool documentation, community projects.</span></p><p><strong><span>Best For</span></strong><span>: Learning web archiving, finding ongoing rescue projects</span></p><hr /><h3 id='39-digital-preservation-coalition-dpc'><span>39. Digital Preservation Coalition (DPC)</span></h3><p><strong><span>Purpose</span></strong><span>: Professional organization for digital preservation</span><br/><strong><span>Skill Level</span></strong><span>: All levels</span><br/><strong><span>Cost</span></strong><span>: Free resources, membership fees for institutions</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://www.dpconline.org/' target='_blank' class='url'>https://www.dpconline.org/</a></p><p><strong><span>What It Provides</span></strong><span>: Handbook, tech watch reports, training, community</span></p><hr /><h3 id='40-library-of-congress-digital-preservation'><span>40. Library of Congress Digital Preservation</span></h3><p><strong><span>Purpose</span></strong><span>: Government standards and guidance</span><br/><strong><span>Skill Level</span></strong><span>: All levels</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://www.loc.gov/preservation/digital/' target='_blank' class='url'>https://www.loc.gov/preservation/digital/</a></p><p><strong><span>What It Provides</span></strong><span>: Format recommendations, case studies, technical standards</span></p><hr /><h2 id='xi-community--collaboration'><span>XI. Community &amp; Collaboration</span></h2><h3 id='41-internet-archive-scholar'><span>41. Internet Archive Scholar</span></h3><p><strong><span>Purpose</span></strong><span>: Academic paper search in preserved collections</span><br/><strong><span>Skill Level</span></strong><span>: Beginner</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://scholar.archive.org/' target='_blank' class='url'>https://scholar.archive.org/</a></p><p><strong><span>What It Provides</span></strong><span>: Search 25+ million academic articles including deleted/paywalled content</span></p><hr /><h3 id='42-hypothesis'><span>42. Hypothes.is</span></h3><p><strong><span>Purpose</span></strong><span>: Web annotation tool</span><br/><strong><span>Skill Level</span></strong><span>: Beginner</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Web (browser extension)</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://hypothes.is/' target='_blank' class='url'>https://hypothes.is/</a></p><p><strong><span>What It Does</span></strong><span>: Collaborative annotation of web pages and PDFs.</span></p><p><strong><span>Best For</span></strong><span>: Research collaboration, shared analysis of archived content</span></p><hr /><h3 id='43-zotero'><span>43. Zotero</span></h3><p><strong><span>Purpose</span></strong><span>: Reference management</span><br/><strong><span>Skill Level</span></strong><span>: Beginner</span><br/><strong><span>Cost</span></strong><span>: Free (with storage limits)</span><br/><strong><span>Platform</span></strong><span>: Windows, macOS, Linux</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://www.zotero.org/' target='_blank' class='url'>https://www.zotero.org/</a></p><p><strong><span>What It Does</span></strong><span>: Organize research sources, generate citations, share libraries.</span></p><p><strong><span>Best For</span></strong><span>: Academic research, bibliography management</span></p><hr /><h2 id='xii-advanced--specialized-tools'><span>XII. Advanced / Specialized Tools</span></h2><h3 id='44-scrapyd'><span>44. Scrapyd</span></h3><p><strong><span>Purpose</span></strong><span>: Web scraping framework</span><br/><strong><span>Skill Level</span></strong><span>: Advanced</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Python (cross-platform)</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://scrapyd.readthedocs.io/' target='_blank' class='url'>https://scrapyd.readthedocs.io/</a></p><p><strong><span>What It Does</span></strong><span>: Deploy and run web scraping spiders at scale.</span></p><p><strong><span>Best For</span></strong><span>: Custom large-scale scraping projects</span></p><hr /><h3 id='45-selenium'><span>45. Selenium</span></h3><p><strong><span>Purpose</span></strong><span>: Browser automation</span><br/><strong><span>Skill Level</span></strong><span>: Advanced</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Cross-platform</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://www.selenium.dev/' target='_blank' class='url'>https://www.selenium.dev/</a></p><p><strong><span>What It Does</span></strong><span>: Automate web browser interactions for scraping JavaScript-heavy sites.</span></p><p><strong><span>Best For</span></strong><span>: Archiving dynamic web apps, automated testing</span></p><hr /><h3 id='46-beautiful-soup'><span>46. Beautiful Soup</span></h3><p><strong><span>Purpose</span></strong><span>: HTML/XML parsing library (Python)</span><br/><strong><span>Skill Level</span></strong><span>: Intermediate</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Python (cross-platform)</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://www.crummy.com/software/BeautifulSoup/' target='_blank' class='url'>https://www.crummy.com/software/BeautifulSoup/</a></p><p><strong><span>What It Does</span></strong><span>: Parse and extract data from HTML documents.</span></p><p><strong><span>Best For</span></strong><span>: Custom scrapers, data extraction</span></p><hr /><h3 id='47-exiftool'><span>47. ExifTool</span></h3><p><strong><span>Purpose</span></strong><span>: Metadata reading/writing for images</span><br/><strong><span>Skill Level</span></strong><span>: Intermediate</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Windows, macOS, Linux</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://exiftool.org/' target='_blank' class='url'>https://exiftool.org/</a></p><p><strong><span>What It Does</span></strong><span>: Read and write metadata in images, videos, PDFs.</span></p><p><strong><span>Best For</span></strong><span>: Extracting metadata, adding preservation info to files</span></p><hr /><h3 id='48-voyant-tools'><span>48. Voyant Tools</span></h3><p><strong><span>Purpose</span></strong><span>: Text analysis and visualization</span><br/><strong><span>Skill Level</span></strong><span>: Beginner</span><br/><strong><span>Cost</span></strong><span>: Free</span><br/><strong><span>Platform</span></strong><span>: Web-based</span><br/><strong><span>Open Source</span></strong><span>: Yes</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://voyant-tools.org/' target='_blank' class='url'>https://voyant-tools.org/</a></p><p><strong><span>What It Does</span></strong><span>: Analyze text corpuses with visualizations (word clouds, trends, etc.)</span></p><p><strong><span>Best For</span></strong><span>: Analyzing preserved text collections, research</span></p><hr /><h2 id='xiii-infrastructure--hosting'><span>XIII. Infrastructure &amp; Hosting</span></h2><h3 id='49-digitalocean--linode--vultr'><span>49. DigitalOcean / Linode / Vultr</span></h3><p><strong><span>Purpose</span></strong><span>: Cloud VPS hosting</span><br/><strong><span>Skill Level</span></strong><span>: Intermediate-Advanced</span><br/><strong><span>Cost</span></strong><span>: Paid (~$5-50/month)</span><br/><strong><span>Platform</span></strong><span>: Cloud infrastructure</span><br/><strong><span>Website</span></strong><span>: Various</span></p><p><strong><span>What They Do</span></strong><span>: Provide virtual servers for hosting tools, websites, archives.</span></p><p><strong><span>Best For</span></strong><span>: Self-hosting projects, institutional infrastructure</span></p><hr /><h3 id='50-github--gitlab'><span>50. GitHub / GitLab</span></h3><p><strong><span>Purpose</span></strong><span>: Version control and code hosting</span><br/><strong><span>Skill Level</span></strong><span>: Intermediate</span><br/><strong><span>Cost</span></strong><span>: Free (with limits)</span><br/><strong><span>Platform</span></strong><span>: Web-based</span><br/><strong><span>Open Source</span></strong><span>: GitLab self-hosted is</span><br/><strong><span>Website</span></strong><span>: </span><a href='https://github.com' target='_blank' class='url'>https://github.com</a><span> | </span><a href='https://gitlab.com' target='_blank' class='url'>https://gitlab.com</a></p><p><strong><span>What They Do</span></strong><span>: Host code repositories, documentation, static sites (GitHub Pages).</span></p><p><strong><span>Best For</span></strong><span>: Collaborative development, documentation, portfolio</span></p><hr /><h2 id='conclusion'><span>Conclusion</span></h2><p><span>This toolkit represents the essential software infrastructure for Archaeobytological practice. Key principles:</span></p><ol start='' ><li><p><strong><span>Open Source First</span></strong><span>: Prioritize tools you control (no vendor lock-in)</span></p></li><li><p><strong><span>Standard Formats</span></strong><span>: Use WARC, JSON, CSV, plain text (future-proof)</span></p></li><li><p><strong><span>Redundancy</span></strong><span>: Multiple tools for critical functions (no single points of failure)</span></p></li><li><p><strong><span>Learning Curve</span></strong><span>: Start with beginner tools, grow into advanced ones</span></p></li><li><p><strong><span>Community</span></strong><span>: Join user communities (Archive Team, COPTR, DPC) to learn</span></p></li></ol><p><span>The field evolves rapidly—new tools emerge, old ones are abandoned. Check the Archaeobytology Wiki regularly for updates.</span></p><p><strong><span>Next Steps</span></strong><span>:</span></p><ul><li><p><span>Install 3-5 tools from this list that match your current projects</span></p></li><li><p><span>Join Archive Team IRC or Discord to see tools in action</span></p></li><li><p><span>Contribute to tool documentation when you learn something useful</span></p></li></ul><p><span>Tools are just means—the goal is preserving digital culture and building sovereign alternatives. Choose tools that serve those ends.</span></p><hr /><p><strong><span>For Updates</span></strong><span>: Visit archaeobytology.org/tools for latest versions and community recommendations.</span></p><p>&nbsp;</p></div></div>
 </body>
 </html>

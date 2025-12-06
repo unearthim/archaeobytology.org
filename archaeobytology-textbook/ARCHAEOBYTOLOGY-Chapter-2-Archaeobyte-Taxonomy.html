@@ -1,1062 +1,920 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 2: The Archaeobyte Taxonomy — Understanding Digital Mortality | Archaeobytology</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Lora', serif; line-height: 1.8; color: #2E2E2E; background: #F8F7F4; padding: 2rem 1rem; }
-        .container { max-width: 800px; margin: 0 auto; background: #FFFFFF; padding: 3rem; border-radius: 15px; box-shadow: 0 4px 20px rgba(46,46,46,0.1); border: 1px solid #D1D1D1; }
-        h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; color: #2E2E2E; margin-top: 2rem; margin-bottom: 1rem; line-height: 1.3; }
-        h1 { font-size: 2.5rem; font-weight: 700; margin-top: 0; border-bottom: 3px solid #A1824A; padding-bottom: 0.5rem; }
-        h2 { font-size: 2rem; font-weight: 700; margin-top: 2.5rem; }
-        h3 { font-size: 1.5rem; font-weight: 600; color: #5A7D8C; }
-        h4 { font-size: 1.25rem; font-weight: 600; color: #5A7D8C; }
-        p { margin-bottom: 1.25rem; font-size: 1.1rem; }
-        a { color: #A93400; text-decoration: underline; transition: color 0.3s; }
-        a:hover { color: #A95C3D; }
-        strong { font-weight: 600; }
-        em { font-style: italic; }
-        code { font-family: 'Courier New', monospace; background: #F8F7F4; padding: 0.2rem 0.4rem; border-radius: 3px; border: 1px solid #D1D1D1; }
-        blockquote { border-left: 4px solid #A1824A; padding: 1rem 1.5rem; margin: 1.5rem 0; font-style: italic; color: #5A7D8C; background: #F8F7F4; border-radius: 0 8px 8px 0; }
-        hr { border: none; border-top: 2px solid #D1D1D1; margin: 2rem 0; }
-        .nav { text-align: center; padding: 1rem 0; border-top: 2px solid #D1D1D1; margin-top: 2rem; }
-        .nav a { display: inline-block; padding: 0.75rem 1.5rem; background: #A93400; color: #F8F7F4; text-decoration: none; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 600; margin: 0.5rem; }
-        .nav a:hover { background: #A95C3D; }
-    </style>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'><style type='text/css'>html {overflow-x: initial !important;}</style>
+<style type='text/css'  id="style-base">:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, "Segoe UI Emoji", "SF Pro", sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p *, #write.first-line-indent svg * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
+#write svg h1, #write svg h2, #write svg h3, #write svg h4, #write svg h5, #write svg h6, #write svg p { position: static; }
+.nodeLabel p { padding-right: 2px; padding-left: 2px; }
+.typora-export .nodeLabel p { padding-right: 0px; padding-left: 0px; }
+foreignobject { overflow: visible; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+li p { orphans: 1; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.mermaid-svg { margin: auto; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left: 0.25em solid rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
+
+</style>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;display=swap' type='text/css' />
+<style type='text/css'  id="style-theme_css">/*
+ * Unearth Light Theme for Typora
+ * Based on the Foundry Blueprint 4.1 - unearth.im
+ * 
+ * Color Palette:
+ * - Parchment (Background): #F8F7F4
+ * - Charcoal (Text): #2E2E2E
+ * - Burnt Sienna (Primary Accent): #A93400
+ * - Antique Gold (Secondary Accent): #A1824A
+ * - Slate Blue (Functional Accent): #5A7D8C
+ * - Light Stone: #D1D1D1
+ * - Medium Stone: #8E8E8E
+ *
+ * Typography:
+ * - Narrative: Lora (serif)
+ * - UI/Headlines: Inter (sans-serif)
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+:root {
+    --parchment: #F8F7F4;
+    --charcoal: #2E2E2E;
+    --burnt-sienna: #A93400;
+    --sienna-hover: #A95C3D;
+    --accent-color: #A95C3D;
+    --antique-gold: #A1824A;
+    --slate-blue: #5A7D8C;
+    --meta-text-color: #5A7D8C;
+    --light-stone: #D1D1D1;
+    --border-color: #e0e0e0;
+    --medium-stone: #8E8E8E;
+    --white: #FFFFFF;
+    
+    --font-narrative: 'Lora', Georgia, serif;
+    --font-ui: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
+}
+
+/* ========================================
+   BASE STYLES
+   ======================================== */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-narrative);
+    color: var(--charcoal);
+    background-color: var(--parchment);
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#write {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 64px 80px 100px;
+}
+
+/* ========================================
+   HEADINGS
+   ======================================== */
+
+h1 {
+    font-family: var(--font-narrative);
+    color: var(--charcoal);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-family: var(--font-narrative);
+    color: var(--charcoal);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--light-stone);
+    padding-bottom: 0.5rem;
+}
+
+h3, h4, h5, h6 {
+    font-family: var(--font-ui);
+    color: var(--charcoal);
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 1.25rem;
+    color: var(--charcoal);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+    color: var(--burnt-sienna);
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+h5 {
+    font-size: 1.1rem;
+    color: var(--slate-blue);
+}
+
+h6 {
+    font-size: 1rem;
+    color: var(--medium-stone);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ========================================
+   PARAGRAPHS & TEXT
+   ======================================== */
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.9;
+}
+
+strong, b {
+    font-weight: 700;
+    color: var(--charcoal);
+}
+
+em, i {
+    font-style: italic;
+}
+
+/* ========================================
+   LINKS
+   ======================================== */
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-color);
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    background-color: rgba(169, 92, 61, 0.1);
+    border-bottom-color: transparent;
+}
+
+/* ========================================
+   BLOCKQUOTES
+   ======================================== */
+
+blockquote {
+    margin: 2rem 0;
+    padding: 1.5rem 2rem;
+    border-left: 4px solid var(--antique-gold);
+    background-color: rgba(161, 130, 74, 0.08);
+    border-radius: 0 4px 4px 0;
+    color: var(--charcoal);
+}
+
+blockquote p {
+    margin: 0.5rem 0;
+    line-height: 1.8;
+}
+
+blockquote blockquote {
+    margin-left: 1rem;
+    border-left-color: var(--slate-blue);
+    background-color: rgba(90, 125, 140, 0.08);
+}
+
+/* ========================================
+   CODE
+   ======================================== */
+
+code {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    background-color: rgba(209, 209, 209, 0.4);
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    color: var(--burnt-sienna);
+}
+
+/* Code blocks */
+pre {
+    font-family: var(--font-mono);
+    background-color: var(--charcoal);
+    color: var(--parchment);
+    padding: 1rem 1.25rem;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    line-height: 1.6;
+}
+
+pre code {
+    background: none;
+    padding: 0;
+    color: inherit;
+    font-size: 0.875rem;
+}
+
+/* Code block with line numbers */
+.md-fences {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    background-color: var(--charcoal);
+    color: var(--parchment);
+    border: none;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1.5rem 0;
+}
+
+.CodeMirror-lines {
+    padding: 0;
+}
+
+/* ========================================
+   LISTS
+   ======================================== */
+
+ul, ol {
+    padding-left: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+li {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.9;
+}
+
+li > ul, li > ol {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+li > ul > li, li > ol > li {
+    margin-bottom: 0.5rem;
+}
+
+/* Unordered list markers */
+ul > li::marker {
+    color: var(--burnt-sienna);
+}
+
+/* Ordered list markers */
+ol > li::marker {
+    color: var(--antique-gold);
+    font-family: var(--font-ui);
+    font-weight: 600;
+}
+
+/* Task lists */
+.task-list-item {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.task-list-item input[type="checkbox"] {
+    margin-right: 0.5rem;
+    accent-color: var(--burnt-sienna);
+}
+
+/* ========================================
+   HORIZONTAL RULE
+   ======================================== */
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, var(--light-stone), var(--antique-gold), var(--light-stone));
+    margin: 2.5rem 0;
+}
+
+/* ========================================
+   TABLES
+   ======================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-family: var(--font-ui);
+    font-size: 0.9rem;
+}
+
+thead {
+    background-color: var(--charcoal);
+    color: var(--parchment);
+}
+
+th {
+    font-weight: 600;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--charcoal);
+}
+
+td {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--light-stone);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(209, 209, 209, 0.2);
+}
+
+tbody tr:hover {
+    background-color: rgba(161, 130, 74, 0.1);
+}
+
+/* ========================================
+   IMAGES
+   ======================================== */
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 1rem 0;
+    box-shadow: 0 2px 8px rgba(46, 46, 46, 0.1);
+}
+
+/* Image captions */
+figure {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+figcaption {
+    font-family: var(--font-ui);
+    font-size: 0.875rem;
+    color: var(--medium-stone);
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* ========================================
+   FOOTNOTES
+   ======================================== */
+
+.footnotes {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--light-stone);
+}
+
+.footnotes h2 {
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
+.footnotes ol {
+    padding-left: 20px;
+    color: #555;
+}
+
+.footnotes li {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.footnotes p {
+    font-size: 0.85rem;
+    margin-bottom: 0;
+}
+
+.footnote-ref, sup a {
+    font-family: var(--font-ui);
+    font-size: 0.8em;
+    font-weight: 600;
+    vertical-align: super;
+    color: var(--burnt-sienna);
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.footnote-ref:hover, sup a:hover {
+    background-color: transparent;
+}
+
+sup.md-footnote {
+    font-family: var(--font-ui);
+    font-size: 0.8em;
+    font-weight: 600;
+    color: var(--burnt-sienna);
+    background-color: transparent;
+    padding: 0;
+}
+
+/* ========================================
+   DEFINITION LISTS
+   ======================================== */
+
+dl {
+    margin: 1rem 0;
+}
+
+dt {
+    font-family: var(--font-ui);
+    font-weight: 700;
+    color: var(--burnt-sienna);
+    margin-top: 1rem;
+}
+
+dd {
+    margin-left: 1.5rem;
+    margin-top: 0.25rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--light-stone);
+}
+
+/* ========================================
+   MARK / HIGHLIGHT
+   ======================================== */
+
+mark {
+    background-color: rgba(161, 130, 74, 0.3);
+    color: var(--charcoal);
+    padding: 0.1rem 0.3rem;
+    border-radius: 2px;
+}
+
+/* ========================================
+   STRIKETHROUGH
+   ======================================== */
+
+del, s {
+    color: var(--medium-stone);
+    text-decoration: line-through;
+}
+
+/* ========================================
+   KEYBOARD
+   ======================================== */
+
+kbd {
+    font-family: var(--font-ui);
+    font-size: 0.85em;
+    background-color: var(--light-stone);
+    border: 1px solid var(--medium-stone);
+    border-radius: 3px;
+    padding: 0.1rem 0.4rem;
+    box-shadow: 0 1px 2px rgba(46, 46, 46, 0.1);
+}
+
+/* ========================================
+   ABBREVIATIONS
+   ======================================== */
+
+abbr {
+    text-decoration: underline dotted var(--slate-blue);
+    cursor: help;
+}
+
+/* ========================================
+   SELECTION
+   ======================================== */
+
+::selection {
+    background-color: rgba(169, 52, 0, 0.2);
+    color: var(--charcoal);
+}
+
+::-moz-selection {
+    background-color: rgba(169, 52, 0, 0.2);
+    color: var(--charcoal);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - SIDEBAR
+   ======================================== */
+
+#typora-sidebar {
+    background-color: var(--parchment);
+    border-right: 1px solid var(--light-stone);
+}
+
+.sidebar-content {
+    font-family: var(--font-ui);
+}
+
+.file-tree-node.active > .file-node-content {
+    background-color: rgba(169, 52, 0, 0.1);
+    color: var(--burnt-sienna);
+}
+
+.file-tree-node:hover > .file-node-content {
+    background-color: rgba(209, 209, 209, 0.3);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - SOURCE MODE
+   ======================================== */
+
+.cm-s-typora-default .cm-header {
+    color: var(--burnt-sienna);
+}
+
+.cm-s-typora-default .cm-link {
+    color: var(--slate-blue);
+}
+
+.cm-s-typora-default .cm-string {
+    color: var(--antique-gold);
+}
+
+.cm-s-typora-default .cm-comment {
+    color: var(--medium-stone);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - FOCUS MODE
+   ======================================== */
+
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) * {
+    color: var(--light-stone) !important;
+}
+
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) img {
+    opacity: 0.5;
+}
+
+/* ========================================
+   TYPORA SPECIFIC - MEGAMENU
+   ======================================== */
+
+.megamenu-menu-panel {
+    background-color: var(--parchment);
+    font-family: var(--font-ui);
+}
+
+.megamenu-menu-panel .btn {
+    background-color: var(--burnt-sienna);
+    color: var(--parchment);
+}
+
+.megamenu-menu-panel .btn:hover {
+    background-color: var(--sienna-hover);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - SEARCH
+   ======================================== */
+
+#md-searchpanel {
+    background-color: var(--parchment);
+    border-bottom: 1px solid var(--light-stone);
+}
+
+#md-searchpanel input {
+    font-family: var(--font-ui);
+    background-color: var(--white);
+    border: 1px solid var(--light-stone);
+    border-radius: 4px;
+}
+
+#md-searchpanel input:focus {
+    border-color: var(--burnt-sienna);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(169, 52, 0, 0.15);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - TOOLTIP
+   ======================================== */
+
+.md-hover-tip .md-arrow:after {
+    background-color: var(--charcoal);
+}
+
+.md-hover-tip .code-tooltip-content {
+    background-color: var(--charcoal);
+    color: var(--parchment);
+    font-family: var(--font-ui);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - META BLOCK
+   ======================================== */
+
+.md-meta-block {
+    background-color: rgba(209, 209, 209, 0.3);
+    border-radius: 6px;
+    padding: 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--medium-stone);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - TABLE OF CONTENTS
+   ======================================== */
+
+.md-toc {
+    font-family: var(--font-ui);
+}
+
+.md-toc-h1 {
+    font-weight: 700;
+    color: var(--charcoal);
+}
+
+.md-toc-h2 {
+    font-weight: 600;
+    color: var(--burnt-sienna);
+}
+
+.md-toc-h3, .md-toc-h4, .md-toc-h5, .md-toc-h6 {
+    color: var(--medium-stone);
+}
+
+/* ========================================
+   SCROLLBAR
+   ======================================== */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--parchment);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--light-stone);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--medium-stone);
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+
+@media print {
+    html {
+        font-size: 12pt;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+    
+    #write {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        color: black;
+        page-break-after: avoid;
+    }
+    
+    pre, blockquote {
+        page-break-inside: avoid;
+    }
+    
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+    
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        color: #666;
+    }
+}
+</style>
+<style type='text/css'  id="style-lp">ol, ul {padding-left: 40px}</style>
+
+<title>TEXTBOOK-Chapter-2-Archaeobyte-Taxonomy</title>
 </head>
-<body>
-    <div class="container">
-        <article>
-<h1>Chapter 2: The Archaeobyte Taxonomy — Understanding Digital Mortality</h1>
-
-<h2>Opening: Four Artifacts, Four Fates</h2>
-
-<p>
-Consider four digital objects, each with a different relationship to death:
-</p>
-
-<p>
-<strong>Artifact 1</strong>: A GeoCities homepage from 1998, hosted at <code>geocities.com/SiliconValley/1234</code>. When Yahoo shut down GeoCities in 2009, this site vanished from the live web. But Archive Team scraped it before shutdown, and it now exists as files in a 650GB torrent. The site is <strong>dead but preserved</strong>—murdered by its platform, rescued by volunteers, waiting for someone to resurrect it.
-</p>
-
-<p>
-<strong>Artifact 2</strong>: Your current Twitter profile, actively maintained with daily posts. But Twitter's future is uncertain. Elon Musk's chaotic ownership has driven mass exodus to alternatives. Your profile is <strong>alive but endangered</strong>—functioning now, but vulnerable to corporate whims, algorithmic changes, or eventual shutdown.
-</p>
-
-<p>
-<strong>Artifact 3</strong>: A Flash game called <em>Homestar Runner</em>, created in the early 2000s. Flash Player was discontinued by Adobe in 2020, rendering millions of Flash games unplayable. The files still exist, but without emulation software, they're inert. This artifact is <strong>technically dead but spiritually haunting</strong>—the data persists, but the experience is inaccessible without intervention.
-</p>
-
-<p>
-<strong>Artifact 4</strong>: An ancient stone tablet with cuneiform writing, created 4,000 years ago in Mesopotamia. The civilization that made it is long gone, but the tablet survives in a museum. It's <strong>long-dead but monumentally preserved</strong>—so old that its mortality is complete, yet so durably encoded that it outlasted empires.
-</p>
-
-<p>
-These four artifacts represent <strong>four fundamentally different states of digital mortality</strong>. Archaeobytology needs a taxonomy to distinguish between them—not just for academic precision, but for practical triage. Each state demands different preservation strategies, ethical considerations, and urgency levels.
-</p>
-
-<p>
-This chapter introduces the <strong>Archaeobyte Taxonomy</strong>: a classification system for understanding how digital artifacts live, die, and persist.
-</p>
-
-<h2>The Archaeobyte Taxonomy: Four Categories</h2>
-
-<p>
-We classify digital artifacts into four types based on their <strong>mortality state</strong> and <strong>preservation status</strong>:
-</p>
-
-<h3>1. <strong>Archaeobyte</strong> (Dead and Preserved)</h3>
-<h3>2. <strong>Vivibyte</strong> (Alive and Endangered)</h3>
-<h3>3. <strong>Umbrabyte</strong> (Dead but Haunting)</h3>
-<h3>4. <strong>Petribyte</strong> (Monumentally Preserved)</h3>
-
-<p>
-Each category has distinct characteristics, ethical challenges, and preservation needs. Let's examine them in depth.
-</p>
-
-<h2>1. Archaeobyte: The Dead and Preserved</h2>
-
-<h3>Definition</h3>
-
-<p>
-An <strong>Archaeobyte</strong> is a digital artifact that:
-- <strong>Was once alive</strong> (accessible, functional, part of active culture)
-- <strong>Died</strong> through platform shutdown, obsolescence, or deliberate deletion
-- <strong>Has been preserved</strong> in some form (archived, scraped, backed up)
-- <strong>Exists in a liminal state</strong> between death and potential resurrection
-</p>
-
-<p>
-The term combines <em>archaeo-</em> (ancient, belonging to the past) with <em>byte</em> (digital information unit). Archaeobytes are <strong>digital fossils</strong>—remnants of dead platforms waiting to be excavated, interpreted, and potentially revived.
-</p>
-
-<h3>Characteristics</h3>
-
-<p>
-<strong>Temporality</strong>: Archaeobytes occupy past time. They were created years or decades ago and reflect the technological, cultural, and social contexts of their era.
-</p>
-
-<p>
-<strong>Accessibility</strong>: They exist in archives but aren't easily accessible. You can't just visit a URL. You need to know where the archive is, how to navigate it, and potentially how to run emulation software.
-</p>
-
-<p>
-<strong>Functionality</strong>: Some Archaeobytes are fully functional if properly emulated (a Flash game can still be played). Others are fragmentary (HTML pages with broken images, databases without their front-ends).
-</p>
-
-<p>
-<strong>Cultural Context</strong>: Archaeobytes often lack context. A GeoCities page preserved as raw HTML doesn't tell you who made it, why it mattered, or what community it belonged to. Interpretation requires detective work.
-</p>
-
-<h3>Examples</h3>
-
-<p>
-<strong>GeoCities Archives (Archive Team, 2009)</strong>
-- 650GB torrent containing millions of HTML files
-- Raw dump with minimal metadata
-- Requires local server to view properly
-- Missing images, broken links, no search functionality
-- <strong>Status</strong>: Preserved but not curated
-</p>
-
-<p>
-<strong>Vine Archive (Internet Archive, 2017)</strong>
-- Millions of 6-second videos scraped before shutdown
-- Stored in Internet Archive's video collection
-- Searchable by creator username
-- Videos playable but divorced from original social context (comments, likes, loops)
-- <strong>Status</strong>: Preserved with partial metadata
-</p>
-
-<p>
-<strong>Flash Games (Flashpoint Project, ongoing)</strong>
-- 500,000+ Flash games and animations preserved
-- Requires custom launcher with embedded emulator
-- Fully playable with original functionality
-- Community-curated with descriptions and tags
-- <strong>Status</strong>: Preserved, curated, and resurrected
-</p>
-
-<p>
-<strong>CD-ROM Multimedia (Internet Archive, various dates)</strong>
-- 1990s educational software, encyclopedias, games
-- Runs in browser via emulation
-- Often includes full documentation and original packaging scans
-- <strong>Status</strong>: Museum-quality preservation
-</p>
-
-<h3>Preservation Needs</h3>
-
-<p>
-Archaeobytes require:
-1. <strong>Storage infrastructure</strong>: Servers, hard drives, distributed backups
-2. <strong>Emulation or compatibility layers</strong>: Flash emulators, old browser engines, virtual machines
-3. <strong>Metadata and contextualization</strong>: Who made this? When? Why did it matter?
-4. <strong>Access systems</strong>: Search, browse, discovery mechanisms
-5. <strong>Legal frameworks</strong>: Copyright exceptions for preservation (often operating in gray areas)
-</p>
-
-<h3>Ethical Considerations</h3>
-
-<p>
-<strong>Consent</strong>: Did the original creators consent to preservation? Many GeoCities users abandoned their sites and might not want them resurrected.
-</p>
-
-<p>
-<strong>Privacy</strong>: Personal information (emails, addresses, photos) embedded in old sites may violate current privacy expectations.
-</p>
-
-<p>
-<strong>Context Collapse</strong>: Artifacts created for small communities (a private forum, a friend's homepage) now exposed to anyone who finds the archive.
-</p>
-
-<p>
-<strong>Authenticity</strong>: When you emulate a Flash game, is it still the "same" artifact? Or is emulation a form of transformation?
-</p>
-
-<h3>Triage Priority: Medium</h3>
-
-<p>
-Archaeobytes are already preserved, so they're not in immediate danger of disappearing entirely. But they're at risk of:
-- <strong>Bit rot</strong>: Storage media degrading over time
-- <strong>Format obsolescence</strong>: Emulators becoming outdated
-- <strong>Link rot</strong>: Archives moving or disappearing
-- <strong>Institutional failure</strong>: Organizations running archives may shut down
-</p>
-
-<p>
-Priority increases if:
-- No redundant copies exist elsewhere
-- The archive is hosted by a fragile organization
-- The artifacts have high cultural significance
-</p>
-
-<h2>2. Vivibyte: The Alive and Endangered</h2>
-
-<h3>Definition</h3>
-
-<p>
-A <strong>Vivibyte</strong> is a digital artifact that:
-- <strong>Is currently alive</strong> (accessible, functional, actively used)
-- <strong>Exists on vulnerable infrastructure</strong> (commercial platforms, centralized servers, proprietary systems)
-- <strong>Faces existential threats</strong> (platform instability, corporate acquisition, terms of service changes, economic precarity)
-</p>
-
-<p>
-The term combines <em>vivi-</em> (living, alive) with <em>byte</em>. Vivibytes are the <strong>living endangered species</strong> of digital culture—thriving now but facing extinction.
-</p>
-
-<h3>Characteristics</h3>
-
-<p>
-<strong>Temporality</strong>: Vivibytes are present-tense. They're being created, updated, and used right now.
-</p>
-
-<p>
-<strong>Accessibility</strong>: They're easily accessible—just visit a URL. But that accessibility is contingent on platform stability.
-</p>
-
-<p>
-<strong>Dependency</strong>: Vivibytes depend on platform infrastructure. If Twitter shuts down, every tweet becomes inaccessible (unless archived).
-</p>
-
-<p>
-<strong>Precarity</strong>: Their survival isn't guaranteed. They exist at the mercy of corporate decisions, algorithm changes, and terms of service enforcement.
-</p>
-
-<h3>Examples</h3>
-
-<p>
-<strong>Twitter/X (2023-present)</strong>
-- Elon Musk's acquisition created massive instability
-- Mass layoffs gutted engineering and trust & safety teams
-- API restrictions killed third-party clients
-- Unpredictable policy changes (verified checkmarks, algorithmic timeline changes)
-- Mass user exodus to Mastodon, Bluesky, Threads
-- <strong>Status</strong>: Alive but facing existential crisis
-</p>
-
-<p>
-<strong>Substack Newsletters (ongoing)</strong>
-- Writers build audiences on Substack's platform
-- Substack owns the domain (username.substack.com)
-- Export tools exist but are imperfect (subscriber lists can be exported, but URLs break if you move)
-- Vulnerable to Substack's business model changes
-- Recent controversies over content moderation have driven some writers to Ghost or self-hosted options
-- <strong>Status</strong>: Alive, functional, but sovereignty questions emerging
-</p>
-
-<p>
-<strong>TikTok (2020-present)</strong>
-- Facing potential US ban due to national security concerns
-- Creators have millions of followers but no platform ownership
-- Videos are proprietary format, difficult to export
-- Algorithm is opaque and changes frequently
-- <strong>Status</strong>: Thriving but politically endangered
-</p>
-
-<p>
-<strong>Discord Servers (ongoing)</strong>
-- Millions of communities hosted on proprietary platform
-- Chat history owned by Discord, not communities
-- No easy export of full server history
-- Vulnerable to Discord's moderation policies and business decisions
-- If Discord shuts down, all communities vanish
-- <strong>Status</strong>: Alive, widely used, but entirely dependent on corporate stability
-</p>
-
-<p>
-<strong>Indie Web Personal Sites (various)</strong>
-- Bloggers using self-hosted WordPress or static site generators
-- Own their domains and content
-- Less vulnerable to platform shutdown
-- But still depend on hosting providers, domain registrars, and web standards
-- <strong>Status</strong>: More sovereign than platform-hosted content, but not invulnerable
-</p>
-
-<h3>Preservation Needs</h3>
-
-<p>
-Vivibytes require <strong>proactive archiving</strong>:
-1. <strong>Continuous crawling</strong>: Internet Archive's Wayback Machine constantly archives the live web
-2. <strong>User-driven backups</strong>: Individuals exporting their own data (Twitter archives, Instagram data downloads)
-3. <strong>Institutional partnerships</strong>: Libraries and archives working with platforms to preserve content before shutdown
-4. <strong>Legal preparation</strong>: Advocacy for "right to archive" laws that allow preservation without permission
-</p>
-
-<h3>Ethical Considerations</h3>
-
-<p>
-<strong>Timing</strong>: When do you preserve a Vivibyte? If you archive someone's tweets daily, are you violating their expectation of ephemeral communication?
-</p>
-
-<p>
-<strong>Comprehensiveness</strong>: Should you archive everything on a platform, or only what's "culturally significant"? Who decides?
-</p>
-
-<p>
-<strong>Privacy</strong>: Many Vivibytes contain personal information shared with the expectation that it will disappear eventually. Permanent archiving changes that expectation.
-</p>
-
-<p>
-<strong>Platform Relationships</strong>: Should archivists work <em>with</em> platforms (negotiated data dumps) or <em>against</em> them (scraping without permission)?
-</p>
-
-<h3>Triage Priority: Variable (Low to Critical)</h3>
-
-<p>
-Priority depends on <strong>threat imminence</strong>:
-- <strong>Low</strong>: Stable platforms with good export tools (WordPress.com, GitHub)
-- <strong>Medium</strong>: Platforms with uncertain futures but no immediate danger (Reddit, Medium)
-- <strong>High</strong>: Platforms showing signs of instability (mass layoffs, leadership chaos, user exodus)
-- <strong>Critical</strong>: Platforms that have announced shutdown (weeks or months remaining)
-</p>
-
-<p>
-<strong>Indicators of rising threat</strong>:
-- Leadership changes or acquisitions
-- Financial struggles (layoffs, failed funding rounds)
-- User exodus or declining engagement
-- Policy changes that anger core communities
-- Technical instability (outages, bugs)
-- Legal or regulatory threats
-</p>
-
-<h2>3. Umbrabyte: The Dead but Haunting</h2>
-
-<h3>Definition</h3>
-
-<p>
-An <strong>Umbrabyte</strong> is a digital artifact that:
-- <strong>Is technically dead</strong> (inaccessible, non-functional, or obsolete)
-- <strong>Has not been properly preserved</strong> (exists in fragmentary or corrupted form)
-- <strong>Haunts the present</strong> through memory, references, or partial remnants
-- <strong>Could theoretically be resurrected</strong> with sufficient effort, but currently exists in limbo
-</p>
-
-<p>
-The term combines <em>umbra-</em> (shadow, ghost) with <em>byte</em>. Umbrabytes are <strong>digital ghosts</strong>—artifacts that are neither fully alive nor fully preserved, occupying a haunting middle ground.
-</p>
-
-<h3>Characteristics</h3>
-
-<p>
-<strong>Temporality</strong>: Umbrabytes are caught between past and present. They died, but they haven't been properly mourned or memorialized.
-</p>
-
-<p>
-<strong>Accessibility</strong>: They exist in fragments—dead links, broken images, corrupted files, screenshots, memories.
-</p>
-
-<p>
-<strong>Liminality</strong>: Umbrabytes occupy a liminal state. They're dead enough to be inaccessible but alive enough to be remembered.
-</p>
-
-<p>
-<strong>Urgency</strong>: Many Umbrabytes are in danger of permanent loss. If not rescued soon, they'll transition from "dead but haunting" to simply "dead."
-</p>
-
-<h3>Examples</h3>
-
-<p>
-<strong>MySpace Music (2003-2013)</strong>
-- In 2019, MySpace admitted it had "lost" 12 years of user-uploaded music due to a botched server migration
-- Estimated 50 million songs vanished
-- No comprehensive backup exists
-- Some songs survive as MP3s users downloaded
-- Others exist as memories: "I heard this amazing band on MySpace in 2007, but I can't find them anywhere now"
-- <strong>Status</strong>: Mostly lost, partially haunting through fragments
-</p>
-
-<p>
-<strong>Early YouTube (2005-2008)</strong>
-- Many early YouTube videos were deleted by users or removed for copyright
-- Internet Archive captured some, but not comprehensively
-- Cultural artifacts like early memes, viral videos, and video responses are often lost
-- Remembered through references, compilations, and oral history
-- <strong>Status</strong>: Partially preserved, partially lost
-</p>
-
-<p>
-<strong>Deleted Reddit Communities (various)</strong>
-- Reddit has banned thousands of subreddits over the years (r/FatPeopleHate, r/ChapoTrapHouse, r/The_Donald, etc.)
-- Some were archived by volunteers or by Pushshift (academic Reddit archive)
-- Many were not preserved
-- They haunt Reddit culture through references, screenshots, and exile communities that formed elsewhere
-- <strong>Status</strong>: Partially archived, partially lost, culturally haunting
-</p>
-
-<p>
-<strong>Flash Websites (1990s-2010s)</strong>
-- Millions of Flash-based websites went offline or became non-functional when Flash Player was discontinued in 2020
-- Some are preserved by Flashpoint or Internet Archive
-- Many are lost—known only through screenshots or memories
-- Agency portfolio sites, experimental art projects, interactive storytelling
-- <strong>Status</strong>: Fragmentarily preserved, largely inaccessible
-</p>
-
-<p>
-<strong>Private Forums and Message Boards (various)</strong>
-- Thousands of small forums shut down over the years (phpBB, vBulletin, etc.)
-- Most weren't archived by Internet Archive (robots.txt blocks, login walls)
-- Communities lost their entire histories
-- Surviving fragments: Google cache, screenshots, PDFs saved by individual users
-- <strong>Status</strong>: Largely lost, mourned by former members
-</p>
-
-<h3>Preservation Needs</h3>
-
-<p>
-Umbrabytes require <strong>urgent rescue</strong>:
-1. <strong>Forensic recovery</strong>: Hunting down partial copies, cached pages, user backups
-2. <strong>Community archaeology</strong>: Interviewing people who remember the artifacts
-3. <strong>Reconstruction</strong>: Piecing together fragments to create partial records
-4. <strong>Metadata creation</strong>: Documenting what existed, even if the full artifact can't be recovered
-5. <strong>Triage acceptance</strong>: Acknowledging that some Umbrabytes are irrecoverably lost
-</p>
-
-<h3>Ethical Considerations</h3>
-
-<p>
-<strong>Right to Be Forgotten</strong>: Some Umbrabytes were intentionally deleted by their creators. Should we resurrect them against their wishes?
-</p>
-
-<p>
-<strong>Trauma</strong>: Some Umbrabytes are traumatic (harassment campaigns, doxxing, revenge porn). Should we let them stay dead?
-</p>
-
-<p>
-<strong>Reconstructive Violence</strong>: Is it ethical to "reconstruct" an artifact from fragments if the result isn't accurate to the original?
-</p>
-
-<p>
-<strong>Mourning vs. Resurrection</strong>: Sometimes the most ethical response is to <em>mourn</em> an Umbrabyte rather than resurrect it—to acknowledge its loss without trying to recover it.
-</p>
-
-<h3>Triage Priority: Critical (but often futile)</h3>
-
-<p>
-Umbrabytes are in the most dangerous state:
-- They're not fully preserved, so they could vanish completely
-- They're not alive, so there's no "live source" to capture
-- Time is running out—fragments degrade, memories fade, caches expire
-</p>
-
-<p>
-But triage is complicated:
-- Rescue is often <strong>technically difficult</strong> (fragments scattered, formats corrupted)
-- Success rates are <strong>low</strong> (many Umbrabytes are irrecoverable)
-- Resources might be better spent on <strong>Vivibytes</strong> (save the living before mourning the dead)
-</p>
-
-<p>
-The hardest triage decisions involve Umbrabytes: Do you spend weeks trying to recover a lost forum's fragments, or do you focus on archiving a living platform that could die tomorrow?
-</p>
-
-<h2>4. Petribyte: The Monumentally Preserved</h2>
-
-<h3>Definition</h3>
-
-<p>
-A <strong>Petribyte</strong> is a digital artifact that:
-- <strong>Is so old that its original context is historical</strong> (decades-old, often pre-web)
-- <strong>Has been durably preserved</strong> by institutions (libraries, museums, archives)
-- <strong>Is treated as cultural heritage</strong> (studied by scholars, exhibited in museums)
-- <strong>Has achieved stability</strong> (no longer at risk of immediate loss)
-</p>
-
-<p>
-The term combines <em>petri-</em> (stone, rock—from Latin <em>petra</em>) with <em>byte</em>. Petribytes are <strong>digital monuments</strong>—artifacts that have achieved the stability of ancient stone tablets, preserved and curated by institutions.
-</p>
-
-<h3>Characteristics</h3>
-
-<p>
-<strong>Temporality</strong>: Petribytes are <strong>historical</strong>. They're old enough that they're studied as artifacts of past eras, not current culture.
-</p>
-
-<p>
-<strong>Accessibility</strong>: They're often highly accessible—digitized, exhibited, documented. Museums and libraries make them available.
-</p>
-
-<p>
-<strong>Curation</strong>: Petribytes receive institutional care—metadata, contextualization, conservation. They're not just stored; they're <em>curated</em>.
-</p>
-
-<p>
-<strong>Monumentality</strong>: They've achieved cultural recognition. Scholars write about them. Museums exhibit them. They're canonized.
-</p>
-
-<h3>Examples</h3>
-
-<p>
-<strong>The WELL (1985-present)</strong>
-- One of the earliest online communities
-- Archived by Internet Archive and studied by scholars
-- Documented in books like <em>The Virtual Community</em> by Howard Rheingold
-- Still running (as of 2025) but also preserved in multiple forms
-- <strong>Status</strong>: Monument to early internet culture
-</p>
-
-<p>
-<strong>Colossal Cave Adventure (1976)</strong>
-- Text-based adventure game, one of the first of its kind
-- Source code preserved and studied
-- Multiple versions archived and playable via emulation
-- Influential enough to be analyzed in game studies courses
-- <strong>Status</strong>: Canon of video game history
-</p>
-
-<p>
-<strong>ARPANET (1969-1990)</strong>
-- Precursor to the internet
-- Decommissioned in 1990, but extensively documented
-- Primary source materials (emails, documentation, network maps) preserved by Computer History Museum and other institutions
-- <strong>Status</strong>: Historical monument, foundational artifact
-</p>
-
-<p>
-<strong>Hypercard Stacks (1987-2004)</strong>
-- Early multimedia authoring tool for Macintosh
-- Thousands of stacks created (educational software, art projects, interactive fiction)
-- Many preserved by Internet Archive's Hypercard Stack Archive
-- Studied as precursors to the web
-- <strong>Status</strong>: Curated collection, historically significant
-</p>
-
-<p>
-<strong>Early Email Archives (various)</strong>
-- Important historical emails preserved by institutions
-- Example: Jon Postel's email about DNS root control (1980s)
-- Example: Tim Berners-Lee's WorldWideWeb proposal (1989)
-- <strong>Status</strong>: Primary sources for internet history
-</p>
-
-<h3>Preservation Needs</h3>
-
-<p>
-Petribytes need <strong>curatorial maintenance</strong>:
-1. <strong>Format migration</strong>: Periodically transferring to new storage media
-2. <strong>Emulation updates</strong>: Keeping emulators functional as operating systems evolve
-3. <strong>Metadata enrichment</strong>: Adding scholarly annotations, historical context
-4. <strong>Access infrastructure</strong>: Maintaining websites, databases, and discovery systems
-5. <strong>Legal protection</strong>: Ensuring copyright and ownership issues are resolved
-</p>
-
-<p>
-Unlike Vivibytes (which need urgent rescue) or Umbrabytes (which are in danger of vanishing), Petribytes are <strong>institutionally secure</strong>. But they're not invulnerable—institutions can fail, budgets can be cut, and storage media can degrade.
-</p>
-
-<h3>Ethical Considerations</h3>
-
-<p>
-<strong>Canonization</strong>: Which artifacts become Petribytes? The selection is often biased toward:
-- Artifacts from wealthy institutions or well-documented contexts
-- Creations by famous or influential people
-- Projects with good documentation and advocacy
-</p>
-
-<p>
-Meanwhile, artifacts from marginalized communities or underfunded projects often remain Umbrabytes—lost and unmourned.
-</p>
-
-<p>
-<strong>Access vs. Preservation</strong>: Museums often prioritize preservation over access (artifacts locked in temperature-controlled vaults). Is this ethical? Should Petribytes be freely accessible, or is controlled access necessary for preservation?
-</p>
-
-<p>
-<strong>Ownership</strong>: Who owns Petribytes? Original creators? Institutions? The public? Disputes over ownership can restrict access or lead to artifacts being removed from public view.
-</p>
-
-<h3>Triage Priority: Low (but not zero)</h3>
-
-<p>
-Petribytes are the least urgent:
-- They're already preserved
-- They're institutionally supported
-- They're documented and accessible
-</p>
-
-<p>
-But they're not safe forever:
-- Institutions can shut down
-- Budgets can be cut
-- Political shifts can lead to censorship or deaccession
-</p>
-
-<p>
-Triage priority increases if:
-- The institution is unstable
-- The Petribyte is unique (no redundant copies)
-- Access is threatened (legal disputes, political pressure)
-</p>
-
-<h2>The Taxonomy in Practice: Case Study Analysis</h2>
-
-<p>
-Let's apply the taxonomy to a complex case: <strong>LiveJournal</strong>.
-</p>
-
-<h3>LiveJournal: A Multi-Category Artifact</h3>
-
-<p>
-LiveJournal (founded 1999) was a blogging and social networking platform. Over its history, different parts of it occupy different taxonomic categories:
-</p>
-
-<p>
-<strong>Vivibyte (1999-2017)</strong>
-- LiveJournal was alive and actively used
-- By the 2010s, it was declining but still functional
-- Users could access their posts, comments, and communities
-</p>
-
-<p>
-<strong>Transition Period (2017-present)</strong>
-- LiveJournal's Russian ownership implemented new TOS requiring compliance with Russian law
-- Many users abandoned the platform, moving to Dreamwidth or other alternatives
-- The platform is still technically alive, but English-language usage has collapsed
-</p>
-
-<p>
-<strong>Archaeobyte (partial)</strong>
-- Many users exported their journals to Dreamwidth or downloaded backups
-- Internet Archive captured many public LiveJournal pages
-- Some users deleted their journals, but copies survive in archives
-</p>
-
-<p>
-<strong>Umbrabyte (partial)</strong>
-- Private or friends-only journals weren't archived by Internet Archive (respect for privacy settings)
-- Deleted journals are mostly lost (unless users saved backups)
-- Communities that were deleted by moderators often vanished without trace
-</p>
-
-<p>
-<strong>Petribyte (emerging)</strong>
-- Some significant LiveJournals are being recognized as historically important:
-  - Early fandom communities studied by fan studies scholars
-  - Political blogs from the 2000s cited in journalism history
-  - Personal journals documenting historical events (9/11, Iraq War, Arab Spring)
-- Academic papers analyze LiveJournal culture, citing preserved examples
-</p>
-
-<p>
-<strong>Taxonomic Insight</strong>: LiveJournal doesn't fit neatly into one category. Different parts of it occupy different states simultaneously. This is common with large platforms.
-</p>
-
-<h2>Taxonomy as Triage Tool</h2>
-
-<p>
-The Archaeobyte Taxonomy isn't just academic—it's a <strong>practical triage tool</strong>. When deciding where to focus preservation efforts, ask:
-</p>
-
-<h3>Question 1: What mortality state is this artifact in?</h3>
-
-<p>
-- <strong>Vivibyte</strong>: Act now, before it dies
-- <strong>Umbrabyte</strong>: Urgent rescue, but accept that loss is likely
-- <strong>Archaeobyte</strong>: Stabilize existing preservation, prevent bit rot
-- <strong>Petribyte</strong>: Maintain and curate, but not urgent
-</p>
-
-<h3>Question 2: Is there redundancy?</h3>
-
-<p>
-- If an artifact is preserved by multiple institutions (e.g., in Internet Archive <em>and</em> Library of Congress <em>and</em> university archives), it's lower priority
-- If only one fragile archive exists, priority increases
-</p>
-
-<h3>Question 3: What's the cultural significance?</h3>
-
-<p>
-- High significance + Vivibyte = <strong>Critical priority</strong>
-- High significance + Umbrabyte = <strong>Urgent rescue attempt</strong>
-- High significance + Petribyte = <strong>Maintain vigilantly</strong>
-- Low significance + any state = <strong>Lower priority</strong> (harsh but necessary in triage)
-</p>
-
-<h3>Question 4: What's the technical difficulty?</h3>
-
-<p>
-- Easy to preserve (static HTML) + Vivibyte = <strong>Do it now</strong>
-- Hard to preserve (complex database, proprietary format) + Vivibyte = <strong>Invest resources</strong>
-- Hard to preserve + Umbrabyte = <strong>May need to accept loss</strong>
-</p>
-
-<h3>Question 5: Are there ethical concerns?</h3>
-
-<p>
-- Privacy violations, consent issues, potential harm = <strong>Deprioritize or don't preserve</strong>
-- Historical significance but ethically fraught = <strong>Preserve with restricted access</strong>
-</p>
-
-<h2>Transitions Between States</h2>
-
-<p>
-Artifacts don't stay in one taxonomic category forever. They <strong>transition</strong>:
-</p>
-
-<h3>Common Transitions</h3>
-
-<p>
-<strong>Vivibyte → Archaeobyte</strong> (Successful Preservation)
-- A platform announces shutdown
-- Archivists mobilize and scrape content
-- Artifacts are preserved before servers go dark
-- Example: Vine → Internet Archive
-</p>
-
-<p>
-<strong>Vivibyte → Umbrabyte</strong> (Failed Preservation)
-- A platform dies unexpectedly (no warning, or warning ignored)
-- Most content is lost
-- Only fragments survive (screenshots, partial scrapes)
-- Example: Many phpBB forums
-</p>
-
-<p>
-<strong>Umbrabyte → Archaeobyte</strong> (Successful Rescue)
-- Someone finds a backup, cached copy, or forensic remnant
-- Fragments are assembled into a usable archive
-- Example: GeoCities rescue via Archive Team
-</p>
-
-<p>
-<strong>Umbrabyte → Permanent Loss</strong> (Failed Rescue)
-- Fragments degrade or disappear
-- No copies exist anywhere
-- Artifact is permanently lost
-- Example: Most MySpace music from 2003-2013
-</p>
-
-<p>
-<strong>Archaeobyte → Petribyte</strong> (Institutional Recognition)
-- An archived artifact gains scholarly attention
-- Institutions curate it, add metadata, make it accessible
-- It becomes part of the historical canon
-- Example: Early Hypercard stacks
-</p>
-
-<p>
-<strong>Petribyte → Archaeobyte</strong> (Institutional Failure)
-- An institution shuts down or loses funding
-- Curated collection reverts to raw archive
-- Example: Rare, but possible if museums or libraries close
-</p>
-
-<h3>Undesirable Transitions (Preservation Failures)</h3>
-
-<p>
-<strong>Archaeobyte → Umbrabyte</strong> (Bit Rot)
-- Stored files become corrupted
-- Storage media fails
-- No redundant copies exist
-- Example: Hard drives degrading in private collections
-</p>
-
-<p>
-<strong>Petribyte → Archaeobyte</strong> (De-curation)
-- Budget cuts eliminate curatorial staff
-- Metadata is lost or not maintained
-- Artifacts remain preserved but lose context
-- Example: Museum collections that are "preserved" but inaccessible
-</p>
-
-<h2>Critiques and Limitations of the Taxonomy</h2>
-
-<h3>Critique 1: Binary Thinking</h3>
-
-<p>
-The taxonomy implies clean categories, but reality is messy. Many artifacts are <strong>partially preserved</strong> (some Archaeobyte, some Umbrabyte). LiveJournal is alive <em>and</em> dead depending on which part you're looking at.
-</p>
-
-<p>
-<strong>Response</strong>: The taxonomy is a <strong>heuristic</strong>, not a rigid classification. Use it to clarify thinking, not to force artifacts into boxes.
-</p>
-
-<h3>Critique 2: Cultural Bias</h3>
-
-<p>
-Who decides what becomes a Petribyte? The taxonomy risks reinforcing canonical hierarchies—famous people's work gets monumentalized, marginalized communities' work stays in limbo.
-</p>
-
-<p>
-<strong>Response</strong>: This is a real problem. Archaeobytologists must actively work to diversify what gets elevated to Petribyte status. Triage should account for representational gaps.
-</p>
-
-<h3>Critique 3: Ignores Context</h3>
-
-<p>
-An artifact's category depends on <em>where you are</em>. A GeoCities site is an Archaeobyte if you know about the Archive Team torrent, but an Umbrabyte to someone who doesn't.
-</p>
-
-<p>
-<strong>Response</strong>: True. The taxonomy describes artifacts <em>relative to preservation infrastructure</em>. As infrastructure improves, Umbrabytes can become Archaeobytes.
-</p>
-
-<h3>Critique 4: No Category for "Never Existed"</h3>
-
-<p>
-What about artifacts that <em>could</em> have been preserved but never were? The tweets that were never archived, the Snapchat videos designed to disappear?
-</p>
-
-<p>
-<strong>Response</strong>: These are <strong>pre-Umbrabytes</strong>—artifacts that will become ghosts if not captured. The Vivibyte category should include them as endangered.
-</p>
-
-<h2>Expanding the Taxonomy: Proposed Sub-Categories</h2>
-
-<p>
-Some practitioners propose additional categories:
-</p>
-
-<h3>Necrobyte (The Undead)</h3>
-
-<p>
-Artifacts that were dead but have been <strong>resurrected</strong>:
-- Flash games made playable again via Ruffle emulator
-- GeoCities sites rebuilt and re-hosted
-- Obsolete software ported to modern systems
-</p>
-
-<p>
-These are technically Archaeobytes that have been given "undead life"—functional but not native to the current era.
-</p>
-
-<h3>Cryobyte (Frozen and Waiting)</h3>
-
-<p>
-Artifacts that are <strong>intentionally preserved in suspended animation</strong>:
-- Time capsules meant to be opened in the future
-- Long-term archives (1,000-year storage projects)
-- Artifacts preserved but deliberately not made accessible yet
-</p>
-
-<p>
-These are Archaeobytes with a temporal lock—Petribytes-in-waiting.
-</p>
-
-<h3>Xenobyte (Alien and Incomprehensible)</h3>
-
-<p>
-Artifacts so old or so alien that they're <strong>unintelligible without extensive interpretation</strong>:
-- Code written in obsolete languages with no documentation
-- File formats with no known decoder
-- Encrypted data where the key is lost
-</p>
-
-<p>
-These are Archaeobytes on the verge of becoming permanently opaque.
-</p>
-
-<h2>Practical Application: Building a Triage Matrix</h2>
-
-<p>
-Use the taxonomy to create a <strong>triage decision matrix</strong>:
-</p>
-
-<p>
-| Artifact | Taxonomy | Redundancy | Significance | Difficulty | Ethics | Priority |
-|----------|----------|------------|--------------|------------|--------|----------|
-| Twitter archive | Vivibyte | High (IA + LOC) | High | Medium | Some concerns | Medium |
-| Small Discord server | Vivibyte | None | Low | Medium | Privacy issues | Low |
-| MySpace fragments | Umbrabyte | Low | Medium | Very high | Consent unclear | Low-Medium |
-| Flash games | Archaeobyte | Medium (Flashpoint) | Medium | High (emulation) | Mostly clear | Medium |
-| ARPANET docs | Petribyte | High | High | Low (already done) | Clear | Low (maintain) |
-</p>
-
-<p>
-This matrix helps you:
-- <strong>Compare</strong> artifacts across multiple dimensions
-- <strong>Justify</strong> triage decisions (transparency for stakeholders)
-- <strong>Identify gaps</strong> (categories with no representation)
-- <strong>Track</strong> how priorities shift over time
-</p>
-
-<h2>Conclusion: Naming the Dead</h2>
-
-<p>
-The Archaeobyte Taxonomy gives us <strong>language</strong> for digital mortality. Before we can save artifacts, we must be able to name their states:
-</p>
-
-<p>
-- This GeoCities site is an <strong>Archaeobyte</strong>—preserved but not curated
-- That Twitter account is a <strong>Vivibyte</strong>—alive but endangered
-- Those lost MySpace songs are <strong>Umbrabytes</strong>—haunting us from beyond
-- This early ARPANET email is a <strong>Petribyte</strong>—monumentally secure
-</p>
-
-<p>
-Language matters because it shapes action. When we name an artifact a <strong>Vivibyte</strong>, we acknowledge its life and its peril. When we call something an <strong>Umbrabyte</strong>, we admit it's dying and may not be saved. When we elevate something to <strong>Petribyte</strong>, we commit institutional resources to its long-term survival.
-</p>
-
-<p>
-The taxonomy isn't just descriptive—it's <strong>diagnostic</strong>. It tells us where to look, what to save, and how to act.
-</p>
-
-<p>
-In the next chapter, we'll explore the <strong>Archive and the Anvil</strong>—the dual practices of preservation and creation that define Archaeobytology. For now, practice identifying artifacts in the wild. Look at your own digital life. What category is your Instagram account? Your childhood blog? Your email archive?
-</p>
-
-<p>
-Learn to see the world through taxonomic eyes. Because once you can name the dead, you can begin to save them.
-</p>
-
-<h2>Discussion Questions</h2>
-
-<p>
-1. <strong>On Categories</strong>: Choose three digital artifacts from your own life (social media profiles, old websites, photos, etc.). Classify each using the Archaeobyte Taxonomy. What does this reveal about your digital mortality?
-</p>
-
-<p>
-2. <strong>On Transitions</strong>: Describe a platform you used that transitioned from Vivibyte to Archaeobyte (or to Umbrabyte). What was that experience like? Did you try to preserve your content?
-</p>
-
-<p>
-3. <strong>On Ethics</strong>: Should we preserve Umbrabytes even when original creators might not want them resurrected? Where's the line between historical preservation and violation of privacy?
-</p>
-
-<p>
-4. <strong>On Canonization</strong>: Why do some artifacts become Petribytes (monumentally preserved) while others remain Umbrabytes (lost and forgotten)? What biases shape this selection?
-</p>
-
-<p>
-5. <strong>On Liminal States</strong>: Can you think of an artifact that exists in multiple taxonomic states simultaneously? How does that complcomplicate preservation decisions?
-</p>
-
-<p>
-6. <strong>On Your Own Mortality</strong>: If you died tomorrow, what would happen to your digital artifacts? Would they become Archaeobytes (preserved), Umbrabytes (fragments), or simply vanish?
-</p>
-
-<h2>Exercise: Taxonomic Field Work</h2>
-
-<p>
-<strong>Part 1: Identify and Classify</strong>
-</p>
-
-<p>
-Find five digital artifacts (from your own life or the wider web) and classify each:
-</p>
-
-<p>
-1. <strong>Artifact name and URL (if applicable)</strong>
-2. <strong>Taxonomy category</strong> (Vivibyte, Archaeobyte, Umbrabyte, Petribyte)
-3. <strong>Justification</strong> (Why does it fit this category?)
-4. <strong>Transition risk</strong> (Could it move to a different category? How soon?)
-5. <strong>Preservation status</strong> (Is anyone archiving it? Where?)
-</p>
-
-<p>
-<strong>Part 2: Create a Triage Matrix</strong>
-</p>
-
-<p>
-Build a simple triage matrix for your five artifacts using these criteria:
-- Cultural significance (1-5 scale)
-- Endangerment level (1-5 scale)
-- Preservation difficulty (1-5 scale)
-- Ethical clarity (1-5 scale, where 5 = clearly ethical to preserve)
-</p>
-
-<p>
-<strong>Part 3: Make Triage Decisions</strong>
-</p>
-
-<p>
-Based on your matrix:
-- Which artifact is <strong>highest priority</strong> to preserve?
-- Which is <strong>lowest priority</strong>?
-- Are there any you would <strong>not preserve</strong> for ethical reasons?
-</p>
-
-<p>
-<strong>Part 4: Reflection</strong>
-</p>
-
-<p>
-Write 500 words reflecting on:
-- Did the taxonomy help you think more clearly about these artifacts?
-- Were there artifacts that didn't fit neatly into categories?
-- How did you weigh cultural significance against endangerment level?
-- Did you discover artifacts you'd forgotten about? What was that experience like?
-</p>
-
-<h2>Further Reading</h2>
-
-<h3>On Digital Mortality and Preservation</h3>
-
-<p>
-- Chun, Wendy Hui Kyong. "The Enduring Ephemeral, or the Future Is a Memory." <em>Critical Inquiry</em> 35, no. 1 (2008): 148-171.
-  - Theorizes the paradox of digital "permanence" (everything is archived) and ephemerality (everything decays)
-</p>
-
-<p>
-- Kirschenbaum, Matthew. <em>Mechanisms: New Media and the Forensic Imagination</em>. MIT Press, 2008.
-  - Foundational text on digital forensics and materiality
-</p>
-
-<p>
-- Ernst, Wolfgang. <em>Digital Memory and the Archive</em>. University of Minnesota Press, 2013.
-  - Media archaeology perspective on digital preservation
-</p>
-
-<h3>On Platform Death</h3>
-
-<p>
-- Gillespie, Tarleton. "The Relevance of Algorithms." In <em>Media Technologies</em>, edited by Tarleton Gillespie, Pablo Boczkowski, and Kirsten Foot, 167-194. MIT Press, 2014.
-  - How platforms shape what persists and what disappears
-</p>
-
-<p>
-- Brügger, Niels. "Website History and the Website as an Object of Study." <em>New Media & Society</em> 11, no. 1-2 (2009): 115-132.
-  - Theorizes websites as historical objects
-</p>
-
-<h3>On Taxonomies and Classification</h3>
-
-<p>
-- Bowker, Geoffrey C., and Susan Leigh Star. <em>Sorting Things Out: Classification and Its Consequences</em>. MIT Press, 1999.
-  - Classic text on how classification systems shape social reality
-</p>
-
-<p>
-- Foucault, Michel. <em>The Order of Things</em>. Vintage, 1994 [1966].
-  - Philosophical examination of how knowledge systems are organized
-</p>
-
-<h3>On Specific Cases</h3>
-
-<p>
-- Brügger, Niels, and Ralph Schroeder, eds. <em>The Web as History</em>. UCL Press, 2017.
-  - Case studies of web preservation projects
-</p>
-
-<p>
-- Ankerson, Megan Sapnar. <em>Dot-com Design: The Rise of a Usable, Social, Commercial Web</em>. NYU Press, 2018.
-  - History of early web design, drawing on archived sites
-</p>
-
-<p>
-- Archive Team. "GeoCities: We Didn't Start the Fire." https://archiveteam.org/index.php?title=GeoCities
-  - Primary source documenting the GeoCities rescue
-</p>
-
-<p>
-<strong>End of Chapter 2</strong>
-</p>
-
-<p>
-<em>Next: Chapter 3 — The Archive and the Anvil: Dual Practices of Preservation and Creation</em>
-</p>
-
-
-        </article>
-        <div class="nav">
-            <a href="index.html">Back to Table of Contents</a>
-        </div>
-    </div>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='chapter-2-the-archaeobyte-taxonomy-----understanding-digital-mortality'><span>Chapter 2: The Archaeobyte Taxonomy — Understanding Digital Mortality</span></h1><hr /><h2 id='opening-four-artifacts-four-fates'><span>Opening: Four Artifacts, Four Fates</span></h2><p><span>Consider four digital objects, each with a different relationship to death:</span></p><p><strong><span>Artifact 1</span></strong><span>: A GeoCities homepage from 1998, hosted at </span><code>geocities.com/SiliconValley/1234</code><span>. When Yahoo shut down GeoCities in 2009, this site vanished from the live web. But Archive Team scraped it before shutdown, and it now exists as files in a 650GB torrent. The site is </span><strong><span>dead but preserved</span></strong><span>—murdered by its platform, rescued by volunteers, waiting for someone to resurrect it.</span></p><p><strong><span>Artifact 2</span></strong><span>: Your current Twitter profile, actively maintained with daily posts. But Twitter&#39;s future is uncertain. Elon Musk&#39;s chaotic ownership has driven mass exodus to alternatives. Your profile is </span><strong><span>alive but endangered</span></strong><span>—functioning now, but vulnerable to corporate whims, algorithmic changes, or eventual shutdown.</span></p><p><strong><span>Artifact 3</span></strong><span>: A Flash game called </span><em><span>Homestar Runner</span></em><span>, created in the early 2000s. Flash Player was discontinued by Adobe in 2020, rendering millions of Flash games unplayable. The files still exist, but without emulation software, they&#39;re inert. This artifact is </span><strong><span>technically dead but spiritually haunting</span></strong><span>—the data persists, but the experience is inaccessible without intervention.</span></p><p><strong><span>Artifact 4</span></strong><span>: An ancient stone tablet with cuneiform writing, created 4,000 years ago in Mesopotamia. The civilization that made it is long gone, but the tablet survives in a museum. It&#39;s </span><strong><span>long-dead but monumentally preserved</span></strong><span>—so old that its mortality is complete, yet so durably encoded that it outlasted empires.</span></p><p><span>These four artifacts represent </span><strong><span>four fundamentally different states of digital mortality</span></strong><span>. Archaeobytology needs a taxonomy to distinguish between them—not just for academic precision, but for practical triage. Each state demands different preservation strategies, ethical considerations, and urgency levels.</span></p><p><span>This chapter introduces the </span><strong><span>Archaeobyte Taxonomy</span></strong><span>: a classification system for understanding how digital artifacts live, die, and persist.</span></p><hr /><h2 id='the-archaeobyte-taxonomy-four-categories'><span>The Archaeobyte Taxonomy: Four Categories</span></h2><p><span>We classify digital artifacts into four types based on their </span><strong><span>mortality state</span></strong><span> and </span><strong><span>preservation status</span></strong><span>:</span></p><h3 id='1-archaeobyte-dead-and-preserved'><span>1. </span><strong><span>Archaeobyte</span></strong><span> (Dead and Preserved)</span></h3><h3 id='2-vivibyte-alive-and-endangered'><span>2. </span><strong><span>Vivibyte</span></strong><span> (Alive and Endangered)</span></h3><h3 id='3-umbrabyte-dead-but-haunting'><span>3. </span><strong><span>Umbrabyte</span></strong><span> (Dead but Haunting)</span></h3><h3 id='4-petribyte-monumentally-preserved'><span>4. </span><strong><span>Petribyte</span></strong><span> (Monumentally Preserved)</span></h3><p><span>Each category has distinct characteristics, ethical challenges, and preservation needs. Let&#39;s examine them in depth.</span></p><hr /><h2 id='1-archaeobyte-the-dead-and-preserved'><span>1. Archaeobyte: The Dead and Preserved</span></h2><h3 id='definition'><span>Definition</span></h3><p><span>An </span><strong><span>Archaeobyte</span></strong><span> is a digital artifact that:</span></p><ul><li><p><strong><span>Was once alive</span></strong><span> (accessible, functional, part of active culture)</span></p></li><li><p><strong><span>Died</span></strong><span> through platform shutdown, obsolescence, or deliberate deletion</span></p></li><li><p><strong><span>Has been preserved</span></strong><span> in some form (archived, scraped, backed up)</span></p></li><li><p><strong><span>Exists in a liminal state</span></strong><span> between death and potential resurrection</span></p></li></ul><p><span>The term combines </span><em><span>archaeo-</span></em><span> (ancient, belonging to the past) with </span><em><span>byte</span></em><span> (digital information unit). Archaeobytes are </span><strong><span>digital fossils</span></strong><span>—remnants of dead platforms waiting to be excavated, interpreted, and potentially revived.</span></p><h3 id='characteristics'><span>Characteristics</span></h3><p><strong><span>Temporality</span></strong><span>: Archaeobytes occupy past time. They were created years or decades ago and reflect the technological, cultural, and social contexts of their era.</span></p><p><strong><span>Accessibility</span></strong><span>: They exist in archives but aren&#39;t easily accessible. You can&#39;t just visit a URL. You need to know where the archive is, how to navigate it, and potentially how to run emulation software.</span></p><p><strong><span>Functionality</span></strong><span>: Some Archaeobytes are fully functional if properly emulated (a Flash game can still be played). Others are fragmentary (HTML pages with broken images, databases without their front-ends).</span></p><p><strong><span>Cultural Context</span></strong><span>: Archaeobytes often lack context. A GeoCities page preserved as raw HTML doesn&#39;t tell you who made it, why it mattered, or what community it belonged to. Interpretation requires detective work.</span></p><h3 id='examples'><span>Examples</span></h3><p><strong><span>GeoCities Archives (Archive Team, 2009)</span></strong></p><ul><li><p><span>650GB torrent containing millions of HTML files</span></p></li><li><p><span>Raw dump with minimal metadata</span></p></li><li><p><span>Requires local server to view properly</span></p></li><li><p><span>Missing images, broken links, no search functionality</span></p></li><li><p><strong><span>Status</span></strong><span>: Preserved but not curated</span></p></li></ul><p><strong><span>Vine Archive (Internet Archive, 2017)</span></strong></p><ul><li><p><span>Millions of 6-second videos scraped before shutdown</span></p></li><li><p><span>Stored in Internet Archive&#39;s video collection</span></p></li><li><p><span>Searchable by creator username</span></p></li><li><p><span>Videos playable but divorced from original social context (comments, likes, loops)</span></p></li><li><p><strong><span>Status</span></strong><span>: Preserved with partial metadata</span></p></li></ul><p><strong><span>Flash Games (Flashpoint Project, ongoing)</span></strong></p><ul><li><p><span>500,000+ Flash games and animations preserved</span></p></li><li><p><span>Requires custom launcher with embedded emulator</span></p></li><li><p><span>Fully playable with original functionality</span></p></li><li><p><span>Community-curated with descriptions and tags</span></p></li><li><p><strong><span>Status</span></strong><span>: Preserved, curated, and resurrected</span></p></li></ul><p><strong><span>CD-ROM Multimedia (Internet Archive, various dates)</span></strong></p><ul><li><p><span>1990s educational software, encyclopedias, games</span></p></li><li><p><span>Runs in browser via emulation</span></p></li><li><p><span>Often includes full documentation and original packaging scans</span></p></li><li><p><strong><span>Status</span></strong><span>: Museum-quality preservation</span></p></li></ul><h3 id='preservation-needs'><span>Preservation Needs</span></h3><p><span>Archaeobytes require:</span></p><ol start='' ><li><p><strong><span>Storage infrastructure</span></strong><span>: Servers, hard drives, distributed backups</span></p></li><li><p><strong><span>Emulation or compatibility layers</span></strong><span>: Flash emulators, old browser engines, virtual machines</span></p></li><li><p><strong><span>Metadata and contextualization</span></strong><span>: Who made this? When? Why did it matter?</span></p></li><li><p><strong><span>Access systems</span></strong><span>: Search, browse, discovery mechanisms</span></p></li><li><p><strong><span>Legal frameworks</span></strong><span>: Copyright exceptions for preservation (often operating in gray areas)</span></p></li></ol><h3 id='ethical-considerations'><span>Ethical Considerations</span></h3><p><strong><span>Consent</span></strong><span>: Did the original creators consent to preservation? Many GeoCities users abandoned their sites and might not want them resurrected.</span></p><p><strong><span>Privacy</span></strong><span>: Personal information (emails, addresses, photos) embedded in old sites may violate current privacy expectations.</span></p><p><strong><span>Context Collapse</span></strong><span>: Artifacts created for small communities (a private forum, a friend&#39;s homepage) now exposed to anyone who finds the archive.</span></p><p><strong><span>Authenticity</span></strong><span>: When you emulate a Flash game, is it still the &quot;same&quot; artifact? Or is emulation a form of transformation?</span></p><h3 id='triage-priority-medium'><span>Triage Priority: Medium</span></h3><p><span>Archaeobytes are already preserved, so they&#39;re not in immediate danger of disappearing entirely. But they&#39;re at risk of:</span></p><ul><li><p><strong><span>Bit rot</span></strong><span>: Storage media degrading over time</span></p></li><li><p><strong><span>Format obsolescence</span></strong><span>: Emulators becoming outdated</span></p></li><li><p><strong><span>Link rot</span></strong><span>: Archives moving or disappearing</span></p></li><li><p><strong><span>Institutional failure</span></strong><span>: Organizations running archives may shut down</span></p></li></ul><p><span>Priority increases if:</span></p><ul><li><p><span>No redundant copies exist elsewhere</span></p></li><li><p><span>The archive is hosted by a fragile organization</span></p></li><li><p><span>The artifacts have high cultural significance</span></p></li></ul><hr /><h2 id='2-vivibyte-the-alive-and-endangered'><span>2. Vivibyte: The Alive and Endangered</span></h2><h3 id='definition-2'><span>Definition</span></h3><p><span>A </span><strong><span>Vivibyte</span></strong><span> is a digital artifact that:</span></p><ul><li><p><strong><span>Is currently alive</span></strong><span> (accessible, functional, actively used)</span></p></li><li><p><strong><span>Exists on vulnerable infrastructure</span></strong><span> (commercial platforms, centralized servers, proprietary systems)</span></p></li><li><p><strong><span>Faces existential threats</span></strong><span> (platform instability, corporate acquisition, terms of service changes, economic precarity)</span></p></li></ul><p><span>The term combines </span><em><span>vivi-</span></em><span> (living, alive) with </span><em><span>byte</span></em><span>. Vivibytes are the </span><strong><span>living endangered species</span></strong><span> of digital culture—thriving now but facing extinction.</span></p><h3 id='characteristics-2'><span>Characteristics</span></h3><p><strong><span>Temporality</span></strong><span>: Vivibytes are present-tense. They&#39;re being created, updated, and used right now.</span></p><p><strong><span>Accessibility</span></strong><span>: They&#39;re easily accessible—just visit a URL. But that accessibility is contingent on platform stability.</span></p><p><strong><span>Dependency</span></strong><span>: Vivibytes depend on platform infrastructure. If Twitter shuts down, every tweet becomes inaccessible (unless archived).</span></p><p><strong><span>Precarity</span></strong><span>: Their survival isn&#39;t guaranteed. They exist at the mercy of corporate decisions, algorithm changes, and terms of service enforcement.</span></p><h3 id='examples-2'><span>Examples</span></h3><p><strong><span>Twitter/X (2023-present)</span></strong></p><ul><li><p><span>Elon Musk&#39;s acquisition created massive instability</span></p></li><li><p><span>Mass layoffs gutted engineering and trust &amp; safety teams</span></p></li><li><p><span>API restrictions killed third-party clients</span></p></li><li><p><span>Unpredictable policy changes (verified checkmarks, algorithmic timeline changes)</span></p></li><li><p><span>Mass user exodus to Mastodon, Bluesky, Threads</span></p></li><li><p><strong><span>Status</span></strong><span>: Alive but facing existential crisis</span></p></li></ul><p><strong><span>Substack Newsletters (ongoing)</span></strong></p><ul><li><p><span>Writers build audiences on Substack&#39;s platform</span></p></li><li><p><span>Substack owns the domain (username.substack.com)</span></p></li><li><p><span>Export tools exist but are imperfect (subscriber lists can be exported, but URLs break if you move)</span></p></li><li><p><span>Vulnerable to Substack&#39;s business model changes</span></p></li><li><p><span>Recent controversies over content moderation have driven some writers to Ghost or self-hosted options</span></p></li><li><p><strong><span>Status</span></strong><span>: Alive, functional, but sovereignty questions emerging</span></p></li></ul><p><strong><span>TikTok (2020-present)</span></strong></p><ul><li><p><span>Facing potential US ban due to national security concerns</span></p></li><li><p><span>Creators have millions of followers but no platform ownership</span></p></li><li><p><span>Videos are proprietary format, difficult to export</span></p></li><li><p><span>Algorithm is opaque and changes frequently</span></p></li><li><p><strong><span>Status</span></strong><span>: Thriving but politically endangered</span></p></li></ul><p><strong><span>Discord Servers (ongoing)</span></strong></p><ul><li><p><span>Millions of communities hosted on proprietary platform</span></p></li><li><p><span>Chat history owned by Discord, not communities</span></p></li><li><p><span>No easy export of full server history</span></p></li><li><p><span>Vulnerable to Discord&#39;s moderation policies and business decisions</span></p></li><li><p><span>If Discord shuts down, all communities vanish</span></p></li><li><p><strong><span>Status</span></strong><span>: Alive, widely used, but entirely dependent on corporate stability</span></p></li></ul><p><strong><span>Indie Web Personal Sites (various)</span></strong></p><ul><li><p><span>Bloggers using self-hosted WordPress or static site generators</span></p></li><li><p><span>Own their domains and content</span></p></li><li><p><span>Less vulnerable to platform shutdown</span></p></li><li><p><span>But still depend on hosting providers, domain registrars, and web standards</span></p></li><li><p><strong><span>Status</span></strong><span>: More sovereign than platform-hosted content, but not invulnerable</span></p></li></ul><h3 id='preservation-needs-2'><span>Preservation Needs</span></h3><p><span>Vivibytes require </span><strong><span>proactive archiving</span></strong><span>:</span></p><ol start='' ><li><p><strong><span>Continuous crawling</span></strong><span>: Internet Archive&#39;s Wayback Machine constantly archives the live web</span></p></li><li><p><strong><span>User-driven backups</span></strong><span>: Individuals exporting their own data (Twitter archives, Instagram data downloads)</span></p></li><li><p><strong><span>Institutional partnerships</span></strong><span>: Libraries and archives working with platforms to preserve content before shutdown</span></p></li><li><p><strong><span>Legal preparation</span></strong><span>: Advocacy for &quot;right to archive&quot; laws that allow preservation without permission</span></p></li></ol><h3 id='ethical-considerations-2'><span>Ethical Considerations</span></h3><p><strong><span>Timing</span></strong><span>: When do you preserve a Vivibyte? If you archive someone&#39;s tweets daily, are you violating their expectation of ephemeral communication?</span></p><p><strong><span>Comprehensiveness</span></strong><span>: Should you archive everything on a platform, or only what&#39;s &quot;culturally significant&quot;? Who decides?</span></p><p><strong><span>Privacy</span></strong><span>: Many Vivibytes contain personal information shared with the expectation that it will disappear eventually. Permanent archiving changes that expectation.</span></p><p><strong><span>Platform Relationships</span></strong><span>: Should archivists work </span><em><span>with</span></em><span> platforms (negotiated data dumps) or </span><em><span>against</span></em><span> them (scraping without permission)?</span></p><h3 id='triage-priority-variable-low-to-critical'><span>Triage Priority: Variable (Low to Critical)</span></h3><p><span>Priority depends on </span><strong><span>threat imminence</span></strong><span>:</span></p><ul><li><p><strong><span>Low</span></strong><span>: Stable platforms with good export tools (WordPress.com, GitHub)</span></p></li><li><p><strong><span>Medium</span></strong><span>: Platforms with uncertain futures but no immediate danger (Reddit, Medium)</span></p></li><li><p><strong><span>High</span></strong><span>: Platforms showing signs of instability (mass layoffs, leadership chaos, user exodus)</span></p></li><li><p><strong><span>Critical</span></strong><span>: Platforms that have announced shutdown (weeks or months remaining)</span></p></li></ul><p><strong><span>Indicators of rising threat</span></strong><span>:</span></p><ul><li><p><span>Leadership changes or acquisitions</span></p></li><li><p><span>Financial struggles (layoffs, failed funding rounds)</span></p></li><li><p><span>User exodus or declining engagement</span></p></li><li><p><span>Policy changes that anger core communities</span></p></li><li><p><span>Technical instability (outages, bugs)</span></p></li><li><p><span>Legal or regulatory threats</span></p></li></ul><hr /><h2 id='3-umbrabyte-the-dead-but-haunting'><span>3. Umbrabyte: The Dead but Haunting</span></h2><h3 id='definition-3'><span>Definition</span></h3><p><span>An </span><strong><span>Umbrabyte</span></strong><span> is a digital artifact that:</span></p><ul><li><p><strong><span>Is technically dead</span></strong><span> (inaccessible, non-functional, or obsolete)</span></p></li><li><p><strong><span>Has not been properly preserved</span></strong><span> (exists in fragmentary or corrupted form)</span></p></li><li><p><strong><span>Haunts the present</span></strong><span> through memory, references, or partial remnants</span></p></li><li><p><strong><span>Could theoretically be resurrected</span></strong><span> with sufficient effort, but currently exists in limbo</span></p></li></ul><p><span>The term combines </span><em><span>umbra-</span></em><span> (shadow, ghost) with </span><em><span>byte</span></em><span>. Umbrabytes are </span><strong><span>digital ghosts</span></strong><span>—artifacts that are neither fully alive nor fully preserved, occupying a haunting middle ground.</span></p><h3 id='characteristics-3'><span>Characteristics</span></h3><p><strong><span>Temporality</span></strong><span>: Umbrabytes are caught between past and present. They died, but they haven&#39;t been properly mourned or memorialized.</span></p><p><strong><span>Accessibility</span></strong><span>: They exist in fragments—dead links, broken images, corrupted files, screenshots, memories.</span></p><p><strong><span>Liminality</span></strong><span>: Umbrabytes occupy a liminal state. They&#39;re dead enough to be inaccessible but alive enough to be remembered.</span></p><p><strong><span>Urgency</span></strong><span>: Many Umbrabytes are in danger of permanent loss. If not rescued soon, they&#39;ll transition from &quot;dead but haunting&quot; to simply &quot;dead.&quot;</span></p><h3 id='examples-3'><span>Examples</span></h3><p><strong><span>MySpace Music (2003-2013)</span></strong></p><ul><li><p><span>In 2019, MySpace admitted it had &quot;lost&quot; 12 years of user-uploaded music due to a botched server migration</span></p></li><li><p><span>Estimated 50 million songs vanished</span></p></li><li><p><span>No comprehensive backup exists</span></p></li><li><p><span>Some songs survive as MP3s users downloaded</span></p></li><li><p><span>Others exist as memories: &quot;I heard this amazing band on MySpace in 2007, but I can&#39;t find them anywhere now&quot;</span></p></li><li><p><strong><span>Status</span></strong><span>: Mostly lost, partially haunting through fragments</span></p></li></ul><p><strong><span>Early YouTube (2005-2008)</span></strong></p><ul><li><p><span>Many early YouTube videos were deleted by users or removed for copyright</span></p></li><li><p><span>Internet Archive captured some, but not comprehensively</span></p></li><li><p><span>Cultural artifacts like early memes, viral videos, and video responses are often lost</span></p></li><li><p><span>Remembered through references, compilations, and oral history</span></p></li><li><p><strong><span>Status</span></strong><span>: Partially preserved, partially lost</span></p></li></ul><p><strong><span>Deleted Reddit Communities (various)</span></strong></p><ul><li><p><span>Reddit has banned thousands of subreddits over the years (r/FatPeopleHate, r/ChapoTrapHouse, r/The_Donald, etc.)</span></p></li><li><p><span>Some were archived by volunteers or by Pushshift (academic Reddit archive)</span></p></li><li><p><span>Many were not preserved</span></p></li><li><p><span>They haunt Reddit culture through references, screenshots, and exile communities that formed elsewhere</span></p></li><li><p><strong><span>Status</span></strong><span>: Partially archived, partially lost, culturally haunting</span></p></li></ul><p><strong><span>Flash Websites (1990s-2010s)</span></strong></p><ul><li><p><span>Millions of Flash-based websites went offline or became non-functional when Flash Player was discontinued in 2020</span></p></li><li><p><span>Some are preserved by Flashpoint or Internet Archive</span></p></li><li><p><span>Many are lost—known only through screenshots or memories</span></p></li><li><p><span>Agency portfolio sites, experimental art projects, interactive storytelling</span></p></li><li><p><strong><span>Status</span></strong><span>: Fragmentarily preserved, largely inaccessible</span></p></li></ul><p><strong><span>Private Forums and Message Boards (various)</span></strong></p><ul><li><p><span>Thousands of small forums shut down over the years (phpBB, vBulletin, etc.)</span></p></li><li><p><span>Most weren&#39;t archived by Internet Archive (robots.txt blocks, login walls)</span></p></li><li><p><span>Communities lost their entire histories</span></p></li><li><p><span>Surviving fragments: Google cache, screenshots, PDFs saved by individual users</span></p></li><li><p><strong><span>Status</span></strong><span>: Largely lost, mourned by former members</span></p></li></ul><h3 id='preservation-needs-3'><span>Preservation Needs</span></h3><p><span>Umbrabytes require </span><strong><span>urgent rescue</span></strong><span>:</span></p><ol start='' ><li><p><strong><span>Forensic recovery</span></strong><span>: Hunting down partial copies, cached pages, user backups</span></p></li><li><p><strong><span>Community archaeology</span></strong><span>: Interviewing people who remember the artifacts</span></p></li><li><p><strong><span>Reconstruction</span></strong><span>: Piecing together fragments to create partial records</span></p></li><li><p><strong><span>Metadata creation</span></strong><span>: Documenting what existed, even if the full artifact can&#39;t be recovered</span></p></li><li><p><strong><span>Triage acceptance</span></strong><span>: Acknowledging that some Umbrabytes are irrecoverably lost</span></p></li></ol><h3 id='ethical-considerations-3'><span>Ethical Considerations</span></h3><p><strong><span>Right to Be Forgotten</span></strong><span>: Some Umbrabytes were intentionally deleted by their creators. Should we resurrect them against their wishes?</span></p><p><strong><span>Trauma</span></strong><span>: Some Umbrabytes are traumatic (harassment campaigns, doxxing, revenge porn). Should we let them stay dead?</span></p><p><strong><span>Reconstructive Violence</span></strong><span>: Is it ethical to &quot;reconstruct&quot; an artifact from fragments if the result isn&#39;t accurate to the original?</span></p><p><strong><span>Mourning vs. Resurrection</span></strong><span>: Sometimes the most ethical response is to </span><em><span>mourn</span></em><span> an Umbrabyte rather than resurrect it—to acknowledge its loss without trying to recover it.</span></p><h3 id='triage-priority-critical-but-often-futile'><span>Triage Priority: Critical (but often futile)</span></h3><p><span>Umbrabytes are in the most dangerous state:</span></p><ul><li><p><span>They&#39;re not fully preserved, so they could vanish completely</span></p></li><li><p><span>They&#39;re not alive, so there&#39;s no &quot;live source&quot; to capture</span></p></li><li><p><span>Time is running out—fragments degrade, memories fade, caches expire</span></p></li></ul><p><span>But triage is complicated:</span></p><ul><li><p><span>Rescue is often </span><strong><span>technically difficult</span></strong><span> (fragments scattered, formats corrupted)</span></p></li><li><p><span>Success rates are </span><strong><span>low</span></strong><span> (many Umbrabytes are irrecoverable)</span></p></li><li><p><span>Resources might be better spent on </span><strong><span>Vivibytes</span></strong><span> (save the living before mourning the dead)</span></p></li></ul><p><span>The hardest triage decisions involve Umbrabytes: Do you spend weeks trying to recover a lost forum&#39;s fragments, or do you focus on archiving a living platform that could die tomorrow?</span></p><hr /><h2 id='4-petribyte-the-monumentally-preserved'><span>4. Petribyte: The Monumentally Preserved</span></h2><h3 id='definition-4'><span>Definition</span></h3><p><span>A </span><strong><span>Petribyte</span></strong><span> is a digital artifact that:</span></p><ul><li><p><strong><span>Is so old that its original context is historical</span></strong><span> (decades-old, often pre-web)</span></p></li><li><p><strong><span>Has been durably preserved</span></strong><span> by institutions (libraries, museums, archives)</span></p></li><li><p><strong><span>Is treated as cultural heritage</span></strong><span> (studied by scholars, exhibited in museums)</span></p></li><li><p><strong><span>Has achieved stability</span></strong><span> (no longer at risk of immediate loss)</span></p></li></ul><p><span>The term combines </span><em><span>petri-</span></em><span> (stone, rock—from Latin </span><em><span>petra</span></em><span>) with </span><em><span>byte</span></em><span>. Petribytes are </span><strong><span>digital monuments</span></strong><span>—artifacts that have achieved the stability of ancient stone tablets, preserved and curated by institutions.</span></p><h3 id='characteristics-4'><span>Characteristics</span></h3><p><strong><span>Temporality</span></strong><span>: Petribytes are </span><strong><span>historical</span></strong><span>. They&#39;re old enough that they&#39;re studied as artifacts of past eras, not current culture.</span></p><p><strong><span>Accessibility</span></strong><span>: They&#39;re often highly accessible—digitized, exhibited, documented. Museums and libraries make them available.</span></p><p><strong><span>Curation</span></strong><span>: Petribytes receive institutional care—metadata, contextualization, conservation. They&#39;re not just stored; they&#39;re </span><em><span>curated</span></em><span>.</span></p><p><strong><span>Monumentality</span></strong><span>: They&#39;ve achieved cultural recognition. Scholars write about them. Museums exhibit them. They&#39;re canonized.</span></p><h3 id='examples-4'><span>Examples</span></h3><p><strong><span>The WELL (1985-present)</span></strong></p><ul><li><p><span>One of the earliest online communities</span></p></li><li><p><span>Archived by Internet Archive and studied by scholars</span></p></li><li><p><span>Documented in books like </span><em><span>The Virtual Community</span></em><span> by Howard Rheingold</span></p></li><li><p><span>Still running (as of 2025) but also preserved in multiple forms</span></p></li><li><p><strong><span>Status</span></strong><span>: Monument to early internet culture</span></p></li></ul><p><strong><span>Colossal Cave Adventure (1976)</span></strong></p><ul><li><p><span>Text-based adventure game, one of the first of its kind</span></p></li><li><p><span>Source code preserved and studied</span></p></li><li><p><span>Multiple versions archived and playable via emulation</span></p></li><li><p><span>Influential enough to be analyzed in game studies courses</span></p></li><li><p><strong><span>Status</span></strong><span>: Canon of video game history</span></p></li></ul><p><strong><span>ARPANET (1969-1990)</span></strong></p><ul><li><p><span>Precursor to the internet</span></p></li><li><p><span>Decommissioned in 1990, but extensively documented</span></p></li><li><p><span>Primary source materials (emails, documentation, network maps) preserved by Computer History Museum and other institutions</span></p></li><li><p><strong><span>Status</span></strong><span>: Historical monument, foundational artifact</span></p></li></ul><p><strong><span>Hypercard Stacks (1987-2004)</span></strong></p><ul><li><p><span>Early multimedia authoring tool for Macintosh</span></p></li><li><p><span>Thousands of stacks created (educational software, art projects, interactive fiction)</span></p></li><li><p><span>Many preserved by Internet Archive&#39;s Hypercard Stack Archive</span></p></li><li><p><span>Studied as precursors to the web</span></p></li><li><p><strong><span>Status</span></strong><span>: Curated collection, historically significant</span></p></li></ul><p><strong><span>Early Email Archives (various)</span></strong></p><ul><li><p><span>Important historical emails preserved by institutions</span></p></li><li><p><span>Example: Jon Postel&#39;s email about DNS root control (1980s)</span></p></li><li><p><span>Example: Tim Berners-Lee&#39;s WorldWideWeb proposal (1989)</span></p></li><li><p><strong><span>Status</span></strong><span>: Primary sources for internet history</span></p></li></ul><h3 id='preservation-needs-4'><span>Preservation Needs</span></h3><p><span>Petribytes need </span><strong><span>curatorial maintenance</span></strong><span>:</span></p><ol start='' ><li><p><strong><span>Format migration</span></strong><span>: Periodically transferring to new storage media</span></p></li><li><p><strong><span>Emulation updates</span></strong><span>: Keeping emulators functional as operating systems evolve</span></p></li><li><p><strong><span>Metadata enrichment</span></strong><span>: Adding scholarly annotations, historical context</span></p></li><li><p><strong><span>Access infrastructure</span></strong><span>: Maintaining websites, databases, and discovery systems</span></p></li><li><p><strong><span>Legal protection</span></strong><span>: Ensuring copyright and ownership issues are resolved</span></p></li></ol><p><span>Unlike Vivibytes (which need urgent rescue) or Umbrabytes (which are in danger of vanishing), Petribytes are </span><strong><span>institutionally secure</span></strong><span>. But they&#39;re not invulnerable—institutions can fail, budgets can be cut, and storage media can degrade.</span></p><h3 id='ethical-considerations-4'><span>Ethical Considerations</span></h3><p><strong><span>Canonization</span></strong><span>: Which artifacts become Petribytes? The selection is often biased toward:</span></p><ul><li><p><span>Artifacts from wealthy institutions or well-documented contexts</span></p></li><li><p><span>Creations by famous or influential people</span></p></li><li><p><span>Projects with good documentation and advocacy</span></p></li></ul><p><span>Meanwhile, artifacts from marginalized communities or underfunded projects often remain Umbrabytes—lost and unmourned.</span></p><p><strong><span>Access vs. Preservation</span></strong><span>: Museums often prioritize preservation over access (artifacts locked in temperature-controlled vaults). Is this ethical? Should Petribytes be freely accessible, or is controlled access necessary for preservation?</span></p><p><strong><span>Ownership</span></strong><span>: Who owns Petribytes? Original creators? Institutions? The public? Disputes over ownership can restrict access or lead to artifacts being removed from public view.</span></p><h3 id='triage-priority-low-but-not-zero'><span>Triage Priority: Low (but not zero)</span></h3><p><span>Petribytes are the least urgent:</span></p><ul><li><p><span>They&#39;re already preserved</span></p></li><li><p><span>They&#39;re institutionally supported</span></p></li><li><p><span>They&#39;re documented and accessible</span></p></li></ul><p><span>But they&#39;re not safe forever:</span></p><ul><li><p><span>Institutions can shut down</span></p></li><li><p><span>Budgets can be cut</span></p></li><li><p><span>Political shifts can lead to censorship or deaccession</span></p></li></ul><p><span>Triage priority increases if:</span></p><ul><li><p><span>The institution is unstable</span></p></li><li><p><span>The Petribyte is unique (no redundant copies)</span></p></li><li><p><span>Access is threatened (legal disputes, political pressure)</span></p></li></ul><hr /><h2 id='the-taxonomy-in-practice-case-study-analysis'><span>The Taxonomy in Practice: Case Study Analysis</span></h2><p><span>Let&#39;s apply the taxonomy to a complex case: </span><strong><span>LiveJournal</span></strong><span>.</span></p><h3 id='livejournal-a-multi-category-artifact'><span>LiveJournal: A Multi-Category Artifact</span></h3><p><span>LiveJournal (founded 1999) was a blogging and social networking platform. Over its history, different parts of it occupy different taxonomic categories:</span></p><p><strong><span>Vivibyte (1999-2017)</span></strong></p><ul><li><p><span>LiveJournal was alive and actively used</span></p></li><li><p><span>By the 2010s, it was declining but still functional</span></p></li><li><p><span>Users could access their posts, comments, and communities</span></p></li></ul><p><strong><span>Transition Period (2017-present)</span></strong></p><ul><li><p><span>LiveJournal&#39;s Russian ownership implemented new TOS requiring compliance with Russian law</span></p></li><li><p><span>Many users abandoned the platform, moving to Dreamwidth or other alternatives</span></p></li><li><p><span>The platform is still technically alive, but English-language usage has collapsed</span></p></li></ul><p><strong><span>Archaeobyte (partial)</span></strong></p><ul><li><p><span>Many users exported their journals to Dreamwidth or downloaded backups</span></p></li><li><p><span>Internet Archive captured many public LiveJournal pages</span></p></li><li><p><span>Some users deleted their journals, but copies survive in archives</span></p></li></ul><p><strong><span>Umbrabyte (partial)</span></strong></p><ul><li><p><span>Private or friends-only journals weren&#39;t archived by Internet Archive (respect for privacy settings)</span></p></li><li><p><span>Deleted journals are mostly lost (unless users saved backups)</span></p></li><li><p><span>Communities that were deleted by moderators often vanished without trace</span></p></li></ul><p><strong><span>Petribyte (emerging)</span></strong></p><ul><li><p><span>Some significant LiveJournals are being recognized as historically important:</span></p><ul><li><p><span>Early fandom communities studied by fan studies scholars</span></p></li><li><p><span>Political blogs from the 2000s cited in journalism history</span></p></li><li><p><span>Personal journals documenting historical events (9/11, Iraq War, Arab Spring)</span></p></li></ul></li><li><p><span>Academic papers analyze LiveJournal culture, citing preserved examples</span></p></li></ul><p><strong><span>Taxonomic Insight</span></strong><span>: LiveJournal doesn&#39;t fit neatly into one category. Different parts of it occupy different states simultaneously. This is common with large platforms.</span></p><hr /><h2 id='taxonomy-as-triage-tool'><span>Taxonomy as Triage Tool</span></h2><p><span>The Archaeobyte Taxonomy isn&#39;t just academic—it&#39;s a </span><strong><span>practical triage tool</span></strong><span>. When deciding where to focus preservation efforts, ask:</span></p><h3 id='question-1-what-mortality-state-is-this-artifact-in'><span>Question 1: What mortality state is this artifact in?</span></h3><ul><li><p><strong><span>Vivibyte</span></strong><span>: Act now, before it dies</span></p></li><li><p><strong><span>Umbrabyte</span></strong><span>: Urgent rescue, but accept that loss is likely</span></p></li><li><p><strong><span>Archaeobyte</span></strong><span>: Stabilize existing preservation, prevent bit rot</span></p></li><li><p><strong><span>Petribyte</span></strong><span>: Maintain and curate, but not urgent</span></p></li></ul><h3 id='question-2-is-there-redundancy'><span>Question 2: Is there redundancy?</span></h3><ul><li><p><span>If an artifact is preserved by multiple institutions (e.g., in Internet Archive </span><em><span>and</span></em><span> Library of Congress </span><em><span>and</span></em><span> university archives), it&#39;s lower priority</span></p></li><li><p><span>If only one fragile archive exists, priority increases</span></p></li></ul><h3 id='question-3-whats-the-cultural-significance'><span>Question 3: What&#39;s the cultural significance?</span></h3><ul><li><p><span>High significance + Vivibyte = </span><strong><span>Critical priority</span></strong></p></li><li><p><span>High significance + Umbrabyte = </span><strong><span>Urgent rescue attempt</span></strong></p></li><li><p><span>High significance + Petribyte = </span><strong><span>Maintain vigilantly</span></strong></p></li><li><p><span>Low significance + any state = </span><strong><span>Lower priority</span></strong><span> (harsh but necessary in triage)</span></p></li></ul><h3 id='question-4-whats-the-technical-difficulty'><span>Question 4: What&#39;s the technical difficulty?</span></h3><ul><li><p><span>Easy to preserve (static HTML) + Vivibyte = </span><strong><span>Do it now</span></strong></p></li><li><p><span>Hard to preserve (complex database, proprietary format) + Vivibyte = </span><strong><span>Invest resources</span></strong></p></li><li><p><span>Hard to preserve + Umbrabyte = </span><strong><span>May need to accept loss</span></strong></p></li></ul><h3 id='question-5-are-there-ethical-concerns'><span>Question 5: Are there ethical concerns?</span></h3><ul><li><p><span>Privacy violations, consent issues, potential harm = </span><strong><span>Deprioritize or don&#39;t preserve</span></strong></p></li><li><p><span>Historical significance but ethically fraught = </span><strong><span>Preserve with restricted access</span></strong></p></li></ul><hr /><h2 id='transitions-between-states'><span>Transitions Between States</span></h2><p><span>Artifacts don&#39;t stay in one taxonomic category forever. They </span><strong><span>transition</span></strong><span>:</span></p><h3 id='common-transitions'><span>Common Transitions</span></h3><p><strong><span>Vivibyte → Archaeobyte</span></strong><span> (Successful Preservation)</span></p><ul><li><p><span>A platform announces shutdown</span></p></li><li><p><span>Archivists mobilize and scrape content</span></p></li><li><p><span>Artifacts are preserved before servers go dark</span></p></li><li><p><span>Example: Vine → Internet Archive</span></p></li></ul><p><strong><span>Vivibyte → Umbrabyte</span></strong><span> (Failed Preservation)</span></p><ul><li><p><span>A platform dies unexpectedly (no warning, or warning ignored)</span></p></li><li><p><span>Most content is lost</span></p></li><li><p><span>Only fragments survive (screenshots, partial scrapes)</span></p></li><li><p><span>Example: Many phpBB forums</span></p></li></ul><p><strong><span>Umbrabyte → Archaeobyte</span></strong><span> (Successful Rescue)</span></p><ul><li><p><span>Someone finds a backup, cached copy, or forensic remnant</span></p></li><li><p><span>Fragments are assembled into a usable archive</span></p></li><li><p><span>Example: GeoCities rescue via Archive Team</span></p></li></ul><p><strong><span>Umbrabyte → Permanent Loss</span></strong><span> (Failed Rescue)</span></p><ul><li><p><span>Fragments degrade or disappear</span></p></li><li><p><span>No copies exist anywhere</span></p></li><li><p><span>Artifact is permanently lost</span></p></li><li><p><span>Example: Most MySpace music from 2003-2013</span></p></li></ul><p><strong><span>Archaeobyte → Petribyte</span></strong><span> (Institutional Recognition)</span></p><ul><li><p><span>An archived artifact gains scholarly attention</span></p></li><li><p><span>Institutions curate it, add metadata, make it accessible</span></p></li><li><p><span>It becomes part of the historical canon</span></p></li><li><p><span>Example: Early Hypercard stacks</span></p></li></ul><p><strong><span>Petribyte → Archaeobyte</span></strong><span> (Institutional Failure)</span></p><ul><li><p><span>An institution shuts down or loses funding</span></p></li><li><p><span>Curated collection reverts to raw archive</span></p></li><li><p><span>Example: Rare, but possible if museums or libraries close</span></p></li></ul><h3 id='undesirable-transitions-preservation-failures'><span>Undesirable Transitions (Preservation Failures)</span></h3><p><strong><span>Archaeobyte → Umbrabyte</span></strong><span> (Bit Rot)</span></p><ul><li><p><span>Stored files become corrupted</span></p></li><li><p><span>Storage media fails</span></p></li><li><p><span>No redundant copies exist</span></p></li><li><p><span>Example: Hard drives degrading in private collections</span></p></li></ul><p><strong><span>Petribyte → Archaeobyte</span></strong><span> (De-curation)</span></p><ul><li><p><span>Budget cuts eliminate curatorial staff</span></p></li><li><p><span>Metadata is lost or not maintained</span></p></li><li><p><span>Artifacts remain preserved but lose context</span></p></li><li><p><span>Example: Museum collections that are &quot;preserved&quot; but inaccessible</span></p></li></ul><hr /><h2 id='critiques-and-limitations-of-the-taxonomy'><span>Critiques and Limitations of the Taxonomy</span></h2><h3 id='critique-1-binary-thinking'><span>Critique 1: Binary Thinking</span></h3><p><span>The taxonomy implies clean categories, but reality is messy. Many artifacts are </span><strong><span>partially preserved</span></strong><span> (some Archaeobyte, some Umbrabyte). LiveJournal is alive </span><em><span>and</span></em><span> dead depending on which part you&#39;re looking at.</span></p><p><strong><span>Response</span></strong><span>: The taxonomy is a </span><strong><span>heuristic</span></strong><span>, not a rigid classification. Use it to clarify thinking, not to force artifacts into boxes.</span></p><h3 id='critique-2-cultural-bias'><span>Critique 2: Cultural Bias</span></h3><p><span>Who decides what becomes a Petribyte? The taxonomy risks reinforcing canonical hierarchies—famous people&#39;s work gets monumentalized, marginalized communities&#39; work stays in limbo.</span></p><p><strong><span>Response</span></strong><span>: This is a real problem. Archaeobytologists must actively work to diversify what gets elevated to Petribyte status. Triage should account for representational gaps.</span></p><h3 id='critique-3-ignores-context'><span>Critique 3: Ignores Context</span></h3><p><span>An artifact&#39;s category depends on </span><em><span>where you are</span></em><span>. A GeoCities site is an Archaeobyte if you know about the Archive Team torrent, but an Umbrabyte to someone who doesn&#39;t.</span></p><p><strong><span>Response</span></strong><span>: True. The taxonomy describes artifacts </span><em><span>relative to preservation infrastructure</span></em><span>. As infrastructure improves, Umbrabytes can become Archaeobytes.</span></p><h3 id='critique-4-no-category-for-never-existed'><span>Critique 4: No Category for &quot;Never Existed&quot;</span></h3><p><span>What about artifacts that </span><em><span>could</span></em><span> have been preserved but never were? The tweets that were never archived, the Snapchat videos designed to disappear?</span></p><p><strong><span>Response</span></strong><span>: These are </span><strong><span>pre-Umbrabytes</span></strong><span>—artifacts that will become ghosts if not captured. The Vivibyte category should include them as endangered.</span></p><hr /><h2 id='expanding-the-taxonomy-proposed-sub-categories'><span>Expanding the Taxonomy: Proposed Sub-Categories</span></h2><p><span>Some practitioners propose additional categories:</span></p><h3 id='necrobyte-the-undead'><span>Necrobyte (The Undead)</span></h3><p><span>Artifacts that were dead but have been </span><strong><span>resurrected</span></strong><span>:</span></p><ul><li><p><span>Flash games made playable again via Ruffle emulator</span></p></li><li><p><span>GeoCities sites rebuilt and re-hosted</span></p></li><li><p><span>Obsolete software ported to modern systems</span></p></li></ul><p><span>These are technically Archaeobytes that have been given &quot;undead life&quot;—functional but not native to the current era.</span></p><h3 id='cryobyte-frozen-and-waiting'><span>Cryobyte (Frozen and Waiting)</span></h3><p><span>Artifacts that are </span><strong><span>intentionally preserved in suspended animation</span></strong><span>:</span></p><ul><li><p><span>Time capsules meant to be opened in the future</span></p></li><li><p><span>Long-term archives (1,000-year storage projects)</span></p></li><li><p><span>Artifacts preserved but deliberately not made accessible yet</span></p></li></ul><p><span>These are Archaeobytes with a temporal lock—Petribytes-in-waiting.</span></p><h3 id='xenobyte-alien-and-incomprehensible'><span>Xenobyte (Alien and Incomprehensible)</span></h3><p><span>Artifacts so old or so alien that they&#39;re </span><strong><span>unintelligible without extensive interpretation</span></strong><span>:</span></p><ul><li><p><span>Code written in obsolete languages with no documentation</span></p></li><li><p><span>File formats with no known decoder</span></p></li><li><p><span>Encrypted data where the key is lost</span></p></li></ul><p><span>These are Archaeobytes on the verge of becoming permanently opaque.</span></p><hr /><h2 id='practical-application-building-a-triage-matrix'><span>Practical Application: Building a Triage Matrix</span></h2><p><span>Use the taxonomy to create a </span><strong><span>triage decision matrix</span></strong><span>:</span></p><figure class='table-figure'><table><thead><tr><th><span>Artifact</span></th><th><span>Taxonomy</span></th><th><span>Redundancy</span></th><th><span>Significance</span></th><th><span>Difficulty</span></th><th><span>Ethics</span></th><th><span>Priority</span></th></tr></thead><tbody><tr><td><span>Twitter archive</span></td><td><span>Vivibyte</span></td><td><span>High (IA + LOC)</span></td><td><span>High</span></td><td><span>Medium</span></td><td><span>Some concerns</span></td><td><span>Medium</span></td></tr><tr><td><span>Small Discord server</span></td><td><span>Vivibyte</span></td><td><span>None</span></td><td><span>Low</span></td><td><span>Medium</span></td><td><span>Privacy issues</span></td><td><span>Low</span></td></tr><tr><td><span>MySpace fragments</span></td><td><span>Umbrabyte</span></td><td><span>Low</span></td><td><span>Medium</span></td><td><span>Very high</span></td><td><span>Consent unclear</span></td><td><span>Low-Medium</span></td></tr><tr><td><span>Flash games</span></td><td><span>Archaeobyte</span></td><td><span>Medium (Flashpoint)</span></td><td><span>Medium</span></td><td><span>High (emulation)</span></td><td><span>Mostly clear</span></td><td><span>Medium</span></td></tr><tr><td><span>ARPANET docs</span></td><td><span>Petribyte</span></td><td><span>High</span></td><td><span>High</span></td><td><span>Low (already done)</span></td><td><span>Clear</span></td><td><span>Low (maintain)</span></td></tr></tbody></table></figure><p><span>This matrix helps you:</span></p><ul><li><p><strong><span>Compare</span></strong><span> artifacts across multiple dimensions</span></p></li><li><p><strong><span>Justify</span></strong><span> triage decisions (transparency for stakeholders)</span></p></li><li><p><strong><span>Identify gaps</span></strong><span> (categories with no representation)</span></p></li><li><p><strong><span>Track</span></strong><span> how priorities shift over time</span></p></li></ul><hr /><h2 id='conclusion-naming-the-dead'><span>Conclusion: Naming the Dead</span></h2><p><span>The Archaeobyte Taxonomy gives us </span><strong><span>language</span></strong><span> for digital mortality. Before we can save artifacts, we must be able to name their states:</span></p><ul><li><p><span>This GeoCities site is an </span><strong><span>Archaeobyte</span></strong><span>—preserved but not curated</span></p></li><li><p><span>That Twitter account is a </span><strong><span>Vivibyte</span></strong><span>—alive but endangered</span></p></li><li><p><span>Those lost MySpace songs are </span><strong><span>Umbrabytes</span></strong><span>—haunting us from beyond</span></p></li><li><p><span>This early ARPANET email is a </span><strong><span>Petribyte</span></strong><span>—monumentally secure</span></p></li></ul><p><span>Language matters because it shapes action. When we name an artifact a </span><strong><span>Vivibyte</span></strong><span>, we acknowledge its life and its peril. When we call something an </span><strong><span>Umbrabyte</span></strong><span>, we admit it&#39;s dying and may not be saved. When we elevate something to </span><strong><span>Petribyte</span></strong><span>, we commit institutional resources to its long-term survival.</span></p><p><span>The taxonomy isn&#39;t just descriptive—it&#39;s </span><strong><span>diagnostic</span></strong><span>. It tells us where to look, what to save, and how to act.</span></p><p><span>In the next chapter, we&#39;ll explore the </span><strong><span>Archive and the Anvil</span></strong><span>—the dual practices of preservation and creation that define Archaeobytology. For now, practice identifying artifacts in the wild. Look at your own digital life. What category is your Instagram account? Your childhood blog? Your email archive?</span></p><p><span>Learn to see the world through taxonomic eyes. Because once you can name the dead, you can begin to save them.</span></p><hr /><h2 id='discussion-questions'><span>Discussion Questions</span></h2><ol start='' ><li><p><strong><span>On Categories</span></strong><span>: Choose three digital artifacts from your own life (social media profiles, old websites, photos, etc.). Classify each using the Archaeobyte Taxonomy. What does this reveal about your digital mortality?</span></p></li><li><p><strong><span>On Transitions</span></strong><span>: Describe a platform you used that transitioned from Vivibyte to Archaeobyte (or to Umbrabyte). What was that experience like? Did you try to preserve your content?</span></p></li><li><p><strong><span>On Ethics</span></strong><span>: Should we preserve Umbrabytes even when original creators might not want them resurrected? Where&#39;s the line between historical preservation and violation of privacy?</span></p></li><li><p><strong><span>On Canonization</span></strong><span>: Why do some artifacts become Petribytes (monumentally preserved) while others remain Umbrabytes (lost and forgotten)? What biases shape this selection?</span></p></li><li><p><strong><span>On Liminal States</span></strong><span>: Can you think of an artifact that exists in multiple taxonomic states simultaneously? How does that complcomplicate preservation decisions?</span></p></li><li><p><strong><span>On Your Own Mortality</span></strong><span>: If you died tomorrow, what would happen to your digital artifacts? Would they become Archaeobytes (preserved), Umbrabytes (fragments), or simply vanish?</span></p></li></ol><hr /><h2 id='exercise-taxonomic-field-work'><span>Exercise: Taxonomic Field Work</span></h2><p><strong><span>Part 1: Identify and Classify</span></strong></p><p><span>Find five digital artifacts (from your own life or the wider web) and classify each:</span></p><ol start='' ><li><p><strong><span>Artifact name and URL (if applicable)</span></strong></p></li><li><p><strong><span>Taxonomy category</span></strong><span> (Vivibyte, Archaeobyte, Umbrabyte, Petribyte)</span></p></li><li><p><strong><span>Justification</span></strong><span> (Why does it fit this category?)</span></p></li><li><p><strong><span>Transition risk</span></strong><span> (Could it move to a different category? How soon?)</span></p></li><li><p><strong><span>Preservation status</span></strong><span> (Is anyone archiving it? Where?)</span></p></li></ol><p><strong><span>Part 2: Create a Triage Matrix</span></strong></p><p><span>Build a simple triage matrix for your five artifacts using these criteria:</span></p><ul><li><p><span>Cultural significance (1-5 scale)</span></p></li><li><p><span>Endangerment level (1-5 scale)</span></p></li><li><p><span>Preservation difficulty (1-5 scale)</span></p></li><li><p><span>Ethical clarity (1-5 scale, where 5 = clearly ethical to preserve)</span></p></li></ul><p><strong><span>Part 3: Make Triage Decisions</span></strong></p><p><span>Based on your matrix:</span></p><ul><li><p><span>Which artifact is </span><strong><span>highest priority</span></strong><span> to preserve?</span></p></li><li><p><span>Which is </span><strong><span>lowest priority</span></strong><span>?</span></p></li><li><p><span>Are there any you would </span><strong><span>not preserve</span></strong><span> for ethical reasons?</span></p></li></ul><p><strong><span>Part 4: Reflection</span></strong></p><p><span>Write 500 words reflecting on:</span></p><ul><li><p><span>Did the taxonomy help you think more clearly about these artifacts?</span></p></li><li><p><span>Were there artifacts that didn&#39;t fit neatly into categories?</span></p></li><li><p><span>How did you weigh cultural significance against endangerment level?</span></p></li><li><p><span>Did you discover artifacts you&#39;d forgotten about? What was that experience like?</span></p></li></ul><hr /><h2 id='further-reading'><span>Further Reading</span></h2><h3 id='on-digital-mortality-and-preservation'><span>On Digital Mortality and Preservation</span></h3><ul><li><p><span>Chun, Wendy Hui Kyong. &quot;The Enduring Ephemeral, or the Future Is a Memory.&quot; </span><em><span>Critical Inquiry</span></em><span> 35, no. 1 (2008): 148-171.</span></p><ul><li><p><span>Theorizes the paradox of digital &quot;permanence&quot; (everything is archived) and ephemerality (everything decays)</span></p></li></ul></li><li><p><span>Kirschenbaum, Matthew. </span><em><span>Mechanisms: New Media and the Forensic Imagination</span></em><span>. MIT Press, 2008.</span></p><ul><li><p><span>Foundational text on digital forensics and materiality</span></p></li></ul></li><li><p><span>Ernst, Wolfgang. </span><em><span>Digital Memory and the Archive</span></em><span>. University of Minnesota Press, 2013.</span></p><ul><li><p><span>Media archaeology perspective on digital preservation</span></p></li></ul></li></ul><h3 id='on-platform-death'><span>On Platform Death</span></h3><ul><li><p><span>Gillespie, Tarleton. &quot;The Relevance of Algorithms.&quot; In </span><em><span>Media Technologies</span></em><span>, edited by Tarleton Gillespie, Pablo Boczkowski, and Kirsten Foot, 167-194. MIT Press, 2014.</span></p><ul><li><p><span>How platforms shape what persists and what disappears</span></p></li></ul></li><li><p><span>Brügger, Niels. &quot;Website History and the Website as an Object of Study.&quot; </span><em><span>New Media &amp; Society</span></em><span> 11, no. 1-2 (2009): 115-132.</span></p><ul><li><p><span>Theorizes websites as historical objects</span></p></li></ul></li></ul><h3 id='on-taxonomies-and-classification'><span>On Taxonomies and Classification</span></h3><ul><li><p><span>Bowker, Geoffrey C., and Susan Leigh Star. </span><em><span>Sorting Things Out: Classification and Its Consequences</span></em><span>. MIT Press, 1999.</span></p><ul><li><p><span>Classic text on how classification systems shape social reality</span></p></li></ul></li><li><p><span>Foucault, Michel. </span><em><span>The Order of Things</span></em><span>. Vintage, 1994 [1966].</span></p><ul><li><p><span>Philosophical examination of how knowledge systems are organized</span></p></li></ul></li></ul><h3 id='on-specific-cases'><span>On Specific Cases</span></h3><ul><li><p><span>Brügger, Niels, and Ralph Schroeder, eds. </span><em><span>The Web as History</span></em><span>. UCL Press, 2017.</span></p><ul><li><p><span>Case studies of web preservation projects</span></p></li></ul></li><li><p><span>Ankerson, Megan Sapnar. </span><em><span>Dot-com Design: The Rise of a Usable, Social, Commercial Web</span></em><span>. NYU Press, 2018.</span></p><ul><li><p><span>History of early web design, drawing on archived sites</span></p></li></ul></li><li><p><span>Archive Team. &quot;GeoCities: We Didn&#39;t Start the Fire.&quot; </span><a href='https://archiveteam.org/index.php?title=GeoCities' target='_blank' class='url'>https://archiveteam.org/index.php?title=GeoCities</a></p><ul><li><p><span>Primary source documenting the GeoCities rescue</span></p></li></ul></li></ul><hr /><p><strong><span>End of Chapter 2</span></strong></p><p><em><span>Next: Chapter 3 — The Archive and the Anvil: Dual Practices of Preservation and Creation</span></em></p><p>&nbsp;</p></div></div>
 </body>
 </html>

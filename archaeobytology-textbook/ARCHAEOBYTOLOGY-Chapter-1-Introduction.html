@@ -1,813 +1,920 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 1: Introduction to Archaeobytology
- | Archaeobytology</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Lora', serif; line-height: 1.8; color: #2E2E2E; background: #F8F7F4; padding: 2rem 1rem; }
-        .container { max-width: 800px; margin: 0 auto; background: #FFFFFF; padding: 3rem; border-radius: 15px; box-shadow: 0 4px 20px rgba(46,46,46,0.1); border: 1px solid #D1D1D1; }
-        h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; color: #2E2E2E; margin-top: 2rem; margin-bottom: 1rem; line-height: 1.3; }
-        h1 { font-size: 2.5rem; font-weight: 700; margin-top: 0; border-bottom: 3px solid #A1824A; padding-bottom: 0.5rem; }
-        h2 { font-size: 2rem; font-weight: 700; margin-top: 2.5rem; }
-        h3 { font-size: 1.5rem; font-weight: 600; color: #5A7D8C; }
-        h4 { font-size: 1.25rem; font-weight: 600; color: #5A7D8C; }
-        p { margin-bottom: 1.25rem; font-size: 1.1rem; }
-        a { color: #A93400; text-decoration: underline; transition: color 0.3s; }
-        a:hover { color: #A95C3D; }
-        strong { font-weight: 600; }
-        em { font-style: italic; }
-        code { font-family: 'Courier New', monospace; background: #F8F7F4; padding: 0.2rem 0.4rem; border-radius: 3px; border: 1px solid #D1D1D1; }
-        blockquote { border-left: 4px solid #A1824A; padding: 1rem 1.5rem; margin: 1.5rem 0; font-style: italic; color: #5A7D8C; background: #F8F7F4; border-radius: 0 8px 8px 0; }
-        hr { border: none; border-top: 2px solid #D1D1D1; margin: 2rem 0; }
-        .nav { text-align: center; padding: 1rem 0; border-top: 2px solid #D1D1D1; margin-top: 2rem; }
-        .nav a { display: inline-block; padding: 0.75rem 1.5rem; background: #A93400; color: #F8F7F4; text-decoration: none; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 600; margin: 0.5rem; }
-        .nav a:hover { background: #A95C3D; }
-    </style>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'><style type='text/css'>html {overflow-x: initial !important;}</style>
+<style type='text/css'  id="style-base">:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, "Segoe UI Emoji", "SF Pro", sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p *, #write.first-line-indent svg * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
+#write svg h1, #write svg h2, #write svg h3, #write svg h4, #write svg h5, #write svg h6, #write svg p { position: static; }
+.nodeLabel p { padding-right: 2px; padding-left: 2px; }
+.typora-export .nodeLabel p { padding-right: 0px; padding-left: 0px; }
+foreignobject { overflow: visible; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+li p { orphans: 1; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.mermaid-svg { margin: auto; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left: 0.25em solid rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
+
+</style>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;display=swap' type='text/css' />
+<style type='text/css'  id="style-theme_css">/*
+ * Unearth Light Theme for Typora
+ * Based on the Foundry Blueprint 4.1 - unearth.im
+ * 
+ * Color Palette:
+ * - Parchment (Background): #F8F7F4
+ * - Charcoal (Text): #2E2E2E
+ * - Burnt Sienna (Primary Accent): #A93400
+ * - Antique Gold (Secondary Accent): #A1824A
+ * - Slate Blue (Functional Accent): #5A7D8C
+ * - Light Stone: #D1D1D1
+ * - Medium Stone: #8E8E8E
+ *
+ * Typography:
+ * - Narrative: Lora (serif)
+ * - UI/Headlines: Inter (sans-serif)
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+:root {
+    --parchment: #F8F7F4;
+    --charcoal: #2E2E2E;
+    --burnt-sienna: #A93400;
+    --sienna-hover: #A95C3D;
+    --accent-color: #A95C3D;
+    --antique-gold: #A1824A;
+    --slate-blue: #5A7D8C;
+    --meta-text-color: #5A7D8C;
+    --light-stone: #D1D1D1;
+    --border-color: #e0e0e0;
+    --medium-stone: #8E8E8E;
+    --white: #FFFFFF;
+    
+    --font-narrative: 'Lora', Georgia, serif;
+    --font-ui: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
+}
+
+/* ========================================
+   BASE STYLES
+   ======================================== */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-narrative);
+    color: var(--charcoal);
+    background-color: var(--parchment);
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#write {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 64px 80px 100px;
+}
+
+/* ========================================
+   HEADINGS
+   ======================================== */
+
+h1 {
+    font-family: var(--font-narrative);
+    color: var(--charcoal);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-family: var(--font-narrative);
+    color: var(--charcoal);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--light-stone);
+    padding-bottom: 0.5rem;
+}
+
+h3, h4, h5, h6 {
+    font-family: var(--font-ui);
+    color: var(--charcoal);
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 1.25rem;
+    color: var(--charcoal);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+    color: var(--burnt-sienna);
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+h5 {
+    font-size: 1.1rem;
+    color: var(--slate-blue);
+}
+
+h6 {
+    font-size: 1rem;
+    color: var(--medium-stone);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ========================================
+   PARAGRAPHS & TEXT
+   ======================================== */
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.9;
+}
+
+strong, b {
+    font-weight: 700;
+    color: var(--charcoal);
+}
+
+em, i {
+    font-style: italic;
+}
+
+/* ========================================
+   LINKS
+   ======================================== */
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-color);
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    background-color: rgba(169, 92, 61, 0.1);
+    border-bottom-color: transparent;
+}
+
+/* ========================================
+   BLOCKQUOTES
+   ======================================== */
+
+blockquote {
+    margin: 2rem 0;
+    padding: 1.5rem 2rem;
+    border-left: 4px solid var(--antique-gold);
+    background-color: rgba(161, 130, 74, 0.08);
+    border-radius: 0 4px 4px 0;
+    color: var(--charcoal);
+}
+
+blockquote p {
+    margin: 0.5rem 0;
+    line-height: 1.8;
+}
+
+blockquote blockquote {
+    margin-left: 1rem;
+    border-left-color: var(--slate-blue);
+    background-color: rgba(90, 125, 140, 0.08);
+}
+
+/* ========================================
+   CODE
+   ======================================== */
+
+code {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    background-color: rgba(209, 209, 209, 0.4);
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    color: var(--burnt-sienna);
+}
+
+/* Code blocks */
+pre {
+    font-family: var(--font-mono);
+    background-color: var(--charcoal);
+    color: var(--parchment);
+    padding: 1rem 1.25rem;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    line-height: 1.6;
+}
+
+pre code {
+    background: none;
+    padding: 0;
+    color: inherit;
+    font-size: 0.875rem;
+}
+
+/* Code block with line numbers */
+.md-fences {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    background-color: var(--charcoal);
+    color: var(--parchment);
+    border: none;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1.5rem 0;
+}
+
+.CodeMirror-lines {
+    padding: 0;
+}
+
+/* ========================================
+   LISTS
+   ======================================== */
+
+ul, ol {
+    padding-left: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+li {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.9;
+}
+
+li > ul, li > ol {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+li > ul > li, li > ol > li {
+    margin-bottom: 0.5rem;
+}
+
+/* Unordered list markers */
+ul > li::marker {
+    color: var(--burnt-sienna);
+}
+
+/* Ordered list markers */
+ol > li::marker {
+    color: var(--antique-gold);
+    font-family: var(--font-ui);
+    font-weight: 600;
+}
+
+/* Task lists */
+.task-list-item {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.task-list-item input[type="checkbox"] {
+    margin-right: 0.5rem;
+    accent-color: var(--burnt-sienna);
+}
+
+/* ========================================
+   HORIZONTAL RULE
+   ======================================== */
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, var(--light-stone), var(--antique-gold), var(--light-stone));
+    margin: 2.5rem 0;
+}
+
+/* ========================================
+   TABLES
+   ======================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-family: var(--font-ui);
+    font-size: 0.9rem;
+}
+
+thead {
+    background-color: var(--charcoal);
+    color: var(--parchment);
+}
+
+th {
+    font-weight: 600;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--charcoal);
+}
+
+td {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--light-stone);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(209, 209, 209, 0.2);
+}
+
+tbody tr:hover {
+    background-color: rgba(161, 130, 74, 0.1);
+}
+
+/* ========================================
+   IMAGES
+   ======================================== */
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 1rem 0;
+    box-shadow: 0 2px 8px rgba(46, 46, 46, 0.1);
+}
+
+/* Image captions */
+figure {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+figcaption {
+    font-family: var(--font-ui);
+    font-size: 0.875rem;
+    color: var(--medium-stone);
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* ========================================
+   FOOTNOTES
+   ======================================== */
+
+.footnotes {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--light-stone);
+}
+
+.footnotes h2 {
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
+.footnotes ol {
+    padding-left: 20px;
+    color: #555;
+}
+
+.footnotes li {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.footnotes p {
+    font-size: 0.85rem;
+    margin-bottom: 0;
+}
+
+.footnote-ref, sup a {
+    font-family: var(--font-ui);
+    font-size: 0.8em;
+    font-weight: 600;
+    vertical-align: super;
+    color: var(--burnt-sienna);
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.footnote-ref:hover, sup a:hover {
+    background-color: transparent;
+}
+
+sup.md-footnote {
+    font-family: var(--font-ui);
+    font-size: 0.8em;
+    font-weight: 600;
+    color: var(--burnt-sienna);
+    background-color: transparent;
+    padding: 0;
+}
+
+/* ========================================
+   DEFINITION LISTS
+   ======================================== */
+
+dl {
+    margin: 1rem 0;
+}
+
+dt {
+    font-family: var(--font-ui);
+    font-weight: 700;
+    color: var(--burnt-sienna);
+    margin-top: 1rem;
+}
+
+dd {
+    margin-left: 1.5rem;
+    margin-top: 0.25rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--light-stone);
+}
+
+/* ========================================
+   MARK / HIGHLIGHT
+   ======================================== */
+
+mark {
+    background-color: rgba(161, 130, 74, 0.3);
+    color: var(--charcoal);
+    padding: 0.1rem 0.3rem;
+    border-radius: 2px;
+}
+
+/* ========================================
+   STRIKETHROUGH
+   ======================================== */
+
+del, s {
+    color: var(--medium-stone);
+    text-decoration: line-through;
+}
+
+/* ========================================
+   KEYBOARD
+   ======================================== */
+
+kbd {
+    font-family: var(--font-ui);
+    font-size: 0.85em;
+    background-color: var(--light-stone);
+    border: 1px solid var(--medium-stone);
+    border-radius: 3px;
+    padding: 0.1rem 0.4rem;
+    box-shadow: 0 1px 2px rgba(46, 46, 46, 0.1);
+}
+
+/* ========================================
+   ABBREVIATIONS
+   ======================================== */
+
+abbr {
+    text-decoration: underline dotted var(--slate-blue);
+    cursor: help;
+}
+
+/* ========================================
+   SELECTION
+   ======================================== */
+
+::selection {
+    background-color: rgba(169, 52, 0, 0.2);
+    color: var(--charcoal);
+}
+
+::-moz-selection {
+    background-color: rgba(169, 52, 0, 0.2);
+    color: var(--charcoal);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - SIDEBAR
+   ======================================== */
+
+#typora-sidebar {
+    background-color: var(--parchment);
+    border-right: 1px solid var(--light-stone);
+}
+
+.sidebar-content {
+    font-family: var(--font-ui);
+}
+
+.file-tree-node.active > .file-node-content {
+    background-color: rgba(169, 52, 0, 0.1);
+    color: var(--burnt-sienna);
+}
+
+.file-tree-node:hover > .file-node-content {
+    background-color: rgba(209, 209, 209, 0.3);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - SOURCE MODE
+   ======================================== */
+
+.cm-s-typora-default .cm-header {
+    color: var(--burnt-sienna);
+}
+
+.cm-s-typora-default .cm-link {
+    color: var(--slate-blue);
+}
+
+.cm-s-typora-default .cm-string {
+    color: var(--antique-gold);
+}
+
+.cm-s-typora-default .cm-comment {
+    color: var(--medium-stone);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - FOCUS MODE
+   ======================================== */
+
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) * {
+    color: var(--light-stone) !important;
+}
+
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) img {
+    opacity: 0.5;
+}
+
+/* ========================================
+   TYPORA SPECIFIC - MEGAMENU
+   ======================================== */
+
+.megamenu-menu-panel {
+    background-color: var(--parchment);
+    font-family: var(--font-ui);
+}
+
+.megamenu-menu-panel .btn {
+    background-color: var(--burnt-sienna);
+    color: var(--parchment);
+}
+
+.megamenu-menu-panel .btn:hover {
+    background-color: var(--sienna-hover);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - SEARCH
+   ======================================== */
+
+#md-searchpanel {
+    background-color: var(--parchment);
+    border-bottom: 1px solid var(--light-stone);
+}
+
+#md-searchpanel input {
+    font-family: var(--font-ui);
+    background-color: var(--white);
+    border: 1px solid var(--light-stone);
+    border-radius: 4px;
+}
+
+#md-searchpanel input:focus {
+    border-color: var(--burnt-sienna);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(169, 52, 0, 0.15);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - TOOLTIP
+   ======================================== */
+
+.md-hover-tip .md-arrow:after {
+    background-color: var(--charcoal);
+}
+
+.md-hover-tip .code-tooltip-content {
+    background-color: var(--charcoal);
+    color: var(--parchment);
+    font-family: var(--font-ui);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - META BLOCK
+   ======================================== */
+
+.md-meta-block {
+    background-color: rgba(209, 209, 209, 0.3);
+    border-radius: 6px;
+    padding: 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--medium-stone);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - TABLE OF CONTENTS
+   ======================================== */
+
+.md-toc {
+    font-family: var(--font-ui);
+}
+
+.md-toc-h1 {
+    font-weight: 700;
+    color: var(--charcoal);
+}
+
+.md-toc-h2 {
+    font-weight: 600;
+    color: var(--burnt-sienna);
+}
+
+.md-toc-h3, .md-toc-h4, .md-toc-h5, .md-toc-h6 {
+    color: var(--medium-stone);
+}
+
+/* ========================================
+   SCROLLBAR
+   ======================================== */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--parchment);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--light-stone);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--medium-stone);
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+
+@media print {
+    html {
+        font-size: 12pt;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+    
+    #write {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        color: black;
+        page-break-after: avoid;
+    }
+    
+    pre, blockquote {
+        page-break-inside: avoid;
+    }
+    
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+    
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        color: #666;
+    }
+}
+</style>
+<style type='text/css'  id="style-lp">ol, ul {padding-left: 40px}</style>
+
+<title>TEXTBOOK-Chapter-1-Introduction</title>
 </head>
-<body>
-    <div class="container">
-        <article>
-<h1>Chapter 1: Introduction to Archaeobytology
-</h1>
-
-<h2>Opening Vignette: The Day GeoCities Died
-</h2>
-
-<p>
-On October 26, 2009, Yahoo announced that GeoCities—one of the earliest and largest web hosting services—would shut down in less than three weeks. What followed was a frantic rescue operation. A loose network of digital preservationists calling themselves "Archive Team" mobilized immediately, recruiting volunteers to scrape as many sites as possible before the November deadline. Working around the clock across time zones, they managed to save approximately 650 gigabytes of data—a fraction of the estimated terabytes that had accumulated since GeoCities launched in 1994.
-</p>
-
-<p>
-When the servers went dark on October 26, 2009, roughly 30 million websites vanished from the internet. Personal homepages that teenagers had built in the late 1990s. Fan sites dedicated to <em>Sailor Moon</em> and <em>Dragon Ball Z</em>. Memorial pages for loved ones. Experimental art projects. Tutorials on HTML and web design. An entire era of digital culture—messy, earnest, strange, and deeply human—was murdered by a single corporate decision.
-</p>
-
-<p>
-This wasn't obsolescence. These sites didn't decay naturally or become technically incompatible. They were <em>deliberately killed</em> by a platform that no longer found them profitable. And because GeoCities users didn't own their digital ground—they were renting space at geocities.com/neighborhood/username—they had no recourse. When Yahoo turned off the servers, those 30 million voices simply... disappeared.
-</p>
-
-<p>
-Or almost disappeared. Thanks to Archive Team's heroic effort, fragments survived. But even those rescued artifacts present new problems: they exist in a massive, unsearchable data dump. No context. No curation. No way to understand why a particular site mattered or what community it represented. The bits are preserved, but the <em>meaning</em> is lost.
-</p>
-
-<p>
-This is the problem Archaeobytology was created to solve.
-</p>
-
-<h2>What Is Archaeobytology?
-</h2>
-
-<p>
-<strong>Archaeobytology</strong> is the study and practice of excavating, preserving, interpreting, and building with digital artifacts—particularly those that have been "murdered" by platform shutdowns or rendered obsolete by technological change.
-</p>
-
-<p>
-The term combines three roots:<br>
-- <strong>Archaeo-</strong> (Greek: ancient, old) — invoking archaeology's commitment to recovering and interpreting the past<br>
-- <strong>-byte-</strong> (computing unit) — grounding the discipline in digital materiality<br>
-- <strong>-ology</strong> (study of) — claiming status as a rigorous intellectual discipline
-</p>
-
-<p>
-But Archaeobytology is more than just "digital archaeology." It encompasses:
-</p>
-
-<p>
-1. <strong>Theoretical frameworks</strong> for understanding digital mortality, platform power, and technological sovereignty<br>
-2. <strong>Practical methods</strong> for excavation, preservation, and forensic analysis<br>
-3. <strong>Institutional design</strong> for building organizations that can sustain preservation work for decades<br>
-4. <strong>Political advocacy</strong> for laws and policies that protect digital culture from corporate erasure<br>
-5. <strong>Creative practice</strong> of forging new tools, monuments, and systems that embody principles of digital sovereignty
-</p>
-
-<p>
-Unlike adjacent fields—digital history, media archaeology, library science, or computer science—Archaeobytology insists on a dual commitment: we are both <strong>archivists and builders</strong>, both <strong>scholars and smiths</strong>. We preserve what platforms murder, <em>and</em> we forge alternatives that resist future murders.
-</p>
-
-<h2>Why We Need a New Discipline
-</h2>
-
-<h3>The Inadequacy of Existing Fields
-</h3>
-
-<p>
-When GeoCities died, where were the experts? Digital historians could analyze what was lost, but they lacked the technical skills to mount a rescue. Computer scientists could write scraping scripts, but they lacked frameworks for ethical triage or cultural curation. Librarians understood preservation, but most weren't equipped to reverse-engineer dying platforms or navigate copyright gray areas.
-</p>
-
-<p>
-The problem wasn't lack of expertise—it was <strong>fragmentation</strong>. The skills needed to address platform death are scattered across multiple disciplines, none of which fully claim this territory:
-</p>
-
-<p>
-- <strong>Computer Science</strong> treats digital objects as technical problems, not cultural artifacts<br>
-- <strong>History</strong> studies the past but rarely intervenes to preserve the present<br>
-- <strong>Library Science</strong> excels at cataloging but often lacks technical depth for complex digital formats<br>
-- <strong>Media Archaeology</strong> theorizes dead media but doesn't always prioritize active preservation<br>
-- <strong>Cultural Studies</strong> critiques platforms but rarely builds alternatives
-</p>
-
-<p>
-Archaeobytology argues that digital preservation requires a <strong>unified discipline</strong> that combines:<br>
-- Technical skill (excavation, forensics, emulation)<br>
-- Humanistic interpretation (curation, contextualization, ethics)<br>
-- Institutional expertise (sustainable organizations, governance models)<br>
-- Political engagement (policy advocacy, movement building)<br>
-</p>
-
-<p>
-No existing field does all of this. That's why we need a new one.
-</p>
-
-<h3>The Scale of the Crisis
-</h3>
-
-<p>
-Platform death isn't a niche problem. It's accelerating:
-</p>
-
-<p>
-<strong>Major Platform Shutdowns (2000-2024):</strong><br>
-- GeoCities (2009): 30 million sites<br>
-- Google Reader (2013): Millions of curated RSS feeds<br>
-- Vine (2017): 200 million short videos<br>
-- Google+ (2019): User profiles, communities, content<br>
-- Mixer (2020): Game streaming platform<br>
-- Tumblr NSFW purge (2018): Millions of posts deleted<br>
-- Twitter's chaos (2022-present): Uncertain future, mass exodus<br>
-- Countless smaller platforms: Ello, Peach, Path, Plurk, FriendFeed...<br>
-</p>
-
-<p>
-Each shutdown represents not just technical infrastructure dying, but <strong>communities</strong>, <strong>memories</strong>, <strong>identities</strong>, and <strong>cultural artifacts</strong> being erased. And unlike physical artifacts—which decay slowly, giving civilizations time to respond—digital artifacts can vanish overnight.
-</p>
-
-<p>
-Moreover, we're not just losing content. We're losing:<br>
-- <strong>Social graphs</strong>: Who was connected to whom<br>
-- <strong>Affordances</strong>: How platforms shaped communication (Twitter's 140 characters, Vine's 6 seconds)<br>
-- <strong>Aesthetics</strong>: Platform-specific design cultures (GeoCities' <blink> tags, Tumblr's GIF aesthetic)<br>
-- <strong>Communities</strong>: Specialized subcultures that formed around platform features<br>
-</p>
-
-<p>
-This isn't just cultural loss—it's <strong>cultural murder</strong>. And it's happening faster than any single discipline can address.
-</p>
-
-<h2>The Three Pillars: A Framework for Digital Sovereignty
-</h2>
-
-<p>
-At the heart of Archaeobytology lies a normative commitment: we believe digital culture should be <strong>sovereign</strong>—independent from corporate control, resistant to platform shutdown, and owned by the people who create it.
-</p>
-
-<p>
-We call this framework <strong>The Three Pillars</strong>, drawing on both ancient philosophy (the Greek concept of <em>authentikos</em>, self-originating authority) and practical infrastructure design. A digitally sovereign presence requires three interdependent foundations:
-</p>
-
-<h3>Pillar 1: Declaration (I Am)
-</h3>
-
-<p>
-<strong>The Principle:</strong> You should be able to declare your identity and existence without permission from a platform or intermediary.
-</p>
-
-<p>
-When you create a Facebook profile, Facebook owns your identity. If they ban you, "you" cease to exist—at least in that digital space. Your name, photos, relationships, and history are controlled by an entity that can revoke them at will.
-</p>
-
-<p>
-<strong>Sovereign declaration</strong> means:<br>
-- Your identity is <strong>self-hosted</strong> (username@yourdomain.com, not username@gmail.com)<br>
-- Your presence is <strong>persistent</strong> (your website outlives any platform)<br>
-- Your voice is <strong>uncensorable</strong> (no corporate ToS can silence you on your own ground)<br>
-</p>
-
-<p>
-This doesn't mean freedom from all consequences—legal systems, community norms, and social accountability still apply. But it means <strong>platforms cannot unilaterally erase you</strong>.
-</p>
-
-<p>
-<strong>Historical precedent:</strong> In the early web (1990s-2000s), personal homepages embodied this principle. You bought a domain, hosted your site, and declared yourself to the internet. GeoCities degraded this model by making addresses hierarchical (geocities.com/neighborhood/you) rather than sovereign (you.com). Social media completed the enclosure by eliminating personal domains entirely.
-</p>
-
-<h3>Pillar 2: Connection (Instant Message)
-</h3>
-
-<p>
-<strong>The Principle:</strong> You should be able to communicate directly with others without a platform mediating, monitoring, or monetizing your relationships.
-</p>
-
-<p>
-Platforms don't just host our content—they <strong>control our connections</strong>. Facebook decides who sees your posts (algorithmic curation). Twitter can prevent you from messaging someone (shadowbanning). Instagram owns the graph of your followers (you can't export it).
-</p>
-
-<p>
-<strong>Sovereign connection</strong> means:<br>
-- Communication is <strong>peer-to-peer</strong> or <strong>federated</strong> (not routed through corporate servers)<br>
-- Relationships are <strong>exportable</strong> (if you leave a platform, your network comes with you)<br>
-- Discovery is <strong>intentional</strong> (you choose who to connect with, not an algorithm)<br>
-</p>
-
-<p>
-This is why email—for all its flaws—remains more sovereign than social media. If Gmail shuts down, you can take your address to another provider. If your contacts have their own domains (name@theirdomain.com), you can reach them directly.
-</p>
-
-<p>
-<strong>The challenge:</strong> Network effects make this hard. If everyone is on Twitter, leaving Twitter means losing access to your community. Sovereignty requires <strong>interoperability</strong>—the ability to communicate across platforms, or to bring your network with you when you migrate.
-</p>
-
-<h3>Pillar 3: Ground (Digital Real Estate)
-</h3>
-
-<p>
-<strong>The Principle:</strong> You should own the infrastructure your digital life is built on—not rent it from a landlord who can evict you.
-</p>
-
-<p>
-GeoCities users thought they had websites. They didn't. They had <strong>leases</strong> on someone else's servers. When Yahoo decided those leases weren't profitable, they terminated them. No appeals, no alternatives, no recourse.
-</p>
-
-<p>
-<strong>Sovereign ground</strong> means:<br>
-- You own your <strong>domain name</strong> (example.com, not facebook.com/example)<br>
-- You control your <strong>hosting</strong> (self-hosted or a provider you can migrate away from)<br>
-- Your data is <strong>exportable</strong> (you can take it with you, in usable formats)
-</p>
-
-<p>
-This doesn't require technical expertise. Thousands of people own domains and use managed hosting services like WordPress.com or Ghost(Pro). The key is <strong>portability</strong>: if the service shuts down or changes terms, you can move.
-</p>
-
-<p>
-<strong>The analogy:</strong> Owning ground is like owning land versus renting an apartment. A landlord can raise rent, change rules, or evict you. But if you own land, you have sovereignty—subject to laws, but not to arbitrary corporate power.
-</p>
-
-<h2>The Dual Soul: Archive and Anvil
-</h2>
-
-<p>
-Archaeobytology is not just a preservationist discipline. We insist on a <strong>dual practice</strong>:
-</p>
-
-<h3>The Archive: Preservation and Memory
-</h3>
-
-<p>
-The <strong>Archive</strong> represents our commitment to:<br>
-- <strong>Excavate</strong> murdered platforms before they vanish completely<br>
-- <strong>Preserve</strong> artifacts with technical and cultural fidelity<br>
-- <strong>Curate</strong> collections that make sense of vast data dumps<br>
-- <strong>Interpret</strong> artifacts so future generations understand their significance<br>
-</p>
-
-<p>
-Archival work requires:<br>
-- Technical skills (web scraping, forensic recovery, emulation)<br>
-- Ethical frameworks (what should be preserved? what should be forgotten?)<br>
-- Institutional knowledge (how do you build organizations that last 50 years?)<br>
-</p>
-
-<p>
-The Archive is <strong>retrospective</strong>: it looks backward to save what's endangered.
-</p>
-
-<h3>The Anvil: Creation and Resistance
-</h3>
-
-<p>
-The <strong>Anvil</strong> represents our commitment to:<br>
-- <strong>Forge</strong> tools that empower digital sovereignty (domain registration services, self-hosting platforms, open protocols)<br>
-- <strong>Build</strong> monuments that embody our values (websites, platforms, frameworks designed for permanence)<br>
-- <strong>Design</strong> institutions that resist platform capture (non-profit archives, cooperative hosting services, federated networks)<br>
-</p>
-
-<p>
-The work of the Anvil requires:<br>
-- Creative practice (making things that don't yet exist)<br>
-- Systems thinking (how do you design for resilience?)<br>
-- Political imagination (what does a post-platform future look like?)<br>
-</p>
-
-<p>
-The Anvil is <strong>prospective</strong>: it looks forward to build alternatives.
-</p>
-
-<h3>Why Both Are Necessary
-</h3>
-
-<p>
-You cannot be only an archivist. If you preserve everything but build nothing, you're a curator in a warehouse—keeping records of a world dominated by platforms, never challenging that dominance.
-</p>
-
-<p>
-You cannot be only a builder. If you forge alternatives but never preserve the past, you lose the lessons of history. Each new generation reinvents the wheel, repeating old mistakes.
-</p>
-
-<p>
-<strong>The Archaeobytologist embodies both</strong>: we save the murdered web, <em>and</em> we build systems that can't be murdered.
-</p>
-
-<h2>Triage: The Central Methodology
-</h2>
-
-<p>
-The most painful truth of Archaeobytology: <strong>you cannot save everything</strong>.
-</p>
-
-<p>
-When a platform announces shutdown, you have limited time, limited storage, limited volunteers. You must make choices. This is <strong>triage</strong>—borrowed from emergency medicine, where doctors must decide which patients to treat first when resources are scarce.
-</p>
-
-<h3>The Custodial Filter
-</h3>
-
-<p>
-We use the <strong>Custodial Filter</strong> as our ethical framework for triage decisions. Before preserving an artifact, we ask five questions:
-</p>
-
-<p>
-1. <strong>Cultural Significance</strong>: Does this artifact represent a community, movement, or cultural moment that would otherwise be lost?
-</p>
-
-<p>
-2. <strong>Technical Fragility</strong>: How close to disappearance is this? (A site archived by Internet Archive is less urgent than one that isn't.)
-</p>
-
-<p>
-3. <strong>Rescue Difficulty</strong>: How hard is this to preserve? (Simple HTML is easier than complex Flash applications.)
-</p>
-
-<p>
-4. <strong>Existing Redundancy</strong>: Is someone else already preserving this? (Don't duplicate effort when time is scarce.)
-</p>
-
-<p>
-5. <strong>Consent and Ethics</strong>: <em>Should</em> we preserve this? Does it violate someone's privacy, contain traumatic content, or cause harm by existing?
-</p>
-
-<p>
-The fifth question is critical. Not everything that <em>can</em> be preserved <em>should</em> be. Revenge porn, doxxing, harassment campaigns—these are digital artifacts too, but preserving them can perpetuate harm. The Custodial Filter requires us to think beyond technical feasibility to <strong>ethical responsibility</strong>.
-</p>
-
-<h3>Triage in Practice: The Archive Team Model
-</h3>
-
-<p>
-When Vine announced its shutdown in 2016, Archive Team had roughly six weeks to save 200 million videos. Impossible to save them all. They triaged:
-</p>
-
-<p>
-- <strong>Highest priority</strong>: Videos with significant cultural impact (viral memes, influential creators, historically important moments)
-- <strong>Medium priority</strong>: Representative samples of different communities, genres, and time periods
-- <strong>Lower priority</strong>: Duplicates, spam, commercial advertisements
-</p>
-
-<p>
-Even then, they couldn't manually curate 200 million items. So they used <strong>algorithmic triage</strong>: view counts, shares, and community-submitted nominations. Imperfect, but pragmatic.
-</p>
-
-<p>
-The result: they saved millions of videos, but not all. Some Vines are lost forever. Triage accepts this tragedy as unavoidable, while working to minimize the loss.
-</p>
-
-<h2>A Brief History of Digital Mortality
-</h2>
-
-<p>
-Digital culture has always been ephemeral, but the <strong>causes</strong> of mortality have evolved:
-</p>
-
-<h3>Era 1: Technological Obsolescence (1960s-1990s)
-</h3>
-
-<p>
-Early digital artifacts died because the <strong>hardware or software</strong> became incompatible:
-- Floppy disks degraded physically
-- File formats became unreadable (WordStar, AppleWorks)
-- Storage media evolved (punch cards → magnetic tape → hard drives)
-</p>
-
-<p>
-This was <strong>passive death</strong>—artifacts decayed like ancient papyrus. The solution was technical: emulation, format migration, hardware preservation.
-</p>
-
-<h3>Era 2: Link Rot and Neglect (1990s-2000s)
-</h3>
-
-<p>
-As the web grew, artifacts died because:
-- Website owners stopped paying for hosting
-- Domains expired and were re-registered by squatters
-- Links broke as sites moved or vanished
-</p>
-
-<p>
-This was <strong>death by neglect</strong>—the equivalent of abandoning a physical archive to water damage and mold. The solution was institutional: projects like the Internet Archive's Wayback Machine, which proactively crawled and preserved sites.
-</p>
-
-<h3>Era 3: Platform Murder (2000s-present)
-</h3>
-
-<p>
-In the social media era, artifacts die because <strong>platforms choose to kill them</strong>:
-- Corporate shutdowns (GeoCities, Vine, Google Reader)
-- Terms of Service purges (Tumblr NSFW ban, YouTube's algorithmic demonetization)
-- Acquisition and closure (platforms bought and killed by competitors)
-</p>
-
-<p>
-This is <strong>active murder</strong>—deliberate erasure. The solution isn't just technical or institutional—it's <strong>political</strong>. We need laws, rights, and alternatives.
-</p>
-
-<p>
-Archaeobytology emerged in response to this third era. We're not just fighting entropy or neglect—we're fighting <strong>corporate power</strong>.
-</p>
-
-<h2>What Makes Archaeobytology Different?
-</h2>
-
-<h3>Not Digital History
-</h3>
-
-<p>
-Digital historians study the past. Archaeobytologists <strong>intervene</strong> in the present to <em>create</em> a future past. When Archive Team scraped GeoCities, they weren't analyzing history—they were <em>making</em> it possible for future historians to have something to analyze.
-</p>
-
-<h3>Not Media Archaeology
-</h3>
-
-<p>
-Media archaeologists theorize dead media. Archaeobytologists <strong>rescue</strong> dying media before they become dead. We're applied, not purely theoretical. We get our hands dirty with code, servers, and scrapers.
-</p>
-
-<h3>Not Library Science
-</h3>
-
-<p>
-Librarians excel at cataloging, access, and preservation—but within established frameworks. Archaeobytology operates in <strong>legal and technical gray areas</strong>: scraping platforms that didn't consent, preserving copyrighted material under dubious fair use claims, reverse-engineering proprietary formats.
-</p>
-
-<p>
-We respect librarians deeply. But we do things they often can't or won't do.
-</p>
-
-<h3>Not Computer Science
-</h3>
-
-<p>
-Computer scientists can write scrapers and build emulators. But they often lack frameworks for <strong>curation, ethics, and cultural interpretation</strong>. A computer scientist might preserve every byte. An Archaeobytologist asks: <em>Should we? What does this mean? How do we make it legible?</em>
-</p>
-
-<h3>Not Just Activism
-</h3>
-
-<p>
-Archaeobytology isn't pure advocacy. We build theoretical frameworks, develop rigorous methods, and create institutions. We're scholars <em>and</em> activists—but the scholarship matters.
-</p>
-
-<h2>The Crisis of Legitimacy
-</h2>
-
-<p>
-Archaeobytology faces a credibility problem: <strong>we don't exist yet</strong>.
-</p>
-
-<p>
-There are no Archaeobytology departments at universities. No tenure-track jobs with "Archaeobytologist" in the title. No dedicated funding streams from NSF or NEH. When we tell people we're Archaeobytologists, they ask, "What's that?"
-</p>
-
-<p>
-This book is part of solving that problem. By codifying our theories, methods, and practices, we make the discipline <strong>real</strong>. By teaching courses, publishing research, and building institutions, we establish <strong>legitimacy</strong>.
-</p>
-
-<p>
-Disciplines don't emerge naturally—they're <strong>constructed</strong> through collective action:
-- Journals and conferences create scholarly community
-- Textbooks standardize knowledge
-- Degree programs train new generations
-- Professional organizations provide structure
-- Public advocacy wins recognition
-</p>
-
-<p>
-This book is a founding document. You're reading it early in the discipline's life. In 20 years, Archaeobytology might be as established as Data Science or Digital Humanities. Or it might remain a niche practice, known only to specialists.
-</p>
-
-<p>
-That outcome depends on us.
-</p>
-
-<h2>Who Is This Book For?
-</h2>
-
-<h3>Undergraduate Students
-</h3>
-<p>
-If you're considering a career in digital preservation, museum curation, or tech ethics, this book provides foundational knowledge. Each chapter includes exercises and case studies to build practical skills.
-</p>
-
-<h3>Graduate Students and Researchers
-</h3>
-<p>
-If you're writing a dissertation on platform death, digital memory, or technological sovereignty, this book offers theoretical frameworks and methodologies you can adapt.
-</p>
-
-<h3>Practitioners
-</h3>
-<p>
-If you work in libraries, archives, museums, or tech companies, this book gives you tools to advocate for preservation work and design sustainable institutions.
-</p>
-
-<h3>Activists and Advocates
-</h3>
-<p>
-If you're fighting for digital rights, platform accountability, or data sovereignty, this book provides evidence and arguments for policy change.
-</p>
-
-<h3>The Curious Public
-</h3>
-<p>
-If you've ever wondered what happened to your MySpace profile, your LiveJournal, or that website you made in 2003, this book explains why they disappeared—and what we can do about it.
-</p>
-
-<h2>How to Use This Book
-</h2>
-
-<h3>Structure
-</h3>
-
-<p>
-The book is organized into <strong>five parts</strong>:
-</p>
-
-<p>
-<strong>Part I: Foundations (Chapters 1-6)</strong> introduces core concepts: the Archaeobyte taxonomy, the Archive/Anvil framework, the Three Pillars, and triage methodology.
-</p>
-
-<p>
-<strong>Part II: Excavation & Forensics (Chapters 7-10)</strong> teaches practical methods for recovering and analyzing digital artifacts.
-</p>
-
-<p>
-<strong>Part III: Institution Building (Chapters 11-14)</strong> shows how to design organizations that sustain preservation work for decades.
-</p>
-
-<p>
-<strong>Part IV: Systems & Movements (Chapters 15-16)</strong> addresses political economy: who controls digital infrastructure, and how do we build alternatives?
-</p>
-
-<p>
-<strong>Part V: Public Scholarship & The Future (Chapters 17-18)</strong> explores how Archaeobytologists can translate research into public discourse, policy, and cultural change.
-</p>
-
-<h3>Pedagogy
-</h3>
-
-<p>
-Each chapter includes:
-- <strong>Case Studies</strong>: Real-world examples of platform death, preservation projects, and institution-building
-- <strong>Discussion Questions</strong>: Prompts for classroom or reading group conversations
-- <strong>Exercises</strong>: Hands-on activities to build skills (accessible to readers with varying technical backgrounds)
-- <strong>Further Reading</strong>: Curated bibliography for deeper exploration
-</p>
-
-<h3>Teaching with This Book
-</h3>
-
-<p>
-<strong>For a 15-week undergraduate survey course</strong>, cover one chapter per week. Focus on Part I (Foundations) and Part II (Methods), with selected chapters from Part III.
-</p>
-
-<p>
-<strong>For a graduate seminar</strong>, assume students have read the entire book. Use class time for deep discussion of case studies, triage dilemmas, and institutional design challenges. Assign a capstone project: design a preservation organization, memory institution, or movement campaign.
-</p>
-
-<p>
-<strong>For professional development</strong>, organize a reading group among librarians, archivists, or tech workers. Each week, one person presents a chapter and leads discussion. Focus on how frameworks apply to your workplace.
-</p>
-
-<h2>A Provocation: Why Bother?
-</h2>
-
-<p>
-Let's be honest: most people don't care that GeoCities died. They don't think about digital preservation. They assume "the internet remembers everything" (it doesn't) or that "tech companies will handle it" (they won't).
-</p>
-
-<p>
-So why bother? Why build a discipline around saving things most people forgot existed?
-</p>
-
-<p>
-Three answers:
-</p>
-
-<h3>1. Memory Is Power
-</h3>
-
-<p>
-Who controls the past controls the present. Platforms curate our memories—deciding which photos Facebook shows you in "On This Day," which tweets trend, which YouTube videos get recommended. When platforms die, they take our memories with them.
-</p>
-
-<p>
-Preserving murdered platforms is an act of <strong>resistance against corporate memory control</strong>. It insists that our digital lives belong to us, not to companies that can erase them at will.
-</p>
-
-<h3>2. Culture Dies in Darkness
-</h3>
-
-<p>
-Every generation deserves access to the cultural artifacts of previous generations. Historians study ancient Rome through pottery fragments. Future historians will study early internet culture through GeoCities sites—if we save them.
-</p>
-
-<p>
-If we don't preserve digital culture, it vanishes. No ruins, no fragments. Just absence. Future generations won't even know what they're missing.
-</p>
-
-<h3>3. Building Alternatives Requires Understanding Failures
-</h3>
-
-<p>
-You can't design a sovereign internet if you don't understand how platforms murdered the old one. Every shutdown teaches lessons:
-- Why didn't GeoCities users own their domains?
-- Why couldn't Vine videos be exported?
-- Why did Google Reader's death destroy thousands of curated feeds?
-</p>
-
-<p>
-Studying murdered platforms isn't nostalgia—it's <strong>learning how to build systems that can't be murdered</strong>.
-</p>
-
-<h2>The Archaeobytologist's Vow
-</h2>
-
-<p>
-As you read this book, you're joining a community. We're small now—scattered practitioners, archivists, activists, scholars. But we're growing.
-</p>
-
-<p>
-If you embrace this work, you're making an implicit commitment:
-</p>
-
-<p>
-<strong>I will not let digital culture die in silence.</strong>
-</p>
-
-<p>
-<strong>I will excavate what platforms murder.</strong>
-</p>
-
-<p>
-<strong>I will build systems that resist future murder.</strong>
-</p>
-
-<p>
-<strong>I will teach others to do the same.</strong>
-</p>
-
-<p>
-<strong>I am a scholar and a smith, a custodian and a strategist.</strong>
-</p>
-
-<p>
-<strong>I own my ground. I tell my story. I forge my future.</strong>
-</p>
-
-<p>
-<strong>I am an Archaeobytologist.</strong>
-</p>
-
-<h2>Looking Ahead
-</h2>
-
-<p>
-The rest of this book will equip you with:
-- <strong>Theory</strong>: Rigorous frameworks for understanding digital death (Chapters 2-6)
-- <strong>Methods</strong>: Practical skills for excavation and preservation (Chapters 7-10)
-- <strong>Institutions</strong>: Models for sustainable organizations (Chapters 11-14)
-- <strong>Systems</strong>: Alternatives to platform capitalism (Chapters 15-16)
-- <strong>Impact</strong>: Strategies for public scholarship and policy change (Chapters 17-18)
-</p>
-
-<p>
-By the end, you'll be able to:
-- Classify digital artifacts using the Archaeobyte taxonomy
-- Conduct triage using the Custodial Filter
-- Excavate a dying platform before it shuts down
-- Design a preservation organization that can last 50 years
-- Advocate for laws that protect digital culture
-- Build alternatives that embody digital sovereignty
-</p>
-
-<p>
-You'll be, in short, an <strong>Archaeobytologist</strong>.
-</p>
-
-<p>
-Welcome to the discipline. Now let's get to work.
-</p>
-
-<h2>Discussion Questions
-</h2>
-
-<p>
-1. <strong>On GeoCities</strong>: Why do you think Yahoo shut down GeoCities instead of maintaining it as a historical archive? What does this decision reveal about corporate priorities?
-</p>
-
-<p>
-2. <strong>On Definitions</strong>: How is Archaeobytology different from "digital archiving" or "data preservation"? Does it need to be a separate discipline, or could existing fields do this work?
-</p>
-
-<p>
-3. <strong>On The Three Pillars</strong>: Audit your own digital presence. Do you have Declaration (sovereign identity)? Connection (direct communication)? Ground (owned infrastructure)? If not, what would it take to achieve them?
-</p>
-
-<p>
-4. <strong>On Triage</strong>: Imagine a platform announces shutdown in 48 hours. You can save 10% of its content. How do you decide what to save? What ethical dilemmas arise?
-</p>
-
-<p>
-5. <strong>On The Dual Soul</strong>: Can you be only an archivist (save the past) without being a builder (create the future)? Or are both commitments necessary?
-</p>
-
-<p>
-6. <strong>On Legitimacy</strong>: What would it take for Archaeobytology to be recognized as a legitimate academic discipline? Journals? Conferences? University departments? All of the above?
-</p>
-
-<h2>Exercise: Your First Triage
-</h2>
-
-<p>
-<strong>Scenario</strong>: You discover that Ello (a social network launched in 2014 as an "ad-free alternative" to Facebook) is shutting down in one week. You have time to preserve approximately 1,000 user profiles out of 50,000 active accounts.
-</p>
-
-<p>
-<strong>Task</strong>:
-1. <strong>Research Ello</strong>: What communities formed there? What made it culturally significant?
-2. <strong>Define Criteria</strong>: Using the Custodial Filter, list 5 criteria you'd use to select profiles
-3. <strong>Identify Examples</strong>: Find 10 specific Ello users you'd prioritize and explain why
-4. <strong>Ethical Dilemmas</strong>: Identify at least 3 ethical challenges in this scenario (privacy, consent, harm, etc.)
-5. <strong>Reflection</strong>: After making your choices, what did you have to leave behind? How does that feel?
-</p>
-
-<h2>Further Reading
-</h2>
-
-<h3>Foundational Texts
-</h3>
-<p>
-- Kirschenbaum, Matthew. <em>Mechanisms: New Media and the Forensic Imagination</em>. MIT Press, 2008.
-- Parikka, Jussi. <em>What Is Media Archaeology?</em> Polity, 2012.
-- Chun, Wendy Hui Kyong. "The Enduring Ephemeral, or the Future Is a Memory." <em>Critical Inquiry</em> 35, no. 1 (2008): 148-171.
-</p>
-
-<h3>On Platform Death
-</h3>
-<p>
-- Gillespie, Tarleton. <em>Custodians of the Internet: Platforms, Content Moderation, and the Hidden Decisions That Shape Social Media</em>. Yale University Press, 2018.
-- Zuboff, Shoshana. <em>The Age of Surveillance Capitalism</em>. PublicAffairs, 2019.
-- Doctorow, Cory. <em>The Internet Con: How to Seize the Means of Computation</em>. Verso, 2023.
-</p>
-
-<h3>On Digital Sovereignty
-</h3>
-<p>
-- Lessig, Lawrence. <em>Code: Version 2.0</em>. Basic Books, 2006.
-- Schneier, Bruce. <em>Data and Goliath: The Hidden Battles to Collect Your Data and Control Your World</em>. W.W. Norton, 2015.
-- Véliz, Carissa. <em>Privacy Is Power: Why and How You Should Take Back Control of Your Data</em>. Melville House, 2020.
-</p>
-
-<h3>On Archives and Memory
-</h3>
-<p>
-- Derrida, Jacques. <em>Archive Fever: A Freudian Impression</em>. University of Chicago Press, 1996.
-- Ernst, Wolfgang. <em>Digital Memory and the Archive</em>. University of Minnesota Press, 2013.
-- Manoff, Marlene. "Theories of the Archive from Across the Disciplines." <em>Portal: Libraries and the Academy</em> 4, no. 1 (2004): 9-25.
-</p>
-
-<h3>Primary Sources
-</h3>
-<p>
-- Archive Team. "GeoCities: We Didn't Start the Fire." https://archiveteam.org/index.php?title=GeoCities
-- Internet Archive. Wayback Machine. https://web.archive.org
-- Kahle, Brewster. "Preserving the Internet." <em>Scientific American</em> 276, no. 3 (1997): 82-83.
-</p>
-
-<p>
-<strong>End of Chapter 1</strong>
-</p>
-
-<p>
-<em>Next: Chapter 2 — The Archaeobyte Taxonomy: Understanding Digital Mortality</em>
-</p>
-
-
-        </article>
-        <div class="nav">
-            <a href="index.html">Back to Table of Contents</a>
-        </div>
-    </div>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='chapter-1-introduction-to-archaeobytology'><span>Chapter 1: Introduction to Archaeobytology</span></h1><hr /><h2 id='opening-vignette-the-day-geocities-died'><span>Opening Vignette: The Day GeoCities Died</span></h2><p><span>On October 26, 2009, Yahoo announced that GeoCities—one of the earliest and largest web hosting services—would shut down in less than three weeks. What followed was a frantic rescue operation. A loose network of digital preservationists calling themselves &quot;Archive Team&quot; mobilized immediately, recruiting volunteers to scrape as many sites as possible before the November deadline. Working around the clock across time zones, they managed to save approximately 650 gigabytes of data—a fraction of the estimated terabytes that had accumulated since GeoCities launched in 1994.</span></p><p><span>When the servers went dark on October 26, 2009, roughly 30 million websites vanished from the internet. Personal homepages that teenagers had built in the late 1990s. Fan sites dedicated to </span><em><span>Sailor Moon</span></em><span> and </span><em><span>Dragon Ball Z</span></em><span>. Memorial pages for loved ones. Experimental art projects. Tutorials on HTML and web design. An entire era of digital culture—messy, earnest, strange, and deeply human—was murdered by a single corporate decision.</span></p><p><span>This wasn&#39;t obsolescence. These sites didn&#39;t decay naturally or become technically incompatible. They were </span><em><span>deliberately killed</span></em><span> by a platform that no longer found them profitable. And because GeoCities users didn&#39;t own their digital ground—they were renting space at geocities.com/neighborhood/username—they had no recourse. When Yahoo turned off the servers, those 30 million voices simply... disappeared.</span></p><p><span>Or almost disappeared. Thanks to Archive Team&#39;s heroic effort, fragments survived. But even those rescued artifacts present new problems: they exist in a massive, unsearchable data dump. No context. No curation. No way to understand why a particular site mattered or what community it represented. The bits are preserved, but the </span><em><span>meaning</span></em><span> is lost.</span></p><p><span>This is the problem Archaeobytology was created to solve.</span></p><hr /><h2 id='what-is-archaeobytology'><span>What Is Archaeobytology?</span></h2><p><strong><span>Archaeobytology</span></strong><span> is the study and practice of excavating, preserving, interpreting, and building with digital artifacts—particularly those that have been &quot;murdered&quot; by platform shutdowns or rendered obsolete by technological change.</span></p><p><span>The term combines three roots:</span></p><ul><li><p><strong><span>Archaeo-</span></strong><span> (Greek: ancient, old) — invoking archaeology&#39;s commitment to recovering and interpreting the past</span></p></li><li><p><strong><span>-byte-</span></strong><span> (computing unit) — grounding the discipline in digital materiality</span></p></li><li><p><strong><span>-ology</span></strong><span> (study of) — claiming status as a rigorous intellectual discipline</span></p></li></ul><p><span>But Archaeobytology is more than just &quot;digital archaeology.&quot; It encompasses:</span></p><ol start='' ><li><p><strong><span>Theoretical frameworks</span></strong><span> for understanding digital mortality, platform power, and technological sovereignty</span></p></li><li><p><strong><span>Practical methods</span></strong><span> for excavation, preservation, and forensic analysis</span></p></li><li><p><strong><span>Institutional design</span></strong><span> for building organizations that can sustain preservation work for decades</span></p></li><li><p><strong><span>Political advocacy</span></strong><span> for laws and policies that protect digital culture from corporate erasure</span></p></li><li><p><strong><span>Creative practice</span></strong><span> of forging new tools, monuments, and systems that embody principles of digital sovereignty</span></p></li></ol><p><span>Unlike adjacent fields—digital history, media archaeology, library science, or computer science—Archaeobytology insists on a dual commitment: we are both </span><strong><span>archivists and builders</span></strong><span>, both </span><strong><span>scholars and smiths</span></strong><span>. We preserve what platforms murder, </span><em><span>and</span></em><span> we forge alternatives that resist future murders.</span></p><hr /><h2 id='why-we-need-a-new-discipline'><span>Why We Need a New Discipline</span></h2><h3 id='the-inadequacy-of-existing-fields'><span>The Inadequacy of Existing Fields</span></h3><p><span>When GeoCities died, where were the experts? Digital historians could analyze what was lost, but they lacked the technical skills to mount a rescue. Computer scientists could write scraping scripts, but they lacked frameworks for ethical triage or cultural curation. Librarians understood preservation, but most weren&#39;t equipped to reverse-engineer dying platforms or navigate copyright gray areas.</span></p><p><span>The problem wasn&#39;t lack of expertise—it was </span><strong><span>fragmentation</span></strong><span>. The skills needed to address platform death are scattered across multiple disciplines, none of which fully claim this territory:</span></p><ul><li><p><strong><span>Computer Science</span></strong><span> treats digital objects as technical problems, not cultural artifacts</span></p></li><li><p><strong><span>History</span></strong><span> studies the past but rarely intervenes to preserve the present</span></p></li><li><p><strong><span>Library Science</span></strong><span> excels at cataloging but often lacks technical depth for complex digital formats</span></p></li><li><p><strong><span>Media Archaeology</span></strong><span> theorizes dead media but doesn&#39;t always prioritize active preservation</span></p></li><li><p><strong><span>Cultural Studies</span></strong><span> critiques platforms but rarely builds alternatives</span></p></li></ul><p><span>Archaeobytology argues that digital preservation requires a </span><strong><span>unified discipline</span></strong><span> that combines:</span></p><ul><li><p><span>Technical skill (excavation, forensics, emulation)</span></p></li><li><p><span>Humanistic interpretation (curation, contextualization, ethics)</span></p></li><li><p><span>Institutional expertise (sustainable organizations, governance models)</span></p></li><li><p><span>Political engagement (policy advocacy, movement building)</span></p></li></ul><p><span>No existing field does all of this. That&#39;s why we need a new one.</span></p><h3 id='the-scale-of-the-crisis'><span>The Scale of the Crisis</span></h3><p><span>Platform death isn&#39;t a niche problem. It&#39;s accelerating:</span></p><p><strong><span>Major Platform Shutdowns (2000-2024):</span></strong></p><ul><li><p><span>GeoCities (2009): 30 million sites</span></p></li><li><p><span>Google Reader (2013): Millions of curated RSS feeds</span></p></li><li><p><span>Vine (2017): 200 million short videos</span></p></li><li><p><span>Google+ (2019): User profiles, communities, content</span></p></li><li><p><span>Mixer (2020): Game streaming platform</span></p></li><li><p><span>Tumblr NSFW purge (2018): Millions of posts deleted</span></p></li><li><p><span>Twitter&#39;s chaos (2022-present): Uncertain future, mass exodus</span></p></li><li><p><span>Countless smaller platforms: Ello, Peach, Path, Plurk, FriendFeed...</span></p></li></ul><p><span>Each shutdown represents not just technical infrastructure dying, but </span><strong><span>communities</span></strong><span>, </span><strong><span>memories</span></strong><span>, </span><strong><span>identities</span></strong><span>, and </span><strong><span>cultural artifacts</span></strong><span> being erased. And unlike physical artifacts—which decay slowly, giving civilizations time to respond—digital artifacts can vanish overnight.</span></p><p><span>Moreover, we&#39;re not just losing content. We&#39;re losing:</span></p><ul><li><p><strong><span>Social graphs</span></strong><span>: Who was connected to whom</span></p></li><li><p><strong><span>Affordances</span></strong><span>: How platforms shaped communication (Twitter&#39;s 140 characters, Vine&#39;s 6 seconds)</span></p></li><li><p><strong><span>Aesthetics</span></strong><span>: Platform-specific design cultures (GeoCities&#39; </span><blink><span> tags, Tumblr&#39;s GIF aesthetic)</span></p></li><li><p><strong><span>Communities</span></strong><span>: Specialized subcultures that formed around platform features</span></p></li></ul><p><span>This isn&#39;t just cultural loss—it&#39;s </span><strong><span>cultural murder</span></strong><span>. And it&#39;s happening faster than any single discipline can address.</span></p><hr /><h2 id='the-three-pillars-a-framework-for-digital-sovereignty'><span>The Three Pillars: A Framework for Digital Sovereignty</span></h2><p><span>At the heart of Archaeobytology lies a normative commitment: we believe digital culture should be </span><strong><span>sovereign</span></strong><span>—independent from corporate control, resistant to platform shutdown, and owned by the people who create it.</span></p><p><span>We call this framework </span><strong><span>The Three Pillars</span></strong><span>, drawing on both ancient philosophy (the Greek concept of </span><em><span>authentikos</span></em><span>, self-originating authority) and practical infrastructure design. A digitally sovereign presence requires three interdependent foundations:</span></p><h3 id='pillar-1-declaration-i-am'><span>Pillar 1: Declaration (I Am)</span></h3><p><strong><span>The Principle:</span></strong><span> You should be able to declare your identity and existence without permission from a platform or intermediary.</span></p><p><span>When you create a Facebook profile, Facebook owns your identity. If they ban you, &quot;you&quot; cease to exist—at least in that digital space. Your name, photos, relationships, and history are controlled by an entity that can revoke them at will.</span></p><p><strong><span>Sovereign declaration</span></strong><span> means:</span></p><ul><li><p><span>Your identity is </span><strong><span>self-hosted</span></strong><span> (</span><a href='mailto:username@yourdomain.com' target='_blank' class='url'>username@yourdomain.com</a><span>, not </span><a href='mailto:username@gmail.com' target='_blank' class='url'>username@gmail.com</a><span>)</span></p></li><li><p><span>Your presence is </span><strong><span>persistent</span></strong><span> (your website outlives any platform)</span></p></li><li><p><span>Your voice is </span><strong><span>uncensorable</span></strong><span> (no corporate ToS can silence you on your own ground)</span></p></li></ul><p><span>This doesn&#39;t mean freedom from all consequences—legal systems, community norms, and social accountability still apply. But it means </span><strong><span>platforms cannot unilaterally erase you</span></strong><span>.</span></p><p><strong><span>Historical precedent:</span></strong><span> In the early web (1990s-2000s), personal homepages embodied this principle. You bought a domain, hosted your site, and declared yourself to the internet. GeoCities degraded this model by making addresses hierarchical (geocities.com/neighborhood/you) rather than sovereign (you.com). Social media completed the enclosure by eliminating personal domains entirely.</span></p><h3 id='pillar-2-connection-instant-message'><span>Pillar 2: Connection (Instant Message)</span></h3><p><strong><span>The Principle:</span></strong><span> You should be able to communicate directly with others without a platform mediating, monitoring, or monetizing your relationships.</span></p><p><span>Platforms don&#39;t just host our content—they </span><strong><span>control our connections</span></strong><span>. Facebook decides who sees your posts (algorithmic curation). Twitter can prevent you from messaging someone (shadowbanning). Instagram owns the graph of your followers (you can&#39;t export it).</span></p><p><strong><span>Sovereign connection</span></strong><span> means:</span></p><ul><li><p><span>Communication is </span><strong><span>peer-to-peer</span></strong><span> or </span><strong><span>federated</span></strong><span> (not routed through corporate servers)</span></p></li><li><p><span>Relationships are </span><strong><span>exportable</span></strong><span> (if you leave a platform, your network comes with you)</span></p></li><li><p><span>Discovery is </span><strong><span>intentional</span></strong><span> (you choose who to connect with, not an algorithm)</span></p></li></ul><p><span>This is why email—for all its flaws—remains more sovereign than social media. If Gmail shuts down, you can take your address to another provider. If your contacts have their own domains (</span><a href='mailto:name@theirdomain.com' target='_blank' class='url'>name@theirdomain.com</a><span>), you can reach them directly.</span></p><p><strong><span>The challenge:</span></strong><span> Network effects make this hard. If everyone is on Twitter, leaving Twitter means losing access to your community. Sovereignty requires </span><strong><span>interoperability</span></strong><span>—the ability to communicate across platforms, or to bring your network with you when you migrate.</span></p><h3 id='pillar-3-ground-digital-real-estate'><span>Pillar 3: Ground (Digital Real Estate)</span></h3><p><strong><span>The Principle:</span></strong><span> You should own the infrastructure your digital life is built on—not rent it from a landlord who can evict you.</span></p><p><span>GeoCities users thought they had websites. They didn&#39;t. They had </span><strong><span>leases</span></strong><span> on someone else&#39;s servers. When Yahoo decided those leases weren&#39;t profitable, they terminated them. No appeals, no alternatives, no recourse.</span></p><p><strong><span>Sovereign ground</span></strong><span> means:</span></p><ul><li><p><span>You own your </span><strong><span>domain name</span></strong><span> (example.com, not facebook.com/example)</span></p></li><li><p><span>You control your </span><strong><span>hosting</span></strong><span> (self-hosted or a provider you can migrate away from)</span></p></li><li><p><span>Your data is </span><strong><span>exportable</span></strong><span> (you can take it with you, in usable formats)</span></p></li></ul><p><span>This doesn&#39;t require technical expertise. Thousands of people own domains and use managed hosting services like WordPress.com or Ghost(Pro). The key is </span><strong><span>portability</span></strong><span>: if the service shuts down or changes terms, you can move.</span></p><p><strong><span>The analogy:</span></strong><span> Owning ground is like owning land versus renting an apartment. A landlord can raise rent, change rules, or evict you. But if you own land, you have sovereignty—subject to laws, but not to arbitrary corporate power.</span></p><hr /><h2 id='the-dual-soul-archive-and-anvil'><span>The Dual Soul: Archive and Anvil</span></h2><p><span>Archaeobytology is not just a preservationist discipline. We insist on a </span><strong><span>dual practice</span></strong><span>:</span></p><h3 id='the-archive-preservation-and-memory'><span>The Archive: Preservation and Memory</span></h3><p><span>The </span><strong><span>Archive</span></strong><span> represents our commitment to:</span></p><ul><li><p><strong><span>Excavate</span></strong><span> murdered platforms before they vanish completely</span></p></li><li><p><strong><span>Preserve</span></strong><span> artifacts with technical and cultural fidelity</span></p></li><li><p><strong><span>Curate</span></strong><span> collections that make sense of vast data dumps</span></p></li><li><p><strong><span>Interpret</span></strong><span> artifacts so future generations understand their significance</span></p></li></ul><p><span>Archival work requires:</span></p><ul><li><p><span>Technical skills (web scraping, forensic recovery, emulation)</span></p></li><li><p><span>Ethical frameworks (what should be preserved? what should be forgotten?)</span></p></li><li><p><span>Institutional knowledge (how do you build organizations that last 50 years?)</span></p></li></ul><p><span>The Archive is </span><strong><span>retrospective</span></strong><span>: it looks backward to save what&#39;s endangered.</span></p><h3 id='the-anvil-creation-and-resistance'><span>The Anvil: Creation and Resistance</span></h3><p><span>The </span><strong><span>Anvil</span></strong><span> represents our commitment to:</span></p><ul><li><p><strong><span>Forge</span></strong><span> tools that empower digital sovereignty (domain registration services, self-hosting platforms, open protocols)</span></p></li><li><p><strong><span>Build</span></strong><span> monuments that embody our values (websites, platforms, frameworks designed for permanence)</span></p></li><li><p><strong><span>Design</span></strong><span> institutions that resist platform capture (non-profit archives, cooperative hosting services, federated networks)</span></p></li></ul><p><span>The work of the Anvil requires:</span></p><ul><li><p><span>Creative practice (making things that don&#39;t yet exist)</span></p></li><li><p><span>Systems thinking (how do you design for resilience?)</span></p></li><li><p><span>Political imagination (what does a post-platform future look like?)</span></p></li></ul><p><span>The Anvil is </span><strong><span>prospective</span></strong><span>: it looks forward to build alternatives.</span></p><h3 id='why-both-are-necessary'><span>Why Both Are Necessary</span></h3><p><span>You cannot be only an archivist. If you preserve everything but build nothing, you&#39;re a curator in a warehouse—keeping records of a world dominated by platforms, never challenging that dominance.</span></p><p><span>You cannot be only a builder. If you forge alternatives but never preserve the past, you lose the lessons of history. Each new generation reinvents the wheel, repeating old mistakes.</span></p><p><strong><span>The Archaeobytologist embodies both</span></strong><span>: we save the murdered web, </span><em><span>and</span></em><span> we build systems that can&#39;t be murdered.</span></p><hr /><h2 id='triage-the-central-methodology'><span>Triage: The Central Methodology</span></h2><p><span>The most painful truth of Archaeobytology: </span><strong><span>you cannot save everything</span></strong><span>.</span></p><p><span>When a platform announces shutdown, you have limited time, limited storage, limited volunteers. You must make choices. This is </span><strong><span>triage</span></strong><span>—borrowed from emergency medicine, where doctors must decide which patients to treat first when resources are scarce.</span></p><h3 id='the-custodial-filter'><span>The Custodial Filter</span></h3><p><span>We use the </span><strong><span>Custodial Filter</span></strong><span> as our ethical framework for triage decisions. Before preserving an artifact, we ask five questions:</span></p><ol start='' ><li><p><strong><span>Cultural Significance</span></strong><span>: Does this artifact represent a community, movement, or cultural moment that would otherwise be lost?</span></p></li><li><p><strong><span>Technical Fragility</span></strong><span>: How close to disappearance is this? (A site archived by Internet Archive is less urgent than one that isn&#39;t.)</span></p></li><li><p><strong><span>Rescue Difficulty</span></strong><span>: How hard is this to preserve? (Simple HTML is easier than complex Flash applications.)</span></p></li><li><p><strong><span>Existing Redundancy</span></strong><span>: Is someone else already preserving this? (Don&#39;t duplicate effort when time is scarce.)</span></p></li><li><p><strong><span>Consent and Ethics</span></strong><span>: </span><em><span>Should</span></em><span> we preserve this? Does it violate someone&#39;s privacy, contain traumatic content, or cause harm by existing?</span></p></li></ol><p><span>The fifth question is critical. Not everything that </span><em><span>can</span></em><span> be preserved </span><em><span>should</span></em><span> be. Revenge porn, doxxing, harassment campaigns—these are digital artifacts too, but preserving them can perpetuate harm. The Custodial Filter requires us to think beyond technical feasibility to </span><strong><span>ethical responsibility</span></strong><span>.</span></p><h3 id='triage-in-practice-the-archive-team-model'><span>Triage in Practice: The Archive Team Model</span></h3><p><span>When Vine announced its shutdown in 2016, Archive Team had roughly six weeks to save 200 million videos. Impossible to save them all. They triaged:</span></p><ul><li><p><strong><span>Highest priority</span></strong><span>: Videos with significant cultural impact (viral memes, influential creators, historically important moments)</span></p></li><li><p><strong><span>Medium priority</span></strong><span>: Representative samples of different communities, genres, and time periods</span></p></li><li><p><strong><span>Lower priority</span></strong><span>: Duplicates, spam, commercial advertisements</span></p></li></ul><p><span>Even then, they couldn&#39;t manually curate 200 million items. So they used </span><strong><span>algorithmic triage</span></strong><span>: view counts, shares, and community-submitted nominations. Imperfect, but pragmatic.</span></p><p><span>The result: they saved millions of videos, but not all. Some Vines are lost forever. Triage accepts this tragedy as unavoidable, while working to minimize the loss.</span></p><hr /><h2 id='a-brief-history-of-digital-mortality'><span>A Brief History of Digital Mortality</span></h2><p><span>Digital culture has always been ephemeral, but the </span><strong><span>causes</span></strong><span> of mortality have evolved:</span></p><h3 id='era-1-technological-obsolescence-1960s-1990s'><span>Era 1: Technological Obsolescence (1960s-1990s)</span></h3><p><span>Early digital artifacts died because the </span><strong><span>hardware or software</span></strong><span> became incompatible:</span></p><ul><li><p><span>Floppy disks degraded physically</span></p></li><li><p><span>File formats became unreadable (WordStar, AppleWorks)</span></p></li><li><p><span>Storage media evolved (punch cards → magnetic tape → hard drives)</span></p></li></ul><p><span>This was </span><strong><span>passive death</span></strong><span>—artifacts decayed like ancient papyrus. The solution was technical: emulation, format migration, hardware preservation.</span></p><h3 id='era-2-link-rot-and-neglect-1990s-2000s'><span>Era 2: Link Rot and Neglect (1990s-2000s)</span></h3><p><span>As the web grew, artifacts died because:</span></p><ul><li><p><span>Website owners stopped paying for hosting</span></p></li><li><p><span>Domains expired and were re-registered by squatters</span></p></li><li><p><span>Links broke as sites moved or vanished</span></p></li></ul><p><span>This was </span><strong><span>death by neglect</span></strong><span>—the equivalent of abandoning a physical archive to water damage and mold. The solution was institutional: projects like the Internet Archive&#39;s Wayback Machine, which proactively crawled and preserved sites.</span></p><h3 id='era-3-platform-murder-2000s-present'><span>Era 3: Platform Murder (2000s-present)</span></h3><p><span>In the social media era, artifacts die because </span><strong><span>platforms choose to kill them</span></strong><span>:</span></p><ul><li><p><span>Corporate shutdowns (GeoCities, Vine, Google Reader)</span></p></li><li><p><span>Terms of Service purges (Tumblr NSFW ban, YouTube&#39;s algorithmic demonetization)</span></p></li><li><p><span>Acquisition and closure (platforms bought and killed by competitors)</span></p></li></ul><p><span>This is </span><strong><span>active murder</span></strong><span>—deliberate erasure. The solution isn&#39;t just technical or institutional—it&#39;s </span><strong><span>political</span></strong><span>. We need laws, rights, and alternatives.</span></p><p><span>Archaeobytology emerged in response to this third era. We&#39;re not just fighting entropy or neglect—we&#39;re fighting </span><strong><span>corporate power</span></strong><span>.</span></p><hr /><h2 id='what-makes-archaeobytology-different'><span>What Makes Archaeobytology Different?</span></h2><h3 id='not-digital-history'><span>Not Digital History</span></h3><p><span>Digital historians study the past. Archaeobytologists </span><strong><span>intervene</span></strong><span> in the present to </span><em><span>create</span></em><span> a future past. When Archive Team scraped GeoCities, they weren&#39;t analyzing history—they were </span><em><span>making</span></em><span> it possible for future historians to have something to analyze.</span></p><h3 id='not-media-archaeology'><span>Not Media Archaeology</span></h3><p><span>Media archaeologists theorize dead media. Archaeobytologists </span><strong><span>rescue</span></strong><span> dying media before they become dead. We&#39;re applied, not purely theoretical. We get our hands dirty with code, servers, and scrapers.</span></p><h3 id='not-library-science'><span>Not Library Science</span></h3><p><span>Librarians excel at cataloging, access, and preservation—but within established frameworks. Archaeobytology operates in </span><strong><span>legal and technical gray areas</span></strong><span>: scraping platforms that didn&#39;t consent, preserving copyrighted material under dubious fair use claims, reverse-engineering proprietary formats.</span></p><p><span>We respect librarians deeply. But we do things they often can&#39;t or won&#39;t do.</span></p><h3 id='not-computer-science'><span>Not Computer Science</span></h3><p><span>Computer scientists can write scrapers and build emulators. But they often lack frameworks for </span><strong><span>curation, ethics, and cultural interpretation</span></strong><span>. A computer scientist might preserve every byte. An Archaeobytologist asks: </span><em><span>Should we? What does this mean? How do we make it legible?</span></em></p><h3 id='not-just-activism'><span>Not Just Activism</span></h3><p><span>Archaeobytology isn&#39;t pure advocacy. We build theoretical frameworks, develop rigorous methods, and create institutions. We&#39;re scholars </span><em><span>and</span></em><span> activists—but the scholarship matters.</span></p><hr /><h2 id='the-crisis-of-legitimacy'><span>The Crisis of Legitimacy</span></h2><p><span>Archaeobytology faces a credibility problem: </span><strong><span>we don&#39;t exist yet</span></strong><span>.</span></p><p><span>There are no Archaeobytology departments at universities. No tenure-track jobs with &quot;Archaeobytologist&quot; in the title. No dedicated funding streams from NSF or NEH. When we tell people we&#39;re Archaeobytologists, they ask, &quot;What&#39;s that?&quot;</span></p><p><span>This book is part of solving that problem. By codifying our theories, methods, and practices, we make the discipline </span><strong><span>real</span></strong><span>. By teaching courses, publishing research, and building institutions, we establish </span><strong><span>legitimacy</span></strong><span>.</span></p><p><span>Disciplines don&#39;t emerge naturally—they&#39;re </span><strong><span>constructed</span></strong><span> through collective action:</span></p><ul><li><p><span>Journals and conferences create scholarly community</span></p></li><li><p><span>Textbooks standardize knowledge</span></p></li><li><p><span>Degree programs train new generations</span></p></li><li><p><span>Professional organizations provide structure</span></p></li><li><p><span>Public advocacy wins recognition</span></p></li></ul><p><span>This book is a founding document. You&#39;re reading it early in the discipline&#39;s life. In 20 years, Archaeobytology might be as established as Data Science or Digital Humanities. Or it might remain a niche practice, known only to specialists.</span></p><p><span>That outcome depends on us.</span></p><hr /><h2 id='who-is-this-book-for'><span>Who Is This Book For?</span></h2><h3 id='undergraduate-students'><span>Undergraduate Students</span></h3><p><span>If you&#39;re considering a career in digital preservation, museum curation, or tech ethics, this book provides foundational knowledge. Each chapter includes exercises and case studies to build practical skills.</span></p><h3 id='graduate-students-and-researchers'><span>Graduate Students and Researchers</span></h3><p><span>If you&#39;re writing a dissertation on platform death, digital memory, or technological sovereignty, this book offers theoretical frameworks and methodologies you can adapt.</span></p><h3 id='practitioners'><span>Practitioners</span></h3><p><span>If you work in libraries, archives, museums, or tech companies, this book gives you tools to advocate for preservation work and design sustainable institutions.</span></p><h3 id='activists-and-advocates'><span>Activists and Advocates</span></h3><p><span>If you&#39;re fighting for digital rights, platform accountability, or data sovereignty, this book provides evidence and arguments for policy change.</span></p><h3 id='the-curious-public'><span>The Curious Public</span></h3><p><span>If you&#39;ve ever wondered what happened to your MySpace profile, your LiveJournal, or that website you made in 2003, this book explains why they disappeared—and what we can do about it.</span></p><hr /><h2 id='how-to-use-this-book'><span>How to Use This Book</span></h2><h3 id='structure'><span>Structure</span></h3><p><span>The book is organized into </span><strong><span>five parts</span></strong><span>:</span></p><p><strong><span>Part I: Foundations (Chapters 1-6)</span></strong><span> introduces core concepts: the Archaeobyte taxonomy, the Archive/Anvil framework, the Three Pillars, and triage methodology.</span></p><p><strong><span>Part II: Excavation &amp; Forensics (Chapters 7-10)</span></strong><span> teaches practical methods for recovering and analyzing digital artifacts.</span></p><p><strong><span>Part III: Institution Building (Chapters 11-14)</span></strong><span> shows how to design organizations that sustain preservation work for decades.</span></p><p><strong><span>Part IV: Systems &amp; Movements (Chapters 15-16)</span></strong><span> addresses political economy: who controls digital infrastructure, and how do we build alternatives?</span></p><p><strong><span>Part V: Public Scholarship &amp; The Future (Chapters 17-18)</span></strong><span> explores how Archaeobytologists can translate research into public discourse, policy, and cultural change.</span></p><h3 id='pedagogy'><span>Pedagogy</span></h3><p><span>Each chapter includes:</span></p><ul><li><p><strong><span>Case Studies</span></strong><span>: Real-world examples of platform death, preservation projects, and institution-building</span></p></li><li><p><strong><span>Discussion Questions</span></strong><span>: Prompts for classroom or reading group conversations</span></p></li><li><p><strong><span>Exercises</span></strong><span>: Hands-on activities to build skills (accessible to readers with varying technical backgrounds)</span></p></li><li><p><strong><span>Further Reading</span></strong><span>: Curated bibliography for deeper exploration</span></p></li></ul><h3 id='teaching-with-this-book'><span>Teaching with This Book</span></h3><p><strong><span>For a 15-week undergraduate survey course</span></strong><span>, cover one chapter per week. Focus on Part I (Foundations) and Part II (Methods), with selected chapters from Part III.</span></p><p><strong><span>For a graduate seminar</span></strong><span>, assume students have read the entire book. Use class time for deep discussion of case studies, triage dilemmas, and institutional design challenges. Assign a capstone project: design a preservation organization, memory institution, or movement campaign.</span></p><p><strong><span>For professional development</span></strong><span>, organize a reading group among librarians, archivists, or tech workers. Each week, one person presents a chapter and leads discussion. Focus on how frameworks apply to your workplace.</span></p><hr /><h2 id='a-provocation-why-bother'><span>A Provocation: Why Bother?</span></h2><p><span>Let&#39;s be honest: most people don&#39;t care that GeoCities died. They don&#39;t think about digital preservation. They assume &quot;the internet remembers everything&quot; (it doesn&#39;t) or that &quot;tech companies will handle it&quot; (they won&#39;t).</span></p><p><span>So why bother? Why build a discipline around saving things most people forgot existed?</span></p><p><span>Three answers:</span></p><h3 id='1-memory-is-power'><span>1. Memory Is Power</span></h3><p><span>Who controls the past controls the present. Platforms curate our memories—deciding which photos Facebook shows you in &quot;On This Day,&quot; which tweets trend, which YouTube videos get recommended. When platforms die, they take our memories with them.</span></p><p><span>Preserving murdered platforms is an act of </span><strong><span>resistance against corporate memory control</span></strong><span>. It insists that our digital lives belong to us, not to companies that can erase them at will.</span></p><h3 id='2-culture-dies-in-darkness'><span>2. Culture Dies in Darkness</span></h3><p><span>Every generation deserves access to the cultural artifacts of previous generations. Historians study ancient Rome through pottery fragments. Future historians will study early internet culture through GeoCities sites—if we save them.</span></p><p><span>If we don&#39;t preserve digital culture, it vanishes. No ruins, no fragments. Just absence. Future generations won&#39;t even know what they&#39;re missing.</span></p><h3 id='3-building-alternatives-requires-understanding-failures'><span>3. Building Alternatives Requires Understanding Failures</span></h3><p><span>You can&#39;t design a sovereign internet if you don&#39;t understand how platforms murdered the old one. Every shutdown teaches lessons:</span></p><ul><li><p><span>Why didn&#39;t GeoCities users own their domains?</span></p></li><li><p><span>Why couldn&#39;t Vine videos be exported?</span></p></li><li><p><span>Why did Google Reader&#39;s death destroy thousands of curated feeds?</span></p></li></ul><p><span>Studying murdered platforms isn&#39;t nostalgia—it&#39;s </span><strong><span>learning how to build systems that can&#39;t be murdered</span></strong><span>.</span></p><hr /><h2 id='the-archaeobytologists-vow'><span>The Archaeobytologist&#39;s Vow</span></h2><p><span>As you read this book, you&#39;re joining a community. We&#39;re small now—scattered practitioners, archivists, activists, scholars. But we&#39;re growing.</span></p><p><span>If you embrace this work, you&#39;re making an implicit commitment:</span></p><p><strong><span>I will not let digital culture die in silence.</span></strong></p><p><strong><span>I will excavate what platforms murder.</span></strong></p><p><strong><span>I will build systems that resist future murder.</span></strong></p><p><strong><span>I will teach others to do the same.</span></strong></p><p><strong><span>I am a scholar and a smith, a custodian and a strategist.</span></strong></p><p><strong><span>I own my ground. I tell my story. I forge my future.</span></strong></p><p><strong><span>I am an Archaeobytologist.</span></strong></p><hr /><h2 id='looking-ahead'><span>Looking Ahead</span></h2><p><span>The rest of this book will equip you with:</span></p><ul><li><p><strong><span>Theory</span></strong><span>: Rigorous frameworks for understanding digital death (Chapters 2-6)</span></p></li><li><p><strong><span>Methods</span></strong><span>: Practical skills for excavation and preservation (Chapters 7-10)</span></p></li><li><p><strong><span>Institutions</span></strong><span>: Models for sustainable organizations (Chapters 11-14)</span></p></li><li><p><strong><span>Systems</span></strong><span>: Alternatives to platform capitalism (Chapters 15-16)</span></p></li><li><p><strong><span>Impact</span></strong><span>: Strategies for public scholarship and policy change (Chapters 17-18)</span></p></li></ul><p><span>By the end, you&#39;ll be able to:</span></p><ul><li><p><span>Classify digital artifacts using the Archaeobyte taxonomy</span></p></li><li><p><span>Conduct triage using the Custodial Filter</span></p></li><li><p><span>Excavate a dying platform before it shuts down</span></p></li><li><p><span>Design a preservation organization that can last 50 years</span></p></li><li><p><span>Advocate for laws that protect digital culture</span></p></li><li><p><span>Build alternatives that embody digital sovereignty</span></p></li></ul><p><span>You&#39;ll be, in short, an </span><strong><span>Archaeobytologist</span></strong><span>.</span></p><p><span>Welcome to the discipline. Now let&#39;s get to work.</span></p><hr /><h2 id='discussion-questions'><span>Discussion Questions</span></h2><ol start='' ><li><p><strong><span>On GeoCities</span></strong><span>: Why do you think Yahoo shut down GeoCities instead of maintaining it as a historical archive? What does this decision reveal about corporate priorities?</span></p></li><li><p><strong><span>On Definitions</span></strong><span>: How is Archaeobytology different from &quot;digital archiving&quot; or &quot;data preservation&quot;? Does it need to be a separate discipline, or could existing fields do this work?</span></p></li><li><p><strong><span>On The Three Pillars</span></strong><span>: Audit your own digital presence. Do you have Declaration (sovereign identity)? Connection (direct communication)? Ground (owned infrastructure)? If not, what would it take to achieve them?</span></p></li><li><p><strong><span>On Triage</span></strong><span>: Imagine a platform announces shutdown in 48 hours. You can save 10% of its content. How do you decide what to save? What ethical dilemmas arise?</span></p></li><li><p><strong><span>On The Dual Soul</span></strong><span>: Can you be only an archivist (save the past) without being a builder (create the future)? Or are both commitments necessary?</span></p></li><li><p><strong><span>On Legitimacy</span></strong><span>: What would it take for Archaeobytology to be recognized as a legitimate academic discipline? Journals? Conferences? University departments? All of the above?</span></p></li></ol><hr /><h2 id='exercise-your-first-triage'><span>Exercise: Your First Triage</span></h2><p><strong><span>Scenario</span></strong><span>: You discover that Ello (a social network launched in 2014 as an &quot;ad-free alternative&quot; to Facebook) is shutting down in one week. You have time to preserve approximately 1,000 user profiles out of 50,000 active accounts.</span></p><p><strong><span>Task</span></strong><span>:</span></p><ol start='' ><li><p><strong><span>Research Ello</span></strong><span>: What communities formed there? What made it culturally significant?</span></p></li><li><p><strong><span>Define Criteria</span></strong><span>: Using the Custodial Filter, list 5 criteria you&#39;d use to select profiles</span></p></li><li><p><strong><span>Identify Examples</span></strong><span>: Find 10 specific Ello users you&#39;d prioritize and explain why</span></p></li><li><p><strong><span>Ethical Dilemmas</span></strong><span>: Identify at least 3 ethical challenges in this scenario (privacy, consent, harm, etc.)</span></p></li><li><p><strong><span>Reflection</span></strong><span>: After making your choices, what did you have to leave behind? How does that feel?</span></p></li></ol><hr /><h2 id='further-reading'><span>Further Reading</span></h2><h3 id='foundational-texts'><span>Foundational Texts</span></h3><ul><li><p><span>Kirschenbaum, Matthew. </span><em><span>Mechanisms: New Media and the Forensic Imagination</span></em><span>. MIT Press, 2008.</span></p></li><li><p><span>Parikka, Jussi. </span><em><span>What Is Media Archaeology?</span></em><span> Polity, 2012.</span></p></li><li><p><span>Chun, Wendy Hui Kyong. &quot;The Enduring Ephemeral, or the Future Is a Memory.&quot; </span><em><span>Critical Inquiry</span></em><span> 35, no. 1 (2008): 148-171.</span></p></li></ul><h3 id='on-platform-death'><span>On Platform Death</span></h3><ul><li><p><span>Gillespie, Tarleton. </span><em><span>Custodians of the Internet: Platforms, Content Moderation, and the Hidden Decisions That Shape Social Media</span></em><span>. Yale University Press, 2018.</span></p></li><li><p><span>Zuboff, Shoshana. </span><em><span>The Age of Surveillance Capitalism</span></em><span>. PublicAffairs, 2019.</span></p></li><li><p><span>Doctorow, Cory. </span><em><span>The Internet Con: How to Seize the Means of Computation</span></em><span>. Verso, 2023.</span></p></li></ul><h3 id='on-digital-sovereignty'><span>On Digital Sovereignty</span></h3><ul><li><p><span>Lessig, Lawrence. </span><em><span>Code: Version 2.0</span></em><span>. Basic Books, 2006.</span></p></li><li><p><span>Schneier, Bruce. </span><em><span>Data and Goliath: The Hidden Battles to Collect Your Data and Control Your World</span></em><span>. W.W. Norton, 2015.</span></p></li><li><p><span>Véliz, Carissa. </span><em><span>Privacy Is Power: Why and How You Should Take Back Control of Your Data</span></em><span>. Melville House, 2020.</span></p></li></ul><h3 id='on-archives-and-memory'><span>On Archives and Memory</span></h3><ul><li><p><span>Derrida, Jacques. </span><em><span>Archive Fever: A Freudian Impression</span></em><span>. University of Chicago Press, 1996.</span></p></li><li><p><span>Ernst, Wolfgang. </span><em><span>Digital Memory and the Archive</span></em><span>. University of Minnesota Press, 2013.</span></p></li><li><p><span>Manoff, Marlene. &quot;Theories of the Archive from Across the Disciplines.&quot; </span><em><span>Portal: Libraries and the Academy</span></em><span> 4, no. 1 (2004): 9-25.</span></p></li></ul><h3 id='primary-sources'><span>Primary Sources</span></h3><ul><li><p><span>Archive Team. &quot;GeoCities: We Didn&#39;t Start the Fire.&quot; </span><a href='https://archiveteam.org/index.php?title=GeoCities' target='_blank' class='url'>https://archiveteam.org/index.php?title=GeoCities</a></p></li><li><p><span>Internet Archive. Wayback Machine. </span><a href='https://web.archive.org' target='_blank' class='url'>https://web.archive.org</a></p></li><li><p><span>Kahle, Brewster. &quot;Preserving the Internet.&quot; </span><em><span>Scientific American</span></em><span> 276, no. 3 (1997): 82-83.</span></p></li></ul><hr /><p><strong><span>End of Chapter 1</span></strong></p><p><em><span>Next: Chapter 2 — The Archaeobyte Taxonomy: Understanding Digital Mortality</span></em></p><p>&nbsp;</p></div></div>
 </body>
 </html>

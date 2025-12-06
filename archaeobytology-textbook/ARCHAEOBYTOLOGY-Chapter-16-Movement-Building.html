@@ -1,1221 +1,921 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 16: From Practice to Discipline — Movement Building | Archaeobytology</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Lora', serif; line-height: 1.8; color: #2E2E2E; background: #F8F7F4; padding: 2rem 1rem; }
-        .container { max-width: 800px; margin: 0 auto; background: #FFFFFF; padding: 3rem; border-radius: 15px; box-shadow: 0 4px 20px rgba(46,46,46,0.1); border: 1px solid #D1D1D1; }
-        h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; color: #2E2E2E; margin-top: 2rem; margin-bottom: 1rem; line-height: 1.3; }
-        h1 { font-size: 2.5rem; font-weight: 700; margin-top: 0; border-bottom: 3px solid #A1824A; padding-bottom: 0.5rem; }
-        h2 { font-size: 2rem; font-weight: 700; margin-top: 2.5rem; }
-        h3 { font-size: 1.5rem; font-weight: 600; color: #5A7D8C; }
-        h4 { font-size: 1.25rem; font-weight: 600; color: #5A7D8C; }
-        p { margin-bottom: 1.25rem; font-size: 1.1rem; }
-        a { color: #A93400; text-decoration: underline; transition: color 0.3s; }
-        a:hover { color: #A95C3D; }
-        strong { font-weight: 600; }
-        em { font-style: italic; }
-        code { font-family: 'Courier New', monospace; background: #F8F7F4; padding: 0.2rem 0.4rem; border-radius: 3px; border: 1px solid #D1D1D1; }
-        blockquote { border-left: 4px solid #A1824A; padding: 1rem 1.5rem; margin: 1.5rem 0; font-style: italic; color: #5A7D8C; background: #F8F7F4; border-radius: 0 8px 8px 0; }
-        hr { border: none; border-top: 2px solid #D1D1D1; margin: 2rem 0; }
-        .nav { text-align: center; padding: 1rem 0; border-top: 2px solid #D1D1D1; margin-top: 2rem; }
-        .nav a { display: inline-block; padding: 0.75rem 1.5rem; background: #A93400; color: #F8F7F4; text-decoration: none; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 600; margin: 0.5rem; }
-        .nav a:hover { background: #A95C3D; }
-    </style>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'><style type='text/css'>html {overflow-x: initial !important;}</style>
+<style type='text/css'  id="style-base">:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, "Segoe UI Emoji", "SF Pro", sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p *, #write.first-line-indent svg * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
+#write svg h1, #write svg h2, #write svg h3, #write svg h4, #write svg h5, #write svg h6, #write svg p { position: static; }
+.nodeLabel p { padding-right: 2px; padding-left: 2px; }
+.typora-export .nodeLabel p { padding-right: 0px; padding-left: 0px; }
+foreignobject { overflow: visible; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+li p { orphans: 1; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.mermaid-svg { margin: auto; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left: 0.25em solid rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
+
+</style>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;display=swap' type='text/css' />
+<style type='text/css'  id="style-theme_css">/*
+ * Unearth Light Theme for Typora
+ * Based on the Foundry Blueprint 4.1 - unearth.im
+ * 
+ * Color Palette:
+ * - Parchment (Background): #F8F7F4
+ * - Charcoal (Text): #2E2E2E
+ * - Burnt Sienna (Primary Accent): #A93400
+ * - Antique Gold (Secondary Accent): #A1824A
+ * - Slate Blue (Functional Accent): #5A7D8C
+ * - Light Stone: #D1D1D1
+ * - Medium Stone: #8E8E8E
+ *
+ * Typography:
+ * - Narrative: Lora (serif)
+ * - UI/Headlines: Inter (sans-serif)
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+:root {
+    --parchment: #F8F7F4;
+    --charcoal: #2E2E2E;
+    --burnt-sienna: #A93400;
+    --sienna-hover: #A95C3D;
+    --accent-color: #A95C3D;
+    --antique-gold: #A1824A;
+    --slate-blue: #5A7D8C;
+    --meta-text-color: #5A7D8C;
+    --light-stone: #D1D1D1;
+    --border-color: #e0e0e0;
+    --medium-stone: #8E8E8E;
+    --white: #FFFFFF;
+    
+    --font-narrative: 'Lora', Georgia, serif;
+    --font-ui: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
+}
+
+/* ========================================
+   BASE STYLES
+   ======================================== */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-narrative);
+    color: var(--charcoal);
+    background-color: var(--parchment);
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#write {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 64px 80px 100px;
+}
+
+/* ========================================
+   HEADINGS
+   ======================================== */
+
+h1 {
+    font-family: var(--font-narrative);
+    color: var(--charcoal);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-family: var(--font-narrative);
+    color: var(--charcoal);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--light-stone);
+    padding-bottom: 0.5rem;
+}
+
+h3, h4, h5, h6 {
+    font-family: var(--font-ui);
+    color: var(--charcoal);
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 1.25rem;
+    color: var(--charcoal);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+    color: var(--burnt-sienna);
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+h5 {
+    font-size: 1.1rem;
+    color: var(--slate-blue);
+}
+
+h6 {
+    font-size: 1rem;
+    color: var(--medium-stone);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ========================================
+   PARAGRAPHS & TEXT
+   ======================================== */
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.9;
+}
+
+strong, b {
+    font-weight: 700;
+    color: var(--charcoal);
+}
+
+em, i {
+    font-style: italic;
+}
+
+/* ========================================
+   LINKS
+   ======================================== */
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-color);
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    background-color: rgba(169, 92, 61, 0.1);
+    border-bottom-color: transparent;
+}
+
+/* ========================================
+   BLOCKQUOTES
+   ======================================== */
+
+blockquote {
+    margin: 2rem 0;
+    padding: 1.5rem 2rem;
+    border-left: 4px solid var(--antique-gold);
+    background-color: rgba(161, 130, 74, 0.08);
+    border-radius: 0 4px 4px 0;
+    color: var(--charcoal);
+}
+
+blockquote p {
+    margin: 0.5rem 0;
+    line-height: 1.8;
+}
+
+blockquote blockquote {
+    margin-left: 1rem;
+    border-left-color: var(--slate-blue);
+    background-color: rgba(90, 125, 140, 0.08);
+}
+
+/* ========================================
+   CODE
+   ======================================== */
+
+code {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    background-color: rgba(209, 209, 209, 0.4);
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    color: var(--burnt-sienna);
+}
+
+/* Code blocks */
+pre {
+    font-family: var(--font-mono);
+    background-color: var(--charcoal);
+    color: var(--parchment);
+    padding: 1rem 1.25rem;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    line-height: 1.6;
+}
+
+pre code {
+    background: none;
+    padding: 0;
+    color: inherit;
+    font-size: 0.875rem;
+}
+
+/* Code block with line numbers */
+.md-fences {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    background-color: var(--charcoal);
+    color: var(--parchment);
+    border: none;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1.5rem 0;
+}
+
+.CodeMirror-lines {
+    padding: 0;
+}
+
+/* ========================================
+   LISTS
+   ======================================== */
+
+ul, ol {
+    padding-left: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+li {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.9;
+}
+
+li > ul, li > ol {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+li > ul > li, li > ol > li {
+    margin-bottom: 0.5rem;
+}
+
+/* Unordered list markers */
+ul > li::marker {
+    color: var(--burnt-sienna);
+}
+
+/* Ordered list markers */
+ol > li::marker {
+    color: var(--antique-gold);
+    font-family: var(--font-ui);
+    font-weight: 600;
+}
+
+/* Task lists */
+.task-list-item {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.task-list-item input[type="checkbox"] {
+    margin-right: 0.5rem;
+    accent-color: var(--burnt-sienna);
+}
+
+/* ========================================
+   HORIZONTAL RULE
+   ======================================== */
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, var(--light-stone), var(--antique-gold), var(--light-stone));
+    margin: 2.5rem 0;
+}
+
+/* ========================================
+   TABLES
+   ======================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-family: var(--font-ui);
+    font-size: 0.9rem;
+}
+
+thead {
+    background-color: var(--charcoal);
+    color: var(--parchment);
+}
+
+th {
+    font-weight: 600;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--charcoal);
+}
+
+td {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--light-stone);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(209, 209, 209, 0.2);
+}
+
+tbody tr:hover {
+    background-color: rgba(161, 130, 74, 0.1);
+}
+
+/* ========================================
+   IMAGES
+   ======================================== */
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 1rem 0;
+    box-shadow: 0 2px 8px rgba(46, 46, 46, 0.1);
+}
+
+/* Image captions */
+figure {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+figcaption {
+    font-family: var(--font-ui);
+    font-size: 0.875rem;
+    color: var(--medium-stone);
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* ========================================
+   FOOTNOTES
+   ======================================== */
+
+.footnotes {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--light-stone);
+}
+
+.footnotes h2 {
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
+.footnotes ol {
+    padding-left: 20px;
+    color: #555;
+}
+
+.footnotes li {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.footnotes p {
+    font-size: 0.85rem;
+    margin-bottom: 0;
+}
+
+.footnote-ref, sup a {
+    font-family: var(--font-ui);
+    font-size: 0.8em;
+    font-weight: 600;
+    vertical-align: super;
+    color: var(--burnt-sienna);
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.footnote-ref:hover, sup a:hover {
+    background-color: transparent;
+}
+
+sup.md-footnote {
+    font-family: var(--font-ui);
+    font-size: 0.8em;
+    font-weight: 600;
+    color: var(--burnt-sienna);
+    background-color: transparent;
+    padding: 0;
+}
+
+/* ========================================
+   DEFINITION LISTS
+   ======================================== */
+
+dl {
+    margin: 1rem 0;
+}
+
+dt {
+    font-family: var(--font-ui);
+    font-weight: 700;
+    color: var(--burnt-sienna);
+    margin-top: 1rem;
+}
+
+dd {
+    margin-left: 1.5rem;
+    margin-top: 0.25rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--light-stone);
+}
+
+/* ========================================
+   MARK / HIGHLIGHT
+   ======================================== */
+
+mark {
+    background-color: rgba(161, 130, 74, 0.3);
+    color: var(--charcoal);
+    padding: 0.1rem 0.3rem;
+    border-radius: 2px;
+}
+
+/* ========================================
+   STRIKETHROUGH
+   ======================================== */
+
+del, s {
+    color: var(--medium-stone);
+    text-decoration: line-through;
+}
+
+/* ========================================
+   KEYBOARD
+   ======================================== */
+
+kbd {
+    font-family: var(--font-ui);
+    font-size: 0.85em;
+    background-color: var(--light-stone);
+    border: 1px solid var(--medium-stone);
+    border-radius: 3px;
+    padding: 0.1rem 0.4rem;
+    box-shadow: 0 1px 2px rgba(46, 46, 46, 0.1);
+}
+
+/* ========================================
+   ABBREVIATIONS
+   ======================================== */
+
+abbr {
+    text-decoration: underline dotted var(--slate-blue);
+    cursor: help;
+}
+
+/* ========================================
+   SELECTION
+   ======================================== */
+
+::selection {
+    background-color: rgba(169, 52, 0, 0.2);
+    color: var(--charcoal);
+}
+
+::-moz-selection {
+    background-color: rgba(169, 52, 0, 0.2);
+    color: var(--charcoal);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - SIDEBAR
+   ======================================== */
+
+#typora-sidebar {
+    background-color: var(--parchment);
+    border-right: 1px solid var(--light-stone);
+}
+
+.sidebar-content {
+    font-family: var(--font-ui);
+}
+
+.file-tree-node.active > .file-node-content {
+    background-color: rgba(169, 52, 0, 0.1);
+    color: var(--burnt-sienna);
+}
+
+.file-tree-node:hover > .file-node-content {
+    background-color: rgba(209, 209, 209, 0.3);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - SOURCE MODE
+   ======================================== */
+
+.cm-s-typora-default .cm-header {
+    color: var(--burnt-sienna);
+}
+
+.cm-s-typora-default .cm-link {
+    color: var(--slate-blue);
+}
+
+.cm-s-typora-default .cm-string {
+    color: var(--antique-gold);
+}
+
+.cm-s-typora-default .cm-comment {
+    color: var(--medium-stone);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - FOCUS MODE
+   ======================================== */
+
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) * {
+    color: var(--light-stone) !important;
+}
+
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) img {
+    opacity: 0.5;
+}
+
+/* ========================================
+   TYPORA SPECIFIC - MEGAMENU
+   ======================================== */
+
+.megamenu-menu-panel {
+    background-color: var(--parchment);
+    font-family: var(--font-ui);
+}
+
+.megamenu-menu-panel .btn {
+    background-color: var(--burnt-sienna);
+    color: var(--parchment);
+}
+
+.megamenu-menu-panel .btn:hover {
+    background-color: var(--sienna-hover);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - SEARCH
+   ======================================== */
+
+#md-searchpanel {
+    background-color: var(--parchment);
+    border-bottom: 1px solid var(--light-stone);
+}
+
+#md-searchpanel input {
+    font-family: var(--font-ui);
+    background-color: var(--white);
+    border: 1px solid var(--light-stone);
+    border-radius: 4px;
+}
+
+#md-searchpanel input:focus {
+    border-color: var(--burnt-sienna);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(169, 52, 0, 0.15);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - TOOLTIP
+   ======================================== */
+
+.md-hover-tip .md-arrow:after {
+    background-color: var(--charcoal);
+}
+
+.md-hover-tip .code-tooltip-content {
+    background-color: var(--charcoal);
+    color: var(--parchment);
+    font-family: var(--font-ui);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - META BLOCK
+   ======================================== */
+
+.md-meta-block {
+    background-color: rgba(209, 209, 209, 0.3);
+    border-radius: 6px;
+    padding: 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--medium-stone);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - TABLE OF CONTENTS
+   ======================================== */
+
+.md-toc {
+    font-family: var(--font-ui);
+}
+
+.md-toc-h1 {
+    font-weight: 700;
+    color: var(--charcoal);
+}
+
+.md-toc-h2 {
+    font-weight: 600;
+    color: var(--burnt-sienna);
+}
+
+.md-toc-h3, .md-toc-h4, .md-toc-h5, .md-toc-h6 {
+    color: var(--medium-stone);
+}
+
+/* ========================================
+   SCROLLBAR
+   ======================================== */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--parchment);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--light-stone);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--medium-stone);
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+
+@media print {
+    html {
+        font-size: 12pt;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+    
+    #write {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        color: black;
+        page-break-after: avoid;
+    }
+    
+    pre, blockquote {
+        page-break-inside: avoid;
+    }
+    
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+    
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        color: #666;
+    }
+}
+</style>
+<style type='text/css'  id="style-lp">ol, ul {padding-left: 40px}</style>
+
+<title>TEXTBOOK-Chapter-16-Movement-Building</title>
 </head>
-<body>
-    <div class="container">
-        <article>
-<h1>Chapter 16: From Practice to Discipline — Movement Building</h1>
-
-<h2>Opening: The Marathon Nobody Knows You're Running</h2>
-
-<p>
-In 1949, a small group of scholars gathered at MIT to discuss "the possibilities of a science of science." They called themselves historians and sociologists of science, though neither history departments nor sociology departments particularly wanted them. They were too historical for sociologists, too sociological for historians, too focused on content for both.
-</p>
-
-<p>
-By 1975, they'd founded the Society for Social Studies of Science (4S). By 1990, there were doctoral programs at MIT, Cornell, and Edinburgh. By 2000, Science and Technology Studies (STS) was recognized as a legitimate interdisciplinary field with journals, conferences, and tenure-track jobs.
-</p>
-
-<p>
-<strong>It took 50 years.</strong>
-</p>
-
-<p>
-In 2012, a data scientist named DJ Patil coined the term "data science" (building on earlier uses). Tech companies were desperate for people who could analyze big data but didn't know what to call them. Universities scrambled to create programs. By 2020, data science was everywhere—hundreds of degree programs, professional certifications, six-figure salaries.
-</p>
-
-<p>
-<strong>It took 8 years.</strong>
-</p>
-
-<p>
-One discipline took half a century to build through patient coalition-building, scholarly legitimation, and institutional negotiation. The other exploded in less than a decade driven by industry demand and money.
-</p>
-
-<p>
-<strong>Archaeobytology faces the same question every emerging discipline does: How do we go from scattered practice to recognized field?</strong>
-</p>
-
-<p>
-Do we take the slow road—building scholarly infrastructure, publishing rigorous research, waiting for academic legitimacy? Or the fast road—chasing industry funding, training practitioners, proving economic value?
-</p>
-
-<p>
-The answer is: <strong>both, strategically, over 10-20 years.</strong>
-</p>
-
-<p>
-This chapter is your roadmap. By the end, you'll understand:
-- The five dimensions of movement building (knowledge, institutions, careers, visibility, policy)
-- Case studies of successful discipline formation (DH, Data Science, STS)
-- A phased timeline for Archaeobytology (what to build when)
-- How to avoid common failure modes (capture, fragmentation, irrelevance)
-- What YOU can do right now to help
-</p>
-
-<p>
-This isn't just theory. This is <strong>praxis</strong>—the strategic work of turning an idea into institutional reality.
-</p>
-
-<p>
-Let's begin.
-</p>
-
-<h2>Part I: The Movement-Building Matrix</h2>
-
-<h3>The Five Dimensions</h3>
-
-<p>
-Every successful discipline requires infrastructure across five dimensions. Neglect any one, and the movement stalls.
-</p>
-
-<h4>Dimension 1: Knowledge Infrastructure</h4>
-
-<p>
-<strong>What it is:</strong> The intellectual scaffolding that makes a field coherent.
-</p>
-
-<p>
-<strong>Components:</strong>
-- <strong>Journals</strong>: Peer-reviewed venues for publishing research
-- <strong>Conferences</strong>: Annual gatherings to share work and build community
-- <strong>Textbooks</strong>: Standardized curriculum (this book is one example)
-- <strong>Handbooks</strong>: Reference works covering methods, theory, history
-- <strong>Online platforms</strong>: Wikis, forums, repositories for distributed knowledge
-</p>
-
-<p>
-<strong>Why it matters:</strong> Without knowledge infrastructure, practitioners can't:
-- Find each other's work (no central publication venue)
-- Build on prior research (no shared literature)
-- Train students (no textbooks, no canon)
-- Claim intellectual coherence (no shared vocabulary)
-</p>
-
-<p>
-<strong>Archaeobytology's Current State (2025):</strong>
-- ✅ This textbook exists
-- ❌ No dedicated journal (yet)
-- ❌ No annual conference (yet)
-- ❌ No handbook (yet)
-- ⚠️ Scattered online communities (Archive Team wiki, IndieWeb, but no unified Archaeobytology hub)
-</p>
-
-<p>
-<strong>Priority Actions:</strong>
-1. Launch <em>Journal of Archaeobytology</em> (open access, online)
-2. Host first Archaeobytology conference (even if small—50 people)
-3. Create archaeobytology.org wiki (methods, case studies, tools)
-</p>
-
-<h4>Dimension 2: Institutional Anchors</h4>
-
-<p>
-<strong>What it is:</strong> Physical/organizational homes where the discipline can grow.
-</p>
-
-<p>
-<strong>Components:</strong>
-- <strong>Departments</strong>: Standalone units with hiring/budgeting autonomy
-- <strong>Programs</strong>: Degree-granting (certificates, minors, majors, graduate programs)
-- <strong>Centers/Institutes</strong>: Research hubs (may not grant degrees but provide infrastructure)
-- <strong>Labs</strong>: Spaces with equipment, servers, staff
-- <strong>Professional schools</strong>: Practice-oriented training (like law schools, business schools)
-</p>
-
-<p>
-<strong>Why it matters:</strong> Without institutional anchors, the field is:
-- <strong>Homeless</strong>: No physical space, no servers, no resources
-- <strong>Jobless</strong>: No tenure-track positions for PhDs
-- <strong>Powerless</strong>: No budgets, no hiring authority, no institutional clout
-</p>
-
-<p>
-<strong>Archaeobytology's Current State (2025):</strong>
-- ❌ No standalone departments
-- ❌ No degree programs (though scattered courses exist)
-- ⚠️ Internet Archive functions as de facto institute (but not academic)
-- ❌ No university-based centers (yet)
-</p>
-
-<p>
-<strong>Priority Actions:</strong>
-1. Launch "Certificate in Digital Preservation and Sovereignty" at 3-5 universities
-2. Establish "Center for Archaeobytology" at one major university (with grant funding)
-3. Create first MA program (likely in iSchool or interdisciplinary program)
-</p>
-
-<h4>Dimension 3: Professional Pathways</h4>
-
-<p>
-<strong>What it is:</strong> Jobs people can get after training in the field.
-</p>
-
-<p>
-<strong>Tracks:</strong>
-- <strong>Academic</strong>: Tenure-track faculty, postdocs, research positions
-- <strong>Practitioner</strong>: Archivists, curators, preservation specialists in libraries/museums
-- <strong>Industry</strong>: Tech companies (digital sovereignty engineers, ethical AI trainers)
-- <strong>Non-profit</strong>: Internet Archive, EFF, Creative Commons, Wikimedia roles
-- <strong>Consulting</strong>: Freelance/agency work advising on preservation and platform alternatives
-- <strong>Government</strong>: National Archives, Library of Congress, policy roles
-</p>
-
-<p>
-<strong>Why it matters:</strong> Students won't enroll in programs if there are no jobs. Universities won't create programs if they can't place graduates.
-</p>
-
-<p>
-<strong>Archaeobytology's Current State (2025):</strong>
-- ⚠️ Some relevant jobs exist (digital archivist, preservation specialist) but don't use "Archaeobytology" term
-- ❌ No clear career ladder (junior → senior → leadership)
-- ❌ No professional certification (no "Certified Archaeobytologist" credential)
-</p>
-
-<p>
-<strong>Priority Actions:</strong>
-1. Survey existing jobs and map to Archaeobytology skills
-2. Create "Certified Archaeobytologist" credential (like Certified Archivist)
-3. Build job board (archaeobytology.org/jobs)
-4. Develop clear career pathways document ("If you get an MA in Archaeobytology, you can work as...")
-</p>
-
-<h4>Dimension 4: Public Visibility</h4>
-
-<p>
-<strong>What it is:</strong> Awareness outside academia—general public, media, policymakers.
-</p>
-
-<p>
-<strong>Mechanisms:</strong>
-- <strong>Popular books</strong>: Trade press (not just academic presses)
-- <strong>Podcasts</strong>: Storytelling and interviews
-- <strong>Documentaries</strong>: Visual media for mass audiences
-- <strong>Op-eds</strong>: <em>New York Times</em>, <em>Atlantic</em>, <em>Wired</em>, etc.
-- <strong>Social media</strong>: Twitter/Mastodon accounts, YouTube channels
-- <strong>TED talks</strong>: High-profile speaking (reaches millions)
-- <strong>Museum exhibits</strong>: Physical installations about platform death
-</p>
-
-<p>
-<strong>Why it matters:</strong> Academic legitimacy alone isn't enough. Public visibility:
-- Attracts students (people major in things they've heard of)
-- Influences funders (foundations fund visible causes)
-- Shapes policy (legislators care about issues the public cares about)
-- Creates urgency (media coverage makes platform death a "real" problem)
-</p>
-
-<p>
-<strong>Archaeobytology's Current State (2025):</strong>
-- ⚠️ Some media coverage of platform shutdowns (but not framed as "Archaeobytology")
-- ⚠️ Internet Archive gets press, but not as discipline-building
-- ❌ No breakout popular book (need the "gladwell moment")
-- ❌ No documentary
-</p>
-
-<p>
-<strong>Priority Actions:</strong>
-1. Write popular book on platform death (trade press, accessible prose)
-2. Produce documentary: "The Day GeoCities Died" or "Who Killed Your Childhood Website?"
-3. Get 5-10 op-eds in major outlets
-4. Launch public-facing podcast: "Murdered Platforms" (each episode covers one shutdown)
-</p>
-
-<h4>Dimension 5: Policy Advocacy</h4>
-
-<p>
-<strong>What it is:</strong> Translating research into laws, regulations, and norms.
-</p>
-
-<p>
-<strong>Policy Goals:</strong>
-- <strong>Right to Archive</strong>: Expand fair use/copyright exceptions for preservation
-- <strong>Platform Accountability</strong>: Require notice before shutdowns, mandate data export tools
-- <strong>Digital Right of First Refusal</strong>: Archives get access to content before deletion
-- <strong>Public Digital Archive Funding</strong>: Dedicated government funding stream (like NEH but for digital preservation)
-- <strong>Anti-Speculation Measures</strong>: Prevent domain squatting, ensure use-it-or-lose-it for digital infrastructure
-</p>
-
-<p>
-<strong>Mechanisms:</strong>
-- <strong>White papers</strong>: Research reports with policy recommendations
-- <strong>Testimony</strong>: Speaking at legislative hearings
-- <strong>Model legislation</strong>: Draft bills ready for lawmakers to introduce
-- <strong>Coalition building</strong>: Partner with EFF, Internet Archive, library associations, tech policy orgs
-- <strong>Informal briefings</strong>: Meet with congressional staffers, regulators
-</p>
-
-<p>
-<strong>Why it matters:</strong> Scholarly work alone doesn't change systems. Laws shape:
-- What can be archived legally
-- Whether platforms must provide data export tools
-- Whether governments fund preservation infrastructure
-- Whether digital culture is protected like tangible cultural heritage
-</p>
-
-<p>
-<strong>Archaeobytology's Current State (2025):</strong>
-- ⚠️ Some advocacy happening (Internet Archive lawsuits, EFF campaigns) but not framed as Archaeobytology movement
-- ❌ No unified policy agenda
-- ❌ No Archaeobytologist testifying at hearings (yet)
-</p>
-
-<p>
-<strong>Priority Actions:</strong>
-1. Draft "Archaeobytologist's Policy Agenda" (5-10 key legislative goals)
-2. Form "Coalition for Digital Preservation Rights" (partner orgs)
-3. Get first Archaeobytologist to testify at congressional hearing
-4. Publish white paper: "The Case for a Right to Archive"
-</p>
-
-<h2>Part II: Case Studies in Discipline Formation</h2>
-
-<h3>Case Study 1: Digital Humanities (40-Year Marathon)</h3>
-
-<p>
-<strong>Timeline:</strong>
-</p>
-
-<p>
-<strong>1960s-1980s: Scattered Practice</strong>
-- "Humanities computing"—scholars using computers for text analysis
-- No community, no infrastructure, seen as technical skill not intellectual field
-</p>
-
-<p>
-<strong>1990s: Early Organization</strong>
-- Conferences emerge: ACH (1978 but small), TEI (Text Encoding Initiative, 1987)
-- First journals: <em>Computers and the Humanities</em> (1966, but niche)
-- Internet makes digital methods suddenly relevant
-</p>
-
-<p>
-<strong>2000s: Critical Mass</strong>
-- Term "digital humanities" replaces "humanities computing" (2004)
-- Major conferences: DH (annual, hundreds of attendees)
-- Centers at Stanford, UVA, CUNY, Nebraska
-- NEH Office of Digital Humanities (2008)—dedicated funding
-</p>
-
-<p>
-<strong>2010s: Institutionalization</strong>
-- Dozens of DH centers worldwide
-- Hundreds of tenure-track jobs with "DH" in title
-- Textbooks, handbooks, journals proliferate
-- Still fights for legitimacy (but no longer dismissed as "not real scholarship")
-</p>
-
-<p>
-<strong>2020s: Established but Marginal</strong>
-- DH is recognized field
-- Still mostly interdisciplinary (few standalone departments)
-- Debates about boundaries, politics, labor conditions
-</p>
-
-<p>
-<strong>Key Lessons:</strong>
-</p>
-
-<p>
-✅ <strong>Slow and steady wins legitimacy</strong>—took 40 years but built durable infrastructure
-</p>
-
-<p>
-✅ <strong>External funding helps</strong>—NEH Office of Digital Humanities accelerated growth
-</p>
-
-<p>
-✅ <strong>Rebranding matters</strong>—"digital humanities" sounded more intellectual than "humanities computing"
-</p>
-
-<p>
-❌ <strong>Still marginal</strong>—even after 40 years, many DH scholars struggle for tenure
-</p>
-
-<p>
-❌ <strong>Labor exploitation</strong>—lots of adjuncts/alt-ac, few permanent positions
-</p>
-
-<p>
-<strong>For Archaeobytology:</strong>
-- Don't expect fast legitimation (but aim for faster than 40 years)
-- Pursue NEH/Mellon funding aggressively
-- Name matters (Archaeobytology is provocative, good)
-- Build labor protections from start (don't replicate DH's precarity)
-</p>
-
-<h3>Case Study 2: Data Science (Industry-Driven Speedrun)</h3>
-
-<p>
-<strong>Timeline:</strong>
-</p>
-
-<p>
-<strong>2000s: Industry Need</strong>
-- Companies drowning in data, no one trained to analyze it
-- Hiring statisticians, CS PhDs, physicists—anyone who could code + math
-</p>
-
-<p>
-<strong>2008-2012: Term Emerges</strong>
-- DJ Patil and Jeff Hammerbacher coin "data scientist" (2008-2012)
-- Industry demand explodes (Google, Facebook, Amazon hiring aggressively)
-</p>
-
-<p>
-<strong>2012-2015: Academic Response</strong>
-- Universities see $$$ (lucrative master's programs)
-- Bootcamps emerge (Galvanize, General Assembly—3-6 month training)
-- Columbia, NYU, UC Berkeley launch data science programs
-</p>
-
-<p>
-<strong>2015-2020: Ubiquity</strong>
-- Hundreds of programs (undergrad, master's, PhD)
-- Data Science Society, professional certifications
-- Six-figure salaries attract students
-</p>
-
-<p>
-<strong>2020s: Established but Fuzzy</strong>
-- Data science everywhere
-- Still debates about what it "is" (statistics? CS? business analytics?)
-- Academic programs vary wildly in quality
-</p>
-
-<p>
-<strong>Key Lessons:</strong>
-</p>
-
-<p>
-✅ <strong>Industry demand accelerates everything</strong>—8 years to ubiquity
-</p>
-
-<p>
-✅ <strong>Money talks</strong>—universities created programs because students would pay
-</p>
-
-<p>
-✅ <strong>Bootcamps work</strong>—don't need PhD to be data scientist, practical training suffices
-</p>
-
-<p>
-❌ <strong>Intellectual incoherence</strong>—field still doesn't have clear boundaries or canon
-</p>
-
-<p>
-❌ <strong>Quality control</strong>—some programs are excellent, many are cash grabs
-</p>
-
-<p>
-<strong>For Archaeobytology:</strong>
-- Identify industry demand (tech companies need digital sovereignty architects?)
-- Create "Archaeobytology Bootcamp" (3-6 month intensive, professional credential)
-- But maintain intellectual rigor (don't let money corrupt mission)
-- Build quality standards early
-</p>
-
-<h3>Case Study 3: Science and Technology Studies (Coalition Model)</h3>
-
-<p>
-<strong>Timeline:</strong>
-</p>
-
-<p>
-<strong>1970s: Coalition Formation</strong>
-- Historians of science + sociologists of knowledge + philosophers of technology
-- All studying science/tech but from different angles
-- Realized they had shared interests → formed coalition
-</p>
-
-<p>
-<strong>1975: Professional Society</strong>
-- Founded 4S (Society for Social Studies of Science)
-- Annual conference becomes gathering place
-</p>
-
-<p>
-<strong>1980s-1990s: Boundary Struggles</strong>
-- "Science Wars"—scientists attack STS as postmodern relativism
-- Internal debates: constructivism vs. realism, Latour vs. feminists
-- Field almost fractures but holds together
-</p>
-
-<p>
-<strong>2000s: Stabilization</strong>
-- Multiple journals (<em>Social Studies of Science</em>, <em>Science, Technology & Human Values</em>)
-- Departments at MIT, Cornell, UC San Diego, York, others
-- Clear identity: interdisciplinary but distinct
-</p>
-
-<p>
-<strong>2010s-2020s: Maturity</strong>
-- Hundreds of STS scholars worldwide
-- Influencing policy (COVID response, climate, AI ethics)
-- Still interdisciplinary (mostly joint appointments) but recognized
-</p>
-
-<p>
-<strong>Key Lessons:</strong>
-</p>
-
-<p>
-✅ <strong>Coalitions work</strong>—united historians, sociologists, philosophers under one tent
-</p>
-
-<p>
-✅ <strong>Boundary struggles are normal</strong>—every field fights over what it is/isn't
-</p>
-
-<p>
-✅ <strong>Professional society matters</strong>—4S gave STS institutional home
-</p>
-
-<p>
-✅ <strong>Interdisciplinarity can be strength</strong>—not having disciplinary "purity" allows flexibility
-</p>
-
-<p>
-❌ <strong>Slow growth</strong>—40+ years, still mostly joint appointments not standalone departments
-</p>
-
-<p>
-<strong>For Archaeobytology:</strong>
-- Build coalition across digital historians, archivists, activists, builders
-- Expect internal debates (Archive vs Anvil priorities, etc.)—that's healthy
-- Found professional society early (within 5 years)
-- Embrace interdisciplinarity as strength
-</p>
-
-<h2>Part III: The Archaeobytology Movement Strategy (10-20 Year Roadmap)</h2>
-
-<h3>Phase 1: Emergence (Years 1-5) — <strong>WE ARE HERE</strong></h3>
-
-<p>
-<strong>Current State (2025):</strong>
-- Scattered practitioners doing Archaeobytology without calling it that
-- This textbook is one of first attempts to codify field
-- No formal infrastructure (yet)
-- ~50-100 people might identify as doing this work (but don't use "Archaeobytology" term)
-</p>
-
-<p>
-<strong>Goals for Years 1-5:</strong>
-</p>
-
-<p>
-<strong>Year 1 (2025-2026):</strong>
-- [ ] Publish this textbook (archaeobytology.org)
-- [ ] Create wiki: archaeobytology.org/wiki (methods, case studies, tools)
-- [ ] Launch mailing list/Discord for practitioners
-- [ ] Collect 100 email addresses of people interested
-- [ ] Host first "Archaeobytology Unconference" (virtual, 1 day, informal)
-</p>
-
-<p>
-<strong>Year 2 (2026-2027):</strong>
-- [ ] Launch <em>Journal of Archaeobytology</em> (open access, online-only at first)
-- [ ] Solicit 10 papers for inaugural issue
-- [ ] Host first in-person conference: "Archaeobytology 2027" (50-100 people)
-- [ ] Secure first grant (Mellon/NEH/Mozilla for $50-100k)
-- [ ] 5 universities offer "Introduction to Archaeobytology" course
-</p>
-
-<p>
-<strong>Year 3 (2027-2028):</strong>
-- [ ] Second annual conference (100-150 people)
-- [ ] Publish second journal issue (aim for 2/year)
-- [ ] Launch first certificate program (one university offers "Certificate in Digital Preservation")
-- [ ] Draft "Archaeobytologist's Policy Agenda" white paper
-- [ ] 10 universities teaching Archaeobytology courses
-</p>
-
-<p>
-<strong>Year 4 (2028-2029):</strong>
-- [ ] Found "Society for Archaeobytology" (or similar name)
-- [ ] Third conference (150-200 people)
-- [ ] First student graduates with certificate in Archaeobytology (milestone!)
-- [ ] Publish popular article in <em>Atlantic</em> or <em>Wired</em>
-- [ ] Secure larger grant ($200-500k) for multi-year project
-</p>
-
-<p>
-<strong>Year 5 (2029-2030):</strong>
-- [ ] Journal has 4 issues/year, editorial board of 20
-- [ ] Conference has 250+ attendees, multiple tracks
-- [ ] 3 universities have certificates/minors
-- [ ] First testimony at Congressional hearing by Archaeobytologist
-- [ ] 20+ universities teaching courses
-</p>
-
-<p>
-<strong>Phase 1 Success Metrics:</strong>
-- ✅ 500+ people identify as Archaeobytologists
-- ✅ Professional society exists
-- ✅ Annual conference established
-- ✅ Journal publishing regularly
-- ✅ Some undergraduate programs
-</p>
-
-<h3>Phase 2: Coalition Building (Years 6-10)</h3>
-
-<p>
-<strong>Goals for Years 6-10:</strong>
-</p>
-
-<p>
-<strong>Infrastructure:</strong>
-- [ ] Journal becomes quarterly, peer-reviewed, indexed (Scopus, Web of Science)
-- [ ] Conference grows to 500 attendees, international
-- [ ] Handbook published: <em>Handbook of Archaeobytology</em> (40+ chapters, major reference work)
-- [ ] Online platform mature (wiki has 1000+ pages, forum has 5000+ members)
-</p>
-
-<p>
-<strong>Institutions:</strong>
-- [ ] First MA program launches (probably iSchool or interdisciplinary)
-- [ ] 3-5 universities have "Centers for Digital Sovereignty" (funded, with staff)
-- [ ] 10+ universities have certificate/minor programs
-- [ ] First PhD student lists "Archaeobytology" as primary field (even if in interdisciplinary program)
-</p>
-
-<p>
-<strong>Careers:</strong>
-- [ ] 50+ tenure-track jobs posted with "Archaeobytology" or "Digital Sovereignty" in description
-- [ ] "Certified Archaeobytologist" credential launched (professional certification)
-- [ ] Job placement rate for MA graduates: 80%+
-</p>
-
-<p>
-<strong>Visibility:</strong>
-- [ ] Popular book published (trade press): <em>Murdered Platforms: The Fight for Digital Memory</em>
-- [ ] Documentary released: screening at festivals, streaming on Netflix/Prime
-- [ ] 20+ op-eds in major outlets
-- [ ] Podcast has 50+ episodes, 10k+ listeners
-</p>
-
-<p>
-<strong>Policy:</strong>
-- [ ] "Coalition for Digital Preservation Rights" formed (10+ partner orgs)
-- [ ] Model legislation drafted ("Digital Preservation Act")
-- [ ] 3+ Archaeobytologists testify at hearings
-- [ ] First local/state policy win (e.g., state library system adopts Archaeobytology standards)
-</p>
-
-<p>
-<strong>Phase 2 Success Metrics:</strong>
-- ✅ 2,000+ Archaeobytologists worldwide
-- ✅ MA programs at 5+ universities
-- ✅ First dissertations completed
-- ✅ Public awareness: 10% of people have heard of Archaeobytology
-- ✅ Policy engagement: regular testimony, coalition work
-</p>
-
-<h3>Phase 3: Institutionalization (Years 11-15)</h3>
-
-<p>
-<strong>Goals for Years 11-15:</strong>
-</p>
-
-<p>
-<strong>Academic Maturity:</strong>
-- [ ] 5+ PhD programs offer Archaeobytology as concentration/specialization
-- [ ] 50+ dissertations completed
-- [ ] 100+ tenure-track faculty
-- [ ] Textbook adoption: 100+ universities using this or similar books
-</p>
-
-<p>
-<strong>Institutional Expansion:</strong>
-- [ ] First standalone "Department of Archaeobytology and Digital Sovereignty"
-- [ ] 20+ centers/institutes worldwide
-- [ ] Major research universities (Harvard, MIT, Stanford, etc.) have programs
-</p>
-
-<p>
-<strong>Funding Ecosystem:</strong>
-- [ ] NSF creates "Digital Sovereignty and Preservation" program
-- [ ] NEH has dedicated Archaeobytology funding stream ($5-10M/year)
-- [ ] Private foundations (Mellon, Sloan, Knight) regularly fund Archaeobytology projects
-</p>
-
-<p>
-<strong>Public Impact:</strong>
-- [ ] <em>New York Times</em> runs major feature: "The Archaeobytologists Saving the Internet"
-- [ ] TED Talk by prominent Archaeobytologist (1M+ views)
-- [ ] Museum exhibits at major institutions (Smithsonian, V&A, etc.)
-</p>
-
-<p>
-<strong>Policy Wins:</strong>
-- [ ] Federal legislation passed (e.g., "Digital Preservation Act" or similar)
-- [ ] Library of Congress has "Archaeobytology Division"
-- [ ] International policy (UNESCO recognizes digital cultural heritage, influenced by Archaeobytology work)
-</p>
-
-<p>
-<strong>Phase 3 Success Metrics:</strong>
-- ✅ 5,000+ Archaeobytologists
-- ✅ 100+ universities with programs
-- ✅ First standalone departments
-- ✅ Regular federal funding
-- ✅ Major policy wins
-</p>
-
-<h3>Phase 4: Maturity and Expansion (Years 16-20)</h3>
-
-<p>
-<strong>Goals for Years 16-20:</strong>
-</p>
-
-<p>
-<strong>Discipline Established:</strong>
-- [ ] 10+ standalone departments
-- [ ] 1,000+ PhD holders
-- [ ] Archaeobytology included in standard university catalogs (alongside History, Sociology, etc.)
-- [ ] Canon established (everyone agrees on core texts to read)
-</p>
-
-<p>
-<strong>Global Reach:</strong>
-- [ ] Archaeobytology programs in 20+ countries
-- [ ] International professional societies (European Archaeobytology Association, Asia-Pacific chapter, etc.)
-- [ ] Multilingual scholarship (not just English-language dominance)
-</p>
-
-<p>
-<strong>Specialization:</strong>
-- [ ] Subfields emerge: "Archaeobytology of Social Media," "Video Game Preservation Studies," "Digital Memory and Trauma," etc.
-- [ ] Specialized journals for subfields
-- [ ] Debates about what "counts" as Archaeobytology (sign of maturity)
-</p>
-
-<p>
-<strong>Cultural Impact:</strong>
-- [ ] High school students learn about platform death in history classes
-- [ ] Archaeobytology consultants common (like "sustainability consultants" today)
-- [ ] Major corporations hire Archaeobytologists (ethical concerns, but shows mainstream acceptance)
-</p>
-
-<p>
-<strong>Phase 4 Success Metrics:</strong>
-- ✅ 10,000+ Archaeobytologists worldwide
-- ✅ Field is recognized and established
-- ✅ Career pathways clear and diverse
-- ✅ Public awareness: majority of people have heard of Archaeobytology
-</p>
-
-<h2>Part IV: Avoiding Common Failure Modes</h2>
-
-<h3>Failure Mode 1: Disciplinary Capture</h3>
-
-<p>
-<strong>Risk:</strong> Existing fields absorb Archaeobytology, prevent independence.
-</p>
-
-<p>
-<strong>Scenario:</strong>
-- History departments say: "Archaeobytology is just digital history, we'll hire one person for that"
-- CS departments say: "We'll add a preservation course, that's enough"
-- Library schools say: "Web archiving covers this already"
-- Result: Archaeobytology gets fragmented, never achieves critical mass
-</p>
-
-<p>
-<strong>Defense:</strong>
-- <strong>Insist on synthesis:</strong> Archaeobytology is NOT reducible to any single field
-- <strong>Build independent infrastructure:</strong> Our own journals, conferences, society (harder to absorb)
-- <strong>Coalition across departments:</strong> If History, CS, AND Library Science all want us, harder for any one to capture
-- <strong>Interdisciplinary programs:</strong> Don't let traditional departments be gatekeepers
-</p>
-
-<h3>Failure Mode 2: Industry Co-optation</h3>
-
-<p>
-<strong>Risk:</strong> Tech companies use Archaeobytology rhetoric but corrupt mission.
-</p>
-
-<p>
-<strong>Scenario:</strong>
-- Facebook hires "Digital Preservation Specialists" (to preserve user data for ad targeting, not user sovereignty)
-- Blockchain startups claim to be "Archaeobytological" (conflating crypto speculation with preservation)
-- Archaeobytology jobs become corporate compliance roles (ethics-washing)
-- Result: Field becomes associated with surveillance capitalism, loses critical edge
-</p>
-
-<p>
-<strong>Defense:</strong>
-- <strong>Value clarity:</strong> Center the Three Pillars in everything (Declaration, Connection, Ground)
-- <strong>Ethical guidelines:</strong> Professional code that says "surveillance-capitalism work is not Archaeobytology"
-- <strong>Critical scholarship:</strong> Maintain academic independence, publish critiques of platform power
-- <strong>Diversity of employment:</strong> Balance academic, non-profit, and (selective) industry roles
-</p>
-
-<h3>Failure Mode 3: Internal Fragmentation</h3>
-
-<p>
-<strong>Risk:</strong> Practitioners can't agree on boundaries, methods, values → field splinters.
-</p>
-
-<p>
-<strong>Scenario:</strong>
-- "Archive-first" Archaeobytologists vs. "Anvil-first" Archaeobytologists fight
-- "Everything should be preserved" camp vs. "Consent is paramount" camp can't reconcile
-- Methodological wars: "Only bit-perfect forensics count" vs. "Triage means good-enough"
-- Result: No unified identity, people stop using "Archaeobytology" label, movement dissolves
-</p>
-
-<p>
-<strong>Defense:</strong>
-- <strong>Big tent philosophy:</strong> Multiple approaches valid, don't excommunicate over disagreements
-- <strong>Core values, flexible methods:</strong> Agree on Three Pillars and Custodial Filter, but allow methodological diversity
-- <strong>Productive debate:</strong> Disagreement is healthy (sign of intellectual vitality), but don't let it become toxic
-- <strong>Generosity:</strong> Assume good faith, even when you disagree
-</p>
-
-<h3>Failure Mode 4: Funding Drought</h3>
-
-<p>
-<strong>Risk:</strong> Foundations/agencies don't fund Archaeobytology, infrastructure collapses.
-</p>
-
-<p>
-<strong>Scenario:</strong>
-- Economic recession cuts humanities funding
-- Political shifts defund preservation and digital rights
-- Competing priorities (AI, climate) absorb available grants
-- Result: Journals fold, conferences stop, centers close, people leave for funded fields
-</p>
-
-<p>
-<strong>Defense:</strong>
-- <strong>Diversify funding:</strong> Don't depend on one source (get government + foundation + individual donations + earned revenue)
-- <strong>Demonstrate impact:</strong> Show funders that Archaeobytology matters (saves culture, influences policy, creates jobs)
-- <strong>Build endowment:</strong> If successful, create financial cushion (like established disciplines have)
-- <strong>Partnerships:</strong> Work with stable institutions (libraries, museums with guaranteed budgets)
-</p>
-
-<h3>Failure Mode 5: Elitism and Gatekeeping</h3>
-
-<p>
-<strong>Risk:</strong> Field becomes exclusive club, shuts out marginalized practitioners.
-</p>
-
-<p>
-<strong>Scenario:</strong>
-- "Real Archaeobytologists" have PhDs from elite universities
-- Practitioners without credentials dismissed (even if doing excellent work)
-- Field replicates academia's racism, sexism, classism
-- Result: Narrow, homogeneous community that doesn't reflect diversity of digital culture
-</p>
-
-<p>
-<strong>Defense:</strong>
-- <strong>Multiple pathways:</strong> PhDs, certificates, self-taught practitioners all valid
-- <strong>Open access:</strong> Free textbooks, free journals, free conference options
-- <strong>Anti-discrimination:</strong> Explicit commitments to equity, diverse leadership
-- <strong>Value practice:</strong> Don't privilege academic theory over applied work (both matter)
-- <strong>Community accountability:</strong> Call out gatekeeping when it happens
-</p>
-
-<h2>Part V: What You Can Do Right Now</h2>
-
-<h3>If You're a Student</h3>
-
-<p>
-<strong>Immediate (This Week):</strong>
-1. <strong>Call yourself an Archaeobytologist</strong>—in your bio, on your CV, on social media
-2. <strong>Start a reading group</strong>—gather 3-5 friends, work through this textbook
-3. <strong>Join online communities</strong>—find Archive Team, IndieWeb, digital preservation groups
-</p>
-
-<p>
-<strong>Short-term (This Semester):</strong>
-1. <strong>Write a paper using Archaeobytology framework</strong>—apply Three Pillars, Custodial Filter, etc. to your research
-2. <strong>Propose an independent study</strong>—pitch "Introduction to Archaeobytology" to sympathetic professor
-3. <strong>Start a blog</strong>—document your learning, build public portfolio
-</p>
-
-<p>
-<strong>Medium-term (This Year):</strong>
-1. <strong>Attend a conference</strong>—submit to ADHO, SAA, 4S, or organize Archaeobytology session
-2. <strong>Contribute to a project</strong>—volunteer with Archive Team, Internet Archive, etc.
-3. <strong>Build something</strong>—create a tool, preserve a dying platform, start an archive
-</p>
-
-<h3>If You're a Practitioner</h3>
-
-<p>
-<strong>Immediate:</strong>
-1. <strong>Document your work</strong>—write tutorials, case studies, method posts
-2. <strong>Publish</strong>—submit to journals, blogs, preprint servers
-3. <strong>Teach</strong>—offer workshop at local library, hackerspace, or online
-</p>
-
-<p>
-<strong>Short-term:</strong>
-1. <strong>Organize a meetup</strong>—gather local practitioners, even if just 5 people
-2. <strong>Propose conference session</strong>—at existing conference, submit "Archaeobytology panel"
-3. <strong>Seek funding</strong>—apply for grant explicitly for "Archaeobytology research"
-</p>
-
-<p>
-<strong>Medium-term:</strong>
-1. <strong>Mentor students</strong>—take on interns, advise theses
-2. <strong>Build partnerships</strong>—connect with libraries, museums, universities
-3. <strong>Advocate</strong>—write op-ed, contact your representative about digital preservation
-</p>
-
-<h3>If You're a Professor</h3>
-
-<p>
-<strong>Immediate:</strong>
-1. <strong>Teach a course</strong>—offer "Introduction to Archaeobytology" (use this textbook)
-2. <strong>Cite Archaeobytology</strong>—in your research, explicitly name the field
-3. <strong>Advise students</strong>—encourage dissertations in Archaeobytology
-</p>
-
-<p>
-<strong>Short-term:</strong>
-1. <strong>Organize working group</strong>—gather colleagues across departments interested in this work
-2. <strong>Apply for grant</strong>—propose "Center for Digital Sovereignty" or similar
-3. <strong>Hire</strong>—when job openings come, advocate for Archaeobytology specialization
-</p>
-
-<p>
-<strong>Medium-term:</strong>
-1. <strong>Create program</strong>—certificate, minor, or master's in Archaeobytology
-2. <strong>Launch journal</strong>—start <em>Journal of Archaeobytology</em> at your university press
-3. <strong>Host conference</strong>—organize first major Archaeobytology conference at your institution
-</p>
-
-<h3>If You're an Administrator</h3>
-
-<p>
-<strong>Immediate:</strong>
-1. <strong>Support faculty</strong>—when they propose Archaeobytology courses/programs, approve them
-2. <strong>Fund infrastructure</strong>—allocate space, servers, staff support
-3. <strong>Strategic hire</strong>—create position in Archaeobytology (signal to field it's legitimate)
-</p>
-
-<p>
-<strong>Short-term:</strong>
-1. <strong>Create certificate program</strong>—low-cost way to test demand
-2. <strong>Partner with institutions</strong>—connect with Internet Archive, local libraries
-3. <strong>Seek external funding</strong>—apply for grants to create center/program
-</p>
-
-<p>
-<strong>Medium-term:</strong>
-1. <strong>Launch degree program</strong>—MA in Archaeobytology (draws students, generates revenue)
-2. <strong>Build center</strong>—dedicate space and staff to Archaeobytology research/teaching
-3. <strong>Advocate</strong>—tell peer institutions, accreditors, funders that this field matters
-</p>
-
-<h2>Part VI: Movement Coalitions and Alliances</h2>
-
-<h3>Who Are Our Natural Allies?</h3>
-
-<p>
-<strong>1. Librarians and Archivists</strong>
-- <strong>Shared interests:</strong> Preservation, access, metadata, long-term stewardship
-- <strong>Partnerships:</strong> Joint programs, shared infrastructure, professional development
-- <strong>Organizations:</strong> SAA (Society of American Archivists), ALA (American Library Association)
-</p>
-
-<p>
-<strong>2. Digital Humanists</strong>
-- <strong>Shared interests:</strong> Digital methods, scholarly infrastructure, interdisciplinarity
-- <strong>Partnerships:</strong> Joint conferences, share faculty lines, collaborative research
-- <strong>Organizations:</strong> ADHO (Alliance of Digital Humanities Organizations)
-</p>
-
-<p>
-<strong>3. Digital Rights Activists</strong>
-- <strong>Shared interests:</strong> Platform accountability, user sovereignty, right to archive
-- <strong>Partnerships:</strong> Policy advocacy, public campaigns, legal challenges
-- <strong>Organizations:</strong> EFF (Electronic Frontier Foundation), Creative Commons, Internet Archive
-</p>
-
-<p>
-<strong>4. Tech Workers and Ethical Engineers</strong>
-- <strong>Shared interests:</strong> Building alternatives, open protocols, resistance to surveillance capitalism
-- <strong>Partnerships:</strong> Tool-building, technical consulting, job placements
-- <strong>Organizations:</strong> Tech Workers Coalition, Worker cooperatives
-</p>
-
-<p>
-<strong>5. STS Scholars</strong>
-- <strong>Shared interests:</strong> Studying platform power, technological politics, social construction of technology
-- <strong>Partnerships:</strong> Theoretical frameworks, joint research, publishing
-- <strong>Organizations:</strong> 4S (Society for Social Studies of Science)
-</p>
-
-<p>
-<strong>6. Museums and Memory Institutions</strong>
-- <strong>Shared interests:</strong> Interpreting artifacts, public engagement, cultural heritage
-- <strong>Partnerships:</strong> Exhibitions, public programs, institutional preservation
-- <strong>Organizations:</strong> ICOM (International Council of Museums), AAM (American Alliance of Museums)
-</p>
-
-<h3>Building the Coalition</h3>
-
-<p>
-<strong>Strategy 1: Multi-Stakeholder Convenings</strong>
-- Host annual "Digital Preservation Summit" bringing together all allied groups
-- Not just Archaeobytologists—invite librarians, activists, engineers, scholars, policymakers
-- Goal: Build shared agenda while respecting different priorities
-</p>
-
-<p>
-<strong>Strategy 2: Cross-Organizational Membership</strong>
-- Encourage Archaeobytologists to join SAA, ADHO, 4S, EFF
-- Present at their conferences, publish in their journals
-- Don't isolate—embed ourselves in adjacent communities
-</p>
-
-<p>
-<strong>Strategy 3: Shared Infrastructure</strong>
-- Offer to host Archaeobytology track at existing conferences (before we have our own)
-- Publish in existing journals (while also building our own)
-- Use existing organizations' resources (mailing lists, platforms) early on
-</p>
-
-<p>
-<strong>Strategy 4: Policy Coalitions</strong>
-- Form "Alliance for Digital Preservation Rights" (umbrella org)
-- Members: Archaeobytologists, libraries, Internet Archive, EFF, academics, tech workers
-- Unified policy agenda: Right to Archive, Platform Accountability, Public Funding
-</p>
-
-<h2>Conclusion: The Long Game</h2>
-
-<p>
-Building a discipline takes <strong>patience, strategy, and collective will</strong>.
-</p>
-
-<p>
-Digital Humanities took 40 years. Data Science took 8 (but with massive industry backing). STS took 40 (but created durable coalitions).
-</p>
-
-<p>
-<strong>Archaeobytology's timeline:</strong> Somewhere in between. With strategic action, we could achieve:
-- <strong>5 years:</strong> Professional society, annual conference, first certificates
-- <strong>10 years:</strong> MA programs, regular funding, public visibility
-- <strong>15 years:</strong> PhD programs, departments, policy influence
-- <strong>20 years:</strong> Fully established discipline
-</p>
-
-<p>
-This won't happen automatically. It requires:
-- <strong>Students</strong> declaring "I am an Archaeobytologist" (identity formation)
-- <strong>Practitioners</strong> publishing, teaching, building (knowledge creation)
-- <strong>Professors</strong> creating programs, hiring, securing grants (institutionalization)
-- <strong>Administrators</strong> supporting infrastructure (resources)
-- <strong>Everyone</strong> organizing, advocating, collaborating (movement building)
-</p>
-
-<p>
-<strong>You are not just reading about a discipline. You are helping build it.</strong>
-</p>
-
-<p>
-Every time you:
-- Use "Archaeobytology" in your work (you legitimize the term)
-- Cite this textbook (you build canon)
-- Teach a course (you train next generation)
-- Preserve an artifact (you do the work)
-- Advocate for policy (you change systems)
-- Mentor a student (you grow the field)
-</p>
-
-<p>
-...you are building the movement.
-</p>
-
-<p>
-In 20 years, there might be Archaeobytology departments at universities. Students might major in it. Laws might protect digital culture because we advocated for them.
-</p>
-
-<p>
-<strong>Or not.</strong> That depends on us.
-</p>
-
-<p>
-The marathon has begun. You're running it whether you know it or not.
-</p>
-
-<p>
-Now: <strong>Run intentionally. Run together. Run toward the finish line.</strong>
-</p>
-
-<p>
-The discipline we need is the discipline we build.
-</p>
-
-<h2>Discussion Questions</h2>
-
-<p>
-1. <strong>Personal Role</strong>: In the Movement-Building Matrix (knowledge, institutions, careers, visibility, policy), which dimension are you best positioned to contribute to? Why?
-</p>
-
-<p>
-2. <strong>Timeline Realism</strong>: Is a 20-year timeline realistic? Too optimistic? Too pessimistic? What would accelerate or slow discipline formation?
-</p>
-
-<p>
-3. <strong>Failure Modes</strong>: Which threat (capture, co-optation, fragmentation, funding drought, elitism) seems most dangerous for Archaeobytology? How would you defend against it?
-</p>
-
-<p>
-4. <strong>Case Study Lessons</strong>: Should Archaeobytology follow the DH model (slow academic legitimation), Data Science model (fast industry-driven growth), or STS model (interdisciplinary coalition)? Or some hybrid?
-</p>
-
-<p>
-5. <strong>Coalitions</strong>: Who else should be allied with Archaeobytology that wasn't mentioned? What organizations or movements should we partner with?
-</p>
-
-<p>
-6. <strong>Action Plan</strong>: What's one concrete thing you'll do in the next month to help build Archaeobytology as a discipline?
-</p>
-
-<h2>Exercise: Draft Your Movement Strategy</h2>
-
-<p>
-<strong>Task:</strong> You're leading the Archaeobytology movement. Design a 5-year strategic plan.
-</p>
-
-<p>
-<strong>Part 1: Situation Analysis</strong> (500 words)
-- Current state (2025): What infrastructure exists?
-- SWOT analysis: Strengths, Weaknesses, Opportunities, Threats
-- Key stakeholders: Who cares about this work?
-</p>
-
-<p>
-<strong>Part 2: Goals and Metrics</strong> (500 words)
-</p>
-
-<p>
-For each dimension, set 5-year goals:
-- <strong>Knowledge:</strong> (journals, conferences, textbooks)
-- <strong>Institutions:</strong> (programs, centers, departments)
-- <strong>Careers:</strong> (jobs, certification, placements)
-- <strong>Visibility:</strong> (media, books, public awareness)
-- <strong>Policy:</strong> (legislation, testimony, advocacy wins)
-</p>
-
-<p>
-Include measurable metrics (e.g., "3 universities with certificates" not just "more programs")
-</p>
-
-<p>
-<strong>Part 3: Priority Actions</strong> (1000 words)
-</p>
-
-<p>
-Choose 10 highest-priority actions for Years 1-5:
-- What should happen first? (Sequence matters)
-- Who leads each action? (students, practitioners, professors, administrators)
-- What resources needed? (funding, staff, space, technology)
-- How to measure success?
-</p>
-
-<p>
-<strong>Part 4: Risk Mitigation</strong> (500 words)
-- What could go wrong?
-- Contingency plans for each failure mode
-- How to stay on track if funding dries up, key people leave, or external crises happen?
-</p>
-
-<p>
-<strong>Part 5: Call to Action</strong> (300 words)
-- If you published this plan publicly, how would you recruit people?
-- What's the rallying cry?
-- How do you inspire collective action?
-</p>
-
-<h2>Further Reading</h2>
-
-<h3>On Discipline Formation</h3>
-
-<p>
-- Abbott, Andrew. <em>Chaos of Disciplines</em>. University of Chicago Press, 2001.
-- Klein, Julie Thompson. <em>Interdisciplining Digital Humanities</em>. University of Michigan Press, 2015.
-- Small, Mario Luis. "How to Conduct a Mixed Methods Study." <em>Annual Review of Sociology</em> 37 (2011): 57-86.
-</p>
-
-<h3>On Movement Building</h3>
-
-<p>
-- Ganz, Marshall. "Why David Sometimes Wins: Leadership, Organization, and Strategy in the California Farm Worker Movement." Oxford, 2009.
-- McAdam, Doug, and Ronnelle Paulsen. "Specifying the Relationship Between Social Ties and Activism." <em>American Journal of Sociology</em> 99, no. 3 (1993): 640-667.
-- Staggenborg, Suzanne. "The Consequences of Professionalization and Formalization in the Pro-Choice Movement." <em>American Sociological Review</em> (1988): 585-605.
-</p>
-
-<h3>On Academic Coalition Building</h3>
-
-<p>
-- Star, Susan Leigh, and James Griesemer. "Institutional Ecology, 'Translations' and Boundary Objects." <em>Social Studies of Science</em> 19, no. 3 (1989): 387-420.
-- Frickel, Scott, and Neil Gross. "A General Theory of Scientific/Intellectual Movements." <em>American Sociological Review</em> 70, no. 2 (2005): 204-232.
-</p>
-
-<h3>On Professional Pathways</h3>
-
-<p>
-- Nowviskie, Bethany. "On the Origin of 'Hack' and 'Yack.'" In <em>Debates in the Digital Humanities</em>, 2012.
-- Posner, Miriam. "Here and There: Creating DH Community." In <em>Debates in the Digital Humanities 2016</em>, 2016.
-</p>
-
-<h3>Primary Sources</h3>
-
-<p>
-- Archive Team. https://archiveteam.org
-- 4S (Society for Social Studies of Science). https://www.4sonline.org
-- ADHO (Alliance of Digital Humanities Organizations). https://adho.org
-- Society of American Archivists. https://www2.archivists.org
-</p>
-
-<p>
-<strong>End of Chapter 16 — End of Part IV: Systems & Movements</strong>
-</p>
-
-<p>
-<em>Next: Part V — Public Scholarship & The Future</em>
-<em>Chapter 17 — The Public Intellectual in Archaeobytology</em>
-</p>
-
-
-        </article>
-        <div class="nav">
-            <a href="index.html">Back to Table of Contents</a>
-        </div>
-    </div>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='chapter-16-from-practice-to-discipline-----movement-building'><span>Chapter 16: From Practice to Discipline — Movement Building</span></h1><hr /><h2 id='opening-the-marathon-nobody-knows-youre-running'><span>Opening: The Marathon Nobody Knows You&#39;re Running</span></h2><p><span>In 1949, a small group of scholars gathered at MIT to discuss &quot;the possibilities of a science of science.&quot; They called themselves historians and sociologists of science, though neither history departments nor sociology departments particularly wanted them. They were too historical for sociologists, too sociological for historians, too focused on content for both.</span></p><p><span>By 1975, they&#39;d founded the Society for Social Studies of Science (4S). By 1990, there were doctoral programs at MIT, Cornell, and Edinburgh. By 2000, Science and Technology Studies (STS) was recognized as a legitimate interdisciplinary field with journals, conferences, and tenure-track jobs.</span></p><p><strong><span>It took 50 years.</span></strong></p><p><span>In 2012, a data scientist named DJ Patil coined the term &quot;data science&quot; (building on earlier uses). Tech companies were desperate for people who could analyze big data but didn&#39;t know what to call them. Universities scrambled to create programs. By 2020, data science was everywhere—hundreds of degree programs, professional certifications, six-figure salaries.</span></p><p><strong><span>It took 8 years.</span></strong></p><p><span>One discipline took half a century to build through patient coalition-building, scholarly legitimation, and institutional negotiation. The other exploded in less than a decade driven by industry demand and money.</span></p><p><strong><span>Archaeobytology faces the same question every emerging discipline does: How do we go from scattered practice to recognized field?</span></strong></p><p><span>Do we take the slow road—building scholarly infrastructure, publishing rigorous research, waiting for academic legitimacy? Or the fast road—chasing industry funding, training practitioners, proving economic value?</span></p><p><span>The answer is: </span><strong><span>both, strategically, over 10-20 years.</span></strong></p><p><span>This chapter is your roadmap. By the end, you&#39;ll understand:</span></p><ul><li><p><span>The five dimensions of movement building (knowledge, institutions, careers, visibility, policy)</span></p></li><li><p><span>Case studies of successful discipline formation (DH, Data Science, STS)</span></p></li><li><p><span>A phased timeline for Archaeobytology (what to build when)</span></p></li><li><p><span>How to avoid common failure modes (capture, fragmentation, irrelevance)</span></p></li><li><p><span>What YOU can do right now to help</span></p></li></ul><p><span>This isn&#39;t just theory. This is </span><strong><span>praxis</span></strong><span>—the strategic work of turning an idea into institutional reality.</span></p><p><span>Let&#39;s begin.</span></p><hr /><h2 id='part-i-the-movement-building-matrix'><span>Part I: The Movement-Building Matrix</span></h2><h3 id='the-five-dimensions'><span>The Five Dimensions</span></h3><p><span>Every successful discipline requires infrastructure across five dimensions. Neglect any one, and the movement stalls.</span></p><h4 id='dimension-1-knowledge-infrastructure'><span>Dimension 1: Knowledge Infrastructure</span></h4><p><strong><span>What it is:</span></strong><span> The intellectual scaffolding that makes a field coherent.</span></p><p><strong><span>Components:</span></strong></p><ul><li><p><strong><span>Journals</span></strong><span>: Peer-reviewed venues for publishing research</span></p></li><li><p><strong><span>Conferences</span></strong><span>: Annual gatherings to share work and build community</span></p></li><li><p><strong><span>Textbooks</span></strong><span>: Standardized curriculum (this book is one example)</span></p></li><li><p><strong><span>Handbooks</span></strong><span>: Reference works covering methods, theory, history</span></p></li><li><p><strong><span>Online platforms</span></strong><span>: Wikis, forums, repositories for distributed knowledge</span></p></li></ul><p><strong><span>Why it matters:</span></strong><span> Without knowledge infrastructure, practitioners can&#39;t:</span></p><ul><li><p><span>Find each other&#39;s work (no central publication venue)</span></p></li><li><p><span>Build on prior research (no shared literature)</span></p></li><li><p><span>Train students (no textbooks, no canon)</span></p></li><li><p><span>Claim intellectual coherence (no shared vocabulary)</span></p></li></ul><p><strong><span>Archaeobytology&#39;s Current State (2025):</span></strong></p><ul><li><p><span>✅ This textbook exists</span></p></li><li><p><span>❌ No dedicated journal (yet)</span></p></li><li><p><span>❌ No annual conference (yet)</span></p></li><li><p><span>❌ No handbook (yet)</span></p></li><li><p><span>⚠️ Scattered online communities (Archive Team wiki, IndieWeb, but no unified Archaeobytology hub)</span></p></li></ul><p><strong><span>Priority Actions:</span></strong></p><ol start='' ><li><p><span>Launch </span><em><span>Journal of Archaeobytology</span></em><span> (open access, online)</span></p></li><li><p><span>Host first Archaeobytology conference (even if small—50 people)</span></p></li><li><p><span>Create archaeobytology.org wiki (methods, case studies, tools)</span></p></li></ol><h4 id='dimension-2-institutional-anchors'><span>Dimension 2: Institutional Anchors</span></h4><p><strong><span>What it is:</span></strong><span> Physical/organizational homes where the discipline can grow.</span></p><p><strong><span>Components:</span></strong></p><ul><li><p><strong><span>Departments</span></strong><span>: Standalone units with hiring/budgeting autonomy</span></p></li><li><p><strong><span>Programs</span></strong><span>: Degree-granting (certificates, minors, majors, graduate programs)</span></p></li><li><p><strong><span>Centers/Institutes</span></strong><span>: Research hubs (may not grant degrees but provide infrastructure)</span></p></li><li><p><strong><span>Labs</span></strong><span>: Spaces with equipment, servers, staff</span></p></li><li><p><strong><span>Professional schools</span></strong><span>: Practice-oriented training (like law schools, business schools)</span></p></li></ul><p><strong><span>Why it matters:</span></strong><span> Without institutional anchors, the field is:</span></p><ul><li><p><strong><span>Homeless</span></strong><span>: No physical space, no servers, no resources</span></p></li><li><p><strong><span>Jobless</span></strong><span>: No tenure-track positions for PhDs</span></p></li><li><p><strong><span>Powerless</span></strong><span>: No budgets, no hiring authority, no institutional clout</span></p></li></ul><p><strong><span>Archaeobytology&#39;s Current State (2025):</span></strong></p><ul><li><p><span>❌ No standalone departments</span></p></li><li><p><span>❌ No degree programs (though scattered courses exist)</span></p></li><li><p><span>⚠️ Internet Archive functions as de facto institute (but not academic)</span></p></li><li><p><span>❌ No university-based centers (yet)</span></p></li></ul><p><strong><span>Priority Actions:</span></strong></p><ol start='' ><li><p><span>Launch &quot;Certificate in Digital Preservation and Sovereignty&quot; at 3-5 universities</span></p></li><li><p><span>Establish &quot;Center for Archaeobytology&quot; at one major university (with grant funding)</span></p></li><li><p><span>Create first MA program (likely in iSchool or interdisciplinary program)</span></p></li></ol><h4 id='dimension-3-professional-pathways'><span>Dimension 3: Professional Pathways</span></h4><p><strong><span>What it is:</span></strong><span> Jobs people can get after training in the field.</span></p><p><strong><span>Tracks:</span></strong></p><ul><li><p><strong><span>Academic</span></strong><span>: Tenure-track faculty, postdocs, research positions</span></p></li><li><p><strong><span>Practitioner</span></strong><span>: Archivists, curators, preservation specialists in libraries/museums</span></p></li><li><p><strong><span>Industry</span></strong><span>: Tech companies (digital sovereignty engineers, ethical AI trainers)</span></p></li><li><p><strong><span>Non-profit</span></strong><span>: Internet Archive, EFF, Creative Commons, Wikimedia roles</span></p></li><li><p><strong><span>Consulting</span></strong><span>: Freelance/agency work advising on preservation and platform alternatives</span></p></li><li><p><strong><span>Government</span></strong><span>: National Archives, Library of Congress, policy roles</span></p></li></ul><p><strong><span>Why it matters:</span></strong><span> Students won&#39;t enroll in programs if there are no jobs. Universities won&#39;t create programs if they can&#39;t place graduates.</span></p><p><strong><span>Archaeobytology&#39;s Current State (2025):</span></strong></p><ul><li><p><span>⚠️ Some relevant jobs exist (digital archivist, preservation specialist) but don&#39;t use &quot;Archaeobytology&quot; term</span></p></li><li><p><span>❌ No clear career ladder (junior → senior → leadership)</span></p></li><li><p><span>❌ No professional certification (no &quot;Certified Archaeobytologist&quot; credential)</span></p></li></ul><p><strong><span>Priority Actions:</span></strong></p><ol start='' ><li><p><span>Survey existing jobs and map to Archaeobytology skills</span></p></li><li><p><span>Create &quot;Certified Archaeobytologist&quot; credential (like Certified Archivist)</span></p></li><li><p><span>Build job board (archaeobytology.org/jobs)</span></p></li><li><p><span>Develop clear career pathways document (&quot;If you get an MA in Archaeobytology, you can work as...&quot;)</span></p></li></ol><h4 id='dimension-4-public-visibility'><span>Dimension 4: Public Visibility</span></h4><p><strong><span>What it is:</span></strong><span> Awareness outside academia—general public, media, policymakers.</span></p><p><strong><span>Mechanisms:</span></strong></p><ul><li><p><strong><span>Popular books</span></strong><span>: Trade press (not just academic presses)</span></p></li><li><p><strong><span>Podcasts</span></strong><span>: Storytelling and interviews</span></p></li><li><p><strong><span>Documentaries</span></strong><span>: Visual media for mass audiences</span></p></li><li><p><strong><span>Op-eds</span></strong><span>: </span><em><span>New York Times</span></em><span>, </span><em><span>Atlantic</span></em><span>, </span><em><span>Wired</span></em><span>, etc.</span></p></li><li><p><strong><span>Social media</span></strong><span>: Twitter/Mastodon accounts, YouTube channels</span></p></li><li><p><strong><span>TED talks</span></strong><span>: High-profile speaking (reaches millions)</span></p></li><li><p><strong><span>Museum exhibits</span></strong><span>: Physical installations about platform death</span></p></li></ul><p><strong><span>Why it matters:</span></strong><span> Academic legitimacy alone isn&#39;t enough. Public visibility:</span></p><ul><li><p><span>Attracts students (people major in things they&#39;ve heard of)</span></p></li><li><p><span>Influences funders (foundations fund visible causes)</span></p></li><li><p><span>Shapes policy (legislators care about issues the public cares about)</span></p></li><li><p><span>Creates urgency (media coverage makes platform death a &quot;real&quot; problem)</span></p></li></ul><p><strong><span>Archaeobytology&#39;s Current State (2025):</span></strong></p><ul><li><p><span>⚠️ Some media coverage of platform shutdowns (but not framed as &quot;Archaeobytology&quot;)</span></p></li><li><p><span>⚠️ Internet Archive gets press, but not as discipline-building</span></p></li><li><p><span>❌ No breakout popular book (need the &quot;gladwell moment&quot;)</span></p></li><li><p><span>❌ No documentary</span></p></li></ul><p><strong><span>Priority Actions:</span></strong></p><ol start='' ><li><p><span>Write popular book on platform death (trade press, accessible prose)</span></p></li><li><p><span>Produce documentary: &quot;The Day GeoCities Died&quot; or &quot;Who Killed Your Childhood Website?&quot;</span></p></li><li><p><span>Get 5-10 op-eds in major outlets</span></p></li><li><p><span>Launch public-facing podcast: &quot;Murdered Platforms&quot; (each episode covers one shutdown)</span></p></li></ol><h4 id='dimension-5-policy-advocacy'><span>Dimension 5: Policy Advocacy</span></h4><p><strong><span>What it is:</span></strong><span> Translating research into laws, regulations, and norms.</span></p><p><strong><span>Policy Goals:</span></strong></p><ul><li><p><strong><span>Right to Archive</span></strong><span>: Expand fair use/copyright exceptions for preservation</span></p></li><li><p><strong><span>Platform Accountability</span></strong><span>: Require notice before shutdowns, mandate data export tools</span></p></li><li><p><strong><span>Digital Right of First Refusal</span></strong><span>: Archives get access to content before deletion</span></p></li><li><p><strong><span>Public Digital Archive Funding</span></strong><span>: Dedicated government funding stream (like NEH but for digital preservation)</span></p></li><li><p><strong><span>Anti-Speculation Measures</span></strong><span>: Prevent domain squatting, ensure use-it-or-lose-it for digital infrastructure</span></p></li></ul><p><strong><span>Mechanisms:</span></strong></p><ul><li><p><strong><span>White papers</span></strong><span>: Research reports with policy recommendations</span></p></li><li><p><strong><span>Testimony</span></strong><span>: Speaking at legislative hearings</span></p></li><li><p><strong><span>Model legislation</span></strong><span>: Draft bills ready for lawmakers to introduce</span></p></li><li><p><strong><span>Coalition building</span></strong><span>: Partner with EFF, Internet Archive, library associations, tech policy orgs</span></p></li><li><p><strong><span>Informal briefings</span></strong><span>: Meet with congressional staffers, regulators</span></p></li></ul><p><strong><span>Why it matters:</span></strong><span> Scholarly work alone doesn&#39;t change systems. Laws shape:</span></p><ul><li><p><span>What can be archived legally</span></p></li><li><p><span>Whether platforms must provide data export tools</span></p></li><li><p><span>Whether governments fund preservation infrastructure</span></p></li><li><p><span>Whether digital culture is protected like tangible cultural heritage</span></p></li></ul><p><strong><span>Archaeobytology&#39;s Current State (2025):</span></strong></p><ul><li><p><span>⚠️ Some advocacy happening (Internet Archive lawsuits, EFF campaigns) but not framed as Archaeobytology movement</span></p></li><li><p><span>❌ No unified policy agenda</span></p></li><li><p><span>❌ No Archaeobytologist testifying at hearings (yet)</span></p></li></ul><p><strong><span>Priority Actions:</span></strong></p><ol start='' ><li><p><span>Draft &quot;Archaeobytologist&#39;s Policy Agenda&quot; (5-10 key legislative goals)</span></p></li><li><p><span>Form &quot;Coalition for Digital Preservation Rights&quot; (partner orgs)</span></p></li><li><p><span>Get first Archaeobytologist to testify at congressional hearing</span></p></li><li><p><span>Publish white paper: &quot;The Case for a Right to Archive&quot;</span></p></li></ol><hr /><h2 id='part-ii-case-studies-in-discipline-formation'><span>Part II: Case Studies in Discipline Formation</span></h2><h3 id='case-study-1-digital-humanities-40-year-marathon'><span>Case Study 1: Digital Humanities (40-Year Marathon)</span></h3><p><strong><span>Timeline:</span></strong></p><p><strong><span>1960s-1980s: Scattered Practice</span></strong></p><ul><li><p><span>&quot;Humanities computing&quot;—scholars using computers for text analysis</span></p></li><li><p><span>No community, no infrastructure, seen as technical skill not intellectual field</span></p></li></ul><p><strong><span>1990s: Early Organization</span></strong></p><ul><li><p><span>Conferences emerge: ACH (1978 but small), TEI (Text Encoding Initiative, 1987)</span></p></li><li><p><span>First journals: </span><em><span>Computers and the Humanities</span></em><span> (1966, but niche)</span></p></li><li><p><span>Internet makes digital methods suddenly relevant</span></p></li></ul><p><strong><span>2000s: Critical Mass</span></strong></p><ul><li><p><span>Term &quot;digital humanities&quot; replaces &quot;humanities computing&quot; (2004)</span></p></li><li><p><span>Major conferences: DH (annual, hundreds of attendees)</span></p></li><li><p><span>Centers at Stanford, UVA, CUNY, Nebraska</span></p></li><li><p><span>NEH Office of Digital Humanities (2008)—dedicated funding</span></p></li></ul><p><strong><span>2010s: Institutionalization</span></strong></p><ul><li><p><span>Dozens of DH centers worldwide</span></p></li><li><p><span>Hundreds of tenure-track jobs with &quot;DH&quot; in title</span></p></li><li><p><span>Textbooks, handbooks, journals proliferate</span></p></li><li><p><span>Still fights for legitimacy (but no longer dismissed as &quot;not real scholarship&quot;)</span></p></li></ul><p><strong><span>2020s: Established but Marginal</span></strong></p><ul><li><p><span>DH is recognized field</span></p></li><li><p><span>Still mostly interdisciplinary (few standalone departments)</span></p></li><li><p><span>Debates about boundaries, politics, labor conditions</span></p></li></ul><p><strong><span>Key Lessons:</span></strong></p><p><span>✅ </span><strong><span>Slow and steady wins legitimacy</span></strong><span>—took 40 years but built durable infrastructure</span></p><p><span>✅ </span><strong><span>External funding helps</span></strong><span>—NEH Office of Digital Humanities accelerated growth</span></p><p><span>✅ </span><strong><span>Rebranding matters</span></strong><span>—&quot;digital humanities&quot; sounded more intellectual than &quot;humanities computing&quot;</span></p><p><span>❌ </span><strong><span>Still marginal</span></strong><span>—even after 40 years, many DH scholars struggle for tenure</span></p><p><span>❌ </span><strong><span>Labor exploitation</span></strong><span>—lots of adjuncts/alt-ac, few permanent positions</span></p><p><strong><span>For Archaeobytology:</span></strong></p><ul><li><p><span>Don&#39;t expect fast legitimation (but aim for faster than 40 years)</span></p></li><li><p><span>Pursue NEH/Mellon funding aggressively</span></p></li><li><p><span>Name matters (Archaeobytology is provocative, good)</span></p></li><li><p><span>Build labor protections from start (don&#39;t replicate DH&#39;s precarity)</span></p></li></ul><h3 id='case-study-2-data-science-industry-driven-speedrun'><span>Case Study 2: Data Science (Industry-Driven Speedrun)</span></h3><p><strong><span>Timeline:</span></strong></p><p><strong><span>2000s: Industry Need</span></strong></p><ul><li><p><span>Companies drowning in data, no one trained to analyze it</span></p></li><li><p><span>Hiring statisticians, CS PhDs, physicists—anyone who could code + math</span></p></li></ul><p><strong><span>2008-2012: Term Emerges</span></strong></p><ul><li><p><span>DJ Patil and Jeff Hammerbacher coin &quot;data scientist&quot; (2008-2012)</span></p></li><li><p><span>Industry demand explodes (Google, Facebook, Amazon hiring aggressively)</span></p></li></ul><p><strong><span>2012-2015: Academic Response</span></strong></p><ul><li><p><span>Universities see $$$ (lucrative master&#39;s programs)</span></p></li><li><p><span>Bootcamps emerge (Galvanize, General Assembly—3-6 month training)</span></p></li><li><p><span>Columbia, NYU, UC Berkeley launch data science programs</span></p></li></ul><p><strong><span>2015-2020: Ubiquity</span></strong></p><ul><li><p><span>Hundreds of programs (undergrad, master&#39;s, PhD)</span></p></li><li><p><span>Data Science Society, professional certifications</span></p></li><li><p><span>Six-figure salaries attract students</span></p></li></ul><p><strong><span>2020s: Established but Fuzzy</span></strong></p><ul><li><p><span>Data science everywhere</span></p></li><li><p><span>Still debates about what it &quot;is&quot; (statistics? CS? business analytics?)</span></p></li><li><p><span>Academic programs vary wildly in quality</span></p></li></ul><p><strong><span>Key Lessons:</span></strong></p><p><span>✅ </span><strong><span>Industry demand accelerates everything</span></strong><span>—8 years to ubiquity</span></p><p><span>✅ </span><strong><span>Money talks</span></strong><span>—universities created programs because students would pay</span></p><p><span>✅ </span><strong><span>Bootcamps work</span></strong><span>—don&#39;t need PhD to be data scientist, practical training suffices</span></p><p><span>❌ </span><strong><span>Intellectual incoherence</span></strong><span>—field still doesn&#39;t have clear boundaries or canon</span></p><p><span>❌ </span><strong><span>Quality control</span></strong><span>—some programs are excellent, many are cash grabs</span></p><p><strong><span>For Archaeobytology:</span></strong></p><ul><li><p><span>Identify industry demand (tech companies need digital sovereignty architects?)</span></p></li><li><p><span>Create &quot;Archaeobytology Bootcamp&quot; (3-6 month intensive, professional credential)</span></p></li><li><p><span>But maintain intellectual rigor (don&#39;t let money corrupt mission)</span></p></li><li><p><span>Build quality standards early</span></p></li></ul><h3 id='case-study-3-science-and-technology-studies-coalition-model'><span>Case Study 3: Science and Technology Studies (Coalition Model)</span></h3><p><strong><span>Timeline:</span></strong></p><p><strong><span>1970s: Coalition Formation</span></strong></p><ul><li><p><span>Historians of science + sociologists of knowledge + philosophers of technology</span></p></li><li><p><span>All studying science/tech but from different angles</span></p></li><li><p><span>Realized they had shared interests → formed coalition</span></p></li></ul><p><strong><span>1975: Professional Society</span></strong></p><ul><li><p><span>Founded 4S (Society for Social Studies of Science)</span></p></li><li><p><span>Annual conference becomes gathering place</span></p></li></ul><p><strong><span>1980s-1990s: Boundary Struggles</span></strong></p><ul><li><p><span>&quot;Science Wars&quot;—scientists attack STS as postmodern relativism</span></p></li><li><p><span>Internal debates: constructivism vs. realism, Latour vs. feminists</span></p></li><li><p><span>Field almost fractures but holds together</span></p></li></ul><p><strong><span>2000s: Stabilization</span></strong></p><ul><li><p><span>Multiple journals (</span><em><span>Social Studies of Science</span></em><span>, </span><em><span>Science, Technology &amp; Human Values</span></em><span>)</span></p></li><li><p><span>Departments at MIT, Cornell, UC San Diego, York, others</span></p></li><li><p><span>Clear identity: interdisciplinary but distinct</span></p></li></ul><p><strong><span>2010s-2020s: Maturity</span></strong></p><ul><li><p><span>Hundreds of STS scholars worldwide</span></p></li><li><p><span>Influencing policy (COVID response, climate, AI ethics)</span></p></li><li><p><span>Still interdisciplinary (mostly joint appointments) but recognized</span></p></li></ul><p><strong><span>Key Lessons:</span></strong></p><p><span>✅ </span><strong><span>Coalitions work</span></strong><span>—united historians, sociologists, philosophers under one tent</span></p><p><span>✅ </span><strong><span>Boundary struggles are normal</span></strong><span>—every field fights over what it is/isn&#39;t</span></p><p><span>✅ </span><strong><span>Professional society matters</span></strong><span>—4S gave STS institutional home</span></p><p><span>✅ </span><strong><span>Interdisciplinarity can be strength</span></strong><span>—not having disciplinary &quot;purity&quot; allows flexibility</span></p><p><span>❌ </span><strong><span>Slow growth</span></strong><span>—40+ years, still mostly joint appointments not standalone departments</span></p><p><strong><span>For Archaeobytology:</span></strong></p><ul><li><p><span>Build coalition across digital historians, archivists, activists, builders</span></p></li><li><p><span>Expect internal debates (Archive vs Anvil priorities, etc.)—that&#39;s healthy</span></p></li><li><p><span>Found professional society early (within 5 years)</span></p></li><li><p><span>Embrace interdisciplinarity as strength</span></p></li></ul><hr /><h2 id='part-iii-the-archaeobytology-movement-strategy-10-20-year-roadmap'><span>Part III: The Archaeobytology Movement Strategy (10-20 Year Roadmap)</span></h2><h3 id='phase-1-emergence-years-1-5-----we-are-here'><span>Phase 1: Emergence (Years 1-5) — </span><strong><span>WE ARE HERE</span></strong></h3><p><strong><span>Current State (2025):</span></strong></p><ul><li><p><span>Scattered practitioners doing Archaeobytology without calling it that</span></p></li><li><p><span>This textbook is one of first attempts to codify field</span></p></li><li><p><span>No formal infrastructure (yet)</span></p></li><li><p><span>~50-100 people might identify as doing this work (but don&#39;t use &quot;Archaeobytology&quot; term)</span></p></li></ul><p><strong><span>Goals for Years 1-5:</span></strong></p><p><strong><span>Year 1 (2025-2026):</span></strong></p><ul><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Publish this textbook (archaeobytology.org)</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Create wiki: archaeobytology.org/wiki (methods, case studies, tools)</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Launch mailing list/Discord for practitioners</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Collect 100 email addresses of people interested</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Host first &quot;Archaeobytology Unconference&quot; (virtual, 1 day, informal)</span></p></li></ul><p><strong><span>Year 2 (2026-2027):</span></strong></p><ul><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Launch </span><em><span>Journal of Archaeobytology</span></em><span> (open access, online-only at first)</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Solicit 10 papers for inaugural issue</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Host first in-person conference: &quot;Archaeobytology 2027&quot; (50-100 people)</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Secure first grant (Mellon/NEH/Mozilla for $50-100k)</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>5 universities offer &quot;Introduction to Archaeobytology&quot; course</span></p></li></ul><p><strong><span>Year 3 (2027-2028):</span></strong></p><ul><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Second annual conference (100-150 people)</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Publish second journal issue (aim for 2/year)</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Launch first certificate program (one university offers &quot;Certificate in Digital Preservation&quot;)</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Draft &quot;Archaeobytologist&#39;s Policy Agenda&quot; white paper</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>10 universities teaching Archaeobytology courses</span></p></li></ul><p><strong><span>Year 4 (2028-2029):</span></strong></p><ul><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Found &quot;Society for Archaeobytology&quot; (or similar name)</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Third conference (150-200 people)</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>First student graduates with certificate in Archaeobytology (milestone!)</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Publish popular article in </span><em><span>Atlantic</span></em><span> or </span><em><span>Wired</span></em></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Secure larger grant ($200-500k) for multi-year project</span></p></li></ul><p><strong><span>Year 5 (2029-2030):</span></strong></p><ul><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Journal has 4 issues/year, editorial board of 20</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Conference has 250+ attendees, multiple tracks</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>3 universities have certificates/minors</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>First testimony at Congressional hearing by Archaeobytologist</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>20+ universities teaching courses</span></p></li></ul><p><strong><span>Phase 1 Success Metrics:</span></strong></p><ul><li><p><span>✅ 500+ people identify as Archaeobytologists</span></p></li><li><p><span>✅ Professional society exists</span></p></li><li><p><span>✅ Annual conference established</span></p></li><li><p><span>✅ Journal publishing regularly</span></p></li><li><p><span>✅ Some undergraduate programs</span></p></li></ul><h3 id='phase-2-coalition-building-years-6-10'><span>Phase 2: Coalition Building (Years 6-10)</span></h3><p><strong><span>Goals for Years 6-10:</span></strong></p><p><strong><span>Infrastructure:</span></strong></p><ul><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Journal becomes quarterly, peer-reviewed, indexed (Scopus, Web of Science)</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Conference grows to 500 attendees, international</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Handbook published: </span><em><span>Handbook of Archaeobytology</span></em><span> (40+ chapters, major reference work)</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Online platform mature (wiki has 1000+ pages, forum has 5000+ members)</span></p></li></ul><p><strong><span>Institutions:</span></strong></p><ul><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>First MA program launches (probably iSchool or interdisciplinary)</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>3-5 universities have &quot;Centers for Digital Sovereignty&quot; (funded, with staff)</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>10+ universities have certificate/minor programs</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>First PhD student lists &quot;Archaeobytology&quot; as primary field (even if in interdisciplinary program)</span></p></li></ul><p><strong><span>Careers:</span></strong></p><ul><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>50+ tenure-track jobs posted with &quot;Archaeobytology&quot; or &quot;Digital Sovereignty&quot; in description</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>&quot;Certified Archaeobytologist&quot; credential launched (professional certification)</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Job placement rate for MA graduates: 80%+</span></p></li></ul><p><strong><span>Visibility:</span></strong></p><ul><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Popular book published (trade press): </span><em><span>Murdered Platforms: The Fight for Digital Memory</span></em></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Documentary released: screening at festivals, streaming on Netflix/Prime</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>20+ op-eds in major outlets</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Podcast has 50+ episodes, 10k+ listeners</span></p></li></ul><p><strong><span>Policy:</span></strong></p><ul><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>&quot;Coalition for Digital Preservation Rights&quot; formed (10+ partner orgs)</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Model legislation drafted (&quot;Digital Preservation Act&quot;)</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>3+ Archaeobytologists testify at hearings</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>First local/state policy win (e.g., state library system adopts Archaeobytology standards)</span></p></li></ul><p><strong><span>Phase 2 Success Metrics:</span></strong></p><ul><li><p><span>✅ 2,000+ Archaeobytologists worldwide</span></p></li><li><p><span>✅ MA programs at 5+ universities</span></p></li><li><p><span>✅ First dissertations completed</span></p></li><li><p><span>✅ Public awareness: 10% of people have heard of Archaeobytology</span></p></li><li><p><span>✅ Policy engagement: regular testimony, coalition work</span></p></li></ul><h3 id='phase-3-institutionalization-years-11-15'><span>Phase 3: Institutionalization (Years 11-15)</span></h3><p><strong><span>Goals for Years 11-15:</span></strong></p><p><strong><span>Academic Maturity:</span></strong></p><ul><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>5+ PhD programs offer Archaeobytology as concentration/specialization</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>50+ dissertations completed</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>100+ tenure-track faculty</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Textbook adoption: 100+ universities using this or similar books</span></p></li></ul><p><strong><span>Institutional Expansion:</span></strong></p><ul><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>First standalone &quot;Department of Archaeobytology and Digital Sovereignty&quot;</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>20+ centers/institutes worldwide</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Major research universities (Harvard, MIT, Stanford, etc.) have programs</span></p></li></ul><p><strong><span>Funding Ecosystem:</span></strong></p><ul><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>NSF creates &quot;Digital Sovereignty and Preservation&quot; program</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>NEH has dedicated Archaeobytology funding stream ($5-10M/year)</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Private foundations (Mellon, Sloan, Knight) regularly fund Archaeobytology projects</span></p></li></ul><p><strong><span>Public Impact:</span></strong></p><ul><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><em><span>New York Times</span></em><span> runs major feature: &quot;The Archaeobytologists Saving the Internet&quot;</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>TED Talk by prominent Archaeobytologist (1M+ views)</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Museum exhibits at major institutions (Smithsonian, V&amp;A, etc.)</span></p></li></ul><p><strong><span>Policy Wins:</span></strong></p><ul><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Federal legislation passed (e.g., &quot;Digital Preservation Act&quot; or similar)</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Library of Congress has &quot;Archaeobytology Division&quot;</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>International policy (UNESCO recognizes digital cultural heritage, influenced by Archaeobytology work)</span></p></li></ul><p><strong><span>Phase 3 Success Metrics:</span></strong></p><ul><li><p><span>✅ 5,000+ Archaeobytologists</span></p></li><li><p><span>✅ 100+ universities with programs</span></p></li><li><p><span>✅ First standalone departments</span></p></li><li><p><span>✅ Regular federal funding</span></p></li><li><p><span>✅ Major policy wins</span></p></li></ul><h3 id='phase-4-maturity-and-expansion-years-16-20'><span>Phase 4: Maturity and Expansion (Years 16-20)</span></h3><p><strong><span>Goals for Years 16-20:</span></strong></p><p><strong><span>Discipline Established:</span></strong></p><ul><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>10+ standalone departments</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>1,000+ PhD holders</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Archaeobytology included in standard university catalogs (alongside History, Sociology, etc.)</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Canon established (everyone agrees on core texts to read)</span></p></li></ul><p><strong><span>Global Reach:</span></strong></p><ul><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Archaeobytology programs in 20+ countries</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>International professional societies (European Archaeobytology Association, Asia-Pacific chapter, etc.)</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Multilingual scholarship (not just English-language dominance)</span></p></li></ul><p><strong><span>Specialization:</span></strong></p><ul><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Subfields emerge: &quot;Archaeobytology of Social Media,&quot; &quot;Video Game Preservation Studies,&quot; &quot;Digital Memory and Trauma,&quot; etc.</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Specialized journals for subfields</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Debates about what &quot;counts&quot; as Archaeobytology (sign of maturity)</span></p></li></ul><p><strong><span>Cultural Impact:</span></strong></p><ul><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>High school students learn about platform death in history classes</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Archaeobytology consultants common (like &quot;sustainability consultants&quot; today)</span></p></li><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Major corporations hire Archaeobytologists (ethical concerns, but shows mainstream acceptance)</span></p></li></ul><p><strong><span>Phase 4 Success Metrics:</span></strong></p><ul><li><p><span>✅ 10,000+ Archaeobytologists worldwide</span></p></li><li><p><span>✅ Field is recognized and established</span></p></li><li><p><span>✅ Career pathways clear and diverse</span></p></li><li><p><span>✅ Public awareness: majority of people have heard of Archaeobytology</span></p></li></ul><hr /><h2 id='part-iv-avoiding-common-failure-modes'><span>Part IV: Avoiding Common Failure Modes</span></h2><h3 id='failure-mode-1-disciplinary-capture'><span>Failure Mode 1: Disciplinary Capture</span></h3><p><strong><span>Risk:</span></strong><span> Existing fields absorb Archaeobytology, prevent independence.</span></p><p><strong><span>Scenario:</span></strong></p><ul><li><p><span>History departments say: &quot;Archaeobytology is just digital history, we&#39;ll hire one person for that&quot;</span></p></li><li><p><span>CS departments say: &quot;We&#39;ll add a preservation course, that&#39;s enough&quot;</span></p></li><li><p><span>Library schools say: &quot;Web archiving covers this already&quot;</span></p></li><li><p><span>Result: Archaeobytology gets fragmented, never achieves critical mass</span></p></li></ul><p><strong><span>Defense:</span></strong></p><ul><li><p><strong><span>Insist on synthesis:</span></strong><span> Archaeobytology is NOT reducible to any single field</span></p></li><li><p><strong><span>Build independent infrastructure:</span></strong><span> Our own journals, conferences, society (harder to absorb)</span></p></li><li><p><strong><span>Coalition across departments:</span></strong><span> If History, CS, AND Library Science all want us, harder for any one to capture</span></p></li><li><p><strong><span>Interdisciplinary programs:</span></strong><span> Don&#39;t let traditional departments be gatekeepers</span></p></li></ul><h3 id='failure-mode-2-industry-co-optation'><span>Failure Mode 2: Industry Co-optation</span></h3><p><strong><span>Risk:</span></strong><span> Tech companies use Archaeobytology rhetoric but corrupt mission.</span></p><p><strong><span>Scenario:</span></strong></p><ul><li><p><span>Facebook hires &quot;Digital Preservation Specialists&quot; (to preserve user data for ad targeting, not user sovereignty)</span></p></li><li><p><span>Blockchain startups claim to be &quot;Archaeobytological&quot; (conflating crypto speculation with preservation)</span></p></li><li><p><span>Archaeobytology jobs become corporate compliance roles (ethics-washing)</span></p></li><li><p><span>Result: Field becomes associated with surveillance capitalism, loses critical edge</span></p></li></ul><p><strong><span>Defense:</span></strong></p><ul><li><p><strong><span>Value clarity:</span></strong><span> Center the Three Pillars in everything (Declaration, Connection, Ground)</span></p></li><li><p><strong><span>Ethical guidelines:</span></strong><span> Professional code that says &quot;surveillance-capitalism work is not Archaeobytology&quot;</span></p></li><li><p><strong><span>Critical scholarship:</span></strong><span> Maintain academic independence, publish critiques of platform power</span></p></li><li><p><strong><span>Diversity of employment:</span></strong><span> Balance academic, non-profit, and (selective) industry roles</span></p></li></ul><h3 id='failure-mode-3-internal-fragmentation'><span>Failure Mode 3: Internal Fragmentation</span></h3><p><strong><span>Risk:</span></strong><span> Practitioners can&#39;t agree on boundaries, methods, values → field splinters.</span></p><p><strong><span>Scenario:</span></strong></p><ul><li><p><span>&quot;Archive-first&quot; Archaeobytologists vs. &quot;Anvil-first&quot; Archaeobytologists fight</span></p></li><li><p><span>&quot;Everything should be preserved&quot; camp vs. &quot;Consent is paramount&quot; camp can&#39;t reconcile</span></p></li><li><p><span>Methodological wars: &quot;Only bit-perfect forensics count&quot; vs. &quot;Triage means good-enough&quot;</span></p></li><li><p><span>Result: No unified identity, people stop using &quot;Archaeobytology&quot; label, movement dissolves</span></p></li></ul><p><strong><span>Defense:</span></strong></p><ul><li><p><strong><span>Big tent philosophy:</span></strong><span> Multiple approaches valid, don&#39;t excommunicate over disagreements</span></p></li><li><p><strong><span>Core values, flexible methods:</span></strong><span> Agree on Three Pillars and Custodial Filter, but allow methodological diversity</span></p></li><li><p><strong><span>Productive debate:</span></strong><span> Disagreement is healthy (sign of intellectual vitality), but don&#39;t let it become toxic</span></p></li><li><p><strong><span>Generosity:</span></strong><span> Assume good faith, even when you disagree</span></p></li></ul><h3 id='failure-mode-4-funding-drought'><span>Failure Mode 4: Funding Drought</span></h3><p><strong><span>Risk:</span></strong><span> Foundations/agencies don&#39;t fund Archaeobytology, infrastructure collapses.</span></p><p><strong><span>Scenario:</span></strong></p><ul><li><p><span>Economic recession cuts humanities funding</span></p></li><li><p><span>Political shifts defund preservation and digital rights</span></p></li><li><p><span>Competing priorities (AI, climate) absorb available grants</span></p></li><li><p><span>Result: Journals fold, conferences stop, centers close, people leave for funded fields</span></p></li></ul><p><strong><span>Defense:</span></strong></p><ul><li><p><strong><span>Diversify funding:</span></strong><span> Don&#39;t depend on one source (get government + foundation + individual donations + earned revenue)</span></p></li><li><p><strong><span>Demonstrate impact:</span></strong><span> Show funders that Archaeobytology matters (saves culture, influences policy, creates jobs)</span></p></li><li><p><strong><span>Build endowment:</span></strong><span> If successful, create financial cushion (like established disciplines have)</span></p></li><li><p><strong><span>Partnerships:</span></strong><span> Work with stable institutions (libraries, museums with guaranteed budgets)</span></p></li></ul><h3 id='failure-mode-5-elitism-and-gatekeeping'><span>Failure Mode 5: Elitism and Gatekeeping</span></h3><p><strong><span>Risk:</span></strong><span> Field becomes exclusive club, shuts out marginalized practitioners.</span></p><p><strong><span>Scenario:</span></strong></p><ul><li><p><span>&quot;Real Archaeobytologists&quot; have PhDs from elite universities</span></p></li><li><p><span>Practitioners without credentials dismissed (even if doing excellent work)</span></p></li><li><p><span>Field replicates academia&#39;s racism, sexism, classism</span></p></li><li><p><span>Result: Narrow, homogeneous community that doesn&#39;t reflect diversity of digital culture</span></p></li></ul><p><strong><span>Defense:</span></strong></p><ul><li><p><strong><span>Multiple pathways:</span></strong><span> PhDs, certificates, self-taught practitioners all valid</span></p></li><li><p><strong><span>Open access:</span></strong><span> Free textbooks, free journals, free conference options</span></p></li><li><p><strong><span>Anti-discrimination:</span></strong><span> Explicit commitments to equity, diverse leadership</span></p></li><li><p><strong><span>Value practice:</span></strong><span> Don&#39;t privilege academic theory over applied work (both matter)</span></p></li><li><p><strong><span>Community accountability:</span></strong><span> Call out gatekeeping when it happens</span></p></li></ul><hr /><h2 id='part-v-what-you-can-do-right-now'><span>Part V: What You Can Do Right Now</span></h2><h3 id='if-youre-a-student'><span>If You&#39;re a Student</span></h3><p><strong><span>Immediate (This Week):</span></strong></p><ol start='' ><li><p><strong><span>Call yourself an Archaeobytologist</span></strong><span>—in your bio, on your CV, on social media</span></p></li><li><p><strong><span>Start a reading group</span></strong><span>—gather 3-5 friends, work through this textbook</span></p></li><li><p><strong><span>Join online communities</span></strong><span>—find Archive Team, IndieWeb, digital preservation groups</span></p></li></ol><p><strong><span>Short-term (This Semester):</span></strong></p><ol start='' ><li><p><strong><span>Write a paper using Archaeobytology framework</span></strong><span>—apply Three Pillars, Custodial Filter, etc. to your research</span></p></li><li><p><strong><span>Propose an independent study</span></strong><span>—pitch &quot;Introduction to Archaeobytology&quot; to sympathetic professor</span></p></li><li><p><strong><span>Start a blog</span></strong><span>—document your learning, build public portfolio</span></p></li></ol><p><strong><span>Medium-term (This Year):</span></strong></p><ol start='' ><li><p><strong><span>Attend a conference</span></strong><span>—submit to ADHO, SAA, 4S, or organize Archaeobytology session</span></p></li><li><p><strong><span>Contribute to a project</span></strong><span>—volunteer with Archive Team, Internet Archive, etc.</span></p></li><li><p><strong><span>Build something</span></strong><span>—create a tool, preserve a dying platform, start an archive</span></p></li></ol><h3 id='if-youre-a-practitioner'><span>If You&#39;re a Practitioner</span></h3><p><strong><span>Immediate:</span></strong></p><ol start='' ><li><p><strong><span>Document your work</span></strong><span>—write tutorials, case studies, method posts</span></p></li><li><p><strong><span>Publish</span></strong><span>—submit to journals, blogs, preprint servers</span></p></li><li><p><strong><span>Teach</span></strong><span>—offer workshop at local library, hackerspace, or online</span></p></li></ol><p><strong><span>Short-term:</span></strong></p><ol start='' ><li><p><strong><span>Organize a meetup</span></strong><span>—gather local practitioners, even if just 5 people</span></p></li><li><p><strong><span>Propose conference session</span></strong><span>—at existing conference, submit &quot;Archaeobytology panel&quot;</span></p></li><li><p><strong><span>Seek funding</span></strong><span>—apply for grant explicitly for &quot;Archaeobytology research&quot;</span></p></li></ol><p><strong><span>Medium-term:</span></strong></p><ol start='' ><li><p><strong><span>Mentor students</span></strong><span>—take on interns, advise theses</span></p></li><li><p><strong><span>Build partnerships</span></strong><span>—connect with libraries, museums, universities</span></p></li><li><p><strong><span>Advocate</span></strong><span>—write op-ed, contact your representative about digital preservation</span></p></li></ol><h3 id='if-youre-a-professor'><span>If You&#39;re a Professor</span></h3><p><strong><span>Immediate:</span></strong></p><ol start='' ><li><p><strong><span>Teach a course</span></strong><span>—offer &quot;Introduction to Archaeobytology&quot; (use this textbook)</span></p></li><li><p><strong><span>Cite Archaeobytology</span></strong><span>—in your research, explicitly name the field</span></p></li><li><p><strong><span>Advise students</span></strong><span>—encourage dissertations in Archaeobytology</span></p></li></ol><p><strong><span>Short-term:</span></strong></p><ol start='' ><li><p><strong><span>Organize working group</span></strong><span>—gather colleagues across departments interested in this work</span></p></li><li><p><strong><span>Apply for grant</span></strong><span>—propose &quot;Center for Digital Sovereignty&quot; or similar</span></p></li><li><p><strong><span>Hire</span></strong><span>—when job openings come, advocate for Archaeobytology specialization</span></p></li></ol><p><strong><span>Medium-term:</span></strong></p><ol start='' ><li><p><strong><span>Create program</span></strong><span>—certificate, minor, or master&#39;s in Archaeobytology</span></p></li><li><p><strong><span>Launch journal</span></strong><span>—start </span><em><span>Journal of Archaeobytology</span></em><span> at your university press</span></p></li><li><p><strong><span>Host conference</span></strong><span>—organize first major Archaeobytology conference at your institution</span></p></li></ol><h3 id='if-youre-an-administrator'><span>If You&#39;re an Administrator</span></h3><p><strong><span>Immediate:</span></strong></p><ol start='' ><li><p><strong><span>Support faculty</span></strong><span>—when they propose Archaeobytology courses/programs, approve them</span></p></li><li><p><strong><span>Fund infrastructure</span></strong><span>—allocate space, servers, staff support</span></p></li><li><p><strong><span>Strategic hire</span></strong><span>—create position in Archaeobytology (signal to field it&#39;s legitimate)</span></p></li></ol><p><strong><span>Short-term:</span></strong></p><ol start='' ><li><p><strong><span>Create certificate program</span></strong><span>—low-cost way to test demand</span></p></li><li><p><strong><span>Partner with institutions</span></strong><span>—connect with Internet Archive, local libraries</span></p></li><li><p><strong><span>Seek external funding</span></strong><span>—apply for grants to create center/program</span></p></li></ol><p><strong><span>Medium-term:</span></strong></p><ol start='' ><li><p><strong><span>Launch degree program</span></strong><span>—MA in Archaeobytology (draws students, generates revenue)</span></p></li><li><p><strong><span>Build center</span></strong><span>—dedicate space and staff to Archaeobytology research/teaching</span></p></li><li><p><strong><span>Advocate</span></strong><span>—tell peer institutions, accreditors, funders that this field matters</span></p></li></ol><hr /><h2 id='part-vi-movement-coalitions-and-alliances'><span>Part VI: Movement Coalitions and Alliances</span></h2><h3 id='who-are-our-natural-allies'><span>Who Are Our Natural Allies?</span></h3><p><strong><span>1. Librarians and Archivists</span></strong></p><ul><li><p><strong><span>Shared interests:</span></strong><span> Preservation, access, metadata, long-term stewardship</span></p></li><li><p><strong><span>Partnerships:</span></strong><span> Joint programs, shared infrastructure, professional development</span></p></li><li><p><strong><span>Organizations:</span></strong><span> SAA (Society of American Archivists), ALA (American Library Association)</span></p></li></ul><p><strong><span>2. Digital Humanists</span></strong></p><ul><li><p><strong><span>Shared interests:</span></strong><span> Digital methods, scholarly infrastructure, interdisciplinarity</span></p></li><li><p><strong><span>Partnerships:</span></strong><span> Joint conferences, share faculty lines, collaborative research</span></p></li><li><p><strong><span>Organizations:</span></strong><span> ADHO (Alliance of Digital Humanities Organizations)</span></p></li></ul><p><strong><span>3. Digital Rights Activists</span></strong></p><ul><li><p><strong><span>Shared interests:</span></strong><span> Platform accountability, user sovereignty, right to archive</span></p></li><li><p><strong><span>Partnerships:</span></strong><span> Policy advocacy, public campaigns, legal challenges</span></p></li><li><p><strong><span>Organizations:</span></strong><span> EFF (Electronic Frontier Foundation), Creative Commons, Internet Archive</span></p></li></ul><p><strong><span>4. Tech Workers and Ethical Engineers</span></strong></p><ul><li><p><strong><span>Shared interests:</span></strong><span> Building alternatives, open protocols, resistance to surveillance capitalism</span></p></li><li><p><strong><span>Partnerships:</span></strong><span> Tool-building, technical consulting, job placements</span></p></li><li><p><strong><span>Organizations:</span></strong><span> Tech Workers Coalition, Worker cooperatives</span></p></li></ul><p><strong><span>5. STS Scholars</span></strong></p><ul><li><p><strong><span>Shared interests:</span></strong><span> Studying platform power, technological politics, social construction of technology</span></p></li><li><p><strong><span>Partnerships:</span></strong><span> Theoretical frameworks, joint research, publishing</span></p></li><li><p><strong><span>Organizations:</span></strong><span> 4S (Society for Social Studies of Science)</span></p></li></ul><p><strong><span>6. Museums and Memory Institutions</span></strong></p><ul><li><p><strong><span>Shared interests:</span></strong><span> Interpreting artifacts, public engagement, cultural heritage</span></p></li><li><p><strong><span>Partnerships:</span></strong><span> Exhibitions, public programs, institutional preservation</span></p></li><li><p><strong><span>Organizations:</span></strong><span> ICOM (International Council of Museums), AAM (American Alliance of Museums)</span></p></li></ul><h3 id='building-the-coalition'><span>Building the Coalition</span></h3><p><strong><span>Strategy 1: Multi-Stakeholder Convenings</span></strong></p><ul><li><p><span>Host annual &quot;Digital Preservation Summit&quot; bringing together all allied groups</span></p></li><li><p><span>Not just Archaeobytologists—invite librarians, activists, engineers, scholars, policymakers</span></p></li><li><p><span>Goal: Build shared agenda while respecting different priorities</span></p></li></ul><p><strong><span>Strategy 2: Cross-Organizational Membership</span></strong></p><ul><li><p><span>Encourage Archaeobytologists to join SAA, ADHO, 4S, EFF</span></p></li><li><p><span>Present at their conferences, publish in their journals</span></p></li><li><p><span>Don&#39;t isolate—embed ourselves in adjacent communities</span></p></li></ul><p><strong><span>Strategy 3: Shared Infrastructure</span></strong></p><ul><li><p><span>Offer to host Archaeobytology track at existing conferences (before we have our own)</span></p></li><li><p><span>Publish in existing journals (while also building our own)</span></p></li><li><p><span>Use existing organizations&#39; resources (mailing lists, platforms) early on</span></p></li></ul><p><strong><span>Strategy 4: Policy Coalitions</span></strong></p><ul><li><p><span>Form &quot;Alliance for Digital Preservation Rights&quot; (umbrella org)</span></p></li><li><p><span>Members: Archaeobytologists, libraries, Internet Archive, EFF, academics, tech workers</span></p></li><li><p><span>Unified policy agenda: Right to Archive, Platform Accountability, Public Funding</span></p></li></ul><hr /><h2 id='conclusion-the-long-game'><span>Conclusion: The Long Game</span></h2><p><span>Building a discipline takes </span><strong><span>patience, strategy, and collective will</span></strong><span>.</span></p><p><span>Digital Humanities took 40 years. Data Science took 8 (but with massive industry backing). STS took 40 (but created durable coalitions).</span></p><p><strong><span>Archaeobytology&#39;s timeline:</span></strong><span> Somewhere in between. With strategic action, we could achieve:</span></p><ul><li><p><strong><span>5 years:</span></strong><span> Professional society, annual conference, first certificates</span></p></li><li><p><strong><span>10 years:</span></strong><span> MA programs, regular funding, public visibility</span></p></li><li><p><strong><span>15 years:</span></strong><span> PhD programs, departments, policy influence</span></p></li><li><p><strong><span>20 years:</span></strong><span> Fully established discipline</span></p></li></ul><p><span>This won&#39;t happen automatically. It requires:</span></p><ul><li><p><strong><span>Students</span></strong><span> declaring &quot;I am an Archaeobytologist&quot; (identity formation)</span></p></li><li><p><strong><span>Practitioners</span></strong><span> publishing, teaching, building (knowledge creation)</span></p></li><li><p><strong><span>Professors</span></strong><span> creating programs, hiring, securing grants (institutionalization)</span></p></li><li><p><strong><span>Administrators</span></strong><span> supporting infrastructure (resources)</span></p></li><li><p><strong><span>Everyone</span></strong><span> organizing, advocating, collaborating (movement building)</span></p></li></ul><p><strong><span>You are not just reading about a discipline. You are helping build it.</span></strong></p><p><span>Every time you:</span></p><ul><li><p><span>Use &quot;Archaeobytology&quot; in your work (you legitimize the term)</span></p></li><li><p><span>Cite this textbook (you build canon)</span></p></li><li><p><span>Teach a course (you train next generation)</span></p></li><li><p><span>Preserve an artifact (you do the work)</span></p></li><li><p><span>Advocate for policy (you change systems)</span></p></li><li><p><span>Mentor a student (you grow the field)</span></p></li></ul><p><span>...you are building the movement.</span></p><p><span>In 20 years, there might be Archaeobytology departments at universities. Students might major in it. Laws might protect digital culture because we advocated for them.</span></p><p><strong><span>Or not.</span></strong><span> That depends on us.</span></p><p><span>The marathon has begun. You&#39;re running it whether you know it or not.</span></p><p><span>Now: </span><strong><span>Run intentionally. Run together. Run toward the finish line.</span></strong></p><p><span>The discipline we need is the discipline we build.</span></p><hr /><h2 id='discussion-questions'><span>Discussion Questions</span></h2><ol start='' ><li><p><strong><span>Personal Role</span></strong><span>: In the Movement-Building Matrix (knowledge, institutions, careers, visibility, policy), which dimension are you best positioned to contribute to? Why?</span></p></li><li><p><strong><span>Timeline Realism</span></strong><span>: Is a 20-year timeline realistic? Too optimistic? Too pessimistic? What would accelerate or slow discipline formation?</span></p></li><li><p><strong><span>Failure Modes</span></strong><span>: Which threat (capture, co-optation, fragmentation, funding drought, elitism) seems most dangerous for Archaeobytology? How would you defend against it?</span></p></li><li><p><strong><span>Case Study Lessons</span></strong><span>: Should Archaeobytology follow the DH model (slow academic legitimation), Data Science model (fast industry-driven growth), or STS model (interdisciplinary coalition)? Or some hybrid?</span></p></li><li><p><strong><span>Coalitions</span></strong><span>: Who else should be allied with Archaeobytology that wasn&#39;t mentioned? What organizations or movements should we partner with?</span></p></li><li><p><strong><span>Action Plan</span></strong><span>: What&#39;s one concrete thing you&#39;ll do in the next month to help build Archaeobytology as a discipline?</span></p></li></ol><hr /><h2 id='exercise-draft-your-movement-strategy'><span>Exercise: Draft Your Movement Strategy</span></h2><p><strong><span>Task:</span></strong><span> You&#39;re leading the Archaeobytology movement. Design a 5-year strategic plan.</span></p><p><strong><span>Part 1: Situation Analysis</span></strong><span> (500 words)</span></p><ul><li><p><span>Current state (2025): What infrastructure exists?</span></p></li><li><p><span>SWOT analysis: Strengths, Weaknesses, Opportunities, Threats</span></p></li><li><p><span>Key stakeholders: Who cares about this work?</span></p></li></ul><p><strong><span>Part 2: Goals and Metrics</span></strong><span> (500 words)</span></p><p><span>For each dimension, set 5-year goals:</span></p><ul><li><p><strong><span>Knowledge:</span></strong><span> (journals, conferences, textbooks)</span></p></li><li><p><strong><span>Institutions:</span></strong><span> (programs, centers, departments)</span></p></li><li><p><strong><span>Careers:</span></strong><span> (jobs, certification, placements)</span></p></li><li><p><strong><span>Visibility:</span></strong><span> (media, books, public awareness)</span></p></li><li><p><strong><span>Policy:</span></strong><span> (legislation, testimony, advocacy wins)</span></p></li></ul><p><span>Include measurable metrics (e.g., &quot;3 universities with certificates&quot; not just &quot;more programs&quot;)</span></p><p><strong><span>Part 3: Priority Actions</span></strong><span> (1000 words)</span></p><p><span>Choose 10 highest-priority actions for Years 1-5:</span></p><ul><li><p><span>What should happen first? (Sequence matters)</span></p></li><li><p><span>Who leads each action? (students, practitioners, professors, administrators)</span></p></li><li><p><span>What resources needed? (funding, staff, space, technology)</span></p></li><li><p><span>How to measure success?</span></p></li></ul><p><strong><span>Part 4: Risk Mitigation</span></strong><span> (500 words)</span></p><ul><li><p><span>What could go wrong?</span></p></li><li><p><span>Contingency plans for each failure mode</span></p></li><li><p><span>How to stay on track if funding dries up, key people leave, or external crises happen?</span></p></li></ul><p><strong><span>Part 5: Call to Action</span></strong><span> (300 words)</span></p><ul><li><p><span>If you published this plan publicly, how would you recruit people?</span></p></li><li><p><span>What&#39;s the rallying cry?</span></p></li><li><p><span>How do you inspire collective action?</span></p></li></ul><hr /><h2 id='further-reading'><span>Further Reading</span></h2><h3 id='on-discipline-formation'><span>On Discipline Formation</span></h3><ul><li><p><span>Abbott, Andrew. </span><em><span>Chaos of Disciplines</span></em><span>. University of Chicago Press, 2001.</span></p></li><li><p><span>Klein, Julie Thompson. </span><em><span>Interdisciplining Digital Humanities</span></em><span>. University of Michigan Press, 2015.</span></p></li><li><p><span>Small, Mario Luis. &quot;How to Conduct a Mixed Methods Study.&quot; </span><em><span>Annual Review of Sociology</span></em><span> 37 (2011): 57-86.</span></p></li></ul><h3 id='on-movement-building'><span>On Movement Building</span></h3><ul><li><p><span>Ganz, Marshall. &quot;Why David Sometimes Wins: Leadership, Organization, and Strategy in the California Farm Worker Movement.&quot; Oxford, 2009.</span></p></li><li><p><span>McAdam, Doug, and Ronnelle Paulsen. &quot;Specifying the Relationship Between Social Ties and Activism.&quot; </span><em><span>American Journal of Sociology</span></em><span> 99, no. 3 (1993): 640-667.</span></p></li><li><p><span>Staggenborg, Suzanne. &quot;The Consequences of Professionalization and Formalization in the Pro-Choice Movement.&quot; </span><em><span>American Sociological Review</span></em><span> (1988): 585-605.</span></p></li></ul><h3 id='on-academic-coalition-building'><span>On Academic Coalition Building</span></h3><ul><li><p><span>Star, Susan Leigh, and James Griesemer. &quot;Institutional Ecology, &#39;Translations&#39; and Boundary Objects.&quot; </span><em><span>Social Studies of Science</span></em><span> 19, no. 3 (1989): 387-420.</span></p></li><li><p><span>Frickel, Scott, and Neil Gross. &quot;A General Theory of Scientific/Intellectual Movements.&quot; </span><em><span>American Sociological Review</span></em><span> 70, no. 2 (2005): 204-232.</span></p></li></ul><h3 id='on-professional-pathways'><span>On Professional Pathways</span></h3><ul><li><p><span>Nowviskie, Bethany. &quot;On the Origin of &#39;Hack&#39; and &#39;Yack.&#39;&quot; In </span><em><span>Debates in the Digital Humanities</span></em><span>, 2012.</span></p></li><li><p><span>Posner, Miriam. &quot;Here and There: Creating DH Community.&quot; In </span><em><span>Debates in the Digital Humanities 2016</span></em><span>, 2016.</span></p></li></ul><h3 id='primary-sources'><span>Primary Sources</span></h3><ul><li><p><span>Archive Team. </span><a href='https://archiveteam.org' target='_blank' class='url'>https://archiveteam.org</a></p></li><li><p><span>4S (Society for Social Studies of Science). </span><a href='https://www.4sonline.org' target='_blank' class='url'>https://www.4sonline.org</a></p></li><li><p><span>ADHO (Alliance of Digital Humanities Organizations). </span><a href='https://adho.org' target='_blank' class='url'>https://adho.org</a></p></li><li><p><span>Society of American Archivists. </span><a href='https://www2.archivists.org' target='_blank' class='url'>https://www2.archivists.org</a></p></li></ul><hr /><p><strong><span>End of Chapter 16 — End of Part IV: Systems &amp; Movements</span></strong></p><p><em><span>Next: Part V — Public Scholarship &amp; The Future</span></em>
+<em><span>Chapter 17 — The Public Intellectual in Archaeobytology</span></em></p><p>&nbsp;</p></div></div>
 </body>
 </html>

@@ -1,1474 +1,928 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 14: Memory Institutions for the Digital Age — Curating the Haunted Forest | Archaeobytology</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Lora', serif; line-height: 1.8; color: #2E2E2E; background: #F8F7F4; padding: 2rem 1rem; }
-        .container { max-width: 800px; margin: 0 auto; background: #FFFFFF; padding: 3rem; border-radius: 15px; box-shadow: 0 4px 20px rgba(46,46,46,0.1); border: 1px solid #D1D1D1; }
-        h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; color: #2E2E2E; margin-top: 2rem; margin-bottom: 1rem; line-height: 1.3; }
-        h1 { font-size: 2.5rem; font-weight: 700; margin-top: 0; border-bottom: 3px solid #A1824A; padding-bottom: 0.5rem; }
-        h2 { font-size: 2rem; font-weight: 700; margin-top: 2.5rem; }
-        h3 { font-size: 1.5rem; font-weight: 600; color: #5A7D8C; }
-        h4 { font-size: 1.25rem; font-weight: 600; color: #5A7D8C; }
-        p { margin-bottom: 1.25rem; font-size: 1.1rem; }
-        a { color: #A93400; text-decoration: underline; transition: color 0.3s; }
-        a:hover { color: #A95C3D; }
-        strong { font-weight: 600; }
-        em { font-style: italic; }
-        code { font-family: 'Courier New', monospace; background: #F8F7F4; padding: 0.2rem 0.4rem; border-radius: 3px; border: 1px solid #D1D1D1; }
-        blockquote { border-left: 4px solid #A1824A; padding: 1rem 1.5rem; margin: 1.5rem 0; font-style: italic; color: #5A7D8C; background: #F8F7F4; border-radius: 0 8px 8px 0; }
-        hr { border: none; border-top: 2px solid #D1D1D1; margin: 2rem 0; }
-        .nav { text-align: center; padding: 1rem 0; border-top: 2px solid #D1D1D1; margin-top: 2rem; }
-        .nav a { display: inline-block; padding: 0.75rem 1.5rem; background: #A93400; color: #F8F7F4; text-decoration: none; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 600; margin: 0.5rem; }
-        .nav a:hover { background: #A95C3D; }
-    </style>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'><style type='text/css'>html {overflow-x: initial !important;}</style>
+<style type='text/css'  id="style-base">:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, "Segoe UI Emoji", "SF Pro", sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p *, #write.first-line-indent svg * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
+#write svg h1, #write svg h2, #write svg h3, #write svg h4, #write svg h5, #write svg h6, #write svg p { position: static; }
+.nodeLabel p { padding-right: 2px; padding-left: 2px; }
+.typora-export .nodeLabel p { padding-right: 0px; padding-left: 0px; }
+foreignobject { overflow: visible; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+li p { orphans: 1; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.mermaid-svg { margin: auto; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left: 0.25em solid rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
+
+</style>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;display=swap' type='text/css' />
+<style type='text/css'  id="style-theme_css">/*
+ * Unearth Light Theme for Typora
+ * Based on the Foundry Blueprint 4.1 - unearth.im
+ * 
+ * Color Palette:
+ * - Parchment (Background): #F8F7F4
+ * - Charcoal (Text): #2E2E2E
+ * - Burnt Sienna (Primary Accent): #A93400
+ * - Antique Gold (Secondary Accent): #A1824A
+ * - Slate Blue (Functional Accent): #5A7D8C
+ * - Light Stone: #D1D1D1
+ * - Medium Stone: #8E8E8E
+ *
+ * Typography:
+ * - Narrative: Lora (serif)
+ * - UI/Headlines: Inter (sans-serif)
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+:root {
+    --parchment: #F8F7F4;
+    --charcoal: #2E2E2E;
+    --burnt-sienna: #A93400;
+    --sienna-hover: #A95C3D;
+    --accent-color: #A95C3D;
+    --antique-gold: #A1824A;
+    --slate-blue: #5A7D8C;
+    --meta-text-color: #5A7D8C;
+    --light-stone: #D1D1D1;
+    --border-color: #e0e0e0;
+    --medium-stone: #8E8E8E;
+    --white: #FFFFFF;
+    
+    --font-narrative: 'Lora', Georgia, serif;
+    --font-ui: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
+}
+
+/* ========================================
+   BASE STYLES
+   ======================================== */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-narrative);
+    color: var(--charcoal);
+    background-color: var(--parchment);
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#write {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 64px 80px 100px;
+}
+
+/* ========================================
+   HEADINGS
+   ======================================== */
+
+h1 {
+    font-family: var(--font-narrative);
+    color: var(--charcoal);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-family: var(--font-narrative);
+    color: var(--charcoal);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--light-stone);
+    padding-bottom: 0.5rem;
+}
+
+h3, h4, h5, h6 {
+    font-family: var(--font-ui);
+    color: var(--charcoal);
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 1.25rem;
+    color: var(--charcoal);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+    color: var(--burnt-sienna);
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+h5 {
+    font-size: 1.1rem;
+    color: var(--slate-blue);
+}
+
+h6 {
+    font-size: 1rem;
+    color: var(--medium-stone);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ========================================
+   PARAGRAPHS & TEXT
+   ======================================== */
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.9;
+}
+
+strong, b {
+    font-weight: 700;
+    color: var(--charcoal);
+}
+
+em, i {
+    font-style: italic;
+}
+
+/* ========================================
+   LINKS
+   ======================================== */
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-color);
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    background-color: rgba(169, 92, 61, 0.1);
+    border-bottom-color: transparent;
+}
+
+/* ========================================
+   BLOCKQUOTES
+   ======================================== */
+
+blockquote {
+    margin: 2rem 0;
+    padding: 1.5rem 2rem;
+    border-left: 4px solid var(--antique-gold);
+    background-color: rgba(161, 130, 74, 0.08);
+    border-radius: 0 4px 4px 0;
+    color: var(--charcoal);
+}
+
+blockquote p {
+    margin: 0.5rem 0;
+    line-height: 1.8;
+}
+
+blockquote blockquote {
+    margin-left: 1rem;
+    border-left-color: var(--slate-blue);
+    background-color: rgba(90, 125, 140, 0.08);
+}
+
+/* ========================================
+   CODE
+   ======================================== */
+
+code {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    background-color: rgba(209, 209, 209, 0.4);
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    color: var(--burnt-sienna);
+}
+
+/* Code blocks */
+pre {
+    font-family: var(--font-mono);
+    background-color: var(--charcoal);
+    color: var(--parchment);
+    padding: 1rem 1.25rem;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    line-height: 1.6;
+}
+
+pre code {
+    background: none;
+    padding: 0;
+    color: inherit;
+    font-size: 0.875rem;
+}
+
+/* Code block with line numbers */
+.md-fences {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    background-color: var(--charcoal);
+    color: var(--parchment);
+    border: none;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1.5rem 0;
+}
+
+.CodeMirror-lines {
+    padding: 0;
+}
+
+/* ========================================
+   LISTS
+   ======================================== */
+
+ul, ol {
+    padding-left: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+li {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.9;
+}
+
+li > ul, li > ol {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+li > ul > li, li > ol > li {
+    margin-bottom: 0.5rem;
+}
+
+/* Unordered list markers */
+ul > li::marker {
+    color: var(--burnt-sienna);
+}
+
+/* Ordered list markers */
+ol > li::marker {
+    color: var(--antique-gold);
+    font-family: var(--font-ui);
+    font-weight: 600;
+}
+
+/* Task lists */
+.task-list-item {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.task-list-item input[type="checkbox"] {
+    margin-right: 0.5rem;
+    accent-color: var(--burnt-sienna);
+}
+
+/* ========================================
+   HORIZONTAL RULE
+   ======================================== */
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, var(--light-stone), var(--antique-gold), var(--light-stone));
+    margin: 2.5rem 0;
+}
+
+/* ========================================
+   TABLES
+   ======================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-family: var(--font-ui);
+    font-size: 0.9rem;
+}
+
+thead {
+    background-color: var(--charcoal);
+    color: var(--parchment);
+}
+
+th {
+    font-weight: 600;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--charcoal);
+}
+
+td {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--light-stone);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(209, 209, 209, 0.2);
+}
+
+tbody tr:hover {
+    background-color: rgba(161, 130, 74, 0.1);
+}
+
+/* ========================================
+   IMAGES
+   ======================================== */
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 1rem 0;
+    box-shadow: 0 2px 8px rgba(46, 46, 46, 0.1);
+}
+
+/* Image captions */
+figure {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+figcaption {
+    font-family: var(--font-ui);
+    font-size: 0.875rem;
+    color: var(--medium-stone);
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* ========================================
+   FOOTNOTES
+   ======================================== */
+
+.footnotes {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--light-stone);
+}
+
+.footnotes h2 {
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
+.footnotes ol {
+    padding-left: 20px;
+    color: #555;
+}
+
+.footnotes li {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.footnotes p {
+    font-size: 0.85rem;
+    margin-bottom: 0;
+}
+
+.footnote-ref, sup a {
+    font-family: var(--font-ui);
+    font-size: 0.8em;
+    font-weight: 600;
+    vertical-align: super;
+    color: var(--burnt-sienna);
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.footnote-ref:hover, sup a:hover {
+    background-color: transparent;
+}
+
+sup.md-footnote {
+    font-family: var(--font-ui);
+    font-size: 0.8em;
+    font-weight: 600;
+    color: var(--burnt-sienna);
+    background-color: transparent;
+    padding: 0;
+}
+
+/* ========================================
+   DEFINITION LISTS
+   ======================================== */
+
+dl {
+    margin: 1rem 0;
+}
+
+dt {
+    font-family: var(--font-ui);
+    font-weight: 700;
+    color: var(--burnt-sienna);
+    margin-top: 1rem;
+}
+
+dd {
+    margin-left: 1.5rem;
+    margin-top: 0.25rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--light-stone);
+}
+
+/* ========================================
+   MARK / HIGHLIGHT
+   ======================================== */
+
+mark {
+    background-color: rgba(161, 130, 74, 0.3);
+    color: var(--charcoal);
+    padding: 0.1rem 0.3rem;
+    border-radius: 2px;
+}
+
+/* ========================================
+   STRIKETHROUGH
+   ======================================== */
+
+del, s {
+    color: var(--medium-stone);
+    text-decoration: line-through;
+}
+
+/* ========================================
+   KEYBOARD
+   ======================================== */
+
+kbd {
+    font-family: var(--font-ui);
+    font-size: 0.85em;
+    background-color: var(--light-stone);
+    border: 1px solid var(--medium-stone);
+    border-radius: 3px;
+    padding: 0.1rem 0.4rem;
+    box-shadow: 0 1px 2px rgba(46, 46, 46, 0.1);
+}
+
+/* ========================================
+   ABBREVIATIONS
+   ======================================== */
+
+abbr {
+    text-decoration: underline dotted var(--slate-blue);
+    cursor: help;
+}
+
+/* ========================================
+   SELECTION
+   ======================================== */
+
+::selection {
+    background-color: rgba(169, 52, 0, 0.2);
+    color: var(--charcoal);
+}
+
+::-moz-selection {
+    background-color: rgba(169, 52, 0, 0.2);
+    color: var(--charcoal);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - SIDEBAR
+   ======================================== */
+
+#typora-sidebar {
+    background-color: var(--parchment);
+    border-right: 1px solid var(--light-stone);
+}
+
+.sidebar-content {
+    font-family: var(--font-ui);
+}
+
+.file-tree-node.active > .file-node-content {
+    background-color: rgba(169, 52, 0, 0.1);
+    color: var(--burnt-sienna);
+}
+
+.file-tree-node:hover > .file-node-content {
+    background-color: rgba(209, 209, 209, 0.3);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - SOURCE MODE
+   ======================================== */
+
+.cm-s-typora-default .cm-header {
+    color: var(--burnt-sienna);
+}
+
+.cm-s-typora-default .cm-link {
+    color: var(--slate-blue);
+}
+
+.cm-s-typora-default .cm-string {
+    color: var(--antique-gold);
+}
+
+.cm-s-typora-default .cm-comment {
+    color: var(--medium-stone);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - FOCUS MODE
+   ======================================== */
+
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) * {
+    color: var(--light-stone) !important;
+}
+
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) img {
+    opacity: 0.5;
+}
+
+/* ========================================
+   TYPORA SPECIFIC - MEGAMENU
+   ======================================== */
+
+.megamenu-menu-panel {
+    background-color: var(--parchment);
+    font-family: var(--font-ui);
+}
+
+.megamenu-menu-panel .btn {
+    background-color: var(--burnt-sienna);
+    color: var(--parchment);
+}
+
+.megamenu-menu-panel .btn:hover {
+    background-color: var(--sienna-hover);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - SEARCH
+   ======================================== */
+
+#md-searchpanel {
+    background-color: var(--parchment);
+    border-bottom: 1px solid var(--light-stone);
+}
+
+#md-searchpanel input {
+    font-family: var(--font-ui);
+    background-color: var(--white);
+    border: 1px solid var(--light-stone);
+    border-radius: 4px;
+}
+
+#md-searchpanel input:focus {
+    border-color: var(--burnt-sienna);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(169, 52, 0, 0.15);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - TOOLTIP
+   ======================================== */
+
+.md-hover-tip .md-arrow:after {
+    background-color: var(--charcoal);
+}
+
+.md-hover-tip .code-tooltip-content {
+    background-color: var(--charcoal);
+    color: var(--parchment);
+    font-family: var(--font-ui);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - META BLOCK
+   ======================================== */
+
+.md-meta-block {
+    background-color: rgba(209, 209, 209, 0.3);
+    border-radius: 6px;
+    padding: 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--medium-stone);
+}
+
+/* ========================================
+   TYPORA SPECIFIC - TABLE OF CONTENTS
+   ======================================== */
+
+.md-toc {
+    font-family: var(--font-ui);
+}
+
+.md-toc-h1 {
+    font-weight: 700;
+    color: var(--charcoal);
+}
+
+.md-toc-h2 {
+    font-weight: 600;
+    color: var(--burnt-sienna);
+}
+
+.md-toc-h3, .md-toc-h4, .md-toc-h5, .md-toc-h6 {
+    color: var(--medium-stone);
+}
+
+/* ========================================
+   SCROLLBAR
+   ======================================== */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--parchment);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--light-stone);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--medium-stone);
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+
+@media print {
+    html {
+        font-size: 12pt;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+    
+    #write {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        color: black;
+        page-break-after: avoid;
+    }
+    
+    pre, blockquote {
+        page-break-inside: avoid;
+    }
+    
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+    
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        color: #666;
+    }
+}
+</style>
+<style type='text/css'  id="style-lp">ol, ul {padding-left: 40px}</style>
+
+<title>TEXTBOOK-Chapter-14-Memory-Institutions</title>
 </head>
-<body>
-    <div class="container">
-        <article>
-<h1>Chapter 14: Memory Institutions for the Digital Age — Curating the Haunted Forest</h1>
-
-<h2>Opening: The Museum Without Walls</h2>
-
-<p>
-In 2015, the Strong National Museum of Play in Rochester, New York, opened an exhibit called "World Video Game Hall of Fame." But this wasn't a traditional museum exhibit—dusty consoles behind glass with "Do Not Touch" signs. Visitors could <strong>play</strong> the inducted games: <em>Pong</em>, <em>Pac-Man</em>, <em>Tetris</em>, <em>Doom</em>.
-</p>
-
-<p>
-The museum faced a curatorial question that would be absurd in traditional museums: Should we let people touch the artifacts? For video games, the answer had to be yes. A game you can't play is like a book you can't read—the medium requires interaction. But interaction means degradation (controllers wear out, CDs get scratched). Museums typically preserve to prevent use. Here, use <strong>was</strong> preservation—keeping the experience alive.
-</p>
-
-<p>
-This is the paradox of <strong>digital memory institutions</strong>: the artifacts are not just objects to be stored, but <strong>experiences to be resurrected</strong>. A GeoCities homepage isn't just HTML files—it's the experience of navigating a web ring, seeing <blink> tags, hearing MIDI music autoplay. Preserving the bits without preserving the <strong>context and experience</strong> is incomplete.
-</p>
-
-<p>
-<strong>The Haunted Forest</strong> is our metaphor for digital memory institutions—places where murdered platforms and their artifacts exist in liminal space between dead and alive. Not quite functional (the original platform is gone), but not quite inert (the artifacts still haunt us with meaning). Memory institutions <strong>curate this haunting</strong>—they don't just store, they interpret, contextualize, and make accessible.
-</p>
-
-<p>
-This chapter explores how to build memory institutions for digital culture—museums, archives, libraries, memorials, and research collections that preserve not just bits, but <strong>meaning</strong>.
-</p>
-
-<h2>Part I: The Five Types of Memory Institutions</h2>
-
-<p>
-Traditional memory institutions (museums, archives, libraries) each have distinct missions. Digital memory institutions inherit these missions but must adapt them:
-</p>
-
-<h3>Type 1: The Library (Access and Circulation)</h3>
-
-<p>
-<strong>Traditional Mission:</strong>
-- Collect materials (books, journals, media)
-- Catalog and organize
-- Lend for temporary use
-- Provide public access
-</p>
-
-<p>
-<strong>Digital Adaptation: The Web Library</strong>
-</p>
-
-<p>
-<strong>Example: Internet Archive's Wayback Machine</strong>
-</p>
-
-<p>
-<strong>What it does:</strong>
-- Crawls and stores snapshots of websites over time
-- Makes them publicly browsable (800+ billion pages)
-- Free access, no login required
-- Preserves web as if it were a lending library ("borrow" access to past versions)
-</p>
-
-<p>
-<strong>How it embodies Library mission:</strong>
-- <strong>Comprehensive collection</strong>: Aims to archive "everything" (like Library of Congress)
-- <strong>Public access</strong>: Anyone can browse, no restrictions (unlike research archives)
-- <strong>Findability</strong>: URL-based access (like call numbers)
-- <strong>Circulation</strong>: Multiple users can "use" the same archived page simultaneously
-</p>
-
-<p>
-<strong>Challenges:</strong>
-- Scale is overwhelming (800B pages—impossible to curate comprehensively)
-- Context is minimal (sites preserved but not explained)
-- Robots.txt compliance (respects site owners' wishes not to be archived—some historically important sites excluded)
-</p>
-
-<p>
-<strong>When to use Library model:</strong>
-- Comprehensive preservation is goal
-- Public access is priority
-- Resources allow for massive scale
-</p>
-
-<h3>Type 2: The Archive (Preservation and Restriction)</h3>
-
-<p>
-<strong>Traditional Mission:</strong>
-- Preserve unique/rare materials
-- Maintain original order and provenance
-- Restrict access to protect fragile items
-- Serve researchers, not general public
-</p>
-
-<p>
-<strong>Digital Adaptation: The Restricted Research Archive</strong>
-</p>
-
-<p>
-<strong>Example: Library of Congress Twitter Archive (2006-2017)</strong>
-</p>
-
-<p>
-<strong>What it does:</strong>
-- Preserved all public tweets (billions) from 2006-2017
-- Metadata-only access (can search, but can't read full tweet text without special permission)
-- Researcher access requires application and justification
-- Not publicly browsable
-</p>
-
-<p>
-<strong>How it embodies Archive mission:</strong>
-- <strong>Provenance</strong>: Preserves complete record (all tweets, in order, with timestamps)
-- <strong>Restriction</strong>: Protects privacy (can't mass-surveil via archive)
-- <strong>Research focus</strong>: Designed for scholars, not casual browsing
-- <strong>Permanence</strong>: Committed to preserving forever (unlike platforms)
-</p>
-
-<p>
-<strong>Challenges:</strong>
-- Restrictions limit utility (researchers frustrated by access barriers)
-- Metadata-only access means context is hard to reconstruct
-- 2017 cutoff (stopped collecting—now only selective acquisition)
-</p>
-
-<p>
-<strong>When to use Archive model:</strong>
-- Privacy concerns require restricted access
-- Materials are sensitive or contested
-- Focus is on research, not public engagement
-</p>
-
-<h3>Type 3: The Museum (Display and Interpretation)</h3>
-
-<p>
-<strong>Traditional Mission:</strong>
-- Collect objects of cultural/historical significance
-- Curate exhibitions (select and interpret)
-- Educate public through display
-- Create narrative and meaning
-</p>
-
-<p>
-<strong>Digital Adaptation: The Curated Digital Museum</strong>
-</p>
-
-<p>
-<strong>Example: Cameron's World (GeoCities Archive as Art)</strong>
-</p>
-
-<p>
-<strong>What it does:</strong>
-- Selects GIFs, backgrounds, and UI elements from archived GeoCities sites
-- Arranges them into a sprawling, interactive web collage
-- Provides essays explaining GeoCities aesthetics and culture
-- Makes 1990s web design comprehensible and beautiful
-</p>
-
-<p>
-<strong>How it embodies Museum mission:</strong>
-- <strong>Curation</strong>: Selects from vast archive (not comprehensive, but meaningful)
-- <strong>Interpretation</strong>: Explains why GeoCities mattered aesthetically and culturally
-- <strong>Exhibition</strong>: Public display, visually engaging
-- <strong>Education</strong>: Teaches people who never experienced GeoCities what it felt like
-</p>
-
-<p>
-<strong>Another Example: The Strong Museum's Video Game Hall of Fame</strong>
-</p>
-
-<p>
-<strong>What it does:</strong>
-- Inducts significant games into "Hall of Fame" (selective canon)
-- Makes games playable on museum floor (interactive exhibits)
-- Provides historical context (when released, why important, cultural impact)
-- Preserves hardware and software together (full experience)
-</p>
-
-<p>
-<strong>Challenges:</strong>
-- Curation is subjective (who decides what's significant?)
-- Resources limit scope (can't exhibit everything)
-- Interpretation can impose narrative (risk of revisionism)
-</p>
-
-<p>
-<strong>When to use Museum model:</strong>
-- Scale is manageable (curated collections, not comprehensive dumps)
-- Public engagement is goal (exhibitions, education)
-- Narrative and interpretation are central
-</p>
-
-<h3>Type 4: The Memorial (Commemoration and Mourning)</h3>
-
-<p>
-<strong>Traditional Mission:</strong>
-- Honor the dead or lost
-- Create space for grief and remembrance
-- Preserve memory of trauma or tragedy
-- Offer emotional, not just intellectual, engagement
-</p>
-
-<p>
-<strong>Digital Adaptation: The Platform Memorial</strong>
-</p>
-
-<p>
-<strong>Example: The September 11 Digital Archive</strong>
-</p>
-
-<p>
-<strong>What it does:</strong>
-- Collected personal stories, emails, photos, websites created in response to 9/11
-- Community submissions (people contributed their own materials)
-- Public access (browsable, searchable)
-- Emotional framing (archive as act of collective mourning)
-</p>
-
-<p>
-<strong>How it embodies Memorial mission:</strong>
-- <strong>Commemoration</strong>: Preserves tragedy and response
-- <strong>Personal stories</strong>: Not just official record, but individual experiences
-- <strong>Emotional resonance</strong>: Designed to evoke feeling, not just document facts
-- <strong>Community ownership</strong>: People participated in creating the archive
-</p>
-
-<p>
-<strong>Another Example: Hypothetical "GeoCities Memorial"</strong>
-</p>
-
-<p>
-<strong>What it could do:</strong>
-- Frame GeoCities shutdown as cultural loss (murder, not natural death)
-- Invite former GeoCities users to submit memories ("Where were you when GeoCities died?")
-- Create virtual memorial wall (names of lost sites, like Vietnam Memorial)
-- Offer space to grieve the loss of early web's optimism
-</p>
-
-<p>
-<strong>Challenges:</strong>
-- Emotional framing can seem melodramatic (is a platform shutdown worth mourning?)
-- Risk of nostalgia (romanticizing past at expense of present)
-- Who is being memorialized? (platform? users? era?)
-</p>
-
-<p>
-<strong>When to use Memorial model:</strong>
-- Cultural loss is central (not just preservation, but acknowledging grief)
-- Community needs space to mourn
-- Emotional engagement is goal
-</p>
-
-<h3>Type 5: The Research Collection (Data and Analysis)</h3>
-
-<p>
-<strong>Traditional Mission:</strong>
-- Provide raw materials for scholars
-- Emphasis on completeness and accuracy
-- Minimal interpretation (let researchers draw conclusions)
-- Standardized formats for analysis
-</p>
-
-<p>
-<strong>Digital Adaptation: The Research Dataset</strong>
-</p>
-
-<p>
-<strong>Example: Pushshift Reddit Archive</strong>
-</p>
-
-<p>
-<strong>What it does:</strong>
-- Archived every Reddit post and comment (billions) in machine-readable format
-- Made available to researchers (JSON files, searchable API)
-- Minimal curation (raw data dumps)
-- Used for: sociology research, hate speech studies, meme diffusion analysis
-</p>
-
-<p>
-<strong>How it embodies Research Collection mission:</strong>
-- <strong>Completeness</strong>: Everything archived, not curated sample
-- <strong>Machine-readable</strong>: JSON, CSV, SQL—formats for computational analysis
-- <strong>Researcher-focused</strong>: Not public-friendly (requires technical skill)
-- <strong>Neutral</strong>: Doesn't interpret data, just provides it
-</p>
-
-<p>
-<strong>Challenges:</strong>
-- Reddit demanded takedown (2023)—Pushshift stopped providing public access
-- Ethical issues: Contains hate speech, harassment, doxxing (should researchers have access?)
-- No interpretation: Requires expertise to use (not accessible to public)
-</p>
-
-<p>
-<strong>When to use Research Collection model:</strong>
-- Scale is massive (too large for manual curation)
-- Goal is to enable research (not public exhibition)
-- Materials are best understood through computational analysis
-</p>
-
-<h2>Part II: The Memory Institution Design Matrix</h2>
-
-<p>
-When designing a memory institution for murdered digital artifacts, choose your model based on:
-</p>
-
-<h3>Dimension 1: Scale</h3>
-
-<p>
-<strong>Comprehensive (Library/Research Collection)</strong>
-- Archive everything or nearly everything
-- Minimal selectivity
-- Example: Internet Archive's Wayback Machine
-</p>
-
-<p>
-<strong>Curated (Museum/Memorial)</strong>
-- Select significant subset
-- Intensive interpretation
-- Example: Strong Museum's Video Game Hall of Fame
-</p>
-
-<h3>Dimension 2: Access</h3>
-
-<p>
-<strong>Open (Library/Museum)</strong>
-- Public can browse freely
-- No restrictions (or minimal)
-- Example: Cameron's World, Internet Archive
-</p>
-
-<p>
-<strong>Restricted (Archive/Research Collection)</strong>
-- Requires application, credentials, or justification
-- Protects privacy or sensitivity
-- Example: LOC Twitter Archive
-</p>
-
-<h3>Dimension 3: Interpretation</h3>
-
-<p>
-<strong>High Interpretation (Museum/Memorial)</strong>
-- Curators provide context, narrative, meaning
-- Exhibitions tell stories
-- Example: 9/11 Digital Archive with framing essays
-</p>
-
-<p>
-<strong>Low Interpretation (Archive/Research Collection)</strong>
-- Minimal curation, let materials speak for themselves
-- Provenance and metadata, but not narrative
-- Example: Pushshift raw data dumps
-</p>
-
-<h3>Dimension 4: User Experience</h3>
-
-<p>
-<strong>Experiential (Museum)</strong>
-- Artifacts are interactive (playable games, browsable sites)
-- Focus on recreating original experience
-- Example: Strong Museum playable games
-</p>
-
-<p>
-<strong>Documentary (Archive/Library)</strong>
-- Artifacts viewed as historical record
-- Screenshots, descriptions, metadata
-- Original experience not replicable
-- Example: Static screenshots of Flash games (not playable)
-</p>
-
-<h3>The Design Matrix</h3>
-
-<p>
-| Institution Type | Scale | Access | Interpretation | Experience |
-|------------------|-------|--------|----------------|------------|
-| <strong>Library</strong> | Comprehensive | Open | Low | Documentary |
-| <strong>Archive</strong> | Comprehensive | Restricted | Low | Documentary |
-| <strong>Museum</strong> | Curated | Open | High | Experiential |
-| <strong>Memorial</strong> | Curated | Open | High | Emotional |
-| <strong>Research Collection</strong> | Comprehensive | Restricted | Minimal | Data-focused |
-</p>
-
-<p>
-<strong>Hybrid Models Are Common:</strong>
-- Internet Archive = Library + Archive (comprehensive + some restrictions)
-- Strong Museum = Museum + Research Collection (curated exhibits + comprehensive archives in back)
-- 9/11 Archive = Memorial + Library (emotional framing + open access)
-</p>
-
-<h2>Part III: Curatorial Philosophy — What to Display?</h2>
-
-<p>
-Museums don't display everything they own. The Smithsonian's collections are 95% in storage—only 5% on exhibit. Digital memory institutions face the same question: <strong>What do we make visible?</strong>
-</p>
-
-<h3>Curatorial Approach 1: Comprehensive Warehouse</h3>
-
-<p>
-<strong>Philosophy:</strong> Archive everything, make it all accessible, let users find what they want.
-</p>
-
-<p>
-<strong>Example:</strong> Internet Archive's Wayback Machine
-</p>
-
-<p>
-<strong>Strengths:</strong>
-- No gatekeeping (curators don't impose their taste)
-- Serendipity (users discover unexpected things)
-- Completeness (future researchers have maximum material)
-</p>
-
-<p>
-<strong>Weaknesses:</strong>
-- Overwhelming (800B pages—where do you start?)
-- No hierarchy (spam and Shakespeare equally visible)
-- Context is absent (sites preserved without explanation)
-</p>
-
-<p>
-<strong>Best for:</strong> Platforms with structured URLs (websites) where users know what they're looking for
-</p>
-
-<h3>Curatorial Approach 2: Canon Formation</h3>
-
-<p>
-<strong>Philosophy:</strong> Select the "most important" artifacts, create a canon.
-</p>
-
-<p>
-<strong>Example:</strong> Strong Museum's Video Game Hall of Fame (inducts ~10 games/year)
-</p>
-
-<p>
-<strong>Strengths:</strong>
-- Manageable (visitors can engage deeply with 50 games, not 50,000)
-- Narrative coherence (tells story of video game history)
-- Educational (curators explain why these games matter)
-</p>
-
-<p>
-<strong>Weaknesses:</strong>
-- Elitism (who decides what's "important"?)
-- Exclusion (marginalizes non-canonical work)
-- Revisionism (canon reflects curator bias)
-</p>
-
-<p>
-<strong>Best for:</strong> Platforms where a small subset represents the whole (pioneering games, influential creators)
-</p>
-
-<h3>Curatorial Approach 3: Thematic Collections</h3>
-
-<p>
-<strong>Philosophy:</strong> Organize by themes, movements, or communities.
-</p>
-
-<p>
-<strong>Example:</strong> Hypothetical "Tumblr Fanfiction Archive" organized by fandom, pairing, rating, era
-</p>
-
-<p>
-<strong>Strengths:</strong>
-- Findability (users navigate by interest, not chronology)
-- Contextual (themes provide interpretive frame)
-- Inclusive (multiple themes accommodate diverse interests)
-</p>
-
-<p>
-<strong>Weaknesses:</strong>
-- Subjective (who decides themes?)
-- Overlapping (artifacts fit multiple themes—where do they go?)
-- Incomplete (not everything fits a theme)
-</p>
-
-<p>
-<strong>Best for:</strong> Platforms with identifiable communities or genres (fanfiction, meme culture, activist organizing)
-</p>
-
-<h3>Curatorial Approach 4: Chronological Archive</h3>
-
-<p>
-<strong>Philosophy:</strong> Preserve everything in temporal order, like a timeline.
-</p>
-
-<p>
-<strong>Example:</strong> Internet Archive's snapshots (sites preserved as they changed over time)
-</p>
-
-<p>
-<strong>Strengths:</strong>
-- Objectivity (chronology is neutral)
-- Change visible (see how platforms evolved)
-- Completeness (nothing excluded for thematic reasons)
-</p>
-
-<p>
-<strong>Weaknesses:</strong>
-- No hierarchy (early posts equal to late posts)
-- Narrative absent (time alone doesn't explain meaning)
-- Scale issues (decades of daily posts = overwhelming)
-</p>
-
-<p>
-<strong>Best for:</strong> Platforms where temporal evolution is key (Twitter's changing culture, YouTube's algorithm shifts)
-</p>
-
-<h3>Curatorial Approach 5: Community-Driven Curation</h3>
-
-<p>
-<strong>Philosophy:</strong> Let users/creators curate their own materials.
-</p>
-
-<p>
-<strong>Example:</strong> 9/11 Digital Archive (community submissions), Fanlore (fan-created wiki)
-</p>
-
-<p>
-<strong>Strengths:</strong>
-- Authenticity (communities define their own history)
-- Consent (creators choose what's shared)
-- Diversity (avoids institutional bias)
-</p>
-
-<p>
-<strong>Weaknesses:</strong>
-- Unevenness (some creators participate, others don't)
-- Coordination challenges (requires infrastructure for submissions)
-- Quality varies (no editorial oversight)
-</p>
-
-<p>
-<strong>Best for:</strong> Platforms where community identity is strong (fandoms, activist movements, hobbyist communities)
-</p>
-
-<h3>Curatorial Approach 6: Algorithmic/Computational Curation</h3>
-
-<p>
-<strong>Philosophy:</strong> Use algorithms to select representative samples or identify significant patterns.
-</p>
-
-<p>
-<strong>Example:</strong> Using view counts, shares, replies to identify "most influential" tweets
-</p>
-
-<p>
-<strong>Strengths:</strong>
-- Scalability (algorithms process massive datasets)
-- Objectivity (no human bias—though algorithms have bias too)
-- Discovery (finds patterns humans miss)
-</p>
-
-<p>
-<strong>Weaknesses:</strong>
-- Black box (users don't know why things were selected)
-- Bias (algorithms reflect creator bias and training data)
-- Misses margins (algorithms favor mainstream)
-</p>
-
-<p>
-<strong>Best for:</strong> Platforms with clear metrics (views, likes, shares) and massive scale
-</p>
-
-<h2>Part IV: Technical Fidelity — How Much to Preserve?</h2>
-
-<p>
-Digital artifacts exist in layers. How much of each layer do you preserve?
-</p>
-
-<h3>The Fidelity Ladder</h3>
-
-<h4>Level 1: Documentation Only</h4>
-
-<p>
-<strong>What's preserved:</strong> Screenshots, descriptions, metadata
-</p>
-
-<p>
-<strong>What's lost:</strong> Interactivity, experience, technical details
-</p>
-
-<p>
-<strong>Example:</strong> Wikipedia article about Vine (describes it, but can't show it)
-</p>
-
-<p>
-<strong>Pros:</strong> Cheap, easy, lightweight
-<strong>Cons:</strong> Least faithful to original
-</p>
-
-<p>
-<strong>When to use:</strong> Platform is already dead, no way to preserve fully; documentation better than nothing
-</p>
-
-<h4>Level 2: Static Archive</h4>
-
-<p>
-<strong>What's preserved:</strong> HTML, CSS, images (rendered as static files)
-</p>
-
-<p>
-<strong>What's lost:</strong> JavaScript interactivity, dynamic content, databases
-</p>
-
-<p>
-<strong>Example:</strong> Archived GeoCities sites (HTML works, but embedded widgets/scripts don't)
-</p>
-
-<p>
-<strong>Pros:</strong> Relatively easy, preserves visual appearance
-<strong>Cons:</strong> Non-interactive sites feel "dead"
-</p>
-
-<p>
-<strong>When to use:</strong> Static websites, blogs, simple HTML pages
-</p>
-
-<h4>Level 3: Emulation</h4>
-
-<p>
-<strong>What's preserved:</strong> Full functionality via emulator (browser, OS, hardware)
-</p>
-
-<p>
-<strong>What's lost:</strong> Original hardware experience (speed, bugs, quirks)
-</p>
-
-<p>
-<strong>Example:</strong> Flash games playable via Ruffle emulator, DOS games via DOSBox
-</p>
-
-<p>
-<strong>Pros:</strong> Fully interactive, close to original experience
-<strong>Cons:</strong> Requires maintaining emulators (which can become obsolete)
-</p>
-
-<p>
-<strong>When to use:</strong> Complex platforms requiring specific environments (Flash, Java, old browsers)
-</p>
-
-<h4>Level 4: Source Code Preservation</h4>
-
-<p>
-<strong>What's preserved:</strong> Actual code, databases, server configurations
-</p>
-
-<p>
-<strong>What's lost:</strong> Nothing (in theory)—but requires technical expertise to run
-</p>
-
-<p>
-<strong>Example:</strong> GitHub archives of open-source projects
-</p>
-
-<p>
-<strong>Pros:</strong> Most faithful, can be recompiled/forked/modified
-<strong>Cons:</strong> Requires developer skills, dependencies may be obsolete
-</p>
-
-<p>
-<strong>When to use:</strong> Open-source platforms, when preserving for future developers (not just users)
-</p>
-
-<h4>Level 5: Live Preservation</h4>
-
-<p>
-<strong>What's preserved:</strong> Original infrastructure still running
-</p>
-
-<p>
-<strong>What's lost:</strong> Nothing (it's still alive)
-</p>
-
-<p>
-<strong>Example:</strong> Old arcade games kept running on original hardware by collectors
-</p>
-
-<p>
-<strong>Pros:</strong> Perfect fidelity
-<strong>Cons:</strong> Expensive, fragile (hardware fails), not scalable
-</p>
-
-<p>
-<strong>When to use:</strong> High-value artifacts where experience depends on specific hardware (rare)
-</p>
-
-<h4>Level 6: Resurrection</h4>
-
-<p>
-<strong>What's preserved:</strong> Platform rebuilt from scratch for modern environments
-</p>
-
-<p>
-<strong>What's lost:</strong> Bugs, quirks, historical authenticity (new code ≠ old code)
-</p>
-
-<p>
-<strong>Example:</strong> Homestar Runner rebuilt in HTML5 (originally Flash)
-</p>
-
-<p>
-<strong>Pros:</strong> Accessible on modern devices, no emulation needed
-<strong>Cons:</strong> Not "authentic" (it's a recreation, not preservation)
-</p>
-
-<p>
-<strong>When to use:</strong> Cultural value is high, original platform can't run anymore, resurrection is only option
-</p>
-
-<h3>The Fidelity Trade-off</h3>
-
-<p>
-Higher fidelity = higher cost (time, storage, maintenance, expertise)
-</p>
-
-<p>
-<strong>Strategy:</strong> Tiered preservation
-- <strong>Level 1-2 (documentation/static)</strong>: Archive everything
-- <strong>Level 3-4 (emulation/source)</strong>: Archive high-value subset
-- <strong>Level 5-6 (live/resurrection)</strong>: Only most culturally significant artifacts
-</p>
-
-<h2>Part V: Access and Discovery — Making the Haunted Forest Navigable</h2>
-
-<p>
-Preserving artifacts is half the battle. Making them <strong>findable and usable</strong> is the other half.
-</p>
-
-<h3>Access Model 1: URL-Based (Library Model)</h3>
-
-<p>
-<strong>How it works:</strong> Every artifact has a permanent URL; users navigate directly or via search engines
-</p>
-
-<p>
-<strong>Example:</strong> Internet Archive's Wayback Machine (web.archive.org/web/TIMESTAMP/URL)
-</p>
-
-<p>
-<strong>Pros:</strong>
-- Simple, intuitive
-- Integrates with web (can link from anywhere)
-- Decentralized (no need for central index)
-</p>
-
-<p>
-<strong>Cons:</strong>
-- Requires knowing URL (hard if you don't remember the site)
-- No thematic browsing (can't explore by topic)
-</p>
-
-<h3>Access Model 2: Search-Based (Database Model)</h3>
-
-<p>
-<strong>How it works:</strong> Full-text search across all preserved content
-</p>
-
-<p>
-<strong>Example:</strong> Archive.org's search bar, Google Books
-</p>
-
-<p>
-<strong>Pros:</strong>
-- Powerful discovery (find anything containing keyword)
-- Don't need to know exact URL
-</p>
-
-<p>
-<strong>Cons:</strong>
-- Overwhelming (thousands of results)
-- Poor for browsing (good for finding specific thing, bad for exploration)
-</p>
-
-<h3>Access Model 3: Curated Exhibits (Museum Model)</h3>
-
-<p>
-<strong>How it works:</strong> Curators create thematic collections or virtual exhibitions
-</p>
-
-<p>
-<strong>Example:</strong> Strong Museum's Hall of Fame induction pages, Cameron's World
-</p>
-
-<p>
-<strong>Pros:</strong>
-- Guided experience (learn through narrative)
-- Manageable scope (100 items, not 100,000)
-- Contextual (exhibits explain significance)
-</p>
-
-<p>
-<strong>Cons:</strong>
-- Limited (most collection not exhibited)
-- Curator bias (what's not exhibited is invisible)
-</p>
-
-<h3>Access Model 4: Community Wikis (Collaborative Model)</h3>
-
-<p>
-<strong>How it works:</strong> Community members add metadata, tags, context
-</p>
-
-<p>
-<strong>Example:</strong> Fanlore (fan-created wiki about fandom history), Wikipedia's coverage of internet culture
-</p>
-
-<p>
-<strong>Pros:</strong>
-- Distributed labor (community shares work)
-- Insider knowledge (fans know context outsiders miss)
-- Self-updating (as community learns, wiki improves)
-</p>
-
-<p>
-<strong>Cons:</strong>
-- Uneven coverage (popular fandoms well-documented, niche ones ignored)
-- Quality varies (no editorial oversight)
-- Requires active community (if community dies, wiki stagnates)
-</p>
-
-<h3>Access Model 5: API-Based (Researcher Model)</h3>
-
-<p>
-<strong>How it works:</strong> Machine-readable access (JSON, CSV, SQL) for computational analysis
-</p>
-
-<p>
-<strong>Example:</strong> Pushshift API, Twitter Academic API
-</p>
-
-<p>
-<strong>Pros:</strong>
-- Enables large-scale research (computational humanities, data science)
-- Flexible (researchers query exactly what they need)
-</p>
-
-<p>
-<strong>Cons:</strong>
-- Not user-friendly (requires programming skill)
-- Not browsable (can't casually explore)
-</p>
-
-<h3>Hybrid Access Strategy</h3>
-
-<p>
-Most memory institutions use <strong>multiple access methods</strong>:
-- <strong>URLs</strong> for direct access (if you know what you want)
-- <strong>Search</strong> for discovery (find specific content)
-- <strong>Exhibits</strong> for education (learn about the platform/era)
-- <strong>Wiki</strong> for context (community-generated metadata)
-- <strong>API</strong> for research (scholars analyze at scale)
-</p>
-
-<p>
-<strong>Example: Internet Archive</strong>
-- Wayback Machine: URL-based
-- Search bar: keyword search
-- Collections: curated thematic groups (e.g., "Grateful Dead Live Concerts")
-- API: developers can query programmatically
-</p>
-
-<h2>Part VI: Legal and Ethical Frameworks</h2>
-
-<p>
-Memory institutions must navigate thorny legal and ethical issues:
-</p>
-
-<h3>Issue 1: Copyright</h3>
-
-<p>
-<strong>Problem:</strong> Most preserved content is copyrighted. Does archiving violate copyright law?
-</p>
-
-<p>
-<strong>Legal Frameworks:</strong>
-</p>
-
-<p>
-<strong>Fair Use (US)</strong>
-- Preservation may qualify as fair use (transformative, educational, minimal market harm)
-- Case law: <em>Authors Guild v. Google</em> (Google Books scanning ruled fair use)
-- But: Fair use is defense, not right—you could still be sued
-</p>
-
-<p>
-<strong>Section 108 (US Copyright Law)</strong>
-- Libraries and archives can preserve copyrighted works under certain conditions:
-  - Non-commercial purpose
-  - Closed systems (access in library only, or limited digital access)
-- But: Doesn't cover web scraping or mass digitization clearly
-</p>
-
-<p>
-<strong>DMCA Safe Harbor</strong>
-- Platforms not liable for user-uploaded content if they respond to takedowns
-- Memory institutions use this (Internet Archive responds to DMCA requests)
-</p>
-
-<p>
-<strong>International Variations:</strong>
-- EU: Orphan Works Directive allows preservation of works with unknown copyright holders
-- Canada: Fair Dealing (narrower than US fair use)
-</p>
-
-<p>
-<strong>Practical Strategy:</strong>
-- Preserve first, respond to takedowns if challenged (Internet Archive's approach)
-- Or: Seek permissions (time-consuming, often impossible)
-- Or: Restrict access (preserve but don't make public)
-</p>
-
-<h3>Issue 2: Privacy</h3>
-
-<p>
-<strong>Problem:</strong> Archived content may contain personal information people no longer want public.
-</p>
-
-<p>
-<strong>Ethical Questions:</strong>
-- Should you preserve someone's teenage LiveJournal (they might be embarrassed now)?
-- Should you archive doxxing or harassment (evidence of harm, but re-publicizes victim info)?
-- Should you preserve medical/financial/intimate details shared on forums?
-</p>
-
-<p>
-<strong>Frameworks:</strong>
-</p>
-
-<p>
-<strong>Right to Be Forgotten (GDPR, EU)</strong>
-- Individuals can request deletion of personal data
-- Applies to archives? Unclear (exemptions for journalism/research/public interest)
-</p>
-
-<p>
-<strong>Contextual Integrity (Helen Nissenbaum)</strong>
-- Privacy violated when information flows across contexts inappropriately
-- Example: Forum post meant for small community, now archived and Google-indexed = context collapse
-</p>
-
-<p>
-<strong>Practical Approaches:</strong>
-</p>
-
-<p>
-<strong>Takedown Policies:</strong>
-- Allow individuals to request removal (Internet Archive honors requests)
-- Review case-by-case (balance individual privacy vs. historical value)
-</p>
-
-<p>
-<strong>Restricted Access:</strong>
-- Preserve but don't make publicly searchable
-- Researcher-only access (requires IRB approval)
-</p>
-
-<p>
-<strong>Anonymization:</strong>
-- Remove or redact names, usernames, identifying details
-- But: Can harm historical accuracy
-</p>
-
-<h3>Issue 3: Consent</h3>
-
-<p>
-<strong>Problem:</strong> Did creators consent to their work being preserved?
-</p>
-
-<p>
-<strong>Arguments:</strong>
-</p>
-
-<p>
-<strong>Implied Consent:</strong>
-- By posting publicly, you consented to archiving (like publishing a book)
-- Counterargument: Expectation of ephemerality (platform may shut down, but users didn't expect Internet Archive)
-</p>
-
-<p>
-<strong>Explicit Consent:</strong>
-- Only archive if creator explicitly agrees
-- Counterargument: Impractical (can't contact millions of users)
-</p>
-
-<p>
-<strong>Posthumous:</strong>
-- If creator is dead, do we need consent from estate?
-- Historical materials often preserved without consent (diaries, letters found after death)
-</p>
-
-<p>
-<strong>Practical Strategy:</strong>
-- Default to preserving (implied consent for public posts)
-- Honor explicit deletion (if someone deleted content, don't resurrect without reason)
-- Provide opt-out (let creators request removal)
-</p>
-
-<h3>Issue 4: Harm Prevention</h3>
-
-<p>
-<strong>Problem:</strong> Some content causes harm if preserved (hate speech, doxxing, revenge porn).
-</p>
-
-<p>
-<strong>Ethical Framework:</strong>
-</p>
-
-<p>
-<strong>Do No Harm Principle:</strong>
-- If preserving causes direct, ongoing harm (reveals someone's address, enables harassment), don't do it
-</p>
-
-<p>
-<strong>Historical Value vs. Harm:</strong>
-- Hate forums: preserve for research (understanding extremism), but restrict access (don't make recruitment tool)
-- Revenge porn: don't preserve (no historical value justifies harm)
-</p>
-
-<p>
-<strong>Contextual Judgment:</strong>
-- Evaluate case-by-case
-- Consult affected communities when possible
-</p>
-
-<h2>Part VII: Case Studies in Memory Institution Design</h2>
-
-<h3>Case Study 1: The Strong Museum (Exemplary Museum Model)</h3>
-
-<p>
-<strong>What they do:</strong>
-- Curate exhibitions of video games, toys, and play
-- Make games playable (interactive exhibits)
-- Preserve hardware and software together
-- Host researchers (extensive archives beyond exhibits)
-</p>
-
-<p>
-<strong>Why it works:</strong>
-- <strong>Curation</strong>: Selective canon (Hall of Fame inductees)
-- <strong>Experience</strong>: Games are played, not just viewed
-- <strong>Interpretation</strong>: Context provided (essays, talks, labels)
-- <strong>Institutional stability</strong>: Endowed museum (not dependent on platform survival)
-</p>
-
-<p>
-<strong>Challenges:</strong>
-- Limited scope (only games, not all digital culture)
-- Geography-bound (must visit Rochester to play games)
-</p>
-
-<h3>Case Study 2: Internet Archive (Exemplary Library Model)</h3>
-
-<p>
-<strong>What they do:</strong>
-- Crawl and preserve websites (Wayback Machine)
-- Archive books, music, video, software
-- Open access (free, no login)
-- Advocate for digital rights (lawsuits for fair use)
-</p>
-
-<p>
-<strong>Why it works:</strong>
-- <strong>Scale</strong>: 800+ billion web pages
-- <strong>Longevity</strong>: 29 years and counting
-- <strong>Public good</strong>: Non-profit, funded by donations and services
-- <strong>Legal courage</strong>: Willing to defend fair use in court
-</p>
-
-<p>
-<strong>Challenges:</strong>
-- Scale makes curation impossible (overwhelming)
-- Robots.txt compliance excludes important sites
-- Funding precarity (dependent on donations)
-</p>
-
-<h3>Case Study 3: Fanlore (Exemplary Community-Driven Model)</h3>
-
-<p>
-<strong>What they do:</strong>
-- Wiki documenting fandom history (ships, tropes, controversies, communities)
-- Created and maintained by fans
-- Covers all fandoms (TV, books, games, RPF, etc.)
-</p>
-
-<p>
-<strong>Why it works:</strong>
-- <strong>Insider knowledge</strong>: Fans document nuances outsiders miss
-- <strong>Community ownership</strong>: Fans preserve their own history
-- <strong>Distributed labor</strong>: Thousands of contributors
-</p>
-
-<p>
-<strong>Challenges:</strong>
-- Uneven coverage (big fandoms well-documented, small ones sparse)
-- Vandalism/edit wars (controversial topics fought over)
-- Succession (if volunteer community dwindles, wiki could die)
-</p>
-
-<h3>Case Study 4: Flashpoint Project (Exemplary Resurrection Model)</h3>
-
-<p>
-<strong>What they do:</strong>
-- Preserve 500,000+ Flash games and animations
-- Provide custom launcher with embedded emulator
-- Community-curated (volunteers add games, metadata)
-</p>
-
-<p>
-<strong>Why it works:</strong>
-- <strong>Rescue mission</strong>: Saved massive amount of content before Flash died
-- <strong>Playability</strong>: Games fully functional (not just archived)
-- <strong>Community-driven</strong>: Distributed effort (volunteers curate, test, tag)
-</p>
-
-<p>
-<strong>Challenges:</strong>
-- Maintenance burden (emulators need updates as OSes change)
-- Copyright gray area (hosting games without explicit permission)
-- Curation slow (500K games, but millions more exist—can't save everything)
-</p>
-
-<h2>Part VIII: Building Your Own Memory Institution</h2>
-
-<h3>Step-by-Step Guide</h3>
-
-<h4>Phase 1: Define Mission</h4>
-
-<p>
-<strong>Questions:</strong>
-1. What are you preserving? (specific platform, genre, community, era)
-2. Why does it matter? (cultural significance, underrepresentation, endangerment)
-3. Who is your audience? (general public, researchers, community members)
-4. What type of institution? (library, archive, museum, memorial, research collection)
-</p>
-
-<p>
-<strong>Example Mission:</strong>
-<em>"The Tumblr Fandom Archive preserves fanworks (fanfiction, fan art, meta) from Tumblr's golden age (2010-2016), focusing on marginalized fandoms and LGBTQ+ creators. Our audience is fans, scholars, and future generations interested in transformative works. We are a community-driven digital museum with curated exhibits and open archives."</em>
-</p>
-
-<h4>Phase 2: Acquisition Strategy</h4>
-
-<p>
-<strong>How will you acquire content?</strong>
-</p>
-
-<p>
-<strong>Option A: Scrape</strong>
-- Use tools (wget, ArchiveBox, Heritrix)
-- Pros: Comprehensive
-- Cons: Legal gray area, may violate ToS
-</p>
-
-<p>
-<strong>Option B: Community Submissions</strong>
-- Invite creators to submit their work
-- Pros: Consent-based, community-driven
-- Cons: Incomplete (only those who participate)
-</p>
-
-<p>
-<strong>Option C: Partnerships</strong>
-- Work with platform for data dump
-- Pros: Legal, comprehensive
-- Cons: Requires cooperation (rare)
-</p>
-
-<p>
-<strong>Option D: Hybrid</strong>
-- Scrape public content + invite submissions for private/deleted content
-</p>
-
-<h4>Phase 3: Storage and Infrastructure</h4>
-
-<p>
-<strong>Technical Needs:</strong>
-- <strong>Storage</strong>: Servers or cloud (how much data?)
-- <strong>Redundancy</strong>: Multiple backups (LOCKSS principle)
-- <strong>Access platform</strong>: Website for browsing (static site, database-driven, CMS)
-</p>
-
-<p>
-<strong>Options:</strong>
-- <strong>Self-hosted</strong>: Full control, but maintenance burden
-- <strong>Cloud</strong>: Scalable, but ongoing costs
-- <strong>Partner with institution</strong>: University library hosts (stability, but less autonomy)
-</p>
-
-<p>
-<strong>Budget:</strong>
-- Small project: $100-500/year (domain, shared hosting, cloud storage)
-- Medium project: $5K-50K/year (dedicated servers, staff time)
-- Large project: $100K+/year (institutional scale, like Internet Archive)
-</p>
-
-<h4>Phase 4: Curation and Metadata</h4>
-
-<p>
-<strong>How will you organize content?</strong>
-</p>
-
-<p>
-<strong>Metadata Schema:</strong>
-- Dublin Core (standard for libraries)
-- Custom schema (specific to your domain)
-</p>
-
-<p>
-<strong>Essential Fields:</strong>
-- Title, Creator, Date, Description, Tags/Categories, Source URL, Archive Date
-</p>
-
-<p>
-<strong>Curation Approach:</strong>
-- Comprehensive warehouse (minimal curation)
-- Thematic collections (curated exhibits)
-- Algorithmic (automated tagging, recommendations)
-- Community-driven (user-submitted metadata)
-</p>
-
-<h4>Phase 5: Access and Discovery</h4>
-
-<p>
-<strong>How will users find content?</strong>
-</p>
-
-<p>
-<strong>Build:</strong>
-- Search functionality (full-text or metadata)
-- Browse by category, date, creator
-- Featured/curated collections (homepage highlights)
-- API (for researchers)
-</p>
-
-<p>
-<strong>Tools:</strong>
-- Static site generator (Jekyll, Hugo) for simple projects
-- Database + CMS (WordPress, Omeka) for complex projects
-- Custom web app (Flask, Django, Rails) for maximum control
-</p>
-
-<h4>Phase 6: Legal and Ethical Policies</h4>
-
-<p>
-<strong>Document:</strong>
-- Copyright stance (fair use, takedown policy)
-- Privacy policy (what personal info do you collect/preserve?)
-- Consent framework (do you allow opt-out?)
-- Access restrictions (public, researcher-only, embargoed)
-</p>
-
-<p>
-<strong>Get advice:</strong>
-- Consult copyright lawyer
-- Follow models (Internet Archive's policies, university IRB guidelines)
-</p>
-
-<h4>Phase 7: Launch and Maintenance</h4>
-
-<p>
-<strong>Launch:</strong>
-- Soft launch (invite community, gather feedback)
-- Public announcement (blog post, social media, press)
-</p>
-
-<p>
-<strong>Ongoing:</strong>
-- Add content regularly (don't let it stagnate)
-- Respond to takedown requests
-- Update software/emulators (prevent bit rot)
-- Fundraise (donations, grants, sponsorships)
-</p>
-
-<p>
-<strong>Succession Planning:</strong>
-- What happens if you can't maintain it? (partner institution, hand off to community, deposit in Internet Archive)
-</p>
-
-<h2>Conclusion: Curating Haunted Spaces</h2>
-
-<p>
-Memory institutions for digital culture are not just storage facilities—they're <strong>acts of interpretation</strong>. Every curatorial choice (what to preserve, how to display, who gets access) shapes how future generations understand our present.
-</p>
-
-<p>
-The Haunted Forest is haunted precisely because these artifacts are <strong>liminal</strong>—neither alive nor fully dead. They exist in the gap between platform death and historical canonization. Memory institutions curate this gap, transforming murdered platforms into ghosts that can teach, inspire, and warn.
-</p>
-
-<p>
-When you build a memory institution, you're not just saving bits. You're:
-- <strong>Resurrecting experience</strong> (making dead platforms playable, browsable, meaningful)
-- <strong>Creating context</strong> (explaining why this mattered, what it meant, who it served)
-- <strong>Enabling research</strong> (providing materials for scholars)
-- <strong>Honoring loss</strong> (memorializing what platforms murdered)
-- <strong>Building canon</strong> (deciding what future remembers)
-</p>
-
-<p>
-The question isn't just "Can we preserve this?" but "How do we make this meaningful for people who never experienced it?"
-</p>
-
-<p>
-In the next chapter, we move from memory institutions to political economy—examining the Sovereignty Stack and how to redesign the infrastructure that platforms control.
-</p>
-
-<p>
-But first, go build a memory institution. Even a small one. Preserve something meaningful to you. Curate it. Interpret it. Make it accessible. 
-</p>
-
-<p>
-The Haunted Forest needs its curators.
-</p>
-
-<h2>Discussion Questions</h2>
-
-<p>
-1. <strong>Institutional Identity</strong>: If you were building a memory institution for a murdered platform, which model (library, archive, museum, memorial, research collection) would you choose? Why?
-</p>
-
-<p>
-2. <strong>Curation vs. Comprehensiveness</strong>: Should memory institutions try to preserve everything, or curate selectively? What are the ethical stakes of each approach?
-</p>
-
-<p>
-3. <strong>Fidelity Trade-offs</strong>: How much technical fidelity is "enough"? When is a screenshot sufficient vs. needing full emulation?
-</p>
-
-<p>
-4. <strong>Access Politics</strong>: Who should have access to preserved materials? Public? Researchers only? Community members only? How do you balance openness with privacy?
-</p>
-
-<p>
-5. <strong>Canon Formation</strong>: Who decides what's "historically significant"? How do we avoid reproducing bias in digital preservation?
-</p>
-
-<p>
-6. <strong>Your Own Archive</strong>: What digital artifact from your life would you want preserved in a memory institution? How would you want it curated and displayed?
-</p>
-
-<h2>Exercise: Design a Memory Institution</h2>
-
-<p>
-<strong>Scenario</strong>: Choose a platform that has died or is dying (MySpace, Vine, GeoCities, Google+, Tumblr's NSFW content, etc.). Design a memory institution to preserve and present it.
-</p>
-
-<p>
-<strong>Part 1: Mission and Model</strong> (500 words)
-- What's your institution called?
-- What type (library, archive, museum, memorial, research collection, hybrid)?
-- What's your mission statement?
-- Who is your audience?
-</p>
-
-<p>
-<strong>Part 2: Collection Strategy</strong> (500 words)
-- What will you preserve? (everything, curated subset, specific communities)
-- How will you acquire it? (scraping, submissions, partnership)
-- What's the scale? (how much content, storage needed)
-</p>
-
-<p>
-<strong>Part 3: Curatorial Approach</strong> (500 words)
-- How will you organize content? (comprehensive warehouse, thematic collections, chronological, community-driven)
-- What metadata will you capture?
-- What level of technical fidelity? (documentation, static, emulation, source code, live)
-</p>
-
-<p>
-<strong>Part 4: Access and Discovery</strong> (500 words)
-- How will users find content? (URL-based, search, exhibits, wiki, API)
-- What's publicly accessible vs. restricted?
-- How will you handle privacy/consent/copyright?
-</p>
-
-<p>
-<strong>Part 5: Implementation Plan</strong> (500 words)
-- What infrastructure do you need? (servers, storage, software)
-- Budget estimate (startup + annual maintenance)
-- Staffing (who does what? volunteers or paid?)
-- Sustainability plan (how do you keep it running for 50 years?)
-</p>
-
-<p>
-<strong>Part 6: Reflection</strong> (300 words)
-- What's the biggest challenge?
-- What compromises did you make (fidelity vs. budget, comprehensiveness vs. curation, access vs. privacy)?
-- Would you actually want to build this? Why or why not?
-</p>
-
-<h2>Further Reading</h2>
-
-<h3>On Museums and Memory</h3>
-
-<p>
-- Kirshenblatt-Gimblett, Barbara. <em>Destination Culture: Tourism, Museums, and Heritage</em>. University of California Press, 1998.
-- Young, James. <em>The Texture of Memory: Holocaust Memorials and Meaning</em>. Yale University Press, 1993.
-- Crane, Susan. "Memory, Distortion, and History in the Museum." <em>History and Theory</em> 36, no. 4 (1997): 44-63.
-</p>
-
-<h3>On Digital Curation</h3>
-
-<p>
-- Manoff, Marlene. "Archive and Database as Metaphor: Theorizing the Historical Record." <em>Portal: Libraries and the Academy</em> 10, no. 4 (2010): 385-398.
-- Brügger, Niels. "Website History and the Website as an Object of Study." <em>New Media & Society</em> 11, no. 1-2 (2009): 115-132.
-- Owens, Trevor. <em>The Theory and Craft of Digital Preservation</em>. Johns Hopkins University Press, 2018.
-</p>
-
-<h3>On Interpretation and Exhibition</h3>
-
-<p>
-- Hooper-Greenhill, Eilean. <em>Museums and the Interpretation of Visual Culture</em>. Routledge, 2000.
-- Macdonald, Sharon, ed. <em>A Companion to Museum Studies</em>. Wiley-Blackwell, 2011.
-- Pearce, Susan. <em>Museums, Objects and Collections</em>. Leicester University Press, 1992.
-</p>
-
-<h3>On Video Game Preservation</h3>
-
-<p>
-- Newman, James. <em>Best Before: Videogames, Supersession and Obsolescence</em>. Routledge, 2012.
-- Guttenbrunner, Mark, et al. "Keeping the Game Alive: Evaluating Strategies for the Preservation of Console Video Games." <em>International Journal of Digital Curation</em> 5, no. 1 (2010): 64-90.
-</p>
-
-<h3>Case Studies</h3>
-
-<p>
-- Internet Archive. "About the Internet Archive." https://archive.org/about/
-- The Strong Museum. "About the Strong." https://www.museumofplay.org/about/
-- Fanlore. "About Fanlore." https://fanlore.org/wiki/Fanlore:About
-- Flashpoint Project. https://flashpointarchive.org/
-</p>
-
-<p>
-<strong>End of Chapter 14</strong>
-</p>
-
-<p>
-<em>Next: Part IV — Systems & Movements</em>
-<em>Chapter 15 — The Political Economy of Digital Ground</em>
-</p>
-
-        </article>
-        <div class="nav">
-            <a href="index.html">Back to Table of Contents</a>
-        </div>
-    </div>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='chapter-14-memory-institutions-for-the-digital-age-----curating-the-haunted-forest'><span>Chapter 14: Memory Institutions for the Digital Age — Curating the Haunted Forest</span></h1><hr /><h2 id='opening-the-museum-without-walls'><span>Opening: The Museum Without Walls</span></h2><p><span>In 2015, the Strong National Museum of Play in Rochester, New York, opened an exhibit called &quot;World Video Game Hall of Fame.&quot; But this wasn&#39;t a traditional museum exhibit—dusty consoles behind glass with &quot;Do Not Touch&quot; signs. Visitors could </span><strong><span>play</span></strong><span> the inducted games: </span><em><span>Pong</span></em><span>, </span><em><span>Pac-Man</span></em><span>, </span><em><span>Tetris</span></em><span>, </span><em><span>Doom</span></em><span>.</span></p><p><span>The museum faced a curatorial question that would be absurd in traditional museums: Should we let people touch the artifacts? For video games, the answer had to be yes. A game you can&#39;t play is like a book you can&#39;t read—the medium requires interaction. But interaction means degradation (controllers wear out, CDs get scratched). Museums typically preserve to prevent use. Here, use </span><strong><span>was</span></strong><span> preservation—keeping the experience alive.</span></p><p><span>This is the paradox of </span><strong><span>digital memory institutions</span></strong><span>: the artifacts are not just objects to be stored, but </span><strong><span>experiences to be resurrected</span></strong><span>. A GeoCities homepage isn&#39;t just HTML files—it&#39;s the experience of navigating a web ring, seeing </span><blink><span> tags, hearing MIDI music autoplay. Preserving the bits without preserving the </span><strong><span>context and experience</span></strong><span> is incomplete.</span></p><p><strong><span>The Haunted Forest</span></strong><span> is our metaphor for digital memory institutions—places where murdered platforms and their artifacts exist in liminal space between dead and alive. Not quite functional (the original platform is gone), but not quite inert (the artifacts still haunt us with meaning). Memory institutions </span><strong><span>curate this haunting</span></strong><span>—they don&#39;t just store, they interpret, contextualize, and make accessible.</span></p><p><span>This chapter explores how to build memory institutions for digital culture—museums, archives, libraries, memorials, and research collections that preserve not just bits, but </span><strong><span>meaning</span></strong><span>.</span></p><hr /><h2 id='part-i-the-five-types-of-memory-institutions'><span>Part I: The Five Types of Memory Institutions</span></h2><p><span>Traditional memory institutions (museums, archives, libraries) each have distinct missions. Digital memory institutions inherit these missions but must adapt them:</span></p><h3 id='type-1-the-library-access-and-circulation'><span>Type 1: The Library (Access and Circulation)</span></h3><p><strong><span>Traditional Mission:</span></strong></p><ul><li><p><span>Collect materials (books, journals, media)</span></p></li><li><p><span>Catalog and organize</span></p></li><li><p><span>Lend for temporary use</span></p></li><li><p><span>Provide public access</span></p></li></ul><p><strong><span>Digital Adaptation: The Web Library</span></strong></p><p><strong><span>Example: Internet Archive&#39;s Wayback Machine</span></strong></p><p><strong><span>What it does:</span></strong></p><ul><li><p><span>Crawls and stores snapshots of websites over time</span></p></li><li><p><span>Makes them publicly browsable (800+ billion pages)</span></p></li><li><p><span>Free access, no login required</span></p></li><li><p><span>Preserves web as if it were a lending library (&quot;borrow&quot; access to past versions)</span></p></li></ul><p><strong><span>How it embodies Library mission:</span></strong></p><ul><li><p><strong><span>Comprehensive collection</span></strong><span>: Aims to archive &quot;everything&quot; (like Library of Congress)</span></p></li><li><p><strong><span>Public access</span></strong><span>: Anyone can browse, no restrictions (unlike research archives)</span></p></li><li><p><strong><span>Findability</span></strong><span>: URL-based access (like call numbers)</span></p></li><li><p><strong><span>Circulation</span></strong><span>: Multiple users can &quot;use&quot; the same archived page simultaneously</span></p></li></ul><p><strong><span>Challenges:</span></strong></p><ul><li><p><span>Scale is overwhelming (800B pages—impossible to curate comprehensively)</span></p></li><li><p><span>Context is minimal (sites preserved but not explained)</span></p></li><li><p><span>Robots.txt compliance (respects site owners&#39; wishes not to be archived—some historically important sites excluded)</span></p></li></ul><p><strong><span>When to use Library model:</span></strong></p><ul><li><p><span>Comprehensive preservation is goal</span></p></li><li><p><span>Public access is priority</span></p></li><li><p><span>Resources allow for massive scale</span></p></li></ul><h3 id='type-2-the-archive-preservation-and-restriction'><span>Type 2: The Archive (Preservation and Restriction)</span></h3><p><strong><span>Traditional Mission:</span></strong></p><ul><li><p><span>Preserve unique/rare materials</span></p></li><li><p><span>Maintain original order and provenance</span></p></li><li><p><span>Restrict access to protect fragile items</span></p></li><li><p><span>Serve researchers, not general public</span></p></li></ul><p><strong><span>Digital Adaptation: The Restricted Research Archive</span></strong></p><p><strong><span>Example: Library of Congress Twitter Archive (2006-2017)</span></strong></p><p><strong><span>What it does:</span></strong></p><ul><li><p><span>Preserved all public tweets (billions) from 2006-2017</span></p></li><li><p><span>Metadata-only access (can search, but can&#39;t read full tweet text without special permission)</span></p></li><li><p><span>Researcher access requires application and justification</span></p></li><li><p><span>Not publicly browsable</span></p></li></ul><p><strong><span>How it embodies Archive mission:</span></strong></p><ul><li><p><strong><span>Provenance</span></strong><span>: Preserves complete record (all tweets, in order, with timestamps)</span></p></li><li><p><strong><span>Restriction</span></strong><span>: Protects privacy (can&#39;t mass-surveil via archive)</span></p></li><li><p><strong><span>Research focus</span></strong><span>: Designed for scholars, not casual browsing</span></p></li><li><p><strong><span>Permanence</span></strong><span>: Committed to preserving forever (unlike platforms)</span></p></li></ul><p><strong><span>Challenges:</span></strong></p><ul><li><p><span>Restrictions limit utility (researchers frustrated by access barriers)</span></p></li><li><p><span>Metadata-only access means context is hard to reconstruct</span></p></li><li><p><span>2017 cutoff (stopped collecting—now only selective acquisition)</span></p></li></ul><p><strong><span>When to use Archive model:</span></strong></p><ul><li><p><span>Privacy concerns require restricted access</span></p></li><li><p><span>Materials are sensitive or contested</span></p></li><li><p><span>Focus is on research, not public engagement</span></p></li></ul><h3 id='type-3-the-museum-display-and-interpretation'><span>Type 3: The Museum (Display and Interpretation)</span></h3><p><strong><span>Traditional Mission:</span></strong></p><ul><li><p><span>Collect objects of cultural/historical significance</span></p></li><li><p><span>Curate exhibitions (select and interpret)</span></p></li><li><p><span>Educate public through display</span></p></li><li><p><span>Create narrative and meaning</span></p></li></ul><p><strong><span>Digital Adaptation: The Curated Digital Museum</span></strong></p><p><strong><span>Example: Cameron&#39;s World (GeoCities Archive as Art)</span></strong></p><p><strong><span>What it does:</span></strong></p><ul><li><p><span>Selects GIFs, backgrounds, and UI elements from archived GeoCities sites</span></p></li><li><p><span>Arranges them into a sprawling, interactive web collage</span></p></li><li><p><span>Provides essays explaining GeoCities aesthetics and culture</span></p></li><li><p><span>Makes 1990s web design comprehensible and beautiful</span></p></li></ul><p><strong><span>How it embodies Museum mission:</span></strong></p><ul><li><p><strong><span>Curation</span></strong><span>: Selects from vast archive (not comprehensive, but meaningful)</span></p></li><li><p><strong><span>Interpretation</span></strong><span>: Explains why GeoCities mattered aesthetically and culturally</span></p></li><li><p><strong><span>Exhibition</span></strong><span>: Public display, visually engaging</span></p></li><li><p><strong><span>Education</span></strong><span>: Teaches people who never experienced GeoCities what it felt like</span></p></li></ul><p><strong><span>Another Example: The Strong Museum&#39;s Video Game Hall of Fame</span></strong></p><p><strong><span>What it does:</span></strong></p><ul><li><p><span>Inducts significant games into &quot;Hall of Fame&quot; (selective canon)</span></p></li><li><p><span>Makes games playable on museum floor (interactive exhibits)</span></p></li><li><p><span>Provides historical context (when released, why important, cultural impact)</span></p></li><li><p><span>Preserves hardware and software together (full experience)</span></p></li></ul><p><strong><span>Challenges:</span></strong></p><ul><li><p><span>Curation is subjective (who decides what&#39;s significant?)</span></p></li><li><p><span>Resources limit scope (can&#39;t exhibit everything)</span></p></li><li><p><span>Interpretation can impose narrative (risk of revisionism)</span></p></li></ul><p><strong><span>When to use Museum model:</span></strong></p><ul><li><p><span>Scale is manageable (curated collections, not comprehensive dumps)</span></p></li><li><p><span>Public engagement is goal (exhibitions, education)</span></p></li><li><p><span>Narrative and interpretation are central</span></p></li></ul><h3 id='type-4-the-memorial-commemoration-and-mourning'><span>Type 4: The Memorial (Commemoration and Mourning)</span></h3><p><strong><span>Traditional Mission:</span></strong></p><ul><li><p><span>Honor the dead or lost</span></p></li><li><p><span>Create space for grief and remembrance</span></p></li><li><p><span>Preserve memory of trauma or tragedy</span></p></li><li><p><span>Offer emotional, not just intellectual, engagement</span></p></li></ul><p><strong><span>Digital Adaptation: The Platform Memorial</span></strong></p><p><strong><span>Example: The September 11 Digital Archive</span></strong></p><p><strong><span>What it does:</span></strong></p><ul><li><p><span>Collected personal stories, emails, photos, websites created in response to 9/11</span></p></li><li><p><span>Community submissions (people contributed their own materials)</span></p></li><li><p><span>Public access (browsable, searchable)</span></p></li><li><p><span>Emotional framing (archive as act of collective mourning)</span></p></li></ul><p><strong><span>How it embodies Memorial mission:</span></strong></p><ul><li><p><strong><span>Commemoration</span></strong><span>: Preserves tragedy and response</span></p></li><li><p><strong><span>Personal stories</span></strong><span>: Not just official record, but individual experiences</span></p></li><li><p><strong><span>Emotional resonance</span></strong><span>: Designed to evoke feeling, not just document facts</span></p></li><li><p><strong><span>Community ownership</span></strong><span>: People participated in creating the archive</span></p></li></ul><p><strong><span>Another Example: Hypothetical &quot;GeoCities Memorial&quot;</span></strong></p><p><strong><span>What it could do:</span></strong></p><ul><li><p><span>Frame GeoCities shutdown as cultural loss (murder, not natural death)</span></p></li><li><p><span>Invite former GeoCities users to submit memories (&quot;Where were you when GeoCities died?&quot;)</span></p></li><li><p><span>Create virtual memorial wall (names of lost sites, like Vietnam Memorial)</span></p></li><li><p><span>Offer space to grieve the loss of early web&#39;s optimism</span></p></li></ul><p><strong><span>Challenges:</span></strong></p><ul><li><p><span>Emotional framing can seem melodramatic (is a platform shutdown worth mourning?)</span></p></li><li><p><span>Risk of nostalgia (romanticizing past at expense of present)</span></p></li><li><p><span>Who is being memorialized? (platform? users? era?)</span></p></li></ul><p><strong><span>When to use Memorial model:</span></strong></p><ul><li><p><span>Cultural loss is central (not just preservation, but acknowledging grief)</span></p></li><li><p><span>Community needs space to mourn</span></p></li><li><p><span>Emotional engagement is goal</span></p></li></ul><h3 id='type-5-the-research-collection-data-and-analysis'><span>Type 5: The Research Collection (Data and Analysis)</span></h3><p><strong><span>Traditional Mission:</span></strong></p><ul><li><p><span>Provide raw materials for scholars</span></p></li><li><p><span>Emphasis on completeness and accuracy</span></p></li><li><p><span>Minimal interpretation (let researchers draw conclusions)</span></p></li><li><p><span>Standardized formats for analysis</span></p></li></ul><p><strong><span>Digital Adaptation: The Research Dataset</span></strong></p><p><strong><span>Example: Pushshift Reddit Archive</span></strong></p><p><strong><span>What it does:</span></strong></p><ul><li><p><span>Archived every Reddit post and comment (billions) in machine-readable format</span></p></li><li><p><span>Made available to researchers (JSON files, searchable API)</span></p></li><li><p><span>Minimal curation (raw data dumps)</span></p></li><li><p><span>Used for: sociology research, hate speech studies, meme diffusion analysis</span></p></li></ul><p><strong><span>How it embodies Research Collection mission:</span></strong></p><ul><li><p><strong><span>Completeness</span></strong><span>: Everything archived, not curated sample</span></p></li><li><p><strong><span>Machine-readable</span></strong><span>: JSON, CSV, SQL—formats for computational analysis</span></p></li><li><p><strong><span>Researcher-focused</span></strong><span>: Not public-friendly (requires technical skill)</span></p></li><li><p><strong><span>Neutral</span></strong><span>: Doesn&#39;t interpret data, just provides it</span></p></li></ul><p><strong><span>Challenges:</span></strong></p><ul><li><p><span>Reddit demanded takedown (2023)—Pushshift stopped providing public access</span></p></li><li><p><span>Ethical issues: Contains hate speech, harassment, doxxing (should researchers have access?)</span></p></li><li><p><span>No interpretation: Requires expertise to use (not accessible to public)</span></p></li></ul><p><strong><span>When to use Research Collection model:</span></strong></p><ul><li><p><span>Scale is massive (too large for manual curation)</span></p></li><li><p><span>Goal is to enable research (not public exhibition)</span></p></li><li><p><span>Materials are best understood through computational analysis</span></p></li></ul><hr /><h2 id='part-ii-the-memory-institution-design-matrix'><span>Part II: The Memory Institution Design Matrix</span></h2><p><span>When designing a memory institution for murdered digital artifacts, choose your model based on:</span></p><h3 id='dimension-1-scale'><span>Dimension 1: Scale</span></h3><p><strong><span>Comprehensive (Library/Research Collection)</span></strong></p><ul><li><p><span>Archive everything or nearly everything</span></p></li><li><p><span>Minimal selectivity</span></p></li><li><p><span>Example: Internet Archive&#39;s Wayback Machine</span></p></li></ul><p><strong><span>Curated (Museum/Memorial)</span></strong></p><ul><li><p><span>Select significant subset</span></p></li><li><p><span>Intensive interpretation</span></p></li><li><p><span>Example: Strong Museum&#39;s Video Game Hall of Fame</span></p></li></ul><h3 id='dimension-2-access'><span>Dimension 2: Access</span></h3><p><strong><span>Open (Library/Museum)</span></strong></p><ul><li><p><span>Public can browse freely</span></p></li><li><p><span>No restrictions (or minimal)</span></p></li><li><p><span>Example: Cameron&#39;s World, Internet Archive</span></p></li></ul><p><strong><span>Restricted (Archive/Research Collection)</span></strong></p><ul><li><p><span>Requires application, credentials, or justification</span></p></li><li><p><span>Protects privacy or sensitivity</span></p></li><li><p><span>Example: LOC Twitter Archive</span></p></li></ul><h3 id='dimension-3-interpretation'><span>Dimension 3: Interpretation</span></h3><p><strong><span>High Interpretation (Museum/Memorial)</span></strong></p><ul><li><p><span>Curators provide context, narrative, meaning</span></p></li><li><p><span>Exhibitions tell stories</span></p></li><li><p><span>Example: 9/11 Digital Archive with framing essays</span></p></li></ul><p><strong><span>Low Interpretation (Archive/Research Collection)</span></strong></p><ul><li><p><span>Minimal curation, let materials speak for themselves</span></p></li><li><p><span>Provenance and metadata, but not narrative</span></p></li><li><p><span>Example: Pushshift raw data dumps</span></p></li></ul><h3 id='dimension-4-user-experience'><span>Dimension 4: User Experience</span></h3><p><strong><span>Experiential (Museum)</span></strong></p><ul><li><p><span>Artifacts are interactive (playable games, browsable sites)</span></p></li><li><p><span>Focus on recreating original experience</span></p></li><li><p><span>Example: Strong Museum playable games</span></p></li></ul><p><strong><span>Documentary (Archive/Library)</span></strong></p><ul><li><p><span>Artifacts viewed as historical record</span></p></li><li><p><span>Screenshots, descriptions, metadata</span></p></li><li><p><span>Original experience not replicable</span></p></li><li><p><span>Example: Static screenshots of Flash games (not playable)</span></p></li></ul><h3 id='the-design-matrix'><span>The Design Matrix</span></h3><figure class='table-figure'><table><thead><tr><th><span>Institution Type</span></th><th><span>Scale</span></th><th><span>Access</span></th><th><span>Interpretation</span></th><th><span>Experience</span></th></tr></thead><tbody><tr><td><strong><span>Library</span></strong></td><td><span>Comprehensive</span></td><td><span>Open</span></td><td><span>Low</span></td><td><span>Documentary</span></td></tr><tr><td><strong><span>Archive</span></strong></td><td><span>Comprehensive</span></td><td><span>Restricted</span></td><td><span>Low</span></td><td><span>Documentary</span></td></tr><tr><td><strong><span>Museum</span></strong></td><td><span>Curated</span></td><td><span>Open</span></td><td><span>High</span></td><td><span>Experiential</span></td></tr><tr><td><strong><span>Memorial</span></strong></td><td><span>Curated</span></td><td><span>Open</span></td><td><span>High</span></td><td><span>Emotional</span></td></tr><tr><td><strong><span>Research Collection</span></strong></td><td><span>Comprehensive</span></td><td><span>Restricted</span></td><td><span>Minimal</span></td><td><span>Data-focused</span></td></tr></tbody></table></figure><p><strong><span>Hybrid Models Are Common:</span></strong></p><ul><li><p><span>Internet Archive = Library + Archive (comprehensive + some restrictions)</span></p></li><li><p><span>Strong Museum = Museum + Research Collection (curated exhibits + comprehensive archives in back)</span></p></li><li><p><span>9/11 Archive = Memorial + Library (emotional framing + open access)</span></p></li></ul><hr /><h2 id='part-iii-curatorial-philosophy-----what-to-display'><span>Part III: Curatorial Philosophy — What to Display?</span></h2><p><span>Museums don&#39;t display everything they own. The Smithsonian&#39;s collections are 95% in storage—only 5% on exhibit. Digital memory institutions face the same question: </span><strong><span>What do we make visible?</span></strong></p><h3 id='curatorial-approach-1-comprehensive-warehouse'><span>Curatorial Approach 1: Comprehensive Warehouse</span></h3><p><strong><span>Philosophy:</span></strong><span> Archive everything, make it all accessible, let users find what they want.</span></p><p><strong><span>Example:</span></strong><span> Internet Archive&#39;s Wayback Machine</span></p><p><strong><span>Strengths:</span></strong></p><ul><li><p><span>No gatekeeping (curators don&#39;t impose their taste)</span></p></li><li><p><span>Serendipity (users discover unexpected things)</span></p></li><li><p><span>Completeness (future researchers have maximum material)</span></p></li></ul><p><strong><span>Weaknesses:</span></strong></p><ul><li><p><span>Overwhelming (800B pages—where do you start?)</span></p></li><li><p><span>No hierarchy (spam and Shakespeare equally visible)</span></p></li><li><p><span>Context is absent (sites preserved without explanation)</span></p></li></ul><p><strong><span>Best for:</span></strong><span> Platforms with structured URLs (websites) where users know what they&#39;re looking for</span></p><h3 id='curatorial-approach-2-canon-formation'><span>Curatorial Approach 2: Canon Formation</span></h3><p><strong><span>Philosophy:</span></strong><span> Select the &quot;most important&quot; artifacts, create a canon.</span></p><p><strong><span>Example:</span></strong><span> Strong Museum&#39;s Video Game Hall of Fame (inducts ~10 games/year)</span></p><p><strong><span>Strengths:</span></strong></p><ul><li><p><span>Manageable (visitors can engage deeply with 50 games, not 50,000)</span></p></li><li><p><span>Narrative coherence (tells story of video game history)</span></p></li><li><p><span>Educational (curators explain why these games matter)</span></p></li></ul><p><strong><span>Weaknesses:</span></strong></p><ul><li><p><span>Elitism (who decides what&#39;s &quot;important&quot;?)</span></p></li><li><p><span>Exclusion (marginalizes non-canonical work)</span></p></li><li><p><span>Revisionism (canon reflects curator bias)</span></p></li></ul><p><strong><span>Best for:</span></strong><span> Platforms where a small subset represents the whole (pioneering games, influential creators)</span></p><h3 id='curatorial-approach-3-thematic-collections'><span>Curatorial Approach 3: Thematic Collections</span></h3><p><strong><span>Philosophy:</span></strong><span> Organize by themes, movements, or communities.</span></p><p><strong><span>Example:</span></strong><span> Hypothetical &quot;Tumblr Fanfiction Archive&quot; organized by fandom, pairing, rating, era</span></p><p><strong><span>Strengths:</span></strong></p><ul><li><p><span>Findability (users navigate by interest, not chronology)</span></p></li><li><p><span>Contextual (themes provide interpretive frame)</span></p></li><li><p><span>Inclusive (multiple themes accommodate diverse interests)</span></p></li></ul><p><strong><span>Weaknesses:</span></strong></p><ul><li><p><span>Subjective (who decides themes?)</span></p></li><li><p><span>Overlapping (artifacts fit multiple themes—where do they go?)</span></p></li><li><p><span>Incomplete (not everything fits a theme)</span></p></li></ul><p><strong><span>Best for:</span></strong><span> Platforms with identifiable communities or genres (fanfiction, meme culture, activist organizing)</span></p><h3 id='curatorial-approach-4-chronological-archive'><span>Curatorial Approach 4: Chronological Archive</span></h3><p><strong><span>Philosophy:</span></strong><span> Preserve everything in temporal order, like a timeline.</span></p><p><strong><span>Example:</span></strong><span> Internet Archive&#39;s snapshots (sites preserved as they changed over time)</span></p><p><strong><span>Strengths:</span></strong></p><ul><li><p><span>Objectivity (chronology is neutral)</span></p></li><li><p><span>Change visible (see how platforms evolved)</span></p></li><li><p><span>Completeness (nothing excluded for thematic reasons)</span></p></li></ul><p><strong><span>Weaknesses:</span></strong></p><ul><li><p><span>No hierarchy (early posts equal to late posts)</span></p></li><li><p><span>Narrative absent (time alone doesn&#39;t explain meaning)</span></p></li><li><p><span>Scale issues (decades of daily posts = overwhelming)</span></p></li></ul><p><strong><span>Best for:</span></strong><span> Platforms where temporal evolution is key (Twitter&#39;s changing culture, YouTube&#39;s algorithm shifts)</span></p><h3 id='curatorial-approach-5-community-driven-curation'><span>Curatorial Approach 5: Community-Driven Curation</span></h3><p><strong><span>Philosophy:</span></strong><span> Let users/creators curate their own materials.</span></p><p><strong><span>Example:</span></strong><span> 9/11 Digital Archive (community submissions), Fanlore (fan-created wiki)</span></p><p><strong><span>Strengths:</span></strong></p><ul><li><p><span>Authenticity (communities define their own history)</span></p></li><li><p><span>Consent (creators choose what&#39;s shared)</span></p></li><li><p><span>Diversity (avoids institutional bias)</span></p></li></ul><p><strong><span>Weaknesses:</span></strong></p><ul><li><p><span>Unevenness (some creators participate, others don&#39;t)</span></p></li><li><p><span>Coordination challenges (requires infrastructure for submissions)</span></p></li><li><p><span>Quality varies (no editorial oversight)</span></p></li></ul><p><strong><span>Best for:</span></strong><span> Platforms where community identity is strong (fandoms, activist movements, hobbyist communities)</span></p><h3 id='curatorial-approach-6-algorithmiccomputational-curation'><span>Curatorial Approach 6: Algorithmic/Computational Curation</span></h3><p><strong><span>Philosophy:</span></strong><span> Use algorithms to select representative samples or identify significant patterns.</span></p><p><strong><span>Example:</span></strong><span> Using view counts, shares, replies to identify &quot;most influential&quot; tweets</span></p><p><strong><span>Strengths:</span></strong></p><ul><li><p><span>Scalability (algorithms process massive datasets)</span></p></li><li><p><span>Objectivity (no human bias—though algorithms have bias too)</span></p></li><li><p><span>Discovery (finds patterns humans miss)</span></p></li></ul><p><strong><span>Weaknesses:</span></strong></p><ul><li><p><span>Black box (users don&#39;t know why things were selected)</span></p></li><li><p><span>Bias (algorithms reflect creator bias and training data)</span></p></li><li><p><span>Misses margins (algorithms favor mainstream)</span></p></li></ul><p><strong><span>Best for:</span></strong><span> Platforms with clear metrics (views, likes, shares) and massive scale</span></p><hr /><h2 id='part-iv-technical-fidelity-----how-much-to-preserve'><span>Part IV: Technical Fidelity — How Much to Preserve?</span></h2><p><span>Digital artifacts exist in layers. How much of each layer do you preserve?</span></p><h3 id='the-fidelity-ladder'><span>The Fidelity Ladder</span></h3><h4 id='level-1-documentation-only'><span>Level 1: Documentation Only</span></h4><p><strong><span>What&#39;s preserved:</span></strong><span> Screenshots, descriptions, metadata</span></p><p><strong><span>What&#39;s lost:</span></strong><span> Interactivity, experience, technical details</span></p><p><strong><span>Example:</span></strong><span> Wikipedia article about Vine (describes it, but can&#39;t show it)</span></p><p><strong><span>Pros:</span></strong><span> Cheap, easy, lightweight</span>
+<strong><span>Cons:</span></strong><span> Least faithful to original</span></p><p><strong><span>When to use:</span></strong><span> Platform is already dead, no way to preserve fully; documentation better than nothing</span></p><h4 id='level-2-static-archive'><span>Level 2: Static Archive</span></h4><p><strong><span>What&#39;s preserved:</span></strong><span> HTML, CSS, images (rendered as static files)</span></p><p><strong><span>What&#39;s lost:</span></strong><span> JavaScript interactivity, dynamic content, databases</span></p><p><strong><span>Example:</span></strong><span> Archived GeoCities sites (HTML works, but embedded widgets/scripts don&#39;t)</span></p><p><strong><span>Pros:</span></strong><span> Relatively easy, preserves visual appearance</span>
+<strong><span>Cons:</span></strong><span> Non-interactive sites feel &quot;dead&quot;</span></p><p><strong><span>When to use:</span></strong><span> Static websites, blogs, simple HTML pages</span></p><h4 id='level-3-emulation'><span>Level 3: Emulation</span></h4><p><strong><span>What&#39;s preserved:</span></strong><span> Full functionality via emulator (browser, OS, hardware)</span></p><p><strong><span>What&#39;s lost:</span></strong><span> Original hardware experience (speed, bugs, quirks)</span></p><p><strong><span>Example:</span></strong><span> Flash games playable via Ruffle emulator, DOS games via DOSBox</span></p><p><strong><span>Pros:</span></strong><span> Fully interactive, close to original experience</span>
+<strong><span>Cons:</span></strong><span> Requires maintaining emulators (which can become obsolete)</span></p><p><strong><span>When to use:</span></strong><span> Complex platforms requiring specific environments (Flash, Java, old browsers)</span></p><h4 id='level-4-source-code-preservation'><span>Level 4: Source Code Preservation</span></h4><p><strong><span>What&#39;s preserved:</span></strong><span> Actual code, databases, server configurations</span></p><p><strong><span>What&#39;s lost:</span></strong><span> Nothing (in theory)—but requires technical expertise to run</span></p><p><strong><span>Example:</span></strong><span> GitHub archives of open-source projects</span></p><p><strong><span>Pros:</span></strong><span> Most faithful, can be recompiled/forked/modified</span>
+<strong><span>Cons:</span></strong><span> Requires developer skills, dependencies may be obsolete</span></p><p><strong><span>When to use:</span></strong><span> Open-source platforms, when preserving for future developers (not just users)</span></p><h4 id='level-5-live-preservation'><span>Level 5: Live Preservation</span></h4><p><strong><span>What&#39;s preserved:</span></strong><span> Original infrastructure still running</span></p><p><strong><span>What&#39;s lost:</span></strong><span> Nothing (it&#39;s still alive)</span></p><p><strong><span>Example:</span></strong><span> Old arcade games kept running on original hardware by collectors</span></p><p><strong><span>Pros:</span></strong><span> Perfect fidelity</span>
+<strong><span>Cons:</span></strong><span> Expensive, fragile (hardware fails), not scalable</span></p><p><strong><span>When to use:</span></strong><span> High-value artifacts where experience depends on specific hardware (rare)</span></p><h4 id='level-6-resurrection'><span>Level 6: Resurrection</span></h4><p><strong><span>What&#39;s preserved:</span></strong><span> Platform rebuilt from scratch for modern environments</span></p><p><strong><span>What&#39;s lost:</span></strong><span> Bugs, quirks, historical authenticity (new code ≠ old code)</span></p><p><strong><span>Example:</span></strong><span> Homestar Runner rebuilt in HTML5 (originally Flash)</span></p><p><strong><span>Pros:</span></strong><span> Accessible on modern devices, no emulation needed</span>
+<strong><span>Cons:</span></strong><span> Not &quot;authentic&quot; (it&#39;s a recreation, not preservation)</span></p><p><strong><span>When to use:</span></strong><span> Cultural value is high, original platform can&#39;t run anymore, resurrection is only option</span></p><h3 id='the-fidelity-trade-off'><span>The Fidelity Trade-off</span></h3><p><span>Higher fidelity = higher cost (time, storage, maintenance, expertise)</span></p><p><strong><span>Strategy:</span></strong><span> Tiered preservation</span></p><ul><li><p><strong><span>Level 1-2 (documentation/static)</span></strong><span>: Archive everything</span></p></li><li><p><strong><span>Level 3-4 (emulation/source)</span></strong><span>: Archive high-value subset</span></p></li><li><p><strong><span>Level 5-6 (live/resurrection)</span></strong><span>: Only most culturally significant artifacts</span></p></li></ul><hr /><h2 id='part-v-access-and-discovery-----making-the-haunted-forest-navigable'><span>Part V: Access and Discovery — Making the Haunted Forest Navigable</span></h2><p><span>Preserving artifacts is half the battle. Making them </span><strong><span>findable and usable</span></strong><span> is the other half.</span></p><h3 id='access-model-1-url-based-library-model'><span>Access Model 1: URL-Based (Library Model)</span></h3><p><strong><span>How it works:</span></strong><span> Every artifact has a permanent URL; users navigate directly or via search engines</span></p><p><strong><span>Example:</span></strong><span> Internet Archive&#39;s Wayback Machine (web.archive.org/web/TIMESTAMP/URL)</span></p><p><strong><span>Pros:</span></strong></p><ul><li><p><span>Simple, intuitive</span></p></li><li><p><span>Integrates with web (can link from anywhere)</span></p></li><li><p><span>Decentralized (no need for central index)</span></p></li></ul><p><strong><span>Cons:</span></strong></p><ul><li><p><span>Requires knowing URL (hard if you don&#39;t remember the site)</span></p></li><li><p><span>No thematic browsing (can&#39;t explore by topic)</span></p></li></ul><h3 id='access-model-2-search-based-database-model'><span>Access Model 2: Search-Based (Database Model)</span></h3><p><strong><span>How it works:</span></strong><span> Full-text search across all preserved content</span></p><p><strong><span>Example:</span></strong><span> Archive.org&#39;s search bar, Google Books</span></p><p><strong><span>Pros:</span></strong></p><ul><li><p><span>Powerful discovery (find anything containing keyword)</span></p></li><li><p><span>Don&#39;t need to know exact URL</span></p></li></ul><p><strong><span>Cons:</span></strong></p><ul><li><p><span>Overwhelming (thousands of results)</span></p></li><li><p><span>Poor for browsing (good for finding specific thing, bad for exploration)</span></p></li></ul><h3 id='access-model-3-curated-exhibits-museum-model'><span>Access Model 3: Curated Exhibits (Museum Model)</span></h3><p><strong><span>How it works:</span></strong><span> Curators create thematic collections or virtual exhibitions</span></p><p><strong><span>Example:</span></strong><span> Strong Museum&#39;s Hall of Fame induction pages, Cameron&#39;s World</span></p><p><strong><span>Pros:</span></strong></p><ul><li><p><span>Guided experience (learn through narrative)</span></p></li><li><p><span>Manageable scope (100 items, not 100,000)</span></p></li><li><p><span>Contextual (exhibits explain significance)</span></p></li></ul><p><strong><span>Cons:</span></strong></p><ul><li><p><span>Limited (most collection not exhibited)</span></p></li><li><p><span>Curator bias (what&#39;s not exhibited is invisible)</span></p></li></ul><h3 id='access-model-4-community-wikis-collaborative-model'><span>Access Model 4: Community Wikis (Collaborative Model)</span></h3><p><strong><span>How it works:</span></strong><span> Community members add metadata, tags, context</span></p><p><strong><span>Example:</span></strong><span> Fanlore (fan-created wiki about fandom history), Wikipedia&#39;s coverage of internet culture</span></p><p><strong><span>Pros:</span></strong></p><ul><li><p><span>Distributed labor (community shares work)</span></p></li><li><p><span>Insider knowledge (fans know context outsiders miss)</span></p></li><li><p><span>Self-updating (as community learns, wiki improves)</span></p></li></ul><p><strong><span>Cons:</span></strong></p><ul><li><p><span>Uneven coverage (popular fandoms well-documented, niche ones ignored)</span></p></li><li><p><span>Quality varies (no editorial oversight)</span></p></li><li><p><span>Requires active community (if community dies, wiki stagnates)</span></p></li></ul><h3 id='access-model-5-api-based-researcher-model'><span>Access Model 5: API-Based (Researcher Model)</span></h3><p><strong><span>How it works:</span></strong><span> Machine-readable access (JSON, CSV, SQL) for computational analysis</span></p><p><strong><span>Example:</span></strong><span> Pushshift API, Twitter Academic API</span></p><p><strong><span>Pros:</span></strong></p><ul><li><p><span>Enables large-scale research (computational humanities, data science)</span></p></li><li><p><span>Flexible (researchers query exactly what they need)</span></p></li></ul><p><strong><span>Cons:</span></strong></p><ul><li><p><span>Not user-friendly (requires programming skill)</span></p></li><li><p><span>Not browsable (can&#39;t casually explore)</span></p></li></ul><h3 id='hybrid-access-strategy'><span>Hybrid Access Strategy</span></h3><p><span>Most memory institutions use </span><strong><span>multiple access methods</span></strong><span>:</span></p><ul><li><p><strong><span>URLs</span></strong><span> for direct access (if you know what you want)</span></p></li><li><p><strong><span>Search</span></strong><span> for discovery (find specific content)</span></p></li><li><p><strong><span>Exhibits</span></strong><span> for education (learn about the platform/era)</span></p></li><li><p><strong><span>Wiki</span></strong><span> for context (community-generated metadata)</span></p></li><li><p><strong><span>API</span></strong><span> for research (scholars analyze at scale)</span></p></li></ul><p><strong><span>Example: Internet Archive</span></strong></p><ul><li><p><span>Wayback Machine: URL-based</span></p></li><li><p><span>Search bar: keyword search</span></p></li><li><p><span>Collections: curated thematic groups (e.g., &quot;Grateful Dead Live Concerts&quot;)</span></p></li><li><p><span>API: developers can query programmatically</span></p></li></ul><hr /><h2 id='part-vi-legal-and-ethical-frameworks'><span>Part VI: Legal and Ethical Frameworks</span></h2><p><span>Memory institutions must navigate thorny legal and ethical issues:</span></p><h3 id='issue-1-copyright'><span>Issue 1: Copyright</span></h3><p><strong><span>Problem:</span></strong><span> Most preserved content is copyrighted. Does archiving violate copyright law?</span></p><p><strong><span>Legal Frameworks:</span></strong></p><p><strong><span>Fair Use (US)</span></strong></p><ul><li><p><span>Preservation may qualify as fair use (transformative, educational, minimal market harm)</span></p></li><li><p><span>Case law: </span><em><span>Authors Guild v. Google</span></em><span> (Google Books scanning ruled fair use)</span></p></li><li><p><span>But: Fair use is defense, not right—you could still be sued</span></p></li></ul><p><strong><span>Section 108 (US Copyright Law)</span></strong></p><ul><li><p><span>Libraries and archives can preserve copyrighted works under certain conditions:</span></p><ul><li><p><span>Non-commercial purpose</span></p></li><li><p><span>Closed systems (access in library only, or limited digital access)</span></p></li></ul></li><li><p><span>But: Doesn&#39;t cover web scraping or mass digitization clearly</span></p></li></ul><p><strong><span>DMCA Safe Harbor</span></strong></p><ul><li><p><span>Platforms not liable for user-uploaded content if they respond to takedowns</span></p></li><li><p><span>Memory institutions use this (Internet Archive responds to DMCA requests)</span></p></li></ul><p><strong><span>International Variations:</span></strong></p><ul><li><p><span>EU: Orphan Works Directive allows preservation of works with unknown copyright holders</span></p></li><li><p><span>Canada: Fair Dealing (narrower than US fair use)</span></p></li></ul><p><strong><span>Practical Strategy:</span></strong></p><ul><li><p><span>Preserve first, respond to takedowns if challenged (Internet Archive&#39;s approach)</span></p></li><li><p><span>Or: Seek permissions (time-consuming, often impossible)</span></p></li><li><p><span>Or: Restrict access (preserve but don&#39;t make public)</span></p></li></ul><h3 id='issue-2-privacy'><span>Issue 2: Privacy</span></h3><p><strong><span>Problem:</span></strong><span> Archived content may contain personal information people no longer want public.</span></p><p><strong><span>Ethical Questions:</span></strong></p><ul><li><p><span>Should you preserve someone&#39;s teenage LiveJournal (they might be embarrassed now)?</span></p></li><li><p><span>Should you archive doxxing or harassment (evidence of harm, but re-publicizes victim info)?</span></p></li><li><p><span>Should you preserve medical/financial/intimate details shared on forums?</span></p></li></ul><p><strong><span>Frameworks:</span></strong></p><p><strong><span>Right to Be Forgotten (GDPR, EU)</span></strong></p><ul><li><p><span>Individuals can request deletion of personal data</span></p></li><li><p><span>Applies to archives? Unclear (exemptions for journalism/research/public interest)</span></p></li></ul><p><strong><span>Contextual Integrity (Helen Nissenbaum)</span></strong></p><ul><li><p><span>Privacy violated when information flows across contexts inappropriately</span></p></li><li><p><span>Example: Forum post meant for small community, now archived and Google-indexed = context collapse</span></p></li></ul><p><strong><span>Practical Approaches:</span></strong></p><p><strong><span>Takedown Policies:</span></strong></p><ul><li><p><span>Allow individuals to request removal (Internet Archive honors requests)</span></p></li><li><p><span>Review case-by-case (balance individual privacy vs. historical value)</span></p></li></ul><p><strong><span>Restricted Access:</span></strong></p><ul><li><p><span>Preserve but don&#39;t make publicly searchable</span></p></li><li><p><span>Researcher-only access (requires IRB approval)</span></p></li></ul><p><strong><span>Anonymization:</span></strong></p><ul><li><p><span>Remove or redact names, usernames, identifying details</span></p></li><li><p><span>But: Can harm historical accuracy</span></p></li></ul><h3 id='issue-3-consent'><span>Issue 3: Consent</span></h3><p><strong><span>Problem:</span></strong><span> Did creators consent to their work being preserved?</span></p><p><strong><span>Arguments:</span></strong></p><p><strong><span>Implied Consent:</span></strong></p><ul><li><p><span>By posting publicly, you consented to archiving (like publishing a book)</span></p></li><li><p><span>Counterargument: Expectation of ephemerality (platform may shut down, but users didn&#39;t expect Internet Archive)</span></p></li></ul><p><strong><span>Explicit Consent:</span></strong></p><ul><li><p><span>Only archive if creator explicitly agrees</span></p></li><li><p><span>Counterargument: Impractical (can&#39;t contact millions of users)</span></p></li></ul><p><strong><span>Posthumous:</span></strong></p><ul><li><p><span>If creator is dead, do we need consent from estate?</span></p></li><li><p><span>Historical materials often preserved without consent (diaries, letters found after death)</span></p></li></ul><p><strong><span>Practical Strategy:</span></strong></p><ul><li><p><span>Default to preserving (implied consent for public posts)</span></p></li><li><p><span>Honor explicit deletion (if someone deleted content, don&#39;t resurrect without reason)</span></p></li><li><p><span>Provide opt-out (let creators request removal)</span></p></li></ul><h3 id='issue-4-harm-prevention'><span>Issue 4: Harm Prevention</span></h3><p><strong><span>Problem:</span></strong><span> Some content causes harm if preserved (hate speech, doxxing, revenge porn).</span></p><p><strong><span>Ethical Framework:</span></strong></p><p><strong><span>Do No Harm Principle:</span></strong></p><ul><li><p><span>If preserving causes direct, ongoing harm (reveals someone&#39;s address, enables harassment), don&#39;t do it</span></p></li></ul><p><strong><span>Historical Value vs. Harm:</span></strong></p><ul><li><p><span>Hate forums: preserve for research (understanding extremism), but restrict access (don&#39;t make recruitment tool)</span></p></li><li><p><span>Revenge porn: don&#39;t preserve (no historical value justifies harm)</span></p></li></ul><p><strong><span>Contextual Judgment:</span></strong></p><ul><li><p><span>Evaluate case-by-case</span></p></li><li><p><span>Consult affected communities when possible</span></p></li></ul><hr /><h2 id='part-vii-case-studies-in-memory-institution-design'><span>Part VII: Case Studies in Memory Institution Design</span></h2><h3 id='case-study-1-the-strong-museum-exemplary-museum-model'><span>Case Study 1: The Strong Museum (Exemplary Museum Model)</span></h3><p><strong><span>What they do:</span></strong></p><ul><li><p><span>Curate exhibitions of video games, toys, and play</span></p></li><li><p><span>Make games playable (interactive exhibits)</span></p></li><li><p><span>Preserve hardware and software together</span></p></li><li><p><span>Host researchers (extensive archives beyond exhibits)</span></p></li></ul><p><strong><span>Why it works:</span></strong></p><ul><li><p><strong><span>Curation</span></strong><span>: Selective canon (Hall of Fame inductees)</span></p></li><li><p><strong><span>Experience</span></strong><span>: Games are played, not just viewed</span></p></li><li><p><strong><span>Interpretation</span></strong><span>: Context provided (essays, talks, labels)</span></p></li><li><p><strong><span>Institutional stability</span></strong><span>: Endowed museum (not dependent on platform survival)</span></p></li></ul><p><strong><span>Challenges:</span></strong></p><ul><li><p><span>Limited scope (only games, not all digital culture)</span></p></li><li><p><span>Geography-bound (must visit Rochester to play games)</span></p></li></ul><h3 id='case-study-2-internet-archive-exemplary-library-model'><span>Case Study 2: Internet Archive (Exemplary Library Model)</span></h3><p><strong><span>What they do:</span></strong></p><ul><li><p><span>Crawl and preserve websites (Wayback Machine)</span></p></li><li><p><span>Archive books, music, video, software</span></p></li><li><p><span>Open access (free, no login)</span></p></li><li><p><span>Advocate for digital rights (lawsuits for fair use)</span></p></li></ul><p><strong><span>Why it works:</span></strong></p><ul><li><p><strong><span>Scale</span></strong><span>: 800+ billion web pages</span></p></li><li><p><strong><span>Longevity</span></strong><span>: 29 years and counting</span></p></li><li><p><strong><span>Public good</span></strong><span>: Non-profit, funded by donations and services</span></p></li><li><p><strong><span>Legal courage</span></strong><span>: Willing to defend fair use in court</span></p></li></ul><p><strong><span>Challenges:</span></strong></p><ul><li><p><span>Scale makes curation impossible (overwhelming)</span></p></li><li><p><span>Robots.txt compliance excludes important sites</span></p></li><li><p><span>Funding precarity (dependent on donations)</span></p></li></ul><h3 id='case-study-3-fanlore-exemplary-community-driven-model'><span>Case Study 3: Fanlore (Exemplary Community-Driven Model)</span></h3><p><strong><span>What they do:</span></strong></p><ul><li><p><span>Wiki documenting fandom history (ships, tropes, controversies, communities)</span></p></li><li><p><span>Created and maintained by fans</span></p></li><li><p><span>Covers all fandoms (TV, books, games, RPF, etc.)</span></p></li></ul><p><strong><span>Why it works:</span></strong></p><ul><li><p><strong><span>Insider knowledge</span></strong><span>: Fans document nuances outsiders miss</span></p></li><li><p><strong><span>Community ownership</span></strong><span>: Fans preserve their own history</span></p></li><li><p><strong><span>Distributed labor</span></strong><span>: Thousands of contributors</span></p></li></ul><p><strong><span>Challenges:</span></strong></p><ul><li><p><span>Uneven coverage (big fandoms well-documented, small ones sparse)</span></p></li><li><p><span>Vandalism/edit wars (controversial topics fought over)</span></p></li><li><p><span>Succession (if volunteer community dwindles, wiki could die)</span></p></li></ul><h3 id='case-study-4-flashpoint-project-exemplary-resurrection-model'><span>Case Study 4: Flashpoint Project (Exemplary Resurrection Model)</span></h3><p><strong><span>What they do:</span></strong></p><ul><li><p><span>Preserve 500,000+ Flash games and animations</span></p></li><li><p><span>Provide custom launcher with embedded emulator</span></p></li><li><p><span>Community-curated (volunteers add games, metadata)</span></p></li></ul><p><strong><span>Why it works:</span></strong></p><ul><li><p><strong><span>Rescue mission</span></strong><span>: Saved massive amount of content before Flash died</span></p></li><li><p><strong><span>Playability</span></strong><span>: Games fully functional (not just archived)</span></p></li><li><p><strong><span>Community-driven</span></strong><span>: Distributed effort (volunteers curate, test, tag)</span></p></li></ul><p><strong><span>Challenges:</span></strong></p><ul><li><p><span>Maintenance burden (emulators need updates as OSes change)</span></p></li><li><p><span>Copyright gray area (hosting games without explicit permission)</span></p></li><li><p><span>Curation slow (500K games, but millions more exist—can&#39;t save everything)</span></p></li></ul><hr /><h2 id='part-viii-building-your-own-memory-institution'><span>Part VIII: Building Your Own Memory Institution</span></h2><h3 id='step-by-step-guide'><span>Step-by-Step Guide</span></h3><h4 id='phase-1-define-mission'><span>Phase 1: Define Mission</span></h4><p><strong><span>Questions:</span></strong></p><ol start='' ><li><p><span>What are you preserving? (specific platform, genre, community, era)</span></p></li><li><p><span>Why does it matter? (cultural significance, underrepresentation, endangerment)</span></p></li><li><p><span>Who is your audience? (general public, researchers, community members)</span></p></li><li><p><span>What type of institution? (library, archive, museum, memorial, research collection)</span></p></li></ol><p><strong><span>Example Mission:</span></strong>
+<em><span>&quot;The Tumblr Fandom Archive preserves fanworks (fanfiction, fan art, meta) from Tumblr&#39;s golden age (2010-2016), focusing on marginalized fandoms and LGBTQ+ creators. Our audience is fans, scholars, and future generations interested in transformative works. We are a community-driven digital museum with curated exhibits and open archives.&quot;</span></em></p><h4 id='phase-2-acquisition-strategy'><span>Phase 2: Acquisition Strategy</span></h4><p><strong><span>How will you acquire content?</span></strong></p><p><strong><span>Option A: Scrape</span></strong></p><ul><li><p><span>Use tools (wget, ArchiveBox, Heritrix)</span></p></li><li><p><span>Pros: Comprehensive</span></p></li><li><p><span>Cons: Legal gray area, may violate ToS</span></p></li></ul><p><strong><span>Option B: Community Submissions</span></strong></p><ul><li><p><span>Invite creators to submit their work</span></p></li><li><p><span>Pros: Consent-based, community-driven</span></p></li><li><p><span>Cons: Incomplete (only those who participate)</span></p></li></ul><p><strong><span>Option C: Partnerships</span></strong></p><ul><li><p><span>Work with platform for data dump</span></p></li><li><p><span>Pros: Legal, comprehensive</span></p></li><li><p><span>Cons: Requires cooperation (rare)</span></p></li></ul><p><strong><span>Option D: Hybrid</span></strong></p><ul><li><p><span>Scrape public content + invite submissions for private/deleted content</span></p></li></ul><h4 id='phase-3-storage-and-infrastructure'><span>Phase 3: Storage and Infrastructure</span></h4><p><strong><span>Technical Needs:</span></strong></p><ul><li><p><strong><span>Storage</span></strong><span>: Servers or cloud (how much data?)</span></p></li><li><p><strong><span>Redundancy</span></strong><span>: Multiple backups (LOCKSS principle)</span></p></li><li><p><strong><span>Access platform</span></strong><span>: Website for browsing (static site, database-driven, CMS)</span></p></li></ul><p><strong><span>Options:</span></strong></p><ul><li><p><strong><span>Self-hosted</span></strong><span>: Full control, but maintenance burden</span></p></li><li><p><strong><span>Cloud</span></strong><span>: Scalable, but ongoing costs</span></p></li><li><p><strong><span>Partner with institution</span></strong><span>: University library hosts (stability, but less autonomy)</span></p></li></ul><p><strong><span>Budget:</span></strong></p><ul><li><p><span>Small project: $100-500/year (domain, shared hosting, cloud storage)</span></p></li><li><p><span>Medium project: $5K-50K/year (dedicated servers, staff time)</span></p></li><li><p><span>Large project: $100K+/year (institutional scale, like Internet Archive)</span></p></li></ul><h4 id='phase-4-curation-and-metadata'><span>Phase 4: Curation and Metadata</span></h4><p><strong><span>How will you organize content?</span></strong></p><p><strong><span>Metadata Schema:</span></strong></p><ul><li><p><span>Dublin Core (standard for libraries)</span></p></li><li><p><span>Custom schema (specific to your domain)</span></p></li></ul><p><strong><span>Essential Fields:</span></strong></p><ul><li><p><span>Title, Creator, Date, Description, Tags/Categories, Source URL, Archive Date</span></p></li></ul><p><strong><span>Curation Approach:</span></strong></p><ul><li><p><span>Comprehensive warehouse (minimal curation)</span></p></li><li><p><span>Thematic collections (curated exhibits)</span></p></li><li><p><span>Algorithmic (automated tagging, recommendations)</span></p></li><li><p><span>Community-driven (user-submitted metadata)</span></p></li></ul><h4 id='phase-5-access-and-discovery'><span>Phase 5: Access and Discovery</span></h4><p><strong><span>How will users find content?</span></strong></p><p><strong><span>Build:</span></strong></p><ul><li><p><span>Search functionality (full-text or metadata)</span></p></li><li><p><span>Browse by category, date, creator</span></p></li><li><p><span>Featured/curated collections (homepage highlights)</span></p></li><li><p><span>API (for researchers)</span></p></li></ul><p><strong><span>Tools:</span></strong></p><ul><li><p><span>Static site generator (Jekyll, Hugo) for simple projects</span></p></li><li><p><span>Database + CMS (WordPress, Omeka) for complex projects</span></p></li><li><p><span>Custom web app (Flask, Django, Rails) for maximum control</span></p></li></ul><h4 id='phase-6-legal-and-ethical-policies'><span>Phase 6: Legal and Ethical Policies</span></h4><p><strong><span>Document:</span></strong></p><ul><li><p><span>Copyright stance (fair use, takedown policy)</span></p></li><li><p><span>Privacy policy (what personal info do you collect/preserve?)</span></p></li><li><p><span>Consent framework (do you allow opt-out?)</span></p></li><li><p><span>Access restrictions (public, researcher-only, embargoed)</span></p></li></ul><p><strong><span>Get advice:</span></strong></p><ul><li><p><span>Consult copyright lawyer</span></p></li><li><p><span>Follow models (Internet Archive&#39;s policies, university IRB guidelines)</span></p></li></ul><h4 id='phase-7-launch-and-maintenance'><span>Phase 7: Launch and Maintenance</span></h4><p><strong><span>Launch:</span></strong></p><ul><li><p><span>Soft launch (invite community, gather feedback)</span></p></li><li><p><span>Public announcement (blog post, social media, press)</span></p></li></ul><p><strong><span>Ongoing:</span></strong></p><ul><li><p><span>Add content regularly (don&#39;t let it stagnate)</span></p></li><li><p><span>Respond to takedown requests</span></p></li><li><p><span>Update software/emulators (prevent bit rot)</span></p></li><li><p><span>Fundraise (donations, grants, sponsorships)</span></p></li></ul><p><strong><span>Succession Planning:</span></strong></p><ul><li><p><span>What happens if you can&#39;t maintain it? (partner institution, hand off to community, deposit in Internet Archive)</span></p></li></ul><hr /><h2 id='conclusion-curating-haunted-spaces'><span>Conclusion: Curating Haunted Spaces</span></h2><p><span>Memory institutions for digital culture are not just storage facilities—they&#39;re </span><strong><span>acts of interpretation</span></strong><span>. Every curatorial choice (what to preserve, how to display, who gets access) shapes how future generations understand our present.</span></p><p><span>The Haunted Forest is haunted precisely because these artifacts are </span><strong><span>liminal</span></strong><span>—neither alive nor fully dead. They exist in the gap between platform death and historical canonization. Memory institutions curate this gap, transforming murdered platforms into ghosts that can teach, inspire, and warn.</span></p><p><span>When you build a memory institution, you&#39;re not just saving bits. You&#39;re:</span></p><ul><li><p><strong><span>Resurrecting experience</span></strong><span> (making dead platforms playable, browsable, meaningful)</span></p></li><li><p><strong><span>Creating context</span></strong><span> (explaining why this mattered, what it meant, who it served)</span></p></li><li><p><strong><span>Enabling research</span></strong><span> (providing materials for scholars)</span></p></li><li><p><strong><span>Honoring loss</span></strong><span> (memorializing what platforms murdered)</span></p></li><li><p><strong><span>Building canon</span></strong><span> (deciding what future remembers)</span></p></li></ul><p><span>The question isn&#39;t just &quot;Can we preserve this?&quot; but &quot;How do we make this meaningful for people who never experienced it?&quot;</span></p><p><span>In the next chapter, we move from memory institutions to political economy—examining the Sovereignty Stack and how to redesign the infrastructure that platforms control.</span></p><p><span>But first, go build a memory institution. Even a small one. Preserve something meaningful to you. Curate it. Interpret it. Make it accessible. </span></p><p><span>The Haunted Forest needs its curators.</span></p><hr /><h2 id='discussion-questions'><span>Discussion Questions</span></h2><ol start='' ><li><p><strong><span>Institutional Identity</span></strong><span>: If you were building a memory institution for a murdered platform, which model (library, archive, museum, memorial, research collection) would you choose? Why?</span></p></li><li><p><strong><span>Curation vs. Comprehensiveness</span></strong><span>: Should memory institutions try to preserve everything, or curate selectively? What are the ethical stakes of each approach?</span></p></li><li><p><strong><span>Fidelity Trade-offs</span></strong><span>: How much technical fidelity is &quot;enough&quot;? When is a screenshot sufficient vs. needing full emulation?</span></p></li><li><p><strong><span>Access Politics</span></strong><span>: Who should have access to preserved materials? Public? Researchers only? Community members only? How do you balance openness with privacy?</span></p></li><li><p><strong><span>Canon Formation</span></strong><span>: Who decides what&#39;s &quot;historically significant&quot;? How do we avoid reproducing bias in digital preservation?</span></p></li><li><p><strong><span>Your Own Archive</span></strong><span>: What digital artifact from your life would you want preserved in a memory institution? How would you want it curated and displayed?</span></p></li></ol><hr /><h2 id='exercise-design-a-memory-institution'><span>Exercise: Design a Memory Institution</span></h2><p><strong><span>Scenario</span></strong><span>: Choose a platform that has died or is dying (MySpace, Vine, GeoCities, Google+, Tumblr&#39;s NSFW content, etc.). Design a memory institution to preserve and present it.</span></p><p><strong><span>Part 1: Mission and Model</span></strong><span> (500 words)</span></p><ul><li><p><span>What&#39;s your institution called?</span></p></li><li><p><span>What type (library, archive, museum, memorial, research collection, hybrid)?</span></p></li><li><p><span>What&#39;s your mission statement?</span></p></li><li><p><span>Who is your audience?</span></p></li></ul><p><strong><span>Part 2: Collection Strategy</span></strong><span> (500 words)</span></p><ul><li><p><span>What will you preserve? (everything, curated subset, specific communities)</span></p></li><li><p><span>How will you acquire it? (scraping, submissions, partnership)</span></p></li><li><p><span>What&#39;s the scale? (how much content, storage needed)</span></p></li></ul><p><strong><span>Part 3: Curatorial Approach</span></strong><span> (500 words)</span></p><ul><li><p><span>How will you organize content? (comprehensive warehouse, thematic collections, chronological, community-driven)</span></p></li><li><p><span>What metadata will you capture?</span></p></li><li><p><span>What level of technical fidelity? (documentation, static, emulation, source code, live)</span></p></li></ul><p><strong><span>Part 4: Access and Discovery</span></strong><span> (500 words)</span></p><ul><li><p><span>How will users find content? (URL-based, search, exhibits, wiki, API)</span></p></li><li><p><span>What&#39;s publicly accessible vs. restricted?</span></p></li><li><p><span>How will you handle privacy/consent/copyright?</span></p></li></ul><p><strong><span>Part 5: Implementation Plan</span></strong><span> (500 words)</span></p><ul><li><p><span>What infrastructure do you need? (servers, storage, software)</span></p></li><li><p><span>Budget estimate (startup + annual maintenance)</span></p></li><li><p><span>Staffing (who does what? volunteers or paid?)</span></p></li><li><p><span>Sustainability plan (how do you keep it running for 50 years?)</span></p></li></ul><p><strong><span>Part 6: Reflection</span></strong><span> (300 words)</span></p><ul><li><p><span>What&#39;s the biggest challenge?</span></p></li><li><p><span>What compromises did you make (fidelity vs. budget, comprehensiveness vs. curation, access vs. privacy)?</span></p></li><li><p><span>Would you actually want to build this? Why or why not?</span></p></li></ul><hr /><h2 id='further-reading'><span>Further Reading</span></h2><h3 id='on-museums-and-memory'><span>On Museums and Memory</span></h3><ul><li><p><span>Kirshenblatt-Gimblett, Barbara. </span><em><span>Destination Culture: Tourism, Museums, and Heritage</span></em><span>. University of California Press, 1998.</span></p></li><li><p><span>Young, James. </span><em><span>The Texture of Memory: Holocaust Memorials and Meaning</span></em><span>. Yale University Press, 1993.</span></p></li><li><p><span>Crane, Susan. &quot;Memory, Distortion, and History in the Museum.&quot; </span><em><span>History and Theory</span></em><span> 36, no. 4 (1997): 44-63.</span></p></li></ul><h3 id='on-digital-curation'><span>On Digital Curation</span></h3><ul><li><p><span>Manoff, Marlene. &quot;Archive and Database as Metaphor: Theorizing the Historical Record.&quot; </span><em><span>Portal: Libraries and the Academy</span></em><span> 10, no. 4 (2010): 385-398.</span></p></li><li><p><span>Brügger, Niels. &quot;Website History and the Website as an Object of Study.&quot; </span><em><span>New Media &amp; Society</span></em><span> 11, no. 1-2 (2009): 115-132.</span></p></li><li><p><span>Owens, Trevor. </span><em><span>The Theory and Craft of Digital Preservation</span></em><span>. Johns Hopkins University Press, 2018.</span></p></li></ul><h3 id='on-interpretation-and-exhibition'><span>On Interpretation and Exhibition</span></h3><ul><li><p><span>Hooper-Greenhill, Eilean. </span><em><span>Museums and the Interpretation of Visual Culture</span></em><span>. Routledge, 2000.</span></p></li><li><p><span>Macdonald, Sharon, ed. </span><em><span>A Companion to Museum Studies</span></em><span>. Wiley-Blackwell, 2011.</span></p></li><li><p><span>Pearce, Susan. </span><em><span>Museums, Objects and Collections</span></em><span>. Leicester University Press, 1992.</span></p></li></ul><h3 id='on-video-game-preservation'><span>On Video Game Preservation</span></h3><ul><li><p><span>Newman, James. </span><em><span>Best Before: Videogames, Supersession and Obsolescence</span></em><span>. Routledge, 2012.</span></p></li><li><p><span>Guttenbrunner, Mark, et al. &quot;Keeping the Game Alive: Evaluating Strategies for the Preservation of Console Video Games.&quot; </span><em><span>International Journal of Digital Curation</span></em><span> 5, no. 1 (2010): 64-90.</span></p></li></ul><h3 id='case-studies'><span>Case Studies</span></h3><ul><li><p><span>Internet Archive. &quot;About the Internet Archive.&quot; </span><a href='https://archive.org/about/' target='_blank' class='url'>https://archive.org/about/</a></p></li><li><p><span>The Strong Museum. &quot;About the Strong.&quot; </span><a href='https://www.museumofplay.org/about/' target='_blank' class='url'>https://www.museumofplay.org/about/</a></p></li><li><p><span>Fanlore. &quot;About Fanlore.&quot; </span><a href='https://fanlore.org/wiki/Fanlore:About' target='_blank' class='url'>https://fanlore.org/wiki/Fanlore:About</a></p></li><li><p><span>Flashpoint Project. </span><a href='https://flashpointarchive.org/' target='_blank' class='url'>https://flashpointarchive.org/</a></p></li></ul><hr /><p><strong><span>End of Chapter 14</span></strong></p><p><em><span>Next: Part IV — Systems &amp; Movements</span></em>
+<em><span>Chapter 15 — The Political Economy of Digital Ground</span></em></p></div></div>
 </body>
 </html>
