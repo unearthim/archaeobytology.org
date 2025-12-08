@@ -2,47 +2,90 @@
 <html lang="en">
 <head>
 
-    <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
-      "name": "Archaeobytology: The Discipline of Digital Preservation",
-      "url": "https://archaeobytology.org/",
-      "description": "The formal academic discipline for studying the cultural gravity and lasting value of Digital Monuments. It synthesizes classical archaeological rigor with digital forensics.",
-      "inLanguage": "en",
-      "publisher": {
-        "@type": "Organization",
-        "name": "unearth.im Digital Foundry",
-        "url": "https://unearth.im"
-      },
-      "mainEntity": {
-        "@id": "#definedTermArchaeobytology"
-      }
-    },
-    {
+      // --- 1. THE DISCIPLINE (The Core Definition) ---
       "@type": "DefinedTerm",
-      "@id": "#definedTermArchaeobytology",
+      "@id": "https://archaeobytology.org/#term",
       "name": "Archaeobytology",
       "termCode": "discipline-protocol-design",
-      "inDefinedTermSet": "https://archaeobytology.org/",
-      "description": "A proposed neologism for the academic discipline focused on the preservation, study, and ethical interpretation of incomplete digital archives and fragmented digital identities. It is rooted in the Archive & Anvil methodology.",
-      "alternateName": ["Digital Archaeology", "Digital Preservation Science"],
+      "description": "The academic discipline focused on the preservation, study, and ethical interpretation of incomplete digital archives. It synthesizes classical archaeological rigor with digital forensics.",
+      "url": "https://archaeobytology.org/",
+      "inDefinedTermSet": { "@id": "https://unearth.wiki/#lexicon" } // Cross-link to your Wiki if possible
+    },
+
+    {
+      // --- 2. THE WEBPAGE (The Textbook Home) ---
+      "@type": "WebPage",
+      "@id": "https://archaeobytology.org/#webpage",
+      "url": "https://archaeobytology.org/",
+      "name": "Archaeobytology: The Discipline of Digital Preservation",
+      "description": "The foundational text and field guide for the Archaeobytology discipline.",
+      "inLanguage": "en-US",
+      "about": { "@id": "https://archaeobytology.org/#term" }, // This page is ABOUT the term
+      "isPartOf": { "@id": "https://archaeobytology.org/#website" },
+      "publisher": { "@id": "https://unearth.im/#organization" },
+      
+      // THE CREDIT CHAIN (Now with Authors)
+      "author": [
+        { "@id": "https://josiest.com/#person" },
+        { "@id": "https://felixvelas.co/#person" }
+      ],
+      
+      // LINKING THE CURRICULUM (Preserving your original structure)
       "hasPart": [
         {
           "@type": "CreativeWork",
           "name": "Archaeobytology Textbook: Complete Outline",
-          "description": "The full, detailed intellectual property and chapter structure for the core textbook of the Archæobytology discipline.",
-          "url": "archaeobytology-textbook/ARCHAEOBYTOLOGY-Archaeobytology-Complete-Outline.html"
+          "url": "https://archaeobytology.org/archaeobytology-textbook/ARCHAEOBYTOLOGY-Archaeobytology-Complete-Outline.html"
         },
         {
           "@type": "CreativeWork",
-          "name": "Archaeobytology Curriculum Syllabi (100-300 Level)",
-          "description": "Sample course outlines and appendices demonstrating the institutional deployment and teaching readiness of the Archæobytology protocol.",
-          "url": "archaeobytology-textbook/ARCHAEOBYTOLOGY-Appendix-C-Sample-Syllabi.html"
+          "name": "Archaeobytology Curriculum Syllabi",
+          "url": "https://archaeobytology.org/archaeobytology-textbook/ARCHAEOBYTOLOGY-Appendix-C-Sample-Syllabi.html"
         }
       ]
+    },
+
+    {
+      // --- 3. THE WEBSITE CONTAINER ---
+      "@type": "WebSite",
+      "@id": "https://archaeobytology.org/#website",
+      "url": "https://archaeobytology.org/",
+      "name": "Archaeobytology.org",
+      "publisher": { "@id": "https://unearth.im/#organization" }
+    },
+
+    // --- 4. THE IMMUTABLE CORE (The Sovereign Identity) ---
+    // Copied from the master template, but Socials removed as requested.
+    {
+      "@type": "Organization",
+      "@id": "https://unearth.im/#organization",
+      "name": "unearth.im",
+      "url": "https://unearth.im",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://unearth.im/favicon-32x32.png"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://josiest.com/#person",
+      "name": "Josie Jefferson",
+      "url": "https://josiest.com",
+      "jobTitle": "Digital Archaeologist",
+      "affiliation": { "@id": "https://unearth.im/#organization" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://felixvelas.co/#person",
+      "name": "Felix Velasco",
+      "url": "https://felixvelas.co",
+      "jobTitle": "Trust Architect",
+      "affiliation": { "@id": "https://unearth.im/#organization" }
     }
   ]
 }
