@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-<script type="application/ld+json">
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -65,7 +66,7 @@
       "@type": "Organization",
       "@id": "https://unearth.im/#organization",
       "name": "Unearth Heritage Foundry",
-"alternateName": ["Unearth Foundry", "Archive & Anvil"],
+"alternateName": ["Unearth Foundry","Archive & Anvil","Unearth Anvil","Unearth Works","Cultural Infrastructure Foundry"],
       "url": "https://unearth.im",
       "logo": {
         "@type": "ImageObject",
@@ -94,12 +95,14 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- === 1. Primary Meta Tags === -->
     <title>The Discipline of Archaeobytology</title>
     <meta name="title" content="The Discipline of Archaeobytology">
-    <meta name="description" content="A complete curriculum for digital preservation, platform archaeology, and sovereign system design.">
-    <meta name="keywords" content="Archaeobytology, digital preservation, platform studies, sovereign systems, digital archaeology, Three Pillars">
+    <meta name="description"
+        content="A complete curriculum for digital preservation, platform archaeology, and sovereign system design.">
+    <meta name="keywords"
+        content="Archaeobytology, digital preservation, platform studies, sovereign systems, digital archaeology, Three Pillars">
     <meta name="author" content="archaeobytology.org">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -113,7 +116,8 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://archaeobytology.org/">
     <meta property="og:title" content="The Discipline of Archaeobytology">
-    <meta property="og:description" content="A complete curriculum for digital preservation, platform archaeology, and sovereign system design.">
+    <meta property="og:description"
+        content="A complete curriculum for digital preservation, platform archaeology, and sovereign system design.">
     <meta property="og:image" content="https://archaeobytology.org/og-image.png">
     <meta property="og:site_name" content="archaeobytology.org">
 
@@ -121,7 +125,8 @@
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://archaeobytology.org/">
     <meta property="twitter:title" content="The Discipline of Archaeobytology">
-    <meta property="twitter:description" content="A complete curriculum for digital preservation, platform archaeology, and sovereign system design.">
+    <meta property="twitter:description"
+        content="A complete curriculum for digital preservation, platform archaeology, and sovereign system design.">
     <meta property="twitter:image" content="https://archaeobytology.org/og-image.png">
 
     <!-- === Favicons === -->
@@ -134,31 +139,33 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'unearth-bg': '#fcfaf5',
-            'unearth-surface': '#f9fafb',
-            'unearth-main': '#1a1a1a',
-            'unearth-secondary': '#6b7280',
-            'unearth-primary': '#BF5700',
-            'unearth-border': '#e5e7eb',
-          },
-          fontFamily: {
-            'narrative': ['Lora', 'serif'],
-            'ui': ['Inter', 'sans-serif'],
-          }
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'unearth-bg': '#fcfaf5',
+                        'unearth-surface': '#f9fafb',
+                        'unearth-main': '#1a1a1a',
+                        'unearth-secondary': '#6b7280',
+                        'unearth-primary': '#BF5700',
+                        'unearth-border': '#e5e7eb',
+                    },
+                    fontFamily: {
+                        'narrative': ['Lora', 'serif'],
+                        'ui': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
         }
-      }
-    }
     </script>
 
     <!-- === Google Fonts: Lora & Inter === -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
     <style>
         html {
             scroll-behavior: smooth;
@@ -166,33 +173,59 @@
     </style>
 
 </head>
+
 <body class="bg-unearth-bg text-unearth-main antialiased font-ui">
 
     <!-- === Header === -->
     <nav class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div class="flex justify-between items-center">
             <a href="/" title="archaeobytology.org" class="flex items-baseline space-x-2 group">
-                <span class="text-2xl font-bold tracking-tighter text-unearth-main group-hover:text-unearth-primary transition-colors font-narrative">archaeobytology</span>
+                <span
+                    class="text-2xl font-bold tracking-tighter text-unearth-main group-hover:text-unearth-primary transition-colors font-narrative">archaeobytology</span>
                 <span class="text-xl font-bold text-unearth-primary font-narrative">.org</span>
             </a>
             <div class="relative group">
-                <button class="text-sm text-unearth-secondary hover:text-unearth-primary font-narrative cursor-pointer transition-colors">
+                <button
+                    class="text-sm text-unearth-secondary hover:text-unearth-primary font-narrative cursor-pointer transition-colors">
                     The Discipline of Archaeobytology ▾
                 </button>
-                <div class="hidden group-hover:block absolute right-0 mt-0 w-64 bg-white border border-unearth-border rounded-lg shadow-lg z-50">
+                <div
+                    class="hidden group-hover:block absolute right-0 mt-0 w-64 bg-white border border-unearth-border rounded-lg shadow-lg z-50">
                     <div class="py-2">
-                        <a href="#core-curriculum" class="block px-4 py-2 text-sm text-unearth-main hover:bg-unearth-surface font-ui">Core Curriculum</a>
-                        <a href="archaeobytology-textbook/index.html" class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">• Complete Textbook</a>
-                        <a href="archaeobytology101-foundations/index.html" class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">• ARCH 101: Foundations</a>
-                        <a href="archaeobytology200-methods/index.html" class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">• ARCH 200: Methods</a>
-                        <a href="archaeobytology300-advanced-capstone/index.html" class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">• ARCH 300: Capstone</a>
-                        <a href="archaeobytology301-graduate-seminar/index.html" class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">• ARCH 301: Graduate</a>
+                        <a href="#core-curriculum"
+                            class="block px-4 py-2 text-sm text-unearth-main hover:bg-unearth-surface font-ui">Core
+                            Curriculum</a>
+                        <a href="archaeobytology-textbook/index.html"
+                            class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">•
+                            Complete Textbook</a>
+                        <a href="archaeobytology101-foundations/index.html"
+                            class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">•
+                            ARCH 101: Foundations</a>
+                        <a href="archaeobytology200-methods/index.html"
+                            class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">•
+                            ARCH 200: Methods</a>
+                        <a href="archaeobytology300-advanced-capstone/index.html"
+                            class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">•
+                            ARCH 300: Capstone</a>
+                        <a href="archaeobytology301-graduate-seminar/index.html"
+                            class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">•
+                            ARCH 301: Graduate</a>
                         <div class="border-t border-unearth-border my-2"></div>
-                        <a href="#supplementary" class="block px-4 py-2 text-sm text-unearth-main hover:bg-unearth-surface font-ui">Supplementary Materials</a>
-                        <a href="research-methods/index.html" class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">• Research Methods</a>
-                        <a href="case-studies/index.html" class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">• Case Studies</a>
-                        <a href="professional-practice/index.html" class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">• Professional Practice</a>
-                        <a href="theoretical-foundations/index.html" class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">• Theoretical Foundations</a>
+                        <a href="#supplementary"
+                            class="block px-4 py-2 text-sm text-unearth-main hover:bg-unearth-surface font-ui">Supplementary
+                            Materials</a>
+                        <a href="research-methods/index.html"
+                            class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">•
+                            Research Methods</a>
+                        <a href="case-studies/index.html"
+                            class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">•
+                            Case Studies</a>
+                        <a href="professional-practice/index.html"
+                            class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">•
+                            Professional Practice</a>
+                        <a href="theoretical-foundations/index.html"
+                            class="block px-4 py-3 text-xs text-unearth-secondary hover:bg-unearth-surface font-ui pl-8">•
+                            Theoretical Foundations</a>
                     </div>
                 </div>
             </div>
@@ -205,30 +238,55 @@
             <h1 class="text-5xl sm:text-7xl font-bold tracking-tighter text-unearth-main leading-tight font-narrative">
                 The Discipline of Archaeobytology
             </h1>
-            <p class="mt-6 text-xl sm:text-2xl text-unearth-secondary max-w-3xl mx-auto font-narrative" style="line-height: 1.8;">
-                A complete curriculum for digital preservation, platform archaeology, and sovereign system design. Learn to excavate lost platforms, preserve digital artifacts, and forge tools that embody the Three Pillars of digital sovereignty.
+            <p class="mt-6 text-xl sm:text-2xl text-unearth-secondary max-w-3xl mx-auto font-narrative"
+                style="line-height: 1.8;">
+                A complete curriculum for digital preservation, platform archaeology, and sovereign system design. Learn
+                to excavate lost platforms, preserve digital artifacts, and forge tools that embody the Three Pillars of
+                digital sovereignty.
             </p>
         </div>
     </header>
 
+    <!-- === Definition CTA === -->
+    <div class="bg-white border-y border-unearth-border py-12">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-lg text-unearth-secondary font-narrative mb-6">
+                Looking for the authoritative definition of <strong class="text-unearth-main">Archaeobytology</strong>?
+            </p>
+            <a href="/definition/" 
+               class="inline-block bg-unearth-primary hover:bg-opacity-90 text-white font-semibold px-8 py-4 rounded-lg transition-all transform hover:scale-105 shadow-md font-ui">
+                Read the Official Definition →
+            </a>
+            <p class="text-sm text-unearth-secondary font-ui mt-4">
+                The complete lexical entry, etymology, and field context
+            </p>
+        </div>
+    </div>
+
     <!-- === Main Content === -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-        
+
         <!-- === Philosophy Section === -->
         <section>
             <h2 class="text-4xl font-bold tracking-tight text-unearth-main font-narrative text-center">
                 Our Philosophy
             </h2>
-            <p class="mt-4 text-lg text-unearth-secondary text-center max-w-2xl mx-auto font-narrative" style="line-height: 1.8;">
-                The study and practice of digital artifacts across their lifecycle—from creation through use, preservation, and eventual death.
+            <p class="mt-4 text-lg text-unearth-secondary text-center max-w-2xl mx-auto font-narrative"
+                style="line-height: 1.8;">
+                The study and practice of digital artifacts across their lifecycle—from creation through use,
+                preservation, and eventual death.
             </p>
-            
+
             <div class="mt-12 max-w-4xl mx-auto bg-unearth-surface rounded-lg border border-unearth-border p-8">
                 <p class="text-base text-unearth-main font-ui mb-4" style="line-height: 1.8;">
-                    <strong>Archaeobytology</strong> is the study and practice of digital artifacts across their lifecycle—from creation through use, preservation, and eventual death. It combines the forensic sensibility of archaeology with the forward-looking practice of system design.
+                    <strong>Archaeobytology</strong> is the study and practice of digital artifacts across their
+                    lifecycle—from creation through use, preservation, and eventual death. It combines the forensic
+                    sensibility of archaeology with the forward-looking practice of system design.
                 </p>
                 <p class="text-base text-unearth-main font-ui mb-4" style="line-height: 1.8;">
-                    We teach you to work in <strong>two modes</strong>: the <strong>Archive</strong> (preserving what already exists) and the <strong>Anvil</strong> (forging new sovereign systems). Our curriculum progresses from foundational theory through hands-on practice to institution-building strategy.
+                    We teach you to work in <strong>two modes</strong>: the <strong>Archive</strong> (preserving what
+                    already exists) and the <strong>Anvil</strong> (forging new sovereign systems). Our curriculum
+                    progresses from foundational theory through hands-on practice to institution-building strategy.
                 </p>
             </div>
 
@@ -237,19 +295,22 @@
                 <div class="bg-unearth-surface rounded-lg border border-unearth-border p-6">
                     <h3 class="text-xl font-bold text-unearth-primary font-narrative mb-3">Declaration</h3>
                     <p class="text-sm text-unearth-main font-ui" style="line-height: 1.6;">
-                        Users must understand what a system does, who controls it, and what happens to their data. Transparency is sovereignty's foundation.
+                        Users must understand what a system does, who controls it, and what happens to their data.
+                        Transparency is sovereignty's foundation.
                     </p>
                 </div>
                 <div class="bg-unearth-surface rounded-lg border border-unearth-border p-6">
                     <h3 class="text-xl font-bold text-unearth-primary font-narrative mb-3">Connection</h3>
                     <p class="text-sm text-unearth-main font-ui" style="line-height: 1.6;">
-                        Users must be able to leave with their data and relationships intact. Portable identity prevents digital hostage-taking.
+                        Users must be able to leave with their data and relationships intact. Portable identity prevents
+                        digital hostage-taking.
                     </p>
                 </div>
                 <div class="bg-unearth-surface rounded-lg border border-unearth-border p-6">
                     <h3 class="text-xl font-bold text-unearth-primary font-narrative mb-3">Ground</h3>
                     <p class="text-sm text-unearth-main font-ui" style="line-height: 1.6;">
-                        Data must exist on infrastructure you control. Rent-seeking landlords can never guarantee sovereignty.
+                        Data must exist on infrastructure you control. Rent-seeking landlords can never guarantee
+                        sovereignty.
                     </p>
                 </div>
             </div>
@@ -260,14 +321,16 @@
             <h2 class="text-4xl font-bold tracking-tight text-unearth-main font-narrative text-center mb-4">
                 Core Curriculum
             </h2>
-            <p class="text-lg text-unearth-secondary text-center max-w-2xl mx-auto font-narrative mb-12" style="line-height: 1.8;">
+            <p class="text-lg text-unearth-secondary text-center max-w-2xl mx-auto font-narrative mb-12"
+                style="line-height: 1.8;">
                 Foundational courses progressing from theory to practice
             </p>
-            
+
             <div class="space-y-8 max-w-2xl mx-auto">
-                
+
                 <!-- Textbook -->
-                <a href="archaeobytology-textbook/index.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-8 transition-all duration-200 hover:shadow-lg">
+                <a href="archaeobytology-textbook/index.html"
+                    class="block bg-unearth-surface rounded-lg border border-unearth-border p-8 transition-all duration-200 hover:shadow-lg">
                     <div class="flex items-start justify-between">
                         <div class="flex-1">
                             <div class="text-sm font-semibold text-unearth-primary font-ui mb-2">Complete Textbook</div>
@@ -278,7 +341,8 @@
                                 Your Primary Reference
                             </p>
                             <p class="mt-3 text-base text-unearth-secondary font-ui">
-                                19 comprehensive chapters on platform archaeology, digital preservation, the Three Pillars framework, and complete methodology.
+                                19 comprehensive chapters on platform archaeology, digital preservation, the Three
+                                Pillars framework, and complete methodology.
                             </p>
                         </div>
                     </div>
@@ -288,10 +352,12 @@
                 </a>
 
                 <!-- 100-level -->
-                <a href="archaeobytology101-foundations/index.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-8 transition-all duration-200 hover:shadow-lg">
+                <a href="archaeobytology101-foundations/index.html"
+                    class="block bg-unearth-surface rounded-lg border border-unearth-border p-8 transition-all duration-200 hover:shadow-lg">
                     <div class="flex items-start justify-between">
                         <div class="flex-1">
-                            <div class="text-sm font-semibold text-unearth-primary font-ui mb-2">ARCH 101 · Foundations</div>
+                            <div class="text-sm font-semibold text-unearth-primary font-ui mb-2">ARCH 101 · Foundations
+                            </div>
                             <h3 class="text-3xl font-bold tracking-tight text-unearth-main font-narrative">
                                 The Study of the Ancient Byte
                             </h3>
@@ -299,7 +365,8 @@
                                 Six Foundational Essays
                             </p>
                             <p class="mt-3 text-base text-unearth-secondary font-ui">
-                                Core concepts including Archaeobytes, Vivibytes, Umbrabytes, Petribytes, the Anvil, and preservation protocols.
+                                Core concepts including Archaeobytes, Vivibytes, Umbrabytes, Petribytes, the Anvil, and
+                                preservation protocols.
                             </p>
                         </div>
                     </div>
@@ -309,10 +376,12 @@
                 </a>
 
                 <!-- 200-level -->
-                <a href="archaeobytology200-methods/index.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-8 transition-all duration-200 hover:shadow-lg">
+                <a href="archaeobytology200-methods/index.html"
+                    class="block bg-unearth-surface rounded-lg border border-unearth-border p-8 transition-all duration-200 hover:shadow-lg">
                     <div class="flex items-start justify-between">
                         <div class="flex-1">
-                            <div class="text-sm font-semibold text-unearth-primary font-ui mb-2">ARCH 200 · Methods</div>
+                            <div class="text-sm font-semibold text-unearth-primary font-ui mb-2">ARCH 200 · Methods
+                            </div>
                             <h3 class="text-3xl font-bold tracking-tight text-unearth-main font-narrative">
                                 Triage & Methodology
                             </h3>
@@ -320,7 +389,8 @@
                                 Advanced Essays & Protocols
                             </p>
                             <p class="mt-3 text-base text-unearth-secondary font-ui">
-                                Triage protocols, excavation methodology, and preservation practice. Building technical competence and ethical frameworks.
+                                Triage protocols, excavation methodology, and preservation practice. Building technical
+                                competence and ethical frameworks.
                             </p>
                         </div>
                     </div>
@@ -330,10 +400,12 @@
                 </a>
 
                 <!-- 300-level -->
-                <a href="archaeobytology300-advanced-capstone/index.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-8 transition-all duration-200 hover:shadow-lg">
+                <a href="archaeobytology300-advanced-capstone/index.html"
+                    class="block bg-unearth-surface rounded-lg border border-unearth-border p-8 transition-all duration-200 hover:shadow-lg">
                     <div class="flex items-start justify-between">
                         <div class="flex-1">
-                            <div class="text-sm font-semibold text-unearth-primary font-ui mb-2">ARCH 300 · Advanced Capstone</div>
+                            <div class="text-sm font-semibold text-unearth-primary font-ui mb-2">ARCH 300 · Advanced
+                                Capstone</div>
                             <h3 class="text-3xl font-bold tracking-tight text-unearth-main font-narrative">
                                 From Theory to Practice
                             </h3>
@@ -341,7 +413,8 @@
                                 Hands-On Project Course
                             </p>
                             <p class="mt-3 text-base text-unearth-secondary font-ui">
-                                Apply archaeobytological principles to real-world preservation challenges. Build sovereign systems and create portfolio-quality work.
+                                Apply archaeobytological principles to real-world preservation challenges. Build
+                                sovereign systems and create portfolio-quality work.
                             </p>
                         </div>
                     </div>
@@ -351,10 +424,12 @@
                 </a>
 
                 <!-- 300-institution -->
-                <a href="archaeobytology301-graduate-seminar/index.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-8 transition-all duration-200 hover:shadow-lg">
+                <a href="archaeobytology301-graduate-seminar/index.html"
+                    class="block bg-unearth-surface rounded-lg border border-unearth-border p-8 transition-all duration-200 hover:shadow-lg">
                     <div class="flex items-start justify-between">
                         <div class="flex-1">
-                            <div class="text-sm font-semibold text-unearth-primary font-ui mb-2">ARCH 301 · Graduate Seminar</div>
+                            <div class="text-sm font-semibold text-unearth-primary font-ui mb-2">ARCH 301 · Graduate
+                                Seminar</div>
                             <h3 class="text-3xl font-bold tracking-tight text-unearth-main font-narrative">
                                 Institution Building & Strategic Infrastructure
                             </h3>
@@ -362,7 +437,8 @@
                                 Graduate-Level Strategy
                             </p>
                             <p class="mt-3 text-base text-unearth-secondary font-ui">
-                                Design organizations, business models, and movements that embody the Three Pillars and survive beyond individual practitioners.
+                                Design organizations, business models, and movements that embody the Three Pillars and
+                                survive beyond individual practitioners.
                             </p>
                         </div>
                     </div>
@@ -379,20 +455,24 @@
             <h2 class="text-4xl font-bold tracking-tight text-unearth-main font-narrative text-center mb-4">
                 Supplementary Materials
             </h2>
-            <p class="text-lg text-unearth-secondary text-center max-w-2xl mx-auto font-narrative mb-12" style="line-height: 1.8;">
+            <p class="text-lg text-unearth-secondary text-center max-w-2xl mx-auto font-narrative mb-12"
+                style="line-height: 1.8;">
                 Advanced research, methodology, and professional resources
             </p>
-            
+
             <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-                
+
                 <!-- Byte Gallery -->
-                <a href="https://bytegallery.org" target="_blank" rel="noopener noreferrer" class="block rounded-lg border-2 border-unearth-primary p-6 transition-all duration-200 hover:shadow-xl" style="background: linear-gradient(135deg, #fcfaf5 0%, #f9f6f0 100%);">
+                <a href="https://bytegallery.org" target="_blank" rel="noopener noreferrer"
+                    class="block rounded-lg border-2 border-unearth-primary p-6 transition-all duration-200 hover:shadow-xl"
+                    style="background: linear-gradient(135deg, #fcfaf5 0%, #f9f6f0 100%);">
                     <div class="text-sm font-semibold text-unearth-primary font-ui mb-2">Byte Gallery</div>
                     <h3 class="text-2xl font-bold tracking-tight text-unearth-main font-narrative mb-3">
                         The Museum of Umbrabytes & Petribytes
                     </h3>
                     <p class="text-base text-unearth-secondary font-ui mb-4">
-                        A curated digital museum preserving liminal artifacts and fossilized digital culture. The practical application of archaeobytological preservation.
+                        A curated digital museum preserving liminal artifacts and fossilized digital culture. The
+                        practical application of archaeobytological preservation.
                     </p>
                     <span class="text-sm font-semibold text-unearth-primary font-ui">
                         Visit the Gallery &rarr;
@@ -400,13 +480,15 @@
                 </a>
 
                 <!-- Research Methods -->
-                <a href="research-methods/index.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-6 transition-all duration-200 hover:shadow-lg">
+                <a href="research-methods/index.html"
+                    class="block bg-unearth-surface rounded-lg border border-unearth-border p-6 transition-all duration-200 hover:shadow-lg">
                     <div class="text-sm font-semibold text-unearth-primary font-ui mb-2">Research Methods</div>
                     <h3 class="text-2xl font-bold tracking-tight text-unearth-main font-narrative mb-3">
                         Methodological Frameworks
                     </h3>
                     <p class="text-base text-unearth-secondary font-ui mb-4">
-                        Advanced analytical tools for translating archaeological wisdom into design principles and evaluating sovereignty claims.
+                        Advanced analytical tools for translating archaeological wisdom into design principles and
+                        evaluating sovereignty claims.
                     </p>
                     <p class="text-base font-semibold text-unearth-primary font-ui">
                         Explore Methods &rarr;
@@ -414,7 +496,8 @@
                 </a>
 
                 <!-- Case Studies -->
-                <a href="case-studies/index.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-6 transition-all duration-200 hover:shadow-lg">
+                <a href="case-studies/index.html"
+                    class="block bg-unearth-surface rounded-lg border border-unearth-border p-6 transition-all duration-200 hover:shadow-lg">
                     <div class="text-sm font-semibold text-unearth-primary font-ui mb-2">Case Studies</div>
                     <h3 class="text-2xl font-bold tracking-tight text-unearth-main font-narrative mb-3">
                         Platform Autopsies & Analysis
@@ -428,13 +511,15 @@
                 </a>
 
                 <!-- Professional Practice -->
-                <a href="professional-practice/index.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-6 transition-all duration-200 hover:shadow-lg">
+                <a href="professional-practice/index.html"
+                    class="block bg-unearth-surface rounded-lg border border-unearth-border p-6 transition-all duration-200 hover:shadow-lg">
                     <div class="text-sm font-semibold text-unearth-primary font-ui mb-2">Professional Practice</div>
                     <h3 class="text-2xl font-bold tracking-tight text-unearth-main font-narrative mb-3">
                         Practitioner's Library
                     </h3>
                     <p class="text-base text-unearth-secondary font-ui mb-4">
-                        Guides for professional archaeobytologists: consulting, evaluation, critique, and institutional development.
+                        Guides for professional archaeobytologists: consulting, evaluation, critique, and institutional
+                        development.
                     </p>
                     <p class="text-base font-semibold text-unearth-primary font-ui">
                         View Resources &rarr;
@@ -442,13 +527,15 @@
                 </a>
 
                 <!-- Theoretical Foundations -->
-                <a href="theoretical-foundations/index.html" class="block bg-unearth-surface rounded-lg border border-unearth-border p-6 transition-all duration-200 hover:shadow-lg">
+                <a href="theoretical-foundations/index.html"
+                    class="block bg-unearth-surface rounded-lg border border-unearth-border p-6 transition-all duration-200 hover:shadow-lg">
                     <div class="text-sm font-semibold text-unearth-primary font-ui mb-2">Theoretical Foundations</div>
                     <h3 class="text-2xl font-bold tracking-tight text-unearth-main font-narrative mb-3">
                         Position Papers & Manifestos
                     </h3>
                     <p class="text-base text-unearth-secondary font-ui mb-4">
-                        Foundational essays establishing Archaeobytology's intellectual positioning and disciplinary contributions.
+                        Foundational essays establishing Archaeobytology's intellectual positioning and disciplinary
+                        contributions.
                     </p>
                     <p class="text-base font-semibold text-unearth-primary font-ui">
                         Read Theory &rarr;
@@ -466,10 +553,15 @@
                 </h2>
                 <div class="mt-6 space-y-4 text-base text-unearth-secondary font-ui" style="line-height: 1.8;">
                     <p>
-                        The Discipline of Archaeobytology is dedicated to teaching the theory and practice of digital preservation, platform archaeology, and sovereign system design. Our curriculum progresses from foundational concepts through advanced methodology to institution-building strategy.
+                        The Discipline of Archaeobytology is dedicated to teaching the theory and practice of digital
+                        preservation, platform archaeology, and sovereign system design. Our curriculum progresses from
+                        foundational concepts through advanced methodology to institution-building strategy.
                     </p>
                     <p>
-                        We believe in working both modes: the <strong>Archive</strong> (preserving what was) and the <strong>Anvil</strong> (forging what must be). Archaeobytologyy will equip you to start preservation organizations, build sovereign tools, curate digital museums, or lead movements for digital sovereignty.
+                        We believe in working both modes: the <strong>Archive</strong> (preserving what was) and the
+                        <strong>Anvil</strong> (forging what must be). Archaeobytologyy will equip you to start
+                        preservation organizations, build sovereign tools, curate digital museums, or lead movements for
+                        digital sovereignty.
                     </p>
                     <p class="text-sm text-unearth-secondary italic mt-8">
                         "We preserve what was lost. We forge what must be born. We build institutions that endure."
@@ -484,20 +576,37 @@
     <footer class="mt-16 sm:mt-24 py-12 border-t border-unearth-border">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p class="text-sm text-unearth-secondary font-ui">
-                &copy; 2025   
+                &copy; 2025
                 <a href="https://archaeobytology.org" class="font-semibold transition-colors group">
-                    <span class="text-unearth-main group-hover:text-unearth-primary">archaeobytology</span><span class="text-unearth-primary">.org</span>
+                    <span class="text-unearth-main group-hover:text-unearth-primary">archaeobytology</span><span
+                        class="text-unearth-primary">.org</span>
                 </a>
             </p>
             <p class="text-sm text-unearth-secondary font-ui mt-2">
-                a <b><a href="https://sentientification.com" target="_blank" rel="noopener noreferrer" class="text-unearth-main hover:text-unearth-primary underline transition-colors">liminal mind meld</a></b> collaboration<br>
-                <b><a href="https://unearth.im" target="_blank" rel="noopener noreferrer" class="text-unearth-main hover:text-unearth-primary underline transition-colors">unearth.im</a></b> | <b><a href="https://archaeobytology.org" target="_blank" rel="noopener noreferrer" class="text-unearth-main hover:text-unearth-primary underline transition-colors">archive & anvil</a></b>
+                a <b><a href="https://sentientification.com" target="_blank" rel="noopener noreferrer"
+                        class="text-unearth-main hover:text-unearth-primary underline transition-colors">liminal mind
+                        meld</a></b> collaboration<br>
+                <b><a href="https://unearth.im" target="_blank" rel="noopener noreferrer"
+                        class="text-unearth-main hover:text-unearth-primary underline transition-colors">unearth.im</a></b>
+                | <b><a href="https://archaeobytology.org" target="_blank" rel="noopener noreferrer"
+                        class="text-unearth-main hover:text-unearth-primary underline transition-colors">archive &
+                        anvil</a></b>
             </p>
             <p class="text-xs text-unearth-secondary font-ui mt-2">
                 All content licensed under Creative Commons BY-SA 4.0
             </p>
         </div>
-    </footer>
+     </footer>             </footer>           <p align="center" style="margin-bottom: 0.25rem; font-size: 0.7rem;">
+                a <b><a href="https://sentientification.com" target="_blank" rel="noopener noreferrer"
+                        style="color: var(--text-main); text-decoration: underline;">liminal mind meld</a></b> collaboration
+            </p>
+            <p align="center" style="font-size: 0.7rem;">
+                <b><a href="https://unearth.im" target="_blank" rel="noopener noreferrer"
+                        style="color: var(--text-main); text-decoration: underline;">unearth.im</a></b>
+                | <b><a href="https://archaeobytology.org" target="_blank" rel="noopener noreferrer"
+                        style="color: var(--text-main); text-decoration: underline;">archaeobytology.org</a></b>
+            </p>
 
 </body>
+
 </html>
